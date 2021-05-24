@@ -6,8 +6,8 @@ version=($(git rev-parse --short HEAD))
 rm -rf _site
 
 # Get the latest commit in main branch
-commit=($(git log -n 1 --pretty='format:%C(auto)%h (%s, %ad)'))
-echo "[Current commit]: ${commit}."
+commit=$(git log -n 1 --pretty='format:%C(auto)%h (%s, %ad)')
+echo "[Commit]: ${commit}"
 
 # Clone remote _site branch 
 git clone -b gh-pages `git config remote.origin.url` _site
@@ -20,7 +20,7 @@ cd _site
 
 # Define the commit message
 message="Deploying commit ($commit) to gh-pages"
-echo "[Message #]: ${message}."
+echo "[Warning]: ${message}."
 
 # Add new or changed files in _site working directory to the Git staging area.
 git add .
@@ -31,7 +31,7 @@ git commit -m "$message" > /dev/null 2>&1
 # Push the changes to the to gh-pages branch
 git push > /dev/null 2>&1
 if [ $? = 0 ]; then
-  echo "Deployment successful of v1.0.$version to gh-pages"
+  echo "[Success]: Deployment successful of v1.0.$version to gh-pages"
 else
-  echo "Deployment failure of v1.0.$version to gh-pages"
+  echo "[Error]: Deployment failure of v1.0.$version to gh-pages"
 fi
