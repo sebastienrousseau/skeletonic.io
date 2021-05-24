@@ -19,7 +19,7 @@ JEKYLL_ENV=production bundle exec jekyll build
 cd _site
 
 # Define the commit message
-message="Deploying commit ($commit) to gh-pages"
+message="Deploying commit $commit to gh-pages"
 echo "[Warning]: ${message}."
 
 # Add new or changed files in _site working directory to the Git staging area.
