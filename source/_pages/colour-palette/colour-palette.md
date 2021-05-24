@@ -1,6 +1,6 @@
 ---
 layout: page
-id: 05d3428d-76581293113a-5a29-0a37-76581293113a
+key: 05d3428d-76581293113a-5a29-0a37-76581293113a
 title: Colour Palette
 subtitle: Simply designed to fit your cascading web life.
 description: It comes with a basic set of custom properties, sometimes referred to as CSS variables or cascading variables.

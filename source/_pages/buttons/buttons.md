@@ -1,6 +1,6 @@
 ---
 layout: page
-id: 99ccf654-cec627f7ac5d-0579-924a-cec627f7ac5d
+key: 99ccf654-cec627f7ac5d-0579-924a-cec627f7ac5d
 title: Buttons
 subtitle:  Unique, styled and responsive CSS for buttons, href and input elements.
 description: Modern CSS button styling options you can use to make user interaction even more engaging. 

@@ -1,6 +1,6 @@
 ---
 layout: default
-id: 29a5d4be-8c963ac78cab-a104-820f-8c963ac78cab
+key: 29a5d4be-8c963ac78cab-a104-820f-8c963ac78cab
 title: Skeletonic CSS
 subtitle: Simply designed to fit your cascading web life.
 description: Skeletonic CSS is a lightweight, intuitive, accessible and ultra-responsive cascading style sheets framework to streamline your Digital and Mobile Web development needs.

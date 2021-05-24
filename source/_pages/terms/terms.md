@@ -1,6 +1,6 @@
 ---
 layout: page
-id: 576acb2c-b15f46defb06-0c1e-18a2-b15f46defb06
+key: 576acb2c-b15f46defb06-0c1e-18a2-b15f46defb06
 title: Terms of Service
 subtitle: Simply designed to fit your cascading web life.
 description: A lightweight, intuitive, accessible and ultra-responsive CSS Framework to streamline your Digital and Mobile Web development needs.

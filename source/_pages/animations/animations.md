@@ -1,6 +1,6 @@
 ---
 layout: page
-id: eefdb072-370352a6742e-200a-170d-370352a6742e
+key: eefdb072-370352a6742e-200a-170d-370352a6742e
 title: Animations and Transitions
 subtitle: A CSS library of ready-to-use, cross-browser transitions and animations.
 description: With Skeletonic it's easy to animate over a hundred objects at a time.

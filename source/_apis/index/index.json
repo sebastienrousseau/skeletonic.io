@@ -16,7 +16,7 @@ permalink: /api.json
                         "authors": "{{ page.author | escape }}",
                         "date": "{{ page.date }}",
                         "description": "{{ page.description | escape }}",
-                        "id" : "{{ page.id }}",
+                        "id" : "{{ page.key }}",
                         "image": "{{ page.image | escape }}",
                         "keywords": "{{ page.keywords | escape }}",
                         "subtitle": "{{ subpage[0].subtitle | escape }}",

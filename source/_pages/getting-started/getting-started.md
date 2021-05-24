@@ -1,6 +1,6 @@
 ---
 layout: default
-id: 49c099da-70577ffd4525-0de2-ad39-70577ffd4525
+key: 49c099da-70577ffd4525-0de2-ad39-70577ffd4525
 title: Getting Started
 subtitle: Getting Started with Skeletonic CSS
 description: Learn how to easily integrate the Skeletonic CSS Framework into your website or web app.

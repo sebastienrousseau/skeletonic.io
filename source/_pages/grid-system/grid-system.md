@@ -1,6 +1,6 @@
 ---
 layout: page
-id: ff9b191a-b2a608ba3475-40a1-660d-b2a608ba3475
+key: ff9b191a-b2a608ba3475-40a1-660d-b2a608ba3475
 title: Grid System
 subtitle: A fully responsive, 12 column grid-based layout system making it easier to design web pages.
 description: A responsive CSS grid using flexbox for desktop, tablet and mobile viewports.

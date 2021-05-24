@@ -1,6 +1,6 @@
 ---
 layout: page
-id: 2740210a-fb32217e7626-0c5c-86ed-fb32217e7626
+key: 2740210a-fb32217e7626-0c5c-86ed-fb32217e7626
 title: Dividers
 subtitle: Simple Styles for Horizontal Rules.
 description: The Skeletonic CSS Dividers are created based on the HTML hr tag element.

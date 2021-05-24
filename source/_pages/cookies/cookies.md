@@ -1,6 +1,6 @@
 ---
 layout: page
-id: 4f9ef733-0e6e735b8070-0b9c-202d-0e6e735b8070
+key: 4f9ef733-0e6e735b8070-0b9c-202d-0e6e735b8070
 title: Cookie Policy
 subtitle: Simply designed to fit your cascading web life.
 description: A lightweight, intuitive, accessible and ultra-responsive CSS Framework to streamline your Digital and Mobile Web development needs.

@@ -1,6 +1,6 @@
 ---
 layout: page
-id: b31135bb-50d92bc29bf3-cac2-6b74-50d92bc29bf3
+key: b31135bb-50d92bc29bf3-cac2-6b74-50d92bc29bf3
 title: Privacy Policy and Disclaimer
 subtitle: Simply designed to fit your cascading web life.
 description: A lightweight, intuitive, accessible and ultra-responsive CSS Framework to streamline your Digital and Mobile Web development needs.

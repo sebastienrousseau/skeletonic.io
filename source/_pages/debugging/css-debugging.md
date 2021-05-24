@@ -1,6 +1,6 @@
 ---
 layout: page
-id: dbf80a0d-8a1b16f4d1eb-8e42-8b3b-8a1b16f4d1eb
+key: dbf80a0d-8a1b16f4d1eb-8e42-8b3b-8a1b16f4d1eb
 title: Debugging Tools
 subtitle: Debug and diagnose CSS stylesheets with ease 
 description: Use Skeletonic CSS debugging tools to visually inspect and correct page layout issues.

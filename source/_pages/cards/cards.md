@@ -1,6 +1,6 @@
 ---
 layout: page
-id: 679d8cdb-687a1cfd870f-019a-44ff-687a1cfd870f
+key: 679d8cdb-687a1cfd870f-019a-44ff-687a1cfd870f
 title: CSS Cards
 subtitle: Responsive, flexible containers for your page's contents
 description: CSS Cards provide a convenient Flexbox Layout that help you present your information.

@@ -15,7 +15,7 @@ permalink: /terms.json
                         "authors": "{{ subpage[0].author | escape }}",
                         "date": "{{ subpage[0].date }}",
                         "description": "{{ subpage[0].description | escape }}",
-                        "id" : "{{ subpage[0].id }}",
+                        "id" : "{{ subpage[0].key }}",
                         "image": "{{ subpage[0].image | escape }}",
                         "keywords": "{{ subpage[0].keywords | escape }}",
                         "subtitle": "{{ subpage[0].subtitle | escape }}",

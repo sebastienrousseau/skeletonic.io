@@ -1,6 +1,6 @@
 ---
 layout: page
-id: 3b1d2d87-322d4d6aaa9a-4c82-0e9a-322d4d6aaa9a
+key: 3b1d2d87-322d4d6aaa9a-4c82-0e9a-322d4d6aaa9a
 title: Tables
 subtitle: Simply designed to fit your cascading web life.
 description: A lightweight, intuitive, accessible and ultra-responsive CSS Framework to streamline your Digital and Mobile Web development needs.
