@@ -1,0 +1,31 @@
+---
+layout: compress
+permalink: /api.json
+---
+[
+    {
+        "status": "ok",
+        "code": 200,
+        "message": "The request succeeded.",
+        "data": [
+            {
+                "results": [
+                    {% for page in site.pages %}
+                        {% if page.published == true %}
+                    {
+                        "authors": "{{ page.author | escape }}",
+                        "date": "{{ page.date }}",
+                        "description": "{{ page.description | escape }}",
+                        "id" : "{{ page.id }}",
+                        "image": "{{ page.image | escape }}",
+                        "keywords": "{{ page.keywords | escape }}",
+                        "subtitle": "{{ subpage[0].subtitle | escape }}",
+                        "title": "{{ page.title | escape }}",
+                        "url": "{{ page.url }}"
+                    }{% if forloop.last %}{% else %},{% endif %}
+                    {% endif %}{% endfor %}                
+                ]
+            }
+        ]
+    }
+]

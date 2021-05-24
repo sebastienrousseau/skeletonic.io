@@ -1,0 +1,44 @@
+<head>  
+    <title>{%if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+    <!-- Metatags -->
+    {% include metatags.html %}
+
+    <!-- Links -->
+    <link rel="alternate" href="{{ site.url }}" hreflang="{{ site.lang }}" />
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self' data: gap: ssl.gstatic.com
+              unpkg.com open-sans.com ajax.cloudflare.com
+              'unsafe-eval';
+              style-src 'self' unpkg.com open-sans.com 'unsafe-inline';
+              script-src 'self' unpkg.com ajax.cloudflare.com 'unsafe-inline';
+              media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- External CSS -->
+    <link rel="preload" href="https://unpkg.com/skeletonic@{{ site.version | escape }}/dist/skeletonic-fonts.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/skeletonic@{{ site.version | escape }}/dist/skeletonic-colours.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/skeletonic@{{ site.version | escape }}/dist/skeletonic-animations.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://unpkg.com/skeletonic@{{ site.version | escape }}/dist/skeletonic.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!--link rel="preload" href="https://unpkg.com/skeletonic@{{ site.version | escape }}/dist/skeletonic-debug-mode.css" as="style" onload="this.onload=null;this.rel='stylesheet'" -->
+
+    <!-- Critical CSS -->
+    <style>
+        {% include skeletonic.html %}
+    </style>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site_url }}/favicon.ico" >
+    <link rel="apple-touch-icon" href="{{ site_url }}/favicon.ico">
+
+    <!-- RSS / Atom -->
+    <link rel="alternate" type="application/rss+xml" href="{{ site_url }}/feed.xml" />
+    <link rel="alternate" type="application/atom+xml" href="{{ site_url }}/atom.xml" />
+
+    <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ site_url }}/api.json">
+    
+</head>

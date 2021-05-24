@@ -1,0 +1,31 @@
+<!-- Footer Categories -->
+{% for page in site.pages %}
+    {% for category in page.categories %}
+        {% unless category contains 'features' %} 
+            {% assign categorycloud = categorycloud | append:category | append:', ' %}
+        {% endunless %}    
+    {% endfor %} 
+{% endfor %} 
+
+
+{% assign categorycloud = categorycloud | split:", " | uniq | sort %}
+<hr class="hr-text" data-content="Directory" />
+<h4>The Anatomy of {{ site.title }}</h4>
+<section class="grid-flex">
+{% for category in categorycloud %}
+    <div class="flex-1 padding-1">
+        <h5>{{ category | capitalize }}</h5>
+        <img src="assets/images/image-icon/{{ category | downcase }}.min.svg" role="presentation" alt="Icon representing the category {{ category }}" width="583" height="438" class="icon" />
+    <ul class="footer-category">
+    {% for page in site.pages %}
+        {% for pc in page.categories %}
+            {% if pc == category %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+    {% endfor %} 
+    </ul>
+    </div>
+{% endfor %}  
+  </section>
+<!-- End Footer Categories -->

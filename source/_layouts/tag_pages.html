@@ -1,0 +1,13 @@
+---
+layout: page
+---
+<h1>Tag: {{ page.tag | upcase }}</h1>
+
+<ul>
+{% for page in site.tags[page.tag] %}
+  <li><a href="{{ page.url }}">{{ page.title }}</a> ({{ page.date | date_to_string }})<br>
+    {{ page.description }}
+  </li>
+{% endfor %}
+</ul>
+

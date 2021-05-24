@@ -1,0 +1,119 @@
+---
+author: Sebastien Rousseau
+author_facebook: skeletonic
+background_color: '#000'
+baseurl: ''
+category_page_dir: categories
+category_page_layout: category_pages
+category_page_title_prefix: 'Category: '
+collections:
+  apis:
+    output: true
+    permalink: /:path/
+  pages:
+    output: true
+    permalink: /:path/
+compress_html:
+  blanklines: false
+  clippings: all
+  comments: all
+  endings: all
+  profile: true
+  startings: all
+description: Skeletonic is a lightweight, intuitive and ultra-responsive CSS framework designed for any platform, browser or device.
+email: hello@skeletonic.io
+encoding: utf-8
+excerpt_separator: <!--more-->
+exclude:
+  - _gentags.rb
+  - .asset-cache
+  - .bundle
+  - .editorconfig
+  - .jekyll-assets-cache
+  - .jekyll-cache
+  - .rubocop.yml
+  - .sass-cache
+  - .travis.yml
+  - '*.sublime-project'
+  - '*.sublime-workspace'
+  - Capfile
+  - config
+  - Gemfile
+  - Gemfile.lock
+  - Gruntfile.js
+  - gulpfile.js
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - README.md
+  - tmp
+  - vendor/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - yarn.lock
+facebook_id: 10156052650356912
+facebook_username: skeletonic
+feed:
+  path: atom.xml
+github_username: sebastienrousseau
+google_analytics: UA-112479393-1
+highlighter: rouge
+include:
+  - .htaccess
+  - assets
+  - _pages
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+  keep_files:
+  - .git
+keywords: skeletonic,skeletonic.css,CSS,lightweight,dead on,responsive,framework,semantic,mobile-first,modern,style-agnostic,front-end,frontend,grid system,typography
+kramdown:
+  auto_ids: true
+  enable_coderay: false
+  entity_output: as_char
+  hard_wrap: false
+  input: GFM
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..3
+kramdown:auto_ids: true
+lang: en
+linkedin_username: skeletonic
+locale: en_gb
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-minifier
+  - jekyll-paginate
+  - jekyll-responsive-image
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-tagories
+repository: sebastienrousseau/skeletonic.io
+responsive_image:
+  base_path: assets/images/image-icon
+  cache: true
+  output_path_format: assets/images/%{width}/%{basename}
+  sizes:
+    - width: 1000
+    - width: 500
+    - width: 250
+    - width: 125
+  strip: true
+  template: _includes/responsive-image.html
+source: source
+subtitle: Simply designed to fit your cascading web life.
+tag_page_dir: tags
+tag_page_layout: tag_pages
+tag_page_title_prefix: 'Tag: '
+theme-color: '#fff'
+title: Skeletonic - A lightweight, intuitive, accessible and ultra-responsive CSS Framework
+twitter_creator: wwdseb
+twitter_username: skeletonic
+url: https://skeletonic.io
+version: 1.2.0

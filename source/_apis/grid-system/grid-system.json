@@ -1,0 +1,29 @@
+---
+layout: compress
+permalink: /grid-system.json
+---
+{% assign subpage = site.pages | where: 'section', 'grid-system' %}
+[
+    {
+        "status": "ok",
+        "code": 200,
+        "message": "The request succeeded.",
+        "data": [
+            {
+                "results": [
+                    {
+                        "authors": "{{ subpage[0].author | escape }}",
+                        "date": "{{ subpage[0].date }}",
+                        "description": "{{ subpage[0].description | escape }}",
+                        "id" : "{{ subpage[0].id }}",
+                        "image": "{{ subpage[0].image | escape }}",
+                        "keywords": "{{ subpage[0].keywords | escape }}",
+                        "subtitle": "{{ subpage[0].subtitle | escape }}",
+                        "title": "{{ subpage[0].title | escape }}",
+                        "url": "{{ subpage[0].url }}"
+                    }
+                ]
+            }
+        ]
+    }
+]

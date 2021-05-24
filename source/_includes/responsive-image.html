@@ -1,0 +1,6 @@
+{% capture srcset %}
+    {% for i in resized %}
+        /{{ i.path }} {{ i.width }}w{% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+{% endcapture %}
+<img src="/{{ path }}" srcset="{{ srcset | strip_newlines }}" width="{{ original.width }}" height="{{ original.height }}" sizes="(min-width: 36em) calc(.333 * (100vw - 12em)), 100vw" class="{{ class }}" alt="{{ alt }}" title="{{ title }}" itemprop="image" />

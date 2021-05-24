@@ -1,0 +1,83 @@
+---
+Lint/UnreachableCode:
+  Severity: error
+Lint/UselessAccessModifier:
+  Enabled: false
+Metrics/AbcSize:
+  Max: 20
+Metrics/CyclomaticComplexity:
+  Max: 8
+Metrics/MethodLength:
+  Max: 20
+  CountComments: false
+  Severity: error
+Metrics/ModuleLength:
+  Max: 240
+Metrics/ParameterLists:
+  Max: 4
+Metrics/PerceivedComplexity:
+  Max: 8
+Style/Alias:
+  Enabled: false
+Style/AndOr:
+  Severity: error
+Style/Attr:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/DoubleNegation:
+  Enabled: false
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: false
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: false
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+Layout/FirstParameterIndentation:
+  EnforcedStyle: consistent
+Style/GuardClause:
+  Enabled: false
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+  Severity: error
+Style/IfUnlessModifier:
+  Enabled: false
+Layout/IndentationWidth:
+  Severity: error
+Style/ModuleFunction:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+Style/MultilineTernaryOperator:
+  Severity: error
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%q": "{}"
+    "%Q": "{}"
+    "%r": "!!"
+    "%s": "()"
+    "%w": "()"
+    "%W": "()"
+    "%x": "()"
+Style/RedundantReturn:
+  Enabled: false
+Style/RedundantSelf:
+  Enabled: false
+Style/RegexpLiteral:
+  EnforcedStyle: percent_r
+Style/RescueModifier:
+  Enabled: false
+Style/SignalException:
+  EnforcedStyle: only_raise
+Style/SingleLineMethods:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+Style/RedundantCapitalW:
+  Enabled: false

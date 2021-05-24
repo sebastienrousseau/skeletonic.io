@@ -1,0 +1,27 @@
+---
+layout: compress
+---
+    
+<!DOCTYPE html>
+    <html lang="{{ page.lang | default: site.lang | default: "en" }}" itemscope itemtype="http://schema.org/WebPage">
+
+    {% include head.html %}
+
+    <body itemscope itemtype="http://schema.org/WebPage">
+        
+        <main class="container center text-center">
+        
+        {% include navigation.html %}
+        
+        {% include header.html %}
+        
+        {{ content }}  
+
+        {% include footer-category.html %}   
+              
+        {% include footer.html %}
+
+        </main>
+
+    </body>
+</html>

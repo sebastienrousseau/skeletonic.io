@@ -1,0 +1,31 @@
+---
+// layout: none
+layout: compress
+permalink: /tags.json
+---
+[
+    {
+        "status": "ok",
+        "code": 200,
+        "message": "The request succeeded.",
+        "data": [
+            {
+                "results": [
+                    {% for page in site.pages %}
+                        {% if page.categories contains 'skeletonic' %}
+                    {
+                        "authors": "{{ page.author | escape }}",
+                        "date": "{{ page.date }}",
+                        "id" : "{{ page.id }}",
+                        "image": "{{ page.image | escape }}",
+                        "tags": "{{ page.tags | array_to_sentence_string | uniq }}",
+                        "subtitle": "{{ subpage[0].subtitle | escape }}",
+                        "title": "{{ page.title | escape }}",
+                        "url": "{{ page.url }}"
+                    }{% if forloop.last %}{% else %},{% endif %}
+                    {% endif %}{% endfor %}                
+                ]
+            }
+        ]
+    }
+]
