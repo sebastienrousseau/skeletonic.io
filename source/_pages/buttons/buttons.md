@@ -1,20 +1,20 @@
 ---
 layout: page
 id: 99ccf654-cec627f7ac5d-0579-924a-cec627f7ac5d
-title: Button Groups
-subtitle: Simply designed to fit your cascading web life.
-description: A lightweight, intuitive, accessible and ultra-responsive CSS Framework to streamline your Digital and Mobile Web development needs.
-keywords: button-groups, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
-image: /assets/images/backgrounds/bg-button-groups.png
+title: Buttons
+subtitle:  Unique, styled and responsive CSS for buttons, href and input elements.
+description: Modern CSS button styling options you can use to make user interaction even more engaging. 
+keywords: buttons, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
+image: /assets/images/backgrounds/bg-buttons.png
 author: Sebastien Rousseau
-permalink: /button-groups.html
+permalink: /buttons.html
 categories: [components]
-section: button-groups
-tags: [button-groups, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic]
+section: buttons
+tags: [buttons, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic]
 status: publish
 type: page
 published: true
-meta: {button-groups, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
+meta: {buttons, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
 date: May 25, 2021
 robots: all
 ---
@@ -33,14 +33,28 @@ robots: all
     </div>
     <div class="flex-8" markdown="1"> 
 
-### Buttons
+### Button Styles
+
+Skeletonic CSS v{{ site.version | escape }} provides different styles of buttons:
 
 ##### Default buttons style
 
 [Download skeletonic.css](https://github.com/sebastienrousseau/skeletonic/archive/refs/tags/v{{ site.version | escape }}.zip){:target="_blank" rel="nofollow" title="a link to download skeletonic.css" class="button primary"}                        
+
 #### Button states
 
-Multiple buttons states.
+Skeletonic CSS has the following classes for multiple buttons states. The button classes can be used on an &lt;a&gt;, &lt;button&gt;, or &lt;input&gt; element.
+
+<ul class="disc">
+    <li>.primary</li>
+    <li>.secondary</li>
+    <li>.active</li>
+    <li>.success</li>
+    <li>.info</li>
+    <li>.warning</li>
+    <li>.danger</li>
+    <li>.link</li>
+</ul>
 
 <button type="button" class="primary">Primary</button>
 <button type="button" class="secondary">Secondary</button>
@@ -58,7 +72,18 @@ Multiple buttons states.
 
 #### Outline Button states
 
-Multiple buttons states.
+Skeletonic CSS has the following classes for multiple outline buttons states. The button classes can be used on an &lt;a&gt;, &lt;button&gt;, or &lt;input&gt; element.
+
+<ul class="disc">
+    <li>.primary-outline</li>
+    <li>.secondary-outline</li>
+    <li>.success-outline</li>
+    <li>.info-outline</li>
+    <li>.warning-outline</li>
+    <li>.danger-outline</li>
+    <li>.link-outline</li>
+</ul>
+
 
 <button type="button" class="primary-outline">Primary Outline</button>
 <button type="button" class="secondary-outline">Secondary Outline</button>
@@ -71,7 +96,7 @@ Multiple buttons states.
 
 #### Button Groups
 
-Group multiple buttons together on a single line.
+Skeletonic CSS allows you to group multiple buttons together on a single line. Use an element of your choice with class *.button-group* to create a button group:
 
 <p class="button-group">
     <button class="active">Button 0</button>

@@ -700,28 +700,7 @@ code.error {
     float: right;
 }
 
-
-
-/* TEST */
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
+.button:link, .button:visited, [type=submit]:link, [type=submit]:visited, button:link, button:visited {
+    display: inline-block;
+    min-width:27rem;
 }
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-

@@ -1,8 +1,8 @@
 ---
 layout: compress
-permalink: /button-groups.json
+permalink: /buttons.json
 ---
-{% assign subpage = site.pages | where: 'section', 'button-groups' %}
+{% assign subpage = site.pages | where: 'section', 'buttons' %}
 [
     {
         "status": "ok",
