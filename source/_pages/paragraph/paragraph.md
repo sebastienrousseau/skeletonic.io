@@ -21,15 +21,15 @@ robots: all
 
 <!-- Paragraph -->
 <section class="grid-flex text-left">
-    <div class="flex-4">
+    <div class="flex-3">
         <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="nav"> 
+            <ul class="disc"> 
                 <li><a href="#{{' Paragraph - HTML p tag' | downcase | replace: ' ', '-' }}">Paragraph - HTML p tag</a></li>
                 <li><a href="#{{'Example' | downcase | replace: ' ', '-' }}">Example</a></li>
             </ul> 
         </nav>
     </div>
-    <div class="flex-8" markdown="1"> 
+    <div class="flex-9" markdown="1"> 
 
 #### Paragraph - HTML p tag
                 

@@ -604,8 +604,15 @@ button.warning-outline:hover,
 }
 
 
+input[type=email], input[type=file], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+    padding:1.62rem 0 1.62rem 0.66rem;
+}
 
 
+.input-primary[type=email], .input-primary[type=file], .input-primary[type=number], .input-primary[type=password], .input-primary[type=search], .input-primary[type=tel], .input-primary[type=text], .input-primary[type=url], select.input-primary, textarea.input-primary {
+    border-color: #0047dd;
+    background: #c6cdff;
+}
 .input-primary[type=email], .input-primary[type=file], .input-primary[type=number], 
 .input-primary[type=password], .input-primary[type=search], .input-primary[type=tel], .input-primary[type=text], 
 .input-primary[type=url], select.input-primary, textarea.input-primary {
@@ -717,3 +724,37 @@ code.error {
     min-width:27rem;
 }
 
+
+
+
+/* test */
+.submenu
+{
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--border-color);
+}
+.submenu li
+{
+    margin-bottom: 0;
+    padding: 20px 10px;
+    list-style: none;
+    cursor: pointer;
+    color: var(--color);
+    border-bottom: 1px solid var(--border-color-500);
+    background: var(--background-color-100);
+}
+.submenu li a
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color);
+}
+.submenu li:hover
+{
+    background: var(--background-color-700);
+}
+.submenu li:hover a
+{
+    color: var(--inverted-color);
+}

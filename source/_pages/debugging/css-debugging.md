@@ -21,16 +21,16 @@ robots: all
 
 <!-- Debugging -->
 <section class="grid-flex text-left">
-    <div class="flex-4">
+    <div class="flex-3">
         <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="nav"> 
+            <ul class="disc"> 
                 <li><a href="#{{page.title | downcase | replace: ' ', '-' }}">{{page.title}}</a></li>
                 <li><a href="#{{'Image baseline grid' | downcase | replace: ' ', '-' }}">Image baseline grid</a></li>
                 <li><a href="#{{'CSS baseline grid' | downcase | replace: ' ', '-' }}">CSS baseline grid</a></li>        
             </ul> 
         </nav>
     </div>
-    <div class="flex-8" markdown="1">
+    <div class="flex-9" markdown="1">
 
 #### {{ page.title }}
 

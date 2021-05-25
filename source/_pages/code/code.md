@@ -21,9 +21,9 @@ robots: all
 
 <!-- Code -->
 <section class="grid-flex text-left">
-    <div class="flex-4">
+    <div class="flex-3">
     <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-        <ul class="nav"> 
+        <ul class="disc"> 
             <li><a href="#{{'HTML Code Element' | downcase | replace: ' ', '-' }}">HTML Code Element</a></li>
             <li><a href="#{{'Code block' | downcase | replace: ' ', '-' }}">Code block</a></li>
             <li><a href="#{{'Code block colours' | downcase | replace: ' ', '-' }}">Code block colours</a></li>
@@ -31,7 +31,7 @@ robots: all
         </ul> 
     </nav>
 </div>
-<div class="flex-8" markdown="1">
+<div class="flex-9" markdown="1">
 
 ### {{ page.title }}
 {{ page.description }}

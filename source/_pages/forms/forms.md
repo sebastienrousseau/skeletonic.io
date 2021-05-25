@@ -21,9 +21,9 @@ robots: all
 
 <!-- Forms -->
 <section class="grid-flex text-left">
-    <div class="flex-4">
+    <div class="flex-3">
         <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="nav"> 
+            <ul class="disc"> 
                 <li><a href="#{{'Forms' | downcase | replace: ' ', '-' }}">Forms</a></li>
                 <li><a href="#{{'Input' | downcase | replace: ' ', '-' }}">Input</a></li>
                 <li><a href="#{{'Textarea' | downcase | replace: ' ', '-' }}">Textarea</a></li>
@@ -37,7 +37,7 @@ robots: all
             </ul> 
         </nav>
     </div>
-    <div class="flex-8" markdown="1"> 
+    <div class="flex-9" markdown="1"> 
 
 #### Forms
 
@@ -84,8 +84,8 @@ Form elements are different types of input elements, like text fields, checkboxe
 </section>
 
 <section class="grid-flex text-left">
-<div class="flex-4"></div>
-<div class="flex-8">
+<div class="flex-3"></div>
+<div class="flex-9">
 <h4 id="select">Select</h4> 
 <label for="select">Select</label>
 <select name="select" id="select">

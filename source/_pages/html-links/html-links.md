@@ -20,15 +20,15 @@ robots: all
 ---
 <!-- HTML Links -->
 <section class="grid-flex text-left">
-    <div class="flex-4">
+    <div class="flex-3">
         <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="nav"> 
+            <ul class="disc"> 
                 <li><a href="#{{'HTML Links - Hyperlinks' | downcase | replace: ' ', '-' }}">HTML Links - Hyperlinks</a></li>
                 <li><a href="#{{'Link Hover Effects' | downcase | replace: ' ', '-' }}">Link Hover Effects</a></li>
             </ul> 
         </nav>
     </div>
-    <div class="flex-8" markdown="1"> 
+    <div class="flex-9" markdown="1"> 
 
 #### HTML Links - Hyperlinks
 

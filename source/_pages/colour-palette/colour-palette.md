@@ -21,9 +21,9 @@ robots: all
 
 <!-- Tachyons Colour Palette -->
 <section class="grid-flex text-left">
-    <div class="flex-4">
+    <div class="flex-3">
     <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-        <ul class="nav"> 
+        <ul class="disc"> 
             <li><a href="#{{'Colour Variables' | downcase | replace: ' ', '-' }}">Colour Variables</a></li>
             <li><a href="#{{'Colour Styles available' | downcase | replace: ' ', '-' }}">Colour Styles available</a></li>      
             <li><a href="#{{'Material Design colours' | downcase | replace: ' ', '-' }}">Material Design colours</a></li>
@@ -33,7 +33,7 @@ robots: all
         </ul> 
     </nav>
 </div>
-<div class="flex-8" markdown="1">
+<div class="flex-9" markdown="1">
 
 ### {{ page.title }}
 {{ page.description }}

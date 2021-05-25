@@ -21,9 +21,9 @@ robots: all
 
 <!-- Getting started -->
 <section class="grid-flex text-left">
-    <div class="flex-4">
+    <div class="flex-3">
         <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="nav"> 
+            <ul class="disc"> 
                 <li><a href="#{{'Intro' | downcase | replace: ' ', '-' }}">Intro</a></li>
                 <li><a href="#{{'Download and install' | downcase | replace: ' ', '-' }}">Download and install</a></li>
                 <li><a href="#{{'Whats included' | downcase | replace: ' ', '-' }}">Whats included</a></li>
@@ -32,7 +32,7 @@ robots: all
             </ul> 
         </nav>
     </div>
-    <div class="flex-8" markdown="1">
+    <div class="flex-9" markdown="1">
 
 #### Intro 
 
