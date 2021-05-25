@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {blurreddivider, css, dasheddivider, divider, dotteddivider, doubledivider, framework, front-end, frontend, gridsystem, hiddendivider, horizontaldivider, horizontalrule, icondivider, lightweight, mobile-first, skeletonic, skeletonic.css, smalldivider, soliddivider, standarddivider, verticaldivider}
-date: May 25, 2021
+date: 2021-05-25T18:45:18.063Z
 robots: all
 ---
 
