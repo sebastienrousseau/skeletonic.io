@@ -162,7 +162,7 @@ hr.hr-icon::before, hr.hr-icon::after {
 }
 
 hr.hr-icon::before {
-    right: calc(50% +(50px / 2));
+    right: calc(50% + 25px);
     width:100%;
 }
 
@@ -454,11 +454,12 @@ ul.footer-category {
 
 :root {
 --hsla-percent: 0%;
+--hsla-percent-60: 60%;
 }
 
 .card {
-  box-shadow: 0 3px 9px 0 hsla(0, 0%, var(--hsla-percent), 0.3);
-  transition: 0.3s;
+  box-shadow: 0px 3px 9px 0px var(--background-color-200);
+  transition: 0.30s;
   border-radius: 1rem;
 }
 .card img {
@@ -643,45 +644,52 @@ button.warning-outline:hover,
 }
 
 
-code, code.primary, code.secondary, code.success, code.info, code.warning, code.error {
+code.primary, code.secondary, code.success, code.info, code.warning, code.error {
     border: 0;
     margin-top: 0;
     position: relative;
 }
 
-code {    
-    border-left: .3rem solid var(--color);
+code, pre {
+    background-color: var(--background-color-100);
+    border-left: .3rem solid var(--border-color-300);
+    box-shadow: 0px 12px 30px -9px var(--background-color-200);
     color: var(--color);
-    background: var(--background-color-100);
-}    
+}   
 
 code.primary {    
     border-left: .3rem solid #0047dd;
+    box-shadow: 0px 12px 30px -9px var(--background-color-200);
     color: #0047dd;
     background: #c6cdff;    
 }    
 code.secondary {    
     border-left: .3rem solid #0057a8;
+    box-shadow: 0px 12px 30px -9px var(--background-color-200);
     color: #0057a8;
     background: #a9d2ff;   
 }    
 code.success {    
     border-left: .3rem solid #2e6430;
+    box-shadow: 0px 12px 30px -9px var(--background-color-200);
     border-color: #2e6430;
     background: #a5dfa2;
 }    
 code.info {    
     border-left: .3rem solid #0057a8;
+    box-shadow: 0px 12px 30px -9px var(--background-color-200);
     color: #0057a8;
     background: #a9d2ff;
 }    
 code.warning {    
     border-left: .3rem solid #993900;
+    box-shadow: 0px 12px 30px -9px var(--background-color-200);
     color: #993900;
     background: #ffc286;
 }    
 code.error {    
     border-left: .3rem solid #b2081a;
+    box-shadow: 0px 12px 30px -9px var(--background-color-200);
     color: #b2081a;
     background: #ffc0ad;
 }
@@ -704,3 +712,4 @@ code.error {
     display: inline-block;
     min-width:27rem;
 }
+

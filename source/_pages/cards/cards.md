@@ -3,7 +3,7 @@ layout: page
 key: 679d8cdb-687a1cfd870f-019a-44ff-687a1cfd870f
 title: CSS Cards
 subtitle: Responsive, flexible containers for your page's contents
-description: CSS Cards provide a convenient Flexbox Layout that help you present your information.
+description: CSS cards provide convenient flexbox layouts for different types of content like title, images etc.
 keywords: card layout, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css
 image: /assets/images/backgrounds/bg-cards.png
 author: Sebastien Rousseau
@@ -24,7 +24,6 @@ robots: all
     <div class="flex-4">
         <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
             <ul class="nav"> 
-                <li><a href="#{{'Cards' | downcase | replace: ' ', '-' }}">Cards</a></li>
                 <li><a href="#{{'Basic syntax' | downcase | replace: ' ', '-' }}">Basic syntax</a></li>
                 <li><a href="#{{'Image Card' | downcase | replace: ' ', '-' }}">Image Card</a></li>
                 <li><a href="#{{'Card colours' | downcase | replace: ' ', '-' }}">Card colours</a></li>
@@ -34,9 +33,8 @@ robots: all
     </div>
     <div class="flex-8" markdown="1">     
 
-#### Cards
-
-Cards are a convenient means of displaying content composed of different types of content like title, content, images etc. 
+### {{ page.title }}
+{{ page.description }}
 
 #### Basic syntax
 

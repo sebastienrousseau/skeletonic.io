@@ -2,8 +2,8 @@
 layout: page
 key: 4bfb70db-b36ffe5c8951-af4b-3083-b36ffe5c8951
 title: Code
-subtitle: Simply designed to fit your cascading web life.
-description: A lightweight, intuitive, accessible and ultra-responsive CSS Framework to streamline your Digital and Mobile Web development needs.
+subtitle: CSS styling for code and pre text
+description: Skeletonic CSS provides styling for inline code tags to display code snippet into the web browser.
 keywords: code, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
 image: /assets/images/backgrounds/bg-code.png
 author: Sebastien Rousseau
@@ -24,7 +24,6 @@ robots: all
     <div class="flex-4">
     <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
         <ul class="nav"> 
-            <li><a href="#{{page.title | downcase | replace: ' ', '-' }}">{{page.title}}</a></li>
             <li><a href="#{{'HTML Code Element' | downcase | replace: ' ', '-' }}">HTML Code Element</a></li>
             <li><a href="#{{'Code block' | downcase | replace: ' ', '-' }}">Code block</a></li>
             <li><a href="#{{'Code block colours' | downcase | replace: ' ', '-' }}">Code block colours</a></li>
@@ -34,9 +33,8 @@ robots: all
 </div>
 <div class="flex-8" markdown="1">
 
-#### {{ page.title }}
-
- The HTML &lt;code&gt; element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code.
+### {{ page.title }}
+{{ page.description }}
 
 #### HTML Code Element
 

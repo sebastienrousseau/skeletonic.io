@@ -3,7 +3,7 @@ layout: page
 key: 05d3428d-76581293113a-5a29-0a37-76581293113a
 title: Colour Palette
 subtitle: Simply designed to fit your cascading web life.
-description: It comes with a basic set of custom properties, sometimes referred to as CSS variables or cascading variables.
+description: Skeletonic CSS comes with a basic set of custom properties, sometimes referred to as CSS variables or cascading variables.
 keywords: colour-palette, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
 image: /assets/images/backgrounds/background-colour-palette.png
 author: Sebastien Rousseau
@@ -24,7 +24,6 @@ robots: all
     <div class="flex-4">
     <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
         <ul class="nav"> 
-            <li><a href="#{{page.title | downcase | replace: ' ', '-' }}">{{page.title}}</a></li>
             <li><a href="#{{'Colour Variables' | downcase | replace: ' ', '-' }}">Colour Variables</a></li>
             <li><a href="#{{'Colour Styles available' | downcase | replace: ' ', '-' }}">Colour Styles available</a></li>      
             <li><a href="#{{'Material Design colours' | downcase | replace: ' ', '-' }}">Material Design colours</a></li>
@@ -36,8 +35,8 @@ robots: all
 </div>
 <div class="flex-8" markdown="1">
 
-#### {{ page.title }}
-It comes with a basic set of custom properties, sometimes referred to as CSS variables or cascading variables.
+### {{ page.title }}
+{{ page.description }}
 
 #### Colour Variables
 

@@ -26,9 +26,9 @@ robots: all
 <div class="card flex-1 padding-3" markdown="1">        
 
 #### Accelerates cross browser development 
-{: role="heading" }
+
 <figure>
-    <img src="assets/images/image-icon/thunder.min.svg" role="presentation" alt="Icon representing a lightning strike" width="583" height="438" class="icon" />
+    <img src="assets/images/image-icon/thunder.min.svg" alt="Icon representing a lightning strike" width="583" height="438" class="icon" />
 </figure>
 
 Start designing and customising **responsive web interfaces**.
@@ -41,10 +41,10 @@ All you have to do is **drop Skeletonic CSS into your project**, we will provide
 <div class="card flex-1 padding-3" markdown="1">        
 
 #### Improves page rendering speed and reduces load times
-{: role="heading" }
+
 
 <figure>
-    <img src="assets/images/image-icon/lightweight.min.svg" role="presentation" alt="Icon representing a lightweight feather" width="583" height="438" class="icon"  />
+    <img src="assets/images/image-icon/lightweight.min.svg" alt="Icon representing a lightweight feather" width="583" height="438" class="icon"  />
 </figure>
 
 Skeletonic CSS minimalist CSS framework is specially designed for better performance and higher productivity.
@@ -57,9 +57,9 @@ It comes with a small footprint, all in just **~2kb (minified + gzipped)**.
 <div class="card flex-1 padding-3" markdown="1">        
 
 #### Delivers highly responsive user experience
-{: role="heading" }
+
 <figure>
-    <img src="assets/images/image-icon/responsive.min.svg" role="presentation" alt="Icon representing a variety of device screen sizes and break points for responsive design" width="583" height="438" class="icon"  />
+    <img src="assets/images/image-icon/responsive.min.svg" alt="Icon representing a variety of device screen sizes and break points for responsive design" width="583" height="438" class="icon"  />
 </figure>
 
 All components are **crafted with both desktop and mobile** in mind and work on different devices and screen size. 
@@ -75,9 +75,9 @@ We provide **mobile-friendly, touch optimised CSS styles** using the full range 
 <div class="card flex-1 padding-3" markdown="1">        
 
 #### Builds a better accessible with the [WCAG 2.2 standard](https://www.w3.org/WAI/WCAG22/Understanding/) 
-{: role="heading" }
+
 <figure>
-    <img src="assets/images/image-icon/accessibility.min.svg" role="presentation" alt="Icon representing CSS as a mean to support low vision, visual impairment" width="583" height="438" class="icon"  />
+    <img src="assets/images/image-icon/accessibility.min.svg" alt="Icon representing CSS as a mean to support low vision, visual impairment" width="583" height="438" class="icon"  />
 </figure>
 
 Skeletonic CSS aims to help you create **robust high-quality accessible websites** for better user experiences for everyone.
@@ -88,9 +88,9 @@ We specifically looked at techniques to improve **text readability**, make your 
 <div class="card flex-1 padding-3" markdown="1">     
 
 ####  Helps to create visual and functional consistency
-{: role="heading" }
+
 <figure>
-<img src="assets/images/image-icon/components.min.svg" role="presentation" alt="Icon representing a component library" width="583" height="438" class="icon" />
+<img src="assets/images/image-icon/components.min.svg" alt="Icon representing a component library" width="583" height="438" class="icon" />
 </figure>
 
 Skeletonic CSS library provides a collection of **modular css components and mixins** made with Stylus.
@@ -101,9 +101,9 @@ Dive in our open-source code base, and enjoy **clean, modularised Stylus compone
 <div class="card flex-1 padding-3" markdown="1">     
 
 #### Free. Open source. Supported.
-{: role="heading" }
+
 <figure>
-    <img src="assets/images/image-icon/github.min.svg" role="presentation" alt="Icon representing a development robot" width="583" height="438" class="icon"  />
+    <img src="assets/images/image-icon/github.min.svg" alt="Icon representing a development robot" width="583" height="438" class="icon"  />
 </figure>
 
 **Skeletonic CSS** is designed, built and maintained by [Sebastien Rousseau](https://github.com/sebastienrousseau). Source code licensed under the **[MIT License](https://opensource.org/licenses/MIT)**. 

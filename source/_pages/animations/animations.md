@@ -2,8 +2,8 @@
 layout: page
 key: eefdb072-370352a6742e-200a-170d-370352a6742e
 title: Animations and Transitions
-subtitle: A CSS library of ready-to-use, cross-browser transitions and animations.
-description: With Skeletonic it's easy to animate over a hundred objects at a time.
+subtitle: A suite of Transitions and Animations to focus visitors attention on what's important.
+description: Skeletonic CSS library provides ready-to-use, cross-browser transitions, transformations, and animations.
 keywords: animations, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
 image: /assets/images/backgrounds/bg-animations.png
 author: Sebastien Rousseau
@@ -43,6 +43,9 @@ robots: all
         </nav>
     </div>
     <div class="flex-8" markdown="1"> 
+
+### {{ page.title }}
+{{ page.description }}
 
 #### Installation and usage
 
@@ -112,7 +115,6 @@ The Fade in animation allows you to fade content.
     </label>
     <button class="fade-in button primary padding-2">Fade in animation</button>
   </li>
-  
 </ul>
 
 #### Fade out

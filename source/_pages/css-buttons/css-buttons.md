@@ -1,15 +1,15 @@
 ---
 layout: page
 key: 99ccf654-cec627f7ac5d-0579-924a-cec627f7ac5d
-title: Buttons
-subtitle:  Unique, styled and responsive CSS for buttons, href and input elements.
-description: Modern CSS button styling options you can use to make user interaction even more engaging. 
+title: CSS Buttons
+subtitle:  Unique, styled and responsive CSS for buttons, href attributes and input elements.
+description: A suite of modern button styling options you can use to make user interaction even more engaging. 
 keywords: buttons, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
-image: /assets/images/backgrounds/bg-buttons.png
+image: /assets/images/backgrounds/bg-css-buttons.png
 author: Sebastien Rousseau
-permalink: /buttons.html
+permalink: /css-buttons.html
 categories: [components]
-section: buttons
+section: css-buttons
 tags: [buttons, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic]
 status: publish
 type: page
@@ -33,7 +33,10 @@ robots: all
     </div>
     <div class="flex-8" markdown="1"> 
 
-### Button Styles
+### {{ page.title }}
+{{ page.description }}
+
+#### Button Styles
 
 Skeletonic CSS v{{ site.version | escape }} provides different styles of buttons:
 
