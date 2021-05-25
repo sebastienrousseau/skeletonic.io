@@ -74,7 +74,7 @@ We provide **mobile-friendly, touch optimised CSS styles** using the full range 
 <section class="grid-flex">
 <div class="card flex-1 padding-3" markdown="1">        
 
-#### Builds a better accessible with the [WCAG 2.2 standard](https://www.w3.org/WAI/WCAG22/Understanding/) 
+#### Builds a better accessible Web with the [WCAG 2.2 standard](https://www.w3.org/WAI/WCAG22/Understanding/) 
 
 <figure>
     <img src="assets/images/image-icon/accessibility.min.svg" alt="Icon representing CSS as a mean to support low vision, visual impairment" width="583" height="438" class="icon"  />
