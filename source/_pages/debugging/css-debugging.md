@@ -20,7 +20,7 @@ robots: all
 ---
 
 <!-- Debugging -->
-<section class="grid-flex text-left">
+<section class="grid-flex text-left">    
     <div class="flex-12" markdown="1">
 
 #### {{ page.title }}
@@ -35,31 +35,31 @@ To begin, set out a base number for your baseline grid.(E.g., 8px/16px/32px/64px
 
 ##### .debug-grid-8                
                 
-<code><pre class="debug-grid-8">.debug-grid-8
+<pre><code class="padding-1 debug-grid-8">.debug-grid-8
 {
     background: transparent url('data:image/gif;base64,encoded_image') repeat top left;
-}</pre></code>
+}</code></pre>
 
 ##### .debug-grid-16
 
-<code><pre class="debug-grid-16">.debug-grid-16
+<pre><code class="padding-1 debug-grid-16">.debug-grid-16
 {
     background: transparent url('data:image/gif;base64,encoded_image') repeat top left;
-}</pre></code>
+}</code></pre>
 
 ##### .debug-grid-32
 
-<code><pre class="debug-grid-32">.debug-grid-32
+<pre><code class="padding-1 debug-grid-32">.debug-grid-32
 {
     background: transparent url('data:image/gif;base64,encoded_image') repeat top left;
-}</pre></code>
+}</code></pre>
 
 ##### .debug-grid-64
 
-<code><pre class="debug-grid-64">.debug-grid-64
+<pre><code class="padding-1 debug-grid-64">.debug-grid-64
 {
     background: transparent url('data:image/gif;base64,encoded_image') repeat top left;
-}</pre></code>
+}</code></pre>
 
 #### CSS baseline grid
 
@@ -67,7 +67,7 @@ We also have a smart, responsive, CSS baseline grid overlay version to fit your 
 
 To use it, you will need to import [skeletonic-debug-mode.css](https://unpkg.com/skeletonic@{{site.version}}/dist/skeletonic-debug-mode.min.css) to display the CSS Grid overlay automatically in your &lt;body&gt; tag.
 
-<code><pre>body
+<pre><code class="padding-1 debug-grid-16">body
 {
     box-sizing: content-box;
     text-overflow: clip;
@@ -77,7 +77,7 @@ To use it, you will need to import [skeletonic-debug-mode.css](https://unpkg.com
     background-clip: border-box;
     background-origin: padding-box;
     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-}</pre></code>
+}</code></pre>
 
 </div></section>
 <!-- End Debugging -->
