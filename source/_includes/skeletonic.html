@@ -404,10 +404,15 @@ code, kbd, pre, samp {
 .card {
     border: 1px solid var(--border-color-300);
 }
+
 .button:link, .button:visited, [type=submit]:link, [type=submit]:visited, button:link, button:visited {
     min-width: 15rem;
 }
 
 a, abbr, address, article, aside, audio, b, blockquote, body, button, caption, cite, code, dd, del, dfn, dl, dt, em, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, select, small, span, strong, sub, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
     word-break: break-word;
+}
+
+button, .button {
+    white-space: nowrap;
 }

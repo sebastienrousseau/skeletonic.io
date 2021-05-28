@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {card layout, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css}
-date: 2021-05-28T17:30:17.262Z
+date: 2021-05-28T20:25:43.291Z
 robots: all
 ---
 
@@ -37,7 +37,7 @@ In order to create a basic card, you will need to:
 
 These are the basic elements that constitute a basic card layout, as we can see from the following example:
 
-<div class=" flex-1">
+<div class=" flex-12">
     <div class="card">
         <div class="card-content">
             <h4>Title</h4> 
@@ -45,7 +45,7 @@ These are the basic elements that constitute a basic card layout, as we can see 
         </div>
     </div>
 </div>
-<div class="flex-1">
+<div class="flex-12">
 <pre><code class="size-full-width">
 &lt;div class=&quot;card&quot;&gt;&#10;    &lt;div class=&quot;card-content&quot;&gt;&#10;        &lt;h4&gt;Title&lt;/h4&gt;&#10;        &lt;p&gt;Lorem ipsum.&lt;/p&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;
 </code></pre>
@@ -55,8 +55,8 @@ These are the basic elements that constitute a basic card layout, as we can see 
 
 In the same way, we can add an image to our card element.
 
-<section class="cards">
-    <div class="card flex-2">
+<section class="cards flex-12">
+    <div class="card flex-4">
         <picture>
             <img src="./assets/images/backgrounds/patrick-tomasso-472279.jpg"
                 alt="Photo by Patrick Tomasso on Unsplash">
@@ -67,7 +67,7 @@ In the same way, we can add an image to our card element.
             <p><button class="info right">Button 1</button></p>
         </div>
     </div>
-    <div class="card flex-2">
+    <div class="card flex-4">
         <div class="card-content text-left">
             <h4>Bottom image</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -78,7 +78,7 @@ In the same way, we can add an image to our card element.
                 alt="Photo by Marion Michele on Unsplash">
         </picture>        
     </div>
-    <div class="card flex-2">
+    <div class="card flex-4">
         <div class="card-content text-left">
             <h4>Center padding</h4>
             <picture>
@@ -96,45 +96,45 @@ In the same way, we can add an image to our card element.
 
 Cards can be used to display specific messages to users. You can use the .warning class to display a yellow warning card or, if you need to display an error message to your users, you can use the .error class to display a red error card.
 
-<section class="cards grid-flex">
-<div class="card primary flex-1 padding-1">
+<section class="cards flex-12 grid-flex">
+<div class="card primary flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="primary">Primary Card</h4>
+        <h4 class="primary">Primary</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
         <p><button class="primary right">Button 4</button></p>            
     </div>            
 </div>
-<div class="card secondary flex-1 padding-1">
+<div class="card secondary flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="secondary">Secondary Card</h4>
+        <h4 class="secondary">Secondary</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
         <button class="secondary right">Button 4</button>
     </div>            
 </div>
-<div class="card success flex-1 padding-1">
+<div class="card success flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="success">Success Card</h4>
+        <h4 class="success">Success</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
         <button class="success right">Button 4</button>
     </div>            
 </div>
-<div class="card info flex-1 padding-1">
+<div class="card info flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="info">Info Card</h4>
+        <h4 class="info">Info</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
         <button class="info right">Button 4</button>
     </div>            
 </div>
-<div class="card warning flex-1 padding-1">
+<div class="card warning flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="warning">Warning Card</h4>
+        <h4 class="warning">Warning</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
         <button class="warning right">Button 4</button>
     </div>            
 </div>
-<div class="card error flex-1 padding-1">
+<div class="card error flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="error">Error Card</h4>
+        <h4 class="error">Error </h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
         <button class="error right">Button 5</button>
     </div>            
@@ -146,7 +146,7 @@ Cards can be used to display specific messages to users. You can use the .warnin
 ```html
 <div class="card error flex-1 padding-1">
     <div class="card-content text-left">
-        <h4 class="error">Error Card</h4>
+        <h4 class="error">Error</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
         <button class="error right">Button 5</button>
     </div>            

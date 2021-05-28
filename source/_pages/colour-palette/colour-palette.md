@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {colour-palette, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-05-28T17:30:17.262Z
+date: 2021-05-28T20:25:43.291Z
 robots: all
 ---
 
@@ -28,7 +28,7 @@ robots: all
 
 #### Colour Variables
 
-Skeletonic CSS v.{{site.version}} provides a set of colour palettes and variables as a way to store information that we want to reuse throughout our stylesheet. These are designed to be harmonious, ensure accessible content, and help create contrast between UI elements.
+Skeletonic CSS v.{{site.version}} pr    ovides a set of colour palettes and variables as a way to store information that we want to reuse throughout our stylesheet. These are designed to be harmonious, ensure accessible content, and help create contrast between UI elements.
 
 
 #### Colour Styles available
@@ -39,7 +39,7 @@ You will need to import <a href="https://unpkg.com/skeletonic@{{site.version}}/d
 
 
 <section class="grid-flex text-left">
-    <div class="card flex-6 padding-3">
+    <div class="flex-6 padding-3">
         <table class="size-full-width">
             <thead>
                 <tr>
@@ -91,7 +91,7 @@ You will need to import <a href="https://unpkg.com/skeletonic@{{site.version}}/d
             </tbody>
         </table>
     </div>
-    <div class="card flex-6 padding-3">
+    <div class="flex-6 padding-3">
         <table class="size-full-width">
             <thead>
                 <tr>
@@ -122,13 +122,13 @@ You will need to import <a href="https://unpkg.com/skeletonic@{{site.version}}/d
 </section>        
     
 <section class="grid-flex text-left">
-    <div class="card flex-6 padding-1" markdown="1">
+    <div class="size-full-width" markdown="1">
 
 ##### Basic colours 
 
 <code>$black = #000000;&#10;$white = #ffffff;&#10;$transparent = rgba(0, 0, 0, 0);&#10;$full-black  = rgba(0, 0, 0, 1);&#10;$dark-black  = rgba(0, 0, 0, 0.87);&#10;$light-black = rgba(0, 0, 0, 0.54);&#10;$min-black   = rgba(0, 0, 0, 0.26);&#10;$faint-black = rgba(0, 0, 0, 0.12);&#10;$full-white  = rgba(255, 255, 255, 1);&#10;$dark-white  = rgba(255, 255, 255, 0.87);&#10;$light-white = rgba(255, 255, 255, 0.54);</code>
 </div>
-<div class="card flex-6 padding-1" markdown="1">
+<div class="size-full-width" markdown="1">
 
 ##### Range of non accent &amp; accent colours
 
