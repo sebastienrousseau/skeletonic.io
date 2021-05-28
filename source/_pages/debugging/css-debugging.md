@@ -20,64 +20,53 @@ robots: all
 ---
 
 <!-- Debugging -->
-<section class="grid-flex text-left">    
-    <div class="flex-12" markdown="1">
+<section class="grid-flex text-left">
+    <div class="flex-12"> 
 
-#### {{ page.title }}
+<h3>{{ page.title }}</h3>
 
-Skeletonic CSS v.{{site.version}} provides a set of debugging tools to help you quickly find and fix your CSS layout issues.
+<p>{{ page.description }}</p>
 
-#### Image baseline grid
+<p>Skeletonic CSS v.{{site.version}} provides a set of debugging tools to help you quickly find and fix your CSS layout issues.</p>
 
-The Image baseline grid allows you to use a defined debugging class on any HTML Tags to enable the grid overlay and identify issues in your UI layer. 
+<h4>Image baseline grid</h4>
 
-To begin, set out a base number for your baseline grid.(E.g., 8px/16px/32px/64px).
+<p>The Image baseline grid allows you to use a defined debugging class on any HTML Tags to enable the grid overlay and identify issues in your UI layer.</p> 
 
-##### .debug-grid-8                
-                
-<pre><code class="padding-1 debug-grid-8">.debug-grid-8
-{
-    background: transparent url('data:image/gif;base64,encoded_image') repeat top left;
-}</code></pre>
+<p>To begin, set out a base number for your baseline grid.(E.g., 8px/16px/32px/64px).</p>
 
-##### .debug-grid-16
+<div class="grid-flex"> 
 
-<pre><code class="padding-1 debug-grid-16">.debug-grid-16
-{
-    background: transparent url('data:image/gif;base64,encoded_image') repeat top left;
-}</code></pre>
+<div class="flex-1"> 
+<h4>.debug-grid-8</h4>
+    
+<code>.debug-grid-8 {&#10;    background: &#10;        transparent &#10;        url(&apos;&#10;            data:image/gif;&#10;            base64,&#10;            encoded_image&apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}</code>
+</div>
+<div class="flex-1"> 
+<h4>.debug-grid-16</h4>
 
-##### .debug-grid-32
+<code>.debug-grid-16 {&#10;    background: &#10;        transparent &#10;        url(&apos;data:image/gif;&#10;            base64,&#10;            encoded_image&apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}</code>
+</div>
+<div class="flex-1"> 
+<h4>.debug-grid-32</h4>
 
-<pre><code class="padding-1 debug-grid-32">.debug-grid-32
-{
-    background: transparent url('data:image/gif;base64,encoded_image') repeat top left;
-}</code></pre>
+<code>.debug-grid-32 {&#10;    background: &#10;        transparent &#10;        url(&apos;data:image/gif;&#10;            base64,&#10;            encoded_image&apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}</code>
+</div>
 
-##### .debug-grid-64
+<div class="flex-1"> 
+<h4>.debug-grid-64</h4>
 
-<pre><code class="padding-1 debug-grid-64">.debug-grid-64
-{
-    background: transparent url('data:image/gif;base64,encoded_image') repeat top left;
-}</code></pre>
+<code>.debug-grid-64 {&#10;    background: &#10;        transparent &#10;        url(&apos;&#10;            data:image/gif;&#10;            base64,&#10;            encoded_image&#10;            &apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}</code>
+</div>
 
-#### CSS baseline grid
+</div>
 
-We also have a smart, responsive, CSS baseline grid overlay version to fit your cascading web life.
+<h4>CSS baseline grid</h4>
 
-To use it, you will need to import [skeletonic-debug-mode.css](https://unpkg.com/skeletonic@{{site.version}}/dist/skeletonic-debug-mode.min.css) to display the CSS Grid overlay automatically in your &lt;body&gt; tag.
+<p>We also have a smart, responsive, CSS baseline grid overlay version to fit your cascading web life.</p>
 
-<pre><code class="padding-1 debug-grid-16">body
-{
-    box-sizing: content-box;
-    text-overflow: clip;
-    border: none;
-    background: linear-gradient(0deg, #fff 2px, rgba(0,0,0,0) 2px), linear-gradient(90deg, #fff 2px, rgba(0,0,0,0) 2px), linear-gradient(0deg, rgba(255,255,255,.298) 1px, rgba(0,0,0,0) 1px), linear-gradient(90deg, rgba(255,255,255,.298) 1px, rgba(0,0,0,0) 1px), rgba(105,105,105,.2);
-    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-}</code></pre>
+<p>To use it, you will need to import [skeletonic-debug-mode.css](https://unpkg.com/skeletonic@{{site.version}}/dist/skeletonic-debug-mode.min.css) to display the CSS Grid overlay automatically in your &lt;body&gt; tag.</p>
 
-</div></section>
+</div>
+</section>
 <!-- End Debugging -->
