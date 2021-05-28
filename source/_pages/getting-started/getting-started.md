@@ -15,24 +15,13 @@ status: publish
 type: page
 published: true
 meta: { CSS, deadon, framework, front-end, frontend, gettingstarted, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography }
-date: 2021-05-25T18:45:18.063Z
+date: 2021-05-28T17:30:17.262Z
 robots: all
 ---
 
 <!-- Getting started -->
 <section class="grid-flex text-left">
-    <div class="flex-3">
-        <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="disc"> 
-                <li><a href="#{{'Intro' | downcase | replace: ' ', '-' }}">Intro</a></li>
-                <li><a href="#{{'Download and install' | downcase | replace: ' ', '-' }}">Download and install</a></li>
-                <li><a href="#{{'Whats included' | downcase | replace: ' ', '-' }}">Whats included</a></li>
-                <li><a href="#{{'Extend' | downcase | replace: ' ', '-' }}">Extend</a></li>
-                <li><a href="#{{'Alternate CDN locations' | downcase | replace: ' ', '-' }}">Alternate CDN locations</a></li>
-            </ul> 
-        </nav>
-    </div>
-    <div class="flex-9" markdown="1">
+    <div class="flex-12" markdown="1">
 
 #### Intro 
 
@@ -60,7 +49,7 @@ Install Skeletonic CSS v{{ site.version | escape }}
 
 <div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-1').innerHTML)" class="button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
 
-<code id="clipboard-1">
+<code class="padding-3" id="clipboard-1">
 npm install skeletonic
 </code>
 
@@ -69,7 +58,7 @@ Install with [Yarn](https://yarnpkg.com/en/package/skeletonic) to get the pre-bu
 
 <div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-2').innerHTML)" class="button-clipboard button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
 
-<code id="clipboard-2">
+<code class="padding-3" id="clipboard-2">
 yarn add skeletonic
 </code>
 
@@ -80,7 +69,7 @@ Clone the main repository to get all source files including build scripts:
 
 <div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-3').innerHTML)" class="button-clipboard button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
 
-<code id="clipboard-3">
+<code class="padding-3" id="clipboard-3">
 git clone https://github.com/sebastienrousseau/skeletonic.git
 </code>
 
@@ -100,8 +89,8 @@ Within the download you'll find all the source files, compiled and minified CSS 
 
 You'll see something like this:
 
-```
-skeletonic-1.2.0
+<pre>
+<code class="padding-2">skeletonic-1.2.1
 ├── skeletonic-animations.css
 ├── skeletonic-animations.css.map
 ├── skeletonic-animations.min.css
@@ -117,41 +106,81 @@ skeletonic-1.2.0
 ├── skeletonic.css
 ├── skeletonic.css.map
 └── skeletonic.min.css
-```
+</code>
+</pre>
 
 Now simply link one of these CSS in your HTML document. In that case, the quickest and easiest way to start using skeletonic is to include a reference to the minified CSS file.
 
-```<link rel="stylesheet" type="text/css" href="skeletonic@{{ site.version | escape }}.min.css" />```
+<code class="padding-2" id="clipboard-4">
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skeletonic@{{ site.version | escape }}.min.css&quot; /&gt;
+</code>
 
-The link consists of just a simple line of HTML code that you will need to put in the ```<head>```  section of your HTML document.
+The link consists of just a simple line of HTML code that you will need to put in the <>&lt;head&gt;</>  section of your HTML document.
 
 Please feel free to grab the latest:
 
-```<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic/dist/skeletonic.min.css" />```
+<code class="padding-2" id="clipboard-5">
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/skeletonic/dist/skeletonic.min.css&quot; /&gt;
+</code>
 
-You can also specify a specific version as per below. The latest version as of today is 1.2.0.
+You can also specify a specific version as per below. The latest version as of today is 1.2.1.
 
-```<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic@1.2.0/dist/skeletonic.min.css" />```
+<code class="padding-2" id="clipboard-6">
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/skeletonic@1.2.1/dist/skeletonic.min.css&quot; /&gt;
+</code>    
 
 #### Extend
 
 We provide a growing library of extensible CSS module files, utilities, themes and components ready to use as is to fit your web needs.
 ##### CSS Debug Mode
-```<link rel="stylesheet" type="text/css" href="skeletonic-debug-mode.min.css" />```
+
+<code class="padding-2" id="clipboard-7">
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skeletonic-debug-mode.min.css&quot; /&gt;
+</code>
 
 ##### CSS Colours
-```<link rel="stylesheet" type="text/css" href="skeletonic-colours.min.css" />```
+
+<code class="padding-2" id="clipboard-8">
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skeletonic-colours.min.css&quot; /&gt;
+</code>    
 
 ##### CSS Animations
-```<link rel="stylesheet" type="text/css" href="skeletonic-animations.min.css" />```
+
+<code class="padding-2" id="clipboard-9">
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skeletonic-animations.min.css&quot; /&gt;
+</code>
 
 #### Alternate CDN locations {#alternate-cdn-locations}
 The following table lists alternate CDN locations where Skeletonic is hosted.
 
-| CDN | URL | HTTPS | Combo |
-|---|---|---|---|
-| [unpkg](https://unpkg.com/) | [https://unpkg.com/skeletonic@1.2.0/dist/skeletonic.min.css](https://unpkg.com/skeletonic@1.2.0/dist/skeletonic.min.css) | Yes | No |
-| [jsDelivr](https://www.jsdelivr.com/) | [https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css](https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css)  | Yes | Yes |
- 
+<table class="size-full-width">
+    <thead>
+        <tr>
+            <th>CDN</th>
+            <th>URL</th>
+            <th>HTTPS</th>
+            <th>Combo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://unpkg.com/">unpkg</a></td>
+            <td><a
+                    href="https://unpkg.com/skeletonic@1.2.1/dist/skeletonic.min.css">https://unpkg.com/skeletonic@1.2.1/dist/skeletonic.min.css</a>
+            </td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.jsdelivr.com/">jsDelivr</a></td>
+            <td><a
+                    href="https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css">https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css</a>
+            </td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+    </tbody>
+</table>
+
 </div></section>
 <!-- End Getting started -->

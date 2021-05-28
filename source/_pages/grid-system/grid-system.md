@@ -15,26 +15,13 @@ status: publish
 type: page
 published: true
 meta: { 12column, columns, container, css, cssflexbox, cssgrid, cssgridsystem, flexbox, framework, front-end, frontend, fullyresponsive, gridsystem, light-weight, mobile-first, modern, responsive, robust, rows, semantic, simplecssgridsystem, skeletonic, skeletonic.css }
-date: 2021-05-25T18:45:18.063Z
+date: 2021-05-28T17:30:17.262Z
 robots: all
 ---
 
 <!-- Grid system -->
 <section class="grid-flex text-left">
-<div class="flex-3">
-    <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-        <ul class="disc"> 
-            <li><a href="#{{page.title | downcase | replace: ' ', '-' }}">{{page.title}}</a></li>
-            <li><a href="#{{'Overview' | downcase | replace: ' ', '-' }}">Overview</a></li>
-            <li><a href="#{{'Container' | downcase | replace: ' ', '-' }}">Container</a></li>        
-            <li><a href="#{{'The Grid system' | downcase | replace: ' ', '-' }}">The Grid system</a></li>
-            <li><a href="#{{'How it works' | downcase | replace: ' ', '-' }}">How it works</a></li>    
-            <li><a href="#{{'Grid options' | downcase | replace: ' ', '-' }}">Grid options</a></li>                                    
-        </ul> 
-    </nav>
-</div>
-<div class="flex-9" markdown="1">
-
+    <div class="flex-12" markdown="1">
 
 #### {{ page.title }}
 
@@ -50,9 +37,9 @@ It is based on a 12-columns fluid grid and constitutes the geometric foundation 
 
 The Container is the main layout element and is required when using the Skeletonic CSS v.{{site.version}} default grid system. The Container provides a means to center and horizontally pad the site’s content. The box-sizing property guarantees that the content box shrinks seamlessly to make space for padding and borders.
 
-<pre>
+<code><pre>
 &lt;style&gt;        &#10;    .container&#10;    {&#10;        position: relative;&#10;        box-sizing: border-box;&#10;        width: 96%;&#10;        margin: 0 auto;&#10;        padding: 0 24.270509831248425 rem;&#10;    }   &#10;&lt;/style&gt;        &#10;&#10;&lt;div class=&quot;container&quot;&gt;&#10;  &lt;!-- Content here --&gt;&#10;&lt;/div&gt;
-        </pre>
+        </pre></code>
         
 #### The Grid system
 
@@ -62,95 +49,95 @@ Skeletonic CSS v.{{site.version}} grid system uses a series of container, rows, 
 </section>
 
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900 flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900 flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-11 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-11 text-center margin-bottom-1">
         <p class="color-black">flex-11</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-2 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-2 text-center margin-bottom-1">
         <p class="color-black">flex-2</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-10 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-10 text-center margin-bottom-1">
         <p class="color-black">flex-10</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-3 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-3 text-center margin-bottom-1">
         <p class="color-black">flex-3</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-9 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-9 text-center margin-bottom-1">
         <p class="color-black">flex-9</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-4 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-4 text-center margin-bottom-1">
         <p class="color-black">flex-4</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-8 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-8 text-center margin-bottom-1">
         <p class="color-black">flex-8</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-5 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-5 text-center margin-bottom-1">
         <p class="color-black">flex-5</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-7 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-7 text-center margin-bottom-1">
         <p class="color-black">flex-7</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-6 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-6 text-center margin-bottom-1">
         <p class="color-black">flex-6</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-6 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-6 text-center margin-bottom-1">
         <p class="color-black">flex-6</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-7 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-7 text-center margin-bottom-1">
         <p class="color-black">flex-7</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-5 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-5 text-center margin-bottom-1">
         <p class="color-black">flex-5</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-8 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-8 text-center margin-bottom-1">
         <p class="color-black">flex-8</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-4 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-4 text-center margin-bottom-1">
         <p class="color-black">flex-4</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-9 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-9 text-center margin-bottom-1">
         <p class="color-black">flex-9</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-3 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-3 text-center margin-bottom-1">
         <p class="color-black">flex-3</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-10 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-10 text-center margin-bottom-1">
         <p class="color-black">flex-10</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-2 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-2 text-center margin-bottom-1">
         <p class="color-black">flex-2</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-11 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-11 text-center margin-bottom-1">
         <p class="color-black">flex-11</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
 </section>
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-12 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-12 text-center margin-bottom-1">
         <p class="color-black">flex-12</p>
     </div>
 </section>
@@ -173,40 +160,40 @@ Flex classes indicate the number of columns you’d like to use out of the possi
 </section>
 
 <section class="grid-flex">
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
-    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center">
+    <div class="background-color-grey-100 border-color-grey-900  flex-1 text-center margin-bottom-1">
         <p class="color-black">flex-1</p>
     </div>
 </section>
@@ -300,7 +287,7 @@ Flex classes indicate the number of columns you’d like to use out of the possi
 </section>
 <section class="grid-flex text-left">
     <row class="flex-10">
-        <pre>
+        <code><pre>
 &lt;section class=&quot;grid-flex&quot;&gt;
     &lt;row class=&quot;background-color-red-100 flex-1&quot;&gt;&lt;p&gt;flex-1&lt;/p&gt;&lt;/row&gt;
     &lt;row class=&quot;background-color-red-100 flex-11&quot;&gt;&lt;p&gt;flex-11&lt;/p&gt;&lt;/row&gt;
@@ -372,7 +359,7 @@ Flex classes indicate the number of columns you’d like to use out of the possi
     &lt;row class=&quot;background-color-lime-100
     flex-12&quot;&gt;&lt;p&gt;flex-12&lt;/p&gt;&lt;/row&gt;
 &lt;/section&gt;
-        </pre>
+        </pre></code>
     </row>
 </section>
 <section class="grid-flex text-left">
@@ -386,9 +373,9 @@ Skeletonic CSS v.{{site.version}} Flexbox Layout aims at providing a more effici
 
 The flex-wrap CSS property sets the direction that lines are stacked. The flex-wrap: wrap property will allow our items to wrap as the parent container shrinks or is constrained.
 
-<pre>
+<code><pre>
 .grid-flex&#10;{&#10;    align-items: center;&#10;    flex-wrap: wrap;&#10;}
-</pre>
+</pre></code>
 
 </div>
 </section>

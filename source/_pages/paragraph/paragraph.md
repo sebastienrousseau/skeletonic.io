@@ -15,21 +15,13 @@ status: publish
 type: page
 published: true
 meta: {css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, paragraph, paragraph, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-05-25T18:45:18.063Z
+date: 2021-05-28T17:30:17.262Z
 robots: all
 ---
 
 <!-- Paragraph -->
 <section class="grid-flex text-left">
-    <div class="flex-3">
-        <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="disc"> 
-                <li><a href="#{{' Paragraph - HTML p tag' | downcase | replace: ' ', '-' }}">Paragraph - HTML p tag</a></li>
-                <li><a href="#{{'Example' | downcase | replace: ' ', '-' }}">Example</a></li>
-            </ul> 
-        </nav>
-    </div>
-    <div class="flex-9" markdown="1"> 
+    <div class="flex-12" markdown="1"> 
 
 #### Paragraph - HTML p tag
                 

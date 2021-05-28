@@ -15,26 +15,19 @@ status: publish
 type: page
 published: true
 meta: {tables, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-05-25T18:45:18.063Z
+date: 2021-05-28T17:30:17.262Z
 robots: all
 ---
 
 <!-- Table -->
 <section class="grid-flex text-left">
-    <div class="flex-3">
-        <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="disc"> 
-                <li><a href="#{{'HTML Tables' | downcase | replace: ' ', '-' }}">HTML Tables</a></li>
-            </ul> 
-        </nav>
-    </div>
-    <div class="flex-9" markdown="1"> 
+    <div class="flex-12" markdown="1"> 
 
 #### HTML Tables
 
 HTML tables allow web developers to arrange data into rows and columns.
 
-<table>
+<table class="size-full-width">
     <thead>
         <tr>
             <th>#</th>
@@ -56,7 +49,7 @@ HTML tables allow web developers to arrange data into rows and columns.
     </tbody>
 </table>
 
-<pre>&lt;table&gt;&#10;&lt;thead&gt;&#10;&lt;tr&gt;&#10;&lt;th&gt;#&lt;/th&gt;&#10;&lt;th&gt;Type&lt;/th&gt;&#10;&lt;th&gt;Source&lt;/th&gt;&#10;&lt;/tr&gt;&#10;&lt;/thead&gt;&#10;&lt;tbody&gt;&#10;&lt;tr&gt;&#10;&lt;td&gt;1&lt;/td&gt;&#10;&lt;td&gt;Original CSS&lt;/td&gt;&#10;&lt;td&gt;skeletonic.css&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;tr&gt;&#10;&lt;td&gt;2&lt;/td&gt;&#10;&lt;td&gt;Minified CSS&lt;/td&gt;&#10;&lt;td&gt;skeletonic.min.css&lt;/td&gt;&#10;&lt;/tr&gt;&#10;&lt;/tbody&gt;&#10;&lt;/table&gt;</pre>
+<pre><code>&lt;table class=&quot;size-full-width&quot;&gt;&#10;    &lt;thead&gt;&#10;        &lt;tr&gt;&#10;            &lt;th&gt;#&lt;/th&gt;&#10;            &lt;th&gt;Type&lt;/th&gt;&#10;            &lt;th&gt;Source&lt;/th&gt;&#10;        &lt;/tr&gt;&#10;    &lt;/thead&gt;&#10;    &lt;tbody&gt;&#10;        &lt;tr&gt;&#10;            &lt;td&gt;1&lt;/td&gt;&#10;            &lt;td&gt;Original CSS&lt;/td&gt;&#10;            &lt;td&gt;skeletonic.css&lt;/td&gt;&#10;        &lt;/tr&gt;&#10;        &lt;tr&gt;&#10;            &lt;td&gt;2&lt;/td&gt;&#10;            &lt;td&gt;Minified CSS&lt;/td&gt;&#10;            &lt;td&gt;skeletonic.min.css&lt;/td&gt;&#10;        &lt;/tr&gt;&#10;    &lt;/tbody&gt;&#10;&lt;/table&gt;</code></pre>
 
 </div>
 </section>

@@ -15,30 +15,14 @@ status: publish
 type: page
 published: true
 meta: {forms, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-05-25T18:45:18.063Z
+date: 2021-05-28T17:30:17.262Z
 robots: all
 ---
 
 <!-- Forms -->
 <section class="grid-flex text-left">
-    <div class="flex-3">
-        <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="disc"> 
-                <li><a href="#{{'Forms' | downcase | replace: ' ', '-' }}">Forms</a></li>
-                <li><a href="#{{'Input' | downcase | replace: ' ', '-' }}">Input</a></li>
-                <li><a href="#{{'Textarea' | downcase | replace: ' ', '-' }}">Textarea</a></li>
-                <li><a href="#{{'Select' | downcase | replace: ' ', '-' }}">Select</a></li>
-                <li><a href="#{{'Input Primary Color' | downcase | replace: ' ', '-' }}">Input Primary Color</a></li>
-                <li><a href="#{{'Input Secondary Color' | downcase | replace: ' ', '-' }}">Input Secondary Color</a></li>
-                <li><a href="#{{'Input Success Color' | downcase | replace: ' ', '-' }}">Input Success Color</a></li>
-                <li><a href="#{{'Input Info Color' | downcase | replace: ' ', '-' }}">Input Info Color</a></li>
-                <li><a href="#{{'Input Warning Color' | downcase | replace: ' ', '-' }}">Input Warning Color</a></li>
-                <li><a href="#{{'Input Error Color' | downcase | replace: ' ', '-' }}">Input Error Color</a></li>                     
-            </ul> 
-        </nav>
-    </div>
-    <div class="flex-9" markdown="1"> 
-
+    <div class="flex-12" markdown="1"> 
+    
 #### Forms
 
 Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
@@ -84,8 +68,7 @@ Form elements are different types of input elements, like text fields, checkboxe
 </section>
 
 <section class="grid-flex text-left">
-<div class="flex-3"></div>
-<div class="flex-9">
+<div class="flex-12">
 <h4 id="select">Select</h4> 
 <label for="select">Select</label>
 <select name="select" id="select">

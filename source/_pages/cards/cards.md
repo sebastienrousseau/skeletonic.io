@@ -15,23 +15,13 @@ status: publish
 type: page
 published: true
 meta: {card layout, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css}
-date: 2021-05-25T18:45:18.063Z
+date: 2021-05-28T17:30:17.262Z
 robots: all
 ---
 
 <!-- Cards -->
 <section class="grid-flex text-left">
-    <div class="flex-3">
-        <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="disc"> 
-                <li><a href="#{{'Basic syntax' | downcase | replace: ' ', '-' }}">Basic syntax</a></li>
-                <li><a href="#{{'Image Card' | downcase | replace: ' ', '-' }}">Image Card</a></li>
-                <li><a href="#{{'Card colours' | downcase | replace: ' ', '-' }}">Card colours</a></li>
-                <li><a href="#{{'Sample code' | downcase | replace: ' ', '-' }}">Sample code</a></li>
-            </ul> 
-        </nav>
-    </div>
-    <div class="flex-9" markdown="1">     
+    <div class="flex-12" markdown="1">     
 
 ### {{ page.title }}
 {{ page.description }}
@@ -56,7 +46,9 @@ These are the basic elements that constitute a basic card layout, as we can see 
     </div>
 </div>
 <div class="flex-1">
-    <pre>&lt;div class=&quot;card&quot;&gt;&#10;    &lt;div class=&quot;card-content&quot;&gt;&#10;        &lt;h4&gt;Title&lt;/h4&gt;&#10;        &lt;p&gt;Lorem ipsum.&lt;/p&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;</pre>
+<pre><code class="size-full-width">
+&lt;div class=&quot;card&quot;&gt;&#10;    &lt;div class=&quot;card-content&quot;&gt;&#10;        &lt;h4&gt;Title&lt;/h4&gt;&#10;        &lt;p&gt;Lorem ipsum.&lt;/p&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;
+</code></pre>
 </div>
 
 #### Image Card

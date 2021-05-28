@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {accessible, cascadingweblife, css, cssframework, framework, front-end, frontend, gridsystem, intuitive, lightweight, mobile-first, mobile-friendly, mobilewebdevelopment, modern, responsive, skeletonic, skeletonic.css, ultra-responsive}
-date: 2021-05-25T18:45:18.063Z
+date: 2021-05-28T17:30:17.262Z
 robots: all
 ---
 

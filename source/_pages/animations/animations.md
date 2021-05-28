@@ -15,34 +15,13 @@ status: publish
 type: page
 published: true
 meta: {animations, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-05-25T18:45:18.063Z
+date: 2021-05-28T17:30:17.262Z
 robots: all
 ---
+
 <!-- Animations -->
 <section class="grid-flex text-left">
-    <div class="flex-3">
-        <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="disc"> 
-                <li><a href="#{{'Installation and usage' | downcase | replace: ' ', '-' }}">Installation and usage</a></li>
-                <li><a href="#{{'Animation styles' | downcase | replace: ' ', '-' }}">Animation styles</a></li>
-                <li><a href="#{{'Bounce' | downcase | replace: ' ', '-' }}">Bounce</a></li>
-                <li><a href="#{{'Chameleon Text' | downcase | replace: ' ', '-' }}">Chameleon Text</a></li>
-                <li><a href="#{{'Chameleon Background' | downcase | replace: ' ', '-' }}">Chameleon Background</a></li>
-                <li><a href="#{{'Fade in' | downcase | replace: ' ', '-' }}">Fade in</a></li>
-                <li><a href="#{{'Fade out' | downcase | replace: ' ', '-' }}">Fade out</a></li>
-                <li><a href="#{{'Flash' | downcase | replace: ' ', '-' }}">Flash</a></li>
-                <li><a href="#{{'Pop In' | downcase | replace: ' ', '-' }}">Pop In</a></li>
-                <li><a href="#{{'Pulse' | downcase | replace: ' ', '-' }}">Pulse</a></li>
-                <li><a href="#{{'Rotation' | downcase | replace: ' ', '-' }}">Rotation</a></li>
-                <li><a href="#{{'Shake' | downcase | replace: ' ', '-' }}">Shake</a></li>
-                <li><a href="#{{'Vanish In' | downcase | replace: ' ', '-' }}">Vanish In</a></li>
-                <li><a href="#{{'Vanish Out' | downcase | replace: ' ', '-' }}">Vanish Out</a></li>
-                <li><a href="#{{'Wobble' | downcase | replace: ' ', '-' }}">Wobble</a></li>
-                <li><a href="#{{'Zoom In' | downcase | replace: ' ', '-' }}">Zoom In</a></li>                
-            </ul> 
-        </nav>
-    </div>
-    <div class="flex-9" markdown="1"> 
+    <div class="flex-12" markdown="1"> 
 
 ### {{ page.title }}
 {{ page.description }}

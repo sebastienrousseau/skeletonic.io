@@ -15,20 +15,12 @@ status: publish
 type: page
 published: true
 meta: {CSS, deadon, framework, front-end, frontend, gridsystem, htmllinks, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography}
-date: 2021-05-25T18:45:18.063Z
+date: 2021-05-28T17:30:17.262Z
 robots: all
 ---
 <!-- HTML Links -->
 <section class="grid-flex text-left">
-    <div class="flex-3">
-        <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="disc"> 
-                <li><a href="#{{'HTML Links - Hyperlinks' | downcase | replace: ' ', '-' }}">HTML Links - Hyperlinks</a></li>
-                <li><a href="#{{'Link Hover Effects' | downcase | replace: ' ', '-' }}">Link Hover Effects</a></li>
-            </ul> 
-        </nav>
-    </div>
-    <div class="flex-9" markdown="1"> 
+    <div class="flex-12" markdown="1"> 
 
 #### HTML Links - Hyperlinks
 

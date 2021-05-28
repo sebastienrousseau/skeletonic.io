@@ -15,23 +15,13 @@ status: publish
 type: page
 published: true
 meta: {buttons, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-05-25T18:45:18.063Z
+date: 2021-05-28T17:30:17.262Z
 robots: all
 ---
 
 <!-- Buttons -->
 <section class="grid-flex text-left">
-    <div class="flex-3">
-        <nav class="nav-page" aria-label="{{page.title}} Navigation"> 
-            <ul class="disc"> 
-                <li><a href="#{{'Default buttons style' | downcase | replace: ' ', '-' }}">Default buttons style</a></li>
-                <li><a href="#{{'Button states' | downcase | replace: ' ', '-' }}">Button states</a></li>
-                <li><a href="#{{'Outline Button states' | downcase | replace: ' ', '-' }}">Outline Button states</a></li>                
-                <li><a href="#{{'Button Groups' | downcase | replace: ' ', '-' }}">Button Groups</a></li>
-            </ul> 
-        </nav>
-    </div>
-    <div class="flex-9" markdown="1"> 
+    <div class="flex-12" markdown="1"> 
 
 ### {{ page.title }}
 {{ page.description }}

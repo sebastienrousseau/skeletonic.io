@@ -9,13 +9,13 @@ layout: compress
 
     <body itemscope itemtype="http://schema.org/WebPage">
         
+        {% include navigation.html %}        
+
         <main class="container center text-center">
         
         {% include navigation.html %}
         
         {% include header.html %}
-        
-        {% include navigation.html %}
         
         {{ content }}  
 
