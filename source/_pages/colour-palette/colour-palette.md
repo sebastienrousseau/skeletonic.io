@@ -35,7 +35,7 @@ Skeletonic CSS v.{{site.version}} pr    ovides a set of colour palettes and vari
 
 The Skeletonic CSS v.{{site.version}} colour variables palette has a smooth range of shadows ranging from brightest to darkest
 
-You will need to import <a href="https://unpkg.com/skeletonic@{{site.version}}/dist/skeletonic.min.css">skeletonic-colours.css</a> to display the colours.
+You will need to import <a href="https://unpkg.com/skeletonic@{{site.version}}/dist/skeletonic.min.css"> skeletonic-colors.css</a> to display the colours.
 
 
 <section class="grid-flex text-left">
@@ -126,13 +126,13 @@ You will need to import <a href="https://unpkg.com/skeletonic@{{site.version}}/d
 
 ##### Basic colours 
 
-<code>$black = #000000;&#10;$white = #ffffff;&#10;$transparent = rgba(0, 0, 0, 0);&#10;$full-black  = rgba(0, 0, 0, 1);&#10;$dark-black  = rgba(0, 0, 0, 0.87);&#10;$light-black = rgba(0, 0, 0, 0.54);&#10;$min-black   = rgba(0, 0, 0, 0.26);&#10;$faint-black = rgba(0, 0, 0, 0.12);&#10;$full-white  = rgba(255, 255, 255, 1);&#10;$dark-white  = rgba(255, 255, 255, 0.87);&#10;$light-white = rgba(255, 255, 255, 0.54);</code>
+<code>$black = #000000;&#10;$white = #ffffff;&#10;$transparent = rgba(0, 0, 0, 0);&#10;$full-black  = rgba(0, 0, 0, 1);&#10;$dark-black  = rgba(0, 0, 0, 0.87);&#10;$lightblack = rgba(0, 0, 0, 0.54);&#10;$min-black   = rgba(0, 0, 0, 0.26);&#10;$faint-black = rgba(0, 0, 0, 0.12);&#10;$full-white  = rgba(255, 255, 255, 1);&#10;$dark-white  = rgba(255, 255, 255, 0.87);&#10;$lightwhite = rgba(255, 255, 255, 0.54);</code>
 </div>
 <div class="size-full-width" markdown="1">
 
 ##### Range of non accent &amp; accent colours
 
-<code>$red-50 to $red-A700;&#10;$pink-50 to $pink-A700;&#10;$purple-50 to $purple-A700;&#10;$deep-purple-50 to $deep-purple-A700;&#10;$indigo-50 to $indigo-A700;&#10;$blue-50 to $blue-A700;&#10;$light-blue-50 to $light-blue-A700;&#10;$cyan-50 to $cyan-A700;&#10;$teal-50 to $teal-A700;&#10;$green-50 to $green-A700;&#10;$light-green-50 to $light-green-A700;&#10;$lime-50 to $lime-A700;&#10;$yellow-50 to $yellow-A700;&#10;$amber-50 to $amber-A700;&#10;$orange-50 to $orange-A700;&#10;$deep-orange-50 to $deep-orange-A700;&#10;$brown-50 to $brown-A700;&#10;$blue-grey-50 to $blue-grey-A700;&#10;$grey-50 to $grey-A700;</code>
+<code>$red-50 to $red-A700;&#10;$pink-50 to $pink-A700;&#10;$purple-50 to $purple-A700;&#10;$deep-purple-50 to $deep-purple-A700;&#10;$indigo-50 to $indigo-A700;&#10;$blue-50 to $blue-A700;&#10;$lightblue-50 to $lightblue-A700;&#10;$cyan-50 to $cyan-A700;&#10;$teal-50 to $teal-A700;&#10;$green-50 to $green-A700;&#10;$lightgreen-50 to $lightgreen-A700;&#10;$lime-50 to $lime-A700;&#10;$yellow-50 to $yellow-A700;&#10;$amber-50 to $amber-A700;&#10;$orange-50 to $orange-A700;&#10;$deep-orange-50 to $deep-orange-A700;&#10;$brown-50 to $brown-A700;&#10;$blue-grey-50 to $blue-grey-A700;&#10;$grey-50 to $grey-A700;</code>
 </div>
 </section>        
 <!-- Material Design colours -->
@@ -168,8 +168,8 @@ The background colours are based on <a href="https://material.io/guidelines/styl
         </p>
         <p class="background-color-green-a700 color-white" style=" padding: 1rem;">.background-color-green-a700
         </p>
-        <p class="background-color-light-green-a700 color-white" style=" padding: 1rem;">
-            .background-color-light-green-a700</p>
+        <p class="background-color-light-green-700 color-white" style=" padding: 1rem;">
+            .background-color-light-green-700</p>
         <p class="background-color-lime-a700 color-white" style=" padding: 1rem;">.background-color-lime-a700
         </p>
     </div>
@@ -270,7 +270,7 @@ The background colours are based on <a href="https://material.io/guidelines/styl
             <li class="color-deeli-purple-a700">Deep Purple</li>
             <li class="color-indigo-a700">Indigo</li>
             <li class="color-blue-a700">Blue</li>
-            <li class="color-light-blue-a700">Light Blue</li>
+            <li class="color-lightblue-a700">Light Blue</li>
         </ul>
     </div>
     <div class="flex-2">
@@ -278,7 +278,7 @@ The background colours are based on <a href="https://material.io/guidelines/styl
             <li class="color-cyan-a700">Cyan</li>
             <li class="color-teal-a700">Teal</li>
             <li class="color-green-a700">Green</li>
-            <li class="color-light-green-a700">Light Green</li>
+            <li class="color-lightgreen-a700">Light Green</li>
         </ul>
     </div>
     <div class="flex-2">
@@ -304,7 +304,7 @@ The background colours are based on <a href="https://material.io/guidelines/styl
 
 #### Tachyons Colour Palette
         
-You will need to import <b>skeletonic-colours.css</b> to display the colours. The background colours are based on the <a href="http://tachyons.io/">Tachyons - CSS Colour palette.
+You will need to import <b> skeletonic-colors.css</b> to display the colours. The background colours are based on the <a href="http://tachyons.io/">Tachyons - CSS Colour palette.
 
 A Palette of Particles.
     
@@ -319,14 +319,14 @@ A Palette of Particles.
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black flex-1 padding-1 color-white margin-bottom-1">
         <p><strong style="color:white">black</strong><br />#000</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-near-black flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong style="color:white">near-black</strong><br />#111</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-nearblack flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong style="color:white">nearblack</strong><br />#111</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-dark-gray flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong style="color:white">dark-gray</strong><br />#333</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-darkgray flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong style="color:white">darkgray</strong><br />#333</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-mid-gray flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong style="color:white">mid-gray</strong><br />#555</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-midgray flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong style="color:white">midgray</strong><br />#555</p>
     </div>
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-gray flex-1 padding-1 color-white margin-bottom-1">
         <p><strong style="color:white">gray</strong><br />#777</p>
@@ -336,111 +336,111 @@ A Palette of Particles.
     </div>
 </section>
 <section class="grid-flex text-left">
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-light-silver flex-1 padding-1 margin-bottom-1">
-        <p><strong>light-silver</strong><br />#aaa</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-lightsilver flex-1 padding-1 margin-bottom-1">
+        <p><strong>lightsilver</strong><br />#aaa</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-moon-gray flex-1 padding-1 margin-bottom-1">
-        <p><strong>moon-gray</strong><br />#ccc</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-moongray flex-1 padding-1 margin-bottom-1">
+        <p><strong>moongray</strong><br />#ccc</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-light-gray flex-1 padding-1 margin-bottom-1">
-        <p><strong>light-gray</strong><br />#eee</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-lightgray flex-1 padding-1 margin-bottom-1">
+        <p><strong>lightgray</strong><br />#eee</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-near-white flex-1 padding-1 margin-bottom-1">
-        <p><strong>near-white</strong><br />#f4f4f4</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-nearwhite flex-1 padding-1 margin-bottom-1">
+        <p><strong>nearwhite</strong><br />#f4f4f4</p>
     </div>
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white flex-1 padding-1 margin-bottom-1">
         <p><strong>white</strong><br />#fff</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-90 flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong style="color:white">black-90</strong><br />rgba(0,0,0,.9)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black90 flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong style="color:white">black90</strong><br />rgba(0,0,0,.9)</p>
     </div>
 </section>
 <section class="grid-flex text-left">
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-80 flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong style="color:white">black-80</strong><br />rgba(0,0,0,.8)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black80 flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong style="color:white">black80</strong><br />rgba(0,0,0,.8)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-70 flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong style="color:white">black-70</strong><br />rgba(0,0,0,.7)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black70 flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong style="color:white">black70</strong><br />rgba(0,0,0,.7)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-60 flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong style="color:white">black-60</strong><br />rgba(0,0,0,.6)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black60 flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong style="color:white">black60</strong><br />rgba(0,0,0,.6)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-50 flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong style="color:white">black-50</strong><br />rgba(0,0,0,.5)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black50 flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong style="color:white">black50</strong><br />rgba(0,0,0,.5)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-40 flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong style="color:white">black-40</strong><br />rgba(0,0,0,.4)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black40 flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong style="color:white">black40</strong><br />rgba(0,0,0,.4)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-30 flex-1 padding-1 margin-bottom-1">
-        <p><strong>black-30</strong><br />rgba(0,0,0,.3)</p>
-    </div>
-</section>
-<section class="grid-flex text-left">
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-20 flex-1 padding-1 margin-bottom-1">
-        <p><strong>black-20</strong><br />rgba(0,0,0,.2)</p>
-    </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-10 flex-1 padding-1 margin-bottom-1">
-        <p><strong>black-10</strong><br />rgba(0,0,0,.1)</p>
-    </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-05 flex-1 padding-1 margin-bottom-1">
-        <p><strong>black-05</strong><br />rgba(0,0,0,.05)</p>
-    </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-025 flex-1 padding-1 margin-bottom-1">
-        <p><strong>black-025</strong><br />rgba(0,0,0,.025)</p>
-    </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black-0125 flex-1 padding-1 margin-bottom-1">
-        <p><strong>black-0125</strong><br />rgba(0,0,0,.0125)</p>
-    </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-90 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-90</strong><br />rgba(255,255,255,.9)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black30 flex-1 padding-1 margin-bottom-1">
+        <p><strong>black30</strong><br />rgba(0,0,0,.3)</p>
     </div>
 </section>
 <section class="grid-flex text-left">
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-80 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-80</strong><br />rgba(255,255,255,.8)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black20 flex-1 padding-1 margin-bottom-1">
+        <p><strong>black20</strong><br />rgba(0,0,0,.2)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-70 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-70</strong><br />rgba(255,255,255,.7)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black10 flex-1 padding-1 margin-bottom-1">
+        <p><strong>black10</strong><br />rgba(0,0,0,.1)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-60 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-60</strong><br />rgba(255,255,255,.6)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black05 flex-1 padding-1 margin-bottom-1">
+        <p><strong>black05</strong><br />rgba(0,0,0,.05)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-50 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-50</strong><br />rgba(255,255,255,.5)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black025 flex-1 padding-1 margin-bottom-1">
+        <p><strong>black025</strong><br />rgba(0,0,0,.025)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-40 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-40</strong><br />rgba(255,255,255,.4)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-black0125 flex-1 padding-1 margin-bottom-1">
+        <p><strong>black0125</strong><br />rgba(0,0,0,.0125)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-30 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-30</strong><br />rgba(255,255,255,.3)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white90 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white90</strong><br />rgba(255,255,255,.9)</p>
     </div>
 </section>
 <section class="grid-flex text-left">
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-20 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-20</strong><br />rgba(255,255,255,.2)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white80 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white80</strong><br />rgba(255,255,255,.8)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-10 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-10</strong><br />rgba(255,255,255,.1)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white70 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white70</strong><br />rgba(255,255,255,.7)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-05 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-05</strong><br />rgba(255,255,255,.05)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white60 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white60</strong><br />rgba(255,255,255,.6)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-025 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-025</strong><br />rgba(255,255,255,.025)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white50 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white50</strong><br />rgba(255,255,255,.5)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white-0125 flex-1 padding-1 margin-bottom-1">
-        <p><strong>white-0125</strong><br />rgba(255,255,255,.013)</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white40 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white40</strong><br />rgba(255,255,255,.4)</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-dark-red flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong>dark-red</strong><br />#e7040f</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white30 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white30</strong><br />rgba(255,255,255,.3)</p>
+    </div>
+</section>
+<section class="grid-flex text-left">
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white20 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white20</strong><br />rgba(255,255,255,.2)</p>
+    </div>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white10 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white10</strong><br />rgba(255,255,255,.1)</p>
+    </div>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white05 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white05</strong><br />rgba(255,255,255,.05)</p>
+    </div>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white025 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white025</strong><br />rgba(255,255,255,.025)</p>
+    </div>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-white0125 flex-1 padding-1 margin-bottom-1">
+        <p><strong>white0125</strong><br />rgba(255,255,255,.013)</p>
+    </div>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-darkred flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong>darkred</strong><br />#e7040f</p>
     </div>
 </section>
 <section class="grid-flex text-left">
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-red flex-1 padding-1 color-white margin-bottom-1">
         <p><strong>red</strong><br />#ff4136</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-light-red flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong>light-red</strong><br />#ff725c</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-lightred flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong>lightred</strong><br />#ff725c</p>
     </div>
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-orange flex-1 padding-1 color-white margin-bottom-1">
         <p><strong>orange</strong><br />#ff6300</p>
@@ -451,68 +451,68 @@ A Palette of Particles.
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-yellow flex-1 padding-1 color-white margin-bottom-1">
         <p><strong>yellow</strong><br />#ffd700</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-light-yellow flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong>light-yellow</strong><br />#fbf1a9</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-lightyellow flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong>lightyellow</strong><br />#fbf1a9</p>
     </div>
 </section>
 <section class="grid-flex text-left">
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-purple flex-1 padding-1 color-white margin-bottom-1">
         <p><strong>purple</strong><br />#5e2ca5</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-light-purple flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong>light-purple</strong><br />#a463f2</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-lightpurple flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong>lightpurple</strong><br />#a463f2</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-dark-pink flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong>dark-pink</strong><br />#d5008f</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-darkpink flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong>darkpink</strong><br />#d5008f</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-hot-pink flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong>hot-pink</strong><br />#ff41b4</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-hotpink flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong>hotpink</strong><br />#ff41b4</p>
     </div>
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-pink flex-1 padding-1 color-white margin-bottom-1">
         <p><strong>pink</strong><br />#ff80cc</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-light-pink flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong>light-pink</strong><br />#ffa3d7</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-lightpink flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong>lightpink</strong><br />#ffa3d7</p>
     </div>
 </section>
 <section class="grid-flex text-left">
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-dark-green flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong>dark-green</strong><br />#137752</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-darkgreen flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong>darkgreen</strong><br />#137752</p>
     </div>
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-green flex-1 padding-1 color-white margin-bottom-1">
         <p><strong>green</strong><br />#19a974</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-light-green flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong>light-green</strong><br />#9eebcf</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-lightgreen flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong>lightgreen</strong><br />#9eebcf</p>
     </div>
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-navy flex-1 padding-1 color-white margin-bottom-1">
         <p><strong style="color:white">navy</strong><br />#001b44</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-dark-blue flex-1 padding-1 color-white margin-bottom-1">
-        <p><strong style="color:white">dark-blue</strong><br />#00449e</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-darkblue flex-1 padding-1 color-white margin-bottom-1">
+        <p><strong style="color:white">darkblue</strong><br />#00449e</p>
     </div>
     <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-blue flex-1 padding-1 margin-bottom-1">
         <p><strong>blue</strong><br />#357edd</p>
     </div>
 </section>
 <section class="grid-flex text-left">
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-light-blue padding-1 flex-1 margin-bottom-1">
-        <p><strong>light-blue</strong><br />#96ccff</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-lightblue padding-1 flex-1 margin-bottom-1">
+        <p><strong>lightblue</strong><br />#96ccff</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-lightest-blue padding-1 flex-1 margin-bottom-1">
-        <p><strong>lightest-blue</strong><br />#cdecff</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-lightestblue padding-1 flex-1 margin-bottom-1">
+        <p><strong>lightestblue</strong><br />#cdecff</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-washed-blue padding-1 flex-1 margin-bottom-1">
-        <p><strong>washed-blue</strong><br />#f6fffe</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-washedblue padding-1 flex-1 margin-bottom-1">
+        <p><strong>washedblue</strong><br />#f6fffe</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-washed-green padding-1 flex-1 margin-bottom-1">
-        <p><strong>washed-green</strong><br />#e8fdf5</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-washedgreen padding-1 flex-1 margin-bottom-1">
+        <p><strong>washedgreen</strong><br />#e8fdf5</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-washed-yellow padding-1 flex-1 margin-bottom-1">
-        <p><strong>washed-yellow</strong><br />#fffceb</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-washedyellow padding-1 flex-1 margin-bottom-1">
+        <p><strong>washedyellow</strong><br />#fffceb</p>
     </div>
-    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-washed-red padding-1 flex-1 margin-bottom-1">
-        <p><strong>washed-red</strong><br />#ffdfdf</p>
+    <div style="border-radius: 1.618rem;border:0.30rem solid black;" class="background-color-tachyons-washedred padding-1 flex-1 margin-bottom-1">
+        <p><strong>washedred</strong><br />#ffdfdf</p>
     </div>
 </section>
     </div>

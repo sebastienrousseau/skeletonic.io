@@ -94,8 +94,8 @@ You'll see something like this:
 ├── skeletonic-animations.css
 ├── skeletonic-animations.css.map
 ├── skeletonic-animations.min.css
-├── skeletonic-colours.css
-├── skeletonic-colours.css.map
+├──  skeletonic-colors.css
+├──  skeletonic-colors.css.map
 ├── skeletonic-colours.min.css
 ├── skeletonic-fonts.css
 ├── skeletonic-fonts.css.map
