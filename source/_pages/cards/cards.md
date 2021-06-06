@@ -21,7 +21,7 @@ robots: all
 
 <!-- Cards -->
 <section class="grid-flex text-left">
-    <div class="flex-12" markdown="1">     
+    <div class="flex-12" markdown="1">
 
 ### {{ page.title }}
 {{ page.description }}
@@ -40,8 +40,8 @@ These are the basic elements that constitute a basic card layout, as we can see 
 <div class=" flex-12">
     <div class="card">
         <div class="card-content">
-            <h4>Title</h4> 
-            <p>Lorem ipsum.</p>
+<h4>Title</h4> 
+<p>Lorem ipsum.</p>
         </div>
     </div>
 </div>
@@ -58,37 +58,37 @@ In the same way, we can add an image to our card element.
 <section class="cards flex-12">
     <div class="card flex-4">
         <picture>
-            <img src="./assets/images/backgrounds/patrick-tomasso-472279.jpg"
-                alt="Photo by Patrick Tomasso on Unsplash">
+<img src="./assets/images/backgrounds/patrick-tomasso-472279.jpg"
+    alt="Photo by Patrick Tomasso on Unsplash">
         </picture>
         <div class="card-content text-left">
-            <h4>Top image</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p><button class="info right">Button 1</button></p>
+<h4>Top image</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><button class="info right">Button 1</button></p>
         </div>
     </div>
     <div class="card flex-4">
         <div class="card-content text-left">
-            <h4>Bottom image</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p><button class="info right">Button 2</button></p>
+<h4>Bottom image</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><button class="info right">Button 2</button></p>
         </div>
         <picture>
-            <img src="./assets/images/backgrounds/marion-michele-457471.jpg"
-                alt="Photo by Marion Michele on Unsplash">
+<img src="./assets/images/backgrounds/marion-michele-457471.jpg"
+    alt="Photo by Marion Michele on Unsplash">
         </picture>        
     </div>
     <div class="card flex-4">
         <div class="card-content text-left">
-            <h4>Center padding</h4>
-            <picture>
-                <img src="./assets/images/backgrounds/fernando-reyes-241702.jpg"
-                     alt="Photo by Fernando Reyes on Unsplash"
-                     class="img-responsive" />
-            </picture>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
-            <p><button class="info right">Button 3</button></p>            
-        </div>            
+<h4>Center padding</h4>
+<picture>
+    <img src="./assets/images/backgrounds/fernando-reyes-241702.jpg"
+         alt="Photo by Fernando Reyes on Unsplash"
+         class="img-responsive" />
+</picture>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><button class="info right">Button 3</button></p>
+        </div>
     </div>
 </section>
 
@@ -99,45 +99,45 @@ Cards can be used to display specific messages to users. You can use the .warnin
 <section class="cards flex-12 grid-flex">
 <div class="card primary flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="primary">Primary</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
-        <p><button class="primary right">Button 4</button></p>            
-    </div>            
+        <h4>Primary</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p><button class="primary right">Button 4</button></p>
+    </div>
 </div>
 <div class="card secondary flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="secondary">Secondary</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
+        <h4>Secondary</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="secondary right">Button 4</button>
-    </div>            
+    </div>
 </div>
 <div class="card success flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="success">Success</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
+        <h4>Success</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="success right">Button 4</button>
-    </div>            
+    </div>
 </div>
 <div class="card info flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="info">Info</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
+        <h4>Info</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="info right">Button 4</button>
-    </div>            
+    </div>
 </div>
 <div class="card warning flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="warning">Warning</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
+        <h4>Warning</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="warning right">Button 4</button>
-    </div>            
+    </div>
 </div>
 <div class="card error flex-2 padding-1">
     <div class="card-content text-left">
-        <h4 class="error">Error </h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
+        <h4>Error </h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="error right">Button 5</button>
-    </div>            
+    </div>
 </div>
 </section>
 
@@ -147,9 +147,9 @@ Cards can be used to display specific messages to users. You can use the .warnin
 <div class="card error flex-1 padding-1">
     <div class="card-content text-left">
         <h4 class="error">Error</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>            
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <button class="error right">Button 5</button>
-    </div>            
+    </div>
 </div>
 ```
 

@@ -7,6 +7,7 @@ gem "image_optim_pack" # Optional
 gem "image_optim"
 gem "jekyll"
 gem "liquid-c"
+gem "rmagick", "~> 4.2"
 gem "webrick"
 
 group :jekyll_plugins do
@@ -21,3 +22,5 @@ group :jekyll_plugins do
   gem "jekyll-tagories"
   gem "rubocop"
 end
+
+
