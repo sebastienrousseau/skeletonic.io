@@ -20,53 +20,38 @@ robots: all
 ---
 
 <!-- Debugging -->
-<section class="grid-flex text-left">
-    <div class="flex-12"> 
 
-<h3>{{ page.title }}</h3>
+### {{ page.title }}
 
-<p>{{ page.description }}</p>
+{{ page.description }}
 
-<p>Skeletonic CSS v.{{site.version}} provides a set of debugging tools to help you quickly find and fix your CSS layout issues.</p>
+Skeletonic CSS v.{{site.version}} provides a set of debugging tools to help you quickly find and fix your CSS layout issues.
 
-<h4>Image baseline grid</h4>
+#### Image baseline grid
 
-<p>The Image baseline grid allows you to use a defined debugging class on any HTML Tags to enable the grid overlay and identify issues in your UI layer.</p> 
+The Image baseline grid allows you to use a defined debugging class on any HTML Tags to enable the grid overlay and identify issues in your UI layer.
 
-<p>To begin, set out a base number for your baseline grid.(E.g., 8px/16px/32px/64px).</p>
+To begin, set out a base number for your baseline grid.(E.g., 8px/16px/32px/64px).
 
-<div class="grid-flex"> 
+#### .debug-grid-8
 
-<div class="flex-1"> 
-<h4>.debug-grid-8</h4>
-    
-<code>.debug-grid-8 {&#10;    background: &#10;        transparent &#10;        url(&apos;&#10;            data:image/gif;&#10;            base64,&#10;            encoded_image&apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}</code>
-</div>
-<div class="flex-1"> 
-<h4>.debug-grid-16</h4>
+`.debug-grid-8 {&#10;    background: &#10;        transparent &#10;        url(&apos;&#10;            data:image/gif;&#10;            base64,&#10;            encoded_image&apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}</code>`
 
-<code>.debug-grid-16 {&#10;    background: &#10;        transparent &#10;        url(&apos;data:image/gif;&#10;            base64,&#10;            encoded_image&apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}</code>
-</div>
-<div class="flex-1"> 
-<h4>.debug-grid-32</h4>
+#### .debug-grid-16
 
-<code>.debug-grid-32 {&#10;    background: &#10;        transparent &#10;        url(&apos;data:image/gif;&#10;            base64,&#10;            encoded_image&apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}</code>
-</div>
+`.debug-grid-16 {&#10;    background: &#10;        transparent &#10;        url(&apos;data:image/gif;&#10;            base64,&#10;            encoded_image&apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}`
 
-<div class="flex-1"> 
-<h4>.debug-grid-64</h4>
+#### .debug-grid-32
 
-<code>.debug-grid-64 {&#10;    background: &#10;        transparent &#10;        url(&apos;&#10;            data:image/gif;&#10;            base64,&#10;            encoded_image&#10;            &apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}</code>
-</div>
+`.debug-grid-32 {&#10;    background: &#10;        transparent &#10;        url(&apos;data:image/gif;&#10;            base64,&#10;            encoded_image&apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}`
 
-</div>
+#### .debug-grid-64
+`.debug-grid-64 {&#10;    background: &#10;        transparent &#10;        url(&apos;&#10;            data:image/gif;&#10;            base64,&#10;            encoded_image&#10;            &apos;) &#10;        repeat &#10;        top &#10;        left;&#10;}`
 
-<h4>CSS baseline grid</h4>
+#### CSS baseline grid
 
-<p>We also have a smart, responsive, CSS baseline grid overlay version to fit your cascading web life.</p>
+We also have a smart, responsive, CSS baseline grid overlay version to fit your cascading web life.
 
-<p>To use it, you will need to import [skeletonic-debug-mode.css](https://unpkg.com/skeletonic@{{site.version}}/dist/skeletonic-debug-mode.min.css) to display the CSS Grid overlay automatically in your &lt;body&gt; tag.</p>
+To use it, you will need to import [skeletonic-debug-mode.css](https://unpkg.com/skeletonic@{{site.version}}/dist/skeletonic-debug-mode.min.css) to display the CSS Grid overlay automatically in your &lt;body&gt; tag.
 
-</div>
-</section>
 <!-- End Debugging -->

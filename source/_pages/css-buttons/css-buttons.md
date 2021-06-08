@@ -32,7 +32,7 @@ Skeletonic CSS v{{ site.version | escape }} provides different styles of buttons
 
 ##### Default buttons style
 
-[Download skeletonic.css](https://github.com/sebastienrousseau/skeletonic/archive/refs/tags/v{{ site.version | escape }}.zip){:target="_blank" rel="nofollow" title="a link to download skeletonic.css" class="button primary"}                        
+<button type="button" class="primary">Default</button>                
 
 #### Button states
 

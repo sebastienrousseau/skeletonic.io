@@ -82,8 +82,8 @@ img.logo, img.icon {
 .promo-content {
     text-align: center;
     padding: 10px 0;
-    background-color: var(--background-color-100);
-    color: var(--color);
+    background-color: var(--cl-grey-100);
+    color: var(--cl-black);
     transition: transform .6s ease-in-out,background-color 1s ease-in-out 1.2s,color 1s ease-in-out 1s;
 }
 
@@ -306,22 +306,45 @@ img.logo, img.icon {
   animation: vanish-out 3s;
 }
 
-.button-clipboard {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 10;
-    display: block;
-    font-size: .65em;
-}
 
-.bd-clipboard {
-    position: relative;
-    float: right;
-}
 
-.button:link, .button:visited, [type=submit]:link, [type=submit]:visited, button:link, button:visited {
+
+
+
+
+
+
+
+
+.color-box {
     display: inline-block;
-    min-width:27rem;
+    position: relative;
+    width: 16rem;
+    max-width: 16rem;
+    height: 16rem;
+    vertical-align: top;
+    border: 3px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.618rem;
+    margin-right: 1.618rem;
 }
+
+.color-box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.color-labels {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 2rem;
+    min-width: 16rem;
+    width: auto;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #FFF;
+    font-size: 1rem;
+}
+
 

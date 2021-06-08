@@ -23,7 +23,7 @@ robots: all
 <section class="grid-flex text-left">
     <div class="flex-12" markdown="1">
 
-#### Intro 
+#### Intro
 
 New to Skeletonic CSS v{{ site.version | escape }}?  In this version, it's now easy to choose and install just the features you need. And because of its reduced minimum footprint, it integrates quickly to your web app.
 
@@ -43,7 +43,7 @@ Skip the download with **[unpkg](https://unpkg.com/skeletonic@{{ site.version | 
 </ul>
 
 ##### Install with Node.js
-You will need [Node.js](https://nodejs.org/en/download/) and [Npm](https://www.npmjs.com/package/skeletonic) to get the pre-built CSS and sourcemaps. 
+You will need [Node.js](https://nodejs.org/en/download/) and [Npm](https://www.npmjs.com/package/skeletonic) to get the pre-built CSS and sourcemaps.
 
 Install Skeletonic CSS v{{ site.version | escape }}
 
@@ -56,7 +56,7 @@ npm install skeletonic
 ##### Install with Yarn
 Install with [Yarn](https://yarnpkg.com/en/package/skeletonic) to get the pre-built CSS and sourcemaps. 
 
-<div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-2').innerHTML)" class="button-clipboard button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
+<div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-2').innerHTML)" class="button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
 
 <code class="padding-3" id="clipboard-2">
 yarn add skeletonic
@@ -67,7 +67,7 @@ yarn add skeletonic
 ##### Clone the GitHub repository
 Clone the main repository to get all source files including build scripts: 
 
-<div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-3').innerHTML)" class="button-clipboard button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
+<div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-3').innerHTML)" class="button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
 
 <code class="padding-3" id="clipboard-3">
 git clone https://github.com/sebastienrousseau/skeletonic.git
