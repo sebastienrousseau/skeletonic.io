@@ -9,7 +9,7 @@
 
 [skeletonic.io](https://skeletonic.io) is the website of **[Skeletonic CSS](https://github.com/sebastienrousseau/skeletonic)** - A lightweight, intuitive, accessible and ultra-responsive cascading style sheets framework to streamline your Digital and Mobile Web development needs.
 
-[Download Skeletonic CSS v1.2.1](https://github.com/sebastienrousseau/skeletonic/archive/v1.2.1.zip)
+[Download Skeletonic CSS v1.0.5](https://github.com/sebastienrousseau/skeletonic/archive/v1.0.5.zip)
 
 ## The Repository
 

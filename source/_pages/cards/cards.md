@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {card layout, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css}
-date: 2021-05-28T20:25:43.291Z
+date: 2021-06-09T16:08:18.725Z
 robots: all
 ---
 
@@ -64,7 +64,7 @@ In the same way, we can add an image to our card element.
         <div class="card-content text-left">
 <h4>Top image</h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<p><button class="info right size-full-width">Button 1</button></p>
+<p><button class="info center size-full-width">Button 1</button></p>
         </div>
     </div>
     <div class="card flex-4">
@@ -76,19 +76,19 @@ In the same way, we can add an image to our card element.
          class="img-responsive rd" />
 </picture>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<p><button class="info right size-full-width">Button 3</button></p>
+<p><button class="info center size-full-width">Button 3</button></p>
         </div>
     </div>
     <div class="card flex-4">
         <div class="card-content text-left">
 <h4>Bottom image</h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<p><button class="info right size-full-width">Button 2</button></p>
+<p><button class="info center size-full-width">Button 2</button></p>
         </div>
         <picture>
 <img src="./assets/images/backgrounds/marion-michele-457471.jpg"
     alt="Photo by Marion Michele on Unsplash" class="rdb">
-        </picture>        
+        </picture>
     </div>
 </section>
 
@@ -101,42 +101,42 @@ Cards can be used to display specific messages to users. You can use the .warnin
     <div class="card-content text-left">
         <h4>Primary</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p><button class="primary right size-full-width">Button 4</button></p>
+        <p><button class="primary center size-full-width">Button 4</button></p>
     </div>
 </div>
 <div class="card secondary flex-2 padding-1">
     <div class="card-content text-left">
         <h4>Secondary</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="secondary right size-full-width">Button 4</button>
+        <button class="secondary center size-full-width">Button 4</button>
     </div>
 </div>
 <div class="card success flex-2 padding-1">
     <div class="card-content text-left">
         <h4>Success</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="success right size-full-width">Button 4</button>
+        <button class="success center size-full-width">Button 4</button>
     </div>
 </div>
 <div class="card info flex-2 padding-1">
     <div class="card-content text-left">
         <h4>Info</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="info right size-full-width">Button 4</button>
+        <button class="info center size-full-width">Button 4</button>
     </div>
 </div>
 <div class="card warning flex-2 padding-1">
     <div class="card-content text-left">
         <h4>Warning</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="warning right size-full-width">Button 4</button>
+        <button class="warning center size-full-width">Button 4</button>
     </div>
 </div>
 <div class="card error flex-2 padding-1">
     <div class="card-content text-left">
         <h4>Error </h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="error right size-full-width">Button 5</button>
+        <button class="error center size-full-width">Button 5</button>
     </div>
 </div>
 </section>
@@ -148,7 +148,7 @@ Cards can be used to display specific messages to users. You can use the .warnin
     <div class="card-content text-left">
         <h4 class="error">Error</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button class="error right size-full-width">Button 5</button>
+        <button class="error center size-full-width">Button 5</button>
     </div>
 </div>
 ```

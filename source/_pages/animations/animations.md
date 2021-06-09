@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {animations, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-05-28T20:25:43.291Z
+date: 2021-06-09T16:08:18.725Z
 robots: all
 ---
 
@@ -78,7 +78,7 @@ The Chameleon Background animation allows you to bounce content.
         <input type="checkbox" name="chameleon-bg[]">
         Reveal Chameleon Background
     </label>    
-    <button class="chameleon-bg link">Chameleon Background animation</button>
+    <button class="chameleon-bg link" style="color:white">Chameleon Background animation</button>
   </li>
 </ul>         
 

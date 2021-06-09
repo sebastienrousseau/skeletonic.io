@@ -3,7 +3,7 @@ layout: default
 key: 49c099da-70577ffd4525-0de2-ad39-70577ffd4525
 title: Getting Started
 subtitle: Getting Started with Skeletonic CSS
-description: Learn how to easily integrate the Skeletonic CSS Framework into your website or web app.
+description: Learn how to easily integrate Skeletonic CSS Framework into your website or web app.
 keywords: CSS, deadon, framework, front-end, frontend, gettingstarted, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography
 image: /assets/images/backgrounds/bg-getting-started.png
 author: Sebastien Rousseau
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: { CSS, deadon, framework, front-end, frontend, gettingstarted, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography }
-date: 2021-05-28T20:25:43.291Z
+date: 2021-06-09T16:08:18.725Z
 robots: all
 ---
 
@@ -35,7 +35,7 @@ You can install Skeletonic CSS via NPM or one of our CDN providers. You can also
 ##### Install from CDN
 The easiest way to use the Skeletonic CSS is via CDN. You don't need to install anything. Just add the CSS file to your <head> tag. You can import the compiled files to your site or web app directly from our preferred CDNs:
   
-Skip the download with **[unpkg](https://unpkg.com/skeletonic@{{ site.version | escape }}/dist/skeletonic.min.css)** or **[jsDelivr](https://registry.npmjs.org/skeletonic/-/skeletonic-{{ site.version | escape }}.tgz)** to deliver cached version of Skeletonic’s compiled CSS to your project.
+Skip the download with **[unpkg](https://unpkg.com/skeletonic-stylus@{{ site.version | escape }}/css/skeletonic.min.css)** or **[jsDelivr](https://cdn.jsdelivr.net/npm/skeletonic-stylus@{{ site.version | escape }}/css/skeletonic.min.css)** to deliver cached version of Skeletonic’s compiled CSS to your project.
   
 <ul class="disc">
     <li><a href="https://unpkg.com/">unpkg</a> is a fast, global content delivery network for everything on npm,</li>
@@ -50,27 +50,27 @@ Install Skeletonic CSS v{{ site.version | escape }}
 <div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-1').innerHTML)" class="button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
 
 <code class="padding-3" id="clipboard-1">
-npm install skeletonic
+npm install skeletonic-stylus
 </code>
 
 ##### Install with Yarn
-Install with [Yarn](https://yarnpkg.com/en/package/skeletonic) to get the pre-built CSS and sourcemaps. 
+Install with [Yarn](https://yarnpkg.com/en/package/skeletonic-stylus) to get the pre-built CSS and sourcemaps. 
 
 <div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-2').innerHTML)" class="button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
 
 <code class="padding-3" id="clipboard-2">
-yarn add skeletonic
+yarn add skeletonic-stylus
 </code>
 
 ##### Download the Github release
-[Download](https://github.com/sebastienrousseau/skeletonic/releases) the the Github release to get all the latest source files. Dropping them into your project will boost your productivity and optimise your development workflow.
+[Download](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v{{ site.version | escape }}) the the Github release to get all the latest source files. Dropping them into your project will boost your productivity and optimise your development workflow.
 ##### Clone the GitHub repository
-Clone the main repository to get all source files including build scripts: 
+Clone the main repository to get all source files including build scripts:
 
 <div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-3').innerHTML)" class="button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
 
 <code class="padding-3" id="clipboard-3">
-git clone https://github.com/sebastienrousseau/skeletonic.git
+git clone https://github.com/sebastienrousseau/skeletonic-stylus.git
 </code>
 
 ##### CSS, LESS & SASS distributions
@@ -90,22 +90,105 @@ Within the download you'll find all the source files, compiled and minified CSS 
 You'll see something like this:
 
 <pre>
-<code class="padding-2">skeletonic-1.2.1
-├── skeletonic-animations.css
-├── skeletonic-animations.css.map
-├── skeletonic-animations.min.css
-├──  skeletonic-colors.css
-├──  skeletonic-colors.css.map
-├── skeletonic-colours.min.css
-├── skeletonic-fonts.css
-├── skeletonic-fonts.css.map
-├── skeletonic-fonts.min.css
-├── skeletonic-debug-mode.css
-├── skeletonic-debug-mode.css.map
-├── skeletonic-debug-mode.min.css
-├── skeletonic.css
-├── skeletonic.css.map
-└── skeletonic.min.css
+<code class="padding-2">skeletonic-1.0.5
+dist
+├── README.md
+├── css
+│   ├── skeletonic-animations.css
+│   ├── skeletonic-animations.css.map
+│   ├── skeletonic-animations.min.css
+│   ├── skeletonic-colors.css
+│   ├── skeletonic-colors.css.map
+│   ├── skeletonic-colors.min.css
+│   ├── skeletonic-fonts.css
+│   ├── skeletonic-fonts.css.map
+│   ├── skeletonic-fonts.min.css
+│   ├── skeletonic.css
+│   ├── skeletonic.css.map
+│   └── skeletonic.min.css
+├── filesize-report.txt
+├── images
+│   ├── button-primary.svg
+│   ├── button-secondary.svg
+│   ├── skeletonic-stylus-readme.svg
+│   └── skeletonic-stylus.svg
+├── package.json
+└── stylus
+    ├── README.md
+    ├── animations
+    │   ├── README.md
+    │   ├── _contents.styl
+    │   ├── bounce.styl
+    │   ├── chameleon.styl
+    │   ├── fade-in.styl
+    │   ├── fade-out.styl
+    │   ├── flash.styl
+    │   ├── pop-in.styl
+    │   ├── pulse.styl
+    │   ├── rotation.styl
+    │   ├── shake.styl
+    │   ├── vanish-in.styl
+    │   ├── vanish-out.styl
+    │   ├── wobble.styl
+    │   └── zoom-in.styl
+    ├── base
+    │   ├── README.md
+    │   ├── _contents.styl
+    │   ├── helpers.styl
+    │   └── reset.styl
+    ├── components
+    │   ├── README.md
+    │   ├── _contents.styl
+    │   ├── card.styl
+    │   ├── header.styl
+    │   └── navbar.styl
+    ├── configurations
+    │   ├── README.md
+    │   ├── _contents.styl
+    │   ├── colors.styl
+    │   └── variables.styl
+    ├── debugging
+    │   ├── base64
+    │   └── images
+    ├── elements
+    │   ├── README.md
+    │   ├── _contents.styl
+    │   ├── button.styl
+    │   ├── clipboard.styl
+    │   ├── code.styl
+    │   ├── divider.styl
+    │   ├── fieldset.styl
+    │   ├── form.styl
+    │   ├── image.styl
+    │   ├── label.styl
+    │   ├── link-effects.styl
+    │   ├── link.styl
+    │   ├── list.styl
+    │   ├── margin.styl
+    │   ├── padding.styl
+    │   └── table.styl
+    ├── fonts
+    │   ├── README.md
+    │   ├── _contents.styl
+    │   └── font-face.styl
+    ├── layout
+    │   ├── README.md
+    │   ├── _contents.styl
+    │   ├── container.styl
+    │   ├── grid.styl
+    │   └── media-queries.styl
+    ├── palettes
+    │   ├── README.md
+    │   ├── _contents.styl
+    │   ├── material.styl
+    │   ├── tachyons.styl
+    │   └── websafe.styl
+    ├── skeletonic.styl
+    └── utilities
+        ├── README.md
+        ├── _contents.styl
+        └── mixins.styl
+15 directories, 81 files
 </code>
 </pre>
 
@@ -120,28 +203,19 @@ The link consists of just a simple line of HTML code that you will need to put i
 Please feel free to grab the latest:
 
 <code class="padding-2" id="clipboard-5">
-    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/skeletonic/dist/skeletonic.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/skeletonic-stylus@{{ site.version | escape }}/css/skeletonic.min.css&quot; /&gt;
 </code>
 
-You can also specify a specific version as per below. The latest version as of today is 1.2.1.
+You can also specify a specific version as per below. The latest version as of today is 1.0.5.
 
 <code class="padding-2" id="clipboard-6">
-    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/skeletonic@1.2.1/dist/skeletonic.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/skeletonic-stylus@{{ site.version | escape }}/css/skeletonic.min.css&quot; /&gt;
 </code>    
-
-#### Extend
-
-We provide a growing library of extensible CSS module files, utilities, themes and components ready to use as is to fit your web needs.
-##### CSS Debug Mode
-
-<code class="padding-2" id="clipboard-7">
-    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skeletonic-debug-mode.min.css&quot; /&gt;
-</code>
 
 ##### CSS Colours
 
 <code class="padding-2" id="clipboard-8">
-    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skeletonic-colours.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skeletonic-colors.min.css&quot; /&gt;
 </code>    
 
 ##### CSS Animations
@@ -166,7 +240,7 @@ The following table lists alternate CDN locations where Skeletonic is hosted.
         <tr>
             <td><a href="https://unpkg.com/">unpkg</a></td>
             <td><a
-                    href="https://unpkg.com/skeletonic@1.2.1/dist/skeletonic.min.css">https://unpkg.com/skeletonic@1.2.1/dist/skeletonic.min.css</a>
+                    href="https://unpkg.com/skeletonic-stylus@{{ site.version | escape }}/css/skeletonic.min.css">https://unpkg.com/skeletonic-stylus@{{ site.version | escape }}/css/skeletonic.min.css</a>
             </td>
             <td>Yes</td>
             <td>No</td>
@@ -174,7 +248,7 @@ The following table lists alternate CDN locations where Skeletonic is hosted.
         <tr>
             <td><a href="https://www.jsdelivr.com/">jsDelivr</a></td>
             <td><a
-                    href="https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css">https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css</a>
+                    href="https://cdn.jsdelivr.net/npm/skeletonic-stylus@{{ site.version | escape }}/css/skeletonic.min.css">https://cdn.jsdelivr.net/npm/skeletonic-stylus@{{ site.version | escape }}/css/skeletonic.min.css</a>
             </td>
             <td>Yes</td>
             <td>Yes</td>

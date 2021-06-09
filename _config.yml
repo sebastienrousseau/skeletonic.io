@@ -20,7 +20,7 @@ compress_html:
   endings: all
   profile: true
   startings: all
-description: Skeletonic is a lightweight, intuitive and ultra-responsive CSS framework designed for any platform, browser or device.
+description: Skeletonic CSS is a lightweight, intuitive and ultra-responsive CSS framework designed for any platform, browser or device.
 email: hello@skeletonic.io
 encoding: utf-8
 excerpt_separator: <!--more-->
@@ -112,8 +112,8 @@ tag_page_dir: tags
 tag_page_layout: tag_pages
 tag_page_title_prefix: 'Tag: '
 theme-color: '#fff'
-title: Skeletonic - A lightweight, intuitive, accessible and ultra-responsive CSS Framework
+title: Skeletonic CSS - A lightweight, intuitive, accessible and ultra-responsive CSS Framework
 twitter_creator: wwdseb
 twitter_username: skeletonic
 url: https://skeletonic.io
-version: 1.2.1
+version: 1.0.5
