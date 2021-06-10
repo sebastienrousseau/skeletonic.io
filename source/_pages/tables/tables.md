@@ -8,14 +8,14 @@ keywords: tables, css, deadon, framework, front-end, frontend, gridsystem, light
 image: /assets/images/backgrounds/bg-tables.png
 author: Sebastien Rousseau
 permalink: /tables.html
-categories: [content]
+categories: [elements]
 section: tables
 tags: [tables, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic]
 status: publish
 type: page
 published: true
 meta: {tables, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-06-09T16:08:18.725Z
+date: 2021-06-10T15:27:18.897Z
 robots: all
 ---
 

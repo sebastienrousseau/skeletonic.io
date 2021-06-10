@@ -11,7 +11,7 @@ layout: compress
 
         {% include navigation.html %}        
 
-        <main class="container center text-center">
+        <main role="main" class="container center text-center">
         
         {% include header.html %}
         

@@ -8,14 +8,14 @@ keywords: css, deadon, framework, front-end, frontend, gridsystem, lightweight, 
 image: /assets/images/backgrounds/bg-paragraph.png
 author: Sebastien Rousseau
 permalink: /paragraph.html
-categories: [content]
+categories: [elements]
 section: paragraph
 tags: [css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, paragraph, paragraph, responsive, semantic, skeletonic, skeletonic.css, style-agnostic]
 status: publish
 type: page
 published: true
 meta: {css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, paragraph, paragraph, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-06-09T16:08:18.725Z
+date: 2021-06-10T15:27:18.897Z
 robots: all
 ---
 

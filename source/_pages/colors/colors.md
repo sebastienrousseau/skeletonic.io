@@ -1,129 +1,70 @@
 ---
 layout: page
 key: 05d3428d-76581293113a-5a29-0a37-76581293113a
-title: Colour Palette
+title: Colors
 subtitle: Simply designed to fit your cascading web life.
 description: Skeletonic CSS comes with a basic set of custom properties, sometimes referred to as CSS variables or cascading variables.
-keywords: colour-palette, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
-image: /assets/images/backgrounds/background-colour-palette.png
+keywords: colors, color-palette, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
+image: /assets/images/backgrounds/background-color-palette.png
 author: Sebastien Rousseau
-permalink: /colour-palette.html
-categories: [components]
-section: colour-palette
-tags: [colour-palette, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic]
+permalink: /colors.html
+categories: [colors]
+section: colors
+tags: [colors, color-palette, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic]
 status: publish
 type: page
 published: true
-meta: {colour-palette, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-06-09T16:08:18.725Z
+meta: {colors,color-palette, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
+date: 2021-06-10T15:27:18.897Z
 robots: all
 ---
 
-<!-- Tachyons Colour Palette -->
-<section class="grid-flex text-left">
+<!-- Color Palette -->
+
+<section class="grid-flex justify-center text-left">
     <div class="flex-12" markdown="1">
 
 ### {{ page.title }}
 
 {{ page.description }}
 
-#### Colour Variables
+#### Color Variables
 
-Skeletonic CSS v.{{site.version}} pr    ovides a set of colour palettes and variables as a way to store information that we want to reuse throughout our stylesheet. These are designed to be harmonious, ensure accessible content, and help create contrast between UI elements.
+Skeletonic CSS v.{{site.version}} pr    ovides a set of color palettes and variables as a way to store information that we want to reuse throughout our stylesheet. These are designed to be harmonious, ensure accessible content, and help create contrast between UI elements.
 
-#### Colour Styles available
+#### Color Styles available
 
-The Skeletonic CSS v.{{site.version}} colour variables palette has a smooth range of shadows ranging from brightest to darkest
+The Skeletonic CSS v.{{site.version}} color variables palette has a smooth range of shadows ranging from brightest to darkest
 
-You will need to import <a href="https://unpkg.com/skeletonic@{{site.version}}/dist/skeletonic.min.css"> skeletonic-colors.css</a> to display the colours.
+You will need to import [skeletonic-colors.css](https://unpkg.com/skeletonic-stylus@{{site.version}}/css/skeletonic-colors.min.css) to display the colors.
 
-<section class="grid-flex text-left">
-    <div class="flex-6">
-        <table class="size-full-width">
-            <thead>
-                <tr>
-                    <th>Primary palette</th>
-                    <th>Weight class</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Most far away</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Far far away</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Far away</td>
-                    <td>200</td>
-                </tr>
-                <tr>
-                    <td>Middle far</td>
-                    <td>300</td>
-                </tr>
-                <tr>
-                    <td>Middle</td>
-                    <td>400</td>
-                </tr>
-                <tr>
-                    <td>Middle close</td>
-                    <td>500</td>
-                </tr>
-                <tr>
-                    <td>Close</td>
-                    <td>600</td>
-                </tr>
-                <tr>
-                    <td>Very close</td>
-                    <td>700</td>
-                </tr>
-                <tr>
-                    <td>Very very close</td>
-                    <td>800</td>
-                </tr>
-                <tr>
-                    <td>Closest</td>
-                    <td>900</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="flex-6">
-        <table class="size-full-width">
-            <thead>
-                <tr>
-                    <th>Accent palette</th>
-                    <th>Weight class</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Most far</td>
-                    <td>A100</td>
-                </tr>
-                <tr>
-                    <td>Middle</td>
-                    <td>A200</td>
-                </tr>
-                <tr>
-                    <td>Close</td>
-                    <td>A400</td>
-                </tr>
-                <tr>
-                    <td>Closest</td>
-                    <td>A700</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
+##### Primary palette
 
-<section class="grid-flex text-left">
-    <div class="size-full-width" markdown="1">
+|Primary palette|Weight class|
+|--- |--- |
+|Most far away|50|
+|Far far away|100|
+|Far away|200|
+|Middle far|300|
+|Middle|400|
+|Middle close|500|
+|Close|600|
+|Very close|700|
+|Very very close|800|
+|Closest|900|
+{: class="size-full-width"}
 
-##### Basic colours
+##### Accent palette
+
+|Accent palette|Weight class|
+|--- |--- |
+|Most far|A100|
+|Middle|A200|
+|Close|A400|
+|Closest|A700|
+{: class="size-full-width"}
+
+##### Basic colors
 
 ```css
 $black = #000000;
@@ -139,39 +80,13 @@ $dark-white  = rgba(255, 255, 255, 0.87);
 $lightwhite = rgba(255, 255, 255, 0.54);
 ```
 
-</div>
-</section>
-<!-- Material Design colours -->
-<section class="grid-flex text-left">
-    <div class="flex-12" markdown="1">
+<!-- Material Design colors -->
 
-#### Material Design colours
+#### Material Design colors
 
-The background colours are based on <a href="https://material.io/guidelines/style/color.html">Google's Material Design Colour palette</a>.
+The background colors are based on [Google's Material Design Color palette](https://material.io/guidelines/style/color.html).
 
-##### Range of non accent &amp; accent colours
-
-```css
-$red-50 to $red-A700;
-$pink-50 to $pink-A700;
-$purple-50 to $purple-A700;
-$deep-purple-50 to $deep-purple-A700;
-$indigo-50 to $indigo-A700;
-$blue-50 to $blue-A700;
-$lightblue-50 to $lightblue-A700;
-$cyan-50 to $cyan-A700;
-$teal-50 to $teal-A700;
-$green-50 to $green-A700;
-$lightgreen-50 to $lightgreen-A700;
-$lime-50 to $lime-A700;
-$yellow-50 to $yellow-A700;
-$amber-50 to $amber-A700;
-$orange-50 to $orange-A700;
-$deep-orange-50 to $deep-orange-A700;
-$brown-50 to $brown-A700;
-$blue-grey-50 to $blue-grey-A700;
-$grey-50 to $grey-A700;
-```
+##### Range of non accent &amp; accent colors
 
 </div>
 </section>
@@ -267,109 +182,42 @@ $grey-50 to $grey-A700;
         </div>
     </div>
 </section>
-<!-- End Material Design colours -->
+<!-- End Material Design colors -->
 
-<!-- Text colours -->
+<!-- Text colors -->
 <section class="grid-flex text-left">
     <div class="flex-12" markdown="1">
 
-#### Text colours
+#### Text colors
 
 </div>
 </section>
-<section class="grid-flex text-left">
-    <div class="flex-3">
-        <h5 class="cl-red-a700">Red</h5>
-        <ul class="disc">
-            <li class="cl-red-50">.cl-red-50</li>
-            <li class="cl-red-100">.cl-red-100</li>
-            <li class="cl-red-200">.cl-red-200</li>
-            <li class="cl-red-300">.cl-red-300</li>
-            <li class="cl-red-400">.cl-red-400</li>
-            <li class="cl-red-500">.cl-red-500</li>
-            <li class="cl-red-600">.cl-red-600</li>
-            <li class="cl-red-700">.cl-red-700</li>
-            <li class="cl-red-800">.cl-red-800</li>
-            <li class="cl-red-900">.cl-red-900</li>
-            <li class="cl-red-a100">.cl-red-a100</li>
-            <li class="cl-red-a200">.cl-red-a200</li>
-            <li class="cl-red-a400">.cl-red-a400</li>
-            <li class="cl-red-a700">.cl-red-a700</li>
-        </ul>
-    </div>
-    <div class="flex-3">
-        <h5 class="cl-pink-a700">Pink</h5>
-        <ul class="disc">
-            <li class="cl-pink-50">.cl-pink-50</li>
-            <li class="cl-pink-100">.cl-pink-100</li>
-            <li class="cl-pink-200">.cl-pink-200</li>
-            <li class="cl-pink-300">.cl-pink-300</li>
-            <li class="cl-pink-400">.cl-pink-400</li>
-            <li class="cl-pink-500">.cl-pink-500</li>
-            <li class="cl-pink-600">.cl-pink-600</li>
-            <li class="cl-pink-700">.cl-pink-700</li>
-            <li class="cl-pink-800">.cl-pink-800</li>
-            <li class="cl-pink-900">.cl-pink-900</li>
-            <li class="cl-pink-a100">.cl-pink-a100</li>
-            <li class="cl-pink-a200">.cl-pink-a200</li>
-            <li class="cl-pink-a400">.cl-pink-a400</li>
-            <li class="cl-pink-a700">.cl-pink-a700</li>
-        </ul>
-    </div>
-    <div class="flex-3">
-        <h5 class="cl-purple-a700">Purple</h5>
-        <ul class="disc">
-            <li class="cl-purple-50">.cl-purple-50</li>
-            <li class="cl-purple-100">.cl-purple-100</li>
-            <li class="cl-purple-200">.cl-purple-200</li>
-            <li class="cl-purple-300">.cl-purple-300</li>
-            <li class="cl-purple-400">.cl-purple-400</li>
-            <li class="cl-purple-500">.cl-purple-500</li>
-            <li class="cl-purple-600">.cl-purple-600</li>
-            <li class="cl-purple-700">.cl-purple-700</li>
-            <li class="cl-purple-800">.cl-purple-800</li>
-            <li class="cl-purple-900">.cl-purple-900</li>
-            <li class="cl-purple-a100">.cl-purple-a100</li>
-            <li class="cl-purple-a200">.cl-purple-a200</li>
-            <li class="cl-purple-a400">.cl-purple-a400</li>
-            <li class="cl-purple-a700">.cl-purple-a700</li>
-        </ul>
-    </div>
-</section>
-<section class="grid-flex text-left">
-    <div class="flex-12" markdown="1">
-
-#### Other colours available
-
-</div>
-</section>
-<section class="grid-flex text-left">
+<section class="grid-flex justify-center text-left">
     <div class="flex-2">
         <ul class="disc">
+            <li class="cl-red-a700">Red</li>
+            <li class="cl-pink-a700">Pink</li>
+            <li class="cl-purple-a700">Purple</li>
             <li class="cl-deep-purple-a700">Deep Purple</li>
             <li class="cl-indigo-a700">Indigo</li>
-            <li class="cl-blue-a700">Blue</li>
-            <li class="cl-lightblue-a700">Light Blue</li>
+            <li class="cl-blue-a700">Blue</li>            
         </ul>
     </div>
     <div class="flex-2">
         <ul class="disc">
+            <li class="cl-light-blue-a700">Light Blue</li>
             <li class="cl-cyan-a700">Cyan</li>
             <li class="cl-teal-a700">Teal</li>
             <li class="cl-green-a700">Green</li>
-            <li class="cl-lightgreen-a700">Light Green</li>
+            <li class="cl-light-green-a700">Light Green</li>
+            <li class="cl-lime-a700">Lime</li>
         </ul>
     </div>
     <div class="flex-2">
         <ul class="disc">
-            <li class="cl-lime-a700">Lime</li>
             <li class="cl-yellow-a700">Yellow</li>
             <li class="cl-amber-a700">Amber</li>
             <li class="cl-orange-a700">Orange</li>
-        </ul>
-    </div>
-    <div class="flex-2">
-        <ul class="disc">
             <li class="cl-deep-orange-700">Deep Orange</li>
             <li class="cl-brown-700">Brown</li>
             <li class="cl-grey-700">Grey</li>
@@ -377,19 +225,20 @@ $grey-50 to $grey-A700;
         </ul>
     </div>
 </section>
-<!-- End Text colours -->
-<section class="grid-flex text-left">
+<!-- End Text colors -->
+
+<!-- Tachyons Color Palette -->
+<section class="grid-flex justify-center text-left">
     <div class="flex-12" markdown="1">
 
-#### Tachyons Colour Palette
+#### Tachyons Color Palette
 
-You will need to import <b> skeletonic-colors.css</b> to display the colours. The background colours are based on the <a href="http://tachyons.io/">Tachyons - CSS Colour palette.
+You will need to import [skeletonic-colors.css](https://unpkg.com/skeletonic-stylus@{{site.version}}/css/skeletonic-colors.min.css) to display the colors. The background colors are based on the <a href="http://tachyons.io/">Tachyons - CSS Color palette.
 
 A Palette of Particles.
 
 </div>
 </section>
-
 <section class="grid-flex justify-center text-center">
     <div class="flex-12">
         <div class="bg-tachyons-black color-box">
@@ -694,4 +543,4 @@ A Palette of Particles.
         </div>
     </div>
 </section>
-<!-- End Tachyons Colour Palette -->
+<!-- End Tachyons Color Palette -->

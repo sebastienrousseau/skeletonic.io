@@ -1,45 +1,40 @@
+{% for page in site.pages %}
+    {% for categorymenu in page.categories %}
+        {% unless categorymenu contains 'features' %} 
+            {% assign categorymenucloud = categorymenucloud | append:categorymenu | append:', ' %}
+        {% endunless %}    
+    {% endfor %} 
+{% endfor %} 
+
+{% assign categorymenucloud = categorymenucloud | split:", " | uniq | sort %}
+
+<section id="navigation">
+    
     <input type="checkbox" class="hamburger" id="hamburger" name="hamburger">
-    <label title="Input for Main menu" for="hamburger" class="hamburger-toggle" aria-hidden='true'>
+    <label title="Open the menu" for="hamburger" class="hamburger-toggle cl-white" aria-hidden='true'>
         <span class="hidden" aria-hidden='true'>Main menu</span>
-        <span style="margin-bottom: 0rem;" class="spinner diagonal part-1"></span>
-        <span style="margin-bottom: 0rem;" class="spinner horizontal"></span>
-        <span style="margin-bottom: 0rem;" class="spinner diagonal part-2"></span>        
+        <span class="spinner diagonal part-1"></span>
+        <span class="spinner horizontal"></span>
+        <span class="spinner diagonal part-2"></span>        
     </label>
     
-    
-
-    <nav id="sidebar">
+    <nav id="sidebar" role="navigation">
         <ul class="nav">
+        {% for categorymenu in categorymenucloud %}
             <li>
-                <a href="{{ site_url }}/getting-started.html">Get started</a>
+                <a href="{{ site_url }}/">{{ categorymenu | capitalize }}</a>
+            <ul>
+            {% for page in site.pages %}    
+                {% for pc in page.categories %}        
+                    {% if pc == categorymenu %}
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                    {% endif %}    
+                {% endfor %}   
+            {% endfor %} 
+            </ul>
             </li>
-            <li>
-                <a href="{{ site_url }}/">Layout</a>
-                <ul>
-                    <li><a href="{{ site_url }}/css-debugging.html">CSS Debugging</a></li>
-                    <li><a href="{{ site_url }}/grid-system.html">Grid system</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="{{ site_url }}/">Content</a>
-                <ul>
-                    <li><a href="{{ site_url }}/code.html">Code</a></li>                    
-                    <li><a href="{{ site_url }}/divider.html">Divider</a></li>
-                    <li><a href="{{ site_url }}/forms.html">Forms</a></li>                
-                    <li><a href="{{ site_url }}/html-links.html">HTML Links</a></li>
-                    <li><a href="{{ site_url }}/paragraph.html">Paragraph</a></li>
-                    <li><a href="{{ site_url }}/tables.html">Tables</a></li>
-                    <li><a href="{{ site_url }}/typography.html">Typography</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="{{ site_url }}/">Components</a>
-                <ul>
-                    <li><a href="{{ site_url }}/animations.html">Animations</a></li>                    
-                    <li><a href="{{ site_url }}/css-buttons.html">CSS Buttons</a></li>                    
-                    <li><a href="{{ site_url }}/cards.html">Cards</a></li>
-                    <li><a href="{{ site_url }}/colour-palette.html">Colour Palette</a></li>                    
-                </ul>
-            </li>
+        {% endfor %}  
         </ul>
     </nav>
+
+</section>

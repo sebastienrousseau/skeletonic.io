@@ -1,16 +1,19 @@
+<div id="banner" role="banner">
+
 <h1 class="header">
-    <span>{{ site.title | escape }}</span>
+    {{ page.title | escape }}
 </h1>
 
 <figure>
-    <a href="{{ " / " | site_url }}" title="Logo of {{ site.title | escape }}">
-        <img src="{{ site_url }}/assets/images/image-icon/logo.min.svg" alt="Logo of {{ site.title | escape }}" width="583" height="438" class="logo" />
+    <a href="{{ " / " | site_url }}" tabindex="0">
+        <img src="{{ site_url }}/assets/images/image-icon/logo.min.svg" id="skeletonic" alt="Logo of {{ page.title | escape }}" width="583" height="438" class="logo" />
     </a>
+    <figcaption>{{ page.title | escape }}</figcaption>
 </figure>
 
 <h2><em>{{ page.subtitle | escape }}</em></h2>
 
-<h3>{{ page.description | escape }}</h3>
+<p>{{ page.description | escape }}</p>
 
 <p>
     {% if page.section != "getting-started" %}
@@ -26,3 +29,5 @@
 <p class="promo-content"><em>Compatible with macOS, Windows, and Linux</em></p>
             
 <hr class="hr-text" data-content="{{ page.title | escape }}" />
+
+</div>

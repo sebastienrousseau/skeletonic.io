@@ -8,14 +8,14 @@ keywords: blurreddivider, css, dasheddivider, divider, dotteddivider, doubledivi
 image: /assets/images/backgrounds/bg-divider.png
 author: Sebastien Rousseau
 permalink: /divider.html
-categories: [content]
+categories: [elements]
 section: divider
 tags: [blurreddivider, css, dasheddivider, divider, dotteddivider, doubledivider, framework, front-end, frontend, gridsystem, hiddendivider, horizontaldivider, horizontalrule, icondivider, lightweight, mobile-first, skeletonic, skeletonic.css, smalldivider, soliddivider, standarddivider, verticaldivider]
 status: publish
 type: page
 published: true
 meta: {blurreddivider, css, dasheddivider, divider, dotteddivider, doubledivider, framework, front-end, frontend, gridsystem, hiddendivider, horizontaldivider, horizontalrule, icondivider, lightweight, mobile-first, skeletonic, skeletonic.css, smalldivider, soliddivider, standarddivider, verticaldivider}
-date: 2021-06-09T16:08:18.725Z
+date: 2021-06-10T15:27:18.897Z
 robots: all
 ---
 

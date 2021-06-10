@@ -10,13 +10,13 @@
 
 {% assign categorycloud = categorycloud | split:", " | uniq | sort %}
 <hr class="hr-text" data-content="Directory" />
-<h4>The Anatomy of {{ site.title }}</h4>
-<section class="grid-flex">
+<h4 id="categories">The Anatomy of {{ site.title }}</h4>
+<section class="grid-flex"  aria-labelledby="categories"  role="complementary">
 {% for category in categorycloud %}
-    <div class="flex-1 padding-1">
+    <div class="justify-center flex-1">
         <h5>{{ category | capitalize }}</h5>
         <img src="/assets/images/image-icon/{{ category | downcase }}.min.svg" alt="Icon representing the category {{ category }}" width="583" height="438" class="icon" />
-    <ul class="footer-category">
+    <ul class="nopadding">
     {% for page in site.pages %}
         {% for pc in page.categories %}
             {% if pc == category %}

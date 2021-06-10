@@ -1,21 +1,21 @@
 ---
 layout: page
 key: 0130ff93-77579162a59a-7ad0-dc66-77579162a59a
-title: HTML Links
+title: Links
 subtitle: Simply designed to fit your cascading web life.
 description: A lightweight, intuitive, accessible and ultra-responsive CSS Framework to streamline your Digital and Mobile Web development needs.
 keywords: CSS, deadon, framework, front-end, frontend, gridsystem, htmllinks, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography
-image: /assets/images/backgrounds/bg-html-links.png
+image: /assets/images/backgrounds/bg-links.png
 author: Sebastien Rousseau
-permalink: /html-links.html
-categories: [content]
-section: html-links
+permalink: /links.html
+categories: [elements]
+section: links
 tags: [CSS, deadon, framework, front-end, frontend, gridsystem, htmllinks, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography]
 status: publish
 type: page
 published: true
 meta: {CSS, deadon, framework, front-end, frontend, gridsystem, htmllinks, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography}
-date: 2021-06-09T16:08:18.725Z
+date: 2021-06-10T15:27:18.897Z
 robots: all
 ---
 <!-- HTML Links -->

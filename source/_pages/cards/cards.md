@@ -1,7 +1,7 @@
 ---
 layout: page
 key: 679d8cdb-687a1cfd870f-019a-44ff-687a1cfd870f
-title: CSS Cards
+title: Cards
 subtitle: Responsive, flexible containers for your page's contents
 description: CSS cards provide convenient flexbox layouts for different types of content like title, images etc.
 keywords: card layout, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {card layout, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css}
-date: 2021-06-09T16:08:18.725Z
+date: 2021-06-10T15:27:18.897Z
 robots: all
 ---
 

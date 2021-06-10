@@ -8,14 +8,14 @@ keywords: css, deadon, framework, front-end, frontend, typography, gridsystem, l
 image: /assets/images/backgrounds/bg-typography.png
 author: Sebastien Rousseau
 permalink: /typography.html
-categories: [content]
+categories: [components]
 section: typography
 tags: [css, deadon, framework, front-end, frontend, typography, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography]
 status: publish
 type: page
 published: true
 meta: {css, deadon, framework, front-end, frontend, typography, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography}
-date: 2021-06-09T16:08:18.725Z
+date: 2021-06-10T15:27:18.897Z
 robots: all
 ---
 <!-- Fonts -->
