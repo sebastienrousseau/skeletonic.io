@@ -17,11 +17,11 @@ permalink: /tags.json
                         "authors": "{{ page.author | escape }}",
                         "date": "{{ page.date }}",
                         "id" : "{{ page.id }}",
-                        "image": "{{ page.image | escape }}",
+                        "image": "{{ site.url }}{{ page.image | escape }}",
                         "tags": "{{ page.tags | array_to_sentence_string | uniq }}",
                         "subtitle": "{{ subpage[0].subtitle | escape }}",
                         "title": "{{ page.title | escape }}",
-                        "url": "{{ page.url }}"
+                        "url": "{{ site.url }}{{ page.url }}"
                     }{% if forloop.last %}{% else %},{% endif %}
                     {% endif %}{% endfor %}                
                 ]

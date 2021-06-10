@@ -5,7 +5,7 @@ title: Skeletonic CSS
 subtitle: Simply designed to fit your cascading web life.
 description: Skeletonic CSS is a lightweight, intuitive, accessible and ultra-responsive cascading style sheets framework to streamline your Digital and Mobile Web development needs.
 keywords: accessible, cascadingweblife, css, cssframework, framework, front-end, frontend, gridsystem, intuitive, lightweight, mobile-first, mobile-friendly, mobilewebdevelopment, modern, responsive, skeletonic, skeletonic.css, ultra-responsive
-image: /assets/images/backgrounds/background-skeletonic.png
+image: /assets/images/backgrounds/background-skeletonic.min.svg
 author: Sebastien Rousseau
 permalink: /
 categories: [content]
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {accessible, cascadingweblife, css, cssframework, framework, front-end, frontend, gridsystem, intuitive, lightweight, mobile-first, mobile-friendly, mobilewebdevelopment, modern, responsive, skeletonic, skeletonic.css, ultra-responsive}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 
@@ -28,7 +28,7 @@ robots: all
 #### Accelerates cross browser development 
 
 <figure>
-    <img src="assets/images/image-icon/thunder.min.svg" alt="Icon representing a lightning strike" width="583" height="438" class="icon-cards" />
+    <img src="assets/images/icons/thunder.min.svg" alt="Icon representing a lightning strike" width="583" height="438" class="icon-cards" />
     <figcaption>Lightning fast</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ All you have to do is **drop Skeletonic CSS into your project**, we will provide
 
 
 <figure>
-    <img src="assets/images/image-icon/lightweight.min.svg" alt="Icon representing a lightweight feather" width="583" height="438" class="icon-cards"  />
+    <img src="assets/images/icons/lightweight.min.svg" alt="Icon representing a lightweight feather" width="583" height="438" class="icon-cards"  />
     <figcaption>Lightweight</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ It comes with a small footprint, all in just **~2kb (minified + gzipped)**.
 #### Delivers highly responsive user experience
 
 <figure>
-    <img src="assets/images/image-icon/responsive.min.svg" alt="Icon representing a variety of device screen sizes and break points for responsive design" width="583" height="438" class="icon-cards"  />
+    <img src="assets/images/icons/responsive.min.svg" alt="Icon representing a variety of device screen sizes and break points for responsive design" width="583" height="438" class="icon-cards"  />
     <figcaption>Responsive design</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ We provide **mobile-friendly, touch optimised CSS styles** using the full range 
 #### Builds a better accessible Web with the [WCAG 2.2 standard](https://www.w3.org/WAI/WCAG22/Understanding/) 
 
 <figure>
-    <img src="assets/images/image-icon/accessibility.min.svg" alt="Icon representing CSS as a mean to support low vision, visual impairment" width="583" height="438" class="icon-cards"  />
+    <img src="assets/images/icons/accessibility.min.svg" alt="Icon representing CSS as a mean to support low vision, visual impairment" width="583" height="438" class="icon-cards"  />
     <figcaption>Accessibility</figcaption>
 </figure>
 
@@ -94,7 +94,7 @@ We specifically looked at techniques to improve **text readability**, make your 
 ####  Helps to create visual and functional consistency
 
 <figure>
-<img src="assets/images/image-icon/components.min.svg" alt="Icon representing a component library" width="583" height="438" class="icon-cards" />
+<img src="assets/images/icons/components.min.svg" alt="Icon representing a component library" width="583" height="438" class="icon-cards" />
 <figcaption>Component library</figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ Dive in our open-source code base, and enjoy **clean, modularised Stylus compone
 #### Free. Open source. Supported.
 
 <figure>
-    <img src="assets/images/image-icon/github.min.svg" alt="Icon representing a development robot" width="583" height="438" class="icon-cards"  />
+    <img src="assets/images/icons/github.min.svg" alt="Icon representing a development robot" width="583" height="438" class="icon-cards"  />
     <figcaption>Open source</figcaption>
 </figure>
 

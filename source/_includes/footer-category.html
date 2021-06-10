@@ -15,7 +15,7 @@
 {% for category in categorycloud %}
     <div class="justify-center flex-1">
         <h5>{{ category | capitalize }}</h5>
-        <img src="/assets/images/image-icon/{{ category | downcase }}.min.svg" alt="Icon representing the category {{ category }}" width="583" height="438" class="icon" />
+        <img src="/assets/images/icons/{{ category | downcase }}.min.svg" alt="Icon representing the category {{ category }}" width="583" height="438" class="icon" />
     <ul class="nopadding">
     {% for page in site.pages %}
         {% for pc in page.categories %}

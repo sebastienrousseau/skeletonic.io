@@ -5,7 +5,7 @@ title: Code
 subtitle: CSS styling for code and pre text
 description: Skeletonic CSS provides styling for inline code tags to display code snippet into the web browser.
 keywords: code, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
-image: /assets/images/backgrounds/bg-code.png
+image: /assets/images/components/code.min.svg
 author: Sebastien Rousseau
 permalink: /code.html
 categories: [elements]
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {code, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 

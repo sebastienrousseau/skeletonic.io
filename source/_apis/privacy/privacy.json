@@ -12,15 +12,16 @@ permalink: /privacy.json
             {
                 "results": [
                     {
-                        "authors": "{{ subpage[0].author | escape }}",
+                        "author": "{{ subpage[0].author | escape }}",
+                        "categories": "{{ subpage[0].section | escape }}",
                         "date": "{{ subpage[0].date }}",
                         "description": "{{ subpage[0].description | escape }}",
                         "id" : "{{ subpage[0].key }}",
-                        "image": "{{ subpage[0].image | escape }}",
+                        "image": "{{ site.url }}{{ subpage[0].image | escape }}",
                         "keywords": "{{ subpage[0].keywords | escape }}",
                         "subtitle": "{{ subpage[0].subtitle | escape }}",
                         "title": "{{ subpage[0].title | escape }}",
-                        "url": "{{ subpage[0].url }}"
+                        "url": "{{ site.url }}{{ subpage[0].url }}"
                     }
                 ]
             }

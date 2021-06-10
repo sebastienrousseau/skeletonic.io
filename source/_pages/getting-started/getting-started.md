@@ -5,7 +5,7 @@ title: Getting Started
 subtitle: Getting Started with Skeletonic CSS
 description: Learn how to easily integrate Skeletonic CSS Framework into your website or web app.
 keywords: CSS, deadon, framework, front-end, frontend, gettingstarted, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography
-image: /assets/images/backgrounds/bg-getting-started.png
+image: /assets/images/components/getting-started.min.svg
 author: Sebastien Rousseau
 permalink: /getting-started.html
 categories: [content]
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: { CSS, deadon, framework, front-end, frontend, gettingstarted, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography }
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 

@@ -5,7 +5,7 @@ title: Debugging Tools
 subtitle: Debug and diagnose CSS stylesheets with ease 
 description: Use Skeletonic CSS debugging tools to visually inspect and correct page layout issues.
 keywords: baselinegrid, css, cssbaselinegrid, cssdebugging, cssdebuggingtools, cssgridoverlay, debugging, debuggingtools, framework, front-end, frontend, gridoverlays, gridsystem, imagebaselinegrid, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css
-image: /assets/images/backgrounds/background-css-debugging.png
+image: /assets/images/backgrounds/background-css-debugging.min.svg
 author: Sebastien Rousseau
 permalink: /css-debugging.html
 categories: [layout]
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {baselinegrid, css, cssbaselinegrid, cssdebugging, cssdebuggingtools, cssgridoverlay, debugging, debuggingtools, framework, front-end, frontend, gridoverlays, gridsystem, imagebaselinegrid, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 

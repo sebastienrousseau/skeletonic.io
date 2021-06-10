@@ -5,7 +5,7 @@ title: Dividers
 subtitle: Simple Styles for Horizontal Rules.
 description: The Skeletonic CSS Dividers are created based on the HTML hr tag element.
 keywords: blurreddivider, css, dasheddivider, divider, dotteddivider, doubledivider, framework, front-end, frontend, gridsystem, hiddendivider, horizontaldivider, horizontalrule, icondivider, lightweight, mobile-first, skeletonic, skeletonic.css, smalldivider, soliddivider, standarddivider, verticaldivider
-image: /assets/images/backgrounds/bg-divider.png
+image: /assets/images/components/divider.min.svg
 author: Sebastien Rousseau
 permalink: /divider.html
 categories: [elements]
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {blurreddivider, css, dasheddivider, divider, dotteddivider, doubledivider, framework, front-end, frontend, gridsystem, hiddendivider, horizontaldivider, horizontalrule, icondivider, lightweight, mobile-first, skeletonic, skeletonic.css, smalldivider, soliddivider, standarddivider, verticaldivider}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 

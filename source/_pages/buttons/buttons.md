@@ -5,7 +5,7 @@ title: Buttons
 subtitle:  Unique, styled and responsive CSS for buttons, href attributes and input elements.
 description: A suite of modern button styling options you can use to make user interaction even more engaging. 
 keywords: buttons, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
-image: /assets/images/backgrounds/bg-buttons.png
+image: /assets/images/components/buttons.min.svg
 author: Sebastien Rousseau
 permalink: /buttons.html
 categories: [elements]
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {buttons, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 

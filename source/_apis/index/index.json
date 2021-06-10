@@ -17,11 +17,11 @@ permalink: /api.json
                         "date": "{{ page.date }}",
                         "description": "{{ page.description | escape }}",
                         "id" : "{{ page.key }}",
-                        "image": "{{ page.image | escape }}",
+                        "image": "{{ site.url }}{{ page.image | escape }}",
                         "keywords": "{{ page.keywords | escape }}",
                         "subtitle": "{{ subpage[0].subtitle | escape }}",
                         "title": "{{ page.title | escape }}",
-                        "url": "{{ page.url }}"
+                        "url": "{{ site.url }}{{ page.url }}"
                     }{% if forloop.last %}{% else %},{% endif %}
                     {% endif %}{% endfor %}                
                 ]

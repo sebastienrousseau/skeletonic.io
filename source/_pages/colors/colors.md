@@ -5,7 +5,7 @@ title: Colors
 subtitle: Simply designed to fit your cascading web life.
 description: Skeletonic CSS comes with a basic set of custom properties, sometimes referred to as CSS variables or cascading variables.
 keywords: colors, color-palette, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
-image: /assets/images/backgrounds/background-color-palette.png
+image: /assets/images/backgrounds/background-color-palette.min.svg
 author: Sebastien Rousseau
 permalink: /colors.html
 categories: [colors]
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {colors,color-palette, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 

@@ -96,7 +96,7 @@ plugins:
   - jekyll-tagories
 repository: sebastienrousseau/skeletonic.io
 responsive_image:
-  base_path: assets/images/image-icon
+  base_path: assets/images/icons
   cache: true
   output_path_format: assets/images/%{width}/%{basename}
   sizes:

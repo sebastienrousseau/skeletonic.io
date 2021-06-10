@@ -5,7 +5,7 @@ title: Categories
 subtitle: Content categories, which describe common rules shared by many CSS elements.
 description: Every Skeletonic CSS element is a member of one or more content categories — these categories group elements that share common characteristics.
 keywords: categories, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css
-image: /assets/images/backgrounds/bg-categories.png
+image: /assets/images/components/categories.min.svg
 author: Sebastien Rousseau
 permalink: /categories.html
 section: categories
@@ -14,7 +14,7 @@ status: publish
 type: page
 published: true
 meta: {categories, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 

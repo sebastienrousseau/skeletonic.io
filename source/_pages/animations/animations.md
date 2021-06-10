@@ -2,10 +2,10 @@
 layout: page
 key: eefdb072-370352a6742e-200a-170d-370352a6742e
 title: Animations
-subtitle: A suite of Animations and Transitions to focus visitors attention on what's important.
+subtitle: A suite of Animations and Transitions to focus visitors attention on what is important.
 description: Skeletonic CSS library provides ready-to-use, cross-browser transitions, transformations, and animations.
 keywords: animations, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
-image: /assets/images/backgrounds/bg-animations.png
+image: /assets/images/components/animations.min.svg
 author: Sebastien Rousseau
 permalink: /animations.html
 categories: [animations]
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {animations, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 

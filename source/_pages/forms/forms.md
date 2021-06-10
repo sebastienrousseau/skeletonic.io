@@ -5,7 +5,7 @@ title: Forms
 subtitle: Simply designed to fit your cascading web life.
 description: A lightweight, intuitive, accessible and ultra-responsive CSS Framework to streamline your Digital and Mobile Web development needs.
 keywords: forms, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic
-image: /assets/images/backgrounds/bg-forms.png
+image: /assets/images/components/forms.min.svg
 author: Sebastien Rousseau
 permalink: /forms.html
 categories: [elements]
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {forms, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 

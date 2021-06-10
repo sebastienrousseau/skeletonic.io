@@ -5,7 +5,7 @@ title: Cookie Policy
 subtitle: Simply designed to fit your cascading web life.
 description: A lightweight, intuitive, accessible and ultra-responsive CSS Framework to streamline your Digital and Mobile Web development needs.
 keywords: skeletonic,skeletonic.css,CSS,lightweight,dead on,responsive,framework,semantic,mobile-first,modern,style-agnostic,front-end,frontend,grid system,typography
-image: /assets/images/logo.png
+image: /assets/images/cookies.min.svg
 author: Sebastien Rousseau
 permalink: /cookies.html
 tags: [skeletonic,skeletonic.css,CSS,lightweight,dead on,responsive,framework,semantic,mobile-first,modern,style-agnostic,front-end,frontend,grid system,typography]
@@ -14,7 +14,7 @@ status: publish
 type: page
 published: true
 meta: {skeletonic,skeletonic.css,CSS,lightweight,dead on,responsive,framework,semantic,mobile-first,modern,style-agnostic,front-end,frontend,grid system,typography}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 

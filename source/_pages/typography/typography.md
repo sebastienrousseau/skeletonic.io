@@ -5,7 +5,7 @@ title: Typography
 subtitle: Simply designed to fit your cascading web life.
 description: A lightweight, intuitive, accessible and ultra-responsive CSS Framework to streamline your Digital and Mobile Web development needs.
 keywords: css, deadon, framework, front-end, frontend, typography, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography
-image: /assets/images/backgrounds/bg-typography.png
+image: /assets/images/components/typography.min.svg
 author: Sebastien Rousseau
 permalink: /typography.html
 categories: [components]
@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {css, deadon, framework, front-end, frontend, typography, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography}
-date: 2021-06-10T15:27:18.897Z
+date: 2021-06-10T21:03:35.706Z
 robots: all
 ---
 <!-- Fonts -->

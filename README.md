@@ -1,6 +1,6 @@
 ![alt text][logo]
 
-[logo]: ./source/assets/images/image-icon/skeletonic-banner.min.svg "Skeletonic Banner"
+[logo]: ./source/assets/images/icons/skeletonic-banner.min.svg "Skeletonic Banner"
 
 # Source for [skeletonic.io](https://skeletonic.io)
 
