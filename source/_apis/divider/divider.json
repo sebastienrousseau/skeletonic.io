@@ -1,5 +1,4 @@
 ---
-layout: compress
 permalink: /api/v1/divider/
 ---
 {% assign subpage = site.pages | where: 'section', 'divider' %}

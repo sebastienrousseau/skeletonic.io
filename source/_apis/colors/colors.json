@@ -1,5 +1,4 @@
 ---
-layout: compress
 permalink: /api/v1/colors/
 ---
 {% assign subpage = site.pages | where: 'section', 'colors' %}

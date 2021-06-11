@@ -1,5 +1,4 @@
 ---
-layout: compress
 permalink: /api/v1/cards/
 ---
 {% assign subpage = site.pages | where: 'section', 'cards' %}

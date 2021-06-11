@@ -1,5 +1,4 @@
 ---
-layout: compress
 permalink: /api/v1/categories/
 ---
 {% assign subpage = site.pages | where: 'section', 'categories' %}

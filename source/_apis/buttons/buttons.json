@@ -1,5 +1,4 @@
 ---
-layout: compress
 permalink: /api/v1/buttons/
 ---
 {% assign subpage = site.pages | where: 'section', 'buttons' %}

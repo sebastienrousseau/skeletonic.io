@@ -1,5 +1,4 @@
 ---
-layout: compress
 permalink: /api/v1/paragraph/
 ---
 {% assign subpage = site.pages | where: 'section', 'paragraph' %}

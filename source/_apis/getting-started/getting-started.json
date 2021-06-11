@@ -1,5 +1,4 @@
 ---
-layout: compress
 permalink: /api/v1/getting-started/
 ---
 {% assign subpage = site.pages | where: 'section', 'getting-started' %}
