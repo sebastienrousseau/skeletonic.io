@@ -8,6 +8,7 @@ keywords: accessible, cascadingweblife, css, cssframework, framework, front-end,
 image: /assets/images/backgrounds/background-skeletonic.min.svg
 author: Sebastien Rousseau
 permalink: /
+api: /api/v1/
 categories: [content]
 section: skeletonic
 tags: [accessible, cascadingweblife, css, cssframework, framework, front-end, frontend, gridsystem, intuitive, lightweight, mobile-first, mobile-friendly, mobilewebdevelopment, modern, responsive, skeletonic, skeletonic.css, ultra-responsive]
@@ -15,7 +16,7 @@ status: publish
 type: page
 published: true
 meta: {accessible, cascadingweblife, css, cssframework, framework, front-end, frontend, gridsystem, intuitive, lightweight, mobile-first, mobile-friendly, mobilewebdevelopment, modern, responsive, skeletonic, skeletonic.css, ultra-responsive}
-date: 2021-06-10T21:03:35.706Z
+date: 2021-06-11T18:57:02.003Z
 robots: all
 ---
 

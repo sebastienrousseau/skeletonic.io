@@ -1,0 +1,46 @@
+---
+layout: compress
+permalink: /api/v1/grid/
+---
+{% assign subpage = site.pages | where: 'section', 'grid' %}
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "{{ site.title }}",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+        "url": "{{site.url}}"
+        }
+    ],
+    "paths": {
+        "/api/v1/grid/": {
+        "get": {
+            "summary": "List API versions",
+            "responses": {
+            "200": {
+                "description": "200 response",
+                "content": {
+                "application/json":  
+                    [
+                        {
+                            "author": "{{ subpage[0].author | escape }}",
+                            "categories": "{{ subpage[0].section | escape }}",
+                            "last_updated": "{{ subpage[0].date }}",
+                            "description": "{{ subpage[0].description | escape }}",
+                            "id" : "{{ subpage[0].key }}",
+                            "image": "{{ site.url }}{{ subpage[0].image | escape }}",
+                            "keywords": "{{ subpage[0].keywords | escape }}",
+                            "subtitle": "{{ subpage[0].subtitle | escape }}",
+                            "title": "{{ subpage[0].title | escape }}",
+                            "url": "{{ site.url }}{{ subpage[0].url }}"
+                        }
+                    ]
+                }
+            }
+            }
+        }
+        }
+    }
+}

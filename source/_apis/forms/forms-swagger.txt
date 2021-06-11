@@ -1,20 +1,30 @@
 ---
-layout: compress
-permalink: /css-debugging.json
----
-{% assign subpage = site.pages | where: 'section', 'css-debugging' %}
-[
-    {
-        "status": "ok",
-        "code": 200,
-        "message": "The request succeeded.",
-        "data": [
-            {
-                "results": [
+layout: none
+permalink: /api/v1/forms-swagger.txt
+--- 
+{% assign subpage = site.pages | where: 'section', 'forms' %}openapi: 3.0.2
+info:
+  title: 'Skeletonic CSS - A lightweight, intuitive, accessible and ultra-responsive CSS Framework'
+  version: '1.0'
+servers:
+  - url: 'https://skeletonic.io'
+paths:
+  '/api/v1/forms/':
+    get:
+      summary: List API versions
+      responses:
+        '200':
+          description: |-
+            200 response
+          content:
+            application/json:
+              examples: 
+                forms:
+                  value:
                     {
                         "author": "{{ subpage[0].author | escape }}",
                         "categories": "{{ subpage[0].section | escape }}",
-                        "date": "{{ subpage[0].date }}",
+                        "last_updated": "{{ subpage[0].date }}",
                         "description": "{{ subpage[0].description | escape }}",
                         "id" : "{{ subpage[0].key }}",
                         "image": "{{ site.url }}{{ subpage[0].image | escape }}",
@@ -23,8 +33,3 @@ permalink: /css-debugging.json
                         "title": "{{ subpage[0].title | escape }}",
                         "url": "{{ site.url }}{{ subpage[0].url }}"
                     }
-                ]
-            }
-        ]
-    }
-]

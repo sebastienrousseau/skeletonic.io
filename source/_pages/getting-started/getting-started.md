@@ -8,6 +8,7 @@ keywords: CSS, deadon, framework, front-end, frontend, gettingstarted, gridsyste
 image: /assets/images/components/getting-started.min.svg
 author: Sebastien Rousseau
 permalink: /getting-started.html
+api: /api/v1/getting-started/
 categories: [content]
 section: getting-started
 tags: [CSS, deadon, framework, front-end, frontend, gettingstarted, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography]
@@ -15,7 +16,7 @@ status: publish
 type: page
 published: true
 meta: { CSS, deadon, framework, front-end, frontend, gettingstarted, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography }
-date: 2021-06-10T21:03:35.706Z
+date: 2021-06-11T18:57:02.003Z
 robots: all
 ---
 

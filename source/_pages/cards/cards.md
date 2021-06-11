@@ -8,6 +8,7 @@ keywords: card layout, cards, containers, content, css, css cards, flexible, fle
 image: /assets/images/components/cards.min.svg
 author: Sebastien Rousseau
 permalink: /cards.html
+api: /api/v1/cards/
 categories: [components]
 section: cards
 tags: [card layout, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css]
@@ -15,7 +16,7 @@ status: publish
 type: page
 published: true
 meta: {card layout, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css}
-date: 2021-06-10T21:03:35.706Z
+date: 2021-06-11T18:57:02.003Z
 robots: all
 ---
 

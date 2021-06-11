@@ -5,17 +5,18 @@ title: Grid System
 subtitle: A fully responsive, 12 column grid-based layout system making it easier to design web pages.
 description: A responsive CSS grid using flexbox for desktop, tablet and mobile viewports.
 keywords: 12column, columns, container, css, cssflexbox, cssgrid, cssgridsystem, flexbox, framework, front-end, frontend, fullyresponsive, gridsystem, light-weight, mobile-first, modern, responsive, robust, rows, semantic, simplecssgridsystem, skeletonic, skeletonic.css
-image: /assets/images/components/grid-system.min.svg
+image: /assets/images/components/grid.min.svg
 author: Sebastien Rousseau
-permalink: /grid-system.html
+permalink: /grid.html
+api: /api/v1/grid/
 categories: [layout]
-section: grid-system
+section: grid
 tags: [12column, columns, container, css, cssflexbox, cssgrid, cssgridsystem, flexbox, framework, front-end, frontend, fullyresponsive, gridsystem, light-weight, mobile-first, modern, responsive, robust, rows, semantic, simplecssgridsystem, skeletonic, skeletonic.css]
 status: publish
 type: page
 published: true
 meta: { 12column, columns, container, css, cssflexbox, cssgrid, cssgridsystem, flexbox, framework, front-end, frontend, fullyresponsive, gridsystem, light-weight, mobile-first, modern, responsive, robust, rows, semantic, simplecssgridsystem, skeletonic, skeletonic.css }
-date: 2021-06-10T21:03:35.706Z
+date: 2021-06-11T18:57:02.003Z
 robots: all
 ---
 

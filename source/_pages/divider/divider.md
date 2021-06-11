@@ -8,6 +8,7 @@ keywords: blurreddivider, css, dasheddivider, divider, dotteddivider, doubledivi
 image: /assets/images/components/divider.min.svg
 author: Sebastien Rousseau
 permalink: /divider.html
+api: /api/v1/divider/
 categories: [elements]
 section: divider
 tags: [blurreddivider, css, dasheddivider, divider, dotteddivider, doubledivider, framework, front-end, frontend, gridsystem, hiddendivider, horizontaldivider, horizontalrule, icondivider, lightweight, mobile-first, skeletonic, skeletonic.css, smalldivider, soliddivider, standarddivider, verticaldivider]
@@ -15,7 +16,7 @@ status: publish
 type: page
 published: true
 meta: {blurreddivider, css, dasheddivider, divider, dotteddivider, doubledivider, framework, front-end, frontend, gridsystem, hiddendivider, horizontaldivider, horizontalrule, icondivider, lightweight, mobile-first, skeletonic, skeletonic.css, smalldivider, soliddivider, standarddivider, verticaldivider}
-date: 2021-06-10T21:03:35.706Z
+date: 2021-06-11T18:57:02.003Z
 robots: all
 ---
 

@@ -8,6 +8,7 @@ keywords: tables, css, deadon, framework, front-end, frontend, gridsystem, light
 image: /assets/images/components/tables.min.svg
 author: Sebastien Rousseau
 permalink: /tables.html
+api: /api/v1/tables/
 categories: [elements]
 section: tables
 tags: [tables, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic]
@@ -15,7 +16,7 @@ status: publish
 type: page
 published: true
 meta: {tables, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-06-10T21:03:35.706Z
+date: 2021-06-11T18:57:02.003Z
 robots: all
 ---
 

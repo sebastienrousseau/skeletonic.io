@@ -1,31 +1,49 @@
 ---
 layout: compress
-permalink: /api.json
+permalink: /api/v1/
 ---
-[
+[   
     {
-        "status": "ok",
-        "code": 200,
-        "message": "The request succeeded.",
-        "data": [
-            {
-                "results": [
-                    {% for page in site.pages %}
-                        {% if page.published == true %}
-                    {
-                        "authors": "{{ page.author | escape }}",
-                        "date": "{{ page.date }}",
-                        "description": "{{ page.description | escape }}",
-                        "id" : "{{ page.key }}",
-                        "image": "{{ site.url }}{{ page.image | escape }}",
-                        "keywords": "{{ page.keywords | escape }}",
-                        "subtitle": "{{ subpage[0].subtitle | escape }}",
-                        "title": "{{ page.title | escape }}",
-                        "url": "{{ site.url }}{{ page.url }}"
-                    }{% if forloop.last %}{% else %},{% endif %}
-                    {% endif %}{% endfor %}                
-                ]
+        "openapi": "3.0.2",
+        "info": {
+          "title": "{{ site.title }}",
+          "version": "1.0"
+        },
+        "servers": [
+          {
+            "url": "{{site.url}}"
+          }
+        ],
+        "paths": {
+          "/api/v1/": {
+            "get": {
+              "summary": "List API versions",
+              "responses": {
+                "200": {
+                  "description": "200 response",
+                  "content": {
+                    "application/json": 
+                        [
+                            {% for page in site.pages %}
+                                {% if page.published == true %}
+                            {
+                                "authors": "{{ page.author | escape }}",
+                                "date": "{{ page.date }}",
+                                "description": "{{ page.description | escape }}",
+                                "id" : "{{ page.key }}",
+                                "image": "{{ site.url }}{{ page.image | escape }}",
+                                "keywords": "{{ page.keywords | escape }}",
+                                "subtitle": "{{ subpage[0].subtitle | escape }}",
+                                "title": "{{ page.title | escape }}",
+                                "url": "{{ site.url }}{{ page.api | escape }}"
+                            }{% if forloop.last %}{% else %},{% endif %}
+                            {% endif %}{% endfor %}                
+                        ]                    
+                  }
+                }
+              }
             }
-        ]
-    }
+          }
+        }
+      }
 ]

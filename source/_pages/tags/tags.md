@@ -3,6 +3,7 @@ layout: default
 title: Tags
 section: tags
 permalink: /tags/
+api: /api/v1/tags/
 ---
 <!-- Tags -->
 <section class="grid-flex text-left">

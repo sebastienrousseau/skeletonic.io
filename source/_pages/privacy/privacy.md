@@ -8,13 +8,14 @@ keywords: skeletonic,skeletonic.css,CSS,lightweight,dead on,responsive,framework
 image: /assets/images/privacy.min.svg
 author: Sebastien Rousseau
 permalink: /privacy.html
+api: /api/v1/privacy/
 tags: [skeletonic,skeletonic.css,CSS,lightweight,dead on,responsive,framework,semantic,mobile-first,modern,style-agnostic,front-end,frontend,grid system,typography]
 section: privacy
 status: publish
 type: page
 published: true
 meta: {skeletonic,skeletonic.css,CSS,lightweight,dead on,responsive,framework,semantic,mobile-first,modern,style-agnostic,front-end,frontend,grid system,typography}
-date: 2021-06-10T21:03:35.706Z
+date: 2021-06-11T18:57:02.003Z
 robots: all
 ---
 

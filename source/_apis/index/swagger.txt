@@ -1,0 +1,35 @@
+---
+layout: none
+permalink: /api/v1/swagger.txt
+---
+openapi: 3.0.2
+info:
+  title: {{ site.title }}
+  version: '1.0'
+servers:
+  - url: '{{site.url}}'
+paths:
+  '/api/v1/skeletonic.json':
+    get:
+      summary: List of the Skeletonic's APIs
+      responses:
+        '200':
+          description: |-
+            200 response
+          content:
+            application/json:
+              examples:
+                {% for page in site.pages %}
+                {{ page.title | downcase }}:
+                    value:{% if page.published == true %}
+                        {
+                        "authors": "{{ page.author | escape }}",
+                        "date": "{{ page.date }}",
+                        "description": "{{ page.description | escape }}",
+                        "id" : "{{ page.key }}",
+                        "image": "{{ site.url }}{{ page.image | escape }}",
+                        "keywords": "{{ page.keywords | escape }}",
+                        "subtitle": "{{ subpage[0].subtitle | escape }}",
+                        "title": "{{ page.title | escape }}",
+                        "url": "{{ site.url }}{{ page.api | escape }}"
+                        }{% endif %}{% endfor %}

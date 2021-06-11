@@ -1,7 +1,7 @@
 ---
 // layout: none
 layout: compress
-permalink: /tags.json
+permalink: /api/v1/tags/
 ---
 [
     {
@@ -15,7 +15,7 @@ permalink: /tags.json
                         {% if page.categories contains 'skeletonic' %}
                     {
                         "authors": "{{ page.author | escape }}",
-                        "date": "{{ page.date }}",
+                        "last_updated": "{{ page.date }}",
                         "id" : "{{ page.id }}",
                         "image": "{{ site.url }}{{ page.image | escape }}",
                         "tags": "{{ page.tags | array_to_sentence_string | uniq }}",

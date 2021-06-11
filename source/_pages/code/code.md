@@ -8,6 +8,7 @@ keywords: code, css, deadon, framework, front-end, frontend, gridsystem, lightwe
 image: /assets/images/components/code.min.svg
 author: Sebastien Rousseau
 permalink: /code.html
+api: /api/v1/codes/
 categories: [elements]
 section: code
 tags: [code, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic]
@@ -15,7 +16,7 @@ status: publish
 type: page
 published: true
 meta: {code, css, deadon, framework, front-end, frontend, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic}
-date: 2021-06-10T21:03:35.706Z
+date: 2021-06-11T18:57:02.003Z
 robots: all
 ---
 

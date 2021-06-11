@@ -8,13 +8,14 @@ keywords: categories, cards, containers, content, css, css cards, flexible, flex
 image: /assets/images/components/categories.min.svg
 author: Sebastien Rousseau
 permalink: /categories.html
+api: /api/v1/categories/
 section: categories
 tags: [categories, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css]
 status: publish
 type: page
 published: true
 meta: {categories, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css}
-date: 2021-06-10T21:03:35.706Z
+date: 2021-06-11T18:57:02.003Z
 robots: all
 ---
 
