@@ -1,3 +1,5 @@
+# file: _plugins/sub_nav_generator.rb
+
 require "nokogiri"
 require 'logger'
 

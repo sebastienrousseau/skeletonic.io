@@ -1,4 +1,7 @@
+# file: _plugins/tag_page_generator.rb
+
 require 'logger'
+
 module Jekyll
     class TagPageGenerator < Generator
       safe true

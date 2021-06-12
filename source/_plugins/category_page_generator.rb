@@ -1,3 +1,5 @@
+# file: _plugins/category_page_generator.rb
+
 module Jekyll
 
     class CategoryPage < Page

@@ -16,7 +16,7 @@ status: publish
 type: page
 published: true
 meta: { CSS, deadon, framework, front-end, frontend, gettingstarted, gridsystem, lightweight, mobile-first, modern, responsive, semantic, skeletonic, skeletonic.css, style-agnostic, typography }
-date: 2021-06-11T18:57:02.003Z
+date: 2021-06-12T11:12:10.595Z
 robots: all
 ---
 

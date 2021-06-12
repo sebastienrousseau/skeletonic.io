@@ -15,7 +15,7 @@ status: publish
 type: page
 published: true
 meta: {categories, cards, containers, content, css, css cards, flexible, flexbox layout, framework, front-end, front end, grid system, light weight, mobile-first, modern, responsive, skeletonic, skeletonic.css}
-date: 2021-06-11T18:57:02.003Z
+date: 2021-06-12T11:12:10.595Z
 robots: all
 ---
 

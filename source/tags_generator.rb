@@ -1,9 +1,10 @@
+# file: _plugins/tags_generator.rb
 
 require 'logger'
 require 'yaml'
 
 tags = []
-outdir = '_pages/*'
+outdir = './source/_pages/*'
 
 @logger = Logger.new(STDOUT)
 
@@ -11,68 +12,68 @@ Dir.glob(outdir) do |file|
     filename = File.basename(file, ".md")
     @logger.debug(filename)
 end     
-Dir.glob(File.join('_pages/animations/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/animations/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 
-Dir.glob(File.join('_pages/button-groups/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/buttons/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/cards/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/cards/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/code/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/code/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/colour-palette/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/colors/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/debugging/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/debugging/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/divider/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/divider/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/forms/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/forms/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/getting-started/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/getting-started/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/grid-system/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/grid/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/html-links/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/links/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
@@ -84,25 +85,25 @@ Dir.glob(File.join('_pages/index/', '*.md')) do |file|
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/paragraph/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/paragraph/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/tables/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/tables/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/terms/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/terms/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
-Dir.glob(File.join('_pages/typography/', '*.md')) do |file|
+Dir.glob(File.join('./source/_pages/typography/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
     yaml_h = YAML.load(yaml_s)
     tags += yaml_h['tags'] 

@@ -16,7 +16,7 @@ status: publish
 type: page
 published: true
 meta: { 12column, columns, container, css, cssflexbox, cssgrid, cssgridsystem, flexbox, framework, front-end, frontend, fullyresponsive, gridsystem, light-weight, mobile-first, modern, responsive, robust, rows, semantic, simplecssgridsystem, skeletonic, skeletonic.css }
-date: 2021-06-11T18:57:02.003Z
+date: 2021-06-12T11:12:10.595Z
 robots: all
 ---
 
