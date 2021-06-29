@@ -1,5 +1,7 @@
 # Source for [skeletonic.io](https://skeletonic.io)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7df45f6a0c3b49d283ef64d9944ab7ce)](https://app.codacy.com/gh/sebastienrousseau/skeletonic.io?utm_source=github.com&utm_medium=referral&utm_content=sebastienrousseau/skeletonic.io&utm_campaign=Badge_Grade_Settings)
+
 ![alt text][logo]
 
 [logo]: ./source/assets/images/icons/skeletonic-banner.min.svg "Skeletonic Banner"
