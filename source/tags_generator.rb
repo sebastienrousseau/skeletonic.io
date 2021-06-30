@@ -14,98 +14,98 @@ Dir.glob(outdir) do |file|
 end     
 Dir.glob(File.join('./source/_pages/animations/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 
 Dir.glob(File.join('./source/_pages/buttons/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/cards/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/code/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/colors/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/debugging/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/divider/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/forms/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/getting-started/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/grid/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/links/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('_pages/index/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/paragraph/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/tables/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/terms/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
 Dir.glob(File.join('./source/_pages/typography/', '*.md')) do |file|
     yaml_s = File.read(file).split(/^---$/)[1]
-    yaml_h = YAML.load(yaml_s)
+    yaml_h = YAML.safe_load(yaml_s)
     tags += yaml_h['tags'] 
     #@logger.debug(tags[1])
 end
