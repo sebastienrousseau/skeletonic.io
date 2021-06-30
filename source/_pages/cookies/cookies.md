@@ -21,13 +21,13 @@ robots: all
 
 ### {{ page.title | escape }}
 
-#### What are cookies?
+#### What are cookies
 
 A cookie is a small text file saved on your computer or mobile device by a website when you visit [{{ site.url | escape }}]({{ site.url | escape }}).
 
 The cookie enables the website to remember your actions and preferences such as login, language, font size and other display preferences to keep you from having to re-enter them on every visit to the website or when browsing from page to page.
 
-#### How do we use cookies?
+#### How do we use cookies
 
 A number of the pages on our website use cookies to remember:
 
