@@ -22,8 +22,8 @@ robots: all
 
 <!-- Forms -->
 <section class="grid-flex text-left">
-    <div class="flex-12" markdown="1"> 
-    
+    <div class="flex-12" markdown="1">
+
 #### Forms
 
 Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
