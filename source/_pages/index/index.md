@@ -4,18 +4,18 @@ key: 29a5d4be-8c963ac78cab-a104-820f-8c963ac78cab
 title: Skeletonic CSS
 subtitle: Simply designed to fit your cascading web life.
 description: Skeletonic CSS is a lightweight, intuitive, accessible and ultra-responsive cascading style sheets framework to streamline your Digital and Mobile Web development needs.
-keywords: accessible, cascadingweblife, css, cssframework, framework, front-end, frontend, gridsystem, intuitive, lightweight, mobile-first, mobile-friendly, mobilewebdevelopment, modern, responsive, skeletonic, skeletonic.css, ultra-responsive
+keywords: accessible, cascading-web-life, css, css-framework, framework, front-end, frontend, grid-system, intuitive, lightweight, mobile-first, mobile-friendly, mobile-web-development, modern, responsive, skeletonic, skeletonic.css, ultra-responsive
 image: /assets/images/backgrounds/background-skeletonic.min.svg
 author: Sebastien Rousseau
 permalink: /
 api: /api/v1/
 categories: [content]
 section: skeletonic
-tags: [accessible, cascadingweblife, css, cssframework, framework, front-end, frontend, gridsystem, intuitive, lightweight, mobile-first, mobile-friendly, mobilewebdevelopment, modern, responsive, skeletonic, skeletonic.css, ultra-responsive]
+tags: [accessible, cascading-web-life, css, css-framework, framework, front-end, frontend, grid-system, intuitive, lightweight, mobile-first, mobile-friendly, mobile-web-development, modern, responsive, skeletonic, skeletonic.css, ultra-responsive]
 status: publish
 type: page
 published: true
-meta: {accessible, cascadingweblife, css, cssframework, framework, front-end, frontend, gridsystem, intuitive, lightweight, mobile-first, mobile-friendly, mobilewebdevelopment, modern, responsive, skeletonic, skeletonic.css, ultra-responsive}
+meta: {accessible, cascading-web-life, css, css-framework, framework, front-end, frontend, gridsystem, intuitive, lightweight, mobile-first, mobile-friendly, mobile-web-development, modern, responsive, skeletonic, skeletonic.css, ultra-responsive}
 date: 2021-06-12T11:12:10.595Z
 robots: all
 ---
@@ -33,11 +33,11 @@ robots: all
     <figcaption>Lightning fast</figcaption>
 </figure>
 
-Start designing and customising **responsive web interfaces**.
+Start designing and customizing **responsive web interfaces**.
 
 Skeletonic CSS is packed with clean, simple, **native CSS variables, predefined classes and IDs** that covers the full range of semantic HTML elements .
 
-All you have to do is **drop Skeletonic CSS into your project**, we will provide you with an intuitive 12-column grid system, base styles for typography, tables, buttons, forms, consistent user experience and efficient scaling for all viewports.
+All you have to do is **drop Skeletonic CSS into your project**, we will provide you with an intuitive 12-column grid system, base styles for typography, tables, buttons, forms, consistent user experience and efficient scaling for all viewport.
 
 </div>
 <div class="card flex-1 padding-3" markdown="1">
@@ -69,7 +69,7 @@ All components are **crafted with both desktop and mobile** in mind and work on 
 
 Devices and screen sizes are always changing, so it's important that your site optimises the experience for everyone. With Skeletonic CSS, the layout changes based on the size and capabilities of any device.
 
-We provide **mobile-friendly, touch optimised CSS styles** using the full range of semantic HTML Tags elements.
+We provide **mobile-friendly, touch optimized CSS styles** using the full range of semantic HTML Tags elements.
 
 </div>
 </section>
@@ -86,7 +86,7 @@ We provide **mobile-friendly, touch optimised CSS styles** using the full range 
 
 Skeletonic CSS aims to help you create **robust high-quality accessible websites** for better user experiences for everyone.
 
-We specifically looked at techniques to improve **text readability**, make your site **keyboard accessible**, and focus on optimum **colour contrast ratio**.
+We specifically looked at techniques to improve **text readability**, make your site **keyboard accessible**, and focus on optimum **color contrast ratio**.
 
 </div>
 <div class="card flex-1 padding-3" markdown="1">
@@ -100,7 +100,7 @@ We specifically looked at techniques to improve **text readability**, make your 
 
 Skeletonic CSS library provides a collection of **modular css components and mixins** made with Stylus.
 
-Dive in our open-source code base, and enjoy **clean, modularised Stylus components** ready to be integrated as part of your next project.
+Dive in our open-source code base, and enjoy **clean, modularized Stylus components** ready to be integrated as part of your next project.
 
 </div>
 <div class="card flex-1 padding-3" markdown="1">
