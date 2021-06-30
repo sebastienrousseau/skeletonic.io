@@ -5,7 +5,7 @@
  */
 function ServiceWorkerSetup() {
     this.init();
-};
+}
 
 /**
  * Initialise Service Worker
