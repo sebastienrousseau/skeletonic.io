@@ -10,16 +10,17 @@ function ServiceWorkerSetup() {
 /**
  * Initialise Service Worker
  */
+/* eslint no-console: ["error", { allow: ["warn", "error"] }] */
 ServiceWorkerSetup.prototype.init = function () {
     // Register the service worker
     if ('serviceWorker' in navigator) {
     	navigator.serviceWorker.register('/service-worker.js')
         .then(function(registration) {
             // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            console.warn('ServiceWorker registration successful with scope: ', registration.scope);
         }).catch(function(err) {
         // registration failed :(
-        	console.log('ServiceWorker registration failed: ', err);
+        	console.error('ServiceWorker registration failed: ', err);
         });
     }
 };
