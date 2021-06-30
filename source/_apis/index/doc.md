@@ -68,5 +68,5 @@ curl -X GET "https://skeletonic.io/api.json"
 
 ## Notes
 
-* If the User does not have a `UserInfo` instance when requested then one will
+*   If the User does not have a `UserInfo` instance when requested then one will
   be created for them.

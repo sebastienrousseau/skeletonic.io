@@ -22,7 +22,7 @@ robots: all
 
 <!-- Animations -->
 <section class="grid-flex text-left">
-    <div class="flex-12" markdown="1"> 
+    <div class="flex-12" markdown="1">
 
 ### {{ page.title }}
 {{ page.description }}
@@ -50,7 +50,7 @@ The Bounce animation allows you to bounce content.
     <label>
         <input type="checkbox" name="bounce[]">
         Reveal Bounce
-    </label>    
+    </label>
     <button class="bounce button primary padding-2">Bounce animation</button>
   </li>
 </ul>
@@ -64,7 +64,7 @@ The Chameleon Text animation allows you to bounce content.
     <label>
         <input type="checkbox" name="chameleon[]">
         Reveal Chameleon Text
-    </label>    
+    </label>
     <button class="chameleon link">Chameleon Text animation</button>
   </li>
 </ul>
@@ -78,10 +78,10 @@ The Chameleon Background animation allows you to bounce content.
     <label>
         <input type="checkbox" name="chameleon-bg[]">
         Reveal Chameleon Background
-    </label>    
+    </label>
     <button class="chameleon-bg link" style="color:white">Chameleon Background animation</button>
   </li>
-</ul>         
+</ul>
 
 #### Fade in
 
@@ -106,7 +106,7 @@ The Fade out in animation allows you to fade content.
     <label>
         <input type="checkbox" name="fade-out[]">
         Reveal Fade out
-    </label>    
+    </label>
     <button class="fade-out button primary padding-2">Fade out animation</button>
   </li>
 </ul>
@@ -120,7 +120,7 @@ The Flash animation allows you to bounce content.
     <label>
         <input type="checkbox" name="flash[]">
         Reveal Flash
-    </label>    
+    </label>
     <button class="flash button primary padding-2">Flash animation</button>
   </li>
 </ul>
@@ -134,7 +134,7 @@ The Pop In animation allows you to bounce content.
     <label>
         <input type="checkbox" name="pop-in[]">
         Reveal Pop In
-    </label>    
+    </label>
     <button class="pop-in button primary padding-2">Pop In animation</button>
   </li>
 </ul>
@@ -148,7 +148,7 @@ The Pulse animation allows you to bounce content.
     <label>
         <input type="checkbox" name="pulse[]">
         Reveal Pulse
-    </label>    
+    </label>
     <button class="pulse button primary padding-2">Pulse animation</button>
   </li>
 </ul>
@@ -162,7 +162,7 @@ The Rotation animation rotates content from the center of origin.
     <label>
         <input type="checkbox" name="rotation[]">
         Reveal Rotation
-    </label>    
+    </label>
     <button class="rotation button primary padding-2">Rotation animation</button>
   </li>
 </ul>
@@ -176,7 +176,7 @@ The Shake animation allows you to bounce content.
     <label>
         <input type="checkbox" name="shake[]">
         Reveal Shake
-    </label>    
+    </label>
     <button class="shake button primary padding-2">Shake animation</button>
   </li>
 </ul>
@@ -190,7 +190,7 @@ The Vanish In animation allows you to bounce content.
     <label>
         <input type="checkbox" name="vanish-in[]">
         Reveal Vanish In
-    </label>    
+    </label>
     <button class="vanish-in button primary padding-2">Vanish In animation</button>
   </li>
 </ul>
@@ -204,7 +204,7 @@ The Vanish Out animation allows you to bounce content.
     <label>
         <input type="checkbox" name="vanish-out[]">
         Reveal Vanish Out
-    </label>    
+    </label>
     <button class="vanish-out button primary padding-2">Vanish Out animation</button>
   </li>
 </ul>
@@ -218,7 +218,7 @@ The Wobble animation allows you to bounce content.
     <label>
         <input type="checkbox" name="wobble[]">
         Reveal Wobble
-    </label>    
+    </label>
     <button class="wobble button primary padding-2">Wobble animation</button>
   </li>
 </ul>
@@ -232,11 +232,11 @@ The Zoom In allows you to scales content into view, starts very small and scales
     <label>
         <input type="checkbox" name="zoom-in[]">
         Reveal Zoom In
-    </label>    
+    </label>
     <button class="zoom-in button primary padding-2">Zoom In animation</button>
   </li>
 </ul>
-</div>            
+</div>
 </section>
 
 <!-- End Animations -->

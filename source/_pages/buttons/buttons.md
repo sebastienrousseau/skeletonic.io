@@ -33,7 +33,7 @@ Skeletonic CSS v{{ site.version | escape }} provides different styles of buttons
 
 ##### Default buttons style
 
-<button type="button" class="primary">Default</button>                
+<button type="button" class="primary">Default</button>
 
 #### Button states
 
