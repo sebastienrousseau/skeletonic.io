@@ -11,6 +11,7 @@
 
 # Load configuration files
 # shellcheck disable=SC2154
+# shellcheck disable=SC2039
 # shellcheck disable=SC2002
 # shellcheck disable=SC3046
 # shellcheck disable=SC4000
