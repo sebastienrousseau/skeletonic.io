@@ -22,10 +22,10 @@ robots: all
 
 <!-- Paragraph -->
 <section class="grid-flex text-left">
-    <div class="flex-12" markdown="1"> 
+    <div class="flex-12" markdown="1">
 
 #### Paragraph - HTML p tag
-                
+
 The HTML &lt;p&gt; element defines a paragraph. A paragraph always starts on a new line, and bdivsers automatically add some white space (a margin) before and after a paragraph.
 
 #### Example
