@@ -21,13 +21,11 @@ robots: all
 ---
 <!-- HTML Links -->
 <section class="grid-flex text-left">
-    <div class="flex-12" markdown="1"> 
+    <div class="flex-12" markdown="1">
 
 #### HTML Links - Hyperlinks
 
-
 The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax:
-
 
 <pre>&lt;a href=&quot;url&quot;&gt;link text&lt;/a&gt;</pre>
 
@@ -37,7 +35,7 @@ Skeletonic CSS provides a variety of styles and hover effects for links to choos
     <li style="list-style: disc;">standard link - <span class="color-blue">#00f //blue</span></li>
     <li style="list-style: disc;">visited link - <span class="color-purple">#800080 //purple</span></li>
     <li style="list-style: disc;">active link - <span class="color-red">#f00 //red</span></li>
-</ul>        
+</ul>
 
 #### Link Hover Effects
 
