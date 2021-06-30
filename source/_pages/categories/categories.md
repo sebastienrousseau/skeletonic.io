@@ -23,13 +23,13 @@ robots: all
 <section class="grid-flex text-left">
 <div class="flex-12" markdown="1">
 
-This is a list of all the categories in {{site.title}}. 
+This is a list of all the categories in {{site.title}}.
 
 {% for page in site.pages %}
     {% for category in page.categories %}
         {% assign categorycloud = categorycloud | append:category | append:', ' %}
-    {% endfor %} 
-{% endfor %} 
+    {% endfor %}
+{% endfor %}
 
 {% assign categorycloud = categorycloud | split:", " | uniq | sort %}
 
