@@ -12,8 +12,8 @@ api: /api/v1/tags/
 {% for page in site.pages %}
     {% for tag in page.tags %}
         {% assign tagcloud = tagcloud | append:tag | append:', ' %}
-    {% endfor %} 
-{% endfor %} 
+    {% endfor %}
+{% endfor %}
 
 {% assign tagcloud = tagcloud | split:", " | uniq | sort %}
 
@@ -25,7 +25,6 @@ api: /api/v1/tags/
     </li>
 {% endfor %}
 </ul>
-
 
 </div></section>
 <!-- End Tags -->
