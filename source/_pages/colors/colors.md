@@ -31,7 +31,7 @@ robots: all
 
 #### Color Variables
 
-Skeletonic CSS v.{{site.version}} pr    ovides a set of color palettes and variables as a way to store information that we want to reuse throughout our stylesheet. These are designed to be harmonious, ensure accessible content, and help create contrast between UI elements.
+Skeletonic CSS v.{{site.version}} provides a set of color palettes and variables as a way to store information that we want to reuse throughout our stylesheet. These are designed to be harmonious, ensure accessible content, and help create contrast between UI elements.
 
 #### Color Styles available
 
@@ -201,7 +201,7 @@ The background colors are based on [Google's Material Design Color palette](http
             <li class="cl-purple-a700">Purple</li>
             <li class="cl-deep-purple-a700">Deep Purple</li>
             <li class="cl-indigo-a700">Indigo</li>
-            <li class="cl-blue-a700">Blue</li>            
+            <li class="cl-blue-a700">Blue</li>
         </ul>
     </div>
     <div class="flex-2">

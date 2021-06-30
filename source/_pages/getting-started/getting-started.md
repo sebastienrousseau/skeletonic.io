@@ -55,7 +55,7 @@ npm install skeletonic-stylus
 </code>
 
 ##### Install with Yarn
-Install with [Yarn](https://yarnpkg.com/en/package/skeletonic-stylus) to get the pre-built CSS and sourcemaps. 
+Install with [Yarn](https://yarnpkg.com/en/package/skeletonic-stylus) to get the pre-built CSS and sourcemaps.
 
 <div class="bd-clipboard"><button type="button" onclick="copyToClipboard(document.getElementById('clipboard-2').innerHTML)" class="button-clipboard primary-outline" title="Copy to clipboard">Copy</button></div>
 
@@ -86,7 +86,7 @@ Skeletonic CSS provides a separate repository for a CSS, LESS & SASS only distri
 You can install both CSS and LESS via NPM or download any of them and use them in your project as local files.
 #### Whats included
 
-Within the download you'll find all the source files, compiled and minified CSS bundles as well as the [CSS sourcemaps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) grouped into the **dist** folder. 
+Within the download you'll find all the source files, compiled and minified CSS bundles as well as the [CSS sourcemaps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) grouped into the **dist** folder.
 
 You'll see something like this:
 
@@ -134,7 +134,7 @@ dist
     │   └── zoom-in.styl
     ├── base
     │   ├── README.md
-    │   ├── _contents.styl
+│   ├──_contents.styl
     │   ├── helpers.styl
     │   └── reset.styl
     ├── components
@@ -145,7 +145,7 @@ dist
     │   └── navbar.styl
     ├── configurations
     │   ├── README.md
-    │   ├── _contents.styl
+│   ├──_contents.styl
     │   ├── colors.styl
     │   └── variables.styl
     ├── debugging
@@ -170,7 +170,7 @@ dist
     │   └── table.styl
     ├── fonts
     │   ├── README.md
-    │   ├── _contents.styl
+│   ├──_contents.styl
     │   └── font-face.styl
     ├── layout
     │   ├── README.md
@@ -180,7 +180,7 @@ dist
     │   └── media-queries.styl
     ├── palettes
     │   ├── README.md
-    │   ├── _contents.styl
+│   ├──_contents.styl
     │   ├── material.styl
     │   ├── tachyons.styl
     │   └── websafe.styl
@@ -211,13 +211,13 @@ You can also specify a specific version as per below. The latest version as of t
 
 <code class="padding-2" id="clipboard-6">
     &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/skeletonic-stylus@{{ site.version | escape }}/css/skeletonic.min.css&quot; /&gt;
-</code>    
+</code>
 
 ##### CSS Colours
 
 <code class="padding-2" id="clipboard-8">
     &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;skeletonic-colors.min.css&quot; /&gt;
-</code>    
+</code>
 
 ##### CSS Animations
 

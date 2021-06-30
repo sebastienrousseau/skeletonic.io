@@ -41,7 +41,7 @@ These are the basic elements that constitute a basic card layout, as we can see 
 <div class=" flex-12">
     <div class="card">
         <div class="card-content">
-<h4>Title</h4> 
+<h4>Title</h4>
 <p>Lorem ipsum.</p>
         </div>
     </div>

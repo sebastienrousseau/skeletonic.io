@@ -21,7 +21,7 @@ robots: all
 ---
 
 <!-- Code -->
-<section class="grid-flex text-left">    
+<section class="grid-flex text-left">
     <div class="flex-12" markdown="1">
 
 ### {{ page.title }}
@@ -41,25 +41,25 @@ The &lt;code&gt; element does not preserve extra whitespace and line-breaks.To f
 
 <code class="padding-1">
     <pre>
-&lt;code&gt;&#10;    &lt;pre&gt;&#10;    import &quot;skeletonic&quot;&#10;        void main() {&#10;            print(&quot;Hello Skeletonic&quot;)&#10;        }&#10;    &lt;/pre&gt;&#10;&lt;/code&gt;                    
+&lt;code&gt;&#10;    &lt;pre&gt;&#10;    import &quot;skeletonic&quot;&#10;        void main() {&#10;            print(&quot;Hello Skeletonic&quot;)&#10;        }&#10;    &lt;/pre&gt;&#10;&lt;/code&gt;
     </pre>
-</code>                
+</code>
 
 #### Code block colours
 
-<code class="primary padding-1">Primary</code>                
-<code class="secondary padding-1">Secondary</code>                
-<code class="success padding-1">Success</code>                
-<code class="info padding-1">Info</code>                
-<code class="warning padding-1">Warning</code>                
-<code class="error padding-1">Error</code>                
+<code class="primary padding-1">Primary</code>
+<code class="secondary padding-1">Secondary</code>
+<code class="success padding-1">Success</code>
+<code class="info padding-1">Info</code>
+<code class="warning padding-1">Warning</code>
+<code class="error padding-1">Error</code>
 
 #### HTML var Element for variables
 
 The HTML &lt;var&gt; element is used to define a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.
-                
-<code class="padding-1">Skeletonic CSS Version: &lt;var&gt;v&lt;var&gt; where v is equal to: {{site.version}}</code>                
-    
+
+<code class="padding-1">Skeletonic CSS Version: &lt;var&gt;v&lt;var&gt; where v is equal to: {{site.version}}</code>
+
 </div>
 </section>
 <!-- End Code -->

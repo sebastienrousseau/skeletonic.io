@@ -24,9 +24,9 @@ robots: all
 ### Use Skeletonic CSS to
 
 <section class="grid-flex">
-<div class="card flex-1 padding-3" markdown="1">        
+<div class="card flex-1 padding-3" markdown="1">
 
-#### Accelerates cross browser development 
+#### Accelerates cross browser development
 
 <figure>
     <img src="assets/images/icons/thunder.min.svg" alt="Icon representing a lightning strike" width="583" height="438" class="icon-cards" />
@@ -37,13 +37,12 @@ Start designing and customising **responsive web interfaces**.
 
 Skeletonic CSS is packed with clean, simple, **native CSS variables, predefined classes and IDs** that covers the full range of semantic HTML elements .
 
-All you have to do is **drop Skeletonic CSS into your project**, we will provide you with an intuitive 12-column grid system, base styles for typography, tables, buttons, forms, consistent user experience and efficient scaling for all viewports.    
+All you have to do is **drop Skeletonic CSS into your project**, we will provide you with an intuitive 12-column grid system, base styles for typography, tables, buttons, forms, consistent user experience and efficient scaling for all viewports.
 
 </div>
-<div class="card flex-1 padding-3" markdown="1">        
+<div class="card flex-1 padding-3" markdown="1">
 
 #### Improves page rendering speed and reduces load times
-
 
 <figure>
     <img src="assets/images/icons/lightweight.min.svg" alt="Icon representing a lightweight feather" width="583" height="438" class="icon-cards"  />
@@ -57,7 +56,7 @@ Its **very small footprint** means that your websites and web applications will 
 It comes with a small footprint, all in just **~2kb (minified + gzipped)**.
 
 </div>
-<div class="card flex-1 padding-3" markdown="1">        
+<div class="card flex-1 padding-3" markdown="1">
 
 #### Delivers highly responsive user experience
 
@@ -66,9 +65,9 @@ It comes with a small footprint, all in just **~2kb (minified + gzipped)**.
     <figcaption>Responsive design</figcaption>
 </figure>
 
-All components are **crafted with both desktop and mobile** in mind and work on different devices and screen size. 
+All components are **crafted with both desktop and mobile** in mind and work on different devices and screen size.
 
-Devices and screen sizes are always changing, so it's important that your site optimises the experience for everyone. With Skeletonic CSS, the layout changes based on the size and capabilities of any device. 
+Devices and screen sizes are always changing, so it's important that your site optimises the experience for everyone. With Skeletonic CSS, the layout changes based on the size and capabilities of any device.
 
 We provide **mobile-friendly, touch optimised CSS styles** using the full range of semantic HTML Tags elements.
 
@@ -76,9 +75,9 @@ We provide **mobile-friendly, touch optimised CSS styles** using the full range 
 </section>
 
 <section class="grid-flex">
-<div class="card flex-1 padding-3" markdown="1">        
+<div class="card flex-1 padding-3" markdown="1">
 
-#### Builds a better accessible Web with the [WCAG 2.2 standard](https://www.w3.org/WAI/WCAG22/Understanding/) 
+#### Builds a better accessible Web with the [WCAG 2.2 standard](https://www.w3.org/WAI/WCAG22/Understanding/)
 
 <figure>
     <img src="assets/images/icons/accessibility.min.svg" alt="Icon representing CSS as a mean to support low vision, visual impairment" width="583" height="438" class="icon-cards"  />
@@ -90,9 +89,9 @@ Skeletonic CSS aims to help you create **robust high-quality accessible websites
 We specifically looked at techniques to improve **text readability**, make your site **keyboard accessible**, and focus on optimum **colour contrast ratio**.
 
 </div>
-<div class="card flex-1 padding-3" markdown="1">     
+<div class="card flex-1 padding-3" markdown="1">
 
-####  Helps to create visual and functional consistency
+#### Helps to create visual and functional consistency
 
 <figure>
 <img src="assets/images/icons/components.min.svg" alt="Icon representing a component library" width="583" height="438" class="icon-cards" />
@@ -104,7 +103,7 @@ Skeletonic CSS library provides a collection of **modular css components and mix
 Dive in our open-source code base, and enjoy **clean, modularised Stylus components** ready to be integrated as part of your next project.
 
 </div>
-<div class="card flex-1 padding-3" markdown="1">     
+<div class="card flex-1 padding-3" markdown="1">
 
 #### Free. Open source. Supported.
 
@@ -113,7 +112,7 @@ Dive in our open-source code base, and enjoy **clean, modularised Stylus compone
     <figcaption>Open source</figcaption>
 </figure>
 
-**Skeletonic CSS** is designed, built and maintained by [Sebastien Rousseau](https://github.com/sebastienrousseau). Source code licensed under the **[MIT License](https://opensource.org/licenses/MIT)**. 
+**Skeletonic CSS** is designed, built and maintained by [Sebastien Rousseau](https://github.com/sebastienrousseau). Source code licensed under the **[MIT License](https://opensource.org/licenses/MIT)**.
 
 All aspects of Skeletonic CSS are **open source** on **[GitHub](https://github.com/sebastienrousseau/skeletonic/)**, there are no fees or licensing costs, including for commercial use.
 

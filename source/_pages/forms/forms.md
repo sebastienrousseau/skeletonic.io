@@ -70,7 +70,7 @@ Form elements are different types of input elements, like text fields, checkboxe
 
 <section class="grid-flex text-left">
 <div class="flex-12">
-<h4 id="select">Select</h4> 
+<h4 id="select">Select</h4>
 <label for="select">Select</label>
 <select name="select" id="select">
     <option value="">Choose an item...</option>

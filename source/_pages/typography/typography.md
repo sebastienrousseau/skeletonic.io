@@ -21,7 +21,7 @@ robots: all
 ---
 <!-- Fonts -->
 <section class="grid-flex text-left">
-    <div class="flex-12" markdown="1"> 
+    <div class="flex-12" markdown="1">
 
 #### Typography
 
@@ -63,7 +63,7 @@ Skeletonic CSS v.{{site.version}} carefully considered, readable typography. All
             <td><h6 style="margin-top: 0px;">Heading 6 (1.3rem)</h6></td>
         </tr>
     </tbody>
-</table>                            
+</table>
 
 <pre><code class="padding-1">&lt;h1&gt;Heading 1&lt;/h1&gt;&#10;&lt;span class=&quot;h1&quot;&gt;Heading 1&lt;/span&gt;</code></pre>
 
