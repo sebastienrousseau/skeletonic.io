@@ -27,12 +27,12 @@ robots: all
 #### {{ page.title }}
 
 The Skeletonic CSS grid system is the fastest and easy way to create responsive web page layout.
-        
+
 #### Overview
 
-Skeletonic CSS v.{{site.version}} has a simple, fluid, mobile-first, CSS flexbox based, responsive grid that collapses at small viewport. 
+Skeletonic CSS v.{{site.version}} has a simple, fluid, mobile-first, CSS flexbox based, responsive grid that collapses at small viewport.
 
-It is based on a 12-columns fluid grid and constitutes the geometric foundation of all the visual elements of the Skeletonic CSS framework, from typography to forms, tables and visual components. 
+It is based on a 12-columns fluid grid and constitutes the geometric foundation of all the visual elements of the Skeletonic CSS framework, from typography to forms, tables and visual components.
 
 #### Container
 
@@ -41,7 +41,7 @@ The Container is the main layout element and is required when using the Skeleton
 <code><pre>
 &lt;style&gt;        &#10;    .container&#10;    {&#10;        position: relative;&#10;        box-sizing: border-box;&#10;        width: 96%;&#10;        margin: 0 auto;&#10;        padding: 0 24.270509831248425 rem;&#10;    }   &#10;&lt;/style&gt;        &#10;&#10;&lt;div class=&quot;container&quot;&gt;&#10;  &lt;!-- Content here --&gt;&#10;&lt;/div&gt;
         </pre></code>
-        
+
 #### The Grid system
 
 Skeletonic CSS v.{{site.version}} grid system uses a series of container, rows, and columns to layout and align your content. Below is a basic example of how the grid comes together. The columns are centered in the page with the parent Container class <strong>.container</strong>, the layout is governed by Flex class <strong>.flex-#</strong> properties. Each Flex column has pre-defined horizontal padding (called a gutter) for controlling the space between them.
@@ -273,7 +273,7 @@ Flex classes indicate the number of columns you’d like to use out of the possi
     </div>
     <div class="background-color-grey-100 border-color-grey-900  flex-6 text-center">
         <p class="color-black">flex-6</p>
-    </div>    
+    </div>
 </section>
 <section class="grid-flex">
     <div class="flex-12 text-left">
