@@ -22,7 +22,7 @@ robots: all
 
 <!-- Table -->
 <section class="grid-flex text-left">
-    <div class="flex-12" markdown="1"> 
+    <div class="flex-12" markdown="1">
 
 #### HTML Tables
 
