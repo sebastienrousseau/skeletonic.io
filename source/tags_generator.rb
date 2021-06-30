@@ -6,7 +6,7 @@ require 'yaml'
 tags = []
 outdir = './source/_pages/*'
 
-@logger = Logger.new(STDOUT)
+@logger = Logger.new($stdout)
 
 Dir.glob(outdir) do |file|
     filename = File.basename(file, ".md")
