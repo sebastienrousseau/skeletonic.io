@@ -1,4 +1,5 @@
 # file: _plugins/category_page_generator.rb
+# frozen_string_literal: true
 
 module Jekyll
 
@@ -11,7 +12,7 @@ module Jekyll
   
         self.process(@name)
         self.read_yaml(File.join(base, '_layouts'), 'category_pages.html')
-        self.data['category'] = category
+        self.data["category"] = category
   
         category_title_prefix = site.config['category_title_prefix'] || 'Category: '
         self.data['title'] = "#{category_title_prefix}#{category}"

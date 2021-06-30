@@ -22,7 +22,7 @@ robots: all
 
 <!-- Buttons -->
 <section class="grid-flex text-left">
-    <div class="flex-12" markdown="1"> 
+    <div class="flex-12" markdown="1">
 
 ### {{ page.title }}
 {{ page.description }}
@@ -77,7 +77,6 @@ Skeletonic CSS has the following classes for multiple outline buttons states. Th
     <li>.danger-outline</li>
     <li>.link-outline</li>
 </ul>
-
 
 <button type="button" class="primary-outline">Primary Outline</button>
 <button type="button" class="secondary-outline">Secondary Outline</button>
