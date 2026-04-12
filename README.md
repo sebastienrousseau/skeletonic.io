@@ -1,4 +1,5 @@
-# skeletonic.io
+skeletonic.io
+=============
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7df45f6a0c3b49d283ef64d9944ab7ce)](https://app.codacy.com/gh/sebastienrousseau/skeletonic.io?utm_source=github.com&utm_medium=referral&utm_content=sebastienrousseau/skeletonic.io&utm_campaign=Badge_Grade_Settings)
 
@@ -13,7 +14,7 @@ framework.
 
 ## Project layout
 
-```
+```text
 skeletonic.io/
 ├── config.toml             # shokunin config (output_dir = "docs")
 ├── content/                # markdown source pages
@@ -110,7 +111,7 @@ on `/animations/` only):
 |---|---|---|
 | `/css/skeletonic.min.css` | every page | core (cascade-layered, WCAG 2.2) |
 | `/css/skeletonic-tachyons.min.css` | every page | utility / palette helpers |
-| `/css/skeletonic-animations.min.css` | `/animations/` only, behind `prefers-reduced-motion: no-preference` | optional motion module |
+| `/css/skeletonic-animations.min.css` | `/animations/` only | optional motion module |
 
 All three files are copies of the v1.1.7 build artefacts shipped by
 the [skeletonic-stylus](https://github.com/sebastienrousseau/skeletonic-stylus)

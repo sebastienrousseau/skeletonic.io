@@ -1,12 +1,15 @@
-# Changelog
+Changelog
+=========
 
 All notable changes to Skeletonic Stylus are documented in this file.
 
-## v1.1.7 — 2026-04 (current)
+v1.1.7 — 2026-04 (current)
+---------------------------
 
 The "release-readiness" pass: a11y, supply chain, repo hygiene.
 
 ### Accessibility (WCAG 2.2)
+
 - **`$primary` darkened** to `hsl(210, 100%, 42%)` for AA contrast
   against white text in buttons / badges / links.
 - **`$secondary` darkened** to `hsl(195, 100%, 33%)`.
@@ -18,6 +21,7 @@ The "release-readiness" pass: a11y, supply chain, repo hygiene.
 - Added **focus-not-obscured** scroll-margin helpers for sticky headers.
 
 ### Build & supply chain
+
 - **Cascade layers** — every block now lives in
   `@layer skeletonic.{reset,tokens,layout,elements,components,utilities}`.
 - **CycloneDX SBOM** generated as part of the npm tarball.
@@ -29,6 +33,7 @@ The "release-readiness" pass: a11y, supply chain, repo hygiene.
 - Removed archived `stylelint-a11y` plugin from the lint config.
 
 ### Repo hygiene & consumer package
+
 - Legacy `package/` directory removed; `dist/` is now the single source
   of truth for consumers.
 - README rewritten to reflect v1.1.7 install paths.
@@ -36,16 +41,18 @@ The "release-readiness" pass: a11y, supply chain, repo hygiene.
 - New `.github/workflows/npm-publish.yml` is tag-driven.
 
 ### Bug fixes (P0)
-- **`row $:after` parent-selector regression** — replaced stray `$` with
-  `&` in `src/stylus/components/_grid.styl`.
+
+- **`row $:after` parent-selector regression** — replaced stray `$`
+  with `&` in `src/stylus/components/_grid.styl`.
 - **`.alternate`** mistakenly applied `animation-direction: reverse`
   instead of `alternate`.
-- **`.alert-*` namespacing** — `.alert.success` → `.alert.alert-success`
-  to avoid collisions with state classes.
+- **`.alert-*` namespacing** — `.alert.success` →
+  `.alert.alert-success` to avoid collisions with state classes.
 
 [Full v1.1.7 release notes on GitHub](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
 
-## Older releases
+Older releases
+--------------
 
 - **v1.1.6** — internal cleanup, dependency bumps.
 - **v1.1.5** — added Material palette.

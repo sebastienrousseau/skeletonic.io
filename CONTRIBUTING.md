@@ -1,4 +1,5 @@
-# Contributing
+Contributing
+============
 
 Skeletonic Stylus is an open-source project; contributions of all sizes
 are welcome — from typo fixes to new components.
@@ -15,7 +16,7 @@ corepack enable
 pnpm install
 
 # 3. Build
-pnpm run build           # full pipeline (stylus → prettier → stylelint → autoprefixer → csso)
+pnpm run build    # stylus → prettier → stylelint → autoprefixer → csso
 
 # 4. Lint & test
 pnpm run lint

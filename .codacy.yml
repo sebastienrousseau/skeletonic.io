@@ -12,3 +12,7 @@ exclude_paths:
   - "static/css/chrome.css"
   # Build scripts
   - "scripts/**"
+  # Repo-level config and data files
+  - "static/manifest.webmanifest"
+  - "static/robots.txt"
+  - "config.toml"

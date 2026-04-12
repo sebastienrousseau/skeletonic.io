@@ -19,28 +19,35 @@
   const STORAGE_KEY = "theme";
   const root = document.documentElement;
 
-  const applyTheme = (theme) => {
-    root.setAttribute("data-theme", theme);
-    try { localStorage.setItem(STORAGE_KEY, theme); } catch (_) {}
-
+  const setIconVisibility = (theme) => {
+    const isDark = theme === "dark";
     document.querySelectorAll(".theme-icon-dark").forEach((el) => {
-      el.style.display = theme === "dark" ? "none" : "";
+      el.style.display = isDark ? "none" : "";
     });
     document.querySelectorAll(".theme-icon-light").forEach((el) => {
-      el.style.display = theme === "dark" ? "" : "none";
-    });
-    document.querySelectorAll("#themeToggle").forEach((btn) => {
-      const labelLight = btn.dataset.labelLight || "Light";
-      const labelDark = btn.dataset.labelDark || "Dark";
-      const ariaLight = btn.dataset.ariaLight || "Switch to light mode";
-      const ariaDark = btn.dataset.ariaDark || "Switch to dark mode";
-      btn.querySelector(".theme-label").textContent = theme === "dark" ? labelLight : labelDark;
-      btn.setAttribute("aria-label", theme === "dark" ? ariaLight : ariaDark);
+      el.style.display = isDark ? "" : "none";
     });
   };
 
+  const updateToggleButtons = (theme) => {
+    const isDark = theme === "dark";
+    document.querySelectorAll("#themeToggle").forEach((btn) => {
+      const label = isDark ? (btn.dataset.labelLight || "Light") : (btn.dataset.labelDark || "Dark");
+      const aria = isDark ? (btn.dataset.ariaLight || "Switch to light mode") : (btn.dataset.ariaDark || "Switch to dark mode");
+      btn.querySelector(".theme-label").textContent = label;
+      btn.setAttribute("aria-label", aria);
+    });
+  };
+
+  const applyTheme = (theme) => {
+    root.setAttribute("data-theme", theme);
+    try { localStorage.setItem(STORAGE_KEY, theme); } catch (_e) { /* storage unavailable */ }
+    setIconVisibility(theme);
+    updateToggleButtons(theme);
+  };
+
   let stored;
-  try { stored = localStorage.getItem(STORAGE_KEY); } catch (_) {}
+  try { stored = localStorage.getItem(STORAGE_KEY); } catch (_e) { /* storage unavailable */ }
   if (stored) {
     applyTheme(stored);
   } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -59,7 +66,7 @@
 (() => {
   const toggle = document.getElementById("navToggle");
   const nav = document.querySelector(".site-nav");
-  if (!toggle || !nav) return;
+  if (!toggle || !nav) { return; }
   toggle.addEventListener("click", () => {
     const open = nav.classList.toggle("open");
     toggle.setAttribute("aria-expanded", String(open));
@@ -70,7 +77,7 @@
 (() => {
   document.querySelectorAll("[data-dropdown]").forEach((dd) => {
     const btn = dd.querySelector(".dropdown-toggle");
-    if (!btn) return;
+    if (!btn) { return; }
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
       const isOpen = dd.classList.toggle("open");
@@ -91,7 +98,7 @@
   document.querySelectorAll(".lang-switcher").forEach((sw) => {
     const btn = sw.querySelector("button");
     const menu = sw.querySelector(".lang-menu");
-    if (!btn || !menu) return;
+    if (!btn || !menu) { return; }
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
       const open = menu.style.display === "block";
@@ -112,7 +119,7 @@
   const input = document.getElementById("searchInput");
   const results = document.getElementById("searchResults");
   const trigger = document.getElementById("searchTrigger");
-  if (!overlay || !input || !results) return;
+  if (!overlay || !input || !results) { return; }
 
   const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform || navigator.userAgent || "");
   document.querySelectorAll(".search-shortcut").forEach((el) => {
@@ -689,7 +696,7 @@
       overlay.classList.contains("open") ? close() : open();
       return;
     }
-    if (!overlay.classList.contains("open")) return;
+    if (!overlay.classList.contains("open")) { return; }
     if (e.key === "Escape") { e.preventDefault(); close(); return; }
     const items = results.querySelectorAll(".search-result");
     if (e.key === "ArrowDown") {
@@ -727,12 +734,12 @@
       document.execCommand("copy");
       btn.textContent = COPIED;
       setTimeout(() => { btn.textContent = COPY; }, RESET_MS);
-    } catch (_) {}
+    } catch (_e) { /* execCommand may be unsupported */ }
     document.body.removeChild(ta);
   };
 
   document.querySelectorAll("pre").forEach((pre) => {
-    if (pre.querySelector(".copy-btn")) return;
+    if (pre.querySelector(".copy-btn")) { return; }
     const btn = document.createElement("button");
     btn.className = "copy-btn";
     btn.type = "button";
