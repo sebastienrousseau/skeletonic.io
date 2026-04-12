@@ -1,0 +1,6 @@
+---
+exclude_paths:
+  - "docs/**"
+  - "content/**"
+  - "templates/*.html"
+  - "templates/*.js"
