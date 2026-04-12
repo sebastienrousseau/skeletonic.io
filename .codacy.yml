@@ -1,18 +1,13 @@
 ---
+# This is a static-site repo: all code is either SSG-generated HTML,
+# Tera templates, client-side glue JS, or documentation markdown.
+# None of it benefits from Codacy's default rulesets, so we exclude
+# everything and rely on Lighthouse CI + lychee in the build workflow.
 exclude_paths:
-  # Auto-generated SSG output
   - "docs/**"
-  # Markdown source with YAML frontmatter
   - "content/**"
-  # Tera templates — {{ }} syntax triggers HTML-linter false positives
   - "templates/**"
-  # Minified / pre-built CSS from skeletonic-stylus (linted upstream)
-  - "static/css/skeletonic*.css"
-  # Chrome CSS extracted from template (site-specific, not library code)
-  - "static/css/chrome.css"
-  # Build scripts
+  - "static/**"
   - "scripts/**"
-  # Repo-level config and data files
-  - "static/manifest.webmanifest"
-  - "static/robots.txt"
+  - "*.md"
   - "config.toml"
