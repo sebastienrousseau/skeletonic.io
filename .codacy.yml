@@ -1,6 +1,14 @@
 ---
 exclude_paths:
+  # Auto-generated SSG output
   - "docs/**"
+  # Markdown source with YAML frontmatter
   - "content/**"
-  - "templates/*.html"
-  - "templates/*.js"
+  # Tera templates — {{ }} syntax triggers HTML-linter false positives
+  - "templates/**"
+  # Minified / pre-built CSS from skeletonic-stylus (linted upstream)
+  - "static/css/skeletonic*.css"
+  # Chrome CSS extracted from template (site-specific, not library code)
+  - "static/css/chrome.css"
+  # Build scripts
+  - "scripts/**"
