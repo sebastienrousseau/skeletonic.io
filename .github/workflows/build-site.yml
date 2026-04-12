@@ -46,7 +46,10 @@ jobs:
       - name: Verify no Bootstrap or other CSS framework leaked into the build
         run: |
           set -e
-          if grep -RIEi 'bootstrap|tailwind|bulma|foundation\.css|tachyons\.css' docs/; then
+          # Only check CSS/JS assets — HTML content legitimately mentions
+          # other frameworks in comparison tables.
+          if grep -RIEi 'bootstrap|tailwind|bulma|foundation\.css|tachyons\.css' \
+               --include='*.css' --include='*.js' docs/; then
             echo "::error::Foreign CSS framework detected in build output"
             exit 1
           fi
