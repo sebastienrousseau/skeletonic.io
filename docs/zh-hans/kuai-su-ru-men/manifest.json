@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "通过 npm 或 CDN 安装 Skeletonic Stylus，将其导入到你的 Stylus 构建中，秒级覆盖变量。",
+  "display": "standalone",
+  "icons": [],
+  "name": "Skeletonic Stylus",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

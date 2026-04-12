@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block body_class %}page-home{% endblock %}
+
+{% block extra_head %}
+<!-- SoftwareApplication JSON-LD — canonical product entity for SGE/Gemini indexing. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Skeletonic Stylus",
+  "alternateName": "skeletonic-stylus",
+  "description": "A lightweight, accessible, modular Stylus CSS library — WCAG 2.2 ready, cascade-layered, ~7.5 KB gzipped.",
+  "url": "https://skeletonic.io/",
+  "downloadUrl": "https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus",
+  "applicationCategory": "WebApplication",
+  "applicationSubCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "softwareVersion": "1.1.7",
+  "fileSize": "7.5KB",
+  "license": "https://opensource.org/licenses/MIT",
+  "author": {
+    "@type": "Person",
+    "name": "Sebastien Rousseau",
+    "url": "https://sebastienrousseau.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "1",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+{% endblock %}
+
+{% block hero %}
+<header class="site-hero">
+  <img class="hero-logo" src="/images/icons/logo.min.svg" alt="Skeletonic Stylus logo" width="208" height="208" loading="eager" decoding="async">
+  <h1>{{ page.name | default(value="Skeletonic Stylus") }}</h1>
+  <p>{{ page.description | default(value="A lightweight, accessible, modular Stylus CSS library — WCAG 2.2 ready, cascade-layered, and just ~7.5 KB gzipped.") }}</p>
+  <a class="hero-cta" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus">pnpm add @sebastienrousseau/skeletonic-stylus</a>
+</header>
+{% endblock %}
+
+{% block content %}
+{{ page.content | safe }}
+{% endblock %}

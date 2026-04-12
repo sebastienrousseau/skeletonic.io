@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="yo" itemscope itemtype="https://schema.org/WebSite">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Nipa Skeletonic Stylus — Skeletonic Stylus</title>
+
+    <meta name="description" content="Skeletonic Stylus jẹ ile-ikawe CSS Stylus orisun-ṣiṣi fun aṣa UI ti a le wọle si, ti o yara, ti o ni modulu.">
+    <meta name="keywords" content="skeletonic, nipa, stylus, ilana css, imọran">
+    <meta name="author" content="Sebastien Rousseau">
+    <meta name="generator" content="Shokunin (ssg) v0.0.34">
+    <meta name="theme-color" content="hsl(210, 100%, 42%)">
+    <meta name="color-scheme" content="light dark">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'">
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
+
+    <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;yo&#x2F;nipa&#x2F;">
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
+    <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;about&#x2F;">
+    <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;about&#x2F;">
+    <link rel="alternate" hreflang="fr" href="https:&#x2F;&#x2F;skeletonic.io/fr&#x2F;a-propos&#x2F;">
+    <link rel="alternate" hreflang="de" href="https:&#x2F;&#x2F;skeletonic.io/de&#x2F;ueber-uns&#x2F;">
+    <link rel="alternate" hreflang="ar" href="https:&#x2F;&#x2F;skeletonic.io/ar&#x2F;hawla&#x2F;">
+    <link rel="alternate" hreflang="bn" href="https:&#x2F;&#x2F;skeletonic.io/bn&#x2F;somporke&#x2F;">
+    <link rel="alternate" hreflang="cs" href="https:&#x2F;&#x2F;skeletonic.io/cs&#x2F;o-projektu&#x2F;">
+    <link rel="alternate" hreflang="es" href="https:&#x2F;&#x2F;skeletonic.io/es&#x2F;acerca-de&#x2F;">
+    <link rel="alternate" hreflang="fil" href="https:&#x2F;&#x2F;skeletonic.io/fil&#x2F;tungkol&#x2F;">
+    <link rel="alternate" hreflang="ha" href="https:&#x2F;&#x2F;skeletonic.io/ha&#x2F;game-da&#x2F;">
+    <link rel="alternate" hreflang="he" href="https:&#x2F;&#x2F;skeletonic.io/he&#x2F;odot&#x2F;">
+    <link rel="alternate" hreflang="hi" href="https:&#x2F;&#x2F;skeletonic.io/hi&#x2F;parichay&#x2F;">
+    <link rel="alternate" hreflang="id" href="https:&#x2F;&#x2F;skeletonic.io/id&#x2F;tentang&#x2F;">
+    <link rel="alternate" hreflang="it" href="https:&#x2F;&#x2F;skeletonic.io/it&#x2F;informazioni&#x2F;">
+    <link rel="alternate" hreflang="ja" href="https:&#x2F;&#x2F;skeletonic.io/ja&#x2F;gaiyo&#x2F;">
+    <link rel="alternate" hreflang="ko" href="https:&#x2F;&#x2F;skeletonic.io/ko&#x2F;sogae&#x2F;">
+    <link rel="alternate" hreflang="nl" href="https:&#x2F;&#x2F;skeletonic.io/nl&#x2F;over-ons&#x2F;">
+    <link rel="alternate" hreflang="pl" href="https:&#x2F;&#x2F;skeletonic.io/pl&#x2F;o-projekcie&#x2F;">
+    <link rel="alternate" hreflang="pt-BR" href="https:&#x2F;&#x2F;skeletonic.io/pt-br&#x2F;sobre&#x2F;">
+    <link rel="alternate" hreflang="ro" href="https:&#x2F;&#x2F;skeletonic.io/ro&#x2F;despre&#x2F;">
+    <link rel="alternate" hreflang="ru" href="https:&#x2F;&#x2F;skeletonic.io/ru&#x2F;o-proekte&#x2F;">
+    <link rel="alternate" hreflang="sv" href="https:&#x2F;&#x2F;skeletonic.io/sv&#x2F;om-oss&#x2F;">
+    <link rel="alternate" hreflang="th" href="https:&#x2F;&#x2F;skeletonic.io/th&#x2F;kiao-kap&#x2F;">
+    <link rel="alternate" hreflang="tr" href="https:&#x2F;&#x2F;skeletonic.io/tr&#x2F;hakkinda&#x2F;">
+    <link rel="alternate" hreflang="uk" href="https:&#x2F;&#x2F;skeletonic.io/uk&#x2F;pro-nas&#x2F;">
+    <link rel="alternate" hreflang="vi" href="https:&#x2F;&#x2F;skeletonic.io/vi&#x2F;gioi-thieu&#x2F;">
+    <link rel="alternate" hreflang="yo" href="https:&#x2F;&#x2F;skeletonic.io/yo&#x2F;nipa&#x2F;">
+    <link rel="alternate" hreflang="zh-Hans" href="https:&#x2F;&#x2F;skeletonic.io/zh-hans&#x2F;guan-yu&#x2F;">
+    <link rel="alternate" hreflang="zh-Hant" href="https:&#x2F;&#x2F;skeletonic.io/zh-hant&#x2F;guan-yu&#x2F;">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Skeletonic Stylus">
+    <meta property="og:title" content="Nipa Skeletonic Stylus">
+    <meta property="og:description" content="Skeletonic Stylus jẹ ile-ikawe CSS Stylus orisun-ṣiṣi fun aṣa UI ti a le wọle si, ti o yara, ti o ni modulu.">
+    <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;yo&#x2F;nipa&#x2F;">
+    <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
+    <meta property="og:locale" content="yo">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wwdseb">
+    <meta name="twitter:creator" content="@wwdseb">
+    <meta name="twitter:title" content="Nipa Skeletonic Stylus">
+    <meta name="twitter:description" content="Skeletonic Stylus jẹ ile-ikawe CSS Stylus orisun-ṣiṣi fun aṣa UI ti a le wọle si, ti o yara, ti o ni modulu.">
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
+
+    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads. -->
+    <link
+      rel="stylesheet"
+      href="/css/skeletonic.min.dd002edc.css"
+      integrity="sha384-lgGIyC9rKvJSzFr72UJV4fPuBMLD8OO0opzd5qQBBtNVvszBGY/fsIBt35USjeJe"
+      crossorigin="anonymous">
+    
+    
+
+    <!-- Chrome styles — layout, nav, hero, footer, search overlay, theme toggle. -->
+    <link rel="stylesheet" href="/css/chrome.876c9bc8.css" crossorigin="anonymous">
+
+    <!-- REMOVED: inline <style> moved to static/css/chrome.876c9bc8.css -->
+    <!-- Original :root block preserved for reference:
+         --c-accent uses the project's primary palette hsl(210, 100%, 42%).
+    -->
+
+    <!-- BreadcrumbList JSON-LD — emitted on every page for AEO/SGE indexing. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ilé",
+          "item": "https://skeletonic.io/yo/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nipa Skeletonic Stylus",
+          "item": "https://skeletonic.io/yo/nipa/"
+        }
+      ]
+    }
+    </script>
+
+    
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+</head>
+  <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
+    <a href="#main" class="skip-link">Fò lọ sí àkóónú àkọ́kọ́</a>
+
+    <nav aria-label="Ilé Skeletonic Stylus" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <div class="nav-inner">
+        <a class="nav-brand" href="&#x2F;yo/" itemprop="url" aria-label="Ilé Skeletonic Stylus">
+          <span itemprop="name">Skeletonic Stylus</span>
+        </a>
+        <ul class="nav-center">
+          <li><a href="&#x2F;yo/">Ilé</a></li>
+          <li><a href="&#x2F;yo/bere-nibi/">Àkọsílẹ̀</a></li>
+          <li><a href="&#x2F;yo/awon-paati/">Àwọn Pààtì</a></li>
+          <li class="dropdown" data-dropdown>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">Àwọn Ohun Èlò</button>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="&#x2F;yo/awon-paleti/">Àwọn Palẹ́tì</a></li>
+              <li><a class="dropdown-item" href="&#x2F;yo/ere-idasonu/">Ère Ìdàsọnù</a></li>
+              <li><a class="dropdown-item" href="&#x2F;yo/iraye-si/">Ìráyè Sí</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <button aria-label="Ṣàwárí" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
+            <svg viewBox="0 0 24 24" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="16" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <span class="search-shortcut" aria-hidden="true"></span>
+          </button>
+          <button aria-label="Yí padà sí ọ̀nà dúdú" class="theme-toggle" id="themeToggle" type="button" data-label-dark="Dúdú" data-label-light="Ìmọ́lẹ̀" data-aria-dark="Yí padà sí ọ̀nà dúdú" data-aria-light="Yí padà sí ọ̀nà ìmọ́lẹ̀">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
+              <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light" style="display:none">
+              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
+            </svg>
+            <span class="theme-label">Dúdú</span>
+          </button>
+          <div style="position:relative;display:inline-block" class="lang-switcher">
+            <button type="button" aria-label="YO, Yí èdè padà" aria-expanded="false" style="color:var(--c-nav-muted);font-size:12px;font-weight:400;padding:.375rem .625rem;border:1px solid var(--c-border);border-radius:6rem;background:transparent;cursor:pointer;display:inline-flex;align-items:center;gap:.25rem;outline:none">
+              <span style="font-size:14px">🌐</span> YO
+            </button>
+            <div class="lang-menu" style="display:none;max-height:80vh;overflow-y:auto">
+              <div class="lang-menu-grid">
+              <a href="&#x2F;about&#x2F;">🇬🇧 English</a>
+              <a href="/fr&#x2F;a-propos&#x2F;">🇫🇷 Français</a>
+              <a href="/ar&#x2F;hawla&#x2F;">🇸🇦 العربية</a>
+              <a href="/bn&#x2F;somporke&#x2F;">🇧🇩 বাংলা</a>
+              <a href="/cs&#x2F;o-projektu&#x2F;">🇨🇿 Čeština</a>
+              <a href="/de&#x2F;ueber-uns&#x2F;">🇩🇪 Deutsch</a>
+              <a href="/es&#x2F;acerca-de&#x2F;">🇪🇸 Español</a>
+              <a href="/fil&#x2F;tungkol&#x2F;">🇵🇭 Filipino</a>
+              <a href="/ha&#x2F;game-da&#x2F;">🇳🇬 Hausa</a>
+              <a href="/he&#x2F;odot&#x2F;">🇮🇱 עברית</a>
+              <a href="/hi&#x2F;parichay&#x2F;">🇮🇳 हिन्दी</a>
+              <a href="/id&#x2F;tentang&#x2F;">🇮🇩 Indonesia</a>
+              <a href="/it&#x2F;informazioni&#x2F;">🇮🇹 Italiano</a>
+              <a href="/ja&#x2F;gaiyo&#x2F;">🇯🇵 日本語</a>
+              <a href="/ko&#x2F;sogae&#x2F;">🇰🇷 한국어</a>
+              <a href="/nl&#x2F;over-ons&#x2F;">🇳🇱 Nederlands</a>
+              <a href="/pl&#x2F;o-projekcie&#x2F;">🇵🇱 Polski</a>
+              <a href="/pt-br&#x2F;sobre&#x2F;">🇧🇷 Português</a>
+              <a href="/ro&#x2F;despre&#x2F;">🇷🇴 Română</a>
+              <a href="/ru&#x2F;o-proekte&#x2F;">🇷🇺 Русский</a>
+              <a href="/sv&#x2F;om-oss&#x2F;">🇸🇪 Svenska</a>
+              <a href="/th&#x2F;kiao-kap&#x2F;">🇹🇭 ไทย</a>
+              <a href="/tr&#x2F;hakkinda&#x2F;">🇹🇷 Türkçe</a>
+              <a href="/uk&#x2F;pro-nas&#x2F;">🇺🇦 Українська</a>
+              <a href="/vi&#x2F;gioi-thieu&#x2F;">🇻🇳 Tiếng Việt</a>
+              <a class="active" href="/yo&#x2F;nipa&#x2F;">🇳🇬 Yorùbá</a>
+              <a href="/zh-hans&#x2F;guan-yu&#x2F;">🇨🇳 简体中文</a>
+              <a href="/zh-hant&#x2F;guan-yu&#x2F;">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="nav-cta" href="&#x2F;yo/kan-si-wa/">Kàn Sí Wa</a>
+        </div>
+        <button aria-label="Fi àtòjọ hàn tàbí pa á mọ́" class="nav-hamburger" id="navToggle" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    
+<header class="site-hero" style="padding:4.5rem 1.5rem 2.5rem;">
+  <h1 style="font-size:clamp(2rem,4vw,2.75rem);">Nipa Skeletonic Stylus</h1>
+  
+    <p>Skeletonic Stylus jẹ ile-ikawe CSS Stylus orisun-ṣiṣi fun aṣa UI ti a le wọle si, ti o yara, ti o ni modulu.</p>
+  
+</header>
+
+
+    <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
+      <div class="text-start">
+        
+<p class="badges">
+  <img alt="Awọn irawọ GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
+  <img alt="Awọn igbasilẹ oṣooṣu" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
+  <img alt="Ẹya npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
+  <img alt="Iwọn Bundle" src="https://img.shields.io/badge/gzipped-7.5%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Iwe-aṣẹ" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
+  <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
+</p>
+<h2>Ni ṣoki</h2>
+<p><strong>Skeletonic Stylus</strong> jẹ ile-ikawe CSS <a href="https://stylus-lang.com">Stylus</a>
+orisun-ṣiṣi fun aṣa UI ti a le wọle si, ti o yara, ti o ni modulu.</p>
+<p>A bi i ni ọdun 2018 gẹgẹbi idanwo ti ara ẹni ninu <strong>fifiranṣẹ CSS ti
+o kere</strong> laisi fifun awọn ọna iṣẹ ti ile-ikawe paati gidi silẹ. Lẹhin
+ọdun mẹjọ, ibi-afẹde naa ko yipada.</p>
+<h2>Ohun ti o fun ọ</h2>
+<div class="feature-grid">
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/thunder.min.svg" alt="Manamana" width="64" height="64" loading="lazy" decoding="async">
+    <h3>Iyara bi manamana</h3>
+    <p>Ṣe apẹrẹ ati ṣe aṣa awọn atọwọdọwọ ti o dahun ni awọn iṣẹju diẹ. Awọn oniyipada CSS abinibi, awọn kilasi ti a ti ṣeto tẹlẹ, grid ọwọn-12 ti o bo gbogbo ẹya HTML ti itumọ.</p>
+  </article>
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Iyẹ ẹyẹ" width="64" height="64" loading="lazy" decoding="async">
+    <h3>Fẹẹrẹfẹ</h3>
+    <p>~7.5&nbsp;KB gzipped. Awọn oju-iwe gba ni iyara ju. Gbogbo bulọọki ikọle pataki wa ninu.</p>
+  </article>
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/responsive.min.svg" alt="Awọn ẹrọ ti o dahun" width="64" height="64" loading="lazy" decoding="async">
+    <h3>Apẹrẹ ti o dahun</h3>
+    <p>Ti a ṣe fun kọmputa ati alagbeka. Awọn eto mu ara wọn bamu si ẹrọ eyikeyi. Ti o dara fun ifọwọkan, HTML ti itumọ jakejado.</p>
+  </article>
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/accessibility.min.svg" alt="Eniyan irayẹ-si" width="64" height="64" loading="lazy" decoding="async">
+    <h3>Irayẹ-si</h3>
+    <p>WCAG&nbsp;2.2 ti a fi sinu: awọn oruka focus-visible, iyatọ AA, awọn oluranlọwọ skip-link, awọn paati ti o rọrun fun itẹwe, atilẹyin idinku-iṣipopada — ko si iwe-aṣa afikun, ko si <code>aria-*</code> boilerplate.</p>
+  </article>
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/components.min.svg" alt="Awọn bulọọki paati" width="64" height="64" loading="lazy" decoding="async">
+    <h3>Ile-ikawe paati</h3>
+    <p>Awọn paati CSS modulu ati awọn adalu Stylus. Awọn bọtini, awọn fọọmu, awọn kaadi, awọn itaniji, awọn aami, awọn palẹti ati awọn ere idasọnu — mimọ, modulu, ti setan lati fi sii.</p>
+  </article>
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/github.min.svg" alt="Ami GitHub" width="64" height="64" loading="lazy" decoding="async">
+    <h3>Ọfẹ &amp; orisun-ṣiṣi</h3>
+    <p>Ti Sebastien Rousseau ṣe apẹrẹ, kọ, ati ṣe itọju. Ti a fun ni iwe-aṣẹ meji labẹ <strong>MIT</strong> tabi <strong>Apache&nbsp;2.0</strong>. Ko si owo, ko si idiyele iwe-aṣẹ, paapaa fun lilo iṣowo.</p>
+  </article>
+</div>
+<h2>Bawo ni o ṣe fi wewe</h2>
+<p>Iwe-aṣa ti ara ẹni kan bo iwe-kikọ, awọn bọtini, awọn fọọmu, awọn
+kaadi, awọn tabili, awọn palẹti, awọn ere idasọnu ati awọn kilasi
+iwulo. JavaScript kankan ko si. Ko si igbesẹ ikọ ti a beere. Ko si awọn
+igbarale ẹlẹgbẹ lori Bootstrap, Tailwind tabi Bulma.</p>
+<div class="table-responsive"><table class="table">
+<thead>
+<tr>
+<th>Ẹya</th>
+<th>Skeletonic Stylus</th>
+<th>Bootstrap 5</th>
+<th>Tailwind CSS</th>
+<th>Bulma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">Iwọn gzipped</td>
+<td class="text-left"><strong>~7.5 KB</strong></td>
+<td class="text-left">~30 KB</td>
+<td class="text-left">~10 KB (varies)</td>
+<td class="text-left">~30 KB</td>
+</tr>
+<tr>
+<td class="text-left">Ibamu WCAG 2.2</td>
+<td class="text-left"><strong>Ti a kọ sinu</strong></td>
+<td class="text-left">Apakan</td>
+<td class="text-left">Afọwọṣe</td>
+<td class="text-left">Apakan</td>
+</tr>
+<tr>
+<td class="text-left">Awọn ipele cascade</td>
+<td class="text-left"><strong>Bẹẹni (<code>@layer</code>)</strong></td>
+<td class="text-left">Rara</td>
+<td class="text-left">Rara</td>
+<td class="text-left">Rara</td>
+</tr>
+<tr>
+<td class="text-left">Ipo dudu</td>
+<td class="text-left"><strong><code>prefers-color-scheme</code></strong></td>
+<td class="text-left">Yiyan wọle</td>
+<td class="text-left">Ipilẹ kilasi</td>
+<td class="text-left">Yiyan wọle</td>
+</tr>
+<tr>
+<td class="text-left">JavaScript nilo</td>
+<td class="text-left"><strong>Rara</strong></td>
+<td class="text-left">Bẹẹni (Popper)</td>
+<td class="text-left">Rara</td>
+<td class="text-left">Rara</td>
+</tr>
+<tr>
+<td class="text-left">CycloneDX SBOM</td>
+<td class="text-left"><strong>Bẹẹni</strong></td>
+<td class="text-left">Rara</td>
+<td class="text-left">Rara</td>
+<td class="text-left">Rara</td>
+</tr>
+<tr>
+<td class="text-left">Idinku iṣipopada</td>
+<td class="text-left"><strong>Ti a bu ọla fun</strong></td>
+<td class="text-left">Apakan</td>
+<td class="text-left">Afọwọṣe</td>
+<td class="text-left">Apakan</td>
+</tr>
+<tr>
+<td class="text-left">Iwe-aṣẹ</td>
+<td class="text-left">MIT tabi Apache 2.0</td>
+<td class="text-left">MIT</td>
+<td class="text-left">MIT</td>
+<td class="text-left">MIT</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Awọn ilana</h2>
+<ol>
+<li><strong>Irayẹ-si ni ipilẹ, kii ṣe oke.</strong> Ibamu WCAG 2.2 ti a fi sinu
+gbogbo paati, a ko fi kun lẹhin bi &quot;aṣa&quot; kan.</li>
+<li><strong>Awọn baiti ṣe pataki.</strong> Iwe-aṣa kan ti a firanṣẹ ko yẹ ki o
+bọ isuna iwuwo oju-iwe rẹ. Opin 8 KB gzipped ni a fi ipa mu
+ninu CI.</li>
+<li><strong>Awọn ipele cascade bori ogun specificity.</strong> Ṣe atunṣe ohunkohun
+pẹlu igboya — ko si <code>!important</code>, ko si awọn ẹtan aṣẹ-DOM.</li>
+<li><strong>Stylus si dara.</strong> Kukuru, ifarahan, o si jẹ ki ile-ikawe wa ninu
+~3,000 awọn ila ti a le ka.</li>
+<li><strong>Aibikita jẹ ẹya.</strong> Ko si awọn igbarale JS. Ko si idan akoko-ikọ.
+Ko si awọn iyipada orukọ ti o fọ. Awọn kilasi CSS ti o ṣe ohun ti
+wọn sọ gangan.</li>
+<li><strong>Ti a le ṣe aṣa ni iṣẹju-aaya.</strong> Awọn ohun-ini aṣa CSS abinibi
+fun awọn awọ, aaye, iru ati radii.</li>
+<li><strong>Ẹwọn-ipese ti a fi okun mu.</strong> Ẹri npm ti a fọwọsi. Awọn imudojuiwọn
+Dependabot ti a fi idi mulẹ. CVE-2023-44270 ti a ṣe atunṣe nipasẹ
+overrides.</li>
+</ol>
+<h2>Ẹya ati semver</h2>
+<p>Skeletonic Stylus tẹle <a href="https://semver.org">Semantic Versioning 2.0</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Ilọsiwaju</th>
+<th>Nigba ti</th>
+<th>Apẹẹrẹ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left"><strong>Pataki</strong></td>
+<td class="text-left">Yiyọ tabi tunlorukọ kilasi gbogbo eniyan, adalu, tabi ami</td>
+<td class="text-left">1.x → 2.0</td>
+</tr>
+<tr>
+<td class="text-left"><strong>Kekere</strong></td>
+<td class="text-left">Fifikun paati tuntun, adalu, tabi ami</td>
+<td class="text-left">1.1 → 1.2</td>
+</tr>
+<tr>
+<td class="text-left"><strong>Atunṣe</strong></td>
+<td class="text-left">Awọn atunṣe aṣiṣe, imudara a11y, iṣẹ-ṣiṣe, aabo</td>
+<td class="text-left">1.1.6 → 1.1.7</td>
+</tr>
+</tbody>
+</table>
+<p>Gbogbo orukọ kilasi gbogbo eniyan, gbogbo awọn ohun-ini aṣa CSS, ati
+gbogbo awọn adalu Stylus ti a kojade jẹ apakan ti API gbogbo eniyan.
+Iyipada ti o fọ nkan ni ere ilọsiwaju pataki ati itọsọna iṣiwa.</p>
+<h2>Iṣakoso</h2>
+<p>Skeletonic Stylus ni a ṣe apẹrẹ, kọ, ati ṣe itọju nipasẹ
+<a href="https://sebastienrousseau.com">Sebastien Rousseau</a>. Ti a fun ni
+iwe-aṣẹ meji labẹ <a href="https://opensource.org/licenses/MIT">MIT</a> ati
+<a href="https://opensource.org/licenses/Apache-2.0">Apache 2.0</a>.</p>
+<p>Awọn ọran, awọn ero, ati awọn ilowosi ni a kaabo —
+<a href="/yo/se-alabapin/">wo itọsọna ilowosi</a>.</p>
+
+
+
+      </div>
+    </main>
+
+    <footer aria-label="Site footer" class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-cols">
+          <nav class="footer-col" aria-label="Iṣẹ́ Àkànṣe">
+            <p class="footer-col-title">Iṣẹ́ Àkànṣe</p>
+            <ul>
+              <li><a href="&#x2F;yo/nipa/">Nípa</a></li>
+              <li><a href="&#x2F;yo/iwe-iyipada/">Ìwé Ìyípadà</a></li>
+              <li><a href="&#x2F;yo/aabo/">Aabo</a></li>
+              <li><a href="&#x2F;yo/se-alabapin/">Ṣe Alábàáṣiṣẹ́pọ̀</a></li>
+              <li><a rel="noopener noreferrer" href="https://github.com/sebastienrousseau/skeletonic-stylus" target="_blank">GitHub ↗</a></li>
+              <li><a rel="noopener noreferrer" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus" target="_blank">npm ↗</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="Àwọn Ohun Èlò">
+            <p class="footer-col-title">Àwọn Ohun Èlò</p>
+            <ul>
+              <li><a href="&#x2F;yo/awon-paleti/">Àwọn Palẹ́tì</a></li>
+              <li><a href="&#x2F;yo/ere-idasonu/">Ère Ìdàsọnù</a></li>
+              <li><a href="&#x2F;yo/iraye-si/">Ìráyè Sí</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="Òfin">
+            <p class="footer-col-title">Òfin</p>
+            <ul>
+              <li><a href="&#x2F;yo/asiri/">Àṣírí</a></li>
+              <li><a href="&#x2F;yo/awon-ofin/">Àwọn Òfin</a></li>
+              <li><a href="&#x2F;yo/kan-si-wa/">Kàn Sí Wa</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bar">
+          Ẹ̀tọ́ Àwòkọ́wé © 2021 – 2026 Skeletonic CSS. Gbogbo ẹ̀tọ́ ni a pamọ́.
+        </div>
+      </div>
+    </footer>
+
+    <div aria-label="Ṣàwárí" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
+      <div class="search-box">
+        <input aria-label="Ṣàwárí" placeholder="Ṣàwárí nínú àkọsílẹ̀..." autocomplete="off" class="search-input" id="searchInput" type="search">
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-footer">
+          <span><kbd>↑</kbd> <kbd>↓</kbd> Lilọ</span>
+          <span><kbd>↵</kbd> Ṣí</span>
+          <span><kbd>Esc</kbd> Pa</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/main.6823f567.js" defer></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<style>
+/* ── Trigger button (always visible) ── */
+#ssg-search-btn{position:fixed;top:16px;right:16px;z-index:9998;display:flex;align-items:center;gap:8px;padding:8px 16px;background:#fff;border:1px solid #d1d5db;border-radius:8px;cursor:pointer;font-family:-apple-system,system-ui,sans-serif;font-size:14px;color:#6b7280;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:border-color .15s,box-shadow .15s}
+#ssg-search-btn:hover{border-color:#9ca3af;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+#ssg-search-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#ssg-search-btn kbd{font-family:inherit;font-size:11px;padding:2px 6px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:4px;color:#9ca3af;margin-left:4px}
+/* ── Modal overlay ── */
+#ssg-search-overlay{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.5);align-items:flex-start;justify-content:center;padding-top:12vh}
+#ssg-search-overlay.active{display:flex}
+#ssg-search-box{background:#fff;border-radius:12px;width:92%;max-width:640px;box-shadow:0 25px 60px rgba(0,0,0,.3);overflow:hidden;font-family:-apple-system,system-ui,sans-serif}
+#ssg-search-header{display:flex;align-items:center;padding:0 16px;border-bottom:1px solid #e5e7eb}
+#ssg-search-header svg{width:20px;height:20px;stroke:#9ca3af;fill:none;stroke-width:2;flex-shrink:0}
+#ssg-search-input{flex:1;padding:16px 12px;font-size:16px;border:none;outline:none;background:transparent}
+#ssg-search-results{max-height:50vh;overflow-y:auto}
+.ssg-result{display:block;padding:12px 20px;text-decoration:none;color:#111;border-bottom:1px solid #f3f4f6;transition:background .1s}
+.ssg-result:hover,.ssg-result.active{background:#eff6ff}
+.ssg-result-title{font-weight:600;font-size:15px;margin-bottom:3px}
+.ssg-result-snippet{font-size:13px;color:#6b7280;line-height:1.5}
+.ssg-result-snippet mark{background:#fef08a;color:inherit;border-radius:2px;padding:0 2px}
+.ssg-no-results{padding:32px 20px;text-align:center;color:#9ca3af;font-size:14px}
+.ssg-search-footer{display:flex;gap:16px;padding:10px 20px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb;justify-content:flex-end}
+.ssg-search-footer kbd{font-family:inherit;font-size:11px;padding:1px 5px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:3px}
+/* ── Dark mode (media query + data-theme attribute) ── */
+@media(prefers-color-scheme:dark){
+:root:not([data-theme="light"]) #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
+:root:not([data-theme="light"]) #ssg-search-btn:hover{border-color:#4b5563}
+:root:not([data-theme="light"]) #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
+:root:not([data-theme="light"]) #ssg-search-box{background:#1f2937;color:#f9fafb}
+:root:not([data-theme="light"]) #ssg-search-header{border-color:#374151}
+:root:not([data-theme="light"]) #ssg-search-input{color:#f9fafb}
+:root:not([data-theme="light"]) .ssg-result{color:#f9fafb;border-color:#374151}
+:root:not([data-theme="light"]) .ssg-result:hover,:root:not([data-theme="light"]) .ssg-result.active{background:#374151}
+:root:not([data-theme="light"]) .ssg-result-snippet{color:#9ca3af}
+:root:not([data-theme="light"]) .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
+:root:not([data-theme="light"]) .ssg-no-results{color:#6b7280}
+:root:not([data-theme="light"]) .ssg-search-footer{border-color:#374151;color:#6b7280}
+:root:not([data-theme="light"]) .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
+}
+[data-theme="dark"] #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
+[data-theme="dark"] #ssg-search-btn:hover{border-color:#4b5563}
+[data-theme="dark"] #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
+[data-theme="dark"] #ssg-search-box{background:#1f2937;color:#f9fafb}
+[data-theme="dark"] #ssg-search-header{border-color:#374151}
+[data-theme="dark"] #ssg-search-input{color:#f9fafb}
+[data-theme="dark"] .ssg-result{color:#f9fafb;border-color:#374151}
+[data-theme="dark"] .ssg-result:hover,[data-theme="dark"] .ssg-result.active{background:#374151}
+[data-theme="dark"] .ssg-result-snippet{color:#9ca3af}
+[data-theme="dark"] .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
+[data-theme="dark"] .ssg-no-results{color:#6b7280}
+[data-theme="dark"] .ssg-search-footer{border-color:#374151;color:#6b7280}
+[data-theme="dark"] .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
+</style>
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Search">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Search</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Search">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search query"/>
+</div>
+<div id="ssg-search-results"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
+</div>
+</div>
+<script>
+(function(){
+var idx=null,overlay=document.getElementById('ssg-search-overlay'),
+input=document.getElementById('ssg-search-input'),
+results=document.getElementById('ssg-search-results'),
+btn=document.getElementById('ssg-search-btn'),active=-1;
+function load(){if(idx)return Promise.resolve();return fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){idx=d.entries||[]}).catch(function(){idx=[]})}
+function open(){load().then(function(){overlay.classList.add('active');input.value='';results.innerHTML='';input.focus();active=-1})}
+function close(){overlay.classList.remove('active');active=-1}
+function highlight(text,q){if(!q)return esc(text);var re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');return esc(text).replace(re,'<mark>$1</mark>')}
+function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function snippet(content,q,len){len=len||150;if(!q)return esc(content.substring(0,len));var i=content.toLowerCase().indexOf(q.toLowerCase());if(i<0)return esc(content.substring(0,len));var s=Math.max(0,i-50),e=Math.min(content.length,i+len);var t=(s>0?'...':'')+content.substring(s,e)+(e<content.length?'...':'');return highlight(t,q)}
+function search(q){if(!idx||!q){results.innerHTML='';return}q=q.trim();if(!q){results.innerHTML='';return}var ql=q.toLowerCase(),hits=[];
+for(var i=0;i<idx.length&&hits.length<20;i++){var e=idx[i],s=0;if(e.title.toLowerCase().indexOf(ql)>=0)s+=10;if(e.content.toLowerCase().indexOf(ql)>=0)s+=5;for(var h=0;h<e.headings.length;h++){if(e.headings[h].toLowerCase().indexOf(ql)>=0){s+=3;break}}if(s>0)hits.push({entry:e,score:s})}
+hits.sort(function(a,b){return b.score-a.score});
+if(!hits.length){results.innerHTML='<div class="ssg-no-results">No results for &ldquo;'+esc(q)+'&rdquo;</div>';return}
+var html='';for(var j=0;j<hits.length;j++){var e=hits[j].entry;html+='<a class="ssg-result" href="'+esc(e.url)+'">'+'<div class="ssg-result-title">'+highlight(e.title,q)+'</div>'+'<div class="ssg-result-snippet">'+snippet(e.content,q)+'</div></a>'}
+results.innerHTML=html;active=-1}
+function nav(dir){var items=results.querySelectorAll('.ssg-result');if(!items.length)return;if(active>=0&&items[active])items[active].classList.remove('active');active+=dir;if(active<0)active=items.length-1;if(active>=items.length)active=0;items[active].classList.add('active');items[active].scrollIntoView({block:'nearest'})}
+btn.addEventListener('click',function(){open()});
+input.addEventListener('input',function(){search(this.value)});
+overlay.addEventListener('click',function(e){if(e.target===overlay)close()});
+document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();if(overlay.classList.contains('active'))close();else open()}
+if(!overlay.classList.contains('active'))return;if(e.key==='Escape')close();if(e.key==='ArrowDown'){e.preventDefault();nav(1)}if(e.key==='ArrowUp'){e.preventDefault();nav(-1)}
+if(e.key==='Enter'){e.preventDefault();var items=results.querySelectorAll('.ssg-result');if(active>=0&&items[active])window.location=items[active].href;else if(items[0])window.location=items[0].href}})
+})();
+</script>
+</div>
+</body>
+</html>

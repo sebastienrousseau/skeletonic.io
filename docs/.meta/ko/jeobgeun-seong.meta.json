@@ -1,0 +1,12 @@
+{
+  "permalink": "https://skeletonic.io/ko/jeobgeun-seong/",
+  "title": "접근성 — v1.1.7의 WCAG 2.2",
+  "description": "v1.1.7이 WCAG 2.2 준수를 위해 기본 제공하는 기능 — 포커스 링, 대비, 스킵 링크, 모션 및 다크 모드.",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "ko",
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "keywords": "wcag 2.2, 접근성, focus visible, 스킵 링크, prefers reduced motion, 대비"
+}

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="tr" itemscope itemtype="https://schema.org/WebSite">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Bilesenler — Skeletonic Stylus — Skeletonic Stylus</title>
+
+    <meta name="description" content="Skeletonic Stylus&#x27;un tum bilesenlerinin canli HTML ornekleri — gruplanmis, baglantili ve gosterilen stil sayfasiyla render edilmis.">
+    <meta name="keywords" content="skeletonic bilesenler, butonlar, kartlar, formlar, uyarilar, rozetler, baslik, navbar, css hamburger menu">
+    <meta name="author" content="Sebastien Rousseau">
+    <meta name="generator" content="Shokunin (ssg) v0.0.34">
+    <meta name="theme-color" content="hsl(210, 100%, 42%)">
+    <meta name="color-scheme" content="light dark">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'">
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
+
+    <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;tr&#x2F;bilesenler&#x2F;">
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
+    <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;components&#x2F;">
+    <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;components&#x2F;">
+    <link rel="alternate" hreflang="fr" href="https:&#x2F;&#x2F;skeletonic.io/fr&#x2F;composants&#x2F;">
+    <link rel="alternate" hreflang="de" href="https:&#x2F;&#x2F;skeletonic.io/de&#x2F;komponenten&#x2F;">
+    <link rel="alternate" hreflang="ar" href="https:&#x2F;&#x2F;skeletonic.io/ar&#x2F;al-mukawwinat&#x2F;">
+    <link rel="alternate" hreflang="bn" href="https:&#x2F;&#x2F;skeletonic.io/bn&#x2F;upadan&#x2F;">
+    <link rel="alternate" hreflang="cs" href="https:&#x2F;&#x2F;skeletonic.io/cs&#x2F;komponenty&#x2F;">
+    <link rel="alternate" hreflang="es" href="https:&#x2F;&#x2F;skeletonic.io/es&#x2F;componentes&#x2F;">
+    <link rel="alternate" hreflang="fil" href="https:&#x2F;&#x2F;skeletonic.io/fil&#x2F;mga-bahagi&#x2F;">
+    <link rel="alternate" hreflang="ha" href="https:&#x2F;&#x2F;skeletonic.io/ha&#x2F;abubuwan-hadi&#x2F;">
+    <link rel="alternate" hreflang="he" href="https:&#x2F;&#x2F;skeletonic.io/he&#x2F;rekhivim&#x2F;">
+    <link rel="alternate" hreflang="hi" href="https:&#x2F;&#x2F;skeletonic.io/hi&#x2F;ghatak&#x2F;">
+    <link rel="alternate" hreflang="id" href="https:&#x2F;&#x2F;skeletonic.io/id&#x2F;komponen&#x2F;">
+    <link rel="alternate" hreflang="it" href="https:&#x2F;&#x2F;skeletonic.io/it&#x2F;componenti&#x2F;">
+    <link rel="alternate" hreflang="ja" href="https:&#x2F;&#x2F;skeletonic.io/ja&#x2F;konponentsu&#x2F;">
+    <link rel="alternate" hreflang="ko" href="https:&#x2F;&#x2F;skeletonic.io/ko&#x2F;kuseong-yoso&#x2F;">
+    <link rel="alternate" hreflang="nl" href="https:&#x2F;&#x2F;skeletonic.io/nl&#x2F;componenten&#x2F;">
+    <link rel="alternate" hreflang="pl" href="https:&#x2F;&#x2F;skeletonic.io/pl&#x2F;komponenty&#x2F;">
+    <link rel="alternate" hreflang="pt-BR" href="https:&#x2F;&#x2F;skeletonic.io/pt-br&#x2F;componentes&#x2F;">
+    <link rel="alternate" hreflang="ro" href="https:&#x2F;&#x2F;skeletonic.io/ro&#x2F;componente&#x2F;">
+    <link rel="alternate" hreflang="ru" href="https:&#x2F;&#x2F;skeletonic.io/ru&#x2F;komponenty&#x2F;">
+    <link rel="alternate" hreflang="sv" href="https:&#x2F;&#x2F;skeletonic.io/sv&#x2F;komponenter&#x2F;">
+    <link rel="alternate" hreflang="th" href="https:&#x2F;&#x2F;skeletonic.io/th&#x2F;suan-prakop&#x2F;">
+    <link rel="alternate" hreflang="tr" href="https:&#x2F;&#x2F;skeletonic.io/tr&#x2F;bilesenler&#x2F;">
+    <link rel="alternate" hreflang="uk" href="https:&#x2F;&#x2F;skeletonic.io/uk&#x2F;komponenty&#x2F;">
+    <link rel="alternate" hreflang="vi" href="https:&#x2F;&#x2F;skeletonic.io/vi&#x2F;thanh-phan&#x2F;">
+    <link rel="alternate" hreflang="yo" href="https:&#x2F;&#x2F;skeletonic.io/yo&#x2F;awon-paati&#x2F;">
+    <link rel="alternate" hreflang="zh-Hans" href="https:&#x2F;&#x2F;skeletonic.io/zh-hans&#x2F;zu-jian&#x2F;">
+    <link rel="alternate" hreflang="zh-Hant" href="https:&#x2F;&#x2F;skeletonic.io/zh-hant&#x2F;zu-jian&#x2F;">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Skeletonic Stylus">
+    <meta property="og:title" content="Bilesenler — Skeletonic Stylus">
+    <meta property="og:description" content="Skeletonic Stylus&#x27;un tum bilesenlerinin canli HTML ornekleri — gruplanmis, baglantili ve gosterilen stil sayfasiyla render edilmis.">
+    <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;tr&#x2F;bilesenler&#x2F;">
+    <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
+    <meta property="og:locale" content="tr">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wwdseb">
+    <meta name="twitter:creator" content="@wwdseb">
+    <meta name="twitter:title" content="Bilesenler — Skeletonic Stylus">
+    <meta name="twitter:description" content="Skeletonic Stylus&#x27;un tum bilesenlerinin canli HTML ornekleri — gruplanmis, baglantili ve gosterilen stil sayfasiyla render edilmis.">
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
+
+    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads. -->
+    <link
+      rel="stylesheet"
+      href="/css/skeletonic.min.dd002edc.css"
+      integrity="sha384-lgGIyC9rKvJSzFr72UJV4fPuBMLD8OO0opzd5qQBBtNVvszBGY/fsIBt35USjeJe"
+      crossorigin="anonymous">
+    
+    
+
+    <!-- Chrome styles — layout, nav, hero, footer, search overlay, theme toggle. -->
+    <link rel="stylesheet" href="/css/chrome.876c9bc8.css" crossorigin="anonymous">
+
+    <!-- REMOVED: inline <style> moved to static/css/chrome.876c9bc8.css -->
+    <!-- Original :root block preserved for reference:
+         --c-accent uses the project's primary palette hsl(210, 100%, 42%).
+    -->
+
+    <!-- BreadcrumbList JSON-LD — emitted on every page for AEO/SGE indexing. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://skeletonic.io/tr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bilesenler — Skeletonic Stylus",
+          "item": "https://skeletonic.io/tr/bilesenler/"
+        }
+      ]
+    }
+    </script>
+
+    
+  <link rel="stylesheet" href="/highlight.87708af9.css">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+</head>
+  <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
+    <a href="#main" class="skip-link">Ana içeriğe geç</a>
+
+    <nav aria-label="Skeletonic Stylus ana sayfa" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <div class="nav-inner">
+        <a class="nav-brand" href="&#x2F;tr/" itemprop="url" aria-label="Skeletonic Stylus ana sayfa">
+          <span itemprop="name">Skeletonic Stylus</span>
+        </a>
+        <ul class="nav-center">
+          <li><a href="&#x2F;tr/">Ana Sayfa</a></li>
+          <li><a href="&#x2F;tr/baslarken/">Belgeler</a></li>
+          <li><a href="&#x2F;tr/bilesenler/">Bileşenler</a></li>
+          <li class="dropdown" data-dropdown>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">Kaynaklar</button>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="&#x2F;tr/paletler/">Paletler</a></li>
+              <li><a class="dropdown-item" href="&#x2F;tr/animasyonlar/">Animasyonlar</a></li>
+              <li><a class="dropdown-item" href="&#x2F;tr/erisilebilirlik/">Erişilebilirlik</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <button aria-label="Ara" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
+            <svg viewBox="0 0 24 24" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="16" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <span class="search-shortcut" aria-hidden="true"></span>
+          </button>
+          <button aria-label="Koyu moda geç" class="theme-toggle" id="themeToggle" type="button" data-label-dark="Koyu" data-label-light="Açık" data-aria-dark="Koyu moda geç" data-aria-light="Açık moda geç">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
+              <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light" style="display:none">
+              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
+            </svg>
+            <span class="theme-label">Koyu</span>
+          </button>
+          <div style="position:relative;display:inline-block" class="lang-switcher">
+            <button type="button" aria-label="TR, Dil değiştir" aria-expanded="false" style="color:var(--c-nav-muted);font-size:12px;font-weight:400;padding:.375rem .625rem;border:1px solid var(--c-border);border-radius:6rem;background:transparent;cursor:pointer;display:inline-flex;align-items:center;gap:.25rem;outline:none">
+              <span style="font-size:14px">🌐</span> TR
+            </button>
+            <div class="lang-menu" style="display:none;max-height:80vh;overflow-y:auto">
+              <div class="lang-menu-grid">
+              <a href="&#x2F;components&#x2F;">🇬🇧 English</a>
+              <a href="/fr&#x2F;composants&#x2F;">🇫🇷 Français</a>
+              <a href="/ar&#x2F;al-mukawwinat&#x2F;">🇸🇦 العربية</a>
+              <a href="/bn&#x2F;upadan&#x2F;">🇧🇩 বাংলা</a>
+              <a href="/cs&#x2F;komponenty&#x2F;">🇨🇿 Čeština</a>
+              <a href="/de&#x2F;komponenten&#x2F;">🇩🇪 Deutsch</a>
+              <a href="/es&#x2F;componentes&#x2F;">🇪🇸 Español</a>
+              <a href="/fil&#x2F;mga-bahagi&#x2F;">🇵🇭 Filipino</a>
+              <a href="/ha&#x2F;abubuwan-hadi&#x2F;">🇳🇬 Hausa</a>
+              <a href="/he&#x2F;rekhivim&#x2F;">🇮🇱 עברית</a>
+              <a href="/hi&#x2F;ghatak&#x2F;">🇮🇳 हिन्दी</a>
+              <a href="/id&#x2F;komponen&#x2F;">🇮🇩 Indonesia</a>
+              <a href="/it&#x2F;componenti&#x2F;">🇮🇹 Italiano</a>
+              <a href="/ja&#x2F;konponentsu&#x2F;">🇯🇵 日本語</a>
+              <a href="/ko&#x2F;kuseong-yoso&#x2F;">🇰🇷 한국어</a>
+              <a href="/nl&#x2F;componenten&#x2F;">🇳🇱 Nederlands</a>
+              <a href="/pl&#x2F;komponenty&#x2F;">🇵🇱 Polski</a>
+              <a href="/pt-br&#x2F;componentes&#x2F;">🇧🇷 Português</a>
+              <a href="/ro&#x2F;componente&#x2F;">🇷🇴 Română</a>
+              <a href="/ru&#x2F;komponenty&#x2F;">🇷🇺 Русский</a>
+              <a href="/sv&#x2F;komponenter&#x2F;">🇸🇪 Svenska</a>
+              <a href="/th&#x2F;suan-prakop&#x2F;">🇹🇭 ไทย</a>
+              <a class="active" href="/tr&#x2F;bilesenler&#x2F;">🇹🇷 Türkçe</a>
+              <a href="/uk&#x2F;komponenty&#x2F;">🇺🇦 Українська</a>
+              <a href="/vi&#x2F;thanh-phan&#x2F;">🇻🇳 Tiếng Việt</a>
+              <a href="/yo&#x2F;awon-paati&#x2F;">🇳🇬 Yorùbá</a>
+              <a href="/zh-hans&#x2F;zu-jian&#x2F;">🇨🇳 简体中文</a>
+              <a href="/zh-hant&#x2F;zu-jian&#x2F;">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="nav-cta" href="&#x2F;tr/iletisim/">İletişim</a>
+        </div>
+        <button aria-label="Menüyü aç veya kapat" class="nav-hamburger" id="navToggle" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    
+<header class="site-hero" style="padding:4.5rem 1.5rem 2.5rem;">
+  <h1 style="font-size:clamp(2rem,4vw,2.75rem);">Bilesenler — Skeletonic Stylus</h1>
+  
+    <p>Skeletonic Stylus&#x27;un tum bilesenlerinin canli HTML ornekleri — gruplanmis, baglantili ve gosterilen stil sayfasiyla render edilmis.</p>
+  
+</header>
+
+
+    <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
+      <div class="text-start">
+        
+<p>Asagidaki her ornek <strong>gosterilen stil sayfasiyla render edilmistir</strong>.
+On islemci yok. JavaScript yok. Ekstra bagimlilik yok. Herhangi bir
+kod parcasini bos bir HTML dosyasina kopyalayin ve calisir.</p>
+<nav aria-label="Bu sayfada">
+<p><strong>Bu sayfada</strong></p>
+<ul>
+<li><strong>Girisler</strong> — <a href="#buttons">Butonlar</a> · <a href="#badges">Rozetler</a></li>
+<li><strong>Geri bildirim</strong> — <a href="#alerts">Uyarilar</a></li>
+<li><strong>Yuzey</strong> — <a href="#cards">Kartlar</a></li>
+<li><strong>Formlar</strong> — <a href="#form-fields">Form alanlari</a></li>
+<li><strong>Duzen</strong> — <a href="#grid">Izgara</a> · <a href="#header">Baslik ve hamburger navigasyon</a></li>
+</ul>
+</nav>
+<hr class="hr-text" data-content="Girisler">
+<h2 id="inputs">Girisler</h2>
+<p>Ziyaretcinin sayfayi yonlendirmek icin tikladigi, dokundugu veya
+odakladigi etkilesimli ogeler.</p>
+<h3 id="buttons">Butonlar</h3>
+<p>Semantik, temalanabilir bir eylem tetikleyicisi. Dolu ve anahat
+varyantlari alti marka rengi sunar.</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">button primary</span><span style="color:#c0c5ce;">&quot;&gt;Primary&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">button secondary</span><span style="color:#c0c5ce;">&quot;&gt;Secondary&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">button tertiary</span><span style="color:#c0c5ce;">&quot;&gt;Tertiary&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;
+</span></pre>
+</code></pre>
+<section aria-labelledby="buttons">
+<p>
+  <a href="#" class="button primary">Birincil</a>
+  <a href="#" class="button secondary">Ikincil</a>
+  <a href="#" class="button tertiary">Ucuncul</a>
+</p>
+</section>
+<p>Anahat varyantlari:</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">button primary-outline</span><span style="color:#c0c5ce;">&quot;&gt;Outline&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">button secondary-outline</span><span style="color:#c0c5ce;">&quot;&gt;Outline&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;
+</span></pre>
+</code></pre>
+<p>
+  <a href="#" class="button primary-outline">Anahat</a>
+  <a href="#" class="button secondary-outline">Anahat</a>
+</p>
+<blockquote>
+<p><strong>Erisilebilirlik notu.</strong> Her <code>.button</code> varyanti bir
+<code>:focus-visible</code> halkasi ve <strong>minimum 44x44 px tiklanabilir alan</strong>
+(WCAG 2.2 SC 2.5.8) ile gelir. Sayfa ici eylemler icin
+<code>&lt;button type=&quot;button&quot;&gt;</code>, yalnizca navigasyon icin <code>&lt;a href&gt;</code>
+kullanin.</p>
+</blockquote>
+<h3 id="badges">Rozetler</h3>
+<p>Durum, sayi veya kategori icin kompakt bir etiket. Yazi boyutu sabit
+oldugundan rozetler cevresindeki metinle hizalanir.</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">badge</span><span style="color:#c0c5ce;">&quot;&gt;Default&lt;/</span><span style="color:#bf616a;">span</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">badge primary</span><span style="color:#c0c5ce;">&quot;&gt;Primary&lt;/</span><span style="color:#bf616a;">span</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">badge success</span><span style="color:#c0c5ce;">&quot;&gt;Success&lt;/</span><span style="color:#bf616a;">span</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">badge warning</span><span style="color:#c0c5ce;">&quot;&gt;Warning&lt;/</span><span style="color:#bf616a;">span</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">badge danger</span><span style="color:#c0c5ce;">&quot;&gt;Danger&lt;/</span><span style="color:#bf616a;">span</span><span style="color:#c0c5ce;">&gt;
+</span></pre>
+</code></pre>
+<section aria-labelledby="badges">
+<p>
+  <span class="badge">Varsayilan</span>
+  <span class="badge primary">Birincil</span>
+  <span class="badge success">Basarili</span>
+  <span class="badge warning">Uyari</span>
+  <span class="badge danger">Tehlike</span>
+</p>
+</section>
+<blockquote>
+<p><strong>Erisilebilirlik notu.</strong> Rozetler varsayilan olarak dekoratiftir.
+Rozet tek sinyali tasiyorsa (ornegin okunmamis sayi), gorsel olarak
+gizli bir yardimci ile sarin:
+<code>&lt;span class=&quot;visually-hidden&quot;&gt;3 okunmamis mesaj&lt;/span&gt;</code>.</p>
+</blockquote>
+<hr class="hr-text" data-content="Geri bildirim">
+<h2 id="feedback">Geri bildirim</h2>
+<p>Ziyaretciye bir seyin oldugunu — veya olmak uzere oldugunu bildiren
+yuzeyler.</p>
+<h3 id="alerts">Uyarilar</h3>
+<p>Semantik amacli durum mesajlari. <strong>v1.1.7'de her varyant acikca
+<code>.alert-{primary,secondary,info,success,warning,error}</code> altinda
+adlandirilmistir</strong>, boylece varyant sinifi sayfadaki baska durum
+siniflariyla catismaz.</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">alert alert-primary</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">role</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">alert</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">strong</span><span style="color:#c0c5ce;">&gt;Dikkat.&lt;/</span><span style="color:#bf616a;">strong</span><span style="color:#c0c5ce;">&gt; Bu birincil bir uyaridir.
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">alert alert-success</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">role</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">status</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">strong</span><span style="color:#c0c5ce;">&gt;Kaydedildi.&lt;/</span><span style="color:#bf616a;">strong</span><span style="color:#c0c5ce;">&gt; Degisiklikleriniz kaydedildi.
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">alert alert-warning</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">role</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">alert</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">strong</span><span style="color:#c0c5ce;">&gt;Dikkatli olun.&lt;/</span><span style="color:#bf616a;">strong</span><span style="color:#c0c5ce;">&gt; Bu eylem paylasilan durumu etkiler.
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">alert alert-error</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">role</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">alert</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">strong</span><span style="color:#c0c5ce;">&gt;Hata.&lt;/</span><span style="color:#bf616a;">strong</span><span style="color:#c0c5ce;">&gt; Form kaydedilemedi.
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span></pre>
+</code></pre>
+<section aria-labelledby="alerts">
+<div class="alert alert-primary" role="alert">
+<strong>Dikkat.</strong> Bu birincil bir uyaridir.
+</div>
+<div class="alert alert-success" role="status">
+<strong>Kaydedildi.</strong> Degisiklikleriniz kaydedildi.
+</div>
+<div class="alert alert-warning" role="alert">
+<strong>Dikkatli olun.</strong> Bu eylem paylasilan durumu etkiler.
+</div>
+<div class="alert alert-error" role="alert">
+<strong>Hata.</strong> Form kaydedilemedi.
+</div>
+</section>
+<blockquote>
+<p><strong>Erisilebilirlik notu.</strong> Aninda dikkat gerektiren mesajlar (hatalar,
+uyarilar) icin <code>role=&quot;alert&quot;</code>, acil olmayan onaylar icin
+<code>role=&quot;status&quot;</code> kullanin. Her ikisi de mesaji gostuldugu anda
+yardimci teknolojilere acik hale getirir.</p>
+</blockquote>
+<hr class="hr-text" data-content="Yuzey">
+<h2 id="surface">Yuzey</h2>
+<p>Ilgili icerigi cerceveleyen ve gruplayan konteynerler.</p>
+<h3 id="cards">Kartlar</h3>
+<p>Tek bir tutarli birim icin kenarlikh, dolgulu bir konteyner. Duyarli
+kart duvarlari icin <code>flex-N</code> izgarasiyla birlestirebilirsiniz.</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">section </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">row</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">article </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card flex-1</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card-content</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">      &lt;</span><span style="color:#bf616a;">h3 </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card-title</span><span style="color:#c0c5ce;">&quot;&gt;Lightweight&lt;/</span><span style="color:#bf616a;">h3</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">      &lt;</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">&gt;39.9 KB minified, 7.5 KB gzipped.&lt;/</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">    &lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">article</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">article </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card flex-1</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card-content</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">      &lt;</span><span style="color:#bf616a;">h3 </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card-title</span><span style="color:#c0c5ce;">&quot;&gt;Accessible&lt;/</span><span style="color:#bf616a;">h3</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">      &lt;</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">&gt;WCAG 2.2 conformant out of the box.&lt;/</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">    &lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">article</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">article </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card flex-1</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card-content</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">      &lt;</span><span style="color:#bf616a;">h3 </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card-title</span><span style="color:#c0c5ce;">&quot;&gt;Modular&lt;/</span><span style="color:#bf616a;">h3</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">      &lt;</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">&gt;Cascade-layered for easy overrides.&lt;/</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">    &lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">article</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">section</span><span style="color:#c0c5ce;">&gt;
+</span></pre>
+</code></pre>
+<section class="row" aria-labelledby="cards">
+  <article class="card flex-1">
+    <div class="card-content">
+      <h3 class="card-title">Hafif</h3>
+      <p>39,9&nbsp;KB kucultulmus, 7,5&nbsp;KB gzipped.</p>
+    </div>
+  </article>
+  <article class="card flex-1">
+    <div class="card-content">
+      <h3 class="card-title">Erisilebilir</h3>
+      <p>WCAG&nbsp;2.2 kutudan ciktiginda uyumlu.</p>
+    </div>
+  </article>
+  <article class="card flex-1">
+    <div class="card-content">
+      <h3 class="card-title">Moduler</h3>
+      <p>Kolay gecersiz kilma icin cascade-layered.</p>
+    </div>
+  </article>
+</section>
+<blockquote>
+<p><strong>Erisilebilirlik notu.</strong> Her karti semantik bir isaretci
+(<code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>) icerisine yerlestirin ve icerigini bir
+baslikla (<code>&lt;h3&gt;</code>) baslatsin. Ekran okuyucu kullanicilari boylece
+kart listesini birinci sinif gezilebilir bolgeler olarak
+dolasabilir.</p>
+</blockquote>
+<hr class="hr-text" data-content="Formlar">
+<h2 id="forms">Formlar</h2>
+<p>Kullanici verilerini toplamak icin giris alanlari, etiketler ve
+gruplamalar.</p>
+<h3 id="form-fields">Form alanlari</h3>
+<p>Etiketler, metin girisleri, metin alanlari, fieldset'ler ve
+legend'ler — tamami tasarim sisteminin geri kalasiyla tutarli
+boyutlandirilmistir.</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">form</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">label </span><span style="color:#d08770;">for</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&quot;&gt;Ad&lt;/</span><span style="color:#bf616a;">label</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">input </span><span style="color:#8fa1b3;">id</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">name</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">type</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">text</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">required</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">label </span><span style="color:#d08770;">for</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">email</span><span style="color:#c0c5ce;">&quot;&gt;E-posta&lt;/</span><span style="color:#bf616a;">label</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">input </span><span style="color:#8fa1b3;">id</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">email</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">type</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">email</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">required class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">input-primary</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">label </span><span style="color:#d08770;">for</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">msg</span><span style="color:#c0c5ce;">&quot;&gt;Mesaj&lt;/</span><span style="color:#bf616a;">label</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">textarea </span><span style="color:#8fa1b3;">id</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">msg</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">rows</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">4</span><span style="color:#c0c5ce;">&quot;&gt;&lt;/</span><span style="color:#bf616a;">textarea</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">button </span><span style="color:#d08770;">type</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">submit</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">button primary</span><span style="color:#c0c5ce;">&quot;&gt;Gonder&lt;/</span><span style="color:#bf616a;">button</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">form</span><span style="color:#c0c5ce;">&gt;
+</span></pre>
+</code></pre>
+<section aria-labelledby="form-fields">
+<form>
+  <label for="demo-name">Ad</label>
+  <input id="demo-name" type="text">
+<p><label for="demo-email">E-posta</label>
+<input id="demo-email" type="email" class="input-primary"></p>
+<p><label for="demo-msg">Mesaj</label></p>
+  <textarea id="demo-msg" rows="4"></textarea>
+  <p><button type="button" class="button primary">Gonder (demo)</button></p>
+</form>
+</section>
+<blockquote>
+<p><strong>Erisilebilirlik notu.</strong> Her giris alaninin programatik olarak
+iliskilendirilmis bir <code>&lt;label for=&quot;...&quot;&gt;</code> ogelesi olmalidir.
+Iliskili kontrolleri bir <code>&lt;legend&gt;</code> ile <code>&lt;fieldset&gt;</code> icerisine
+gruplayin. Zorunlu alanlari <code>required</code> (ve etiket metninde gorsel
+bir yildiz) ile isaretleyin.</p>
+</blockquote>
+<hr class="hr-text" data-content="Duzen">
+<h2 id="layout">Duzen</h2>
+<p>Tum sayfayi cerceveleyen yapisal temel ogeler — izgara, konteyner,
+baslik.</p>
+<h3 id="grid">Izgara</h3>
+<p>Flexbox uzerine kurulu duyarli bir <code>flex-N</code> izgarasi (1 → 12 sutun).
+<code>.row</code> ebeveyn ogeleri bosluk ve satirlama islemlerini otomatik yapar.</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">row</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">flex-6</span><span style="color:#c0c5ce;">&quot;&gt;Half&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">flex-6</span><span style="color:#c0c5ce;">&quot;&gt;Half&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">row</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">flex-4</span><span style="color:#c0c5ce;">&quot;&gt;Third&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">flex-4</span><span style="color:#c0c5ce;">&quot;&gt;Third&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">flex-4</span><span style="color:#c0c5ce;">&quot;&gt;Third&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span></pre>
+</code></pre>
+<section aria-labelledby="grid">
+<div style="display:flex;flex-wrap:wrap;gap:.5rem;">
+  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Yarim</div>
+  <div style="flex:1 1 0;padding:.75rem;background:#e4e4e7;border-radius:.25rem;text-align:center;">Yarim</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem;">
+  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Ucte bir</div>
+  <div style="flex:1 1 0;padding:.75rem;background:#e4e4e7;border-radius:.25rem;text-align:center;">Ucte bir</div>
+  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Ucte bir</div>
+</div>
+</section>
+<blockquote>
+<p><strong>Erisilebilirlik notu.</strong> Gorsel sira DOM sirasina uygun olmalidir.
+Satirlari <code>flex-direction: row-reverse</code> veya <code>order:</code> ile yeniden
+siralamaktan kacinin — ekran okuyuculari ve klavye kullanicilari
+goruntulemeyi degil kaynagi takip eder.</p>
+</blockquote>
+<h3 id="header">Baslik ve hamburger navigasyon</h3>
+<p>Duyarli hamburger acma/kapama ile tam bir salt-CSS baslik. <strong>Sifir
+JavaScript.</strong> Asagidaki kod parcasini zaten <code>skeletonic.min.css</code>
+yukleyen bos bir HTML sayfasina kopyalayin — menu kendi basina
+dogru sekilde acilir, kapanir ve odagi yakalar.</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">style</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header</span><span style="color:#c0c5ce;">{position:relative;display:flex;align-items:center;gap:</span><span style="color:#d08770;">1rem</span><span style="color:#c0c5ce;">;padding:</span><span style="color:#d08770;">.75rem 1rem</span><span style="color:#c0c5ce;">;border:</span><span style="color:#d08770;">1px </span><span style="color:#c0c5ce;">solid </span><span style="color:#96b5b4;">#e4e4e7</span><span style="color:#c0c5ce;">;border-radius:</span><span style="color:#d08770;">.5rem</span><span style="color:#c0c5ce;">;background:</span><span style="color:#96b5b4;">#fff</span><span style="color:#c0c5ce;">;}
+</span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-brand</span><span style="color:#c0c5ce;">{font-weight:</span><span style="color:#d08770;">600</span><span style="color:#c0c5ce;">;color:</span><span style="color:#96b5b4;">#0a0a0a</span><span style="color:#c0c5ce;">;text-decoration:none;}
+</span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-toggle</span><span style="color:#c0c5ce;">{position:absolute;left:</span><span style="color:#d08770;">-9999px</span><span style="color:#c0c5ce;">;}
+</span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-burger</span><span style="color:#c0c5ce;">{display:none;margin-left:auto;cursor:pointer;padding:</span><span style="color:#d08770;">.625rem .75rem</span><span style="color:#c0c5ce;">;border:</span><span style="color:#d08770;">1px </span><span style="color:#c0c5ce;">solid </span><span style="color:#96b5b4;">#e4e4e7</span><span style="color:#c0c5ce;">;border-radius:</span><span style="color:#d08770;">.375rem</span><span style="color:#c0c5ce;">;font-size:</span><span style="color:#d08770;">1.125rem</span><span style="color:#c0c5ce;">;line-height:</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">;min-width:</span><span style="color:#d08770;">2.75rem</span><span style="color:#c0c5ce;">;min-height:</span><span style="color:#d08770;">2.75rem</span><span style="color:#c0c5ce;">;}
+</span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-burger</span><span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">focus-within,</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-toggle</span><span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">focus-visible+</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-burger</span><span style="color:#c0c5ce;">{outline:</span><span style="color:#d08770;">2px </span><span style="color:#c0c5ce;">solid </span><span style="color:#96b5b4;">hsl</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">210</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">100%</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">42%</span><span style="color:#c0c5ce;">);outline-offset:</span><span style="color:#d08770;">2px</span><span style="color:#c0c5ce;">;}
+</span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-menu</span><span style="color:#c0c5ce;">{list-style:none;display:flex;gap:</span><span style="color:#d08770;">.25rem</span><span style="color:#c0c5ce;">;margin:</span><span style="color:#d08770;">0 0 0 </span><span style="color:#c0c5ce;">auto;padding:</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;}
+</span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-menu </span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">{display:inline-flex;align-items:center;min-height:</span><span style="color:#d08770;">2.75rem</span><span style="color:#c0c5ce;">;padding:</span><span style="color:#d08770;">.5rem .875rem</span><span style="color:#c0c5ce;">;border-radius:</span><span style="color:#d08770;">.375rem</span><span style="color:#c0c5ce;">;color:</span><span style="color:#96b5b4;">#1a1a1a</span><span style="color:#c0c5ce;">;text-decoration:none;}
+</span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-menu </span><span style="color:#bf616a;">a</span><span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">hover</span><span style="color:#c0c5ce;">{background:</span><span style="color:#96b5b4;">#f4f4f5</span><span style="color:#c0c5ce;">;}
+</span><span style="color:#c0c5ce;">  </span><span style="color:#b48ead;">@media </span><span style="color:#c0c5ce;">(max-width:</span><span style="color:#d08770;">640px</span><span style="color:#c0c5ce;">){
+</span><span style="color:#b48ead;">    </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-burger</span><span style="color:#c0c5ce;">{display:inline-flex;align-items:center;justify-content:center;}
+</span><span style="color:#b48ead;">    </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-menu</span><span style="color:#c0c5ce;">{display:none;flex-direction:column;gap:</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;position:absolute;top:</span><span style="color:#96b5b4;">calc</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">100% </span><span style="color:#c0c5ce;">+ </span><span style="color:#d08770;">.25rem</span><span style="color:#c0c5ce;">);left:</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;right:</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;background:</span><span style="color:#96b5b4;">#fff</span><span style="color:#c0c5ce;">;border:</span><span style="color:#d08770;">1px </span><span style="color:#c0c5ce;">solid </span><span style="color:#96b5b4;">#e4e4e7</span><span style="color:#c0c5ce;">;border-radius:</span><span style="color:#d08770;">.5rem</span><span style="color:#c0c5ce;">;padding:</span><span style="color:#d08770;">.375rem</span><span style="color:#c0c5ce;">;box-shadow:</span><span style="color:#d08770;">0 4px 24px </span><span style="color:#96b5b4;">rgba</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">.08</span><span style="color:#c0c5ce;">);z-index:</span><span style="color:#d08770;">10</span><span style="color:#c0c5ce;">;}
+</span><span style="color:#b48ead;">    </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-menu </span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">{padding:</span><span style="color:#d08770;">.75rem 1rem</span><span style="color:#c0c5ce;">;border-bottom:</span><span style="color:#d08770;">1px </span><span style="color:#c0c5ce;">solid </span><span style="color:#96b5b4;">#f4f4f5</span><span style="color:#c0c5ce;">;}
+</span><span style="color:#b48ead;">    </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-menu </span><span style="color:#bf616a;">li</span><span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">last-child </span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">{border-bottom:</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;}
+</span><span style="color:#b48ead;">    </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-toggle</span><span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">checked ~ </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-menu</span><span style="color:#c0c5ce;">{display:flex;}
+</span><span style="color:#c0c5ce;">  }
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">style</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">header </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">sk-header</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">sk-brand</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot;&gt;Marka&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">input </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">sk-toggle</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#8fa1b3;">id</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">sk-nav-toggle</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">type</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">checkbox</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">aria-label</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">Navigasyonu ac/kapat</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">label </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">sk-burger</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">for</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">sk-nav-toggle</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">aria-hidden</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">true</span><span style="color:#c0c5ce;">&quot;&gt;☰&lt;/</span><span style="color:#bf616a;">label</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">ul </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">sk-menu</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">li</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot;&gt;Ana sayfa&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;&lt;/</span><span style="color:#bf616a;">li</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">li</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot;&gt;Dokumanlar&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;&lt;/</span><span style="color:#bf616a;">li</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">li</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot;&gt;Bilesenler&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;&lt;/</span><span style="color:#bf616a;">li</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">li</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot;&gt;Hakkinda&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;&lt;/</span><span style="color:#bf616a;">li</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">ul</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">header</span><span style="color:#c0c5ce;">&gt;
+</span></pre>
+</code></pre>
+<section aria-labelledby="header">
+<style>
+  .sk-header{position:relative;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem;border:1px solid #e4e4e7;border-radius:.5rem;background:#fff;}
+  .sk-header .sk-brand{font-weight:600;color:#0a0a0a;text-decoration:none;}
+  .sk-header .sk-toggle{position:absolute;left:-9999px;}
+  .sk-header .sk-burger{display:none;margin-left:auto;cursor:pointer;padding:.625rem .75rem;border:1px solid #e4e4e7;border-radius:.375rem;font-size:1.125rem;line-height:1;min-width:2.75rem;min-height:2.75rem;}
+  .sk-header .sk-burger:focus-within,.sk-header .sk-toggle:focus-visible+.sk-burger{outline:2px solid hsl(210,100%,42%);outline-offset:2px;}
+  .sk-header .sk-menu{list-style:none;display:flex;gap:.25rem;margin:0 0 0 auto;padding:0;}
+  .sk-header .sk-menu a{display:inline-flex;align-items:center;min-height:2.75rem;padding:.5rem .875rem;border-radius:.375rem;color:#1a1a1a;text-decoration:none;}
+  .sk-header .sk-menu a:hover{background:#f4f4f5;}
+  @media (max-width:640px){
+    .sk-header .sk-burger{display:inline-flex;align-items:center;justify-content:center;}
+    .sk-header .sk-menu{display:none;flex-direction:column;gap:0;position:absolute;top:calc(100% + .25rem);left:0;right:0;background:#fff;border:1px solid #e4e4e7;border-radius:.5rem;padding:.375rem;box-shadow:0 4px 24px rgba(0,0,0,.08);z-index:10;}
+    .sk-header .sk-menu a{padding:.75rem 1rem;border-bottom:1px solid #f4f4f5;}
+    .sk-header .sk-menu li:last-child a{border-bottom:0;}
+    .sk-header .sk-toggle:checked ~ .sk-menu{display:flex;}
+  }
+</style>
+<header class="sk-header">
+  <a class="sk-brand" href="#">Marka</a>
+  <input class="sk-toggle" id="sk-nav-toggle" type="checkbox" aria-label="Navigasyonu ac/kapat">
+  <label class="sk-burger" for="sk-nav-toggle" aria-hidden="true">☰</label>
+  <ul class="sk-menu">
+    <li><a href="#">Ana sayfa</a></li>
+    <li><a href="#">Dokumanlar</a></li>
+    <li><a href="#">Bilesenler</a></li>
+    <li><a href="#">Hakkinda</a></li>
+  </ul>
+</header>
+</section>
+<blockquote>
+<p><strong>Erisilebilirlik notu.</strong> Gizli onay kutusu sekme sirasinda kalir,
+boylece klavye kullanicilari menuyu <code>Bosluk</code> veya <code>Enter</code> ile
+acabilir. <code>&lt;label&gt;</code>, <code>aria-hidden</code> tasir cunku onay kutusunun
+kendisi erisilebilir ad kaynagidir. Hamburger acma/kapama'yi
+calisir halde gormek icin pencereyi 640 px'in altina
+daraltsin.</p>
+</blockquote>
+<p><a href="/tr/erisilebilirlik/">Tum erisilebilirlik notlarini gorun →</a> · <a href="/tr/paletler/">Paletlere goz atin →</a></p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Skeletonic Stylus bilesenleri",
+  "description": "Skeletonic Stylus v1.1.7 ile gelen tum bilesenler.",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": 7,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Butonlar",
+      "url": "https://skeletonic.io/tr/bilesenler/#buttons"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Rozetler",
+      "url": "https://skeletonic.io/tr/bilesenler/#badges"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Uyarilar",
+      "url": "https://skeletonic.io/tr/bilesenler/#alerts"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Kartlar",
+      "url": "https://skeletonic.io/tr/bilesenler/#cards"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Form alanlari",
+      "url": "https://skeletonic.io/tr/bilesenler/#form-fields"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Izgara",
+      "url": "https://skeletonic.io/tr/bilesenler/#grid"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Baslik ve hamburger navigasyon",
+      "url": "https://skeletonic.io/tr/bilesenler/#header"
+    }
+  ]
+}
+</script>
+
+
+
+      </div>
+    </main>
+
+    <footer aria-label="Site footer" class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-cols">
+          <nav class="footer-col" aria-label="Proje">
+            <p class="footer-col-title">Proje</p>
+            <ul>
+              <li><a href="&#x2F;tr/hakkinda/">Hakkında</a></li>
+              <li><a href="&#x2F;tr/degisiklik-gunlugu/">Değişiklik Günlüğü</a></li>
+              <li><a href="&#x2F;tr/guvenlik/">Güvenlik</a></li>
+              <li><a href="&#x2F;tr/katki/">Katkıda Bulun</a></li>
+              <li><a rel="noopener noreferrer" href="https://github.com/sebastienrousseau/skeletonic-stylus" target="_blank">GitHub ↗</a></li>
+              <li><a rel="noopener noreferrer" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus" target="_blank">npm ↗</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="Kaynaklar">
+            <p class="footer-col-title">Kaynaklar</p>
+            <ul>
+              <li><a href="&#x2F;tr/paletler/">Paletler</a></li>
+              <li><a href="&#x2F;tr/animasyonlar/">Animasyonlar</a></li>
+              <li><a href="&#x2F;tr/erisilebilirlik/">Erişilebilirlik</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="Hukuki">
+            <p class="footer-col-title">Hukuki</p>
+            <ul>
+              <li><a href="&#x2F;tr/gizlilik/">Gizlilik</a></li>
+              <li><a href="&#x2F;tr/kosullar/">Koşullar</a></li>
+              <li><a href="&#x2F;tr/iletisim/">İletişim</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bar">
+          Telif Hakkı © 2021 – 2026 Skeletonic CSS. Tüm hakları saklıdır.
+        </div>
+      </div>
+    </footer>
+
+    <div aria-label="Ara" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
+      <div class="search-box">
+        <input aria-label="Ara" placeholder="Belgelerde ara..." autocomplete="off" class="search-input" id="searchInput" type="search">
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-footer">
+          <span><kbd>↑</kbd> <kbd>↓</kbd> Gezin</span>
+          <span><kbd>↵</kbd> Aç</span>
+          <span><kbd>Esc</kbd> Kapat</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/main.6823f567.js" defer></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<style>
+/* ── Trigger button (always visible) ── */
+#ssg-search-btn{position:fixed;top:16px;right:16px;z-index:9998;display:flex;align-items:center;gap:8px;padding:8px 16px;background:#fff;border:1px solid #d1d5db;border-radius:8px;cursor:pointer;font-family:-apple-system,system-ui,sans-serif;font-size:14px;color:#6b7280;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:border-color .15s,box-shadow .15s}
+#ssg-search-btn:hover{border-color:#9ca3af;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+#ssg-search-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#ssg-search-btn kbd{font-family:inherit;font-size:11px;padding:2px 6px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:4px;color:#9ca3af;margin-left:4px}
+/* ── Modal overlay ── */
+#ssg-search-overlay{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.5);align-items:flex-start;justify-content:center;padding-top:12vh}
+#ssg-search-overlay.active{display:flex}
+#ssg-search-box{background:#fff;border-radius:12px;width:92%;max-width:640px;box-shadow:0 25px 60px rgba(0,0,0,.3);overflow:hidden;font-family:-apple-system,system-ui,sans-serif}
+#ssg-search-header{display:flex;align-items:center;padding:0 16px;border-bottom:1px solid #e5e7eb}
+#ssg-search-header svg{width:20px;height:20px;stroke:#9ca3af;fill:none;stroke-width:2;flex-shrink:0}
+#ssg-search-input{flex:1;padding:16px 12px;font-size:16px;border:none;outline:none;background:transparent}
+#ssg-search-results{max-height:50vh;overflow-y:auto}
+.ssg-result{display:block;padding:12px 20px;text-decoration:none;color:#111;border-bottom:1px solid #f3f4f6;transition:background .1s}
+.ssg-result:hover,.ssg-result.active{background:#eff6ff}
+.ssg-result-title{font-weight:600;font-size:15px;margin-bottom:3px}
+.ssg-result-snippet{font-size:13px;color:#6b7280;line-height:1.5}
+.ssg-result-snippet mark{background:#fef08a;color:inherit;border-radius:2px;padding:0 2px}
+.ssg-no-results{padding:32px 20px;text-align:center;color:#9ca3af;font-size:14px}
+.ssg-search-footer{display:flex;gap:16px;padding:10px 20px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb;justify-content:flex-end}
+.ssg-search-footer kbd{font-family:inherit;font-size:11px;padding:1px 5px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:3px}
+/* ── Dark mode (media query + data-theme attribute) ── */
+@media(prefers-color-scheme:dark){
+:root:not([data-theme="light"]) #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
+:root:not([data-theme="light"]) #ssg-search-btn:hover{border-color:#4b5563}
+:root:not([data-theme="light"]) #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
+:root:not([data-theme="light"]) #ssg-search-box{background:#1f2937;color:#f9fafb}
+:root:not([data-theme="light"]) #ssg-search-header{border-color:#374151}
+:root:not([data-theme="light"]) #ssg-search-input{color:#f9fafb}
+:root:not([data-theme="light"]) .ssg-result{color:#f9fafb;border-color:#374151}
+:root:not([data-theme="light"]) .ssg-result:hover,:root:not([data-theme="light"]) .ssg-result.active{background:#374151}
+:root:not([data-theme="light"]) .ssg-result-snippet{color:#9ca3af}
+:root:not([data-theme="light"]) .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
+:root:not([data-theme="light"]) .ssg-no-results{color:#6b7280}
+:root:not([data-theme="light"]) .ssg-search-footer{border-color:#374151;color:#6b7280}
+:root:not([data-theme="light"]) .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
+}
+[data-theme="dark"] #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
+[data-theme="dark"] #ssg-search-btn:hover{border-color:#4b5563}
+[data-theme="dark"] #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
+[data-theme="dark"] #ssg-search-box{background:#1f2937;color:#f9fafb}
+[data-theme="dark"] #ssg-search-header{border-color:#374151}
+[data-theme="dark"] #ssg-search-input{color:#f9fafb}
+[data-theme="dark"] .ssg-result{color:#f9fafb;border-color:#374151}
+[data-theme="dark"] .ssg-result:hover,[data-theme="dark"] .ssg-result.active{background:#374151}
+[data-theme="dark"] .ssg-result-snippet{color:#9ca3af}
+[data-theme="dark"] .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
+[data-theme="dark"] .ssg-no-results{color:#6b7280}
+[data-theme="dark"] .ssg-search-footer{border-color:#374151;color:#6b7280}
+[data-theme="dark"] .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
+</style>
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Search">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Search</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Search">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search query"/>
+</div>
+<div id="ssg-search-results"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
+</div>
+</div>
+<script>
+(function(){
+var idx=null,overlay=document.getElementById('ssg-search-overlay'),
+input=document.getElementById('ssg-search-input'),
+results=document.getElementById('ssg-search-results'),
+btn=document.getElementById('ssg-search-btn'),active=-1;
+function load(){if(idx)return Promise.resolve();return fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){idx=d.entries||[]}).catch(function(){idx=[]})}
+function open(){load().then(function(){overlay.classList.add('active');input.value='';results.innerHTML='';input.focus();active=-1})}
+function close(){overlay.classList.remove('active');active=-1}
+function highlight(text,q){if(!q)return esc(text);var re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');return esc(text).replace(re,'<mark>$1</mark>')}
+function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function snippet(content,q,len){len=len||150;if(!q)return esc(content.substring(0,len));var i=content.toLowerCase().indexOf(q.toLowerCase());if(i<0)return esc(content.substring(0,len));var s=Math.max(0,i-50),e=Math.min(content.length,i+len);var t=(s>0?'...':'')+content.substring(s,e)+(e<content.length?'...':'');return highlight(t,q)}
+function search(q){if(!idx||!q){results.innerHTML='';return}q=q.trim();if(!q){results.innerHTML='';return}var ql=q.toLowerCase(),hits=[];
+for(var i=0;i<idx.length&&hits.length<20;i++){var e=idx[i],s=0;if(e.title.toLowerCase().indexOf(ql)>=0)s+=10;if(e.content.toLowerCase().indexOf(ql)>=0)s+=5;for(var h=0;h<e.headings.length;h++){if(e.headings[h].toLowerCase().indexOf(ql)>=0){s+=3;break}}if(s>0)hits.push({entry:e,score:s})}
+hits.sort(function(a,b){return b.score-a.score});
+if(!hits.length){results.innerHTML='<div class="ssg-no-results">No results for &ldquo;'+esc(q)+'&rdquo;</div>';return}
+var html='';for(var j=0;j<hits.length;j++){var e=hits[j].entry;html+='<a class="ssg-result" href="'+esc(e.url)+'">'+'<div class="ssg-result-title">'+highlight(e.title,q)+'</div>'+'<div class="ssg-result-snippet">'+snippet(e.content,q)+'</div></a>'}
+results.innerHTML=html;active=-1}
+function nav(dir){var items=results.querySelectorAll('.ssg-result');if(!items.length)return;if(active>=0&&items[active])items[active].classList.remove('active');active+=dir;if(active<0)active=items.length-1;if(active>=items.length)active=0;items[active].classList.add('active');items[active].scrollIntoView({block:'nearest'})}
+btn.addEventListener('click',function(){open()});
+input.addEventListener('input',function(){search(this.value)});
+overlay.addEventListener('click',function(e){if(e.target===overlay)close()});
+document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();if(overlay.classList.contains('active'))close();else open()}
+if(!overlay.classList.contains('active'))return;if(e.key==='Escape')close();if(e.key==='ArrowDown'){e.preventDefault();nav(1)}if(e.key==='ArrowUp'){e.preventDefault();nav(-1)}
+if(e.key==='Enter'){e.preventDefault();var items=results.querySelectorAll('.ssg-result');if(active>=0&&items[active])window.location=items[active].href;else if(items[0])window.location=items[0].href}})
+})();
+</script>
+</div>
+</body>
+</html>

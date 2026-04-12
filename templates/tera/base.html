@@ -1,0 +1,2650 @@
+{#-
+  ────────────────────────────────────────────────────────────────────
+  i18n bootstrap.
+  Reads `page.language` (e.g. "fr", "de", "ar", "zh-hans", …) and sets
+  three template-wide locals:
+    • lang         — short locale code, defaults to "en"
+    • is_rtl       — true for ar / he
+    • lang_prefix  — "" for en, "/<lang>" otherwise
+    • page_path    — current page's path WITHOUT locale prefix
+                     (e.g. "/components/"), so the lang switcher can
+                     point each locale at the same logical page
+    • t            — chrome string dictionary for the active locale,
+                     with English fallback for any locale not yet
+                     translated
+  Adding a new locale = adding one `{% elif lang == "xx" %}` branch
+  with the full set of strings.
+-#}
+{%- set lang = page.language | default(value="en") -%}
+{%- if lang == "ar" or lang == "he" -%}
+  {%- set is_rtl = true -%}
+{%- else -%}
+  {%- set is_rtl = false -%}
+{%- endif -%}
+{%- if lang == "en" -%}
+  {%- set lang_prefix = "" -%}
+{%- else -%}
+  {%- set lang_prefix = "/" ~ lang -%}
+{%- endif -%}
+{%- set permalink = page.permalink | default(value="/") -%}
+{%- set page_path = permalink | replace(from="https://skeletonic.io", to="") -%}
+{%- if lang != "en" -%}
+  {%- set page_path = page_path | replace(from="/" ~ lang ~ "/", to="/") -%}
+{%- endif -%}
+{#- en_page_path: the English-slug equivalent of page_path.
+    Used by hreflang alternates and the lang switcher so every locale
+    link points at the correct English canonical route.  For English
+    pages this is identity; for French it reverses the slug translation. -#}
+{%- if lang == "fr" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/premiers-pas/", to="/getting-started/")
+    | replace(from="/composants/", to="/components/")
+    | replace(from="/a-propos/", to="/about/")
+    | replace(from="/accessibilite/", to="/accessibility/")
+    | replace(from="/securite/", to="/security/")
+    | replace(from="/journal/", to="/changelog/")
+    | replace(from="/contribuer/", to="/contribute/")
+    | replace(from="/confidentialite/", to="/privacy/")
+    | replace(from="/conditions/", to="/terms/")
+    | replace(from="/merci/", to="/thanks/")
+    | replace(from="/hors-ligne/", to="/offline/")
+    | replace(from="/etiquettes/", to="/tags/")
+  -%}
+{%- elif lang == "de" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/erste-schritte/", to="/getting-started/")
+    | replace(from="/komponenten/", to="/components/")
+    | replace(from="/ueber-uns/", to="/about/")
+    | replace(from="/barrierefreiheit/", to="/accessibility/")
+    | replace(from="/sicherheit/", to="/security/")
+    | replace(from="/aenderungsprotokoll/", to="/changelog/")
+    | replace(from="/mitwirken/", to="/contribute/")
+    | replace(from="/datenschutz/", to="/privacy/")
+    | replace(from="/nutzungsbedingungen/", to="/terms/")
+    | replace(from="/kontakt/", to="/contact/")
+    | replace(from="/danke/", to="/thanks/")
+    | replace(from="/paletten/", to="/palettes/")
+    | replace(from="/animationen/", to="/animations/")
+  -%}
+{%- elif lang == "ar" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/al-bidaya/", to="/getting-started/")
+    | replace(from="/al-mukawwinat/", to="/components/")
+    | replace(from="/hawla/", to="/about/")
+    | replace(from="/imkaniyyat-al-wusul/", to="/accessibility/")
+    | replace(from="/al-aman/", to="/security/")
+    | replace(from="/sijil-al-taghyirat/", to="/changelog/")
+    | replace(from="/al-musahama/", to="/contribute/")
+    | replace(from="/al-khususiyya/", to="/privacy/")
+    | replace(from="/al-shurut/", to="/terms/")
+    | replace(from="/ittisal/", to="/contact/")
+    | replace(from="/shukran/", to="/thanks/")
+    | replace(from="/al-alwan/", to="/palettes/")
+    | replace(from="/al-harakaat/", to="/animations/")
+  -%}
+{%- elif lang == "bn" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/shuru/", to="/getting-started/")
+    | replace(from="/upadan/", to="/components/")
+    | replace(from="/somporke/", to="/about/")
+    | replace(from="/probeshadhikar/", to="/accessibility/")
+    | replace(from="/nirapotta/", to="/security/")
+    | replace(from="/poriborton-talika/", to="/changelog/")
+    | replace(from="/yogdan/", to="/contribute/")
+    | replace(from="/goponioyota/", to="/privacy/")
+    | replace(from="/shartaboli/", to="/terms/")
+    | replace(from="/jogajog/", to="/contact/")
+    | replace(from="/dhonnobad/", to="/thanks/")
+    | replace(from="/rong-palat/", to="/palettes/")
+  -%}
+{%- elif lang == "cs" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/zacatek/", to="/getting-started/")
+    | replace(from="/komponenty/", to="/components/")
+    | replace(from="/o-projektu/", to="/about/")
+    | replace(from="/pristupnost/", to="/accessibility/")
+    | replace(from="/bezpecnost/", to="/security/")
+    | replace(from="/zmeny/", to="/changelog/")
+    | replace(from="/prispet/", to="/contribute/")
+    | replace(from="/soukromi/", to="/privacy/")
+    | replace(from="/podminky/", to="/terms/")
+    | replace(from="/kontakt/", to="/contact/")
+    | replace(from="/dekujeme/", to="/thanks/")
+    | replace(from="/palety/", to="/palettes/")
+    | replace(from="/animace/", to="/animations/")
+  -%}
+{%- elif lang == "es" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/primeros-pasos/", to="/getting-started/")
+    | replace(from="/componentes/", to="/components/")
+    | replace(from="/acerca-de/", to="/about/")
+    | replace(from="/accesibilidad/", to="/accessibility/")
+    | replace(from="/seguridad/", to="/security/")
+    | replace(from="/registro-de-cambios/", to="/changelog/")
+    | replace(from="/contribuir/", to="/contribute/")
+    | replace(from="/privacidad/", to="/privacy/")
+    | replace(from="/terminos/", to="/terms/")
+    | replace(from="/contacto/", to="/contact/")
+    | replace(from="/gracias/", to="/thanks/")
+    | replace(from="/paletas/", to="/palettes/")
+    | replace(from="/animaciones/", to="/animations/")
+  -%}
+{%- elif lang == "fil" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/pagsisimula/", to="/getting-started/")
+    | replace(from="/mga-bahagi/", to="/components/")
+    | replace(from="/tungkol/", to="/about/")
+    | replace(from="/aksesibilidad/", to="/accessibility/")
+    | replace(from="/seguridad/", to="/security/")
+    | replace(from="/talaan-ng-pagbabago/", to="/changelog/")
+    | replace(from="/mag-ambag/", to="/contribute/")
+    | replace(from="/pagkapribado/", to="/privacy/")
+    | replace(from="/mga-tuntunin/", to="/terms/")
+    | replace(from="/makipag-ugnayan/", to="/contact/")
+    | replace(from="/salamat/", to="/thanks/")
+    | replace(from="/mga-paleta/", to="/palettes/")
+    | replace(from="/mga-animasyon/", to="/animations/")
+  -%}
+{%- elif lang == "ha" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/fara/", to="/getting-started/")
+    | replace(from="/abubuwan-hadi/", to="/components/")
+    | replace(from="/game-da/", to="/about/")
+    | replace(from="/samun-dama/", to="/accessibility/")
+    | replace(from="/tsaro/", to="/security/")
+    | replace(from="/tarihin-canje-canje/", to="/changelog/")
+    | replace(from="/ba-da-gudummawa/", to="/contribute/")
+    | replace(from="/sirri/", to="/privacy/")
+    | replace(from="/sharudda/", to="/terms/")
+    | replace(from="/tuntubi/", to="/contact/")
+    | replace(from="/godiya/", to="/thanks/")
+    | replace(from="/launuka/", to="/palettes/")
+    | replace(from="/motsin-rai/", to="/animations/")
+  -%}
+{%- elif lang == "he" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/hatkhala/", to="/getting-started/")
+    | replace(from="/rekhivim/", to="/components/")
+    | replace(from="/odot/", to="/about/")
+    | replace(from="/negishut/", to="/accessibility/")
+    | replace(from="/avtakha/", to="/security/")
+    | replace(from="/yoman-shinuyim/", to="/changelog/")
+    | replace(from="/truma/", to="/contribute/")
+    | replace(from="/pratiyut/", to="/privacy/")
+    | replace(from="/tnaim/", to="/terms/")
+    | replace(from="/kesher/", to="/contact/")
+    | replace(from="/toda/", to="/thanks/")
+    | replace(from="/paleta/", to="/palettes/")
+    | replace(from="/animatsyot/", to="/animations/")
+  -%}
+{%- elif lang == "hi" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/shuruat/", to="/getting-started/")
+    | replace(from="/ghatak/", to="/components/")
+    | replace(from="/parichay/", to="/about/")
+    | replace(from="/sulabhata/", to="/accessibility/")
+    | replace(from="/suraksha/", to="/security/")
+    | replace(from="/parivartan-log/", to="/changelog/")
+    | replace(from="/yogdan/", to="/contribute/")
+    | replace(from="/gopaniyata/", to="/privacy/")
+    | replace(from="/niyam/", to="/terms/")
+    | replace(from="/sampark/", to="/contact/")
+    | replace(from="/dhanyavad/", to="/thanks/")
+    | replace(from="/rang-patti/", to="/palettes/")
+  -%}
+{%- elif lang == "id" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/memulai/", to="/getting-started/")
+    | replace(from="/komponen/", to="/components/")
+    | replace(from="/tentang/", to="/about/")
+    | replace(from="/aksesibilitas/", to="/accessibility/")
+    | replace(from="/keamanan/", to="/security/")
+    | replace(from="/catatan-perubahan/", to="/changelog/")
+    | replace(from="/kontribusi/", to="/contribute/")
+    | replace(from="/privasi/", to="/privacy/")
+    | replace(from="/ketentuan/", to="/terms/")
+    | replace(from="/kontak/", to="/contact/")
+    | replace(from="/terima-kasih/", to="/thanks/")
+    | replace(from="/palet/", to="/palettes/")
+    | replace(from="/animasi/", to="/animations/")
+  -%}
+{%- elif lang == "it" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/iniziare/", to="/getting-started/")
+    | replace(from="/componenti/", to="/components/")
+    | replace(from="/informazioni/", to="/about/")
+    | replace(from="/accessibilita/", to="/accessibility/")
+    | replace(from="/sicurezza/", to="/security/")
+    | replace(from="/registro-modifiche/", to="/changelog/")
+    | replace(from="/contribuire/", to="/contribute/")
+    | replace(from="/termini/", to="/terms/")
+    | replace(from="/contatti/", to="/contact/")
+    | replace(from="/grazie/", to="/thanks/")
+    | replace(from="/palette/", to="/palettes/")
+    | replace(from="/animazioni/", to="/animations/")
+  -%}
+{%- elif lang == "ja" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/hajimeni/", to="/getting-started/")
+    | replace(from="/konponentsu/", to="/components/")
+    | replace(from="/gaiyo/", to="/about/")
+    | replace(from="/akseshibirithi/", to="/accessibility/")
+    | replace(from="/sekiyurithi/", to="/security/")
+    | replace(from="/henkou-rireki/", to="/changelog/")
+    | replace(from="/kouken/", to="/contribute/")
+    | replace(from="/puraibashi/", to="/privacy/")
+    | replace(from="/riyou-kiyaku/", to="/terms/")
+    | replace(from="/otoiawase/", to="/contact/")
+    | replace(from="/arigatou/", to="/thanks/")
+    | replace(from="/paretto/", to="/palettes/")
+    | replace(from="/animeshon/", to="/animations/")
+  -%}
+{%- elif lang == "ko" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/sijak/", to="/getting-started/")
+    | replace(from="/kuseong-yoso/", to="/components/")
+    | replace(from="/sogae/", to="/about/")
+    | replace(from="/jeobgeun-seong/", to="/accessibility/")
+    | replace(from="/boaan/", to="/security/")
+    | replace(from="/byeongyeong-ilji/", to="/changelog/")
+    | replace(from="/giyeo/", to="/contribute/")
+    | replace(from="/gaeinjeongbo/", to="/privacy/")
+    | replace(from="/iyong-yakgwan/", to="/terms/")
+    | replace(from="/munui/", to="/contact/")
+    | replace(from="/gamsa/", to="/thanks/")
+    | replace(from="/palleteu/", to="/palettes/")
+    | replace(from="/aenimeisyeon/", to="/animations/")
+  -%}
+{%- elif lang == "nl" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/aan-de-slag/", to="/getting-started/")
+    | replace(from="/componenten/", to="/components/")
+    | replace(from="/over-ons/", to="/about/")
+    | replace(from="/toegankelijkheid/", to="/accessibility/")
+    | replace(from="/beveiliging/", to="/security/")
+    | replace(from="/wijzigingslogboek/", to="/changelog/")
+    | replace(from="/bijdragen/", to="/contribute/")
+    | replace(from="/voorwaarden/", to="/terms/")
+    | replace(from="/bedankt/", to="/thanks/")
+    | replace(from="/paletten/", to="/palettes/")
+    | replace(from="/animaties/", to="/animations/")
+  -%}
+{%- elif lang == "pl" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/pierwsze-kroki/", to="/getting-started/")
+    | replace(from="/komponenty/", to="/components/")
+    | replace(from="/o-projekcie/", to="/about/")
+    | replace(from="/dostepnosc/", to="/accessibility/")
+    | replace(from="/bezpieczenstwo/", to="/security/")
+    | replace(from="/dziennik-zmian/", to="/changelog/")
+    | replace(from="/wspolpraca/", to="/contribute/")
+    | replace(from="/prywatnosc/", to="/privacy/")
+    | replace(from="/regulamin/", to="/terms/")
+    | replace(from="/kontakt/", to="/contact/")
+    | replace(from="/dziekujemy/", to="/thanks/")
+    | replace(from="/palety/", to="/palettes/")
+    | replace(from="/animacje/", to="/animations/")
+  -%}
+{%- elif lang == "pt-br" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/primeiros-passos/", to="/getting-started/")
+    | replace(from="/componentes/", to="/components/")
+    | replace(from="/sobre/", to="/about/")
+    | replace(from="/acessibilidade/", to="/accessibility/")
+    | replace(from="/seguranca/", to="/security/")
+    | replace(from="/registro-de-alteracoes/", to="/changelog/")
+    | replace(from="/contribuir/", to="/contribute/")
+    | replace(from="/privacidade/", to="/privacy/")
+    | replace(from="/termos/", to="/terms/")
+    | replace(from="/contato/", to="/contact/")
+    | replace(from="/obrigado/", to="/thanks/")
+    | replace(from="/paletas/", to="/palettes/")
+    | replace(from="/animacoes/", to="/animations/")
+  -%}
+{%- elif lang == "ro" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/primii-pasi/", to="/getting-started/")
+    | replace(from="/componente/", to="/components/")
+    | replace(from="/despre/", to="/about/")
+    | replace(from="/accesibilitate/", to="/accessibility/")
+    | replace(from="/securitate/", to="/security/")
+    | replace(from="/jurnal-modificari/", to="/changelog/")
+    | replace(from="/contribuie/", to="/contribute/")
+    | replace(from="/confidentialitate/", to="/privacy/")
+    | replace(from="/termeni/", to="/terms/")
+    | replace(from="/multumim/", to="/thanks/")
+    | replace(from="/palete/", to="/palettes/")
+    | replace(from="/animatii/", to="/animations/")
+  -%}
+{%- elif lang == "ru" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/nachalo/", to="/getting-started/")
+    | replace(from="/komponenty/", to="/components/")
+    | replace(from="/o-proekte/", to="/about/")
+    | replace(from="/dostupnost/", to="/accessibility/")
+    | replace(from="/bezopasnost/", to="/security/")
+    | replace(from="/zhurnal-izmeneniy/", to="/changelog/")
+    | replace(from="/vklad/", to="/contribute/")
+    | replace(from="/konfidentsialnost/", to="/privacy/")
+    | replace(from="/usloviya/", to="/terms/")
+    | replace(from="/kontakt/", to="/contact/")
+    | replace(from="/spasibo/", to="/thanks/")
+    | replace(from="/palitry/", to="/palettes/")
+    | replace(from="/animatsii/", to="/animations/")
+  -%}
+{%- elif lang == "sv" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/kom-igang/", to="/getting-started/")
+    | replace(from="/komponenter/", to="/components/")
+    | replace(from="/om-oss/", to="/about/")
+    | replace(from="/tillganglighet/", to="/accessibility/")
+    | replace(from="/sakerhet/", to="/security/")
+    | replace(from="/andringslogg/", to="/changelog/")
+    | replace(from="/bidra/", to="/contribute/")
+    | replace(from="/integritet/", to="/privacy/")
+    | replace(from="/villkor/", to="/terms/")
+    | replace(from="/kontakt/", to="/contact/")
+    | replace(from="/tack/", to="/thanks/")
+    | replace(from="/paletter/", to="/palettes/")
+    | replace(from="/animationer/", to="/animations/")
+  -%}
+{%- elif lang == "th" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/roem-ton/", to="/getting-started/")
+    | replace(from="/suan-prakop/", to="/components/")
+    | replace(from="/kiao-kap/", to="/about/")
+    | replace(from="/kan-khao-thueng/", to="/accessibility/")
+    | replace(from="/khwam-plodphai/", to="/security/")
+    | replace(from="/banthuek-kan-plian/", to="/changelog/")
+    | replace(from="/mi-suan-ruam/", to="/contribute/")
+    | replace(from="/khwam-pen-suan-tua/", to="/privacy/")
+    | replace(from="/kho-kamnot/", to="/terms/")
+    | replace(from="/tittoe/", to="/contact/")
+    | replace(from="/khob-khun/", to="/thanks/")
+    | replace(from="/chan-si/", to="/palettes/")
+    | replace(from="/aeni-mechan/", to="/animations/")
+  -%}
+{%- elif lang == "tr" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/baslarken/", to="/getting-started/")
+    | replace(from="/bilesenler/", to="/components/")
+    | replace(from="/hakkinda/", to="/about/")
+    | replace(from="/erisilebilirlik/", to="/accessibility/")
+    | replace(from="/guvenlik/", to="/security/")
+    | replace(from="/degisiklik-gunlugu/", to="/changelog/")
+    | replace(from="/katki/", to="/contribute/")
+    | replace(from="/gizlilik/", to="/privacy/")
+    | replace(from="/kosullar/", to="/terms/")
+    | replace(from="/iletisim/", to="/contact/")
+    | replace(from="/tesekkurler/", to="/thanks/")
+    | replace(from="/paletler/", to="/palettes/")
+    | replace(from="/animasyonlar/", to="/animations/")
+  -%}
+{%- elif lang == "uk" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/pochatok/", to="/getting-started/")
+    | replace(from="/komponenty/", to="/components/")
+    | replace(from="/pro-nas/", to="/about/")
+    | replace(from="/dostupnist/", to="/accessibility/")
+    | replace(from="/bezpeka/", to="/security/")
+    | replace(from="/zhurnal-zmin/", to="/changelog/")
+    | replace(from="/vnesok/", to="/contribute/")
+    | replace(from="/konfidentsiinist/", to="/privacy/")
+    | replace(from="/umovy/", to="/terms/")
+    | replace(from="/kontakt/", to="/contact/")
+    | replace(from="/dyakuyemo/", to="/thanks/")
+    | replace(from="/palitry/", to="/palettes/")
+    | replace(from="/animatsii/", to="/animations/")
+  -%}
+{%- elif lang == "vi" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/bat-dau/", to="/getting-started/")
+    | replace(from="/thanh-phan/", to="/components/")
+    | replace(from="/gioi-thieu/", to="/about/")
+    | replace(from="/tro-nang/", to="/accessibility/")
+    | replace(from="/bao-mat/", to="/security/")
+    | replace(from="/nhat-ky-thay-doi/", to="/changelog/")
+    | replace(from="/dong-gop/", to="/contribute/")
+    | replace(from="/quyen-rieng-tu/", to="/privacy/")
+    | replace(from="/dieu-khoan/", to="/terms/")
+    | replace(from="/lien-he/", to="/contact/")
+    | replace(from="/cam-on/", to="/thanks/")
+    | replace(from="/bang-mau/", to="/palettes/")
+    | replace(from="/hieu-ung/", to="/animations/")
+  -%}
+{%- elif lang == "yo" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/bere-nibi/", to="/getting-started/")
+    | replace(from="/awon-paati/", to="/components/")
+    | replace(from="/nipa/", to="/about/")
+    | replace(from="/iraye-si/", to="/accessibility/")
+    | replace(from="/aabo/", to="/security/")
+    | replace(from="/iwe-iyipada/", to="/changelog/")
+    | replace(from="/se-alabapin/", to="/contribute/")
+    | replace(from="/asiri/", to="/privacy/")
+    | replace(from="/awon-ofin/", to="/terms/")
+    | replace(from="/kan-si-wa/", to="/contact/")
+    | replace(from="/o-se/", to="/thanks/")
+    | replace(from="/awon-paleti/", to="/palettes/")
+    | replace(from="/ere-idasonu/", to="/animations/")
+  -%}
+{%- elif lang == "zh-hans" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/kuai-su-ru-men/", to="/getting-started/")
+    | replace(from="/zu-jian/", to="/components/")
+    | replace(from="/guan-yu/", to="/about/")
+    | replace(from="/wu-zhang-ai/", to="/accessibility/")
+    | replace(from="/an-quan/", to="/security/")
+    | replace(from="/geng-xin-ri-zhi/", to="/changelog/")
+    | replace(from="/gong-xian/", to="/contribute/")
+    | replace(from="/yin-si/", to="/privacy/")
+    | replace(from="/tiao-kuan/", to="/terms/")
+    | replace(from="/lian-xi/", to="/contact/")
+    | replace(from="/xie-xie/", to="/thanks/")
+    | replace(from="/se-ban/", to="/palettes/")
+    | replace(from="/dong-hua/", to="/animations/")
+  -%}
+{%- elif lang == "zh-hant" -%}
+  {%- set en_page_path = page_path
+    | replace(from="/kuai-su-ru-men/", to="/getting-started/")
+    | replace(from="/zu-jian/", to="/components/")
+    | replace(from="/guan-yu/", to="/about/")
+    | replace(from="/wu-zhang-ai/", to="/accessibility/")
+    | replace(from="/an-quan/", to="/security/")
+    | replace(from="/geng-xin-ri-zhi/", to="/changelog/")
+    | replace(from="/gong-xian/", to="/contribute/")
+    | replace(from="/yin-si/", to="/privacy/")
+    | replace(from="/tiao-kuan/", to="/terms/")
+    | replace(from="/lian-xi/", to="/contact/")
+    | replace(from="/xie-xie/", to="/thanks/")
+    | replace(from="/se-ban/", to="/palettes/")
+    | replace(from="/dong-hua/", to="/animations/")
+  -%}
+{%- else -%}
+  {%- set en_page_path = page_path -%}
+{%- endif -%}
+
+{#- fr_page_path: always the French-slug equivalent, used by the
+    French entry in the lang switcher regardless of current locale. -#}
+{%- set fr_page_path = en_page_path
+  | replace(from="/getting-started/", to="/premiers-pas/")
+  | replace(from="/components/", to="/composants/")
+  | replace(from="/about/", to="/a-propos/")
+  | replace(from="/accessibility/", to="/accessibilite/")
+  | replace(from="/security/", to="/securite/")
+  | replace(from="/changelog/", to="/journal/")
+  | replace(from="/contribute/", to="/contribuer/")
+  | replace(from="/privacy/", to="/confidentialite/")
+  | replace(from="/terms/", to="/conditions/")
+  | replace(from="/thanks/", to="/merci/")
+  | replace(from="/offline/", to="/hors-ligne/")
+  | replace(from="/tags/", to="/etiquettes/")
+-%}
+
+{#- de_page_path: always the German-slug equivalent. -#}
+{%- set de_page_path = en_page_path
+  | replace(from="/getting-started/", to="/erste-schritte/")
+  | replace(from="/components/", to="/komponenten/")
+  | replace(from="/about/", to="/ueber-uns/")
+  | replace(from="/accessibility/", to="/barrierefreiheit/")
+  | replace(from="/security/", to="/sicherheit/")
+  | replace(from="/changelog/", to="/aenderungsprotokoll/")
+  | replace(from="/contribute/", to="/mitwirken/")
+  | replace(from="/privacy/", to="/datenschutz/")
+  | replace(from="/terms/", to="/nutzungsbedingungen/")
+  | replace(from="/contact/", to="/kontakt/")
+  | replace(from="/thanks/", to="/danke/")
+  | replace(from="/palettes/", to="/paletten/")
+  | replace(from="/animations/", to="/animationen/")
+-%}
+
+{%- set ar_page_path = en_page_path
+  | replace(from="/getting-started/", to="/al-bidaya/")
+  | replace(from="/components/", to="/al-mukawwinat/")
+  | replace(from="/about/", to="/hawla/")
+  | replace(from="/accessibility/", to="/imkaniyyat-al-wusul/")
+  | replace(from="/security/", to="/al-aman/")
+  | replace(from="/changelog/", to="/sijil-al-taghyirat/")
+  | replace(from="/contribute/", to="/al-musahama/")
+  | replace(from="/privacy/", to="/al-khususiyya/")
+  | replace(from="/terms/", to="/al-shurut/")
+  | replace(from="/contact/", to="/ittisal/")
+  | replace(from="/thanks/", to="/shukran/")
+  | replace(from="/palettes/", to="/al-alwan/")
+  | replace(from="/animations/", to="/al-harakaat/")
+-%}
+
+{%- set bn_page_path = en_page_path
+  | replace(from="/getting-started/", to="/shuru/")
+  | replace(from="/components/", to="/upadan/")
+  | replace(from="/about/", to="/somporke/")
+  | replace(from="/accessibility/", to="/probeshadhikar/")
+  | replace(from="/security/", to="/nirapotta/")
+  | replace(from="/changelog/", to="/poriborton-talika/")
+  | replace(from="/contribute/", to="/yogdan/")
+  | replace(from="/privacy/", to="/goponioyota/")
+  | replace(from="/terms/", to="/shartaboli/")
+  | replace(from="/contact/", to="/jogajog/")
+  | replace(from="/thanks/", to="/dhonnobad/")
+  | replace(from="/palettes/", to="/rong-palat/")
+-%}
+
+{%- set cs_page_path = en_page_path
+  | replace(from="/getting-started/", to="/zacatek/")
+  | replace(from="/components/", to="/komponenty/")
+  | replace(from="/about/", to="/o-projektu/")
+  | replace(from="/accessibility/", to="/pristupnost/")
+  | replace(from="/security/", to="/bezpecnost/")
+  | replace(from="/changelog/", to="/zmeny/")
+  | replace(from="/contribute/", to="/prispet/")
+  | replace(from="/privacy/", to="/soukromi/")
+  | replace(from="/terms/", to="/podminky/")
+  | replace(from="/contact/", to="/kontakt/")
+  | replace(from="/thanks/", to="/dekujeme/")
+  | replace(from="/palettes/", to="/palety/")
+  | replace(from="/animations/", to="/animace/")
+-%}
+
+{%- set es_page_path = en_page_path
+  | replace(from="/getting-started/", to="/primeros-pasos/")
+  | replace(from="/components/", to="/componentes/")
+  | replace(from="/about/", to="/acerca-de/")
+  | replace(from="/accessibility/", to="/accesibilidad/")
+  | replace(from="/security/", to="/seguridad/")
+  | replace(from="/changelog/", to="/registro-de-cambios/")
+  | replace(from="/contribute/", to="/contribuir/")
+  | replace(from="/privacy/", to="/privacidad/")
+  | replace(from="/terms/", to="/terminos/")
+  | replace(from="/contact/", to="/contacto/")
+  | replace(from="/thanks/", to="/gracias/")
+  | replace(from="/palettes/", to="/paletas/")
+  | replace(from="/animations/", to="/animaciones/")
+-%}
+
+{%- set fil_page_path = en_page_path
+  | replace(from="/getting-started/", to="/pagsisimula/")
+  | replace(from="/components/", to="/mga-bahagi/")
+  | replace(from="/about/", to="/tungkol/")
+  | replace(from="/accessibility/", to="/aksesibilidad/")
+  | replace(from="/security/", to="/seguridad/")
+  | replace(from="/changelog/", to="/talaan-ng-pagbabago/")
+  | replace(from="/contribute/", to="/mag-ambag/")
+  | replace(from="/privacy/", to="/pagkapribado/")
+  | replace(from="/terms/", to="/mga-tuntunin/")
+  | replace(from="/contact/", to="/makipag-ugnayan/")
+  | replace(from="/thanks/", to="/salamat/")
+  | replace(from="/palettes/", to="/mga-paleta/")
+  | replace(from="/animations/", to="/mga-animasyon/")
+-%}
+
+{%- set ha_page_path = en_page_path
+  | replace(from="/getting-started/", to="/fara/")
+  | replace(from="/components/", to="/abubuwan-hadi/")
+  | replace(from="/about/", to="/game-da/")
+  | replace(from="/accessibility/", to="/samun-dama/")
+  | replace(from="/security/", to="/tsaro/")
+  | replace(from="/changelog/", to="/tarihin-canje-canje/")
+  | replace(from="/contribute/", to="/ba-da-gudummawa/")
+  | replace(from="/privacy/", to="/sirri/")
+  | replace(from="/terms/", to="/sharudda/")
+  | replace(from="/contact/", to="/tuntubi/")
+  | replace(from="/thanks/", to="/godiya/")
+  | replace(from="/palettes/", to="/launuka/")
+  | replace(from="/animations/", to="/motsin-rai/")
+-%}
+
+{%- set he_page_path = en_page_path
+  | replace(from="/getting-started/", to="/hatkhala/")
+  | replace(from="/components/", to="/rekhivim/")
+  | replace(from="/about/", to="/odot/")
+  | replace(from="/accessibility/", to="/negishut/")
+  | replace(from="/security/", to="/avtakha/")
+  | replace(from="/changelog/", to="/yoman-shinuyim/")
+  | replace(from="/contribute/", to="/truma/")
+  | replace(from="/privacy/", to="/pratiyut/")
+  | replace(from="/terms/", to="/tnaim/")
+  | replace(from="/contact/", to="/kesher/")
+  | replace(from="/thanks/", to="/toda/")
+  | replace(from="/palettes/", to="/paleta/")
+  | replace(from="/animations/", to="/animatsyot/")
+-%}
+
+{%- set hi_page_path = en_page_path
+  | replace(from="/getting-started/", to="/shuruat/")
+  | replace(from="/components/", to="/ghatak/")
+  | replace(from="/about/", to="/parichay/")
+  | replace(from="/accessibility/", to="/sulabhata/")
+  | replace(from="/security/", to="/suraksha/")
+  | replace(from="/changelog/", to="/parivartan-log/")
+  | replace(from="/contribute/", to="/yogdan/")
+  | replace(from="/privacy/", to="/gopaniyata/")
+  | replace(from="/terms/", to="/niyam/")
+  | replace(from="/contact/", to="/sampark/")
+  | replace(from="/thanks/", to="/dhanyavad/")
+  | replace(from="/palettes/", to="/rang-patti/")
+-%}
+
+{%- set id_page_path = en_page_path
+  | replace(from="/getting-started/", to="/memulai/")
+  | replace(from="/components/", to="/komponen/")
+  | replace(from="/about/", to="/tentang/")
+  | replace(from="/accessibility/", to="/aksesibilitas/")
+  | replace(from="/security/", to="/keamanan/")
+  | replace(from="/changelog/", to="/catatan-perubahan/")
+  | replace(from="/contribute/", to="/kontribusi/")
+  | replace(from="/privacy/", to="/privasi/")
+  | replace(from="/terms/", to="/ketentuan/")
+  | replace(from="/contact/", to="/kontak/")
+  | replace(from="/thanks/", to="/terima-kasih/")
+  | replace(from="/palettes/", to="/palet/")
+  | replace(from="/animations/", to="/animasi/")
+-%}
+
+{%- set it_page_path = en_page_path
+  | replace(from="/getting-started/", to="/iniziare/")
+  | replace(from="/components/", to="/componenti/")
+  | replace(from="/about/", to="/informazioni/")
+  | replace(from="/accessibility/", to="/accessibilita/")
+  | replace(from="/security/", to="/sicurezza/")
+  | replace(from="/changelog/", to="/registro-modifiche/")
+  | replace(from="/contribute/", to="/contribuire/")
+  | replace(from="/terms/", to="/termini/")
+  | replace(from="/contact/", to="/contatti/")
+  | replace(from="/thanks/", to="/grazie/")
+  | replace(from="/palettes/", to="/palette/")
+  | replace(from="/animations/", to="/animazioni/")
+-%}
+
+{%- set ja_page_path = en_page_path
+  | replace(from="/getting-started/", to="/hajimeni/")
+  | replace(from="/components/", to="/konponentsu/")
+  | replace(from="/about/", to="/gaiyo/")
+  | replace(from="/accessibility/", to="/akseshibirithi/")
+  | replace(from="/security/", to="/sekiyurithi/")
+  | replace(from="/changelog/", to="/henkou-rireki/")
+  | replace(from="/contribute/", to="/kouken/")
+  | replace(from="/privacy/", to="/puraibashi/")
+  | replace(from="/terms/", to="/riyou-kiyaku/")
+  | replace(from="/contact/", to="/otoiawase/")
+  | replace(from="/thanks/", to="/arigatou/")
+  | replace(from="/palettes/", to="/paretto/")
+  | replace(from="/animations/", to="/animeshon/")
+-%}
+
+{%- set ko_page_path = en_page_path
+  | replace(from="/getting-started/", to="/sijak/")
+  | replace(from="/components/", to="/kuseong-yoso/")
+  | replace(from="/about/", to="/sogae/")
+  | replace(from="/accessibility/", to="/jeobgeun-seong/")
+  | replace(from="/security/", to="/boaan/")
+  | replace(from="/changelog/", to="/byeongyeong-ilji/")
+  | replace(from="/contribute/", to="/giyeo/")
+  | replace(from="/privacy/", to="/gaeinjeongbo/")
+  | replace(from="/terms/", to="/iyong-yakgwan/")
+  | replace(from="/contact/", to="/munui/")
+  | replace(from="/thanks/", to="/gamsa/")
+  | replace(from="/palettes/", to="/palleteu/")
+  | replace(from="/animations/", to="/aenimeisyeon/")
+-%}
+
+{%- set nl_page_path = en_page_path
+  | replace(from="/getting-started/", to="/aan-de-slag/")
+  | replace(from="/components/", to="/componenten/")
+  | replace(from="/about/", to="/over-ons/")
+  | replace(from="/accessibility/", to="/toegankelijkheid/")
+  | replace(from="/security/", to="/beveiliging/")
+  | replace(from="/changelog/", to="/wijzigingslogboek/")
+  | replace(from="/contribute/", to="/bijdragen/")
+  | replace(from="/terms/", to="/voorwaarden/")
+  | replace(from="/thanks/", to="/bedankt/")
+  | replace(from="/palettes/", to="/paletten/")
+  | replace(from="/animations/", to="/animaties/")
+-%}
+
+{%- set pl_page_path = en_page_path
+  | replace(from="/getting-started/", to="/pierwsze-kroki/")
+  | replace(from="/components/", to="/komponenty/")
+  | replace(from="/about/", to="/o-projekcie/")
+  | replace(from="/accessibility/", to="/dostepnosc/")
+  | replace(from="/security/", to="/bezpieczenstwo/")
+  | replace(from="/changelog/", to="/dziennik-zmian/")
+  | replace(from="/contribute/", to="/wspolpraca/")
+  | replace(from="/privacy/", to="/prywatnosc/")
+  | replace(from="/terms/", to="/regulamin/")
+  | replace(from="/contact/", to="/kontakt/")
+  | replace(from="/thanks/", to="/dziekujemy/")
+  | replace(from="/palettes/", to="/palety/")
+  | replace(from="/animations/", to="/animacje/")
+-%}
+
+{%- set ptbr_page_path = en_page_path
+  | replace(from="/getting-started/", to="/primeiros-passos/")
+  | replace(from="/components/", to="/componentes/")
+  | replace(from="/about/", to="/sobre/")
+  | replace(from="/accessibility/", to="/acessibilidade/")
+  | replace(from="/security/", to="/seguranca/")
+  | replace(from="/changelog/", to="/registro-de-alteracoes/")
+  | replace(from="/contribute/", to="/contribuir/")
+  | replace(from="/privacy/", to="/privacidade/")
+  | replace(from="/terms/", to="/termos/")
+  | replace(from="/contact/", to="/contato/")
+  | replace(from="/thanks/", to="/obrigado/")
+  | replace(from="/palettes/", to="/paletas/")
+  | replace(from="/animations/", to="/animacoes/")
+-%}
+
+{%- set ro_page_path = en_page_path
+  | replace(from="/getting-started/", to="/primii-pasi/")
+  | replace(from="/components/", to="/componente/")
+  | replace(from="/about/", to="/despre/")
+  | replace(from="/accessibility/", to="/accesibilitate/")
+  | replace(from="/security/", to="/securitate/")
+  | replace(from="/changelog/", to="/jurnal-modificari/")
+  | replace(from="/contribute/", to="/contribuie/")
+  | replace(from="/privacy/", to="/confidentialitate/")
+  | replace(from="/terms/", to="/termeni/")
+  | replace(from="/thanks/", to="/multumim/")
+  | replace(from="/palettes/", to="/palete/")
+  | replace(from="/animations/", to="/animatii/")
+-%}
+
+{%- set ru_page_path = en_page_path
+  | replace(from="/getting-started/", to="/nachalo/")
+  | replace(from="/components/", to="/komponenty/")
+  | replace(from="/about/", to="/o-proekte/")
+  | replace(from="/accessibility/", to="/dostupnost/")
+  | replace(from="/security/", to="/bezopasnost/")
+  | replace(from="/changelog/", to="/zhurnal-izmeneniy/")
+  | replace(from="/contribute/", to="/vklad/")
+  | replace(from="/privacy/", to="/konfidentsialnost/")
+  | replace(from="/terms/", to="/usloviya/")
+  | replace(from="/contact/", to="/kontakt/")
+  | replace(from="/thanks/", to="/spasibo/")
+  | replace(from="/palettes/", to="/palitry/")
+  | replace(from="/animations/", to="/animatsii/")
+-%}
+
+{%- set sv_page_path = en_page_path
+  | replace(from="/getting-started/", to="/kom-igang/")
+  | replace(from="/components/", to="/komponenter/")
+  | replace(from="/about/", to="/om-oss/")
+  | replace(from="/accessibility/", to="/tillganglighet/")
+  | replace(from="/security/", to="/sakerhet/")
+  | replace(from="/changelog/", to="/andringslogg/")
+  | replace(from="/contribute/", to="/bidra/")
+  | replace(from="/privacy/", to="/integritet/")
+  | replace(from="/terms/", to="/villkor/")
+  | replace(from="/contact/", to="/kontakt/")
+  | replace(from="/thanks/", to="/tack/")
+  | replace(from="/palettes/", to="/paletter/")
+  | replace(from="/animations/", to="/animationer/")
+-%}
+
+{%- set th_page_path = en_page_path
+  | replace(from="/getting-started/", to="/roem-ton/")
+  | replace(from="/components/", to="/suan-prakop/")
+  | replace(from="/about/", to="/kiao-kap/")
+  | replace(from="/accessibility/", to="/kan-khao-thueng/")
+  | replace(from="/security/", to="/khwam-plodphai/")
+  | replace(from="/changelog/", to="/banthuek-kan-plian/")
+  | replace(from="/contribute/", to="/mi-suan-ruam/")
+  | replace(from="/privacy/", to="/khwam-pen-suan-tua/")
+  | replace(from="/terms/", to="/kho-kamnot/")
+  | replace(from="/contact/", to="/tittoe/")
+  | replace(from="/thanks/", to="/khob-khun/")
+  | replace(from="/palettes/", to="/chan-si/")
+  | replace(from="/animations/", to="/aeni-mechan/")
+-%}
+
+{%- set tr_page_path = en_page_path
+  | replace(from="/getting-started/", to="/baslarken/")
+  | replace(from="/components/", to="/bilesenler/")
+  | replace(from="/about/", to="/hakkinda/")
+  | replace(from="/accessibility/", to="/erisilebilirlik/")
+  | replace(from="/security/", to="/guvenlik/")
+  | replace(from="/changelog/", to="/degisiklik-gunlugu/")
+  | replace(from="/contribute/", to="/katki/")
+  | replace(from="/privacy/", to="/gizlilik/")
+  | replace(from="/terms/", to="/kosullar/")
+  | replace(from="/contact/", to="/iletisim/")
+  | replace(from="/thanks/", to="/tesekkurler/")
+  | replace(from="/palettes/", to="/paletler/")
+  | replace(from="/animations/", to="/animasyonlar/")
+-%}
+
+{%- set uk_page_path = en_page_path
+  | replace(from="/getting-started/", to="/pochatok/")
+  | replace(from="/components/", to="/komponenty/")
+  | replace(from="/about/", to="/pro-nas/")
+  | replace(from="/accessibility/", to="/dostupnist/")
+  | replace(from="/security/", to="/bezpeka/")
+  | replace(from="/changelog/", to="/zhurnal-zmin/")
+  | replace(from="/contribute/", to="/vnesok/")
+  | replace(from="/privacy/", to="/konfidentsiinist/")
+  | replace(from="/terms/", to="/umovy/")
+  | replace(from="/contact/", to="/kontakt/")
+  | replace(from="/thanks/", to="/dyakuyemo/")
+  | replace(from="/palettes/", to="/palitry/")
+  | replace(from="/animations/", to="/animatsii/")
+-%}
+
+{%- set vi_page_path = en_page_path
+  | replace(from="/getting-started/", to="/bat-dau/")
+  | replace(from="/components/", to="/thanh-phan/")
+  | replace(from="/about/", to="/gioi-thieu/")
+  | replace(from="/accessibility/", to="/tro-nang/")
+  | replace(from="/security/", to="/bao-mat/")
+  | replace(from="/changelog/", to="/nhat-ky-thay-doi/")
+  | replace(from="/contribute/", to="/dong-gop/")
+  | replace(from="/privacy/", to="/quyen-rieng-tu/")
+  | replace(from="/terms/", to="/dieu-khoan/")
+  | replace(from="/contact/", to="/lien-he/")
+  | replace(from="/thanks/", to="/cam-on/")
+  | replace(from="/palettes/", to="/bang-mau/")
+  | replace(from="/animations/", to="/hieu-ung/")
+-%}
+
+{%- set yo_page_path = en_page_path
+  | replace(from="/getting-started/", to="/bere-nibi/")
+  | replace(from="/components/", to="/awon-paati/")
+  | replace(from="/about/", to="/nipa/")
+  | replace(from="/accessibility/", to="/iraye-si/")
+  | replace(from="/security/", to="/aabo/")
+  | replace(from="/changelog/", to="/iwe-iyipada/")
+  | replace(from="/contribute/", to="/se-alabapin/")
+  | replace(from="/privacy/", to="/asiri/")
+  | replace(from="/terms/", to="/awon-ofin/")
+  | replace(from="/contact/", to="/kan-si-wa/")
+  | replace(from="/thanks/", to="/o-se/")
+  | replace(from="/palettes/", to="/awon-paleti/")
+  | replace(from="/animations/", to="/ere-idasonu/")
+-%}
+
+{%- set zhhans_page_path = en_page_path
+  | replace(from="/getting-started/", to="/kuai-su-ru-men/")
+  | replace(from="/components/", to="/zu-jian/")
+  | replace(from="/about/", to="/guan-yu/")
+  | replace(from="/accessibility/", to="/wu-zhang-ai/")
+  | replace(from="/security/", to="/an-quan/")
+  | replace(from="/changelog/", to="/geng-xin-ri-zhi/")
+  | replace(from="/contribute/", to="/gong-xian/")
+  | replace(from="/privacy/", to="/yin-si/")
+  | replace(from="/terms/", to="/tiao-kuan/")
+  | replace(from="/contact/", to="/lian-xi/")
+  | replace(from="/thanks/", to="/xie-xie/")
+  | replace(from="/palettes/", to="/se-ban/")
+  | replace(from="/animations/", to="/dong-hua/")
+-%}
+
+{%- set zhhant_page_path = en_page_path
+  | replace(from="/getting-started/", to="/kuai-su-ru-men/")
+  | replace(from="/components/", to="/zu-jian/")
+  | replace(from="/about/", to="/guan-yu/")
+  | replace(from="/accessibility/", to="/wu-zhang-ai/")
+  | replace(from="/security/", to="/an-quan/")
+  | replace(from="/changelog/", to="/geng-xin-ri-zhi/")
+  | replace(from="/contribute/", to="/gong-xian/")
+  | replace(from="/privacy/", to="/yin-si/")
+  | replace(from="/terms/", to="/tiao-kuan/")
+  | replace(from="/contact/", to="/lian-xi/")
+  | replace(from="/thanks/", to="/xie-xie/")
+  | replace(from="/palettes/", to="/se-ban/")
+  | replace(from="/animations/", to="/dong-hua/")
+-%}
+
+{#- Locale-specific chrome strings. English is the fallback.
+    Adding a new locale = adding one `{% elif lang == "xx" %}` branch. -#}
+{%- if lang == "fr" -%}
+  {%- set t_skip_link = "Aller au contenu principal" -%}
+  {%- set t_nav_brand_aria = "Accueil Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Accueil" -%}
+  {%- set t_nav_docs = "Documentation" -%}
+  {%- set t_nav_components = "Composants" -%}
+  {%- set t_nav_resources = "Ressources" -%}
+  {%- set t_nav_palettes = "Palettes" -%}
+  {%- set t_nav_animations = "Animations" -%}
+  {%- set t_nav_accessibility = "Accessibilité" -%}
+  {%- set t_nav_search_aria = "Rechercher" -%}
+  {%- set t_nav_theme_dark = "Sombre" -%}
+  {%- set t_nav_theme_dark_aria = "Passer en mode sombre" -%}
+  {%- set t_nav_theme_light = "Clair" -%}
+  {%- set t_nav_theme_light_aria = "Passer en mode clair" -%}
+  {%- set t_nav_lang_aria = "Changer de langue" -%}
+  {%- set t_nav_contact = "Contact" -%}
+  {%- set t_nav_toggle_aria = "Afficher ou masquer le menu" -%}
+  {%- set t_footer_project = "Projet" -%}
+  {%- set t_footer_about = "À propos" -%}
+  {%- set t_footer_changelog = "Journal des modifications" -%}
+  {%- set t_footer_security = "Sécurité" -%}
+  {%- set t_footer_contribute = "Contribuer" -%}
+  {%- set t_footer_resources = "Ressources" -%}
+  {%- set t_footer_legal = "Mentions légales" -%}
+  {%- set t_footer_privacy = "Confidentialité" -%}
+  {%- set t_footer_terms = "Conditions" -%}
+  {%- set t_footer_contact = "Contact" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Tous droits réservés." -%}
+  {%- set t_search_aria = "Rechercher" -%}
+  {%- set t_search_placeholder = "Rechercher dans la documentation..." -%}
+  {%- set t_search_navigate = "Naviguer" -%}
+  {%- set t_search_open = "Ouvrir" -%}
+  {%- set t_search_close = "Fermer" -%}
+  {%- set t_breadcrumb_home = "Accueil" -%}
+  {%- set t_form_name = "Votre nom" -%}
+  {%- set t_form_email = "Votre adresse e-mail" -%}
+  {%- set t_form_subject = "Objet" -%}
+  {%- set t_form_message = "Message" -%}
+  {%- set t_form_send = "Envoyer le message →" -%}
+  {%- set t_back_home = "← Retour à l'accueil" -%}
+  {%- set s_getting_started = "premiers-pas" -%}
+  {%- set s_components = "composants" -%}
+  {%- set s_about = "a-propos" -%}
+  {%- set s_accessibility = "accessibilite" -%}
+  {%- set s_security = "securite" -%}
+  {%- set s_changelog = "journal" -%}
+  {%- set s_contribute = "contribuer" -%}
+  {%- set s_privacy = "confidentialite" -%}
+  {%- set s_terms = "conditions" -%}
+  {%- set s_palettes = "palettes" -%}
+  {%- set s_animations = "animations" -%}
+  {%- set s_contact = "contact" -%}
+{%- elif lang == "de" -%}
+  {%- set t_skip_link = "Zum Inhalt springen" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus Startseite" -%}
+  {%- set t_nav_home = "Startseite" -%}
+  {%- set t_nav_docs = "Dokumentation" -%}
+  {%- set t_nav_components = "Komponenten" -%}
+  {%- set t_nav_resources = "Ressourcen" -%}
+  {%- set t_nav_palettes = "Paletten" -%}
+  {%- set t_nav_animations = "Animationen" -%}
+  {%- set t_nav_accessibility = "Barrierefreiheit" -%}
+  {%- set t_nav_search_aria = "Suchen" -%}
+  {%- set t_nav_theme_dark = "Dunkel" -%}
+  {%- set t_nav_theme_dark_aria = "Zum dunklen Modus wechseln" -%}
+  {%- set t_nav_theme_light = "Hell" -%}
+  {%- set t_nav_theme_light_aria = "Zum hellen Modus wechseln" -%}
+  {%- set t_nav_lang_aria = "Sprache wechseln" -%}
+  {%- set t_nav_contact = "Kontakt" -%}
+  {%- set t_nav_toggle_aria = "Menü ein-/ausblenden" -%}
+  {%- set t_footer_project = "Projekt" -%}
+  {%- set t_footer_about = "Über uns" -%}
+  {%- set t_footer_changelog = "Änderungsprotokoll" -%}
+  {%- set t_footer_security = "Sicherheit" -%}
+  {%- set t_footer_contribute = "Mitwirken" -%}
+  {%- set t_footer_resources = "Ressourcen" -%}
+  {%- set t_footer_legal = "Rechtliches" -%}
+  {%- set t_footer_privacy = "Datenschutz" -%}
+  {%- set t_footer_terms = "Nutzungsbedingungen" -%}
+  {%- set t_footer_contact = "Kontakt" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Alle Rechte vorbehalten." -%}
+  {%- set t_search_aria = "Suchen" -%}
+  {%- set t_search_placeholder = "Dokumentation durchsuchen..." -%}
+  {%- set t_search_navigate = "Navigieren" -%}
+  {%- set t_search_open = "Öffnen" -%}
+  {%- set t_search_close = "Schließen" -%}
+  {%- set t_breadcrumb_home = "Startseite" -%}
+  {%- set t_form_name = "Ihr Name" -%}
+  {%- set t_form_email = "Ihre E-Mail-Adresse" -%}
+  {%- set t_form_subject = "Betreff" -%}
+  {%- set t_form_message = "Nachricht" -%}
+  {%- set t_form_send = "Nachricht senden →" -%}
+  {%- set t_back_home = "← Zurück zur Startseite" -%}
+  {%- set s_getting_started = "erste-schritte" -%}
+  {%- set s_components = "komponenten" -%}
+  {%- set s_about = "ueber-uns" -%}
+  {%- set s_accessibility = "barrierefreiheit" -%}
+  {%- set s_security = "sicherheit" -%}
+  {%- set s_changelog = "aenderungsprotokoll" -%}
+  {%- set s_contribute = "mitwirken" -%}
+  {%- set s_privacy = "datenschutz" -%}
+  {%- set s_terms = "nutzungsbedingungen" -%}
+  {%- set s_palettes = "paletten" -%}
+  {%- set s_animations = "animationen" -%}
+  {%- set s_contact = "kontakt" -%}
+{%- elif lang == "ar" -%}
+  {%- set t_skip_link = "انتقل إلى المحتوى الرئيسي" -%}
+  {%- set t_nav_brand_aria = "الصفحة الرئيسية لـ Skeletonic Stylus" -%}
+  {%- set t_nav_home = "الرئيسية" -%}
+  {%- set t_nav_docs = "التوثيق" -%}
+  {%- set t_nav_components = "المكوّنات" -%}
+  {%- set t_nav_resources = "الموارد" -%}
+  {%- set t_nav_palettes = "الألوان" -%}
+  {%- set t_nav_animations = "الحركات" -%}
+  {%- set t_nav_accessibility = "إمكانية الوصول" -%}
+  {%- set t_nav_search_aria = "بحث" -%}
+  {%- set t_nav_theme_dark = "داكن" -%}
+  {%- set t_nav_theme_dark_aria = "التبديل إلى الوضع الداكن" -%}
+  {%- set t_nav_theme_light = "فاتح" -%}
+  {%- set t_nav_theme_light_aria = "التبديل إلى الوضع الفاتح" -%}
+  {%- set t_nav_lang_aria = "تغيير اللغة" -%}
+  {%- set t_nav_contact = "اتصل بنا" -%}
+  {%- set t_nav_toggle_aria = "فتح أو إغلاق القائمة" -%}
+  {%- set t_footer_project = "المشروع" -%}
+  {%- set t_footer_about = "حول" -%}
+  {%- set t_footer_changelog = "سجل التغييرات" -%}
+  {%- set t_footer_security = "الأمان" -%}
+  {%- set t_footer_contribute = "المساهمة" -%}
+  {%- set t_footer_resources = "الموارد" -%}
+  {%- set t_footer_legal = "قانوني" -%}
+  {%- set t_footer_privacy = "الخصوصية" -%}
+  {%- set t_footer_terms = "الشروط" -%}
+  {%- set t_footer_contact = "اتصل بنا" -%}
+  {%- set t_footer_copyright = "حقوق النشر © 2021 – 2026 Skeletonic CSS. جميع الحقوق محفوظة." -%}
+  {%- set t_search_aria = "بحث" -%}
+  {%- set t_search_placeholder = "البحث في التوثيق..." -%}
+  {%- set t_search_navigate = "تنقّل" -%}
+  {%- set t_search_open = "فتح" -%}
+  {%- set t_search_close = "إغلاق" -%}
+  {%- set t_breadcrumb_home = "الرئيسية" -%}
+  {%- set t_form_name = "اسمك" -%}
+  {%- set t_form_email = "بريدك الإلكتروني" -%}
+  {%- set t_form_subject = "الموضوع" -%}
+  {%- set t_form_message = "الرسالة" -%}
+  {%- set t_form_send = "إرسال الرسالة ←" -%}
+  {%- set t_back_home = "→ العودة إلى الرئيسية" -%}
+  {%- set s_getting_started = "al-bidaya" -%}
+  {%- set s_components = "al-mukawwinat" -%}
+  {%- set s_about = "hawla" -%}
+  {%- set s_accessibility = "imkaniyyat-al-wusul" -%}
+  {%- set s_security = "al-aman" -%}
+  {%- set s_changelog = "sijil-al-taghyirat" -%}
+  {%- set s_contribute = "al-musahama" -%}
+  {%- set s_privacy = "al-khususiyya" -%}
+  {%- set s_terms = "al-shurut" -%}
+  {%- set s_palettes = "al-alwan" -%}
+  {%- set s_animations = "al-harakaat" -%}
+  {%- set s_contact = "ittisal" -%}
+{%- elif lang == "bn" -%}
+  {%- set t_skip_link = "মূল বিষয়বস্তুতে যান" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus হোম" -%}
+  {%- set t_nav_home = "হোম" -%}
+  {%- set t_nav_docs = "ডকুমেন্টেশন" -%}
+  {%- set t_nav_components = "উপাদান" -%}
+  {%- set t_nav_resources = "রিসোর্স" -%}
+  {%- set t_nav_palettes = "রং প্যালেট" -%}
+  {%- set t_nav_animations = "অ্যানিমেশন" -%}
+  {%- set t_nav_accessibility = "প্রবেশাধিকার" -%}
+  {%- set t_nav_search_aria = "অনুসন্ধান" -%}
+  {%- set t_nav_theme_dark = "ডার্ক" -%}
+  {%- set t_nav_theme_dark_aria = "ডার্ক মোডে পরিবর্তন করুন" -%}
+  {%- set t_nav_theme_light = "লাইট" -%}
+  {%- set t_nav_theme_light_aria = "লাইট মোডে পরিবর্তন করুন" -%}
+  {%- set t_nav_lang_aria = "ভাষা পরিবর্তন করুন" -%}
+  {%- set t_nav_contact = "যোগাযোগ" -%}
+  {%- set t_nav_toggle_aria = "মেনু টগল করুন" -%}
+  {%- set t_footer_project = "প্রকল্প" -%}
+  {%- set t_footer_about = "সম্পর্কে" -%}
+  {%- set t_footer_changelog = "পরিবর্তন তালিকা" -%}
+  {%- set t_footer_security = "নিরাপত্তা" -%}
+  {%- set t_footer_contribute = "অবদান" -%}
+  {%- set t_footer_resources = "রিসোর্স" -%}
+  {%- set t_footer_legal = "আইনি" -%}
+  {%- set t_footer_privacy = "গোপনীয়তা" -%}
+  {%- set t_footer_terms = "শর্তাবলী" -%}
+  {%- set t_footer_contact = "যোগাযোগ" -%}
+  {%- set t_footer_copyright = "কপিরাইট © 2021 – 2026 Skeletonic CSS। সমস্ত অধিকার সংরক্ষিত।" -%}
+  {%- set t_search_aria = "অনুসন্ধান" -%}
+  {%- set t_search_placeholder = "ডকুমেন্টেশনে অনুসন্ধান করুন..." -%}
+  {%- set t_search_navigate = "নেভিগেট" -%}
+  {%- set t_search_open = "খুলুন" -%}
+  {%- set t_search_close = "বন্ধ করুন" -%}
+  {%- set t_breadcrumb_home = "হোম" -%}
+  {%- set t_form_name = "আপনার নাম" -%}
+  {%- set t_form_email = "আপনার ইমেইল" -%}
+  {%- set t_form_subject = "বিষয়" -%}
+  {%- set t_form_message = "বার্তা" -%}
+  {%- set t_form_send = "বার্তা পাঠান →" -%}
+  {%- set t_back_home = "← হোমে ফিরে যান" -%}
+  {%- set s_getting_started = "shuru" -%}
+  {%- set s_components = "upadan" -%}
+  {%- set s_about = "somporke" -%}
+  {%- set s_accessibility = "probeshadhikar" -%}
+  {%- set s_security = "nirapotta" -%}
+  {%- set s_changelog = "poriborton-talika" -%}
+  {%- set s_contribute = "yogdan" -%}
+  {%- set s_privacy = "goponioyota" -%}
+  {%- set s_terms = "shartaboli" -%}
+  {%- set s_palettes = "rong-palat" -%}
+  {%- set s_animations = "animations" -%}
+  {%- set s_contact = "jogajog" -%}
+{%- elif lang == "cs" -%}
+  {%- set t_skip_link = "Přejít na hlavní obsah" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus – domů" -%}
+  {%- set t_nav_home = "Domů" -%}
+  {%- set t_nav_docs = "Dokumentace" -%}
+  {%- set t_nav_components = "Komponenty" -%}
+  {%- set t_nav_resources = "Zdroje" -%}
+  {%- set t_nav_palettes = "Palety" -%}
+  {%- set t_nav_animations = "Animace" -%}
+  {%- set t_nav_accessibility = "Přístupnost" -%}
+  {%- set t_nav_search_aria = "Hledat" -%}
+  {%- set t_nav_theme_dark = "Tmavý" -%}
+  {%- set t_nav_theme_dark_aria = "Přepnout na tmavý režim" -%}
+  {%- set t_nav_theme_light = "Světlý" -%}
+  {%- set t_nav_theme_light_aria = "Přepnout na světlý režim" -%}
+  {%- set t_nav_lang_aria = "Změnit jazyk" -%}
+  {%- set t_nav_contact = "Kontakt" -%}
+  {%- set t_nav_toggle_aria = "Otevřít nebo zavřít nabídku" -%}
+  {%- set t_footer_project = "Projekt" -%}
+  {%- set t_footer_about = "O projektu" -%}
+  {%- set t_footer_changelog = "Změny" -%}
+  {%- set t_footer_security = "Bezpečnost" -%}
+  {%- set t_footer_contribute = "Přispět" -%}
+  {%- set t_footer_resources = "Zdroje" -%}
+  {%- set t_footer_legal = "Právní" -%}
+  {%- set t_footer_privacy = "Soukromí" -%}
+  {%- set t_footer_terms = "Podmínky" -%}
+  {%- set t_footer_contact = "Kontakt" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Všechna práva vyhrazena." -%}
+  {%- set t_search_aria = "Hledat" -%}
+  {%- set t_search_placeholder = "Hledat v dokumentaci..." -%}
+  {%- set t_search_navigate = "Navigovat" -%}
+  {%- set t_search_open = "Otevřít" -%}
+  {%- set t_search_close = "Zavřít" -%}
+  {%- set t_breadcrumb_home = "Domů" -%}
+  {%- set t_form_name = "Vaše jméno" -%}
+  {%- set t_form_email = "Váš e-mail" -%}
+  {%- set t_form_subject = "Předmět" -%}
+  {%- set t_form_message = "Zpráva" -%}
+  {%- set t_form_send = "Odeslat zprávu →" -%}
+  {%- set t_back_home = "← Zpět na domovskou stránku" -%}
+  {%- set s_getting_started = "zacatek" -%}
+  {%- set s_components = "komponenty" -%}
+  {%- set s_about = "o-projektu" -%}
+  {%- set s_accessibility = "pristupnost" -%}
+  {%- set s_security = "bezpecnost" -%}
+  {%- set s_changelog = "zmeny" -%}
+  {%- set s_contribute = "prispet" -%}
+  {%- set s_privacy = "soukromi" -%}
+  {%- set s_terms = "podminky" -%}
+  {%- set s_palettes = "palety" -%}
+  {%- set s_animations = "animace" -%}
+  {%- set s_contact = "kontakt" -%}
+{%- elif lang == "es" -%}
+  {%- set t_skip_link = "Ir al contenido principal" -%}
+  {%- set t_nav_brand_aria = "Inicio de Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Inicio" -%}
+  {%- set t_nav_docs = "Documentación" -%}
+  {%- set t_nav_components = "Componentes" -%}
+  {%- set t_nav_resources = "Recursos" -%}
+  {%- set t_nav_palettes = "Paletas" -%}
+  {%- set t_nav_animations = "Animaciones" -%}
+  {%- set t_nav_accessibility = "Accesibilidad" -%}
+  {%- set t_nav_search_aria = "Buscar" -%}
+  {%- set t_nav_theme_dark = "Oscuro" -%}
+  {%- set t_nav_theme_dark_aria = "Cambiar a modo oscuro" -%}
+  {%- set t_nav_theme_light = "Claro" -%}
+  {%- set t_nav_theme_light_aria = "Cambiar a modo claro" -%}
+  {%- set t_nav_lang_aria = "Cambiar idioma" -%}
+  {%- set t_nav_contact = "Contacto" -%}
+  {%- set t_nav_toggle_aria = "Mostrar u ocultar menú" -%}
+  {%- set t_footer_project = "Proyecto" -%}
+  {%- set t_footer_about = "Acerca de" -%}
+  {%- set t_footer_changelog = "Registro de cambios" -%}
+  {%- set t_footer_security = "Seguridad" -%}
+  {%- set t_footer_contribute = "Contribuir" -%}
+  {%- set t_footer_resources = "Recursos" -%}
+  {%- set t_footer_legal = "Legal" -%}
+  {%- set t_footer_privacy = "Privacidad" -%}
+  {%- set t_footer_terms = "Términos" -%}
+  {%- set t_footer_contact = "Contacto" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Todos los derechos reservados." -%}
+  {%- set t_search_aria = "Buscar" -%}
+  {%- set t_search_placeholder = "Buscar en la documentación..." -%}
+  {%- set t_search_navigate = "Navegar" -%}
+  {%- set t_search_open = "Abrir" -%}
+  {%- set t_search_close = "Cerrar" -%}
+  {%- set t_breadcrumb_home = "Inicio" -%}
+  {%- set t_form_name = "Tu nombre" -%}
+  {%- set t_form_email = "Tu correo electrónico" -%}
+  {%- set t_form_subject = "Asunto" -%}
+  {%- set t_form_message = "Mensaje" -%}
+  {%- set t_form_send = "Enviar mensaje →" -%}
+  {%- set t_back_home = "← Volver al inicio" -%}
+  {%- set s_getting_started = "primeros-pasos" -%}
+  {%- set s_components = "componentes" -%}
+  {%- set s_about = "acerca-de" -%}
+  {%- set s_accessibility = "accesibilidad" -%}
+  {%- set s_security = "seguridad" -%}
+  {%- set s_changelog = "registro-de-cambios" -%}
+  {%- set s_contribute = "contribuir" -%}
+  {%- set s_privacy = "privacidad" -%}
+  {%- set s_terms = "terminos" -%}
+  {%- set s_palettes = "paletas" -%}
+  {%- set s_animations = "animaciones" -%}
+  {%- set s_contact = "contacto" -%}
+{%- elif lang == "fil" -%}
+  {%- set t_skip_link = "Pumunta sa pangunahing nilalaman" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus home" -%}
+  {%- set t_nav_home = "Home" -%}
+  {%- set t_nav_docs = "Dokumentasyon" -%}
+  {%- set t_nav_components = "Mga Bahagi" -%}
+  {%- set t_nav_resources = "Mga Mapagkukunan" -%}
+  {%- set t_nav_palettes = "Mga Paleta" -%}
+  {%- set t_nav_animations = "Mga Animasyon" -%}
+  {%- set t_nav_accessibility = "Aksesibilidad" -%}
+  {%- set t_nav_search_aria = "Maghanap" -%}
+  {%- set t_nav_theme_dark = "Madilim" -%}
+  {%- set t_nav_theme_dark_aria = "Lumipat sa madilim na mode" -%}
+  {%- set t_nav_theme_light = "Maliwanag" -%}
+  {%- set t_nav_theme_light_aria = "Lumipat sa maliwanag na mode" -%}
+  {%- set t_nav_lang_aria = "Palitan ang wika" -%}
+  {%- set t_nav_contact = "Makipag-ugnayan" -%}
+  {%- set t_nav_toggle_aria = "Ipakita o itago ang menu" -%}
+  {%- set t_footer_project = "Proyekto" -%}
+  {%- set t_footer_about = "Tungkol" -%}
+  {%- set t_footer_changelog = "Talaan ng Pagbabago" -%}
+  {%- set t_footer_security = "Seguridad" -%}
+  {%- set t_footer_contribute = "Mag-ambag" -%}
+  {%- set t_footer_resources = "Mga Mapagkukunan" -%}
+  {%- set t_footer_legal = "Legal" -%}
+  {%- set t_footer_privacy = "Pagkapribado" -%}
+  {%- set t_footer_terms = "Mga Tuntunin" -%}
+  {%- set t_footer_contact = "Makipag-ugnayan" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Lahat ng karapatan ay nakalaan." -%}
+  {%- set t_search_aria = "Maghanap" -%}
+  {%- set t_search_placeholder = "Maghanap sa dokumentasyon..." -%}
+  {%- set t_search_navigate = "Mag-navigate" -%}
+  {%- set t_search_open = "Buksan" -%}
+  {%- set t_search_close = "Isara" -%}
+  {%- set t_breadcrumb_home = "Home" -%}
+  {%- set t_form_name = "Iyong pangalan" -%}
+  {%- set t_form_email = "Iyong email" -%}
+  {%- set t_form_subject = "Paksa" -%}
+  {%- set t_form_message = "Mensahe" -%}
+  {%- set t_form_send = "Ipadala ang mensahe →" -%}
+  {%- set t_back_home = "← Bumalik sa home" -%}
+  {%- set s_getting_started = "pagsisimula" -%}
+  {%- set s_components = "mga-bahagi" -%}
+  {%- set s_about = "tungkol" -%}
+  {%- set s_accessibility = "aksesibilidad" -%}
+  {%- set s_security = "seguridad" -%}
+  {%- set s_changelog = "talaan-ng-pagbabago" -%}
+  {%- set s_contribute = "mag-ambag" -%}
+  {%- set s_privacy = "pagkapribado" -%}
+  {%- set s_terms = "mga-tuntunin" -%}
+  {%- set s_palettes = "mga-paleta" -%}
+  {%- set s_animations = "mga-animasyon" -%}
+  {%- set s_contact = "makipag-ugnayan" -%}
+{%- elif lang == "ha" -%}
+  {%- set t_skip_link = "Tsallake zuwa babban abun ciki" -%}
+  {%- set t_nav_brand_aria = "Shafin farko na Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Gida" -%}
+  {%- set t_nav_docs = "Takardu" -%}
+  {%- set t_nav_components = "Abubuwan Haɗi" -%}
+  {%- set t_nav_resources = "Albarkatu" -%}
+  {%- set t_nav_palettes = "Launuka" -%}
+  {%- set t_nav_animations = "Motsin Rai" -%}
+  {%- set t_nav_accessibility = "Sauƙin Dama" -%}
+  {%- set t_nav_search_aria = "Bincika" -%}
+  {%- set t_nav_theme_dark = "Duhu" -%}
+  {%- set t_nav_theme_dark_aria = "Canza zuwa yanayin duhu" -%}
+  {%- set t_nav_theme_light = "Haske" -%}
+  {%- set t_nav_theme_light_aria = "Canza zuwa yanayin haske" -%}
+  {%- set t_nav_lang_aria = "Canza harshe" -%}
+  {%- set t_nav_contact = "Tuntuɓi" -%}
+  {%- set t_nav_toggle_aria = "Buɗe ko rufe menu" -%}
+  {%- set t_footer_project = "Aikin" -%}
+  {%- set t_footer_about = "Game da" -%}
+  {%- set t_footer_changelog = "Tarihin Canje-canje" -%}
+  {%- set t_footer_security = "Tsaro" -%}
+  {%- set t_footer_contribute = "Ba da Gudummawa" -%}
+  {%- set t_footer_resources = "Albarkatu" -%}
+  {%- set t_footer_legal = "Shari'a" -%}
+  {%- set t_footer_privacy = "Sirri" -%}
+  {%- set t_footer_terms = "Sharuɗɗa" -%}
+  {%- set t_footer_contact = "Tuntuɓi" -%}
+  {%- set t_footer_copyright = "Haƙƙin mallaka © 2021 – 2026 Skeletonic CSS. An kiyaye duk haƙƙoƙi." -%}
+  {%- set t_search_aria = "Bincika" -%}
+  {%- set t_search_placeholder = "Bincika a cikin takardu..." -%}
+  {%- set t_search_navigate = "Kewaya" -%}
+  {%- set t_search_open = "Buɗe" -%}
+  {%- set t_search_close = "Rufe" -%}
+  {%- set t_breadcrumb_home = "Gida" -%}
+  {%- set t_form_name = "Sunanka" -%}
+  {%- set t_form_email = "Imelinka" -%}
+  {%- set t_form_subject = "Taken" -%}
+  {%- set t_form_message = "Saƙo" -%}
+  {%- set t_form_send = "Aika saƙo →" -%}
+  {%- set t_back_home = "← Koma gida" -%}
+  {%- set s_getting_started = "fara" -%}
+  {%- set s_components = "abubuwan-hadi" -%}
+  {%- set s_about = "game-da" -%}
+  {%- set s_accessibility = "samun-dama" -%}
+  {%- set s_security = "tsaro" -%}
+  {%- set s_changelog = "tarihin-canje-canje" -%}
+  {%- set s_contribute = "ba-da-gudummawa" -%}
+  {%- set s_privacy = "sirri" -%}
+  {%- set s_terms = "sharudda" -%}
+  {%- set s_palettes = "launuka" -%}
+  {%- set s_animations = "motsin-rai" -%}
+  {%- set s_contact = "tuntubi" -%}
+{%- elif lang == "he" -%}
+  {%- set t_skip_link = "דלג לתוכן הראשי" -%}
+  {%- set t_nav_brand_aria = "דף הבית של Skeletonic Stylus" -%}
+  {%- set t_nav_home = "דף הבית" -%}
+  {%- set t_nav_docs = "תיעוד" -%}
+  {%- set t_nav_components = "רכיבים" -%}
+  {%- set t_nav_resources = "משאבים" -%}
+  {%- set t_nav_palettes = "פלטות" -%}
+  {%- set t_nav_animations = "אנימציות" -%}
+  {%- set t_nav_accessibility = "נגישות" -%}
+  {%- set t_nav_search_aria = "חיפוש" -%}
+  {%- set t_nav_theme_dark = "כהה" -%}
+  {%- set t_nav_theme_dark_aria = "עבור למצב כהה" -%}
+  {%- set t_nav_theme_light = "בהיר" -%}
+  {%- set t_nav_theme_light_aria = "עבור למצב בהיר" -%}
+  {%- set t_nav_lang_aria = "שנה שפה" -%}
+  {%- set t_nav_contact = "צור קשר" -%}
+  {%- set t_nav_toggle_aria = "פתח או סגור תפריט" -%}
+  {%- set t_footer_project = "פרויקט" -%}
+  {%- set t_footer_about = "אודות" -%}
+  {%- set t_footer_changelog = "יומן שינויים" -%}
+  {%- set t_footer_security = "אבטחה" -%}
+  {%- set t_footer_contribute = "תרומה" -%}
+  {%- set t_footer_resources = "משאבים" -%}
+  {%- set t_footer_legal = "משפטי" -%}
+  {%- set t_footer_privacy = "פרטיות" -%}
+  {%- set t_footer_terms = "תנאים" -%}
+  {%- set t_footer_contact = "צור קשר" -%}
+  {%- set t_footer_copyright = "זכויות יוצרים © 2021 – 2026 Skeletonic CSS. כל הזכויות שמורות." -%}
+  {%- set t_search_aria = "חיפוש" -%}
+  {%- set t_search_placeholder = "חפש בתיעוד..." -%}
+  {%- set t_search_navigate = "ניווט" -%}
+  {%- set t_search_open = "פתח" -%}
+  {%- set t_search_close = "סגור" -%}
+  {%- set t_breadcrumb_home = "דף הבית" -%}
+  {%- set t_form_name = "השם שלך" -%}
+  {%- set t_form_email = "האימייל שלך" -%}
+  {%- set t_form_subject = "נושא" -%}
+  {%- set t_form_message = "הודעה" -%}
+  {%- set t_form_send = "שלח הודעה ←" -%}
+  {%- set t_back_home = "→ חזרה לדף הבית" -%}
+  {%- set s_getting_started = "hatkhala" -%}
+  {%- set s_components = "rekhivim" -%}
+  {%- set s_about = "odot" -%}
+  {%- set s_accessibility = "negishut" -%}
+  {%- set s_security = "avtakha" -%}
+  {%- set s_changelog = "yoman-shinuyim" -%}
+  {%- set s_contribute = "truma" -%}
+  {%- set s_privacy = "pratiyut" -%}
+  {%- set s_terms = "tnaim" -%}
+  {%- set s_palettes = "paleta" -%}
+  {%- set s_animations = "animatsyot" -%}
+  {%- set s_contact = "kesher" -%}
+{%- elif lang == "hi" -%}
+  {%- set t_skip_link = "मुख्य सामग्री पर जाएँ" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus होम" -%}
+  {%- set t_nav_home = "होम" -%}
+  {%- set t_nav_docs = "दस्तावेज़" -%}
+  {%- set t_nav_components = "घटक" -%}
+  {%- set t_nav_resources = "संसाधन" -%}
+  {%- set t_nav_palettes = "रंग पट्टी" -%}
+  {%- set t_nav_animations = "एनिमेशन" -%}
+  {%- set t_nav_accessibility = "सुलभता" -%}
+  {%- set t_nav_search_aria = "खोजें" -%}
+  {%- set t_nav_theme_dark = "डार्क" -%}
+  {%- set t_nav_theme_dark_aria = "डार्क मोड में बदलें" -%}
+  {%- set t_nav_theme_light = "लाइट" -%}
+  {%- set t_nav_theme_light_aria = "लाइट मोड में बदलें" -%}
+  {%- set t_nav_lang_aria = "भाषा बदलें" -%}
+  {%- set t_nav_contact = "संपर्क" -%}
+  {%- set t_nav_toggle_aria = "मेनू खोलें या बंद करें" -%}
+  {%- set t_footer_project = "परियोजना" -%}
+  {%- set t_footer_about = "परिचय" -%}
+  {%- set t_footer_changelog = "परिवर्तन लॉग" -%}
+  {%- set t_footer_security = "सुरक्षा" -%}
+  {%- set t_footer_contribute = "योगदान" -%}
+  {%- set t_footer_resources = "संसाधन" -%}
+  {%- set t_footer_legal = "कानूनी" -%}
+  {%- set t_footer_privacy = "गोपनीयता" -%}
+  {%- set t_footer_terms = "नियम" -%}
+  {%- set t_footer_contact = "संपर्क" -%}
+  {%- set t_footer_copyright = "कॉपीराइट © 2021 – 2026 Skeletonic CSS। सर्वाधिकार सुरक्षित।" -%}
+  {%- set t_search_aria = "खोजें" -%}
+  {%- set t_search_placeholder = "दस्तावेज़ में खोजें..." -%}
+  {%- set t_search_navigate = "नेविगेट" -%}
+  {%- set t_search_open = "खोलें" -%}
+  {%- set t_search_close = "बंद करें" -%}
+  {%- set t_breadcrumb_home = "होम" -%}
+  {%- set t_form_name = "आपका नाम" -%}
+  {%- set t_form_email = "आपका ईमेल" -%}
+  {%- set t_form_subject = "विषय" -%}
+  {%- set t_form_message = "संदेश" -%}
+  {%- set t_form_send = "संदेश भेजें →" -%}
+  {%- set t_back_home = "← होम पर वापस जाएँ" -%}
+  {%- set s_getting_started = "shuruat" -%}
+  {%- set s_components = "ghatak" -%}
+  {%- set s_about = "parichay" -%}
+  {%- set s_accessibility = "sulabhata" -%}
+  {%- set s_security = "suraksha" -%}
+  {%- set s_changelog = "parivartan-log" -%}
+  {%- set s_contribute = "yogdan" -%}
+  {%- set s_privacy = "gopaniyata" -%}
+  {%- set s_terms = "niyam" -%}
+  {%- set s_palettes = "rang-patti" -%}
+  {%- set s_animations = "animations" -%}
+  {%- set s_contact = "sampark" -%}
+{%- elif lang == "id" -%}
+  {%- set t_skip_link = "Langsung ke konten utama" -%}
+  {%- set t_nav_brand_aria = "Beranda Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Beranda" -%}
+  {%- set t_nav_docs = "Dokumentasi" -%}
+  {%- set t_nav_components = "Komponen" -%}
+  {%- set t_nav_resources = "Sumber Daya" -%}
+  {%- set t_nav_palettes = "Palet" -%}
+  {%- set t_nav_animations = "Animasi" -%}
+  {%- set t_nav_accessibility = "Aksesibilitas" -%}
+  {%- set t_nav_search_aria = "Cari" -%}
+  {%- set t_nav_theme_dark = "Gelap" -%}
+  {%- set t_nav_theme_dark_aria = "Beralih ke mode gelap" -%}
+  {%- set t_nav_theme_light = "Terang" -%}
+  {%- set t_nav_theme_light_aria = "Beralih ke mode terang" -%}
+  {%- set t_nav_lang_aria = "Ganti bahasa" -%}
+  {%- set t_nav_contact = "Kontak" -%}
+  {%- set t_nav_toggle_aria = "Tampilkan atau sembunyikan menu" -%}
+  {%- set t_footer_project = "Proyek" -%}
+  {%- set t_footer_about = "Tentang" -%}
+  {%- set t_footer_changelog = "Catatan Perubahan" -%}
+  {%- set t_footer_security = "Keamanan" -%}
+  {%- set t_footer_contribute = "Kontribusi" -%}
+  {%- set t_footer_resources = "Sumber Daya" -%}
+  {%- set t_footer_legal = "Hukum" -%}
+  {%- set t_footer_privacy = "Privasi" -%}
+  {%- set t_footer_terms = "Ketentuan" -%}
+  {%- set t_footer_contact = "Kontak" -%}
+  {%- set t_footer_copyright = "Hak cipta © 2021 – 2026 Skeletonic CSS. Semua hak dilindungi." -%}
+  {%- set t_search_aria = "Cari" -%}
+  {%- set t_search_placeholder = "Cari di dokumentasi..." -%}
+  {%- set t_search_navigate = "Navigasi" -%}
+  {%- set t_search_open = "Buka" -%}
+  {%- set t_search_close = "Tutup" -%}
+  {%- set t_breadcrumb_home = "Beranda" -%}
+  {%- set t_form_name = "Nama Anda" -%}
+  {%- set t_form_email = "Email Anda" -%}
+  {%- set t_form_subject = "Subjek" -%}
+  {%- set t_form_message = "Pesan" -%}
+  {%- set t_form_send = "Kirim pesan →" -%}
+  {%- set t_back_home = "← Kembali ke beranda" -%}
+  {%- set s_getting_started = "memulai" -%}
+  {%- set s_components = "komponen" -%}
+  {%- set s_about = "tentang" -%}
+  {%- set s_accessibility = "aksesibilitas" -%}
+  {%- set s_security = "keamanan" -%}
+  {%- set s_changelog = "catatan-perubahan" -%}
+  {%- set s_contribute = "kontribusi" -%}
+  {%- set s_privacy = "privasi" -%}
+  {%- set s_terms = "ketentuan" -%}
+  {%- set s_palettes = "palet" -%}
+  {%- set s_animations = "animasi" -%}
+  {%- set s_contact = "kontak" -%}
+{%- elif lang == "it" -%}
+  {%- set t_skip_link = "Vai al contenuto principale" -%}
+  {%- set t_nav_brand_aria = "Home di Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Home" -%}
+  {%- set t_nav_docs = "Documentazione" -%}
+  {%- set t_nav_components = "Componenti" -%}
+  {%- set t_nav_resources = "Risorse" -%}
+  {%- set t_nav_palettes = "Palette" -%}
+  {%- set t_nav_animations = "Animazioni" -%}
+  {%- set t_nav_accessibility = "Accessibilità" -%}
+  {%- set t_nav_search_aria = "Cerca" -%}
+  {%- set t_nav_theme_dark = "Scuro" -%}
+  {%- set t_nav_theme_dark_aria = "Passa alla modalità scura" -%}
+  {%- set t_nav_theme_light = "Chiaro" -%}
+  {%- set t_nav_theme_light_aria = "Passa alla modalità chiara" -%}
+  {%- set t_nav_lang_aria = "Cambia lingua" -%}
+  {%- set t_nav_contact = "Contatti" -%}
+  {%- set t_nav_toggle_aria = "Mostra o nascondi il menu" -%}
+  {%- set t_footer_project = "Progetto" -%}
+  {%- set t_footer_about = "Informazioni" -%}
+  {%- set t_footer_changelog = "Registro modifiche" -%}
+  {%- set t_footer_security = "Sicurezza" -%}
+  {%- set t_footer_contribute = "Contribuire" -%}
+  {%- set t_footer_resources = "Risorse" -%}
+  {%- set t_footer_legal = "Legale" -%}
+  {%- set t_footer_privacy = "Privacy" -%}
+  {%- set t_footer_terms = "Termini" -%}
+  {%- set t_footer_contact = "Contatti" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Tutti i diritti riservati." -%}
+  {%- set t_search_aria = "Cerca" -%}
+  {%- set t_search_placeholder = "Cerca nella documentazione..." -%}
+  {%- set t_search_navigate = "Naviga" -%}
+  {%- set t_search_open = "Apri" -%}
+  {%- set t_search_close = "Chiudi" -%}
+  {%- set t_breadcrumb_home = "Home" -%}
+  {%- set t_form_name = "Il tuo nome" -%}
+  {%- set t_form_email = "La tua email" -%}
+  {%- set t_form_subject = "Oggetto" -%}
+  {%- set t_form_message = "Messaggio" -%}
+  {%- set t_form_send = "Invia messaggio →" -%}
+  {%- set t_back_home = "← Torna alla home" -%}
+  {%- set s_getting_started = "iniziare" -%}
+  {%- set s_components = "componenti" -%}
+  {%- set s_about = "informazioni" -%}
+  {%- set s_accessibility = "accessibilita" -%}
+  {%- set s_security = "sicurezza" -%}
+  {%- set s_changelog = "registro-modifiche" -%}
+  {%- set s_contribute = "contribuire" -%}
+  {%- set s_privacy = "privacy" -%}
+  {%- set s_terms = "termini" -%}
+  {%- set s_palettes = "palette" -%}
+  {%- set s_animations = "animazioni" -%}
+  {%- set s_contact = "contatti" -%}
+{%- elif lang == "ja" -%}
+  {%- set t_skip_link = "メインコンテンツへスキップ" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus ホーム" -%}
+  {%- set t_nav_home = "ホーム" -%}
+  {%- set t_nav_docs = "ドキュメント" -%}
+  {%- set t_nav_components = "コンポーネント" -%}
+  {%- set t_nav_resources = "リソース" -%}
+  {%- set t_nav_palettes = "パレット" -%}
+  {%- set t_nav_animations = "アニメーション" -%}
+  {%- set t_nav_accessibility = "アクセシビリティ" -%}
+  {%- set t_nav_search_aria = "検索" -%}
+  {%- set t_nav_theme_dark = "ダーク" -%}
+  {%- set t_nav_theme_dark_aria = "ダークモードに切り替え" -%}
+  {%- set t_nav_theme_light = "ライト" -%}
+  {%- set t_nav_theme_light_aria = "ライトモードに切り替え" -%}
+  {%- set t_nav_lang_aria = "言語を変更" -%}
+  {%- set t_nav_contact = "お問い合わせ" -%}
+  {%- set t_nav_toggle_aria = "メニューの表示/非表示" -%}
+  {%- set t_footer_project = "プロジェクト" -%}
+  {%- set t_footer_about = "概要" -%}
+  {%- set t_footer_changelog = "変更履歴" -%}
+  {%- set t_footer_security = "セキュリティ" -%}
+  {%- set t_footer_contribute = "貢献" -%}
+  {%- set t_footer_resources = "リソース" -%}
+  {%- set t_footer_legal = "法的情報" -%}
+  {%- set t_footer_privacy = "プライバシー" -%}
+  {%- set t_footer_terms = "利用規約" -%}
+  {%- set t_footer_contact = "お問い合わせ" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. All rights reserved." -%}
+  {%- set t_search_aria = "検索" -%}
+  {%- set t_search_placeholder = "ドキュメントを検索..." -%}
+  {%- set t_search_navigate = "移動" -%}
+  {%- set t_search_open = "開く" -%}
+  {%- set t_search_close = "閉じる" -%}
+  {%- set t_breadcrumb_home = "ホーム" -%}
+  {%- set t_form_name = "お名前" -%}
+  {%- set t_form_email = "メールアドレス" -%}
+  {%- set t_form_subject = "件名" -%}
+  {%- set t_form_message = "メッセージ" -%}
+  {%- set t_form_send = "メッセージを送信 →" -%}
+  {%- set t_back_home = "← ホームに戻る" -%}
+  {%- set s_getting_started = "hajimeni" -%}
+  {%- set s_components = "konponentsu" -%}
+  {%- set s_about = "gaiyo" -%}
+  {%- set s_accessibility = "akseshibirithi" -%}
+  {%- set s_security = "sekiyurithi" -%}
+  {%- set s_changelog = "henkou-rireki" -%}
+  {%- set s_contribute = "kouken" -%}
+  {%- set s_privacy = "puraibashi" -%}
+  {%- set s_terms = "riyou-kiyaku" -%}
+  {%- set s_palettes = "paretto" -%}
+  {%- set s_animations = "animeshon" -%}
+  {%- set s_contact = "otoiawase" -%}
+{%- elif lang == "ko" -%}
+  {%- set t_skip_link = "본문으로 건너뛰기" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus 홈" -%}
+  {%- set t_nav_home = "홈" -%}
+  {%- set t_nav_docs = "문서" -%}
+  {%- set t_nav_components = "컴포넌트" -%}
+  {%- set t_nav_resources = "리소스" -%}
+  {%- set t_nav_palettes = "팔레트" -%}
+  {%- set t_nav_animations = "애니메이션" -%}
+  {%- set t_nav_accessibility = "접근성" -%}
+  {%- set t_nav_search_aria = "검색" -%}
+  {%- set t_nav_theme_dark = "다크" -%}
+  {%- set t_nav_theme_dark_aria = "다크 모드로 전환" -%}
+  {%- set t_nav_theme_light = "라이트" -%}
+  {%- set t_nav_theme_light_aria = "라이트 모드로 전환" -%}
+  {%- set t_nav_lang_aria = "언어 변경" -%}
+  {%- set t_nav_contact = "문의" -%}
+  {%- set t_nav_toggle_aria = "메뉴 열기/닫기" -%}
+  {%- set t_footer_project = "프로젝트" -%}
+  {%- set t_footer_about = "소개" -%}
+  {%- set t_footer_changelog = "변경 일지" -%}
+  {%- set t_footer_security = "보안" -%}
+  {%- set t_footer_contribute = "기여" -%}
+  {%- set t_footer_resources = "리소스" -%}
+  {%- set t_footer_legal = "법적 고지" -%}
+  {%- set t_footer_privacy = "개인정보" -%}
+  {%- set t_footer_terms = "이용약관" -%}
+  {%- set t_footer_contact = "문의" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. All rights reserved." -%}
+  {%- set t_search_aria = "검색" -%}
+  {%- set t_search_placeholder = "문서 검색..." -%}
+  {%- set t_search_navigate = "탐색" -%}
+  {%- set t_search_open = "열기" -%}
+  {%- set t_search_close = "닫기" -%}
+  {%- set t_breadcrumb_home = "홈" -%}
+  {%- set t_form_name = "이름" -%}
+  {%- set t_form_email = "이메일" -%}
+  {%- set t_form_subject = "제목" -%}
+  {%- set t_form_message = "메시지" -%}
+  {%- set t_form_send = "메시지 보내기 →" -%}
+  {%- set t_back_home = "← 홈으로 돌아가기" -%}
+  {%- set s_getting_started = "sijak" -%}
+  {%- set s_components = "kuseong-yoso" -%}
+  {%- set s_about = "sogae" -%}
+  {%- set s_accessibility = "jeobgeun-seong" -%}
+  {%- set s_security = "boaan" -%}
+  {%- set s_changelog = "byeongyeong-ilji" -%}
+  {%- set s_contribute = "giyeo" -%}
+  {%- set s_privacy = "gaeinjeongbo" -%}
+  {%- set s_terms = "iyong-yakgwan" -%}
+  {%- set s_palettes = "palleteu" -%}
+  {%- set s_animations = "aenimeisyeon" -%}
+  {%- set s_contact = "munui" -%}
+{%- elif lang == "nl" -%}
+  {%- set t_skip_link = "Ga naar hoofdinhoud" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus startpagina" -%}
+  {%- set t_nav_home = "Home" -%}
+  {%- set t_nav_docs = "Documentatie" -%}
+  {%- set t_nav_components = "Componenten" -%}
+  {%- set t_nav_resources = "Bronnen" -%}
+  {%- set t_nav_palettes = "Paletten" -%}
+  {%- set t_nav_animations = "Animaties" -%}
+  {%- set t_nav_accessibility = "Toegankelijkheid" -%}
+  {%- set t_nav_search_aria = "Zoeken" -%}
+  {%- set t_nav_theme_dark = "Donker" -%}
+  {%- set t_nav_theme_dark_aria = "Schakel naar donkere modus" -%}
+  {%- set t_nav_theme_light = "Licht" -%}
+  {%- set t_nav_theme_light_aria = "Schakel naar lichte modus" -%}
+  {%- set t_nav_lang_aria = "Taal wijzigen" -%}
+  {%- set t_nav_contact = "Contact" -%}
+  {%- set t_nav_toggle_aria = "Menu tonen of verbergen" -%}
+  {%- set t_footer_project = "Project" -%}
+  {%- set t_footer_about = "Over ons" -%}
+  {%- set t_footer_changelog = "Wijzigingslogboek" -%}
+  {%- set t_footer_security = "Beveiliging" -%}
+  {%- set t_footer_contribute = "Bijdragen" -%}
+  {%- set t_footer_resources = "Bronnen" -%}
+  {%- set t_footer_legal = "Juridisch" -%}
+  {%- set t_footer_privacy = "Privacy" -%}
+  {%- set t_footer_terms = "Voorwaarden" -%}
+  {%- set t_footer_contact = "Contact" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Alle rechten voorbehouden." -%}
+  {%- set t_search_aria = "Zoeken" -%}
+  {%- set t_search_placeholder = "Zoeken in documentatie..." -%}
+  {%- set t_search_navigate = "Navigeren" -%}
+  {%- set t_search_open = "Openen" -%}
+  {%- set t_search_close = "Sluiten" -%}
+  {%- set t_breadcrumb_home = "Home" -%}
+  {%- set t_form_name = "Uw naam" -%}
+  {%- set t_form_email = "Uw e-mail" -%}
+  {%- set t_form_subject = "Onderwerp" -%}
+  {%- set t_form_message = "Bericht" -%}
+  {%- set t_form_send = "Bericht verzenden →" -%}
+  {%- set t_back_home = "← Terug naar home" -%}
+  {%- set s_getting_started = "aan-de-slag" -%}
+  {%- set s_components = "componenten" -%}
+  {%- set s_about = "over-ons" -%}
+  {%- set s_accessibility = "toegankelijkheid" -%}
+  {%- set s_security = "beveiliging" -%}
+  {%- set s_changelog = "wijzigingslogboek" -%}
+  {%- set s_contribute = "bijdragen" -%}
+  {%- set s_privacy = "privacy" -%}
+  {%- set s_terms = "voorwaarden" -%}
+  {%- set s_palettes = "paletten" -%}
+  {%- set s_animations = "animaties" -%}
+  {%- set s_contact = "contact" -%}
+{%- elif lang == "pl" -%}
+  {%- set t_skip_link = "Przejdź do głównej treści" -%}
+  {%- set t_nav_brand_aria = "Strona główna Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Strona główna" -%}
+  {%- set t_nav_docs = "Dokumentacja" -%}
+  {%- set t_nav_components = "Komponenty" -%}
+  {%- set t_nav_resources = "Zasoby" -%}
+  {%- set t_nav_palettes = "Palety" -%}
+  {%- set t_nav_animations = "Animacje" -%}
+  {%- set t_nav_accessibility = "Dostępność" -%}
+  {%- set t_nav_search_aria = "Szukaj" -%}
+  {%- set t_nav_theme_dark = "Ciemny" -%}
+  {%- set t_nav_theme_dark_aria = "Przełącz na tryb ciemny" -%}
+  {%- set t_nav_theme_light = "Jasny" -%}
+  {%- set t_nav_theme_light_aria = "Przełącz na tryb jasny" -%}
+  {%- set t_nav_lang_aria = "Zmień język" -%}
+  {%- set t_nav_contact = "Kontakt" -%}
+  {%- set t_nav_toggle_aria = "Pokaż lub ukryj menu" -%}
+  {%- set t_footer_project = "Projekt" -%}
+  {%- set t_footer_about = "O projekcie" -%}
+  {%- set t_footer_changelog = "Dziennik zmian" -%}
+  {%- set t_footer_security = "Bezpieczeństwo" -%}
+  {%- set t_footer_contribute = "Współpraca" -%}
+  {%- set t_footer_resources = "Zasoby" -%}
+  {%- set t_footer_legal = "Prawne" -%}
+  {%- set t_footer_privacy = "Prywatność" -%}
+  {%- set t_footer_terms = "Regulamin" -%}
+  {%- set t_footer_contact = "Kontakt" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Wszelkie prawa zastrzeżone." -%}
+  {%- set t_search_aria = "Szukaj" -%}
+  {%- set t_search_placeholder = "Szukaj w dokumentacji..." -%}
+  {%- set t_search_navigate = "Nawiguj" -%}
+  {%- set t_search_open = "Otwórz" -%}
+  {%- set t_search_close = "Zamknij" -%}
+  {%- set t_breadcrumb_home = "Strona główna" -%}
+  {%- set t_form_name = "Twoje imię" -%}
+  {%- set t_form_email = "Twój e-mail" -%}
+  {%- set t_form_subject = "Temat" -%}
+  {%- set t_form_message = "Wiadomość" -%}
+  {%- set t_form_send = "Wyślij wiadomość →" -%}
+  {%- set t_back_home = "← Powrót do strony głównej" -%}
+  {%- set s_getting_started = "pierwsze-kroki" -%}
+  {%- set s_components = "komponenty" -%}
+  {%- set s_about = "o-projekcie" -%}
+  {%- set s_accessibility = "dostepnosc" -%}
+  {%- set s_security = "bezpieczenstwo" -%}
+  {%- set s_changelog = "dziennik-zmian" -%}
+  {%- set s_contribute = "wspolpraca" -%}
+  {%- set s_privacy = "prywatnosc" -%}
+  {%- set s_terms = "regulamin" -%}
+  {%- set s_palettes = "palety" -%}
+  {%- set s_animations = "animacje" -%}
+  {%- set s_contact = "kontakt" -%}
+{%- elif lang == "pt-br" -%}
+  {%- set t_skip_link = "Pular para o conteúdo principal" -%}
+  {%- set t_nav_brand_aria = "Página inicial do Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Início" -%}
+  {%- set t_nav_docs = "Documentação" -%}
+  {%- set t_nav_components = "Componentes" -%}
+  {%- set t_nav_resources = "Recursos" -%}
+  {%- set t_nav_palettes = "Paletas" -%}
+  {%- set t_nav_animations = "Animações" -%}
+  {%- set t_nav_accessibility = "Acessibilidade" -%}
+  {%- set t_nav_search_aria = "Pesquisar" -%}
+  {%- set t_nav_theme_dark = "Escuro" -%}
+  {%- set t_nav_theme_dark_aria = "Alternar para modo escuro" -%}
+  {%- set t_nav_theme_light = "Claro" -%}
+  {%- set t_nav_theme_light_aria = "Alternar para modo claro" -%}
+  {%- set t_nav_lang_aria = "Alterar idioma" -%}
+  {%- set t_nav_contact = "Contato" -%}
+  {%- set t_nav_toggle_aria = "Exibir ou ocultar menu" -%}
+  {%- set t_footer_project = "Projeto" -%}
+  {%- set t_footer_about = "Sobre" -%}
+  {%- set t_footer_changelog = "Registro de alterações" -%}
+  {%- set t_footer_security = "Segurança" -%}
+  {%- set t_footer_contribute = "Contribuir" -%}
+  {%- set t_footer_resources = "Recursos" -%}
+  {%- set t_footer_legal = "Jurídico" -%}
+  {%- set t_footer_privacy = "Privacidade" -%}
+  {%- set t_footer_terms = "Termos" -%}
+  {%- set t_footer_contact = "Contato" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Todos os direitos reservados." -%}
+  {%- set t_search_aria = "Pesquisar" -%}
+  {%- set t_search_placeholder = "Pesquisar na documentação..." -%}
+  {%- set t_search_navigate = "Navegar" -%}
+  {%- set t_search_open = "Abrir" -%}
+  {%- set t_search_close = "Fechar" -%}
+  {%- set t_breadcrumb_home = "Início" -%}
+  {%- set t_form_name = "Seu nome" -%}
+  {%- set t_form_email = "Seu e-mail" -%}
+  {%- set t_form_subject = "Assunto" -%}
+  {%- set t_form_message = "Mensagem" -%}
+  {%- set t_form_send = "Enviar mensagem →" -%}
+  {%- set t_back_home = "← Voltar ao início" -%}
+  {%- set s_getting_started = "primeiros-passos" -%}
+  {%- set s_components = "componentes" -%}
+  {%- set s_about = "sobre" -%}
+  {%- set s_accessibility = "acessibilidade" -%}
+  {%- set s_security = "seguranca" -%}
+  {%- set s_changelog = "registro-de-alteracoes" -%}
+  {%- set s_contribute = "contribuir" -%}
+  {%- set s_privacy = "privacidade" -%}
+  {%- set s_terms = "termos" -%}
+  {%- set s_palettes = "paletas" -%}
+  {%- set s_animations = "animacoes" -%}
+  {%- set s_contact = "contato" -%}
+{%- elif lang == "ro" -%}
+  {%- set t_skip_link = "Sari la conținutul principal" -%}
+  {%- set t_nav_brand_aria = "Pagina principală Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Acasă" -%}
+  {%- set t_nav_docs = "Documentație" -%}
+  {%- set t_nav_components = "Componente" -%}
+  {%- set t_nav_resources = "Resurse" -%}
+  {%- set t_nav_palettes = "Palete" -%}
+  {%- set t_nav_animations = "Animații" -%}
+  {%- set t_nav_accessibility = "Accesibilitate" -%}
+  {%- set t_nav_search_aria = "Caută" -%}
+  {%- set t_nav_theme_dark = "Întunecat" -%}
+  {%- set t_nav_theme_dark_aria = "Comută la modul întunecat" -%}
+  {%- set t_nav_theme_light = "Luminos" -%}
+  {%- set t_nav_theme_light_aria = "Comută la modul luminos" -%}
+  {%- set t_nav_lang_aria = "Schimbă limba" -%}
+  {%- set t_nav_contact = "Contact" -%}
+  {%- set t_nav_toggle_aria = "Afișează sau ascunde meniul" -%}
+  {%- set t_footer_project = "Proiect" -%}
+  {%- set t_footer_about = "Despre" -%}
+  {%- set t_footer_changelog = "Jurnal modificări" -%}
+  {%- set t_footer_security = "Securitate" -%}
+  {%- set t_footer_contribute = "Contribuie" -%}
+  {%- set t_footer_resources = "Resurse" -%}
+  {%- set t_footer_legal = "Juridic" -%}
+  {%- set t_footer_privacy = "Confidențialitate" -%}
+  {%- set t_footer_terms = "Termeni" -%}
+  {%- set t_footer_contact = "Contact" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Toate drepturile rezervate." -%}
+  {%- set t_search_aria = "Caută" -%}
+  {%- set t_search_placeholder = "Caută în documentație..." -%}
+  {%- set t_search_navigate = "Navigare" -%}
+  {%- set t_search_open = "Deschide" -%}
+  {%- set t_search_close = "Închide" -%}
+  {%- set t_breadcrumb_home = "Acasă" -%}
+  {%- set t_form_name = "Numele tău" -%}
+  {%- set t_form_email = "Email-ul tău" -%}
+  {%- set t_form_subject = "Subiect" -%}
+  {%- set t_form_message = "Mesaj" -%}
+  {%- set t_form_send = "Trimite mesajul →" -%}
+  {%- set t_back_home = "← Înapoi la pagina principală" -%}
+  {%- set s_getting_started = "primii-pasi" -%}
+  {%- set s_components = "componente" -%}
+  {%- set s_about = "despre" -%}
+  {%- set s_accessibility = "accesibilitate" -%}
+  {%- set s_security = "securitate" -%}
+  {%- set s_changelog = "jurnal-modificari" -%}
+  {%- set s_contribute = "contribuie" -%}
+  {%- set s_privacy = "confidentialitate" -%}
+  {%- set s_terms = "termeni" -%}
+  {%- set s_palettes = "palete" -%}
+  {%- set s_animations = "animatii" -%}
+  {%- set s_contact = "contact" -%}
+{%- elif lang == "ru" -%}
+  {%- set t_skip_link = "Перейти к основному содержанию" -%}
+  {%- set t_nav_brand_aria = "Главная Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Главная" -%}
+  {%- set t_nav_docs = "Документация" -%}
+  {%- set t_nav_components = "Компоненты" -%}
+  {%- set t_nav_resources = "Ресурсы" -%}
+  {%- set t_nav_palettes = "Палитры" -%}
+  {%- set t_nav_animations = "Анимации" -%}
+  {%- set t_nav_accessibility = "Доступность" -%}
+  {%- set t_nav_search_aria = "Поиск" -%}
+  {%- set t_nav_theme_dark = "Тёмная" -%}
+  {%- set t_nav_theme_dark_aria = "Переключить на тёмную тему" -%}
+  {%- set t_nav_theme_light = "Светлая" -%}
+  {%- set t_nav_theme_light_aria = "Переключить на светлую тему" -%}
+  {%- set t_nav_lang_aria = "Сменить язык" -%}
+  {%- set t_nav_contact = "Контакт" -%}
+  {%- set t_nav_toggle_aria = "Показать или скрыть меню" -%}
+  {%- set t_footer_project = "Проект" -%}
+  {%- set t_footer_about = "О проекте" -%}
+  {%- set t_footer_changelog = "Журнал изменений" -%}
+  {%- set t_footer_security = "Безопасность" -%}
+  {%- set t_footer_contribute = "Вклад" -%}
+  {%- set t_footer_resources = "Ресурсы" -%}
+  {%- set t_footer_legal = "Правовая информация" -%}
+  {%- set t_footer_privacy = "Конфиденциальность" -%}
+  {%- set t_footer_terms = "Условия" -%}
+  {%- set t_footer_contact = "Контакт" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Все права защищены." -%}
+  {%- set t_search_aria = "Поиск" -%}
+  {%- set t_search_placeholder = "Поиск в документации..." -%}
+  {%- set t_search_navigate = "Навигация" -%}
+  {%- set t_search_open = "Открыть" -%}
+  {%- set t_search_close = "Закрыть" -%}
+  {%- set t_breadcrumb_home = "Главная" -%}
+  {%- set t_form_name = "Ваше имя" -%}
+  {%- set t_form_email = "Ваш email" -%}
+  {%- set t_form_subject = "Тема" -%}
+  {%- set t_form_message = "Сообщение" -%}
+  {%- set t_form_send = "Отправить сообщение →" -%}
+  {%- set t_back_home = "← Вернуться на главную" -%}
+  {%- set s_getting_started = "nachalo" -%}
+  {%- set s_components = "komponenty" -%}
+  {%- set s_about = "o-proekte" -%}
+  {%- set s_accessibility = "dostupnost" -%}
+  {%- set s_security = "bezopasnost" -%}
+  {%- set s_changelog = "zhurnal-izmeneniy" -%}
+  {%- set s_contribute = "vklad" -%}
+  {%- set s_privacy = "konfidentsialnost" -%}
+  {%- set s_terms = "usloviya" -%}
+  {%- set s_palettes = "palitry" -%}
+  {%- set s_animations = "animatsii" -%}
+  {%- set s_contact = "kontakt" -%}
+{%- elif lang == "sv" -%}
+  {%- set t_skip_link = "Hoppa till huvudinnehåll" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus startsida" -%}
+  {%- set t_nav_home = "Hem" -%}
+  {%- set t_nav_docs = "Dokumentation" -%}
+  {%- set t_nav_components = "Komponenter" -%}
+  {%- set t_nav_resources = "Resurser" -%}
+  {%- set t_nav_palettes = "Paletter" -%}
+  {%- set t_nav_animations = "Animationer" -%}
+  {%- set t_nav_accessibility = "Tillgänglighet" -%}
+  {%- set t_nav_search_aria = "Sök" -%}
+  {%- set t_nav_theme_dark = "Mörkt" -%}
+  {%- set t_nav_theme_dark_aria = "Byt till mörkt läge" -%}
+  {%- set t_nav_theme_light = "Ljust" -%}
+  {%- set t_nav_theme_light_aria = "Byt till ljust läge" -%}
+  {%- set t_nav_lang_aria = "Byt språk" -%}
+  {%- set t_nav_contact = "Kontakt" -%}
+  {%- set t_nav_toggle_aria = "Visa eller dölj meny" -%}
+  {%- set t_footer_project = "Projekt" -%}
+  {%- set t_footer_about = "Om oss" -%}
+  {%- set t_footer_changelog = "Ändringslogg" -%}
+  {%- set t_footer_security = "Säkerhet" -%}
+  {%- set t_footer_contribute = "Bidra" -%}
+  {%- set t_footer_resources = "Resurser" -%}
+  {%- set t_footer_legal = "Juridik" -%}
+  {%- set t_footer_privacy = "Integritet" -%}
+  {%- set t_footer_terms = "Villkor" -%}
+  {%- set t_footer_contact = "Kontakt" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. Alla rättigheter förbehållna." -%}
+  {%- set t_search_aria = "Sök" -%}
+  {%- set t_search_placeholder = "Sök i dokumentationen..." -%}
+  {%- set t_search_navigate = "Navigera" -%}
+  {%- set t_search_open = "Öppna" -%}
+  {%- set t_search_close = "Stäng" -%}
+  {%- set t_breadcrumb_home = "Hem" -%}
+  {%- set t_form_name = "Ditt namn" -%}
+  {%- set t_form_email = "Din e-post" -%}
+  {%- set t_form_subject = "Ämne" -%}
+  {%- set t_form_message = "Meddelande" -%}
+  {%- set t_form_send = "Skicka meddelande →" -%}
+  {%- set t_back_home = "← Tillbaka till startsidan" -%}
+  {%- set s_getting_started = "kom-igang" -%}
+  {%- set s_components = "komponenter" -%}
+  {%- set s_about = "om-oss" -%}
+  {%- set s_accessibility = "tillganglighet" -%}
+  {%- set s_security = "sakerhet" -%}
+  {%- set s_changelog = "andringslogg" -%}
+  {%- set s_contribute = "bidra" -%}
+  {%- set s_privacy = "integritet" -%}
+  {%- set s_terms = "villkor" -%}
+  {%- set s_palettes = "paletter" -%}
+  {%- set s_animations = "animationer" -%}
+  {%- set s_contact = "kontakt" -%}
+{%- elif lang == "th" -%}
+  {%- set t_skip_link = "ข้ามไปยังเนื้อหาหลัก" -%}
+  {%- set t_nav_brand_aria = "หน้าแรก Skeletonic Stylus" -%}
+  {%- set t_nav_home = "หน้าแรก" -%}
+  {%- set t_nav_docs = "เอกสาร" -%}
+  {%- set t_nav_components = "ส่วนประกอบ" -%}
+  {%- set t_nav_resources = "ทรัพยากร" -%}
+  {%- set t_nav_palettes = "จานสี" -%}
+  {%- set t_nav_animations = "แอนิเมชัน" -%}
+  {%- set t_nav_accessibility = "การเข้าถึง" -%}
+  {%- set t_nav_search_aria = "ค้นหา" -%}
+  {%- set t_nav_theme_dark = "มืด" -%}
+  {%- set t_nav_theme_dark_aria = "เปลี่ยนเป็นโหมดมืด" -%}
+  {%- set t_nav_theme_light = "สว่าง" -%}
+  {%- set t_nav_theme_light_aria = "เปลี่ยนเป็นโหมดสว่าง" -%}
+  {%- set t_nav_lang_aria = "เปลี่ยนภาษา" -%}
+  {%- set t_nav_contact = "ติดต่อ" -%}
+  {%- set t_nav_toggle_aria = "แสดงหรือซ่อนเมนู" -%}
+  {%- set t_footer_project = "โครงการ" -%}
+  {%- set t_footer_about = "เกี่ยวกับ" -%}
+  {%- set t_footer_changelog = "บันทึกการเปลี่ยนแปลง" -%}
+  {%- set t_footer_security = "ความปลอดภัย" -%}
+  {%- set t_footer_contribute = "มีส่วนร่วม" -%}
+  {%- set t_footer_resources = "ทรัพยากร" -%}
+  {%- set t_footer_legal = "กฎหมาย" -%}
+  {%- set t_footer_privacy = "ความเป็นส่วนตัว" -%}
+  {%- set t_footer_terms = "ข้อกำหนด" -%}
+  {%- set t_footer_contact = "ติดต่อ" -%}
+  {%- set t_footer_copyright = "ลิขสิทธิ์ © 2021 – 2026 Skeletonic CSS สงวนลิขสิทธิ์" -%}
+  {%- set t_search_aria = "ค้นหา" -%}
+  {%- set t_search_placeholder = "ค้นหาเอกสาร..." -%}
+  {%- set t_search_navigate = "นำทาง" -%}
+  {%- set t_search_open = "เปิด" -%}
+  {%- set t_search_close = "ปิด" -%}
+  {%- set t_breadcrumb_home = "หน้าแรก" -%}
+  {%- set t_form_name = "ชื่อของคุณ" -%}
+  {%- set t_form_email = "อีเมลของคุณ" -%}
+  {%- set t_form_subject = "หัวข้อ" -%}
+  {%- set t_form_message = "ข้อความ" -%}
+  {%- set t_form_send = "ส่งข้อความ →" -%}
+  {%- set t_back_home = "← กลับสู่หน้าแรก" -%}
+  {%- set s_getting_started = "roem-ton" -%}
+  {%- set s_components = "suan-prakop" -%}
+  {%- set s_about = "kiao-kap" -%}
+  {%- set s_accessibility = "kan-khao-thueng" -%}
+  {%- set s_security = "khwam-plodphai" -%}
+  {%- set s_changelog = "banthuek-kan-plian" -%}
+  {%- set s_contribute = "mi-suan-ruam" -%}
+  {%- set s_privacy = "khwam-pen-suan-tua" -%}
+  {%- set s_terms = "kho-kamnot" -%}
+  {%- set s_palettes = "chan-si" -%}
+  {%- set s_animations = "aeni-mechan" -%}
+  {%- set s_contact = "tittoe" -%}
+{%- elif lang == "tr" -%}
+  {%- set t_skip_link = "Ana içeriğe geç" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus ana sayfa" -%}
+  {%- set t_nav_home = "Ana Sayfa" -%}
+  {%- set t_nav_docs = "Belgeler" -%}
+  {%- set t_nav_components = "Bileşenler" -%}
+  {%- set t_nav_resources = "Kaynaklar" -%}
+  {%- set t_nav_palettes = "Paletler" -%}
+  {%- set t_nav_animations = "Animasyonlar" -%}
+  {%- set t_nav_accessibility = "Erişilebilirlik" -%}
+  {%- set t_nav_search_aria = "Ara" -%}
+  {%- set t_nav_theme_dark = "Koyu" -%}
+  {%- set t_nav_theme_dark_aria = "Koyu moda geç" -%}
+  {%- set t_nav_theme_light = "Açık" -%}
+  {%- set t_nav_theme_light_aria = "Açık moda geç" -%}
+  {%- set t_nav_lang_aria = "Dil değiştir" -%}
+  {%- set t_nav_contact = "İletişim" -%}
+  {%- set t_nav_toggle_aria = "Menüyü aç veya kapat" -%}
+  {%- set t_footer_project = "Proje" -%}
+  {%- set t_footer_about = "Hakkında" -%}
+  {%- set t_footer_changelog = "Değişiklik Günlüğü" -%}
+  {%- set t_footer_security = "Güvenlik" -%}
+  {%- set t_footer_contribute = "Katkıda Bulun" -%}
+  {%- set t_footer_resources = "Kaynaklar" -%}
+  {%- set t_footer_legal = "Hukuki" -%}
+  {%- set t_footer_privacy = "Gizlilik" -%}
+  {%- set t_footer_terms = "Koşullar" -%}
+  {%- set t_footer_contact = "İletişim" -%}
+  {%- set t_footer_copyright = "Telif Hakkı © 2021 – 2026 Skeletonic CSS. Tüm hakları saklıdır." -%}
+  {%- set t_search_aria = "Ara" -%}
+  {%- set t_search_placeholder = "Belgelerde ara..." -%}
+  {%- set t_search_navigate = "Gezin" -%}
+  {%- set t_search_open = "Aç" -%}
+  {%- set t_search_close = "Kapat" -%}
+  {%- set t_breadcrumb_home = "Ana Sayfa" -%}
+  {%- set t_form_name = "Adınız" -%}
+  {%- set t_form_email = "E-postanız" -%}
+  {%- set t_form_subject = "Konu" -%}
+  {%- set t_form_message = "Mesaj" -%}
+  {%- set t_form_send = "Mesaj gönder →" -%}
+  {%- set t_back_home = "← Ana sayfaya dön" -%}
+  {%- set s_getting_started = "baslarken" -%}
+  {%- set s_components = "bilesenler" -%}
+  {%- set s_about = "hakkinda" -%}
+  {%- set s_accessibility = "erisilebilirlik" -%}
+  {%- set s_security = "guvenlik" -%}
+  {%- set s_changelog = "degisiklik-gunlugu" -%}
+  {%- set s_contribute = "katki" -%}
+  {%- set s_privacy = "gizlilik" -%}
+  {%- set s_terms = "kosullar" -%}
+  {%- set s_palettes = "paletler" -%}
+  {%- set s_animations = "animasyonlar" -%}
+  {%- set s_contact = "iletisim" -%}
+{%- elif lang == "uk" -%}
+  {%- set t_skip_link = "Перейти до основного вмісту" -%}
+  {%- set t_nav_brand_aria = "Головна Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Головна" -%}
+  {%- set t_nav_docs = "Документація" -%}
+  {%- set t_nav_components = "Компоненти" -%}
+  {%- set t_nav_resources = "Ресурси" -%}
+  {%- set t_nav_palettes = "Палітри" -%}
+  {%- set t_nav_animations = "Анімації" -%}
+  {%- set t_nav_accessibility = "Доступність" -%}
+  {%- set t_nav_search_aria = "Пошук" -%}
+  {%- set t_nav_theme_dark = "Темна" -%}
+  {%- set t_nav_theme_dark_aria = "Перемкнути на темний режим" -%}
+  {%- set t_nav_theme_light = "Світла" -%}
+  {%- set t_nav_theme_light_aria = "Перемкнути на світлий режим" -%}
+  {%- set t_nav_lang_aria = "Змінити мову" -%}
+  {%- set t_nav_contact = "Контакт" -%}
+  {%- set t_nav_toggle_aria = "Показати або сховати меню" -%}
+  {%- set t_footer_project = "Проєкт" -%}
+  {%- set t_footer_about = "Про нас" -%}
+  {%- set t_footer_changelog = "Журнал змін" -%}
+  {%- set t_footer_security = "Безпека" -%}
+  {%- set t_footer_contribute = "Внесок" -%}
+  {%- set t_footer_resources = "Ресурси" -%}
+  {%- set t_footer_legal = "Правові питання" -%}
+  {%- set t_footer_privacy = "Конфіденційність" -%}
+  {%- set t_footer_terms = "Умови" -%}
+  {%- set t_footer_contact = "Контакт" -%}
+  {%- set t_footer_copyright = "Авторське право © 2021 – 2026 Skeletonic CSS. Усі права захищено." -%}
+  {%- set t_search_aria = "Пошук" -%}
+  {%- set t_search_placeholder = "Пошук у документації..." -%}
+  {%- set t_search_navigate = "Навігація" -%}
+  {%- set t_search_open = "Відкрити" -%}
+  {%- set t_search_close = "Закрити" -%}
+  {%- set t_breadcrumb_home = "Головна" -%}
+  {%- set t_form_name = "Ваше ім'я" -%}
+  {%- set t_form_email = "Ваш email" -%}
+  {%- set t_form_subject = "Тема" -%}
+  {%- set t_form_message = "Повідомлення" -%}
+  {%- set t_form_send = "Надіслати повідомлення →" -%}
+  {%- set t_back_home = "← Повернутися на головну" -%}
+  {%- set s_getting_started = "pochatok" -%}
+  {%- set s_components = "komponenty" -%}
+  {%- set s_about = "pro-nas" -%}
+  {%- set s_accessibility = "dostupnist" -%}
+  {%- set s_security = "bezpeka" -%}
+  {%- set s_changelog = "zhurnal-zmin" -%}
+  {%- set s_contribute = "vnesok" -%}
+  {%- set s_privacy = "konfidentsiinist" -%}
+  {%- set s_terms = "umovy" -%}
+  {%- set s_palettes = "palitry" -%}
+  {%- set s_animations = "animatsii" -%}
+  {%- set s_contact = "kontakt" -%}
+{%- elif lang == "vi" -%}
+  {%- set t_skip_link = "Chuyển đến nội dung chính" -%}
+  {%- set t_nav_brand_aria = "Trang chủ Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Trang chủ" -%}
+  {%- set t_nav_docs = "Tài liệu" -%}
+  {%- set t_nav_components = "Thành phần" -%}
+  {%- set t_nav_resources = "Tài nguyên" -%}
+  {%- set t_nav_palettes = "Bảng màu" -%}
+  {%- set t_nav_animations = "Hiệu ứng" -%}
+  {%- set t_nav_accessibility = "Trợ năng" -%}
+  {%- set t_nav_search_aria = "Tìm kiếm" -%}
+  {%- set t_nav_theme_dark = "Tối" -%}
+  {%- set t_nav_theme_dark_aria = "Chuyển sang chế độ tối" -%}
+  {%- set t_nav_theme_light = "Sáng" -%}
+  {%- set t_nav_theme_light_aria = "Chuyển sang chế độ sáng" -%}
+  {%- set t_nav_lang_aria = "Đổi ngôn ngữ" -%}
+  {%- set t_nav_contact = "Liên hệ" -%}
+  {%- set t_nav_toggle_aria = "Hiện hoặc ẩn menu" -%}
+  {%- set t_footer_project = "Dự án" -%}
+  {%- set t_footer_about = "Giới thiệu" -%}
+  {%- set t_footer_changelog = "Nhật ký thay đổi" -%}
+  {%- set t_footer_security = "Bảo mật" -%}
+  {%- set t_footer_contribute = "Đóng góp" -%}
+  {%- set t_footer_resources = "Tài nguyên" -%}
+  {%- set t_footer_legal = "Pháp lý" -%}
+  {%- set t_footer_privacy = "Quyền riêng tư" -%}
+  {%- set t_footer_terms = "Điều khoản" -%}
+  {%- set t_footer_contact = "Liên hệ" -%}
+  {%- set t_footer_copyright = "Bản quyền © 2021 – 2026 Skeletonic CSS. Mọi quyền được bảo lưu." -%}
+  {%- set t_search_aria = "Tìm kiếm" -%}
+  {%- set t_search_placeholder = "Tìm kiếm tài liệu..." -%}
+  {%- set t_search_navigate = "Điều hướng" -%}
+  {%- set t_search_open = "Mở" -%}
+  {%- set t_search_close = "Đóng" -%}
+  {%- set t_breadcrumb_home = "Trang chủ" -%}
+  {%- set t_form_name = "Tên của bạn" -%}
+  {%- set t_form_email = "Email của bạn" -%}
+  {%- set t_form_subject = "Chủ đề" -%}
+  {%- set t_form_message = "Tin nhắn" -%}
+  {%- set t_form_send = "Gửi tin nhắn →" -%}
+  {%- set t_back_home = "← Quay lại trang chủ" -%}
+  {%- set s_getting_started = "bat-dau" -%}
+  {%- set s_components = "thanh-phan" -%}
+  {%- set s_about = "gioi-thieu" -%}
+  {%- set s_accessibility = "tro-nang" -%}
+  {%- set s_security = "bao-mat" -%}
+  {%- set s_changelog = "nhat-ky-thay-doi" -%}
+  {%- set s_contribute = "dong-gop" -%}
+  {%- set s_privacy = "quyen-rieng-tu" -%}
+  {%- set s_terms = "dieu-khoan" -%}
+  {%- set s_palettes = "bang-mau" -%}
+  {%- set s_animations = "hieu-ung" -%}
+  {%- set s_contact = "lien-he" -%}
+{%- elif lang == "yo" -%}
+  {%- set t_skip_link = "Fò lọ sí àkóónú àkọ́kọ́" -%}
+  {%- set t_nav_brand_aria = "Ilé Skeletonic Stylus" -%}
+  {%- set t_nav_home = "Ilé" -%}
+  {%- set t_nav_docs = "Àkọsílẹ̀" -%}
+  {%- set t_nav_components = "Àwọn Pààtì" -%}
+  {%- set t_nav_resources = "Àwọn Ohun Èlò" -%}
+  {%- set t_nav_palettes = "Àwọn Palẹ́tì" -%}
+  {%- set t_nav_animations = "Ère Ìdàsọnù" -%}
+  {%- set t_nav_accessibility = "Ìráyè Sí" -%}
+  {%- set t_nav_search_aria = "Ṣàwárí" -%}
+  {%- set t_nav_theme_dark = "Dúdú" -%}
+  {%- set t_nav_theme_dark_aria = "Yí padà sí ọ̀nà dúdú" -%}
+  {%- set t_nav_theme_light = "Ìmọ́lẹ̀" -%}
+  {%- set t_nav_theme_light_aria = "Yí padà sí ọ̀nà ìmọ́lẹ̀" -%}
+  {%- set t_nav_lang_aria = "Yí èdè padà" -%}
+  {%- set t_nav_contact = "Kàn Sí Wa" -%}
+  {%- set t_nav_toggle_aria = "Fi àtòjọ hàn tàbí pa á mọ́" -%}
+  {%- set t_footer_project = "Iṣẹ́ Àkànṣe" -%}
+  {%- set t_footer_about = "Nípa" -%}
+  {%- set t_footer_changelog = "Ìwé Ìyípadà" -%}
+  {%- set t_footer_security = "Aabo" -%}
+  {%- set t_footer_contribute = "Ṣe Alábàáṣiṣẹ́pọ̀" -%}
+  {%- set t_footer_resources = "Àwọn Ohun Èlò" -%}
+  {%- set t_footer_legal = "Òfin" -%}
+  {%- set t_footer_privacy = "Àṣírí" -%}
+  {%- set t_footer_terms = "Àwọn Òfin" -%}
+  {%- set t_footer_contact = "Kàn Sí Wa" -%}
+  {%- set t_footer_copyright = "Ẹ̀tọ́ Àwòkọ́wé © 2021 – 2026 Skeletonic CSS. Gbogbo ẹ̀tọ́ ni a pamọ́." -%}
+  {%- set t_search_aria = "Ṣàwárí" -%}
+  {%- set t_search_placeholder = "Ṣàwárí nínú àkọsílẹ̀..." -%}
+  {%- set t_search_navigate = "Lilọ" -%}
+  {%- set t_search_open = "Ṣí" -%}
+  {%- set t_search_close = "Pa" -%}
+  {%- set t_breadcrumb_home = "Ilé" -%}
+  {%- set t_form_name = "Orúkọ rẹ" -%}
+  {%- set t_form_email = "Ímeèlì rẹ" -%}
+  {%- set t_form_subject = "Kókó ọ̀rọ̀" -%}
+  {%- set t_form_message = "Ìfiránṣẹ́" -%}
+  {%- set t_form_send = "Fi ìfiránṣẹ́ ránṣẹ́ →" -%}
+  {%- set t_back_home = "← Padà sí ilé" -%}
+  {%- set s_getting_started = "bere-nibi" -%}
+  {%- set s_components = "awon-paati" -%}
+  {%- set s_about = "nipa" -%}
+  {%- set s_accessibility = "iraye-si" -%}
+  {%- set s_security = "aabo" -%}
+  {%- set s_changelog = "iwe-iyipada" -%}
+  {%- set s_contribute = "se-alabapin" -%}
+  {%- set s_privacy = "asiri" -%}
+  {%- set s_terms = "awon-ofin" -%}
+  {%- set s_palettes = "awon-paleti" -%}
+  {%- set s_animations = "ere-idasonu" -%}
+  {%- set s_contact = "kan-si-wa" -%}
+{%- elif lang == "zh-hans" -%}
+  {%- set t_skip_link = "跳至主要内容" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus 首页" -%}
+  {%- set t_nav_home = "首页" -%}
+  {%- set t_nav_docs = "文档" -%}
+  {%- set t_nav_components = "组件" -%}
+  {%- set t_nav_resources = "资源" -%}
+  {%- set t_nav_palettes = "色板" -%}
+  {%- set t_nav_animations = "动画" -%}
+  {%- set t_nav_accessibility = "无障碍" -%}
+  {%- set t_nav_search_aria = "搜索" -%}
+  {%- set t_nav_theme_dark = "深色" -%}
+  {%- set t_nav_theme_dark_aria = "切换到深色模式" -%}
+  {%- set t_nav_theme_light = "浅色" -%}
+  {%- set t_nav_theme_light_aria = "切换到浅色模式" -%}
+  {%- set t_nav_lang_aria = "切换语言" -%}
+  {%- set t_nav_contact = "联系" -%}
+  {%- set t_nav_toggle_aria = "显示或隐藏菜单" -%}
+  {%- set t_footer_project = "项目" -%}
+  {%- set t_footer_about = "关于" -%}
+  {%- set t_footer_changelog = "更新日志" -%}
+  {%- set t_footer_security = "安全" -%}
+  {%- set t_footer_contribute = "贡献" -%}
+  {%- set t_footer_resources = "资源" -%}
+  {%- set t_footer_legal = "法律" -%}
+  {%- set t_footer_privacy = "隐私" -%}
+  {%- set t_footer_terms = "条款" -%}
+  {%- set t_footer_contact = "联系" -%}
+  {%- set t_footer_copyright = "版权所有 © 2021 – 2026 Skeletonic CSS。保留所有权利。" -%}
+  {%- set t_search_aria = "搜索" -%}
+  {%- set t_search_placeholder = "搜索文档..." -%}
+  {%- set t_search_navigate = "导航" -%}
+  {%- set t_search_open = "打开" -%}
+  {%- set t_search_close = "关闭" -%}
+  {%- set t_breadcrumb_home = "首页" -%}
+  {%- set t_form_name = "姓名" -%}
+  {%- set t_form_email = "电子邮件" -%}
+  {%- set t_form_subject = "主题" -%}
+  {%- set t_form_message = "消息" -%}
+  {%- set t_form_send = "发送消息 →" -%}
+  {%- set t_back_home = "← 返回首页" -%}
+  {%- set s_getting_started = "kuai-su-ru-men" -%}
+  {%- set s_components = "zu-jian" -%}
+  {%- set s_about = "guan-yu" -%}
+  {%- set s_accessibility = "wu-zhang-ai" -%}
+  {%- set s_security = "an-quan" -%}
+  {%- set s_changelog = "geng-xin-ri-zhi" -%}
+  {%- set s_contribute = "gong-xian" -%}
+  {%- set s_privacy = "yin-si" -%}
+  {%- set s_terms = "tiao-kuan" -%}
+  {%- set s_palettes = "se-ban" -%}
+  {%- set s_animations = "dong-hua" -%}
+  {%- set s_contact = "lian-xi" -%}
+{%- elif lang == "zh-hant" -%}
+  {%- set t_skip_link = "跳至主要內容" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus 首頁" -%}
+  {%- set t_nav_home = "首頁" -%}
+  {%- set t_nav_docs = "文件" -%}
+  {%- set t_nav_components = "組件" -%}
+  {%- set t_nav_resources = "資源" -%}
+  {%- set t_nav_palettes = "色板" -%}
+  {%- set t_nav_animations = "動畫" -%}
+  {%- set t_nav_accessibility = "無障礙" -%}
+  {%- set t_nav_search_aria = "搜尋" -%}
+  {%- set t_nav_theme_dark = "深色" -%}
+  {%- set t_nav_theme_dark_aria = "切換至深色模式" -%}
+  {%- set t_nav_theme_light = "淺色" -%}
+  {%- set t_nav_theme_light_aria = "切換至淺色模式" -%}
+  {%- set t_nav_lang_aria = "切換語言" -%}
+  {%- set t_nav_contact = "聯繫" -%}
+  {%- set t_nav_toggle_aria = "顯示或隱藏選單" -%}
+  {%- set t_footer_project = "專案" -%}
+  {%- set t_footer_about = "關於" -%}
+  {%- set t_footer_changelog = "更新日誌" -%}
+  {%- set t_footer_security = "安全" -%}
+  {%- set t_footer_contribute = "貢獻" -%}
+  {%- set t_footer_resources = "資源" -%}
+  {%- set t_footer_legal = "法律" -%}
+  {%- set t_footer_privacy = "隱私" -%}
+  {%- set t_footer_terms = "條款" -%}
+  {%- set t_footer_contact = "聯繫" -%}
+  {%- set t_footer_copyright = "版權所有 © 2021 – 2026 Skeletonic CSS。保留所有權利。" -%}
+  {%- set t_search_aria = "搜尋" -%}
+  {%- set t_search_placeholder = "搜尋文件..." -%}
+  {%- set t_search_navigate = "導覽" -%}
+  {%- set t_search_open = "開啟" -%}
+  {%- set t_search_close = "關閉" -%}
+  {%- set t_breadcrumb_home = "首頁" -%}
+  {%- set t_form_name = "您的姓名" -%}
+  {%- set t_form_email = "您的電子郵件" -%}
+  {%- set t_form_subject = "主題" -%}
+  {%- set t_form_message = "訊息" -%}
+  {%- set t_form_send = "傳送訊息 →" -%}
+  {%- set t_back_home = "← 返回首頁" -%}
+  {%- set s_getting_started = "kuai-su-ru-men" -%}
+  {%- set s_components = "zu-jian" -%}
+  {%- set s_about = "guan-yu" -%}
+  {%- set s_accessibility = "wu-zhang-ai" -%}
+  {%- set s_security = "an-quan" -%}
+  {%- set s_changelog = "geng-xin-ri-zhi" -%}
+  {%- set s_contribute = "gong-xian" -%}
+  {%- set s_privacy = "yin-si" -%}
+  {%- set s_terms = "tiao-kuan" -%}
+  {%- set s_palettes = "se-ban" -%}
+  {%- set s_animations = "dong-hua" -%}
+  {%- set s_contact = "lian-xi" -%}
+{%- else -%}
+  {%- set t_skip_link = "Skip to main content" -%}
+  {%- set t_nav_brand_aria = "Skeletonic Stylus home" -%}
+  {%- set t_nav_home = "Home" -%}
+  {%- set t_nav_docs = "Docs" -%}
+  {%- set t_nav_components = "Components" -%}
+  {%- set t_nav_resources = "Resources" -%}
+  {%- set t_nav_palettes = "Palettes" -%}
+  {%- set t_nav_animations = "Animations" -%}
+  {%- set t_nav_accessibility = "Accessibility" -%}
+  {%- set t_nav_search_aria = "Search" -%}
+  {%- set t_nav_theme_dark = "Dark" -%}
+  {%- set t_nav_theme_dark_aria = "Switch to dark mode" -%}
+  {%- set t_nav_theme_light = "Light" -%}
+  {%- set t_nav_theme_light_aria = "Switch to light mode" -%}
+  {%- set t_nav_lang_aria = "Change language" -%}
+  {%- set t_nav_contact = "Contact" -%}
+  {%- set t_nav_toggle_aria = "Toggle menu" -%}
+  {%- set t_footer_project = "Project" -%}
+  {%- set t_footer_about = "About" -%}
+  {%- set t_footer_changelog = "Changelog" -%}
+  {%- set t_footer_security = "Security" -%}
+  {%- set t_footer_contribute = "Contribute" -%}
+  {%- set t_footer_resources = "Resources" -%}
+  {%- set t_footer_legal = "Legal" -%}
+  {%- set t_footer_privacy = "Privacy" -%}
+  {%- set t_footer_terms = "Terms" -%}
+  {%- set t_footer_contact = "Contact" -%}
+  {%- set t_footer_copyright = "Copyright © 2021 – 2026 Skeletonic CSS. All rights reserved." -%}
+  {%- set t_search_aria = "Search" -%}
+  {%- set t_search_placeholder = "Search documentation..." -%}
+  {%- set t_search_navigate = "Navigate" -%}
+  {%- set t_search_open = "Open" -%}
+  {%- set t_search_close = "Close" -%}
+  {%- set t_breadcrumb_home = "Home" -%}
+  {%- set t_form_name = "Your name" -%}
+  {%- set t_form_email = "Your email" -%}
+  {%- set t_form_subject = "Subject" -%}
+  {%- set t_form_message = "Message" -%}
+  {%- set t_form_send = "Send message →" -%}
+  {%- set t_back_home = "← Back to home" -%}
+  {%- set s_getting_started = "getting-started" -%}
+  {%- set s_components = "components" -%}
+  {%- set s_about = "about" -%}
+  {%- set s_accessibility = "accessibility" -%}
+  {%- set s_security = "security" -%}
+  {%- set s_changelog = "changelog" -%}
+  {%- set s_contribute = "contribute" -%}
+  {%- set s_privacy = "privacy" -%}
+  {%- set s_terms = "terms" -%}
+  {%- set s_palettes = "palettes" -%}
+  {%- set s_animations = "animations" -%}
+  {%- set s_contact = "contact" -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="{{ lang }}"{% if is_rtl %} dir="rtl"{% endif %} itemscope itemtype="https://schema.org/WebSite">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{% block title %}{% if page.title %}{{ page.title }} — {{ site.title | default(value=site.name) }}{% else %}{{ site.title | default(value=site.name) }}{% endif %}{% endblock %}</title>
+
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+    {% if page.author %}<meta name="author" content="{{ page.author }}">{% endif %}
+    <meta name="generator" content="Shokunin (ssg) v0.0.34">
+    <meta name="theme-color" content="{{ page.theme_color | default(value='hsl(210, 100%, 42%)') }}">
+    <meta name="color-scheme" content="light dark">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'">
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
+
+    <link rel="canonical" href="{{ site.base_url }}{{ lang_prefix }}{{ page_path }}">
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    {#-
+      hreflang link rel alternates — emitted on every page so search
+      engines can map English ↔ translated equivalents. Each entry
+      points at the same logical `page_path` under the locale's prefix.
+      x-default points at the English (root) version.
+    -#}
+    <link rel="alternate" hreflang="x-default" href="{{ site.base_url }}{{ en_page_path }}">
+    <link rel="alternate" hreflang="en" href="{{ site.base_url }}{{ en_page_path }}">
+    <link rel="alternate" hreflang="fr" href="{{ site.base_url }}/fr{{ fr_page_path }}">
+    <link rel="alternate" hreflang="de" href="{{ site.base_url }}/de{{ de_page_path }}">
+    <link rel="alternate" hreflang="ar" href="{{ site.base_url }}/ar{{ ar_page_path }}">
+    <link rel="alternate" hreflang="bn" href="{{ site.base_url }}/bn{{ bn_page_path }}">
+    <link rel="alternate" hreflang="cs" href="{{ site.base_url }}/cs{{ cs_page_path }}">
+    <link rel="alternate" hreflang="es" href="{{ site.base_url }}/es{{ es_page_path }}">
+    <link rel="alternate" hreflang="fil" href="{{ site.base_url }}/fil{{ fil_page_path }}">
+    <link rel="alternate" hreflang="ha" href="{{ site.base_url }}/ha{{ ha_page_path }}">
+    <link rel="alternate" hreflang="he" href="{{ site.base_url }}/he{{ he_page_path }}">
+    <link rel="alternate" hreflang="hi" href="{{ site.base_url }}/hi{{ hi_page_path }}">
+    <link rel="alternate" hreflang="id" href="{{ site.base_url }}/id{{ id_page_path }}">
+    <link rel="alternate" hreflang="it" href="{{ site.base_url }}/it{{ it_page_path }}">
+    <link rel="alternate" hreflang="ja" href="{{ site.base_url }}/ja{{ ja_page_path }}">
+    <link rel="alternate" hreflang="ko" href="{{ site.base_url }}/ko{{ ko_page_path }}">
+    <link rel="alternate" hreflang="nl" href="{{ site.base_url }}/nl{{ nl_page_path }}">
+    <link rel="alternate" hreflang="pl" href="{{ site.base_url }}/pl{{ pl_page_path }}">
+    <link rel="alternate" hreflang="pt-BR" href="{{ site.base_url }}/pt-br{{ ptbr_page_path }}">
+    <link rel="alternate" hreflang="ro" href="{{ site.base_url }}/ro{{ ro_page_path }}">
+    <link rel="alternate" hreflang="ru" href="{{ site.base_url }}/ru{{ ru_page_path }}">
+    <link rel="alternate" hreflang="sv" href="{{ site.base_url }}/sv{{ sv_page_path }}">
+    <link rel="alternate" hreflang="th" href="{{ site.base_url }}/th{{ th_page_path }}">
+    <link rel="alternate" hreflang="tr" href="{{ site.base_url }}/tr{{ tr_page_path }}">
+    <link rel="alternate" hreflang="uk" href="{{ site.base_url }}/uk{{ uk_page_path }}">
+    <link rel="alternate" hreflang="vi" href="{{ site.base_url }}/vi{{ vi_page_path }}">
+    <link rel="alternate" hreflang="yo" href="{{ site.base_url }}/yo{{ yo_page_path }}">
+    <link rel="alternate" hreflang="zh-Hans" href="{{ site.base_url }}/zh-hans{{ zhhans_page_path }}">
+    <link rel="alternate" hreflang="zh-Hant" href="{{ site.base_url }}/zh-hant{{ zhhant_page_path }}">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="{{ page.og_type | default(value='website') }}">
+    <meta property="og:site_name" content="{{ site.title | default(value=site.name) }}">
+    <meta property="og:title" content="{{ page.title | default(value=site.title) }}">
+    {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% endif %}
+    <meta property="og:url" content="{{ site.base_url }}{{ lang_prefix }}{{ page_path }}">
+    <meta property="og:image" content="{{ site.base_url }}/images/banner.svg">
+    <meta property="og:locale" content="{{ lang | replace(from='-', to='_') }}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wwdseb">
+    <meta name="twitter:creator" content="@wwdseb">
+    <meta name="twitter:title" content="{{ page.title | default(value=site.title) }}">
+    {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">{% endif %}
+    <meta name="twitter:image" content="{{ site.base_url }}/images/banner.svg">
+
+    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads. -->
+    <link
+      rel="stylesheet"
+      href="/css/skeletonic.min.css"
+      integrity="sha384-lgGIyC9rKvJSzFr72UJV4fPuBMLD8OO0opzd5qQBBtNVvszBGY/fsIBt35USjeJe"
+      crossorigin="anonymous">
+    {% if page.load_animations %}
+    <!-- Optional animations module — only loaded on pages that opt in via load_animations: true. -->
+    <link
+      rel="stylesheet"
+      href="/css/skeletonic-animations.min.css"
+      integrity="sha384-NliIiYTcQ8ai20j+1/oTQPAoLWde0qOGFqjR5x0CQGxIanLvskZKWWWZEx4OI9y4"
+      crossorigin="anonymous">
+    {% endif %}
+    {% block extra_css %}{% endblock %}
+
+    <!-- Chrome styles — layout, nav, hero, footer, search overlay, theme toggle. -->
+    <link rel="stylesheet" href="/css/chrome.css" crossorigin="anonymous">
+
+    <!-- REMOVED: inline <style> moved to static/css/chrome.css -->
+    <!-- Original :root block preserved for reference:
+         --c-accent uses the project's primary palette hsl(210, 100%, 42%).
+    -->
+
+    <!-- BreadcrumbList JSON-LD — emitted on every page for AEO/SGE indexing. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "{{ t_breadcrumb_home }}",
+          "item": "{{ site.base_url | safe }}{{ lang_prefix | safe }}/"
+        }{% if page_path != "/" %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ page.title | default(value=page.name) | safe }}",
+          "item": "{{ site.base_url | safe }}{{ lang_prefix | safe }}{{ page_path | safe }}"
+        }{% endif %}
+      ]
+    }
+    </script>
+
+    {% block extra_head %}{% endblock %}
+  </head>
+  <body class="{% block body_class %}page-default{% endblock %}" itemscope itemtype="https://schema.org/WebPage">
+    <a href="#main" class="skip-link">{{ t_skip_link }}</a>
+
+    <nav aria-label="{{ t_nav_brand_aria }}" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <div class="nav-inner">
+        <a class="nav-brand" href="{{ lang_prefix }}/" itemprop="url" aria-label="{{ t_nav_brand_aria }}">
+          <span itemprop="name">Skeletonic Stylus</span>
+        </a>
+        <ul class="nav-center">
+          <li><a href="{{ lang_prefix }}/"{% if page_path == "/" %} class="active" aria-current="page"{% endif %}>{{ t_nav_home }}</a></li>
+          <li><a href="{{ lang_prefix }}/{{ s_getting_started }}/"{% if page_path == "/" ~ s_getting_started ~ "/" %} class="active" aria-current="page"{% endif %}>{{ t_nav_docs }}</a></li>
+          <li><a href="{{ lang_prefix }}/{{ s_components }}/"{% if page_path == "/" ~ s_components ~ "/" %} class="active" aria-current="page"{% endif %}>{{ t_nav_components }}</a></li>
+          <li class="dropdown" data-dropdown>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">{{ t_nav_resources }}</button>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="{{ lang_prefix }}/{{ s_palettes }}/">{{ t_nav_palettes }}</a></li>
+              <li><a class="dropdown-item" href="{{ lang_prefix }}/{{ s_animations }}/">{{ t_nav_animations }}</a></li>
+              <li><a class="dropdown-item" href="{{ lang_prefix }}/{{ s_accessibility }}/">{{ t_nav_accessibility }}</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <button aria-label="{{ t_nav_search_aria }}" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
+            <svg viewBox="0 0 24 24" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="16" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <span class="search-shortcut" aria-hidden="true"></span>
+          </button>
+          <button aria-label="{{ t_nav_theme_dark_aria }}" class="theme-toggle" id="themeToggle" type="button" data-label-dark="{{ t_nav_theme_dark }}" data-label-light="{{ t_nav_theme_light }}" data-aria-dark="{{ t_nav_theme_dark_aria }}" data-aria-light="{{ t_nav_theme_light_aria }}">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
+              <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light" style="display:none">
+              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
+            </svg>
+            <span class="theme-label">{{ t_nav_theme_dark }}</span>
+          </button>
+          <div style="position:relative;display:inline-block" class="lang-switcher">
+            <button type="button" aria-label="{{ lang | upper }}, {{ t_nav_lang_aria }}" aria-expanded="false" style="color:var(--c-nav-muted);font-size:12px;font-weight:400;padding:.375rem .625rem;border:1px solid var(--c-border);border-radius:6rem;background:transparent;cursor:pointer;display:inline-flex;align-items:center;gap:.25rem;outline:none">
+              <span style="font-size:14px">🌐</span> {{ lang | upper }}
+            </button>
+            <div class="lang-menu" style="display:none;max-height:80vh;overflow-y:auto">
+              <div class="lang-menu-grid">
+              <a{% if lang == "en" %} class="active"{% endif %} href="{{ en_page_path }}">🇬🇧 English</a>
+              <a{% if lang == "fr" %} class="active"{% endif %} href="/fr{{ fr_page_path }}">🇫🇷 Français</a>
+              <a{% if lang == "ar" %} class="active"{% endif %} href="/ar{{ ar_page_path }}">🇸🇦 العربية</a>
+              <a{% if lang == "bn" %} class="active"{% endif %} href="/bn{{ bn_page_path }}">🇧🇩 বাংলা</a>
+              <a{% if lang == "cs" %} class="active"{% endif %} href="/cs{{ cs_page_path }}">🇨🇿 Čeština</a>
+              <a{% if lang == "de" %} class="active"{% endif %} href="/de{{ de_page_path }}">🇩🇪 Deutsch</a>
+              <a{% if lang == "es" %} class="active"{% endif %} href="/es{{ es_page_path }}">🇪🇸 Español</a>
+              <a{% if lang == "fil" %} class="active"{% endif %} href="/fil{{ fil_page_path }}">🇵🇭 Filipino</a>
+              <a{% if lang == "ha" %} class="active"{% endif %} href="/ha{{ ha_page_path }}">🇳🇬 Hausa</a>
+              <a{% if lang == "he" %} class="active"{% endif %} href="/he{{ he_page_path }}">🇮🇱 עברית</a>
+              <a{% if lang == "hi" %} class="active"{% endif %} href="/hi{{ hi_page_path }}">🇮🇳 हिन्दी</a>
+              <a{% if lang == "id" %} class="active"{% endif %} href="/id{{ id_page_path }}">🇮🇩 Indonesia</a>
+              <a{% if lang == "it" %} class="active"{% endif %} href="/it{{ it_page_path }}">🇮🇹 Italiano</a>
+              <a{% if lang == "ja" %} class="active"{% endif %} href="/ja{{ ja_page_path }}">🇯🇵 日本語</a>
+              <a{% if lang == "ko" %} class="active"{% endif %} href="/ko{{ ko_page_path }}">🇰🇷 한국어</a>
+              <a{% if lang == "nl" %} class="active"{% endif %} href="/nl{{ nl_page_path }}">🇳🇱 Nederlands</a>
+              <a{% if lang == "pl" %} class="active"{% endif %} href="/pl{{ pl_page_path }}">🇵🇱 Polski</a>
+              <a{% if lang == "pt-br" %} class="active"{% endif %} href="/pt-br{{ ptbr_page_path }}">🇧🇷 Português</a>
+              <a{% if lang == "ro" %} class="active"{% endif %} href="/ro{{ ro_page_path }}">🇷🇴 Română</a>
+              <a{% if lang == "ru" %} class="active"{% endif %} href="/ru{{ ru_page_path }}">🇷🇺 Русский</a>
+              <a{% if lang == "sv" %} class="active"{% endif %} href="/sv{{ sv_page_path }}">🇸🇪 Svenska</a>
+              <a{% if lang == "th" %} class="active"{% endif %} href="/th{{ th_page_path }}">🇹🇭 ไทย</a>
+              <a{% if lang == "tr" %} class="active"{% endif %} href="/tr{{ tr_page_path }}">🇹🇷 Türkçe</a>
+              <a{% if lang == "uk" %} class="active"{% endif %} href="/uk{{ uk_page_path }}">🇺🇦 Українська</a>
+              <a{% if lang == "vi" %} class="active"{% endif %} href="/vi{{ vi_page_path }}">🇻🇳 Tiếng Việt</a>
+              <a{% if lang == "yo" %} class="active"{% endif %} href="/yo{{ yo_page_path }}">🇳🇬 Yorùbá</a>
+              <a{% if lang == "zh-hans" %} class="active"{% endif %} href="/zh-hans{{ zhhans_page_path }}">🇨🇳 简体中文</a>
+              <a{% if lang == "zh-hant" %} class="active"{% endif %} href="/zh-hant{{ zhhant_page_path }}">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="nav-cta" href="{{ lang_prefix }}/{{ s_contact }}/">{{ t_nav_contact }}</a>
+        </div>
+        <button aria-label="{{ t_nav_toggle_aria }}" class="nav-hamburger" id="navToggle" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    {% block hero %}{% endblock %}
+
+    <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
+      <div class="text-start">
+        {% block content %}{{ page.content | safe }}{% endblock %}
+      </div>
+    </main>
+
+    <footer aria-label="Site footer" class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-cols">
+          <nav class="footer-col" aria-label="{{ t_footer_project }}">
+            <p class="footer-col-title">{{ t_footer_project }}</p>
+            <ul>
+              <li><a href="{{ lang_prefix }}/{{ s_about }}/">{{ t_footer_about }}</a></li>
+              <li><a href="{{ lang_prefix }}/{{ s_changelog }}/">{{ t_footer_changelog }}</a></li>
+              <li><a href="{{ lang_prefix }}/{{ s_security }}/">{{ t_footer_security }}</a></li>
+              <li><a href="{{ lang_prefix }}/{{ s_contribute }}/">{{ t_footer_contribute }}</a></li>
+              <li><a rel="noopener noreferrer" href="https://github.com/sebastienrousseau/skeletonic-stylus" target="_blank">GitHub ↗</a></li>
+              <li><a rel="noopener noreferrer" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus" target="_blank">npm ↗</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="{{ t_footer_resources }}">
+            <p class="footer-col-title">{{ t_footer_resources }}</p>
+            <ul>
+              <li><a href="{{ lang_prefix }}/{{ s_palettes }}/">{{ t_nav_palettes }}</a></li>
+              <li><a href="{{ lang_prefix }}/{{ s_animations }}/">{{ t_nav_animations }}</a></li>
+              <li><a href="{{ lang_prefix }}/{{ s_accessibility }}/">{{ t_nav_accessibility }}</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="{{ t_footer_legal }}">
+            <p class="footer-col-title">{{ t_footer_legal }}</p>
+            <ul>
+              <li><a href="{{ lang_prefix }}/{{ s_privacy }}/">{{ t_footer_privacy }}</a></li>
+              <li><a href="{{ lang_prefix }}/{{ s_terms }}/">{{ t_footer_terms }}</a></li>
+              <li><a href="{{ lang_prefix }}/{{ s_contact }}/">{{ t_footer_contact }}</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bar">
+          {{ t_footer_copyright }}
+        </div>
+      </div>
+    </footer>
+
+    <div aria-label="{{ t_search_aria }}" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
+      <div class="search-box">
+        <input aria-label="{{ t_search_aria }}" placeholder="{{ t_search_placeholder }}" autocomplete="off" class="search-input" id="searchInput" type="search">
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-footer">
+          <span><kbd>↑</kbd> <kbd>↓</kbd> {{ t_search_navigate }}</span>
+          <span><kbd>↵</kbd> {{ t_search_open }}</span>
+          <span><kbd>Esc</kbd> {{ t_search_close }}</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/main.js" defer></script>
+  </body>
+</html>

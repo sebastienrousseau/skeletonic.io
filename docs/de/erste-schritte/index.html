@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="de" itemscope itemtype="https://schema.org/WebSite">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Erste Schritte mit Skeletonic Stylus — Skeletonic Stylus</title>
+
+    <meta name="description" content="Skeletonic Stylus per npm oder CDN installieren, in den Stylus-Build einbinden und Variablen in Sekunden überschreiben.">
+    <meta name="keywords" content="skeletonic installieren, stylus einrichten, css cdn, erste schritte">
+    <meta name="author" content="Sebastien Rousseau">
+    <meta name="generator" content="Shokunin (ssg) v0.0.34">
+    <meta name="theme-color" content="hsl(210, 100%, 42%)">
+    <meta name="color-scheme" content="light dark">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'">
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
+
+    <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;de&#x2F;erste-schritte&#x2F;">
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
+    <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;getting-started&#x2F;">
+    <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;getting-started&#x2F;">
+    <link rel="alternate" hreflang="fr" href="https:&#x2F;&#x2F;skeletonic.io/fr&#x2F;premiers-pas&#x2F;">
+    <link rel="alternate" hreflang="de" href="https:&#x2F;&#x2F;skeletonic.io/de&#x2F;erste-schritte&#x2F;">
+    <link rel="alternate" hreflang="ar" href="https:&#x2F;&#x2F;skeletonic.io/ar&#x2F;al-bidaya&#x2F;">
+    <link rel="alternate" hreflang="bn" href="https:&#x2F;&#x2F;skeletonic.io/bn&#x2F;shuru&#x2F;">
+    <link rel="alternate" hreflang="cs" href="https:&#x2F;&#x2F;skeletonic.io/cs&#x2F;zacatek&#x2F;">
+    <link rel="alternate" hreflang="es" href="https:&#x2F;&#x2F;skeletonic.io/es&#x2F;primeros-pasos&#x2F;">
+    <link rel="alternate" hreflang="fil" href="https:&#x2F;&#x2F;skeletonic.io/fil&#x2F;pagsisimula&#x2F;">
+    <link rel="alternate" hreflang="ha" href="https:&#x2F;&#x2F;skeletonic.io/ha&#x2F;fara&#x2F;">
+    <link rel="alternate" hreflang="he" href="https:&#x2F;&#x2F;skeletonic.io/he&#x2F;hatkhala&#x2F;">
+    <link rel="alternate" hreflang="hi" href="https:&#x2F;&#x2F;skeletonic.io/hi&#x2F;shuruat&#x2F;">
+    <link rel="alternate" hreflang="id" href="https:&#x2F;&#x2F;skeletonic.io/id&#x2F;memulai&#x2F;">
+    <link rel="alternate" hreflang="it" href="https:&#x2F;&#x2F;skeletonic.io/it&#x2F;iniziare&#x2F;">
+    <link rel="alternate" hreflang="ja" href="https:&#x2F;&#x2F;skeletonic.io/ja&#x2F;hajimeni&#x2F;">
+    <link rel="alternate" hreflang="ko" href="https:&#x2F;&#x2F;skeletonic.io/ko&#x2F;sijak&#x2F;">
+    <link rel="alternate" hreflang="nl" href="https:&#x2F;&#x2F;skeletonic.io/nl&#x2F;aan-de-slag&#x2F;">
+    <link rel="alternate" hreflang="pl" href="https:&#x2F;&#x2F;skeletonic.io/pl&#x2F;pierwsze-kroki&#x2F;">
+    <link rel="alternate" hreflang="pt-BR" href="https:&#x2F;&#x2F;skeletonic.io/pt-br&#x2F;primeiros-passos&#x2F;">
+    <link rel="alternate" hreflang="ro" href="https:&#x2F;&#x2F;skeletonic.io/ro&#x2F;primii-pasi&#x2F;">
+    <link rel="alternate" hreflang="ru" href="https:&#x2F;&#x2F;skeletonic.io/ru&#x2F;nachalo&#x2F;">
+    <link rel="alternate" hreflang="sv" href="https:&#x2F;&#x2F;skeletonic.io/sv&#x2F;kom-igang&#x2F;">
+    <link rel="alternate" hreflang="th" href="https:&#x2F;&#x2F;skeletonic.io/th&#x2F;roem-ton&#x2F;">
+    <link rel="alternate" hreflang="tr" href="https:&#x2F;&#x2F;skeletonic.io/tr&#x2F;baslarken&#x2F;">
+    <link rel="alternate" hreflang="uk" href="https:&#x2F;&#x2F;skeletonic.io/uk&#x2F;pochatok&#x2F;">
+    <link rel="alternate" hreflang="vi" href="https:&#x2F;&#x2F;skeletonic.io/vi&#x2F;bat-dau&#x2F;">
+    <link rel="alternate" hreflang="yo" href="https:&#x2F;&#x2F;skeletonic.io/yo&#x2F;bere-nibi&#x2F;">
+    <link rel="alternate" hreflang="zh-Hans" href="https:&#x2F;&#x2F;skeletonic.io/zh-hans&#x2F;kuai-su-ru-men&#x2F;">
+    <link rel="alternate" hreflang="zh-Hant" href="https:&#x2F;&#x2F;skeletonic.io/zh-hant&#x2F;kuai-su-ru-men&#x2F;">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Skeletonic Stylus">
+    <meta property="og:title" content="Erste Schritte mit Skeletonic Stylus">
+    <meta property="og:description" content="Skeletonic Stylus per npm oder CDN installieren, in den Stylus-Build einbinden und Variablen in Sekunden überschreiben.">
+    <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;de&#x2F;erste-schritte&#x2F;">
+    <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
+    <meta property="og:locale" content="de">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wwdseb">
+    <meta name="twitter:creator" content="@wwdseb">
+    <meta name="twitter:title" content="Erste Schritte mit Skeletonic Stylus">
+    <meta name="twitter:description" content="Skeletonic Stylus per npm oder CDN installieren, in den Stylus-Build einbinden und Variablen in Sekunden überschreiben.">
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
+
+    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads. -->
+    <link
+      rel="stylesheet"
+      href="/css/skeletonic.min.dd002edc.css"
+      integrity="sha384-lgGIyC9rKvJSzFr72UJV4fPuBMLD8OO0opzd5qQBBtNVvszBGY/fsIBt35USjeJe"
+      crossorigin="anonymous">
+    
+    
+
+    <!-- Chrome styles — layout, nav, hero, footer, search overlay, theme toggle. -->
+    <link rel="stylesheet" href="/css/chrome.876c9bc8.css" crossorigin="anonymous">
+
+    <!-- REMOVED: inline <style> moved to static/css/chrome.876c9bc8.css -->
+    <!-- Original :root block preserved for reference:
+         --c-accent uses the project's primary palette hsl(210, 100%, 42%).
+    -->
+
+    <!-- BreadcrumbList JSON-LD — emitted on every page for AEO/SGE indexing. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://skeletonic.io/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Erste Schritte mit Skeletonic Stylus",
+          "item": "https://skeletonic.io/de/erste-schritte/"
+        }
+      ]
+    }
+    </script>
+
+    
+  <link rel="stylesheet" href="/highlight.87708af9.css">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+</head>
+  <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
+    <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+    <nav aria-label="Skeletonic Stylus Startseite" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <div class="nav-inner">
+        <a class="nav-brand" href="&#x2F;de/" itemprop="url" aria-label="Skeletonic Stylus Startseite">
+          <span itemprop="name">Skeletonic Stylus</span>
+        </a>
+        <ul class="nav-center">
+          <li><a href="&#x2F;de/">Startseite</a></li>
+          <li><a href="&#x2F;de/erste-schritte/">Dokumentation</a></li>
+          <li><a href="&#x2F;de/komponenten/">Komponenten</a></li>
+          <li class="dropdown" data-dropdown>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">Ressourcen</button>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="&#x2F;de/paletten/">Paletten</a></li>
+              <li><a class="dropdown-item" href="&#x2F;de/animationen/">Animationen</a></li>
+              <li><a class="dropdown-item" href="&#x2F;de/barrierefreiheit/">Barrierefreiheit</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <button aria-label="Suchen" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
+            <svg viewBox="0 0 24 24" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="16" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <span class="search-shortcut" aria-hidden="true"></span>
+          </button>
+          <button aria-label="Zum dunklen Modus wechseln" class="theme-toggle" id="themeToggle" type="button" data-label-dark="Dunkel" data-label-light="Hell" data-aria-dark="Zum dunklen Modus wechseln" data-aria-light="Zum hellen Modus wechseln">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
+              <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light" style="display:none">
+              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
+            </svg>
+            <span class="theme-label">Dunkel</span>
+          </button>
+          <div style="position:relative;display:inline-block" class="lang-switcher">
+            <button type="button" aria-label="DE, Sprache wechseln" aria-expanded="false" style="color:var(--c-nav-muted);font-size:12px;font-weight:400;padding:.375rem .625rem;border:1px solid var(--c-border);border-radius:6rem;background:transparent;cursor:pointer;display:inline-flex;align-items:center;gap:.25rem;outline:none">
+              <span style="font-size:14px">🌐</span> DE
+            </button>
+            <div class="lang-menu" style="display:none;max-height:80vh;overflow-y:auto">
+              <div class="lang-menu-grid">
+              <a href="&#x2F;getting-started&#x2F;">🇬🇧 English</a>
+              <a href="/fr&#x2F;premiers-pas&#x2F;">🇫🇷 Français</a>
+              <a href="/ar&#x2F;al-bidaya&#x2F;">🇸🇦 العربية</a>
+              <a href="/bn&#x2F;shuru&#x2F;">🇧🇩 বাংলা</a>
+              <a href="/cs&#x2F;zacatek&#x2F;">🇨🇿 Čeština</a>
+              <a class="active" href="/de&#x2F;erste-schritte&#x2F;">🇩🇪 Deutsch</a>
+              <a href="/es&#x2F;primeros-pasos&#x2F;">🇪🇸 Español</a>
+              <a href="/fil&#x2F;pagsisimula&#x2F;">🇵🇭 Filipino</a>
+              <a href="/ha&#x2F;fara&#x2F;">🇳🇬 Hausa</a>
+              <a href="/he&#x2F;hatkhala&#x2F;">🇮🇱 עברית</a>
+              <a href="/hi&#x2F;shuruat&#x2F;">🇮🇳 हिन्दी</a>
+              <a href="/id&#x2F;memulai&#x2F;">🇮🇩 Indonesia</a>
+              <a href="/it&#x2F;iniziare&#x2F;">🇮🇹 Italiano</a>
+              <a href="/ja&#x2F;hajimeni&#x2F;">🇯🇵 日本語</a>
+              <a href="/ko&#x2F;sijak&#x2F;">🇰🇷 한국어</a>
+              <a href="/nl&#x2F;aan-de-slag&#x2F;">🇳🇱 Nederlands</a>
+              <a href="/pl&#x2F;pierwsze-kroki&#x2F;">🇵🇱 Polski</a>
+              <a href="/pt-br&#x2F;primeiros-passos&#x2F;">🇧🇷 Português</a>
+              <a href="/ro&#x2F;primii-pasi&#x2F;">🇷🇴 Română</a>
+              <a href="/ru&#x2F;nachalo&#x2F;">🇷🇺 Русский</a>
+              <a href="/sv&#x2F;kom-igang&#x2F;">🇸🇪 Svenska</a>
+              <a href="/th&#x2F;roem-ton&#x2F;">🇹🇭 ไทย</a>
+              <a href="/tr&#x2F;baslarken&#x2F;">🇹🇷 Türkçe</a>
+              <a href="/uk&#x2F;pochatok&#x2F;">🇺🇦 Українська</a>
+              <a href="/vi&#x2F;bat-dau&#x2F;">🇻🇳 Tiếng Việt</a>
+              <a href="/yo&#x2F;bere-nibi&#x2F;">🇳🇬 Yorùbá</a>
+              <a href="/zh-hans&#x2F;kuai-su-ru-men&#x2F;">🇨🇳 简体中文</a>
+              <a href="/zh-hant&#x2F;kuai-su-ru-men&#x2F;">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="nav-cta" href="&#x2F;de/kontakt/">Kontakt</a>
+        </div>
+        <button aria-label="Menü ein-&#x2F;ausblenden" class="nav-hamburger" id="navToggle" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    
+<header class="site-hero" style="padding:4.5rem 1.5rem 2.5rem;">
+  <h1 style="font-size:clamp(2rem,4vw,2.75rem);">Erste Schritte mit Skeletonic Stylus</h1>
+  
+    <p>Skeletonic Stylus per npm oder CDN installieren, in den Stylus-Build einbinden und Variablen in Sekunden überschreiben.</p>
+  
+</header>
+
+
+    <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
+      <div class="text-start">
+        
+<h2>Einführung</h2>
+<p>Neu bei Skeletonic Stylus? Mit <strong>v1.1.7</strong> lassen sich genau die
+Funktionen auswählen, die ein Projekt benötigt. Dank des minimalen
+Footprints (~7,5 KB gzipped für das Kern-Stylesheet) fügt sich die
+Bibliothek nahtlos in jede Webanwendung ein — kein JavaScript-Framework
+erforderlich, kein Build-Schritt nötig bei Nutzung des CDN.</p>
+<p>Jeder Weg ist unten beschrieben — den passenden auswählen.</p>
+<h2>1. Herunterladen und installieren</h2>
+<p>Skeletonic Stylus kann über <strong>pnpm</strong>, <strong>npm</strong> oder <strong>yarn</strong> installiert
+oder direkt von einem CDN geladen werden. Alternativ lassen sich die
+Distributionsdateien auch lokal hosten.</p>
+<h3>Über einen Paketmanager (empfohlen)</h3>
+<pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
+<span style="color:#65737e;"># pnpm
+</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#65737e;"># npm
+</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#65737e;"># yarn
+</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span></pre>
+</code></pre>
+<h3>Über ein CDN</h3>
+<p>Falls nur das kompilierte CSS benötigt wird, genügt eine dieser Zeilen
+im <code>&lt;head&gt;</code>:</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#65737e;">&lt;!-- jsDelivr --&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#65737e;">&lt;!-- unpkg --&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
+</span></pre>
+</code></pre>
+<p>Für maximale Integrität den <strong>SRI-Hash</strong> aus den v1.1.7-Release-Notes
+kopieren und als <code>integrity=&quot;sha384-…&quot;</code>-Attribut hinzufügen.</p>
+<h3>Alternative CDN-Quellen</h3>
+<div class="table-responsive"><table class="table">
+<thead>
+<tr>
+<th>CDN</th>
+<th>URL</th>
+<th>HTTPS</th>
+<th>Combo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left"><strong>jsDelivr</strong></td>
+<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left">Ja</td>
+<td class="text-left">Ja</td>
+</tr>
+<tr>
+<td class="text-left"><strong>unpkg</strong></td>
+<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left">Ja</td>
+<td class="text-left">Nein</td>
+</tr>
+</tbody>
+</table></div>
+<h3>GitHub-Release herunterladen</h3>
+<p>Ein versionierter Tarball ist verfügbar unter
+<a href="https://github.com/sebastienrousseau/skeletonic-stylus/releases">github.com/sebastienrousseau/skeletonic-stylus/releases</a>.
+Den Inhalt von <code>dist/</code> direkt in das Projekt kopieren.</p>
+<h3>GitHub-Repository klonen</h3>
+<p>Das Hauptrepository klonen, um alle Quelldateien inklusive der
+Build-Skripte zu erhalten:</p>
+<pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
+<span style="color:#8fa1b3;">git</span><span style="color:#c0c5ce;"> clone https://github.com/sebastienrousseau/skeletonic-stylus.git
+</span><span style="color:#96b5b4;">cd</span><span style="color:#c0c5ce;"> skeletonic-stylus
+</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> install
+</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> run build
+</span></pre>
+</code></pre>
+<blockquote>
+<p><strong>Tipp:</strong> Commits signieren — das Projekt erzwingt signierte Commits in
+der CI. Dazu <code>git commit -S -m &quot;...&quot;</code> verwenden (oder
+<code>commit.gpgsign = true</code> in der globalen Git-Konfiguration setzen).</p>
+</blockquote>
+<h2>2. Das kompilierte CSS verwenden</h2>
+<p>Die Bibliothek enthält nach der Installation mehrere vorkompilierte
+Bundles unter <code>dist/css/</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Datei</th>
+<th>Zweck</th>
+<th>Größe (min/gz)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left"><code>core/skeletonic.min.css</code></td>
+<td class="text-left">Reset + Tokens + Layout + Elemente + Komponenten + Hilfsmittel</td>
+<td class="text-left">39,9 KB / 7,5 KB</td>
+</tr>
+<tr>
+<td class="text-left"><code>animations/skeletonic-animations.min.css</code></td>
+<td class="text-left">Optionales Animationsmodul</td>
+<td class="text-left">≈213 KB / ≈6.9 KB</td>
+</tr>
+<tr>
+<td class="text-left"><code>palettes/material/skeletonic-material.min.css</code></td>
+<td class="text-left">Material-Farbpalette</td>
+<td class="text-left">≈17.4 KB</td>
+</tr>
+<tr>
+<td class="text-left"><code>palettes/tachyons/skeletonic-tachyons.min.css</code></td>
+<td class="text-left">Tachyons-Hilfspalette</td>
+<td class="text-left">7,3 KB</td>
+</tr>
+<tr>
+<td class="text-left"><code>palettes/websafe/skeletonic-websafe.min.css</code></td>
+<td class="text-left">Websichere Palette</td>
+<td class="text-left">≈3.5 KB</td>
+</tr>
+</tbody>
+</table>
+<p>Jedes Modul ist unabhängig — die kleinstmögliche Kombination auswählen.</p>
+<h2>3. Direkt in Stylus verwenden</h2>
+<p>Bei einer bestehenden Stylus-Pipeline können die Quellmodule importiert
+werden, damit der Bundler ungenutzte Teile per Tree-Shaking entfernt:</p>
+<pre class="highlight language-stylus"><code class="language-stylus" data-lang="stylus"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">// styles/main.styl
+</span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/skeletonic&#39;
+</span></pre>
+</code></pre>
+<p>Oder gezielt nur die benötigten Teile importieren:</p>
+<pre class="highlight language-stylus"><code class="language-stylus" data-lang="stylus"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/utilities/variables&#39;
+</span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/utilities/mixins&#39;
+</span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/elements/buttons&#39;
+</span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/components/card&#39;
+</span></pre>
+</code></pre>
+<h2>4. Die Markenfarbe überschreiben</h2>
+<p>Skeletonic stellt seine Design-Tokens als <strong>CSS Custom Properties</strong>
+bereit, sodass ein Theme ohne erneute Stylus-Kompilierung angepasst
+werden kann:</p>
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#2b303b;">
+<span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">root </span><span style="color:#c0c5ce;">{
+</span><span style="color:#c0c5ce;">  --cl-primary:   </span><span style="color:#96b5b4;">hsl</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">210</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">100%</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">42%</span><span style="color:#c0c5ce;">);
+</span><span style="color:#c0c5ce;">  --cl-secondary: </span><span style="color:#96b5b4;">hsl</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">195</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">100%</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">33%</span><span style="color:#c0c5ce;">);
+</span><span style="color:#c0c5ce;">  --cl-tertiary:  </span><span style="color:#96b5b4;">#757c8a</span><span style="color:#c0c5ce;">;
+</span><span style="color:#c0c5ce;">}
+</span></pre>
+</code></pre>
+<p>Damit folgt jede Komponente, die die Primärfarbe nutzt, automatisch dem
+neuen Farbschema.</p>
+<h2>5. Die Installation überprüfen</h2>
+<p>Ein minimaler Funktionstest:</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">&lt;!</span><span style="color:#bf616a;">doctype</span><span style="color:#c0c5ce;"> html&gt;
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">html </span><span style="color:#d08770;">lang</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">de</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">charset</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">utf-8</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">link </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">body </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">container padding-3</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;Es funktioniert.&lt;/</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">button primary</span><span style="color:#c0c5ce;">&quot;&gt;Hallo, Welt&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">body</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">html</span><span style="color:#c0c5ce;">&gt;
+</span></pre>
+</code></pre>
+<p>Wenn die Überschrift fließend skaliert und der Button eine blaue
+Pillenform aufweist, ist die Einrichtung abgeschlossen.</p>
+<h2>6. Lieferumfang</h2>
+<p>Das Paket enthält alle Quelldateien, die kompilierten und minifizierten
+CSS-Bundles, Source Maps und einen vollständigen Stylus-Baum, gegliedert
+nach Kategorie:</p>
+<pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#c0c5ce;">├── CHANGELOG.md
+</span><span style="color:#c0c5ce;">├── LICENSE-APACHE
+</span><span style="color:#c0c5ce;">├── LICENSE-MIT
+</span><span style="color:#c0c5ce;">├── README.md
+</span><span style="color:#c0c5ce;">├── package.json
+</span><span style="color:#c0c5ce;">├── dist/
+</span><span style="color:#c0c5ce;">│   └── css/
+</span><span style="color:#c0c5ce;">│       ├── core/
+</span><span style="color:#c0c5ce;">│       │   ├── skeletonic.css
+</span><span style="color:#c0c5ce;">│       │   ├── skeletonic.css.map
+</span><span style="color:#c0c5ce;">│       │   └── skeletonic.min.css
+</span><span style="color:#c0c5ce;">│       ├── animations/
+</span><span style="color:#c0c5ce;">│       │   ├── skeletonic-animations.css
+</span><span style="color:#c0c5ce;">│       │   └── skeletonic-animations.min.css
+</span><span style="color:#c0c5ce;">│       └── palettes/
+</span><span style="color:#c0c5ce;">│           ├── material/skeletonic-material.min.css
+</span><span style="color:#c0c5ce;">│           ├── tachyons/skeletonic-tachyons.min.css
+</span><span style="color:#c0c5ce;">│           └── websafe/skeletonic-websafe.min.css
+</span><span style="color:#c0c5ce;">└── src/
+</span><span style="color:#c0c5ce;">    └── stylus/
+</span><span style="color:#c0c5ce;">        ├── animations/      bounce, fade, pulse, shake, vanish, zoom…
+</span><span style="color:#c0c5ce;">        ├── base/            reset, helpers
+</span><span style="color:#c0c5ce;">        ├── components/      card, header, navbar, alert
+</span><span style="color:#c0c5ce;">        ├── configurations/  colors, variables
+</span><span style="color:#c0c5ce;">        ├── elements/        button, form, table, link, list, code…
+</span><span style="color:#c0c5ce;">        ├── fonts/           font-face declarations
+</span><span style="color:#c0c5ce;">        ├── layout/          container, grid, media-queries
+</span><span style="color:#c0c5ce;">        ├── palettes/        material, tachyons, websafe
+</span><span style="color:#c0c5ce;">        ├── utilities/       mixins
+</span><span style="color:#c0c5ce;">        └── skeletonic.styl  ← einzelner Import, der alles einbindet
+</span></pre>
+</code></pre>
+<p>Jedes Modul ist unabhängig — nur die benötigten Bundles einbinden, um
+die CSS-Nutzlast so gering wie möglich zu halten.</p>
+<h2>Häufig gestellte Fragen</h2>
+<p><strong>Wie wird Skeletonic Stylus installiert?</strong>
+<code>pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7</code> ausführen. Oder
+das kompilierte CSS direkt von einem CDN laden — kein Build-Schritt
+erforderlich.</p>
+<p><strong>Wird JavaScript benötigt?</strong>
+Nein. Das Kern-Stylesheet ist reines CSS ohne Laufzeitkosten. Alle
+Komponenten funktionieren ohne eine einzige Zeile JavaScript.</p>
+<p><strong>Ist es WCAG-2.2-konform?</strong>
+Ja. v1.1.7 liefert AA-konforme Kontraste, focus-visible-Ringe,
+Skip-Link-Hilfen, Unterstützung für reduzierte Bewegung und einen
+Dark Mode standardmäßig.</p>
+<p><strong>Wie groß ist das gzipped-Paket?</strong>
+39,9 KB minifiziert, <strong>~7,5 KB gzipped</strong>, ~6,3 KB Brotli
+für das vollständige Kern-Stylesheet. Die 8 KB-Obergrenze wird in
+der CI bei jedem Commit überprüft.</p>
+<p><strong>Welche Lizenz wird verwendet?</strong>
+Doppelt lizenziert unter MIT und Apache 2.0 — die jeweils passende
+Lizenz für das Projekt auswählen. Frei für kommerzielle und persönliche
+Nutzung.</p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie wird Skeletonic Stylus installiert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7 ausführen. Oder das kompilierte CSS direkt von einem CDN laden — kein Build-Schritt erforderlich."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Benötigt Skeletonic Stylus JavaScript?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Das Kern-Stylesheet ist reines CSS ohne Laufzeitkosten. Alle Komponenten funktionieren ohne eine einzige Zeile JavaScript."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist Skeletonic Stylus WCAG-2.2-konform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. v1.1.7 liefert AA-konforme Kontraste, focus-visible-Ringe, Skip-Link-Hilfen, Unterstützung für reduzierte Bewegung und einen Dark Mode standardmäßig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie groß ist das gzipped-Paket von Skeletonic Stylus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "39,9 KB minifiziert, ~7,5 KB gzipped, ~6,3 KB Brotli für das vollständige Kern-Stylesheet. Die 8-KB-Obergrenze wird in der CI bei jedem Commit überprüft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Lizenz verwendet Skeletonic Stylus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doppelt lizenziert unter MIT und Apache 2.0 — die jeweils passende Lizenz für das Projekt auswählen. Frei für kommerzielle und persönliche Nutzung."
+      }
+    }
+  ]
+}
+</script>
+<p><a href="/de/komponenten/">Zu den Komponenten →</a></p>
+
+
+
+      </div>
+    </main>
+
+    <footer aria-label="Site footer" class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-cols">
+          <nav class="footer-col" aria-label="Projekt">
+            <p class="footer-col-title">Projekt</p>
+            <ul>
+              <li><a href="&#x2F;de/ueber-uns/">Über uns</a></li>
+              <li><a href="&#x2F;de/aenderungsprotokoll/">Änderungsprotokoll</a></li>
+              <li><a href="&#x2F;de/sicherheit/">Sicherheit</a></li>
+              <li><a href="&#x2F;de/mitwirken/">Mitwirken</a></li>
+              <li><a rel="noopener noreferrer" href="https://github.com/sebastienrousseau/skeletonic-stylus" target="_blank">GitHub ↗</a></li>
+              <li><a rel="noopener noreferrer" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus" target="_blank">npm ↗</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="Ressourcen">
+            <p class="footer-col-title">Ressourcen</p>
+            <ul>
+              <li><a href="&#x2F;de/paletten/">Paletten</a></li>
+              <li><a href="&#x2F;de/animationen/">Animationen</a></li>
+              <li><a href="&#x2F;de/barrierefreiheit/">Barrierefreiheit</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="Rechtliches">
+            <p class="footer-col-title">Rechtliches</p>
+            <ul>
+              <li><a href="&#x2F;de/datenschutz/">Datenschutz</a></li>
+              <li><a href="&#x2F;de/nutzungsbedingungen/">Nutzungsbedingungen</a></li>
+              <li><a href="&#x2F;de/kontakt/">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bar">
+          Copyright © 2021 – 2026 Skeletonic CSS. Alle Rechte vorbehalten.
+        </div>
+      </div>
+    </footer>
+
+    <div aria-label="Suchen" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
+      <div class="search-box">
+        <input aria-label="Suchen" placeholder="Dokumentation durchsuchen..." autocomplete="off" class="search-input" id="searchInput" type="search">
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-footer">
+          <span><kbd>↑</kbd> <kbd>↓</kbd> Navigieren</span>
+          <span><kbd>↵</kbd> Öffnen</span>
+          <span><kbd>Esc</kbd> Schließen</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/main.6823f567.js" defer></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<style>
+/* ── Trigger button (always visible) ── */
+#ssg-search-btn{position:fixed;top:16px;right:16px;z-index:9998;display:flex;align-items:center;gap:8px;padding:8px 16px;background:#fff;border:1px solid #d1d5db;border-radius:8px;cursor:pointer;font-family:-apple-system,system-ui,sans-serif;font-size:14px;color:#6b7280;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:border-color .15s,box-shadow .15s}
+#ssg-search-btn:hover{border-color:#9ca3af;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+#ssg-search-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#ssg-search-btn kbd{font-family:inherit;font-size:11px;padding:2px 6px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:4px;color:#9ca3af;margin-left:4px}
+/* ── Modal overlay ── */
+#ssg-search-overlay{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.5);align-items:flex-start;justify-content:center;padding-top:12vh}
+#ssg-search-overlay.active{display:flex}
+#ssg-search-box{background:#fff;border-radius:12px;width:92%;max-width:640px;box-shadow:0 25px 60px rgba(0,0,0,.3);overflow:hidden;font-family:-apple-system,system-ui,sans-serif}
+#ssg-search-header{display:flex;align-items:center;padding:0 16px;border-bottom:1px solid #e5e7eb}
+#ssg-search-header svg{width:20px;height:20px;stroke:#9ca3af;fill:none;stroke-width:2;flex-shrink:0}
+#ssg-search-input{flex:1;padding:16px 12px;font-size:16px;border:none;outline:none;background:transparent}
+#ssg-search-results{max-height:50vh;overflow-y:auto}
+.ssg-result{display:block;padding:12px 20px;text-decoration:none;color:#111;border-bottom:1px solid #f3f4f6;transition:background .1s}
+.ssg-result:hover,.ssg-result.active{background:#eff6ff}
+.ssg-result-title{font-weight:600;font-size:15px;margin-bottom:3px}
+.ssg-result-snippet{font-size:13px;color:#6b7280;line-height:1.5}
+.ssg-result-snippet mark{background:#fef08a;color:inherit;border-radius:2px;padding:0 2px}
+.ssg-no-results{padding:32px 20px;text-align:center;color:#9ca3af;font-size:14px}
+.ssg-search-footer{display:flex;gap:16px;padding:10px 20px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb;justify-content:flex-end}
+.ssg-search-footer kbd{font-family:inherit;font-size:11px;padding:1px 5px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:3px}
+/* ── Dark mode (media query + data-theme attribute) ── */
+@media(prefers-color-scheme:dark){
+:root:not([data-theme="light"]) #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
+:root:not([data-theme="light"]) #ssg-search-btn:hover{border-color:#4b5563}
+:root:not([data-theme="light"]) #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
+:root:not([data-theme="light"]) #ssg-search-box{background:#1f2937;color:#f9fafb}
+:root:not([data-theme="light"]) #ssg-search-header{border-color:#374151}
+:root:not([data-theme="light"]) #ssg-search-input{color:#f9fafb}
+:root:not([data-theme="light"]) .ssg-result{color:#f9fafb;border-color:#374151}
+:root:not([data-theme="light"]) .ssg-result:hover,:root:not([data-theme="light"]) .ssg-result.active{background:#374151}
+:root:not([data-theme="light"]) .ssg-result-snippet{color:#9ca3af}
+:root:not([data-theme="light"]) .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
+:root:not([data-theme="light"]) .ssg-no-results{color:#6b7280}
+:root:not([data-theme="light"]) .ssg-search-footer{border-color:#374151;color:#6b7280}
+:root:not([data-theme="light"]) .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
+}
+[data-theme="dark"] #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
+[data-theme="dark"] #ssg-search-btn:hover{border-color:#4b5563}
+[data-theme="dark"] #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
+[data-theme="dark"] #ssg-search-box{background:#1f2937;color:#f9fafb}
+[data-theme="dark"] #ssg-search-header{border-color:#374151}
+[data-theme="dark"] #ssg-search-input{color:#f9fafb}
+[data-theme="dark"] .ssg-result{color:#f9fafb;border-color:#374151}
+[data-theme="dark"] .ssg-result:hover,[data-theme="dark"] .ssg-result.active{background:#374151}
+[data-theme="dark"] .ssg-result-snippet{color:#9ca3af}
+[data-theme="dark"] .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
+[data-theme="dark"] .ssg-no-results{color:#6b7280}
+[data-theme="dark"] .ssg-search-footer{border-color:#374151;color:#6b7280}
+[data-theme="dark"] .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
+</style>
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Search">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Search</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Search">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search query"/>
+</div>
+<div id="ssg-search-results"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
+</div>
+</div>
+<script>
+(function(){
+var idx=null,overlay=document.getElementById('ssg-search-overlay'),
+input=document.getElementById('ssg-search-input'),
+results=document.getElementById('ssg-search-results'),
+btn=document.getElementById('ssg-search-btn'),active=-1;
+function load(){if(idx)return Promise.resolve();return fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){idx=d.entries||[]}).catch(function(){idx=[]})}
+function open(){load().then(function(){overlay.classList.add('active');input.value='';results.innerHTML='';input.focus();active=-1})}
+function close(){overlay.classList.remove('active');active=-1}
+function highlight(text,q){if(!q)return esc(text);var re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');return esc(text).replace(re,'<mark>$1</mark>')}
+function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function snippet(content,q,len){len=len||150;if(!q)return esc(content.substring(0,len));var i=content.toLowerCase().indexOf(q.toLowerCase());if(i<0)return esc(content.substring(0,len));var s=Math.max(0,i-50),e=Math.min(content.length,i+len);var t=(s>0?'...':'')+content.substring(s,e)+(e<content.length?'...':'');return highlight(t,q)}
+function search(q){if(!idx||!q){results.innerHTML='';return}q=q.trim();if(!q){results.innerHTML='';return}var ql=q.toLowerCase(),hits=[];
+for(var i=0;i<idx.length&&hits.length<20;i++){var e=idx[i],s=0;if(e.title.toLowerCase().indexOf(ql)>=0)s+=10;if(e.content.toLowerCase().indexOf(ql)>=0)s+=5;for(var h=0;h<e.headings.length;h++){if(e.headings[h].toLowerCase().indexOf(ql)>=0){s+=3;break}}if(s>0)hits.push({entry:e,score:s})}
+hits.sort(function(a,b){return b.score-a.score});
+if(!hits.length){results.innerHTML='<div class="ssg-no-results">No results for &ldquo;'+esc(q)+'&rdquo;</div>';return}
+var html='';for(var j=0;j<hits.length;j++){var e=hits[j].entry;html+='<a class="ssg-result" href="'+esc(e.url)+'">'+'<div class="ssg-result-title">'+highlight(e.title,q)+'</div>'+'<div class="ssg-result-snippet">'+snippet(e.content,q)+'</div></a>'}
+results.innerHTML=html;active=-1}
+function nav(dir){var items=results.querySelectorAll('.ssg-result');if(!items.length)return;if(active>=0&&items[active])items[active].classList.remove('active');active+=dir;if(active<0)active=items.length-1;if(active>=items.length)active=0;items[active].classList.add('active');items[active].scrollIntoView({block:'nearest'})}
+btn.addEventListener('click',function(){open()});
+input.addEventListener('input',function(){search(this.value)});
+overlay.addEventListener('click',function(e){if(e.target===overlay)close()});
+document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();if(overlay.classList.contains('active'))close();else open()}
+if(!overlay.classList.contains('active'))return;if(e.key==='Escape')close();if(e.key==='ArrowDown'){e.preventDefault();nav(1)}if(e.key==='ArrowUp'){e.preventDefault();nav(-1)}
+if(e.key==='Enter'){e.preventDefault();var items=results.querySelectorAll('.ssg-result');if(active>=0&&items[active])window.location=items[active].href;else if(items[0])window.location=items[0].href}})
+})();
+</script>
+</div>
+</body>
+</html>

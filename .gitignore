@@ -1,3 +1,16 @@
+# =====================================================================
+# skeletonic.io
+# Notes:
+#   - docs/ IS committed: it's the GitHub Pages publishing root.
+#   - Shokunin SSG cache files are ignored.
+#   - Old Jekyll & Ruby cruft kept ignored from the previous incarnation.
+# =====================================================================
+
+# Shokunin SSG / build artefacts (we don't ignore docs/ — it ships)
+.ssg-cache.json
+build/
+public/
+
 # Logs
 logs
 *.log

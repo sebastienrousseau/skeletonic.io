@@ -1,0 +1,85 @@
+name: Build site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build with Shokunin SSG
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo registry
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: cargo-${{ runner.os }}-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            cargo-${{ runner.os }}-
+
+      - name: Install Shokunin SSG (v0.0.34)
+        run: |
+          cargo install --locked --git https://github.com/sebastienrousseau/shokunin --tag v0.0.34 ssg \
+            || cargo install --locked --version 0.0.34 ssg
+
+      - name: Build site (all locales)
+        run: bash scripts/build-i18n.sh
+
+      - name: Verify no Bootstrap or other CSS framework leaked into the build
+        run: |
+          set -e
+          if grep -RIEi 'bootstrap|tailwind|bulma|foundation\.css|tachyons\.css' docs/; then
+            echo "::error::Foreign CSS framework detected in build output"
+            exit 1
+          fi
+          echo "OK — only skeletonic CSS in build output"
+
+      - name: Lighthouse CI audit
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            docs/index.html
+            docs/components/index.html
+            docs/getting-started/index.html
+          configPath: .github/lighthouse-ci.json
+          uploadArtifacts: true
+
+      - name: Lychee link checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --exclude formspree.io
+            --exclude paypal.com
+            --exclude validator.schema.org
+            docs/**/*.html
+
+      - name: Commit docs/ back to main (push only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          if [ -n "$(git status --porcelain docs/)" ]; then
+            git config user.name  'github-actions[bot]'
+            git config user.email 'github-actions[bot]@users.noreply.github.com'
+            git add docs/
+            git commit -m "build(site): regenerate docs/ via shokunin"
+            git push
+          else
+            echo "No docs/ changes to commit"
+          fi

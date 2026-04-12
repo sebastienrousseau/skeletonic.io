@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "Installera Skeletonic Stylus fran npm eller ett CDN, importera det i din Stylus-build och overskriv variabler pa sekunde",
+  "display": "standalone",
+  "icons": [],
+  "name": "Skeletonic Stylus",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

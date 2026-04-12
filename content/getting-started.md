@@ -1,0 +1,277 @@
+---
+title: "Getting started with Skeletonic Stylus"
+name: "Skeletonic Stylus"
+description: "Install Skeletonic Stylus from npm or a CDN, import it into your Stylus build, and override variables in seconds."
+layout: page
+permalink: https://skeletonic.io/getting-started/
+date: 2026-04-08
+author: Sebastien Rousseau
+theme_color: "hsl(210, 100%, 42%)"
+keywords: "install skeletonic, stylus setup, css cdn, getting started"
+---
+
+## Intro
+
+New to Skeletonic Stylus? In **v1.1.7** it's easier than ever to pick
+just the features you need. Thanks to its tiny footprint (~7.5&nbsp;KB
+gzipped for the core stylesheet), it integrates quickly into any web
+app — no JavaScript framework required, no build step needed if you use
+the CDN.
+
+Ready to install? Every path covered below — pick one.
+
+## 1. Download and install
+
+You can install Skeletonic Stylus via **pnpm**, **npm** or **yarn**, or
+load it straight from a CDN. You can also self-host the distribution
+files locally if you prefer.
+
+### From a package manager (recommended)
+
+```bash
+# pnpm
+pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+
+# npm
+npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+
+# yarn
+yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+```
+
+### From a CDN
+
+If you only need the compiled CSS, drop one of these into your `<head>`:
+
+```html
+<!-- jsDelivr -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  crossorigin="anonymous">
+
+<!-- unpkg -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  crossorigin="anonymous">
+```
+
+For maximum integrity, copy the **SRI hash** from the v1.1.7 release
+notes and add an `integrity="sha384-…"` attribute.
+
+### Alternate CDN locations
+
+| CDN | URL | HTTPS | Combo |
+|---|---|---|---|
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Yes | Yes |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Yes | No |
+
+### Download the GitHub release
+
+Prefer a versioned tarball? Grab the latest release from
+[github.com/sebastienrousseau/skeletonic-stylus/releases](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+and drop the contents of `dist/` straight into your project.
+
+### Clone the GitHub repository
+
+Clone the main repository to get all source files including the build
+scripts:
+
+```bash
+git clone https://github.com/sebastienrousseau/skeletonic-stylus.git
+cd skeletonic-stylus
+pnpm install
+pnpm run build
+```
+
+> **Tip:** sign your commits — the project enforces signed commits in CI.
+> Use `git commit -S -m "..."` (or set `commit.gpgsign = true` in your
+> global git config).
+
+## 2. Use the compiled CSS
+
+The library ships several pre-built bundles under
+`dist/css/` once installed:
+
+| File | Purpose | Size (min/gz) |
+|---|---|---|
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 39.9 KB / 7.5 KB |
+| `animations/skeletonic-animations.min.css` | Optional animations module | ≈213 KB / ≈6.9 KB |
+| `palettes/material/skeletonic-material.min.css` | Material colour palette | ≈17.4 KB |
+| `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility palette | 7.3 KB |
+| `palettes/websafe/skeletonic-websafe.min.css` | Web-safe palette | ≈3.5 KB |
+
+Each module is independent — pick the smallest combination you need.
+
+## 3. Use it from Stylus
+
+If you have a Stylus pipeline already, you can import the source
+modules and let your bundler tree-shake unused parts:
+
+```stylus
+// styles/main.styl
+@import '~@sebastienrousseau/skeletonic-stylus/src/stylus/skeletonic'
+```
+
+Or import only the bits you need:
+
+```stylus
+@import '~@sebastienrousseau/skeletonic-stylus/src/stylus/utilities/variables'
+@import '~@sebastienrousseau/skeletonic-stylus/src/stylus/utilities/mixins'
+@import '~@sebastienrousseau/skeletonic-stylus/src/stylus/elements/buttons'
+@import '~@sebastienrousseau/skeletonic-stylus/src/stylus/components/card'
+```
+
+## 4. Override the brand colour
+
+Skeletonic exposes its design tokens as **CSS custom properties** so you
+can theme it without recompiling Stylus:
+
+```css
+:root {
+  --cl-primary:   hsl(210, 100%, 42%);
+  --cl-secondary: hsl(195, 100%, 33%);
+  --cl-tertiary:  #757c8a;
+}
+```
+
+That's it — every component that uses the primary colour will follow.
+
+## 5. Verify the install
+
+A minimal "did it work?" check:
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+  </head>
+  <body class="container padding-3">
+    <h1>It works.</h1>
+    <a href="#" class="button primary">Hello, world</a>
+  </body>
+</html>
+```
+
+If the heading is sized fluidly and the button has a blue pill shape,
+you're done.
+
+## 6. What's included
+
+Inside the package you'll find every source file, the compiled and
+minified CSS bundles, source maps, and a full Stylus tree organised by
+category:
+
+```text
+@sebastienrousseau/skeletonic-stylus@1.1.7
+├── CHANGELOG.md
+├── LICENSE-APACHE
+├── LICENSE-MIT
+├── README.md
+├── package.json
+├── dist/
+│   └── css/
+│       ├── core/
+│       │   ├── skeletonic.css
+│       │   ├── skeletonic.css.map
+│       │   └── skeletonic.min.css
+│       ├── animations/
+│       │   ├── skeletonic-animations.css
+│       │   └── skeletonic-animations.min.css
+│       └── palettes/
+│           ├── material/skeletonic-material.min.css
+│           ├── tachyons/skeletonic-tachyons.min.css
+│           └── websafe/skeletonic-websafe.min.css
+└── src/
+    └── stylus/
+        ├── animations/      bounce, fade, pulse, shake, vanish, zoom…
+        ├── base/            reset, helpers
+        ├── components/      card, header, navbar, alert
+        ├── configurations/  colors, variables
+        ├── elements/        button, form, table, link, list, code…
+        ├── fonts/           font-face declarations
+        ├── layout/          container, grid, media-queries
+        ├── palettes/        material, tachyons, websafe
+        ├── utilities/       mixins
+        └── skeletonic.styl  ← single import that pulls everything
+```
+
+Every module is independent — pull in only the bundles you need to keep
+your CSS payload as small as possible.
+
+## Frequently asked questions
+
+**How do I install Skeletonic Stylus?**
+Run `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Or load the
+compiled CSS straight from a CDN — no build step required.
+
+**Does it require JavaScript?**
+No. The core stylesheet is pure CSS, with zero runtime cost. Components
+work without a single line of JS.
+
+**Is it WCAG 2.2 ready?**
+Yes. v1.1.7 ships AA-conformant contrast, focus-visible rings,
+skip-link helpers, reduced-motion support and dark mode by default.
+
+**What's the gzipped size?**
+39.9&nbsp;KB minified, **~7.5&nbsp;KB gzipped**, ~6.3&nbsp;KB brotli for
+the full core stylesheet. The 8&nbsp;KB ceiling is enforced in CI.
+
+**What licence does it use?**
+Dual-licensed under MIT and Apache 2.0 — pick whichever your project
+needs. Free for commercial and personal use.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I install Skeletonic Stylus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Or load the compiled CSS straight from a CDN — no build step required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Skeletonic Stylus require JavaScript?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The core stylesheet is pure CSS, with zero runtime cost. Components work without a single line of JavaScript."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Skeletonic Stylus WCAG 2.2 ready?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. v1.1.7 ships AA-conformant contrast, focus-visible rings, skip-link helpers, reduced-motion support and dark mode by default."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the gzipped size of Skeletonic Stylus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "39.9 KB minified, ~7.5 KB gzipped, ~6.3 KB brotli for the full core stylesheet. The 8 KB ceiling is enforced in CI on every commit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What licence does Skeletonic Stylus use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dual-licensed under MIT and Apache 2.0 — pick whichever your project needs. Free for commercial and personal use."
+      }
+    }
+  ]
+}
+</script>
+
+[Browse the components →](/components/)
