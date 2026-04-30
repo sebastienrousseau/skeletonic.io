@@ -58,11 +58,6 @@ jobs:
       - name: Lighthouse CI audit
         uses: treosh/lighthouse-ci-action@v12
         with:
-          staticDistDir: docs
-          urls: |
-            /
-            /components/
-            /getting-started/
           configPath: .github/lighthouse-ci.json
           uploadArtifacts: true
 
