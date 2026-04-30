@@ -13,7 +13,7 @@ keywords: "bezpieczenstwo css, sbom, cyclonedx, npm provenance, openssf scorecar
 
 ## Wydajnosc
 
-- **39,9&nbsp;KB zminifikowany · 7,5&nbsp;KB gzipped · 6,3&nbsp;KB brotli** dla pelnego glownego arkusza stylow.
+- **45,7&nbsp;KB zminifikowany · 8,3&nbsp;KB gzipped · 6,9&nbsp;KB brotli** dla pelnego glownego arkusza stylow.
 - **Zero JavaScript** — czysty Stylus → czysty CSS, brak kosztow uruchomieniowych.
 - **Warstwy kaskadowe** — nadpisania wygrywaja bez `!important`.
 - **Budzet `size-limit` egzekwowany** w CI przy kazdym uaktualnieniu.

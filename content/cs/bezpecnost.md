@@ -13,7 +13,7 @@ keywords: "css bezpecnost, sbom, cyclonedx, npm provenance, openssf scorecard, d
 
 ## Vykon
 
-- **39,9&nbsp;KB minifikovano · 7,5&nbsp;KB gzipped · 6,3&nbsp;KB brotli** pro kompletni zakladni stylesheet.
+- **45,7&nbsp;KB minifikovano · 8,3&nbsp;KB gzipped · 6,9&nbsp;KB brotli** pro kompletni zakladni stylesheet.
 - **Zadny JavaScript** — cisty Stylus → ciste CSS, zadne naklady za behu.
 - **Kaskadove vrstvy** — prepsani vyhravaji bez `!important`.
 - **Rozpocet `size-limit`** vynucovan v CI pri kazdem commitu.

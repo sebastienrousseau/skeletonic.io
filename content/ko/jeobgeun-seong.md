@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, 접근성, focus visible, 스킵 링크, prefers reduced motion, 대비"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 > **Skeletonic Stylus v1.1.7은 WCAG 2.2 준수를 선택적 테마가 아닌 기본 동작으로 제공합니다.** 이 페이지에서는 기본 제공 기능과 더 세밀한 제어를 위해 선택할 수 있는 믹스인을 설명합니다.
 
 <hr class="hr-text" data-content="기본 제공">

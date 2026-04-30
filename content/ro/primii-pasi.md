@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instalare skeletonic, configurare stylus, css cdn, primii pași"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Introducere
 
 Nou cu Skeletonic Stylus? În **v1.1.7** este mai ușor ca niciodată să
 alegi doar funcționalitățile de care ai nevoie. Datorită amprentei
-minuscule (~7,5&nbsp;KB gzipped pentru stylesheet-ul principal), se
+minuscule (8,3&nbsp;KB gzipped pentru stylesheet-ul principal), se
 integrează rapid în orice aplicație web — fără framework JavaScript,
 fără pas de build dacă folosești CDN-ul.
 
@@ -95,7 +100,7 @@ Biblioteca furnizează mai multe bundle-uri pre-compilate sub
 
 | Fișier | Scop | Dimensiune (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elemente + componente + utilitare | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elemente + componente + utilitare | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Modul opțional de animații | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de culori Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta utilitară Tachyons | 7,3 KB |
@@ -208,7 +213,7 @@ Nu. Stylesheet-ul principal este CSS pur, cu zero costuri la runtime. Componente
 Da. v1.1.7 include contrast AA conform, inele focus-visible, helpere skip-link, suport pentru mișcare redusă și mod întunecat implicit.
 
 **Care este dimensiunea gzipped?**
-39,9&nbsp;KB minificat, **~7,5&nbsp;KB gzipped**, ~6,3&nbsp;KB brotli pentru stylesheet-ul principal complet. Limita de 8&nbsp;KB este impusă în CI.
+45,7&nbsp;KB minificat, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli pentru stylesheet-ul principal complet. Limita de 8&nbsp;KB este impusă în CI.
 
 **Ce licență folosește?**
 Licență duală sub MIT și Apache 2.0 — alege pe cea potrivită proiectului tău. Gratuit pentru uz comercial și personal.
@@ -247,7 +252,7 @@ Licență duală sub MIT și Apache 2.0 — alege pe cea potrivită proiectului 
       "name": "Care este dimensiunea gzipped a Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB minificat, ~7,5 KB gzipped, ~6,3 KB brotli pentru stylesheet-ul principal complet. Limita de 8 KB este impusă în CI la fiecare commit."
+        "text": "45,7 KB minificat, 8,3 KB gzipped, 6,9 KB brotli pentru stylesheet-ul principal complet. Limita de 8 KB este impusă în CI la fiecare commit."
       }
     },
     {

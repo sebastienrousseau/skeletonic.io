@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "install skeletonic, stylus setup, css cdn, শুরু করুন"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## ভূমিকা
 
 Skeletonic Stylus-এ নতুন? **v1.1.7**-এ আপনার প্রয়োজনীয় ফিচারগুলো
@@ -96,7 +101,7 @@ pnpm run build
 
 | ফাইল | উদ্দেশ্য | আকার (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 39.9 KB / 7.5 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 45.7 KB / 8.3 KB |
 | `animations/skeletonic-animations.min.css` | ঐচ্ছিক অ্যানিমেশন মডিউল | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Material রঙ প্যালেট | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons ইউটিলিটি প্যালেট | 7.3 KB |
@@ -219,7 +224,7 @@ Stylus ট্রি পাবেন:
 skip-link সহায়ক, reduced-motion সমর্থন এবং ডিফল্টরূপে ডার্ক মোড শিপ করে।
 
 **gzipped আকার কত?**
-39.9&nbsp;KB মিনিফাইড, **~৭.৫&nbsp;KB gzipped**, ~৬.৩&nbsp;KB brotli
+45.7&nbsp;KB মিনিফাইড, **~৭.৫&nbsp;KB gzipped**, ~৬.৩&nbsp;KB brotli
 সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮&nbsp;KB সীমা CI-তে বাধ্যতামূলক।
 
 **কোন লাইসেন্স ব্যবহার করা হয়?**
@@ -261,7 +266,7 @@ MIT এবং Apache 2.0 দ্বৈত লাইসেন্সপ্রাপ
       "name": "Skeletonic Stylus-এর gzipped আকার কত?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.9 KB মিনিফাইড, ~৭.৫ KB gzipped, ~৬.৩ KB brotli সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮ KB সীমা প্রতিটি কমিটে CI-তে বাধ্যতামূলক।"
+        "text": "45.7 KB মিনিফাইড, ~৭.৫ KB gzipped, ~৬.৩ KB brotli সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮ KB সীমা প্রতিটি কমিটে CI-তে বাধ্যতামূলক।"
       }
     },
     {

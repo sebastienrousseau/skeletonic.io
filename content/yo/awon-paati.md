@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "awọn paati skeletonic, awọn bọtini, awọn kaadi, awọn fọọmu, awọn itaniji, awọn aami, akọle, navbar, hamburger css nikan"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Gbogbo apẹẹrẹ ni isalẹ ni a **ṣe pẹlu iwe-aṣa kanna ti a n ṣafihan**.
 Ko si preprocessor. Ko si JavaScript. Ko si awọn igbarale afikun. Daakọ
 apakan eyikeyi sinu faili HTML tuntun ati pe o ṣiṣẹ.
@@ -164,7 +169,7 @@ mọ grid `flex-N` fun awọn odi kaadi ti o dahun.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped.</p>
+      <p>45.7 KB minified, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -186,7 +191,7 @@ mọ grid `flex-N` fun awọn odi kaadi ti o dahun.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Fẹẹrẹfẹ</h3>
-      <p>39.9&nbsp;KB minified, 7.5&nbsp;KB gzipped.</p>
+      <p>45.7&nbsp;KB minified, 8.3&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

@@ -11,10 +11,15 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instalace skeletonic, nastaveni stylus, css cdn, jak zacit"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Uvod
 
 Jste noví ve Skeletonic Stylus? Ve **v1.1.7** je snazsi nez kdy predtim
-vybrat si jen funkce, ktere potrebujete. Diky malemu otisku (~7,5&nbsp;KB
+vybrat si jen funkce, ktere potrebujete. Diky malemu otisku (8,3&nbsp;KB
 gzipped pro zakladni stylesheet) se rychle integruje do libovolne webove
 aplikace — zadny JavaScript framework neni potreba, zadny build krok
 neni nutny, pokud pouzivate CDN.
@@ -97,7 +102,7 @@ Knihovna dodava nekolik predpripravenych svazku v
 
 | Soubor | Ucel | Velikost (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokeny + rozvrzeni + elementy + komponenty + utility | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + tokeny + rozvrzeni + elementy + komponenty + utility | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Volitelny modul animaci | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Barevna paleta Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Utilitni paleta Tachyons | 7,3 KB |
@@ -219,7 +224,7 @@ Ano. v1.1.7 dodava AA kontrast, focus-visible ohraniceni, skip-link
 pomocniky, podporu omezeneho pohybu a tmavy rezim ve vychozim nastaveni.
 
 **Jaka je velikost gzipped?**
-39,9&nbsp;KB minifikovano, **~7,5&nbsp;KB gzipped**, ~6,3&nbsp;KB brotli pro
+45,7&nbsp;KB minifikovano, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli pro
 kompletni zakladni stylesheet. Strop 8&nbsp;KB je vynucovan v CI.
 
 **Jakou licenci pouziva?**
@@ -260,7 +265,7 @@ potrebuje. Zdarma pro komercni i osobni pouziti.
       "name": "Jaka je velikost gzipped u Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB minifikovano, ~7,5 KB gzipped, ~6,3 KB brotli pro kompletni zakladni stylesheet. Strop 8 KB je vynucovan v CI pri kazdem commitu."
+        "text": "45,7 KB minifikovano, 8,3 KB gzipped, 6,9 KB brotli pro kompletni zakladni stylesheet. Strop 8 KB je vynucovan v CI pri kazdem commitu."
       }
     },
     {

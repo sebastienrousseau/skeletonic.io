@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "تثبيت skeletonic, إعداد stylus, css cdn, البدء"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## مقدمة
 
 جديد على Skeletonic Stylus؟ في **الإصدار 1.1.7** أصبح من الأسهل من أي

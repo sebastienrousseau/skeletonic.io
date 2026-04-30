@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "componentes skeletonic, botones, tarjetas, formularios, alertas, insignias, encabezado, navbar, hamburguesa css"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Cada ejemplo a continuacion se **renderiza con la misma hoja de estilos que
 se demuestra**. Sin preprocesador. Sin JavaScript. Sin dependencias
 adicionales. Copia cualquier fragmento en un archivo HTML nuevo y funciona.
@@ -165,7 +170,7 @@ con la cuadricula `flex-N` para muros de tarjetas responsivos.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped.</p>
+      <p>45.7 KB minified, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -187,7 +192,7 @@ con la cuadricula `flex-N` para muros de tarjetas responsivos.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Ligero</h3>
-      <p>39,9&nbsp;KB minificado, 7,5&nbsp;KB gzipped.</p>
+      <p>45,7&nbsp;KB minificado, 8,3&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

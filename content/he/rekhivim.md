@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, התראות, תגיות, כותרת, ניווט hamburger, css only"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 כל דוגמה למטה **מוצגת עם גיליון הסגנונות עצמו**. ללא מעבד מקדים.
 ללא JavaScript. ללא תלויות נוספות. העתיקו כל קטע קוד לקובץ HTML
 ריק והוא עובד.
@@ -163,7 +168,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped.</p>
+      <p>45.7 KB minified, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -185,7 +190,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">קל משקל</h3>
-      <p>39.9&nbsp;KB ממוזער, 7.5&nbsp;KB בדחיסת gzip.</p>
+      <p>45.7&nbsp;KB ממוזער, 8.3&nbsp;KB בדחיסת gzip.</p>
     </div>
   </article>
   <article class="card flex-1">

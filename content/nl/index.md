@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — Toegankelijke CSS, ~7,5 KB gzipped"
+title: "Skeletonic Stylus — Toegankelijke CSS, 8,3 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus is een lichtgewicht, modulaire Stylus CSS-bibliotheek — WCAG 2.2 klaar, met cascade-lagen, ~7,5 KB gzipped — ontworpen om moderne web-UI-ontwikkeling te stroomlijnen."
+description: "Skeletonic Stylus is een lichtgewicht, modulaire Stylus CSS-bibliotheek — WCAG 2.2 klaar, met cascade-lagen, 8,3 KB gzipped — ontworpen om moderne web-UI-ontwikkeling te stroomlijnen."
 layout: index
 permalink: https://skeletonic.io/nl/
 date: 2026-04-08

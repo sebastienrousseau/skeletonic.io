@@ -11,9 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "installare skeletonic, configurazione stylus, css cdn, iniziare"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Introduzione
 
-Nuovo a Skeletonic Stylus? Con la **v1.1.7** e piu facile che mai scegliere solo le funzionalita di cui hai bisogno. Grazie alla sua impronta minima (~7,5&nbsp;KB gzipped per il foglio di stile principale), si integra rapidamente in qualsiasi web app — nessun framework JavaScript richiesto, nessun build step se usi il CDN.
+Nuovo a Skeletonic Stylus? Con la **v1.1.7** e piu facile che mai scegliere solo le funzionalita di cui hai bisogno. Grazie alla sua impronta minima (8,3&nbsp;KB gzipped per il foglio di stile principale), si integra rapidamente in qualsiasi web app — nessun framework JavaScript richiesto, nessun build step se usi il CDN.
 
 Ogni percorso e descritto qui sotto — scegli quello che preferisci.
 
@@ -89,7 +94,7 @@ La libreria distribuisce diversi bundle precompilati sotto
 
 | File | Scopo | Dimensione (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + token + layout + elementi + componenti + utility | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + token + layout + elementi + componenti + utility | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Modulo animazioni opzionale | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Palette colori Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Palette utility Tachyons | 7,3 KB |
@@ -202,7 +207,7 @@ No. Il foglio di stile principale e puro CSS, con costo a runtime pari a zero. I
 Si. La v1.1.7 include contrasto conforme AA, anelli focus-visible, helper skip-link, supporto per il movimento ridotto e modalita scura di default.
 
 **Qual e la dimensione gzipped?**
-39,9&nbsp;KB minificati, **~7,5&nbsp;KB gzipped**, ~6,3&nbsp;KB brotli per il foglio di stile principale completo. Il limite di 8&nbsp;KB e imposto nella CI.
+45,7&nbsp;KB minificati, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli per il foglio di stile principale completo. Il limite di 8&nbsp;KB e imposto nella CI.
 
 **Quale licenza utilizza?**
 Doppia licenza MIT e Apache 2.0 — scegli quella che serve al tuo progetto. Gratuito per uso commerciale e personale.
@@ -241,7 +246,7 @@ Doppia licenza MIT e Apache 2.0 — scegli quella che serve al tuo progetto. Gra
       "name": "Qual e la dimensione gzipped di Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB minificati, ~7,5 KB gzipped, ~6,3 KB brotli per il foglio di stile principale completo. Il limite di 8 KB e imposto nella CI ad ogni commit."
+        "text": "45,7 KB minificati, 8,3 KB gzipped, 6,9 KB brotli per il foglio di stile principale completo. Il limite di 8 KB e imposto nella CI ad ogni commit."
       }
     },
     {

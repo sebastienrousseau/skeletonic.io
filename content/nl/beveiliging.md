@@ -13,7 +13,7 @@ keywords: "css beveiliging, sbom, cyclonedx, npm herkomst, openssf scorecard, to
 
 ## Prestaties
 
-- **39,9&nbsp;KB geminificeerd · 7,5&nbsp;KB gzipped · 6,3&nbsp;KB brotli** voor het volledige kernstylesheet.
+- **45,7&nbsp;KB geminificeerd · 8,3&nbsp;KB gzipped · 6,9&nbsp;KB brotli** voor het volledige kernstylesheet.
 - **Geen JavaScript** — pure Stylus → pure CSS, geen runtime-kosten.
 - **Cascade-layered** — overschrijvingen winnen zonder `!important`.
 - **`size-limit`-budget afgedwongen** in CI bij elke commit.

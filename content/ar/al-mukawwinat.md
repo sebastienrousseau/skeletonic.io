@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تنبيهات, شارات, ترويسة, قائمة تنقل, hamburger css فقط"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 كل مثال أدناه **معروض بورقة الأنماط نفسها التي يتم عرضها**. بدون
 معالج أولي. بدون JavaScript. بدون تبعيات إضافية. انسخ أي مقتطف
 في ملف HTML جديد وسيعمل.
@@ -162,7 +167,7 @@ keywords: "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تن
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped.</p>
+      <p>45.7 KB minified, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

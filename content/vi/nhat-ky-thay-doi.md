@@ -10,6 +10,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "nhat ky thay doi skeletonic, ghi chu phat hanh, v1.1.7, semver"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## v1.1.7 — 2026-04 (hien tai)
 
 Dot ra soat "san sang phat hanh": tro nang, chuoi cung ung, ve sinh kho.

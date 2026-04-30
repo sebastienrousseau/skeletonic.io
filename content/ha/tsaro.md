@@ -13,7 +13,7 @@ keywords: "tsaron css, sbom, cyclonedx, tabbacin npm, openssf scorecard, sarkar 
 
 ## Aiki
 
-- **39.9&nbsp;KB da aka ƙaranta · 7.5&nbsp;KB gzipped · 6.3&nbsp;KB brotli** don dukan stylesheet na tushe.
+- **45.7&nbsp;KB da aka ƙaranta · 8.3&nbsp;KB gzipped · 6.9&nbsp;KB brotli** don dukan stylesheet na tushe.
 - **Babu JavaScript** — Stylus tsantsa → CSS tsantsa, babu kuɗin lokacin aiki.
 - **Cascade-layered** — soke suna cin nasara ba tare da `!important` ba.
 - **An tilasta kasafin `size-limit`** a CI a kan kowanne commit.

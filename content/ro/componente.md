@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "componente skeletonic, butoane, carduri, formulare, alerte, badge-uri, header, navbar, hamburger css"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Fiecare exemplu de mai jos este **randat cu stylesheet-ul demonstrat**.
 Fără preprocesor. Fără JavaScript. Fără dependențe suplimentare. Copiază
 orice fragment într-un fișier HTML gol și funcționează.
@@ -160,7 +165,7 @@ Combină-l cu grid-ul `flex-N` pentru ziduri de carduri responsive.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Ușoară</h3>
-      <p>39,9 KB minificat, 7,5 KB gzipped.</p>
+      <p>45,7 KB minificat, 8,3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -182,7 +187,7 @@ Combină-l cu grid-ul `flex-N` pentru ziduri de carduri responsive.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Ușoară</h3>
-      <p>39,9&nbsp;KB minificat, 7,5&nbsp;KB gzipped.</p>
+      <p>45,7&nbsp;KB minificat, 8,3&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

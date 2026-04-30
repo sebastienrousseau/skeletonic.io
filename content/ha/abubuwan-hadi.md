@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "abubuwan hadi na skeletonic, maballin, katunan, sifofi, faɗakarwa, alamomi, kanun shafi, navbar, css only hamburger"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Ana nuna kowane misali da ke ƙasa **da stylesheet ɗin da ake nunawa**. Babu preprocessor. Babu JavaScript. Babu ƙarin abubuwan dogaro. Kwafa kowane ɓangare zuwa sabon fayil na HTML kuma ya yi aiki.
 
 <nav aria-label="A wannan shafi">
@@ -146,7 +151,7 @@ Kwantenan da ke da iyaka da padding don raka'a guda mai jituwa. Haɗa shi da gri
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Mai saukin nauyi</h3>
-      <p>39.9 KB da aka ƙaranta, 7.5 KB gzipped.</p>
+      <p>45.7 KB da aka ƙaranta, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -168,7 +173,7 @@ Kwantenan da ke da iyaka da padding don raka'a guda mai jituwa. Haɗa shi da gri
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Mai saukin nauyi</h3>
-      <p>39.9&nbsp;KB da aka ƙaranta, 7.5&nbsp;KB gzipped.</p>
+      <p>45.7&nbsp;KB da aka ƙaranta, 8.3&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

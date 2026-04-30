@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, despre, stylus, framework css, filosofie"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 <p class="badges">
   <img alt="Stele GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Descărcări lunare" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="Versiune npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Dimensiune bundle" src="https://img.shields.io/badge/gzipped-7.5%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Dimensiune bundle" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Licență" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -38,7 +43,7 @@ Născută în 2018 ca experiment personal în **livrarea unui volum minim de CSS
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Pană" width="64" height="64" loading="lazy" decoding="async">
     <h3>Ușoară</h3>
-    <p>~7,5&nbsp;KB gzipped. Paginile se încarcă mai repede. Toate blocurile esențiale sunt incluse.</p>
+    <p>8,3&nbsp;KB gzipped. Paginile se încarcă mai repede. Toate blocurile esențiale sunt incluse.</p>
   </article>
 
   <article class="feature-card">
@@ -72,7 +77,7 @@ Un singur stylesheet auto-găzduit acoperă tipografia, butoanele, formularele, 
 
 | Funcționalitate | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Dimensiune gzipped | **~7,5&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| Dimensiune gzipped | **8,3&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | Conformitate WCAG 2.2 | **Integrată** | Parțial | Manual | Parțial |
 | Cascade layers | **Da (`@layer`)** | Nu | Nu | Nu |
 | Mod întunecat | **`prefers-color-scheme`** | Opt-in | Bazat pe clase | Opt-in |

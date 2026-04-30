@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic componenten, knoppen, kaarten, formulieren, meldingen, badges, header, navbar, css only hamburger"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Elk voorbeeld hieronder wordt **weergegeven met hetzelfde stylesheet dat
 wordt gedemonstreerd**. Geen preprocessor. Geen JavaScript. Geen extra
 afhankelijkheden. Kopieer elk fragment in een nieuw HTML-bestand en het werkt.
@@ -165,7 +170,7 @@ met het `flex-N`-grid voor responsieve kaartwanden.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lichtgewicht</h3>
-      <p>39,9 KB geminificeerd, 7,5 KB gzipped.</p>
+      <p>45,7 KB geminificeerd, 8,3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -187,7 +192,7 @@ met het `flex-N`-grid voor responsieve kaartwanden.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lichtgewicht</h3>
-      <p>39,9&nbsp;KB geminificeerd, 7,5&nbsp;KB gzipped.</p>
+      <p>45,7&nbsp;KB geminificeerd, 8,3&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

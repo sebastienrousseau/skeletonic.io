@@ -11,9 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instal skeletonic, setup stylus, css cdn, memulai"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Pendahuluan
 
-Baru mengenal Skeletonic Stylus? Di **v1.1.7** lebih mudah dari sebelumnya untuk memilih fitur yang Anda butuhkan. Berkat jejak yang kecil (~7,5&nbsp;KB gzipped untuk stylesheet inti), ia terintegrasi dengan cepat ke dalam aplikasi web apa pun — tidak perlu framework JavaScript, tidak perlu langkah build jika Anda menggunakan CDN.
+Baru mengenal Skeletonic Stylus? Di **v1.1.7** lebih mudah dari sebelumnya untuk memilih fitur yang Anda butuhkan. Berkat jejak yang kecil (8,3&nbsp;KB gzipped untuk stylesheet inti), ia terintegrasi dengan cepat ke dalam aplikasi web apa pun — tidak perlu framework JavaScript, tidak perlu langkah build jika Anda menggunakan CDN.
 
 Setiap jalur dibahas di bawah — pilih yang sesuai.
 
@@ -87,7 +92,7 @@ Pustaka ini menyediakan beberapa bundle yang sudah dibuat sebelumnya di bawah `d
 
 | File | Tujuan | Ukuran (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + token + layout + elemen + komponen + utilitas | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + token + layout + elemen + komponen + utilitas | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Modul animasi opsional | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Palet warna Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Palet utilitas Tachyons | 7,3 KB |
@@ -200,7 +205,7 @@ Tidak. Stylesheet inti adalah CSS murni, tanpa biaya runtime. Komponen bekerja t
 Ya. v1.1.7 menyertakan kontras sesuai AA, cincin focus-visible, pembantu skip-link, dukungan reduced-motion, dan mode gelap secara bawaan.
 
 **Berapa ukuran gzipped-nya?**
-39,9&nbsp;KB diminifikasi, **~7,5&nbsp;KB gzipped**, ~6,3&nbsp;KB brotli untuk stylesheet inti lengkap. Batas 8&nbsp;KB ditegakkan di CI.
+45,7&nbsp;KB diminifikasi, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli untuk stylesheet inti lengkap. Batas 8&nbsp;KB ditegakkan di CI.
 
 **Lisensi apa yang digunakan?**
 Berlisensi ganda di bawah MIT dan Apache 2.0 — pilih yang sesuai kebutuhan proyek Anda. Gratis untuk penggunaan komersial dan pribadi.
@@ -239,7 +244,7 @@ Berlisensi ganda di bawah MIT dan Apache 2.0 — pilih yang sesuai kebutuhan pro
       "name": "Berapa ukuran gzipped Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB diminifikasi, ~7,5 KB gzipped, ~6,3 KB brotli untuk stylesheet inti lengkap. Batas 8 KB ditegakkan di CI pada setiap commit."
+        "text": "45,7 KB diminifikasi, 8,3 KB gzipped, 6,9 KB brotli untuk stylesheet inti lengkap. Batas 8 KB ditegakkan di CI pada setiap commit."
       }
     },
     {

@@ -10,6 +10,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic 변경 이력, 릴리스 노트, v1.1.7, 시맨틱 버전"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## v1.1.7 — 2026-04 (현재)
 
 "릴리스 준비" 패스: 접근성, 공급망, 저장소 정리.

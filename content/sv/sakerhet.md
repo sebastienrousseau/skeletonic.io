@@ -13,7 +13,7 @@ keywords: "css sakerhet, sbom, cyclonedx, npm proveniens, openssf scorecard, lev
 
 ## Prestanda
 
-- **39,9&nbsp;KB minifierad · 7,5&nbsp;KB gzippad · 6,3&nbsp;KB brotli** for det fullstandiga karn-stylesheetet.
+- **45,7&nbsp;KB minifierad · 8,3&nbsp;KB gzippad · 6,9&nbsp;KB brotli** for det fullstandiga karn-stylesheetet.
 - **Noll JavaScript** — ren Stylus → ren CSS, ingen runtimekostnad.
 - **Cascade-layered** — overskrivningar vinner utan `!important`.
 - **`size-limit`-budget tillampad** i CI vid varje commit.

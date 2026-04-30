@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — Barrierefreies CSS, ~7,5 KB gzipped"
+title: "Skeletonic Stylus — Barrierefreies CSS, 8,3 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus ist eine leichtgewichtige, modulare Stylus-CSS-Bibliothek — WCAG 2.2 konform, mit Cascade Layers, ~7,5 KB gzipped — entwickelt für moderne Web-UI-Entwicklung."
+description: "Skeletonic Stylus ist eine leichtgewichtige, modulare Stylus-CSS-Bibliothek — WCAG 2.2 konform, mit Cascade Layers, 8,3 KB gzipped — entwickelt für moderne Web-UI-Entwicklung."
 layout: index
 permalink: https://skeletonic.io/de/
 date: 2026-04-08

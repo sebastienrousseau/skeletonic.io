@@ -10,6 +10,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic परिवर्तन लॉग, रिलीज़ नोट्स, v1.1.7, semver"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## v1.1.7 — 2026-04 (वर्तमान)
 
 "रिलीज़-तैयारी" पास: a11y, आपूर्ति श्रृंखला, रिपॉज़िटरी स्वच्छता।

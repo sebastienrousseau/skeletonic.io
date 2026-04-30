@@ -11,10 +11,15 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "installera skeletonic, stylus installation, css cdn, kom igang"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Introduktion
 
 Ny med Skeletonic Stylus? I **v1.1.7** ar det enklare an nagonsin att valja
-just de funktioner du behover. Tack vare det lilla fotavtrycket (~7,5&nbsp;KB
+just de funktioner du behover. Tack vare det lilla fotavtrycket (8,3&nbsp;KB
 gzippat for karn-stylesheetet) integreras det snabbt i vilken webbapp som
 helst — inget JavaScript-ramverk kravs, inget byggsteg behov om du
 anvander CDN.
@@ -96,7 +101,7 @@ Biblioteket levererar flera forbyggda paket under
 
 | Fil | Syfte | Storlek (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + element + komponenter + utilities | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + element + komponenter + utilities | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Valfri animationsmodul | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Material-fargpalett | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility-palett | 7,3 KB |
@@ -218,7 +223,7 @@ Ja. v1.1.7 levererar AA-uppfyllande kontrast, focus-visible-ringar,
 skip-link-hjalp, stod for reducerad rorelse och morkt lage som standard.
 
 **Vad ar den gzippade storleken?**
-39,9&nbsp;KB minifierad, **~7,5&nbsp;KB gzippad**, ~6,3&nbsp;KB brotli for
+45,7&nbsp;KB minifierad, **8,3&nbsp;KB gzippad**, 6,9&nbsp;KB brotli for
 det fullstandiga karn-stylesheetet. Taket pa 8&nbsp;KB tillapas i CI.
 
 **Vilken licens anvands?**
@@ -259,7 +264,7 @@ projekt. Gratis for kommersiellt och personligt bruk.
       "name": "Vad ar den gzippade storleken pa Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB minifierad, ~7,5 KB gzippad, ~6,3 KB brotli for det fullstandiga karn-stylesheetet. Taket pa 8 KB tillapas i CI vid varje commit."
+        "text": "45,7 KB minifierad, 8,3 KB gzippad, 6,9 KB brotli for det fullstandiga karn-stylesheetet. Taket pa 8 KB tillapas i CI vid varje commit."
       }
     },
     {

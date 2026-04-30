@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "thanh phan skeletonic, nut bam, the, bieu mau, canh bao, huy hieu, header, navbar, hamburger css"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Moi vi du ben duoi duoc **hien thi voi chinh stylesheet dang duoc
 gioi thieu**. Khong preprocessor. Khong JavaScript. Khong phu thuoc bo
 sung. Sao chep bat ky doan ma nao vao tap HTML moi va no hoat dong.
@@ -163,7 +168,7 @@ Container co vien va dem cho mot don vi nhat quan. Ket hop voi luoi
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Nhe</h3>
-      <p>39,9 KB nen, 7,5 KB gzip.</p>
+      <p>45,7 KB nen, 8,3 KB gzip.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -185,7 +190,7 @@ Container co vien va dem cho mot don vi nhat quan. Ket hop voi luoi
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Nhe</h3>
-      <p>39,9&nbsp;KB nen, 7,5&nbsp;KB gzip.</p>
+      <p>45,7&nbsp;KB nen, 8,3&nbsp;KB gzip.</p>
     </div>
   </article>
   <article class="card flex-1">

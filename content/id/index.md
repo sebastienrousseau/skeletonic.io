@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — CSS Aksesibel, ~7,5 KB gzipped"
+title: "Skeletonic Stylus — CSS Aksesibel, 8,3 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus adalah pustaka CSS Stylus yang ringan dan modular — siap WCAG 2.2, cascade-layered, ~7,5 KB gzipped — dirancang untuk mempercepat pengembangan UI web modern."
+description: "Skeletonic Stylus adalah pustaka CSS Stylus yang ringan dan modular — siap WCAG 2.2, cascade-layered, 8,3 KB gzipped — dirancang untuk mempercepat pengembangan UI web modern."
 layout: index
 permalink: https://skeletonic.io/id/
 date: 2026-04-08

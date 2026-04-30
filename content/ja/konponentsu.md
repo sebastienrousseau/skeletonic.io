@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic コンポーネント, ボタン, カード, フォーム, アラート, バッジ, ヘッダー, ナビバー, css ハンバーガー"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 以下のすべてのサンプルは、**デモ対象のスタイルシートそのもの** でレンダリングされています。プリプロセッサ不要。JavaScript 不要。追加の依存関係不要。どのスニペットも新しい HTML ファイルにコピーするだけで動作します。
 
 <nav aria-label="このページの内容">
@@ -146,7 +151,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">軽量</h3>
-      <p>ミニファイ済み 39.9 KB、gzip圧縮 7.5 KB。</p>
+      <p>ミニファイ済み 45.7 KB、gzip圧縮 8.3 KB。</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -168,7 +173,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">軽量</h3>
-      <p>ミニファイ済み 39.9&nbsp;KB、gzip圧縮 7.5&nbsp;KB。</p>
+      <p>ミニファイ済み 45.7&nbsp;KB、gzip圧縮 8.3&nbsp;KB。</p>
     </div>
   </article>
   <article class="card flex-1">

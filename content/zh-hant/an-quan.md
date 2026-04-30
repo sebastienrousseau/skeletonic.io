@@ -13,7 +13,7 @@ keywords: "css 安全, sbom, cyclonedx, npm provenance, openssf scorecard, 供�
 
 ## 效能
 
-- **壓縮後 39.9&nbsp;KB · gzip 後 7.5&nbsp;KB · brotli 後 6.3&nbsp;KB**（完整核心樣式表）。
+- **壓縮後 45.7&nbsp;KB · gzip 後 8.3&nbsp;KB · brotli 後 6.9&nbsp;KB**（完整核心樣式表）。
 - **零 JavaScript** — 純 Stylus → 純 CSS，零執行時間成本。
 - **級聯層架構** — 覆寫無需 `!important` 即可生效。
 - **`size-limit` 預算** 在 CI 每次提交時強制執行。

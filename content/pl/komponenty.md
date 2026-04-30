@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "komponenty skeletonic, przyciski, karty, formularze, alerty, odznaki, naglowek, nawigacja, hamburger css"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Kazdy przyklad ponizej jest **renderowany z tym samym arkuszem stylow, ktory jest prezentowany**. Bez preprocesora. Bez JavaScript. Bez dodatkowych zaleznosci. Skopiuj dowolny fragment do nowego pliku HTML i zadziala.
 
 <nav aria-label="Na tej stronie">
@@ -155,7 +160,7 @@ Obramowany, wypelniony kontener dla pojedynczej spojnej jednostki. Polacz z siat
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lekki</h3>
-      <p>39,9 KB zminifikowany, 7,5 KB gzipped.</p>
+      <p>45,7 KB zminifikowany, 8,3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -177,7 +182,7 @@ Obramowany, wypelniony kontener dla pojedynczej spojnej jednostki. Polacz z siat
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lekki</h3>
-      <p>39,9&nbsp;KB zminifikowany, 7,5&nbsp;KB gzipped.</p>
+      <p>45,7&nbsp;KB zminifikowany, 8,3&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

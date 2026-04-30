@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic kurulum, stylus ayarlama, css cdn, baslarken"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Giris
 
 Skeletonic Stylus'ta yeni misiniz? **v1.1.7** ile ihtiyaciniz olan
 ozellikleri secmek her zamankinden daha kolay. Kucuk ayak izi sayesinde
-(cekirdek stil sayfasi icin ~7,5&nbsp;KB gzipped), herhangi bir web
+(cekirdek stil sayfasi icin 8,3&nbsp;KB gzipped), herhangi bir web
 uygulamasina hizla entegre olur — JavaScript framework gerektirmez,
 CDN kullaniyorsaniz derleme adimi gerekmez.
 
@@ -98,7 +103,7 @@ derlenmis paket sunar:
 
 | Dosya | Amac | Boyut (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + token'lar + duzen + ogeler + bilesenler + yardimcilar | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + token'lar + duzen + ogeler + bilesenler + yardimcilar | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Istege bagli animasyonlar modulu | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Material renk paleti | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons yardimci paleti | 7,3 KB |
@@ -221,7 +226,7 @@ baglantisi yardimcilari, azaltilmis hareket destegi ve varsayilan
 karanlik mod ile gelir.
 
 **Gzipped boyutu nedir?**
-39,9&nbsp;KB kucultulmus, **~7,5&nbsp;KB gzipped**, ~6,3&nbsp;KB brotli
+45,7&nbsp;KB kucultulmus, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli
 tam cekirdek stil sayfasi icin. 8&nbsp;KB tavani CI'da zorunlu kilinir.
 
 **Hangi lisansi kullaniyor?**
@@ -262,7 +267,7 @@ ve kisisel kullanim icin ucretsiz.
       "name": "Skeletonic Stylus'un gzipped boyutu nedir?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB kucultulmus, ~7,5 KB gzipped, ~6,3 KB brotli tam cekirdek stil sayfasi icin. 8 KB tavani her commit'te CI'da zorunlu kilinir."
+        "text": "45,7 KB kucultulmus, 8,3 KB gzipped, 6,9 KB brotli tam cekirdek stil sayfasi icin. 8 KB tavani her commit'te CI'da zorunlu kilinir."
       }
     },
     {

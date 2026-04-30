@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "встановити skeletonic, налаштування stylus, css cdn, початок роботи"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Вступ
 
 Вперше знайомитесь зі Skeletonic Stylus? У **v1.1.7** як ніколи просто
 обрати лише потрібні вам функції. Завдяки мініатюрному розміру
-(~7,5&nbsp;КБ gzip для основної таблиці стилів) бібліотека швидко
+(8,3&nbsp;КБ gzip для основної таблиці стилів) бібліотека швидко
 інтегрується в будь-який веб-додаток — без JavaScript-фреймворку, без
 кроку збірки, якщо ви використовуєте CDN.
 
@@ -97,7 +102,7 @@ pnpm run build
 
 | Файл | Призначення | Розмір (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Скидання + токени + макет + елементи + компоненти + утиліти | 39,9 КБ / 7,5 КБ |
+| `core/skeletonic.min.css` | Скидання + токени + макет + елементи + компоненти + утиліти | 45,7 КБ / 8,3 КБ |
 | `animations/skeletonic-animations.min.css` | Опціональний модуль анімацій | ≈18 КБ / ≈4 КБ |
 | `palettes/material/skeletonic-material.min.css` | Кольорова палітра Material | ≈8 КБ |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Утилітарна палітра Tachyons | 7,3 КБ |
@@ -222,7 +227,7 @@ skip-link хелперами, підтримкою зменшення руху �
 за замовчуванням.
 
 **Який розмір gzip?**
-39,9&nbsp;КБ мініфіковано, **~7,5&nbsp;КБ gzip**, ~6,3&nbsp;КБ brotli
+45,7&nbsp;КБ мініфіковано, **8,3&nbsp;КБ gzip**, 6,9&nbsp;КБ brotli
 для повної основної таблиці стилів. Обмеження 8&nbsp;КБ контролюється
 в CI.
 
@@ -264,7 +269,7 @@ skip-link хелперами, підтримкою зменшення руху �
       "name": "Який розмір Skeletonic Stylus у gzip?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 КБ мініфіковано, ~7,5 КБ gzip, ~6,3 КБ brotli для повної основної таблиці стилів. Обмеження 8 КБ контролюється в CI при кожному коміті."
+        "text": "45,7 КБ мініфіковано, 8,3 КБ gzip, 6,9 КБ brotli для повної основної таблиці стилів. Обмеження 8 КБ контролюється в CI при кожному коміті."
       }
     },
     {

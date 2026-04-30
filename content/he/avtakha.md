@@ -13,7 +13,7 @@ keywords: "אבטחת css, sbom, cyclonedx, מקוריות npm, openssf scorecar
 
 ## ביצועים
 
-- **39.9&nbsp;KB ממוזער · 7.5&nbsp;KB בדחיסת gzip · 6.3&nbsp;KB brotli** עבור גיליון הסגנונות הליבתי המלא.
+- **45.7&nbsp;KB ממוזער · 8.3&nbsp;KB בדחיסת gzip · 6.9&nbsp;KB brotli** עבור גיליון הסגנונות הליבתי המלא.
 - **אפס JavaScript** — Stylus טהור &larr; CSS טהור, ללא עלות ריצה.
 - **מאורגן בשכבות קסקייד** — דריסות מנצחות ללא `!important`.
 - **תקציבי `size-limit`** נאכפים ב-CI בכל commit.

@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "cai dat skeletonic, thiet lap stylus, css cdn, bat dau"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Gioi thieu
 
 Moi lam quen voi Skeletonic Stylus? Trong **v1.1.7** viec chon dung
 nhung tinh nang ban can de dang hon bao gio het. Nho dung luong nho
-(~7,5&nbsp;KB gzip cho stylesheet chinh), no tich hop nhanh chong vao
+(8,3&nbsp;KB gzip cho stylesheet chinh), no tich hop nhanh chong vao
 bat ky ung dung web nao — khong can JavaScript framework, khong can
 buoc build neu ban su dung CDN.
 
@@ -96,7 +101,7 @@ Thu vien cung cap mot so goi CSS tien tao trong
 
 | Tap | Muc dich | Kich thuoc (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + token + layout + phan tu + thanh phan + tien ich | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + token + layout + phan tu + thanh phan + tien ich | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Mo-dun hieu ung dong tuy chon | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Bang mau Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Bang mau tien ich Tachyons | 7,3 KB |
@@ -217,7 +222,7 @@ Co. v1.1.7 cung cap do tuong phan tuan thu AA, vong focus-visible,
 tro giup skip-link, ho tro giam chuyen dong va che do toi mac dinh.
 
 **Kich thuoc gzip la bao nhieu?**
-39,9&nbsp;KB nen, **~7,5&nbsp;KB gzip**, ~6,3&nbsp;KB brotli cho
+45,7&nbsp;KB nen, **8,3&nbsp;KB gzip**, 6,9&nbsp;KB brotli cho
 stylesheet chinh day du. Gioi han 8&nbsp;KB duoc thuc thi trong CI.
 
 **Su dung giay phep nao?**
@@ -258,7 +263,7 @@ cua ban. Mien phi cho ca muc dich thuong mai va ca nhan.
       "name": "Kich thuoc gzip cua Skeletonic Stylus la bao nhieu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB nen, ~7,5 KB gzip, ~6,3 KB brotli cho stylesheet chinh day du. Gioi han 8 KB duoc thuc thi trong CI moi commit."
+        "text": "45,7 KB nen, 8,3 KB gzip, 6,9 KB brotli cho stylesheet chinh day du. Gioi han 8 KB duoc thuc thi trong CI moi commit."
       }
     },
     {

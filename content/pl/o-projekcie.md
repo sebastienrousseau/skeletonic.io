@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, o projekcie, stylus, framework css, filozofia"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 <p class="badges">
   <img alt="Gwiazdki GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Pobrania miesiecznie" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="Wersja npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Rozmiar paczki" src="https://img.shields.io/badge/gzipped-7.5%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Rozmiar paczki" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Licencja" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -38,7 +43,7 @@ Powstala w 2018 roku jako osobisty eksperyment w **dostarczaniu mniej CSS** — 
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Pioro" width="64" height="64" loading="lazy" decoding="async">
     <h3>Lekki</h3>
-    <p>~7,5&nbsp;KB gzipped. Strony laduja sie szybciej. Wszystkie niezbedne bloki konstrukcyjne pozostaja na miejscu.</p>
+    <p>8,3&nbsp;KB gzipped. Strony laduja sie szybciej. Wszystkie niezbedne bloki konstrukcyjne pozostaja na miejscu.</p>
   </article>
 
   <article class="feature-card">
@@ -72,7 +77,7 @@ Jeden, samodzielnie hostowany arkusz stylow obejmuje typografie, przyciski, form
 
 | Funkcja | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Rozmiar gzipped | **~7,5&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| Rozmiar gzipped | **8,3&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | Zgodnosc z WCAG 2.2 | **Wbudowana** | Czesciowa | Reczna | Czesciowa |
 | Warstwy kaskadowe | **Tak (`@layer`)** | Nie | Nie | Nie |
 | Tryb ciemny | **`prefers-color-scheme`** | Opt-in | Na bazie klas | Opt-in |

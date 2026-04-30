@@ -13,7 +13,7 @@ keywords: "css security, sbom, cyclonedx, npm provenance, openssf scorecard, sup
 
 ## Performance
 
-- **39.9&nbsp;KB minified · 7.5&nbsp;KB gzipped · 6.3&nbsp;KB brotli** para sa buong core stylesheet.
+- **45.7&nbsp;KB minified · 8.3&nbsp;KB gzipped · 6.9&nbsp;KB brotli** para sa buong core stylesheet.
 - **Walang JavaScript** — purong Stylus → purong CSS, walang runtime cost.
 - **Cascade-layered** — nananalo ang mga override nang walang `!important`.
 - **`size-limit` budget na ipinatutupad** sa CI sa bawat commit.

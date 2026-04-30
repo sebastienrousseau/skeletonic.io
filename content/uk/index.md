@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — Доступний CSS, ~7,5 КБ gzip"
+title: "Skeletonic Stylus — Доступний CSS, 8,3 КБ gzip"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus — це легка, модульна бібліотека CSS на базі Stylus. Відповідає WCAG 2.2, підтримує каскадні шари, ~7,5 КБ gzip — створена для прискорення розробки сучасних веб-інтерфейсів."
+description: "Skeletonic Stylus — це легка, модульна бібліотека CSS на базі Stylus. Відповідає WCAG 2.2, підтримує каскадні шари, 8,3 КБ gzip — створена для прискорення розробки сучасних веб-інтерфейсів."
 layout: index
 language: uk
 permalink: https://skeletonic.io/uk/

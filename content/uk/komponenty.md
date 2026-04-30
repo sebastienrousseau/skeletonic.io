@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "компоненти skeletonic, кнопки, картки, форми, сповіщення, значки, заголовок, навігація, css-only гамбургер"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Кожен приклад нижче **відрендерений тією самою таблицею стилів, що
 демонструється**. Без препроцесора. Без JavaScript. Без додаткових
 залежностей. Скопіюйте будь-який фрагмент у свіжий HTML-файл — і він
@@ -166,7 +171,7 @@ keywords: "компоненти skeletonic, кнопки, картки, форм
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped.</p>
+      <p>45.7 KB minified, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -188,7 +193,7 @@ keywords: "компоненти skeletonic, кнопки, картки, форм
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Легкість</h3>
-      <p>39,9&nbsp;КБ мініфіковано, 7,5&nbsp;КБ gzip.</p>
+      <p>45,7&nbsp;КБ мініфіковано, 8,3&nbsp;КБ gzip.</p>
     </div>
   </article>
   <article class="card flex-1">

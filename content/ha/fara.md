@@ -11,9 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "shigar da skeletonic, saita stylus, css cdn, fara"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Gabatarwa
 
-Sabon zuwa Skeletonic Stylus? A cikin **v1.1.7** ya fi sauƙi fiye da kowane lokaci don zaɓar abubuwan da kuke buƙata kawai. Godiya ga ƙaramin sawun sa (~7.5&nbsp;KB gzipped don stylesheet na tushe), yana haɗuwa da sauri cikin kowace manhajan yanar gizo — babu buƙatar tsarin JavaScript, babu buƙatar matakin gini idan kuna amfani da CDN.
+Sabon zuwa Skeletonic Stylus? A cikin **v1.1.7** ya fi sauƙi fiye da kowane lokaci don zaɓar abubuwan da kuke buƙata kawai. Godiya ga ƙaramin sawun sa (8.3&nbsp;KB gzipped don stylesheet na tushe), yana haɗuwa da sauri cikin kowace manhajan yanar gizo — babu buƙatar tsarin JavaScript, babu buƙatar matakin gini idan kuna amfani da CDN.
 
 Kowace hanya an bayyana ta a ƙasa — zaɓi wadda ta dace da ku.
 
@@ -87,7 +92,7 @@ Dakin karatu yana aika fakiti da yawa da aka riga aka gina a ƙarƙashin `dist/c
 
 | Fayil | Amfani | Girma (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 39.9 KB / 7.5 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 45.7 KB / 8.3 KB |
 | `animations/skeletonic-animations.min.css` | Ƙarin module na motsin rai | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Launukan Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Launukan Tachyons | 7.3 KB |
@@ -200,7 +205,7 @@ A'a. Stylesheet na tushe CSS ce tsantsa, babu kuɗin lokacin aiki. Abubuwan hadi
 Eh. v1.1.7 yana aika bambancin AA, zoben focus-visible, taimakon skip-link, tallafin rage motsi da yanayin dare ta tsoho.
 
 **Mene ne girman gzipped?**
-39.9&nbsp;KB da aka ƙaranta, **~7.5&nbsp;KB gzipped**, ~6.3&nbsp;KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8&nbsp;KB a CI.
+45.7&nbsp;KB da aka ƙaranta, **8.3&nbsp;KB gzipped**, 6.9&nbsp;KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8&nbsp;KB a CI.
 
 **Wane lasisi yake amfani da shi?**
 An ba da lasisin biyu a ƙarƙashin MIT da Apache 2.0 — zaɓi wanda aikin ku ke buƙata. Kyauta don amfanin kasuwanci da na sirri.
@@ -239,7 +244,7 @@ An ba da lasisin biyu a ƙarƙashin MIT da Apache 2.0 — zaɓi wanda aikin ku k
       "name": "Mene ne girman gzipped na Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.9 KB da aka ƙaranta, ~7.5 KB gzipped, ~6.3 KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8 KB a CI a kan kowanne commit."
+        "text": "45.7 KB da aka ƙaranta, 8.3 KB gzipped, 6.9 KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8 KB a CI a kan kowanne commit."
       }
     },
     {

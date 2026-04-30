@@ -13,7 +13,7 @@ keywords: "keamanan css, sbom, cyclonedx, provenance npm, openssf scorecard, ran
 
 ## Performa
 
-- **39,9&nbsp;KB diminifikasi · 7,5&nbsp;KB gzipped · 6,3&nbsp;KB brotli** untuk stylesheet inti lengkap.
+- **45,7&nbsp;KB diminifikasi · 8,3&nbsp;KB gzipped · 6,9&nbsp;KB brotli** untuk stylesheet inti lengkap.
 - **Tanpa JavaScript** — Stylus murni → CSS murni, tanpa biaya runtime.
 - **Cascade-layered** — penimpaan menang tanpa `!important`.
 - **Anggaran `size-limit` ditegakkan** di CI pada setiap commit.

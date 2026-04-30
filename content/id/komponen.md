@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "komponen skeletonic, tombol, kartu, formulir, peringatan, badge, header, navbar, hamburger css"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Setiap contoh di bawah ini **dirender dengan stylesheet yang sama yang sedang didemonstrasikan**. Tanpa preprocessor. Tanpa JavaScript. Tanpa dependensi tambahan. Salin cuplikan mana pun ke file HTML baru dan langsung berfungsi.
 
 <nav aria-label="Di halaman ini">
@@ -146,7 +151,7 @@ Kontainer berbingkai dan berpadding untuk satu unit yang koheren. Padukan dengan
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Ringan</h3>
-      <p>39,9 KB diminifikasi, 7,5 KB gzipped.</p>
+      <p>45,7 KB diminifikasi, 8,3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -168,7 +173,7 @@ Kontainer berbingkai dan berpadding untuk satu unit yang koheren. Padukan dengan
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Ringan</h3>
-      <p>39,9&nbsp;KB diminifikasi, 7,5&nbsp;KB gzipped.</p>
+      <p>45,7&nbsp;KB diminifikasi, 8,3&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

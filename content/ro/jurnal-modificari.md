@@ -10,6 +10,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "jurnal de modificări skeletonic, note de lansare, v1.1.7, semver"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## v1.1.7 — 2026-04 (curent)
 
 Runda de „pregătire pentru lansare": accesibilitate, lanț de aprovizionare, igienă depozit.

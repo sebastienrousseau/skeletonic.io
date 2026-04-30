@@ -11,9 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic インストール, stylus セットアップ, css cdn, はじめに"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## はじめに
 
-Skeletonic Stylus を初めて使いますか？ **v1.1.7** では、必要な機能だけを選ぶのがこれまで以上に簡単になりました。コアスタイルシートのフットプリントが非常に小さい（gzip圧縮で約7.5&nbsp;KB）ため、どの Web アプリにも素早く統合できます。JavaScript フレームワーク不要、CDN を使えばビルドステップも不要です。
+Skeletonic Stylus を初めて使いますか？ **v1.1.7** では、必要な機能だけを選ぶのがこれまで以上に簡単になりました。コアスタイルシートのフットプリントが非常に小さい（gzip圧縮で約8.3&nbsp;KB）ため、どの Web アプリにも素早く統合できます。JavaScript フレームワーク不要、CDN を使えばビルドステップも不要です。
 
 以下にすべての方法を網羅しています。必要なものを選んでください。
 
@@ -84,7 +89,7 @@ pnpm run build
 
 | ファイル | 用途 | サイズ (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | リセット + トークン + レイアウト + 要素 + コンポーネント + ユーティリティ | 39.9 KB / 7.5 KB |
+| `core/skeletonic.min.css` | リセット + トークン + レイアウト + 要素 + コンポーネント + ユーティリティ | 45.7 KB / 8.3 KB |
 | `animations/skeletonic-animations.min.css` | オプションのアニメーションモジュール | 約18 KB / 約4 KB |
 | `palettes/material/skeletonic-material.min.css` | Material カラーパレット | 約8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons ユーティリティパレット | 7.3 KB |
@@ -197,7 +202,7 @@ Skeletonic はデザイントークンを **CSS カスタムプロパティ** �
 はい。v1.1.7 では、AA 準拠のコントラスト、focus-visible リング、スキップリンクヘルパー、モーション軽減対応、ダークモードがデフォルトで提供されます。
 
 **gzip圧縮後のサイズは？**
-ミニファイ済みで39.9&nbsp;KB、**gzip圧縮で約7.5&nbsp;KB**、brotli で約6.3&nbsp;KB（フルコアスタイルシート）。8&nbsp;KB の上限は CI で強制されています。
+ミニファイ済みで45.7&nbsp;KB、**gzip圧縮で約8.3&nbsp;KB**、brotli で約6.9&nbsp;KB（フルコアスタイルシート）。8&nbsp;KB の上限は CI で強制されています。
 
 **どのライセンスを使用していますか？**
 MIT と Apache 2.0 のデュアルライセンスです — プロジェクトに合う方をお選びください。商用・個人利用ともに無料です。
@@ -236,7 +241,7 @@ MIT と Apache 2.0 のデュアルライセンスです — プロジェクト�
       "name": "Skeletonic Stylus の gzip 圧縮後のサイズは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ミニファイ済みで 39.9 KB、gzip 圧縮で約 7.5 KB、brotli で約 6.3 KB（フルコアスタイルシート）。8 KB の上限はすべてのコミットで CI により強制されています。"
+        "text": "ミニファイ済みで 45.7 KB、gzip 圧縮で約 8.3 KB、brotli で約 6.9 KB（フルコアスタイルシート）。8 KB の上限はすべてのコミットで CI により強制されています。"
       }
     },
     {

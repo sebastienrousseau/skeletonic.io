@@ -13,7 +13,7 @@ keywords: "bao mat css, sbom, cyclonedx, npm provenance, openssf scorecard, chuo
 
 ## Hieu suat
 
-- **39,9&nbsp;KB nen · 7,5&nbsp;KB gzip · 6,3&nbsp;KB brotli** cho stylesheet chinh day du.
+- **45,7&nbsp;KB nen · 8,3&nbsp;KB gzip · 6,9&nbsp;KB brotli** cho stylesheet chinh day du.
 - **Khong JavaScript** — Stylus thuan → CSS thuan, khong ton chi phi thoi gian chay.
 - **Phan tang cascade** — ghi de thang ma khong can `!important`.
 - **Ngan sach `size-limit` duoc thuc thi** trong CI moi commit.

@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더, 네비게이션 바, css 전용 햄버거"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 아래의 모든 예제는 **데모 대상인 스타일시트 자체로 렌더링됩니다**. 전처리기 없음. JavaScript 없음. 추가 종속성 없음. 어떤 코드 조각이든 새 HTML 파일에 복사하면 바로 작동합니다.
 
 <nav aria-label="이 페이지에서">
@@ -146,7 +151,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped.</p>
+      <p>45.7 KB minified, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -168,7 +173,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">경량</h3>
-      <p>39.9&nbsp;KB 최소화, 7.5&nbsp;KB gzipped.</p>
+      <p>45.7&nbsp;KB 최소화, 8.3&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

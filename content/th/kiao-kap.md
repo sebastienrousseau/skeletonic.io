@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, เกี่ยวกับ, stylus, css framework, ปรัชญา"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 <p class="badges">
   <img alt="ดาวบน GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="ยอดดาวน์โหลดรายเดือน" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="เวอร์ชัน npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="ขนาดบันเดิล" src="https://img.shields.io/badge/gzipped-7.5%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="ขนาดบันเดิล" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="สัญญาอนุญาต" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -41,7 +46,7 @@ keywords: "skeletonic, เกี่ยวกับ, stylus, css framework, ป�
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="ขนนก" width="64" height="64" loading="lazy" decoding="async">
     <h3>เบา</h3>
-    <p>ขนาด ~7.5&nbsp;KB gzipped หน้าเว็บโหลดเร็วขึ้น ทุกส่วนประกอบสำคัญยังคงอยู่</p>
+    <p>ขนาด 8.3&nbsp;KB gzipped หน้าเว็บโหลดเร็วขึ้น ทุกส่วนประกอบสำคัญยังคงอยู่</p>
   </article>
 
   <article class="feature-card">
@@ -77,7 +82,7 @@ build step ไม่มี peer dependencies กับ Bootstrap, Tailwind ห�
 
 | ฟีเจอร์ | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| ขนาด gzipped | **~7.5&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| ขนาด gzipped | **8.3&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | รองรับ WCAG 2.2 | **มีในตัว** | บางส่วน | ต้องทำเอง | บางส่วน |
 | Cascade layers | **ใช่ (`@layer`)** | ไม่ | ไม่ | ไม่ |
 | โหมดมืด | **`prefers-color-scheme`** | เลือกเปิด | ใช้คลาส | เลือกเปิด |

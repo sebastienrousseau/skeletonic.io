@@ -13,7 +13,7 @@ keywords: "css নিরাপত্তা, sbom, cyclonedx, npm provenance, ope
 
 ## পারফরম্যান্স
 
-- **39.9&nbsp;KB মিনিফাইড · 7.5&nbsp;KB gzipped · 6.3&nbsp;KB brotli** সম্পূর্ণ মূল স্টাইলশিটের জন্য।
+- **45.7&nbsp;KB মিনিফাইড · 8.3&nbsp;KB gzipped · 6.9&nbsp;KB brotli** সম্পূর্ণ মূল স্টাইলশিটের জন্য।
 - **শূন্য জাভাস্ক্রিপ্ট** — বিশুদ্ধ Stylus → বিশুদ্ধ CSS, কোনো রানটাইম খরচ নেই।
 - **Cascade-layered** — `!important` ছাড়াই ওভাররাইড জেতে।
 - **`size-limit` বাজেট** প্রতিটি কমিটে CI-তে বাধ্যতামূলক।

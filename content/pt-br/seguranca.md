@@ -13,7 +13,7 @@ keywords: "seguranca css, sbom, cyclonedx, procedencia npm, openssf scorecard, c
 
 ## Performance
 
-- **39,9&nbsp;KB minificado · 7,5&nbsp;KB gzipped · 6,3&nbsp;KB brotli** para a folha de estilos principal completa.
+- **45,7&nbsp;KB minificado · 8,3&nbsp;KB gzipped · 6,9&nbsp;KB brotli** para a folha de estilos principal completa.
 - **Zero JavaScript** — Stylus puro → CSS puro, sem custo de execucao.
 - **Cascade-layered** — sobrescrita vence sem `!important`.
 - **Budget `size-limit` aplicado** no CI em cada commit.

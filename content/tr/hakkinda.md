@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, hakkinda, stylus, css framework, felsefe"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 <p class="badges">
   <img alt="GitHub Yildizlari" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Aylik Indirmeler" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="npm Surumu" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Paket Boyutu" src="https://img.shields.io/badge/gzipped-7.5%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Paket Boyutu" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Lisans" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -42,7 +47,7 @@ yil sonra hedef degismedi.
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Tuy" width="64" height="64" loading="lazy" decoding="async">
     <h3>Hafif</h3>
-    <p>~7,5&nbsp;KB gzipped. Sayfalar daha hizli yuklenir. Tum temel yapi taslari yerinde kalir.</p>
+    <p>8,3&nbsp;KB gzipped. Sayfalar daha hizli yuklenir. Tum temel yapi taslari yerinde kalir.</p>
   </article>
 
   <article class="feature-card">
@@ -79,7 +84,7 @@ yok.
 
 | Ozellik | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Gzipped boyut | **~7,5&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| Gzipped boyut | **8,3&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | WCAG 2.2 uyumlulugu | **Yerlesik** | Kismi | Manuel | Kismi |
 | Cascade layers | **Evet (`@layer`)** | Hayir | Hayir | Hayir |
 | Karanlik mod | **`prefers-color-scheme`** | Istege bagli | Sinif tabanli | Istege bagli |

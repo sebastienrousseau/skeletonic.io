@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "компоненты skeletonic, кнопки, карточки, формы, уведомления, бейджи, заголовок, навигация, css-only гамбургер"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Каждый пример ниже **отрисован тем же файлом стилей, который демонстрируется**. Без препроцессора. Без JavaScript. Без дополнительных зависимостей. Скопируйте любой фрагмент в чистый HTML-файл — и он работает.
 
 <nav aria-label="На этой странице">
@@ -157,7 +162,7 @@ keywords: "компоненты skeletonic, кнопки, карточки, фо
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped.</p>
+      <p>45.7 KB minified, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -179,7 +184,7 @@ keywords: "компоненты skeletonic, кнопки, карточки, фо
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Легковесный</h3>
-      <p>39,9&nbsp;КБ минифицированный, 7,5&nbsp;КБ gzip.</p>
+      <p>45,7&nbsp;КБ минифицированный, 8,3&nbsp;КБ gzip.</p>
     </div>
   </article>
   <article class="card flex-1">

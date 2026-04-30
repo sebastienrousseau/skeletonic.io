@@ -11,10 +11,15 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "ติดตั้ง skeletonic, ตั้งค่า stylus, css cdn, เริ่มต้นใช้งาน"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## บทนำ
 
 ใหม่กับ Skeletonic Stylus? ใน **v1.1.7** การเลือกเฉพาะฟีเจอร์ที่ต้องการนั้น
-ง่ายกว่าที่เคย ด้วยขนาดที่เล็กมาก (~7.5&nbsp;KB gzipped สำหรับ
+ง่ายกว่าที่เคย ด้วยขนาดที่เล็กมาก (8.3&nbsp;KB gzipped สำหรับ
 สไตล์ชีตหลัก) จึงรวมเข้ากับเว็บแอปใดก็ได้อย่างรวดเร็ว — ไม่ต้องใช้
 JavaScript framework ไม่ต้อง build step หากใช้ CDN
 
@@ -96,7 +101,7 @@ pnpm run build
 
 | ไฟล์ | วัตถุประสงค์ | ขนาด (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 39.9 KB / 7.5 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 45.7 KB / 8.3 KB |
 | `animations/skeletonic-animations.min.css` | โมดูลแอนิเมชันเสริม | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | ชุดสี Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | ชุดสีอรรถประโยชน์ Tachyons | 7.3 KB |
@@ -216,7 +221,7 @@ CSS ที่คอมไพล์แล้วจาก CDN ได้เลย �
 ลิงก์ข้าม รองรับการลดการเคลื่อนไหว และโหมดมืดเป็นค่าเริ่มต้น
 
 **ขนาด gzipped เท่าไร?**
-39.9&nbsp;KB minified, **~7.5&nbsp;KB gzipped**, ~6.3&nbsp;KB brotli สำหรับ
+45.7&nbsp;KB minified, **8.3&nbsp;KB gzipped**, 6.9&nbsp;KB brotli สำหรับ
 สไตล์ชีตหลักทั้งหมด เพดาน 8&nbsp;KB ถูกบังคับใน CI ทุกคอมมิต
 
 **ใช้สัญญาอนุญาตอะไร?**
@@ -257,7 +262,7 @@ CSS ที่คอมไพล์แล้วจาก CDN ได้เลย �
       "name": "ขนาด gzipped ของ Skeletonic Stylus เท่าไร?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.9 KB minified, ~7.5 KB gzipped, ~6.3 KB brotli สำหรับสไตล์ชีตหลักทั้งหมด เพดาน 8 KB ถูกบังคับใน CI ทุกคอมมิต"
+        "text": "45.7 KB minified, 8.3 KB gzipped, 6.9 KB brotli สำหรับสไตล์ชีตหลักทั้งหมด เพดาน 8 KB ถูกบังคับใน CI ทุกคอมมิต"
       }
     },
     {

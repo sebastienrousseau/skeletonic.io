@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instalar skeletonic, configurar stylus, css cdn, primeiros passos"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Introducao
 
 Novo no Skeletonic Stylus? Na **v1.1.7** ficou mais facil do que nunca
 escolher apenas os recursos que voce precisa. Gracas ao seu tamanho
-minimo (~7,5&nbsp;KB gzipped para a folha de estilos principal), ele se
+minimo (8,3&nbsp;KB gzipped para a folha de estilos principal), ele se
 integra rapidamente a qualquer aplicacao web — sem necessidade de
 framework JavaScript, sem etapa de build se voce usar o CDN.
 
@@ -97,7 +102,7 @@ a instalacao:
 
 | Arquivo | Finalidade | Tamanho (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elementos + componentes + utilitarios | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elementos + componentes + utilitarios | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Modulo de animacoes opcional | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de cores Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta utilitaria Tachyons | 7,3 KB |
@@ -220,7 +225,7 @@ focus-visible, helpers de skip-link, suporte a movimento reduzido e
 modo escuro por padrao.
 
 **Qual o tamanho gzipped?**
-39,9&nbsp;KB minificado, **~7,5&nbsp;KB gzipped**, ~6,3&nbsp;KB brotli
+45,7&nbsp;KB minificado, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli
 para a folha de estilos principal completa. O limite de 8&nbsp;KB e
 aplicado no CI em cada commit.
 
@@ -262,7 +267,7 @@ seu projeto. Gratuito para uso comercial e pessoal.
       "name": "Qual o tamanho gzipped do Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB minificado, ~7,5 KB gzipped, ~6,3 KB brotli para a folha de estilos principal completa. O limite de 8 KB e aplicado no CI em cada commit."
+        "text": "45,7 KB minificado, 8,3 KB gzipped, 6,9 KB brotli para a folha de estilos principal completa. O limite de 8 KB e aplicado no CI em cada commit."
       }
     },
     {

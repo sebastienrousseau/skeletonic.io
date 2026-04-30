@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — Tillganglig CSS, ~7,5 KB gzippad"
+title: "Skeletonic Stylus — Tillganglig CSS, 8,3 KB gzippad"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus ar ett lattiktat, modulart Stylus CSS-bibliotek — WCAG 2.2-klart, med cascade layers, ~7,5 KB gzippat — utformat for att effektivisera modern webbgranssnittsutveckling."
+description: "Skeletonic Stylus ar ett lattiktat, modulart Stylus CSS-bibliotek — WCAG 2.2-klart, med cascade layers, 8,3 KB gzippat — utformat for att effektivisera modern webbgranssnittsutveckling."
 layout: index
 permalink: https://skeletonic.io/sv/
 date: 2026-04-08

@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic 组件, 按钮, 卡片, 表单, 提示框, 徽章, 页头, 导航栏, 纯 css 汉堡菜单"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 以下每个示例均**使用被演示的样式表本身渲染**。无预处理器。无 JavaScript。无额外依赖。将任意代码片段复制到空白 HTML 文件中即可运行。
 
 <nav aria-label="本页目录">
@@ -146,7 +151,7 @@ keywords: "skeletonic 组件, 按钮, 卡片, 表单, 提示框, 徽章, 页头,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped.</p>
+      <p>45.7 KB minified, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -168,7 +173,7 @@ keywords: "skeletonic 组件, 按钮, 卡片, 表单, 提示框, 徽章, 页头,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">轻量</h3>
-      <p>39.9&nbsp;KB 压缩后，7.5&nbsp;KB gzip。</p>
+      <p>45.7&nbsp;KB 压缩后，8.3&nbsp;KB gzip。</p>
     </div>
   </article>
   <article class="card flex-1">

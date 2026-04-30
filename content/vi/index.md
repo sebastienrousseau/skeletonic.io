@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — CSS Tro nang, ~7,5 KB gzip"
+title: "Skeletonic Stylus — CSS Tro nang, 8,3 KB gzip"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus la thu vien CSS Stylus nhe, mo-dun, san sang WCAG 2.2, phan tang cascade, ~7,5 KB gzip — duoc thiet ke de toi uu hoa phat trien giao dien web hien dai."
+description: "Skeletonic Stylus la thu vien CSS Stylus nhe, mo-dun, san sang WCAG 2.2, phan tang cascade, 8,3 KB gzip — duoc thiet ke de toi uu hoa phat trien giao dien web hien dai."
 layout: index
 language: vi
 permalink: https://skeletonic.io/vi/

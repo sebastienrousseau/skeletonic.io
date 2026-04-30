@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म, अलर्ट, बैज, हेडर, navbar, css only hamburger"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 नीचे दिया गया हर उदाहरण **उसी स्टाइलशीट से रेंडर** हो रहा है जिसका
 डेमो दिया जा रहा है। कोई प्रीप्रोसेसर नहीं। कोई JavaScript नहीं। कोई
 अतिरिक्त निर्भरता नहीं। किसी भी स्निपेट को एक ताज़ी HTML फ़ाइल में
@@ -165,7 +170,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">हल्की</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped।</p>
+      <p>45.7 KB minified, 8.3 KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -187,7 +192,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">हल्की</h3>
-      <p>39.9&nbsp;KB minified, 7.5&nbsp;KB gzipped।</p>
+      <p>45.7&nbsp;KB minified, 8.3&nbsp;KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">

@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic installeren, stylus setup, css cdn, aan de slag"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Introductie
 
 Nieuw bij Skeletonic Stylus? In **v1.1.7** is het eenvoudiger dan ooit om
 precies de functies te kiezen die je nodig hebt. Dankzij de kleine
-footprint (~7,5&nbsp;KB gzipped voor het kernstylesheet) integreert het
+footprint (8,3&nbsp;KB gzipped voor het kernstylesheet) integreert het
 snel in elke webapp — geen JavaScript-framework vereist, geen buildstap
 nodig als je de CDN gebruikt.
 
@@ -97,7 +102,7 @@ De bibliotheek levert meerdere voorgebouwde bundels onder
 
 | Bestand | Doel | Grootte (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elementen + componenten + utilities | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elementen + componenten + utilities | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Optionele animatiemodule | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Material-kleurenpalet | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility-palet | 7,3 KB |
@@ -219,7 +224,7 @@ Ja. v1.1.7 levert AA-conform contrast, focus-visible-ringen,
 skip-link-helpers, ondersteuning voor beperkte beweging en donkere modus standaard.
 
 **Wat is de gzipped-grootte?**
-39,9&nbsp;KB geminificeerd, **~7,5&nbsp;KB gzipped**, ~6,3&nbsp;KB brotli voor
+45,7&nbsp;KB geminificeerd, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli voor
 het volledige kernstylesheet. Het 8&nbsp;KB-plafond wordt afgedwongen in CI.
 
 **Welke licentie wordt gebruikt?**
@@ -260,7 +265,7 @@ project past. Gratis voor commercieel en persoonlijk gebruik.
       "name": "Wat is de gzipped-grootte van Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB geminificeerd, ~7,5 KB gzipped, ~6,3 KB brotli voor het volledige kernstylesheet. Het 8 KB-plafond wordt afgedwongen in CI bij elke commit."
+        "text": "45,7 KB geminificeerd, 8,3 KB gzipped, 6,9 KB brotli voor het volledige kernstylesheet. Het 8 KB-plafond wordt afgedwongen in CI bij elke commit."
       }
     },
     {

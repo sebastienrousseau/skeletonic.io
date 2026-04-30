@@ -13,7 +13,7 @@ keywords: "css sicherheit, sbom, cyclonedx, npm provenance, openssf scorecard, s
 
 ## Leistung
 
-- **39,9&nbsp;KB minifiziert, 7,5&nbsp;KB gzipped, 6,3&nbsp;KB brotli** fuer das gesamte Core-Stylesheet.
+- **45,7&nbsp;KB minifiziert, 8,3&nbsp;KB gzipped, 6,9&nbsp;KB brotli** fuer das gesamte Core-Stylesheet.
 - **Kein JavaScript** — pures Stylus zu purem CSS, keine Laufzeitkosten.
 - **Cascade-Layered** — Ueberschreibungen greifen ohne `!important`.
 - **`size-limit`-Budget in CI erzwungen** bei jedem Commit.

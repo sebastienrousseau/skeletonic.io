@@ -13,7 +13,7 @@ keywords: "css guvenlik, sbom, cyclonedx, npm provenance, openssf scorecard, ted
 
 ## Performans
 
-- **39,9&nbsp;KB kucultulmus · 7,5&nbsp;KB gzipped · 6,3&nbsp;KB brotli** tam cekirdek stil sayfasi icin.
+- **45,7&nbsp;KB kucultulmus · 8,3&nbsp;KB gzipped · 6,9&nbsp;KB brotli** tam cekirdek stil sayfasi icin.
 - **Sifir JavaScript** — saf Stylus → saf CSS, calisma zamani maliyeti yok.
 - **Cascade-layered** — gecersiz kilmalar `!important` olmadan kazanir.
 - **`size-limit` butcesi** her commit'te CI'da zorunlu kilinir.

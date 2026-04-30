@@ -13,7 +13,7 @@ keywords: "securitate css, sbom, cyclonedx, proveniență npm, openssf scorecard
 
 ## Performanță
 
-- **39,9&nbsp;KB minificat · 7,5&nbsp;KB gzipped · 6,3&nbsp;KB brotli** pentru stylesheet-ul principal complet.
+- **45,7&nbsp;KB minificat · 8,3&nbsp;KB gzipped · 6,9&nbsp;KB brotli** pentru stylesheet-ul principal complet.
 - **Zero JavaScript** — pur Stylus → pur CSS, fără cost la runtime.
 - **Cascade-layered** — suprascrierea câștigă fără `!important`.
 - **Buget `size-limit` impus** în CI la fiecare commit.

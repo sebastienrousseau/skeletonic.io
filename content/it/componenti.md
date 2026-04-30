@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "componenti skeletonic, pulsanti, card, form, alert, badge, header, navbar, hamburger solo css"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Ogni esempio qui sotto e **renderizzato con lo stesso foglio di stile in dimostrazione**. Nessun preprocessore. Nessun JavaScript. Nessuna dipendenza aggiuntiva. Copia qualsiasi snippet in un file HTML vuoto e funziona.
 
 <nav aria-label="In questa pagina">
@@ -155,7 +160,7 @@ Un contenitore con bordo e padding per una singola unita coerente. Abbina con la
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Leggero</h3>
-      <p>39,9 KB minificati, 7,5 KB gzipped.</p>
+      <p>45,7 KB minificati, 8,3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -177,7 +182,7 @@ Un contenitore con bordo e padding per una singola unita coerente. Abbina con la
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Leggero</h3>
-      <p>39,9&nbsp;KB minificati, 7,5&nbsp;KB gzipped.</p>
+      <p>45,7&nbsp;KB minificati, 8,3&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

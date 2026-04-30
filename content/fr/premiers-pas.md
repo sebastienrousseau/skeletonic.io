@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "installer skeletonic, configuration stylus, css cdn, premiers pas"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Introduction
 
 Nouveau sur Skeletonic Stylus ? Avec la **v1.1.7**, choisir les
 fonctionnalités nécessaires n'a jamais été aussi simple. Grâce à son
-empreinte minuscule (~7,5 Ko gzippé pour la feuille de style
+empreinte minuscule (8,3 Ko gzippé pour la feuille de style
 principale), il s'intègre rapidement dans n'importe quelle application
 web — aucun framework JavaScript requis, aucune étape de build si vous
 utilisez le CDN.
@@ -99,7 +104,7 @@ après installation :
 
 | Fichier | Usage | Taille (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + jetons + layout + éléments + composants + utilitaires | 39,9 Ko / 7,5 Ko |
+| `core/skeletonic.min.css` | Reset + jetons + layout + éléments + composants + utilitaires | 45,7 Ko / 8,3 Ko |
 | `animations/skeletonic-animations.min.css` | Module d'animations optionnel | ≈18 Ko / ≈4 Ko |
 | `palettes/material/skeletonic-material.min.css` | Palette Material | ≈8 Ko |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Palette utilitaire Tachyons | 7,3 Ko |
@@ -225,7 +230,7 @@ focus-visible, des liens d'évitement, le support du mouvement réduit et
 le mode sombre par défaut.
 
 **Quelle est la taille gzippée ?**
-39,9 Ko minifié, **~7,5 Ko gzippé**, ~6,3 Ko brotli pour la feuille
+45,7 Ko minifié, **8,3 Ko gzippé**, 6,9 Ko brotli pour la feuille
 de style principale complète. Le plafond de 8 Ko est appliqué en CI.
 
 **Quelle licence utilise-t-il ?**
@@ -266,7 +271,7 @@ projet. Gratuit pour un usage commercial et personnel.
       "name": "Quelle est la taille gzippée de Skeletonic Stylus ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 Ko minifié, ~7,5 Ko gzippé, ~6,3 Ko brotli pour la feuille de style principale complète. Le plafond de 8 Ko est appliqué en CI à chaque commit."
+        "text": "45,7 Ko minifié, 8,3 Ko gzippé, 6,9 Ko brotli pour la feuille de style principale complète. Le plafond de 8 Ko est appliqué en CI à chaque commit."
       }
     },
     {

@@ -11,10 +11,15 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "התקנת skeletonic, הגדרת stylus, css cdn, התחלה"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## מבוא
 
 חדשים ב-Skeletonic Stylus? ב-**v1.1.7** קל מתמיד לבחור רק את
-התכונות שאתם צריכים. הודות לטביעת רגל זעירה (כ-7.5&nbsp;KB בדחיסת
+התכונות שאתם צריכים. הודות לטביעת רגל זעירה (כ-8.3&nbsp;KB בדחיסת
 gzip עבור גיליון הסגנונות הליבתי), היא משתלבת במהירות בכל יישום
 אינטרנט — ללא צורך ב-framework של JavaScript, ללא שלב בנייה אם
 אתם משתמשים ב-CDN.
@@ -97,7 +102,7 @@ pnpm run build
 
 | קובץ | מטרה | גודל (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + טוקנים + פריסה + אלמנטים + רכיבים + שירות | 39.9 KB / 7.5 KB |
+| `core/skeletonic.min.css` | Reset + טוקנים + פריסה + אלמנטים + רכיבים + שירות | 45.7 KB / 8.3 KB |
 | `animations/skeletonic-animations.min.css` | מודול אנימציות אופציונלי | כ-18 KB / כ-4 KB |
 | `palettes/material/skeletonic-material.min.css` | פלטת צבעים Material | כ-8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | פלטת שירות Tachyons | 7.3 KB |
@@ -217,7 +222,7 @@ Skeletonic חושפת את טוקני העיצוב שלה כ-**משתני CSS** 
 דילוג, תמיכה בתנועה מופחתת ומצב כהה כברירת מחדל.
 
 **מה הגודל בדחיסת gzip?**
-39.9&nbsp;KB ממוזער, **כ-7.5&nbsp;KB בדחיסת gzip**, כ-6.3&nbsp;KB
+45.7&nbsp;KB ממוזער, **כ-8.3&nbsp;KB בדחיסת gzip**, כ-6.9&nbsp;KB
 brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8&nbsp;KB נאכפת ב-CI.
 
 **באיזה רישיון היא משתמשת?**
@@ -258,7 +263,7 @@ brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8&
       "name": "מה הגודל בדחיסת gzip של Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.9 KB ממוזער, כ-7.5 KB בדחיסת gzip, כ-6.3 KB brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8 KB נאכפת ב-CI בכל commit."
+        "text": "45.7 KB ממוזער, כ-8.3 KB בדחיסת gzip, כ-6.9 KB brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8 KB נאכפת ב-CI בכל commit."
       }
     },
     {

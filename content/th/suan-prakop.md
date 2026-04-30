@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "ส่วนประกอบ skeletonic, ปุ่ม, การ์ด, ฟอร์ม, แจ้งเตือน, ป้ายกำกับ, ส่วนหัว, แฮมเบอร์เกอร์เมนู css"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ทุกตัวอย่างด้านล่าง **เรนเดอร์ด้วยสไตล์ชีตเดียวกันที่กำลังสาธิต**
 ไม่มี preprocessor ไม่มี JavaScript ไม่มี dependencies เพิ่ม คัดลอก
 สนิปเป็ตใดก็ได้ไปใส่ในไฟล์ HTML ใหม่แล้วใช้งานได้เลย
@@ -162,7 +167,7 @@ outline มีสีแบรนด์ให้เลือกหกสี
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">เบา</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped</p>
+      <p>45.7 KB minified, 8.3 KB gzipped</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -184,7 +189,7 @@ outline มีสีแบรนด์ให้เลือกหกสี
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">เบา</h3>
-      <p>39.9&nbsp;KB minified, 7.5&nbsp;KB gzipped</p>
+      <p>45.7&nbsp;KB minified, 8.3&nbsp;KB gzipped</p>
     </div>
   </article>
   <article class="card flex-1">

@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — CSS accessible, ~7,5 Ko gzippé"
+title: "Skeletonic Stylus — CSS accessible, 8,3 Ko gzippé"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus est une bibliothèque CSS Stylus légère et modulaire — conforme WCAG 2.2, organisée en couches de cascade, ~7,5 Ko gzippé — conçue pour simplifier le développement d'interfaces web modernes."
+description: "Skeletonic Stylus est une bibliothèque CSS Stylus légère et modulaire — conforme WCAG 2.2, organisée en couches de cascade, 8,3 Ko gzippé — conçue pour simplifier le développement d'interfaces web modernes."
 layout: index
 permalink: https://skeletonic.io/fr/
 date: 2026-04-08

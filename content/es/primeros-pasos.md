@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instalar skeletonic, configuracion stylus, css cdn, primeros pasos"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Introduccion
 
 Nuevo en Skeletonic Stylus? En **v1.1.7** es mas facil que nunca elegir
 solo las funcionalidades que necesitas. Gracias a su huella minima
-(~7,5&nbsp;KB gzipped para la hoja de estilos principal), se integra
+(8,3&nbsp;KB gzipped para la hoja de estilos principal), se integra
 rapidamente en cualquier aplicacion web — sin necesidad de framework
 JavaScript, sin paso de compilacion si usas el CDN.
 
@@ -97,7 +102,7 @@ La biblioteca incluye varios bundles preconstruidos bajo
 
 | Archivo | Proposito | Tamano (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elementos + componentes + utilidades | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elementos + componentes + utilidades | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Modulo de animaciones opcional | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de colores Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta de utilidades Tachyons | 7,3 KB |
@@ -219,7 +224,7 @@ Si. v1.1.7 incluye contraste conforme AA, anillos focus-visible, skip-link
 helpers, soporte de movimiento reducido y modo oscuro por defecto.
 
 **Cual es el tamano gzipped?**
-39,9&nbsp;KB minificado, **~7,5&nbsp;KB gzipped**, ~6,3&nbsp;KB brotli para
+45,7&nbsp;KB minificado, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli para
 la hoja de estilos principal completa. El limite de 8&nbsp;KB se aplica en CI.
 
 **Que licencia utiliza?**
@@ -260,7 +265,7 @@ Gratuito para uso comercial y personal.
       "name": "Cual es el tamano gzipped de Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB minificado, ~7,5 KB gzipped, ~6,3 KB brotli para la hoja de estilos principal completa. El limite de 8 KB se aplica en CI en cada commit."
+        "text": "45,7 KB minificado, 8,3 KB gzipped, 6,9 KB brotli para la hoja de estilos principal completa. El limite de 8 KB se aplica en CI en cada commit."
       }
     },
     {

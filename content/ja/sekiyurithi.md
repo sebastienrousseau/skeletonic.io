@@ -13,7 +13,7 @@ keywords: "css セキュリティ, sbom, cyclonedx, npm プロベナンス, open
 
 ## パフォーマンス
 
-- フルコアスタイルシートで **ミニファイ済み 39.9&nbsp;KB · gzip圧縮 7.5&nbsp;KB · brotli 6.3&nbsp;KB**。
+- フルコアスタイルシートで **ミニファイ済み 45.7&nbsp;KB · gzip圧縮 8.3&nbsp;KB · brotli 6.9&nbsp;KB**。
 - **JavaScript ゼロ** — 純粋な Stylus → 純粋な CSS、ランタイムコストなし。
 - **カスケードレイヤー採用** — `!important` なしでオーバーライドが優先されます。
 - **`size-limit` バジェット** がすべてのコミットで CI により強制されます。

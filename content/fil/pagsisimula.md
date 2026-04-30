@@ -11,9 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "install skeletonic, stylus setup, css cdn, pagsisimula"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Panimula
 
-Bago ka sa Skeletonic Stylus? Sa **v1.1.7** mas madali na kaysa dati ang pumili ng mga tampok na kailangan mo lamang. Dahil sa maliit na footprint nito (~7.5&nbsp;KB gzipped para sa core stylesheet), mabilis itong nag-integrate sa anumang web app — hindi kailangan ng JavaScript framework, hindi kailangan ng build step kung gagamitin mo ang CDN.
+Bago ka sa Skeletonic Stylus? Sa **v1.1.7** mas madali na kaysa dati ang pumili ng mga tampok na kailangan mo lamang. Dahil sa maliit na footprint nito (8.3&nbsp;KB gzipped para sa core stylesheet), mabilis itong nag-integrate sa anumang web app — hindi kailangan ng JavaScript framework, hindi kailangan ng build step kung gagamitin mo ang CDN.
 
 Bawat paraan ay nakadokumento sa ibaba — piliin ang naaangkop sa iyo.
 
@@ -89,7 +94,7 @@ Nagpapadala ang library ng ilang pre-built na bundle sa ilalim ng
 
 | File | Layunin | Laki (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + token + layout + element + component + utility | 39.9 KB / 7.5 KB |
+| `core/skeletonic.min.css` | Reset + token + layout + element + component + utility | 45.7 KB / 8.3 KB |
 | `animations/skeletonic-animations.min.css` | Opsyonal na module ng animasyon | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Material na colour palette | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility palette | 7.3 KB |
@@ -202,7 +207,7 @@ Hindi. Ang core stylesheet ay purong CSS, na walang runtime cost. Gumagana ang m
 Oo. Nagpapadala ang v1.1.7 ng AA-conformant na contrast, focus-visible ring, skip-link helper, reduced-motion support at dark mode bilang default.
 
 **Ano ang laki nito kapag gzipped?**
-39.9&nbsp;KB minified, **~7.5&nbsp;KB gzipped**, ~6.3&nbsp;KB brotli para sa buong core stylesheet. Ang 8&nbsp;KB na limitasyon ay ipinatutupad sa CI.
+45.7&nbsp;KB minified, **8.3&nbsp;KB gzipped**, 6.9&nbsp;KB brotli para sa buong core stylesheet. Ang 8&nbsp;KB na limitasyon ay ipinatutupad sa CI.
 
 **Anong lisensya ang ginagamit nito?**
 Dual-licensed sa ilalim ng MIT at Apache 2.0 — piliin ang kailangan ng iyong proyekto. Libre para sa komersyal at personal na paggamit.
@@ -241,7 +246,7 @@ Dual-licensed sa ilalim ng MIT at Apache 2.0 — piliin ang kailangan ng iyong p
       "name": "Ano ang laki ng Skeletonic Stylus kapag gzipped?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.9 KB minified, ~7.5 KB gzipped, ~6.3 KB brotli para sa buong core stylesheet. Ang 8 KB na limitasyon ay ipinatutupad sa CI sa bawat commit."
+        "text": "45.7 KB minified, 8.3 KB gzipped, 6.9 KB brotli para sa buong core stylesheet. Ang 8 KB na limitasyon ay ipinatutupad sa CI sa bawat commit."
       }
     },
     {

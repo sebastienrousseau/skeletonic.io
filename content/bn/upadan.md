@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর্ম, অ্যালার্ট, ব্যাজ, হেডার, navbar, css only hamburger"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 নিচের প্রতিটি উদাহরণ **যে স্টাইলশিট ডেমো করা হচ্ছে সেটি দিয়েই
 রেন্ডার করা**। কোনো প্রিপ্রসেসর নেই। কোনো জাভাস্ক্রিপ্ট নেই। কোনো
 অতিরিক্ত ডিপেন্ডেন্সি নেই। যেকোনো স্নিপেট একটি নতুন HTML ফাইলে
@@ -165,7 +170,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">হালকা</h3>
-      <p>39.9 KB মিনিফাইড, 7.5 KB gzipped।</p>
+      <p>45.7 KB মিনিফাইড, 8.3 KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -187,7 +192,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">হালকা</h3>
-      <p>39.9&nbsp;KB মিনিফাইড, 7.5&nbsp;KB gzipped।</p>
+      <p>45.7&nbsp;KB মিনিফাইড, 8.3&nbsp;KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">

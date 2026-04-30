@@ -11,9 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instalacja skeletonic, konfiguracja stylus, css cdn, pierwsze kroki"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## Wprowadzenie
 
-Pierwszy raz z Skeletonic Stylus? W **v1.1.7** dobor potrzebnych funkcji jest latwiejszy niz kiedykolwiek. Dzieki niewielkiemu rozmiarowi (~7,5&nbsp;KB gzipped dla glownego arkusza stylow), integruje sie szybko z kazda aplikacja webowa — bez wymaganego frameworka JavaScript, bez kroku budowania jesli korzystasz z CDN.
+Pierwszy raz z Skeletonic Stylus? W **v1.1.7** dobor potrzebnych funkcji jest latwiejszy niz kiedykolwiek. Dzieki niewielkiemu rozmiarowi (8,3&nbsp;KB gzipped dla glownego arkusza stylow), integruje sie szybko z kazda aplikacja webowa — bez wymaganego frameworka JavaScript, bez kroku budowania jesli korzystasz z CDN.
 
 Kazda sciezka opisana jest ponizej — wybierz odpowiednia.
 
@@ -89,7 +94,7 @@ Biblioteka dostarcza kilka gotowych pakietow w katalogu
 
 | Plik | Przeznaczenie | Rozmiar (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokeny + uklad + elementy + komponenty + narzedzia | 39,9 KB / 7,5 KB |
+| `core/skeletonic.min.css` | Reset + tokeny + uklad + elementy + komponenty + narzedzia | 45,7 KB / 8,3 KB |
 | `animations/skeletonic-animations.min.css` | Opcjonalny modul animacji | ~18 KB / ~4 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta kolorow Material | ~8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta narzedzi Tachyons | 7,3 KB |
@@ -202,7 +207,7 @@ Nie. Glowny arkusz stylow to czysty CSS, bez zadnych kosztow uruchomieniowych. K
 Tak. Wersja v1.1.7 dostarcza kontrast zgodny z AA, pierscienie focus-visible, helpery skip-link, obsluge ograniczonego ruchu i tryb ciemny domyslnie.
 
 **Jaki jest rozmiar gzipped?**
-39,9&nbsp;KB zminifikowany, **~7,5&nbsp;KB gzipped**, ~6,3&nbsp;KB brotli dla pelnego glownego arkusza stylow. Limit 8&nbsp;KB jest egzekwowany w CI.
+45,7&nbsp;KB zminifikowany, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli dla pelnego glownego arkusza stylow. Limit 8&nbsp;KB jest egzekwowany w CI.
 
 **Jaka licencje stosuje?**
 Podwojna licencja: MIT i Apache 2.0 — wybierz te, ktora pasuje do Twojego projektu. Darmowe do uzytku komercyjnego i prywatnego.
@@ -241,7 +246,7 @@ Podwojna licencja: MIT i Apache 2.0 — wybierz te, ktora pasuje do Twojego proj
       "name": "Jaki jest rozmiar gzipped Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39,9 KB zminifikowany, ~7,5 KB gzipped, ~6,3 KB brotli dla pelnego glownego arkusza stylow. Limit 8 KB jest egzekwowany w CI przy kazdym uaktualnieniu."
+        "text": "45,7 KB zminifikowany, 8,3 KB gzipped, 6,9 KB brotli dla pelnego glownego arkusza stylow. Limit 8 KB jest egzekwowany w CI przy kazdym uaktualnieniu."
       }
     },
     {

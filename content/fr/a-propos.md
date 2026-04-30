@@ -11,11 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, à propos, stylus, framework css, philosophie"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 <p class="badges">
   <img alt="Étoiles GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Téléchargements mensuels" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="Version npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Taille du bundle" src="https://img.shields.io/badge/gzipped-7.5%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Taille du bundle" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Licence" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -42,7 +47,7 @@ Huit ans plus tard, l'objectif reste le même.
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Plume" width="64" height="64" loading="lazy" decoding="async">
     <h3>Léger</h3>
-    <p>~7,5 Ko gzippé. Les pages chargent plus vite. Chaque brique essentielle reste incluse.</p>
+    <p>8,3 Ko gzippé. Les pages chargent plus vite. Chaque brique essentielle reste incluse.</p>
   </article>
 
   <article class="feature-card">
@@ -79,7 +84,7 @@ build requise. Aucune dépendance pair sur Bootstrap, Tailwind ou Bulma.
 
 | Fonctionnalité | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Taille gzippée | **~7,5 Ko** | ~30 Ko | ~10 Ko JIT | ~30 Ko |
+| Taille gzippée | **8,3 Ko** | ~30 Ko | ~10 Ko JIT | ~30 Ko |
 | Conformité WCAG 2.2 | **Intégrée** | Partielle | Manuelle | Partielle |
 | Couches de cascade | **Oui (`@layer`)** | Non | Non | Non |
 | Mode sombre | **`prefers-color-scheme`** | Opt-in | Classe | Opt-in |

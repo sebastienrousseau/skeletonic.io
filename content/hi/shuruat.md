@@ -11,10 +11,15 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic इंस्टॉल, stylus सेटअप, css cdn, शुरुआत"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 ## परिचय
 
 Skeletonic Stylus में नए हैं? **v1.1.7** में अपनी ज़रूरत की सुविधाएँ
-चुनना पहले से कहीं आसान है। अपने छोटे फ़ुटप्रिंट (~7.5&nbsp;KB
+चुनना पहले से कहीं आसान है। अपने छोटे फ़ुटप्रिंट (8.3&nbsp;KB
 gzipped कोर स्टाइलशीट) के कारण, यह किसी भी वेब ऐप में तेज़ी से
 इंटीग्रेट होती है — कोई JavaScript फ़्रेमवर्क ज़रूरी नहीं, CDN
 इस्तेमाल करें तो कोई बिल्ड स्टेप भी नहीं।
@@ -98,7 +103,7 @@ pnpm run build
 
 | फ़ाइल | उद्देश्य | आकार (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 39.9 KB / 7.5 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 45.7 KB / 8.3 KB |
 | `animations/skeletonic-animations.min.css` | वैकल्पिक एनिमेशन मॉड्यूल | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Material रंग पैलेट | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons यूटिलिटी पैलेट | 7.3 KB |
@@ -222,7 +227,7 @@ CSS सीधे CDN से लोड करें — कोई बिल्ड
 करता है।
 
 **Gzipped आकार कितना है?**
-39.9&nbsp;KB minified, **~7.5&nbsp;KB gzipped**, ~6.3&nbsp;KB brotli
+45.7&nbsp;KB minified, **8.3&nbsp;KB gzipped**, 6.9&nbsp;KB brotli
 पूर्ण कोर स्टाइलशीट के लिए। 8&nbsp;KB की सीमा CI में लागू है।
 
 **कौन सा लाइसेंस है?**
@@ -263,7 +268,7 @@ MIT और Apache 2.0 के तहत दोहरा लाइसेंस —
       "name": "Skeletonic Stylus का gzipped आकार कितना है?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.9 KB minified, ~7.5 KB gzipped, ~6.3 KB brotli पूर्ण कोर स्टाइलशीट के लिए। 8 KB की सीमा हर कमिट पर CI में लागू है।"
+        "text": "45.7 KB minified, 8.3 KB gzipped, 6.9 KB brotli पूर्ण कोर स्टाइलशीट के लिए। 8 KB की सीमा हर कमिट पर CI में लागू है।"
       }
     },
     {

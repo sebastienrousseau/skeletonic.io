@@ -11,6 +11,11 @@ language: de
 keywords: "skeletonic komponenten, schaltflaechen, karten, formulare, hinweise, badges, kopfzeile, navigation, css hamburger menue"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Jedes Beispiel auf dieser Seite wird **mit genau dem Stylesheet gerendert,
 das hier vorgestellt wird**. Kein Praeprozessor. Kein JavaScript. Keine
 zusaetzlichen Abhaengigkeiten. Jeden Ausschnitt in eine leere HTML-Datei
@@ -168,7 +173,7 @@ responsive Kartenwände.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped.</p>
+      <p>45.7 KB minified, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -190,7 +195,7 @@ responsive Kartenwände.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Leichtgewichtig</h3>
-      <p>39,9&nbsp;KB minifiziert, 7,5&nbsp;KB gzipped.</p>
+      <p>45,7&nbsp;KB minifiziert, 8,3&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

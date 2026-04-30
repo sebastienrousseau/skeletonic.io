@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — Erisilebilir CSS, ~7,5 KB gzipped"
+title: "Skeletonic Stylus — Erisilebilir CSS, 8,3 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus; hafif, moduler bir Stylus CSS kutuphanesidir — WCAG 2.2 uyumlu, cascade-layered, ~7,5 KB gzipped — modern web arayuz gelistirme icin tasarlanmistir."
+description: "Skeletonic Stylus; hafif, moduler bir Stylus CSS kutuphanesidir — WCAG 2.2 uyumlu, cascade-layered, 8,3 KB gzipped — modern web arayuz gelistirme icin tasarlanmistir."
 layout: index
 permalink: https://skeletonic.io/tr/
 date: 2026-04-08

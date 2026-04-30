@@ -11,6 +11,11 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic komponenter, knappar, kort, formular, notiser, marken, header, navbar, css-only hamburgare"
 ---
 
+> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> 2026 framework comparison. The English source is the canonical reference
+> while these translations catch up. See <https://skeletonic.io/about/> ·
+> <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
+
 Varje exempel nedan ar **renderat med samma stylesheet som
 demonstreras**. Ingen preprocessor. Inget JavaScript. Inga extra beroenden. Kopiera
 valfri kodsnutt till en ny HTML-fil och den fungerar.
@@ -165,7 +170,7 @@ En kantad, paddad behallare for en enskild sammanhangande enhet. Kombinera med
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.9 KB minified, 7.5 KB gzipped.</p>
+      <p>45.7 KB minified, 8.3 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -187,7 +192,7 @@ En kantad, paddad behallare for en enskild sammanhangande enhet. Kombinera med
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lattiktat</h3>
-      <p>39,9&nbsp;KB minifierad, 7,5&nbsp;KB gzippad.</p>
+      <p>45,7&nbsp;KB minifierad, 8,3&nbsp;KB gzippad.</p>
     </div>
   </article>
   <article class="card flex-1">
