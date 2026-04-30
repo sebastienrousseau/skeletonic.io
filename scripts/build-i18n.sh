@@ -123,14 +123,32 @@ if [ "$BUILD_EN" -eq 1 ]; then
     if ls docs/css/*.css >/dev/null 2>&1; then break; fi
     sleep 1
   done
-  # Give the post-build plugins (a11y, fingerprint, link-checker, page-write)
-  # enough time to finish — large content trees with many new pages need
-  # several seconds of settling after the CSS is fingerprinted.
-  sleep 8
+  # SSG runs the tera_plugin in `after_compile`, AFTER css fingerprinting
+  # but BEFORE it enters the dev-server loop. Tera reads each
+  # docs/**/index.html fragment and rewrites it through templates/tera/
+  # base.html so it ends up as a full <!doctype html>…</html> document.
+  # That second pass takes a noticeable amount of time on first build
+  # (no plugin cache) — wait long enough for it to finish before
+  # killing, otherwise we ship bare content fragments.
+  sleep 30
   kill "$SSG_PID" 2>/dev/null || true
   wait "$SSG_PID" 2>/dev/null || true
   # Prevent GitHub Pages from running Jekyll on the output.
   touch docs/.nojekyll
+  # Copy static assets — shokunin v0.0.34 doesn't auto-copy static/
+  # to docs/, only main.js and sw.js. Everything else (vendored CSS,
+  # site JS, images, manifest) lives in static/ and we mirror it
+  # explicitly so the rendered HTML's /css/, /js/, /images/ links
+  # actually resolve.
+  for d in css js images; do
+    if [ -d "static/$d" ]; then
+      mkdir -p "docs/$d"
+      cp -R "static/$d/." "docs/$d/"
+    fi
+  done
+  for f in CNAME robots.txt manifest.webmanifest; do
+    [ -f "static/$f" ] && cp "static/$f" "docs/$f"
+  done
 fi
 
 # ─── Phase 2: every requested non-English locale ─────────────────────

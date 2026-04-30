@@ -2494,7 +2494,7 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "{{ page.title | default(value=page.name) | safe }}",
+          "name": "{{ page.title | default(value=site.title) | safe }}",
           "item": "{{ site.base_url | safe }}{{ lang_prefix | safe }}{{ page_path | safe }}"
         }{% endif %}
       ]
