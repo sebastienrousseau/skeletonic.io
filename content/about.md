@@ -14,7 +14,8 @@ keywords: "skeletonic, about, stylus, css framework, philosophy"
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Monthly Downloads" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="npm Version" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Bundle Size" src="https://img.shields.io/badge/gzipped-7.5%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Bundle Size" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Brotli Size" src="https://img.shields.io/badge/brotli-6.9%20KB-2e7d32?style=for-the-badge" height="28" loading="lazy">
   <img alt="License" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -40,7 +41,7 @@ the goal is unchanged.
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Feather" width="64" height="64" loading="lazy" decoding="async">
     <h3>Lightweight</h3>
-    <p>~7.5&nbsp;KB gzipped. Pages load faster. Every essential building block stays in.</p>
+    <p>8.3&nbsp;KB gzip, 6.9&nbsp;KB brotli — measured against the actual minified CDN bundle, not a marketing approximation. <a href="/benchmarks/">See the numbers</a>.</p>
   </article>
 
   <article class="feature-card">
@@ -72,26 +73,47 @@ the goal is unchanged.
 
 One self-hosted stylesheet covers typography, buttons, forms, cards,
 tables, palettes, animations and utility classes. No JavaScript. No
-build step required. No peer dependencies on Bootstrap, Tailwind or
-Bulma.
+build step required.
 
-| Feature | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
-|---|---|---|---|---|
-| Gzipped size | **~7.5&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
-| WCAG 2.2 conformance | **Built-in** | Partial | Manual | Partial |
-| Cascade layers | **Yes (`@layer`)** | No | No | No |
-| Dark mode | **`prefers-color-scheme`** | Opt-in | Class-based | Opt-in |
-| JavaScript required | **No** | Yes (Popper) | No | No |
-| CycloneDX SBOM | **Yes** | No | No | No |
-| Reduced-motion | **Honoured** | Partial | Manual | Partial |
-| License | MIT or Apache 2.0 | MIT | MIT | MIT |
+The matrix below is measured, not marketed: gzip and brotli numbers are
+from the [framework benchmark](/benchmarks/) (`gzip -9` / `brotli -q 11`
+on the canonical jsDelivr bundle as of 2026-04-30). Where rows are
+honest losses for Skeletonic, they're called out plainly.
+
+| Capability | Skeletonic Stylus 1.1.7 | Pico CSS 2.1 | Bulma 1.0 | Bootstrap 5.3 | Tailwind v4 |
+|---|---|---|---|---|---|
+| **Gzip** (canonical CDN bundle) | **8.3&nbsp;KB** | 11.6&nbsp;KB | 64.9&nbsp;KB | 30.9&nbsp;KB | varies (purged build only) |
+| **Brotli** | **6.9&nbsp;KB** | 10.1&nbsp;KB | 36.3&nbsp;KB | 23.0&nbsp;KB | varies |
+| **No build step required** | ✅ Yes | ✅ Yes | ❌ Sass | ✅ Yes | ❌ Oxide / PostCSS |
+| **Class-based authoring** | ✅ Yes | ❌ Classless only | ✅ Yes | ✅ Yes | ✅ Utility-first |
+| **JavaScript-free components** | ✅ Yes | ✅ Yes | ✅ Yes | ❌ Popper&nbsp;+&nbsp;BS&nbsp;JS | ✅ CSS-only |
+| **Cascade layers** (`@layer`) | ✅ Yes | ❌ No | ❌ No | ❌ No | ✅ v4 |
+| **CSS logical properties** (RTL) | ✅ Yes (95 declarations) | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ✅ Yes |
+| **Auto dark mode** (`prefers-color-scheme`) | ✅ Yes | ✅ Yes | ⚠️ Opt-in | ⚠️ Opt-in | ⚠️ Class-based |
+| **`prefers-reduced-motion` honoured** | ✅ Animations gated | ⚠️ Partial | ⚠️ Manual | ⚠️ Partial | ⚠️ Manual |
+| **`forced-colors` (Windows HCM)** fallbacks | ✅ Yes | ⚠️ Partial | ❌ No | ❌ No | ⚠️ Manual |
+| **CycloneDX SBOM** in release | ✅ `dist/sbom.json` | ❌ No | ❌ No | ❌ No | ❌ No |
+| **WCAG 2.2 axe-core CI gate** | ✅ Zero violations | ⚠️ Manual | ⚠️ Manual | ⚠️ Manual | ⚠️ Manual |
+| **License** | **MIT&nbsp;OR&nbsp;Apache‑2.0** | MIT | MIT | MIT | MIT |
+
+**Where Skeletonic loses, honestly.** Pico CSS is smaller in gzip terms
+if you're building a content-only site that fits the classless model —
+but you give up the grid system, the utility classes, and the option to
+mix in your own component styles without specificity wars. Tailwind v4
+purged is smaller than Skeletonic in absolute terms, but only after
+adding the Oxide build pipeline to your project; the no-build Tailwind
+Play CDN (`cdn.tailwindcss.com`) ships **123 KB gzipped** of JS at
+runtime, ~15× Skeletonic. Pick the trade-off that matches the project.
 
 ## Principles
 
 1. **Accessibility is the floor, not the ceiling.** WCAG 2.2 conformance
    is baked into every component, never bolted on as a "theme".
-2. **Bytes matter.** A single shipped stylesheet should not blow your
-   page-weight budget. The 8&nbsp;KB gzipped ceiling is enforced in CI.
+2. **Bytes matter, but not in isolation.** A single shipped stylesheet
+   shouldn't blow your page-weight budget — but every "smaller"
+   competitor ships either a build pipeline (Tailwind, Bulma) or
+   the wrong shape (Pico is classless, Open Props is tokens-only).
+   8&nbsp;KB gzip / 7&nbsp;KB brotli ceilings enforced in CI.
 3. **Cascade layers beat specificity wars.** Override anything with
    confidence — no `!important`, no DOM-order tricks.
 4. **Stylus is still good.** Terse, expressive, and lets the library

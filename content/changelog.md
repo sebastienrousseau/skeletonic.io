@@ -13,7 +13,21 @@ keywords: "skeletonic changelog, release notes, v1.1.7, semver"
 
 The "release-readiness" pass: a11y, supply chain, repo hygiene.
 
-### Accessibility (WCAG 2.2)
+### Accessibility (WCAG 2.2) &amp; internationalisation
+- **RTL via logical properties** — every directional declaration in
+  `margin-`, `padding-`, `border-`, `float`, `text-align`, and absolute
+  positioning is now logical (`margin-inline-*`, `inset-inline-*`,
+  `text-align: start/end`, `float: inline-start/end`). Set
+  `<html dir="rtl">` and the inline axis flips. The off-canvas hamburger
+  and the 12 `.link-N` underline reveals flip via a small
+  `[dir="rtl"]` override block. `<code>` and `<pre>` retain
+  `direction: ltr` because code is conventionally LTR.
+- **`--gr-h1`…`--gr-h6` heading tokens are now consumed.** Previously
+  the `<h1>`-`<h6>` rules used a separate hand-curated scale and the
+  exported tokens carried unusable Φⁿ values (h1 ≈ 29 rem). The Stylus
+  values and runtime custom properties now match the applied scale
+  (1.27 minor-third ratio), so consumers can retheme typography by
+  overriding `--gr-h*` on any ancestor.
 - **`$primary` darkened** to `hsl(210, 100%, 42%)` for AA contrast
   against white text in buttons / badges / links.
 - **`$secondary` darkened** to `hsl(195, 100%, 33%)`.

@@ -12,7 +12,9 @@ load_animations: true
 ---
 
 The **animations module** is shipped as a separate optional file so the
-core stylesheet stays under 8&nbsp;KB gzipped.
+core stylesheet stays under 7&nbsp;KB brotli. **45 keyframes across 9
+families**, every one of them gated behind
+`@media (prefers-reduced-motion: no-preference)`.
 
 ```html
 <link
@@ -96,136 +98,113 @@ properties to make the keyframes visible.
   still — that's the v1.1.7 accessibility behaviour working correctly.
 </p>
 
+<h3 id="distracting">Distracting (12)</h3>
+
+Attention-grabbing motion for emphasis, errors, and celebrations.
+
 <div class="anim-grid">
+  <div class="anim-card"><h3>bounce</h3><div class="anim-stage"><span class="anim-target" data-anim="bounce"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'bounce')">Play</button></div>
+  <div class="anim-card"><h3>pulse</h3><div class="anim-stage"><span class="anim-target" data-anim="pulse"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'pulse')">Play</button></div>
+  <div class="anim-card"><h3>shake</h3><div class="anim-stage"><span class="anim-target" data-anim="shake"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'shake')">Play</button></div>
+  <div class="anim-card"><h3>wobble</h3><div class="anim-stage"><span class="anim-target" data-anim="wobble"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'wobble')">Play</button></div>
+  <div class="anim-card"><h3>flash</h3><div class="anim-stage"><span class="anim-target" data-anim="flash"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'flash')">Play</button></div>
+  <div class="anim-card"><h3>heartbeat</h3><div class="anim-stage"><span class="anim-target" data-anim="heartbeat"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'heartbeat')">Play</button></div>
+  <div class="anim-card"><h3>jelly</h3><div class="anim-stage"><span class="anim-target" data-anim="jelly"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'jelly')">Play</button></div>
+  <div class="anim-card"><h3>rubber</h3><div class="anim-stage"><span class="anim-target" data-anim="rubber"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'rubber')">Play</button></div>
+  <div class="anim-card"><h3>swing</h3><div class="anim-stage"><span class="anim-target" data-anim="swing"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'swing')">Play</button></div>
+  <div class="anim-card"><h3>tada</h3><div class="anim-stage"><span class="anim-target" data-anim="tada"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'tada')">Play</button></div>
+  <div class="anim-card"><h3>chameleonbackground</h3><div class="anim-stage"><span class="anim-target" data-anim="chameleonbackground"></span></div><button type="button" class="button primary" onclick="replayAnim(this,'chameleonbackground')">Play</button></div>
+  <div class="anim-card"><h3>chameleontext</h3><div class="anim-stage"><span class="anim-target chameleontext-stage" data-anim="chameleontext" style="color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;border-radius:0;background:transparent;">Aa</span></div><button type="button" class="button primary" onclick="replayAnim(this,'chameleontext')">Play</button></div>
+</div>
 
-  <div class="anim-card">
-    <h3>bounce</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="bounce"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'bounce')">Play</button>
-  </div>
+<h3 id="fading">Fading (10)</h3>
 
-  <div class="anim-card">
-    <h3>pulse</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="pulse"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'pulse')">Play</button>
-  </div>
+Smooth opacity transitions, optionally combined with translation.
 
-  <div class="anim-card">
-    <h3>shake</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="shake"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'shake')">Play</button>
-  </div>
+<div class="anim-grid">
+  <div class="anim-card"><h3>fadeIn</h3><div class="anim-stage"><span class="anim-target" data-anim="fadeIn"></span></div><button type="button" class="button secondary" onclick="replayAnim(this,'fadeIn')">Play</button></div>
+  <div class="anim-card"><h3>fadeInDown</h3><div class="anim-stage"><span class="anim-target" data-anim="fadeInDown"></span></div><button type="button" class="button secondary" onclick="replayAnim(this,'fadeInDown')">Play</button></div>
+  <div class="anim-card"><h3>fadeInUp</h3><div class="anim-stage"><span class="anim-target" data-anim="fadeInUp"></span></div><button type="button" class="button secondary" onclick="replayAnim(this,'fadeInUp')">Play</button></div>
+  <div class="anim-card"><h3>fadeInLeft</h3><div class="anim-stage"><span class="anim-target" data-anim="fadeInLeft"></span></div><button type="button" class="button secondary" onclick="replayAnim(this,'fadeInLeft')">Play</button></div>
+  <div class="anim-card"><h3>fadeInRight</h3><div class="anim-stage"><span class="anim-target" data-anim="fadeInRight"></span></div><button type="button" class="button secondary" onclick="replayAnim(this,'fadeInRight')">Play</button></div>
+  <div class="anim-card"><h3>fadeOut</h3><div class="anim-stage"><span class="anim-target" data-anim="fadeOut"></span></div><button type="button" class="button secondary" onclick="replayAnim(this,'fadeOut')">Play</button></div>
+  <div class="anim-card"><h3>fadeOutDown</h3><div class="anim-stage"><span class="anim-target" data-anim="fadeOutDown"></span></div><button type="button" class="button secondary" onclick="replayAnim(this,'fadeOutDown')">Play</button></div>
+  <div class="anim-card"><h3>fadeOutUp</h3><div class="anim-stage"><span class="anim-target" data-anim="fadeOutUp"></span></div><button type="button" class="button secondary" onclick="replayAnim(this,'fadeOutUp')">Play</button></div>
+  <div class="anim-card"><h3>fadeOutLeft</h3><div class="anim-stage"><span class="anim-target" data-anim="fadeOutLeft"></span></div><button type="button" class="button secondary" onclick="replayAnim(this,'fadeOutLeft')">Play</button></div>
+  <div class="anim-card"><h3>fadeOutRight</h3><div class="anim-stage"><span class="anim-target" data-anim="fadeOutRight"></span></div><button type="button" class="button secondary" onclick="replayAnim(this,'fadeOutRight')">Play</button></div>
+</div>
 
-  <div class="anim-card">
-    <h3>wobble</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="wobble"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'wobble')">Play</button>
-  </div>
+<h3 id="flipping">Flipping (5)</h3>
 
-  <div class="anim-card">
-    <h3>flash</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="flash"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'flash')">Play</button>
-  </div>
+3-D card flips on the X or Y axis.
 
-  <div class="anim-card">
-    <h3>heartbeat</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="heartbeat"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'heartbeat')">Play</button>
-  </div>
+<div class="anim-grid">
+  <div class="anim-card"><h3>flip</h3><div class="anim-stage"><span class="anim-target" data-anim="flip"></span></div><button type="button" class="button" onclick="replayAnim(this,'flip')">Play</button></div>
+  <div class="anim-card"><h3>flipInHorizontal</h3><div class="anim-stage"><span class="anim-target" data-anim="flipInHorizontal"></span></div><button type="button" class="button" onclick="replayAnim(this,'flipInHorizontal')">Play</button></div>
+  <div class="anim-card"><h3>flipInVertical</h3><div class="anim-stage"><span class="anim-target" data-anim="flipInVertical"></span></div><button type="button" class="button" onclick="replayAnim(this,'flipInVertical')">Play</button></div>
+  <div class="anim-card"><h3>flipOutHorizontal</h3><div class="anim-stage"><span class="anim-target" data-anim="flipOutHorizontal"></span></div><button type="button" class="button" onclick="replayAnim(this,'flipOutHorizontal')">Play</button></div>
+  <div class="anim-card"><h3>flipOutVertical</h3><div class="anim-stage"><span class="anim-target" data-anim="flipOutVertical"></span></div><button type="button" class="button" onclick="replayAnim(this,'flipOutVertical')">Play</button></div>
+</div>
 
-  <div class="anim-card">
-    <h3>jelly</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="jelly"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'jelly')">Play</button>
-  </div>
+<h3 id="sliding">Sliding (8)</h3>
 
-  <div class="anim-card">
-    <h3>rubberBand</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="rubberBand"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'rubberBand')">Play</button>
-  </div>
+Slide on or off from any cardinal direction.
 
-  <div class="anim-card">
-    <h3>fadeIn</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="fadeIn"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'fadeIn')">Play</button>
-  </div>
+<div class="anim-grid">
+  <div class="anim-card"><h3>slideInDown</h3><div class="anim-stage"><span class="anim-target" data-anim="slideInDown"></span></div><button type="button" class="button" onclick="replayAnim(this,'slideInDown')">Play</button></div>
+  <div class="anim-card"><h3>slideInUp</h3><div class="anim-stage"><span class="anim-target" data-anim="slideInUp"></span></div><button type="button" class="button" onclick="replayAnim(this,'slideInUp')">Play</button></div>
+  <div class="anim-card"><h3>slideInLeft</h3><div class="anim-stage"><span class="anim-target" data-anim="slideInLeft"></span></div><button type="button" class="button" onclick="replayAnim(this,'slideInLeft')">Play</button></div>
+  <div class="anim-card"><h3>slideInRight</h3><div class="anim-stage"><span class="anim-target" data-anim="slideInRight"></span></div><button type="button" class="button" onclick="replayAnim(this,'slideInRight')">Play</button></div>
+  <div class="anim-card"><h3>slideOutDown</h3><div class="anim-stage"><span class="anim-target" data-anim="slideOutDown"></span></div><button type="button" class="button" onclick="replayAnim(this,'slideOutDown')">Play</button></div>
+  <div class="anim-card"><h3>slideOutUp</h3><div class="anim-stage"><span class="anim-target" data-anim="slideOutUp"></span></div><button type="button" class="button" onclick="replayAnim(this,'slideOutUp')">Play</button></div>
+  <div class="anim-card"><h3>slideOutLeft</h3><div class="anim-stage"><span class="anim-target" data-anim="slideOutLeft"></span></div><button type="button" class="button" onclick="replayAnim(this,'slideOutLeft')">Play</button></div>
+  <div class="anim-card"><h3>slideOutRight</h3><div class="anim-stage"><span class="anim-target" data-anim="slideOutRight"></span></div><button type="button" class="button" onclick="replayAnim(this,'slideOutRight')">Play</button></div>
+</div>
 
-  <div class="anim-card">
-    <h3>fadeInDown</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="fadeInDown"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'fadeInDown')">Play</button>
-  </div>
+<h3 id="rotating">Rotating (2)</h3>
 
-  <div class="anim-card">
-    <h3>fadeInUp</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="fadeInUp"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'fadeInUp')">Play</button>
-  </div>
+Continuous rotation — pair with `animation-iteration-count: infinite`
+for a true spinner.
 
-  <div class="anim-card">
-    <h3>popIn</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="popIn"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'popIn')">Play</button>
-  </div>
+<div class="anim-grid">
+  <div class="anim-card"><h3>spinLeft</h3><div class="anim-stage"><span class="anim-target" data-anim="spinLeft"></span></div><button type="button" class="button" onclick="replayAnim(this,'spinLeft')">Play</button></div>
+  <div class="anim-card"><h3>spinRight</h3><div class="anim-stage"><span class="anim-target" data-anim="spinRight"></span></div><button type="button" class="button" onclick="replayAnim(this,'spinRight')">Play</button></div>
+</div>
 
-  <div class="anim-card">
-    <h3>rollIn</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="rollIn"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'rollIn')">Play</button>
-  </div>
+<h3 id="zooming">Zooming (2)</h3>
 
-  <div class="anim-card">
-    <h3>flipInHorizontal</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="flipInHorizontal"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'flipInHorizontal')">Play</button>
-  </div>
+Scale from / to zero with a centred origin.
 
-  <div class="anim-card">
-    <h3>zoomIn</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="zoomIn"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'zoomIn')">Play</button>
-  </div>
+<div class="anim-grid">
+  <div class="anim-card"><h3>zoomIn</h3><div class="anim-stage"><span class="anim-target" data-anim="zoomIn"></span></div><button type="button" class="button" onclick="replayAnim(this,'zoomIn')">Play</button></div>
+  <div class="anim-card"><h3>zoomOut</h3><div class="anim-stage"><span class="anim-target" data-anim="zoomOut"></span></div><button type="button" class="button" onclick="replayAnim(this,'zoomOut')">Play</button></div>
+</div>
 
-  <div class="anim-card">
-    <h3>vanishIn</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="vanishIn"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'vanishIn')">Play</button>
-  </div>
+<h3 id="rolling">Rolling (2)</h3>
 
+Translate plus rotate — appears to "roll" across the page.
+
+<div class="anim-grid">
+  <div class="anim-card"><h3>rollIn</h3><div class="anim-stage"><span class="anim-target" data-anim="rollIn"></span></div><button type="button" class="button" onclick="replayAnim(this,'rollIn')">Play</button></div>
+  <div class="anim-card"><h3>rollOut</h3><div class="anim-stage"><span class="anim-target" data-anim="rollOut"></span></div><button type="button" class="button" onclick="replayAnim(this,'rollOut')">Play</button></div>
+</div>
+
+<h3 id="popping">Pop (2)</h3>
+
+Spring scale + fade — Apple-style.
+
+<div class="anim-grid">
+  <div class="anim-card"><h3>popIn</h3><div class="anim-stage"><span class="anim-target" data-anim="popIn"></span></div><button type="button" class="button" onclick="replayAnim(this,'popIn')">Play</button></div>
+  <div class="anim-card"><h3>popOut</h3><div class="anim-stage"><span class="anim-target" data-anim="popOut"></span></div><button type="button" class="button" onclick="replayAnim(this,'popOut')">Play</button></div>
+</div>
+
+<h3 id="vanishing">Vanishing (2)</h3>
+
+Material-style appear / disappear with blur.
+
+<div class="anim-grid">
+  <div class="anim-card"><h3>vanishIn</h3><div class="anim-stage"><span class="anim-target" data-anim="vanishIn"></span></div><button type="button" class="button" onclick="replayAnim(this,'vanishIn')">Play</button></div>
+  <div class="anim-card"><h3>vanishOut</h3><div class="anim-stage"><span class="anim-target" data-anim="vanishOut"></span></div><button type="button" class="button" onclick="replayAnim(this,'vanishOut')">Play</button></div>
 </div>
 
 <script>
@@ -253,26 +232,19 @@ properties to make the keyframes visible.
 
 <hr class="hr-text" data-content="Class list">
 
-## Class reference
+## Class reference (45 keyframes, 9 families)
 
-| Class | What it does |
+| Family | Classes |
 |---|---|
-| `.bounce` | Vertical spring step |
-| `.pulse` | Soft scale pulse |
-| `.shake` | Horizontal shake |
-| `.wobble` | Tilt and recover |
-| `.flash` | Two-step opacity blink |
-| `.heartbeat` | Double-beat scale |
-| `.jelly` | Squash & stretch |
-| `.rubberBand` | Elastic stretch |
-| `.fadeIn` / `.fadeOut` | Opacity transition |
-| `.fadeInDown` / `.fadeInUp` / `.fadeInLeft` / `.fadeInRight` | Directional fade |
-| `.zoomIn` / `.zoomOut` | Scale into / out of view |
-| `.popIn` / `.popOut` | Spring scale + fade |
-| `.rollIn` / `.rollOut` | Translate + rotate |
-| `.flipInHorizontal` / `.flipInVertical` | 3-D flip |
-| `.vanishIn` / `.vanishOut` | Material-style appear |
-| `.chameleonbackground` / `.chameleontext` | Hue cycle |
+| **Distracting** (12) | `.bounce` · `.pulse` · `.shake` · `.wobble` · `.flash` · `.heartbeat` · `.jelly` · `.rubber` · `.swing` · `.tada` · `.chameleonbackground` · `.chameleontext` |
+| **Fading** (10) | `.fadeIn` · `.fadeInDown` · `.fadeInUp` · `.fadeInLeft` · `.fadeInRight` · `.fadeOut` · `.fadeOutDown` · `.fadeOutUp` · `.fadeOutLeft` · `.fadeOutRight` |
+| **Flipping** (5) | `.flip` · `.flipInHorizontal` · `.flipInVertical` · `.flipOutHorizontal` · `.flipOutVertical` |
+| **Sliding** (8) | `.slideInDown` · `.slideInUp` · `.slideInLeft` · `.slideInRight` · `.slideOutDown` · `.slideOutUp` · `.slideOutLeft` · `.slideOutRight` |
+| **Rotating** (2) | `.spinLeft` · `.spinRight` |
+| **Zooming** (2) | `.zoomIn` · `.zoomOut` |
+| **Rolling** (2) | `.rollIn` · `.rollOut` |
+| **Pop** (2) | `.popIn` · `.popOut` |
+| **Vanishing** (2) | `.vanishIn` · `.vanishOut` |
 
 ## Heads up — known v1.1.7 caveat
 

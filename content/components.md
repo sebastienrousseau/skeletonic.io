@@ -17,10 +17,11 @@ any snippet into a fresh HTML file and it works.
 <nav aria-label="On this page">
 <p><strong>On this page</strong></p>
 <ul>
-<li><strong>Inputs</strong> — <a href="#buttons">Buttons</a> · <a href="#badges">Badges</a></li>
-<li><strong>Feedback</strong> — <a href="#alerts">Alerts</a></li>
-<li><strong>Surface</strong> — <a href="#cards">Cards</a></li>
-<li><strong>Forms</strong> — <a href="#form-fields">Form fields</a></li>
+<li><strong>Inputs</strong> — <a href="#buttons">Buttons</a> · <a href="#button-shapes">Button shapes</a> · <a href="#button-groups">Button groups</a> · <a href="#badges">Badges</a></li>
+<li><strong>Feedback</strong> — <a href="#alerts">Alerts</a> · <a href="#code-blocks">Code blocks</a></li>
+<li><strong>Surface</strong> — <a href="#cards">Cards</a> · <a href="#tables">Tables</a></li>
+<li><strong>Forms</strong> — <a href="#form-fields">Form fields</a> · <a href="#status-inputs">Status inputs</a> · <a href="#fieldsets">Fieldsets</a></li>
+<li><strong>Typography</strong> — <a href="#lists">Lists</a> · <a href="#dividers">Dividers</a> · <a href="#link-effects">Link hover effects</a></li>
 <li><strong>Layout</strong> — <a href="#grid">Grid</a> · <a href="#header">Header &amp; hamburger nav</a></li>
 </ul>
 </nav>
@@ -67,6 +68,66 @@ Outline variants:
 > `:focus-visible` ring and a **24×24&nbsp;px minimum hit area**
 > (WCAG&nbsp;2.2 SC&nbsp;2.5.8). Use `<button type="button">` for
 > in-page actions and `<a href>` only for navigation.
+
+<h3 id="button-shapes">Button shapes</h3>
+
+The `.btn` family is a parallel shape system on top of the `.button`
+colour family. Use it when you want a square, round, or oval icon
+button instead of the default pill.
+
+```html
+<button type="button" class="btn">Square</button>
+<button type="button" class="btn btn-round">●</button>
+<button type="button" class="btn btn-oval">Oval</button>
+<button type="button" class="btn btn-outline">Outline</button>
+```
+
+<section aria-labelledby="button-shapes">
+<p>
+  <button type="button" class="btn">Square</button>
+  <button type="button" class="btn btn-round">●</button>
+  <button type="button" class="btn btn-oval">Oval</button>
+  <button type="button" class="btn btn-outline">Outline</button>
+</p>
+</section>
+
+> **When to use.** `.btn-round` makes a 60×60 px circular button —
+> ideal for a single-character icon (close, like, share). `.btn-oval`
+> is a softer pill for short verbs ("Buy", "Send"). `.btn-outline`
+> reads as a secondary action — pair it with a solid `.btn` for the
+> primary call to action.
+
+<h3 id="button-groups">Button groups</h3>
+
+Use `.button-group` to render a set of related buttons as a single
+visual unit. `.block` makes a single button stretch full-width — handy
+for forms on narrow viewports.
+
+```html
+<div class="button-group">
+  <a href="#" class="button primary">Save</a>
+  <a href="#" class="button secondary">Save as draft</a>
+  <a href="#" class="button warning">Discard</a>
+</div>
+
+<a href="#" class="button primary block">Full-width call to action</a>
+```
+
+<section aria-labelledby="button-groups">
+<div class="button-group">
+  <a href="#" class="button primary">Save</a>
+  <a href="#" class="button secondary">Save as draft</a>
+  <a href="#" class="button warning">Discard</a>
+</div>
+<p style="margin-top:1rem;">
+  <a href="#" class="button primary block">Full-width call to action</a>
+</p>
+</section>
+
+> **Accessibility note.** Wrap a button group in
+> `role="group"` with an `aria-label` describing what the buttons do
+> together (e.g. "Document actions"). Without that, assistive tech
+> announces each button as if it were unrelated.
 
 <h3 id="badges">Badges</h3>
 
@@ -148,6 +209,45 @@ the page.
 > non-urgent confirmations. Both expose the message to assistive tech
 > the moment it appears.
 
+<h3 id="code-blocks">Code blocks</h3>
+
+`<code>`, `<kbd>`, `<pre>`, and `<samp>` get monospace styling and a
+thick inline-start accent stripe (which flips automatically under
+`<html dir="rtl">` thanks to logical properties). Status modifiers
+match the alert palette so callouts and code samples can speak the
+same colour language.
+
+```html
+<code class="primary">npm install @sebastienrousseau/skeletonic-stylus</code>
+<code class="success">2026-04-30 — build passed</code>
+<code class="warning">deprecated since v1.1.0 — removed in v2.0</code>
+<code class="error">CVE-2023-44270 patched via overrides</code>
+<code class="info">use `--gr-h1` to override the heading scale</code>
+```
+
+<section aria-labelledby="code-blocks">
+<p><code class="primary">npm install @sebastienrousseau/skeletonic-stylus</code></p>
+<p><code class="success">2026-04-30 — build passed</code></p>
+<p><code class="warning">deprecated since v1.1.0 — removed in v2.0</code></p>
+<p><code class="error">CVE-2023-44270 patched via overrides</code></p>
+<p><code class="info">use --gr-h1 to override the heading scale</code></p>
+</section>
+
+To render a keyboard shortcut, use `<kbd>`:
+
+```html
+Press <kbd>Ctrl</kbd>+<kbd>K</kbd> to focus the search.
+```
+
+<section>
+<p>Press <kbd>Ctrl</kbd>+<kbd>K</kbd> to focus the search.</p>
+</section>
+
+> **RTL note.** Code blocks intentionally retain `direction: ltr` even
+> on `<html dir="rtl">` pages — code is conventionally left-to-right.
+> What flips is the inline-start accent stripe, so the visual anchor
+> stays on the *reading-start* edge of the block.
+
 <hr class="hr-text" data-content="Surface">
 
 <h2 id="surface">Surface</h2>
@@ -208,6 +308,42 @@ A bordered, padded container for a single coherent unit. Pair with the
 > (`<h3>`). Screen-reader users can then traverse the card list as
 > first-class navigable regions.
 
+<h3 id="tables">Tables</h3>
+
+Plain `<table>` elements get bordered cells and a contrast-flipped
+`<thead>` automatically — no class soup needed.
+
+```html
+<table>
+  <thead>
+    <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Skeletonic</td><td>6.9 KB</td><td>Yes</td></tr>
+    <tr><td>Pico CSS</td><td>10.1 KB</td><td>Yes</td></tr>
+    <tr><td>Bootstrap</td><td>23.0 KB</td><td>No (Popper)</td></tr>
+  </tbody>
+</table>
+```
+
+<section aria-labelledby="tables">
+<table>
+  <thead>
+    <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Skeletonic</td><td>6.9 KB</td><td>Yes</td></tr>
+    <tr><td>Pico CSS</td><td>10.1 KB</td><td>Yes</td></tr>
+    <tr><td>Bootstrap</td><td>23.0 KB</td><td>No (Popper)</td></tr>
+  </tbody>
+</table>
+</section>
+
+> **Accessibility note.** Always use `<thead>` and `<th>` for header
+> cells (not `<td>` styled to look like a header) — assistive tech
+> announces the column header before each cell so users can navigate
+> the data grid.
+
 <hr class="hr-text" data-content="Forms">
 
 <h2 id="forms">Forms</h2>
@@ -253,6 +389,201 @@ consistently with the rest of the design system.
 > associated `<label for="…">`. Group related controls inside a
 > `<fieldset>` with a `<legend>`. Mark required fields with
 > `required` (and a visible asterisk in the label text).
+
+<h3 id="status-inputs">Status inputs</h3>
+
+Tint a single input to communicate validation state without rebuilding
+the form. The status modifier classes pair with any `<input type="">`
+that already has element styling.
+
+```html
+<input type="text"  class="input-primary"   placeholder="Primary">
+<input type="text"  class="input-success"   placeholder="Saved">
+<input type="text"  class="input-warning"   placeholder="Check this">
+<input type="email" class="input-error"     value="not-an-email">
+<input type="text"  class="input-info"      placeholder="FYI">
+```
+
+<section aria-labelledby="status-inputs">
+<form>
+  <p><input type="text" class="input-primary" placeholder="Primary" aria-label="primary status example"></p>
+  <p><input type="text" class="input-success" placeholder="Saved" aria-label="success status example"></p>
+  <p><input type="text" class="input-warning" placeholder="Check this" aria-label="warning status example"></p>
+  <p><input type="email" class="input-error" value="not-an-email" aria-label="error status example"></p>
+  <p><input type="text" class="input-info" placeholder="FYI" aria-label="info status example"></p>
+</form>
+</section>
+
+> **Accessibility note.** Colour alone never carries meaning. Pair
+> `.input-error` with `aria-invalid="true"`, an inline message linked
+> via `aria-describedby`, and a visible icon or text label.
+
+<h3 id="fieldsets">Fieldsets</h3>
+
+`<fieldset>` groups related controls; `<legend>` names the group. Both
+inherit Skeletonic's spacing and border tokens automatically.
+
+```html
+<fieldset>
+  <legend>Notification preferences</legend>
+  <p>
+    <input id="email-pref" type="checkbox" checked>
+    <label for="email-pref">Email digest</label>
+  </p>
+  <p>
+    <input id="sms-pref" type="checkbox">
+    <label for="sms-pref">SMS alerts</label>
+  </p>
+</fieldset>
+```
+
+<section aria-labelledby="fieldsets">
+<fieldset>
+  <legend>Notification preferences</legend>
+  <p>
+    <input id="demo-email-pref" type="checkbox" checked>
+    <label for="demo-email-pref">Email digest</label>
+  </p>
+  <p>
+    <input id="demo-sms-pref" type="checkbox">
+    <label for="demo-sms-pref">SMS alerts</label>
+  </p>
+</fieldset>
+</section>
+
+<hr class="hr-text" data-content="Typography">
+
+<h2 id="typography">Typography</h2>
+
+Plain HTML, lifted to typographic standard via the cascade.
+
+<h3 id="lists">Lists</h3>
+
+Three bullet styles ship as modifiers on `<ul>` — `square`, `circle`,
+`disc`. Plus the default unstyled list-reset.
+
+```html
+<ul class="square">
+  <li>Square bullets</li>
+  <li>Square bullets</li>
+</ul>
+
+<ul class="circle">
+  <li>Circle bullets</li>
+  <li>Circle bullets</li>
+</ul>
+
+<ul class="disc">
+  <li>Disc bullets</li>
+  <li>Disc bullets</li>
+</ul>
+```
+
+<section aria-labelledby="lists">
+<ul class="square">
+  <li>Square bullets</li>
+  <li>Square bullets</li>
+</ul>
+
+<ul class="circle">
+  <li>Circle bullets</li>
+  <li>Circle bullets</li>
+</ul>
+
+<ul class="disc">
+  <li>Disc bullets</li>
+  <li>Disc bullets</li>
+</ul>
+</section>
+
+<h3 id="dividers">Dividers</h3>
+
+Ten visual variants of `<hr>` — solid, dashed, dotted, doubled,
+rounded, blurred, small, vertical, plus a centred-icon and a centred
+text-on-rule used throughout this site for the section separators
+above.
+
+```html
+<hr class="hr-solid">
+<hr class="hr-dashed">
+<hr class="hr-dotted">
+<hr class="hr-doubled">
+<hr class="hr-rounded">
+<hr class="hr-blurred">
+<hr class="hr-small">
+<hr class="hr-icon">
+<hr class="hr-text" data-content="Section title">
+<hr class="hr-vertical">
+```
+
+<section aria-labelledby="dividers">
+<p><strong>Solid</strong></p>
+<hr class="hr-solid">
+<p><strong>Dashed</strong></p>
+<hr class="hr-dashed">
+<p><strong>Dotted</strong></p>
+<hr class="hr-dotted">
+<p><strong>Doubled</strong></p>
+<hr class="hr-doubled">
+<p><strong>Rounded</strong></p>
+<hr class="hr-rounded">
+<p><strong>Blurred</strong></p>
+<hr class="hr-blurred">
+<p><strong>Small (centred)</strong></p>
+<hr class="hr-small">
+<p><strong>Centred icon</strong></p>
+<hr class="hr-icon">
+<p><strong>Centred text</strong></p>
+<hr class="hr-text" data-content="Section title">
+</section>
+
+> **Note.** `<hr>` is a semantic, paragraph-level *thematic break*.
+> Don't use it for purely decorative spacing — use a `<div>` or CSS
+> `margin` instead. Assistive tech announces every `<hr>` as a section
+> change.
+
+<h3 id="link-effects">Link hover effects</h3>
+
+Twelve named hover-effect classes for inline links, ranging from
+classic underline reveals to bracket animations. They're independent
+of colour — pair with any text colour.
+
+```html
+<a href="#" class="link-1">Underline left → right</a>
+<a href="#" class="link-2">Underline right → left</a>
+<a href="#" class="link-3">Underline grow from centre</a>
+<a href="#" class="link-4">Underline shrink to centre</a>
+<a href="#" class="link-5">Top + bottom, left → right</a>
+<a href="#" class="link-6">Top + bottom, right → left</a>
+<a href="#" class="link-7">Top + bottom, grow from centre</a>
+<a href="#" class="link-8">Top + bottom, opposite start</a>
+<a href="#" class="link-9">Underline going up</a>
+<a href="#" class="link-10">Underline going down</a>
+<a href="#" class="link-11">Expanding brackets</a>
+<a href="#" class="link-12">Shrinking brackets</a>
+```
+
+<section aria-labelledby="link-effects">
+<p style="line-height:2.6;">
+  <a href="#link-effects" class="link-1">link-1</a> ·
+  <a href="#link-effects" class="link-2">link-2</a> ·
+  <a href="#link-effects" class="link-3">link-3</a> ·
+  <a href="#link-effects" class="link-4">link-4</a> ·
+  <a href="#link-effects" class="link-5">link-5</a> ·
+  <a href="#link-effects" class="link-6">link-6</a> ·
+  <a href="#link-effects" class="link-7">link-7</a> ·
+  <a href="#link-effects" class="link-8">link-8</a> ·
+  <a href="#link-effects" class="link-9">link-9</a> ·
+  <a href="#link-effects" class="link-10">link-10</a> ·
+  <a href="#link-effects" class="link-11">link-11</a> ·
+  <a href="#link-effects" class="link-12">link-12</a>
+</p>
+</section>
+
+> **RTL note.** Effects 1, 2, 5, 6, 8, and 11 have explicit `[dir="rtl"]`
+> overrides so "left → right" reveals semantically become "start → end"
+> reveals on RTL pages — meaning the underline grows from the same
+> side the reader is already starting from.
 
 <hr class="hr-text" data-content="Layout">
 
@@ -370,59 +701,31 @@ and traps focus correctly on its own.
 > accessible name source. Resize the window below 640&nbsp;px to see
 > the burger toggle take over.
 
-[See full a11y notes →](/accessibility/) · [Browse palettes →](/palettes/)
+[See full a11y notes →](/accessibility/) · [Browse palettes →](/palettes/) · [Framework benchmarks →](/benchmarks/)
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus components",
-  "description": "Every component shipped in Skeletonic Stylus v1.1.7.",
+  "description": "Every component, element and effect shipped in Skeletonic Stylus v1.1.7.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
-  "numberOfItems": 7,
+  "numberOfItems": 14,
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Buttons",
-      "url": "https://skeletonic.io/components/#buttons"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Badges",
-      "url": "https://skeletonic.io/components/#badges"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Alerts",
-      "url": "https://skeletonic.io/components/#alerts"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "Cards",
-      "url": "https://skeletonic.io/components/#cards"
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "name": "Form fields",
-      "url": "https://skeletonic.io/components/#form-fields"
-    },
-    {
-      "@type": "ListItem",
-      "position": 6,
-      "name": "Grid",
-      "url": "https://skeletonic.io/components/#grid"
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
-      "name": "Header & hamburger nav",
-      "url": "https://skeletonic.io/components/#header"
-    }
+    { "@type": "ListItem", "position": 1,  "name": "Buttons",                  "url": "https://skeletonic.io/components/#buttons" },
+    { "@type": "ListItem", "position": 2,  "name": "Button shapes",            "url": "https://skeletonic.io/components/#button-shapes" },
+    { "@type": "ListItem", "position": 3,  "name": "Button groups",            "url": "https://skeletonic.io/components/#button-groups" },
+    { "@type": "ListItem", "position": 4,  "name": "Badges",                   "url": "https://skeletonic.io/components/#badges" },
+    { "@type": "ListItem", "position": 5,  "name": "Alerts",                   "url": "https://skeletonic.io/components/#alerts" },
+    { "@type": "ListItem", "position": 6,  "name": "Code blocks",              "url": "https://skeletonic.io/components/#code-blocks" },
+    { "@type": "ListItem", "position": 7,  "name": "Cards",                    "url": "https://skeletonic.io/components/#cards" },
+    { "@type": "ListItem", "position": 8,  "name": "Tables",                   "url": "https://skeletonic.io/components/#tables" },
+    { "@type": "ListItem", "position": 9,  "name": "Form fields",              "url": "https://skeletonic.io/components/#form-fields" },
+    { "@type": "ListItem", "position": 10, "name": "Status inputs",            "url": "https://skeletonic.io/components/#status-inputs" },
+    { "@type": "ListItem", "position": 11, "name": "Fieldsets",                "url": "https://skeletonic.io/components/#fieldsets" },
+    { "@type": "ListItem", "position": 12, "name": "Lists",                    "url": "https://skeletonic.io/components/#lists" },
+    { "@type": "ListItem", "position": 13, "name": "Dividers",                 "url": "https://skeletonic.io/components/#dividers" },
+    { "@type": "ListItem", "position": 14, "name": "Link hover effects",       "url": "https://skeletonic.io/components/#link-effects" }
   ]
 }
 </script>
