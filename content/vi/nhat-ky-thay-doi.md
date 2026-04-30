@@ -56,7 +56,7 @@ Dot ra soat "san sang phat hanh": tro nang, chuoi cung ung, ve sinh kho.
 - **Dat ten `.alert-*`** — `.alert.success` → `.alert.alert-success`
   de tranh xung dot voi cac lop trang thai.
 
-[Ghi chu phat hanh v1.1.7 day du tren GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Ghi chu phat hanh v1.1.7 day du tren GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Lich su">
 

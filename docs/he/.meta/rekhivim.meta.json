@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "title": "רכיבים",
-  "name": "Skeletonic Stylus",
   "keywords": "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, התראות, תגיות, כותרת, ניווט hamburger, css only",
+  "title": "רכיבים",
   "description": "דוגמאות HTML חיות לכל רכיב ב-Skeletonic Stylus, מקובצות, מעוגנות ומוצגות עם גיליון הסגנונות עצמו.",
-  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "date": "2026-04-08",
   "language": "he",
   "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/he/rekhivim/"
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/he/rekhivim/",
+  "name": "Skeletonic Stylus"
 }

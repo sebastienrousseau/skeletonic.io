@@ -102,7 +102,7 @@ bagli modul.
 ```
 
 Tam Tachyons palet spesifikasyonu
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/)
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/)
 adresinde belgelenmistir; burada gonderilen surum Skeletonic'in
 derledigi surumudur.
 

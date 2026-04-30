@@ -92,6 +92,6 @@ Skeletonic Stylus v1.1.7 附带**三个可选配色方案**，每个方案都作
 <span class="bg-washed-yellow dark-gray pa2">.bg-washed-yellow .dark-gray</span>
 ```
 
-完整的 Tachyons 色板规范文档请参见 [tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/)；此处分发的版本是 Skeletonic 编译后的版本。
+完整的 Tachyons 色板规范文档请参见 [tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/)；此处分发的版本是 Skeletonic 编译后的版本。
 
 [返回组件 →](/zh-hans/zu-jian/)

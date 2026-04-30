@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "description": "Просматривайте документацию Skeletonic Stylus по тегам.",
-  "keywords": "skeletonic, теги, указатель, таксономия",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/ru/tags/",
-  "title": "Теги",
   "language": "ru",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "title": "Теги",
+  "description": "Просматривайте документацию Skeletonic Stylus по тегам.",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "skeletonic, теги, указатель, таксономия",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/ru/tags/",
+  "date": "2026-04-08"
 }

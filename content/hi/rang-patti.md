@@ -102,7 +102,7 @@ v1.1.7 में प्राइमरी और सेकंडरी टोक
 ```
 
 पूर्ण Tachyons पैलेट स्पेक
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/)
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/)
 पर प्रलेखित है; यहाँ शिप किया गया संस्करण वही है जो Skeletonic
 कंपाइल करती है।
 

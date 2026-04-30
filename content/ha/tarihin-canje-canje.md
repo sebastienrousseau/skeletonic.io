@@ -47,7 +47,7 @@ Aikin "shirye-shiryen sakin": samun dama, sarkar samarwa, tsaftar ma'ajiya.
 - **`.alternate`** da kuskure ya sanya `animation-direction: reverse` maimakon `alternate`.
 - **Sunan yankin `.alert-*`** — `.alert.success` → `.alert.alert-success` don guje wa karo da azuzuwan yanayi.
 
-[Cikakken bayanan sakin v1.1.7 a GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Cikakken bayanan sakin v1.1.7 a GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Tarihi">
 

@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "title": "Skeletonic Stylus 시작하기",
-  "layout": "page",
-  "keywords": "skeletonic 설치, stylus 설정, css cdn, 시작하기",
-  "date": "2026-04-08",
-  "language": "ko",
   "description": "npm 또는 CDN에서 Skeletonic Stylus를 설치하고 Stylus 빌드에 가져온 후 몇 초 만에 변수를 재정의하는 방법을 안내합니다.",
   "author": "Sebastien Rousseau",
+  "keywords": "skeletonic 설치, stylus 설정, css cdn, 시작하기",
+  "permalink": "https://skeletonic.io/ko/sijak/",
+  "language": "ko",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/ko/sijak/"
+  "title": "Skeletonic Stylus 시작하기",
+  "date": "2026-04-08"
 }

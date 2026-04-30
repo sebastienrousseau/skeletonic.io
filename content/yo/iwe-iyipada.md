@@ -58,7 +58,7 @@ Ipari "imurasilẹ-itusilẹ": a11y, ẹwọn ipese, itọju ibi-ipamọ.
 - **Orukọ `.alert-*`** — `.alert.success` → `.alert.alert-success`
   lati yẹra fun ikọlu pẹlu awọn kilasi ipo.
 
-[Gbogbo awọn akiyesi itusilẹ v1.1.7 lori GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Gbogbo awọn akiyesi itusilẹ v1.1.7 lori GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Itan">
 

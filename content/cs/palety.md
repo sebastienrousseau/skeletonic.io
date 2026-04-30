@@ -99,7 +99,7 @@ jednoúcelovych barevnych trid — stejny dodany artefakt, volitelny modul.
 ```
 
 Kompletni specifikace palety Tachyons je zdokumentovana na
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 verze zde dodana je ta, kterou Skeletonic kompiluje.
 
 [Zpet ke komponentam →](/cs/komponenty/)

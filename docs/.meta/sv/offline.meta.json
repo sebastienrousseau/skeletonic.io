@@ -1,12 +1,12 @@
 {
   "description": "skeletonic.io kunde inte na natverket. Sidan du begarde har inte cachelagrats annu.",
-  "name": "Skeletonic Stylus",
-  "title": "Du ar offline",
   "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
+  "title": "Du ar offline",
+  "permalink": "https://skeletonic.io/sv/offline/",
   "layout": "page",
   "keywords": "offline, service worker, pwa",
-  "permalink": "https://skeletonic.io/sv/offline/",
-  "language": "sv",
-  "author": "Sebastien Rousseau"
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "language": "sv"
 }

@@ -1,12 +1,12 @@
 {
-  "language": "uk",
+  "theme_color": "hsl(210, 100%, 42%)",
   "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Кольорові палітри Material, Tachyons та Web-safe, що постачаються зі Skeletonic Stylus v1.1.7.",
+  "language": "uk",
   "title": "Палітри",
-  "layout": "page",
   "date": "2026-04-08",
+  "description": "Кольорові палітри Material, Tachyons та Web-safe, що постачаються зі Skeletonic Stylus v1.1.7.",
   "permalink": "https://skeletonic.io/uk/palitry/",
-  "keywords": "css палітра, material, tachyons, websafe, дизайн-токени"
+  "keywords": "css палітра, material, tachyons, websafe, дизайн-токени",
+  "layout": "page"
 }

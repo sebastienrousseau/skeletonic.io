@@ -56,7 +56,7 @@ Der Release-Readiness-Durchlauf: Barrierefreiheit, Lieferkette, Repository-Hygie
 - **`.alert-*`-Namensraeume** — `.alert.success` zu `.alert.alert-success`
   geaendert, um Kollisionen mit Statusklassen zu vermeiden.
 
-[Vollstaendige v1.1.7-Release-Notes auf GitHub](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Vollstaendige v1.1.7-Release-Notes auf GitHub](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historie">
 

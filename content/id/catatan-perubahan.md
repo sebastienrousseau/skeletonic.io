@@ -47,7 +47,7 @@ Tahap "kesiapan rilis": a11y, rantai pasokan, kebersihan repositori.
 - **`.alternate`** salah menerapkan `animation-direction: reverse` alih-alih `alternate`.
 - **Namespace `.alert-*`** — `.alert.success` → `.alert.alert-success` untuk menghindari tabrakan dengan kelas state.
 
-[Catatan rilis v1.1.7 lengkap di GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Catatan rilis v1.1.7 lengkap di GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Riwayat">
 

@@ -101,7 +101,7 @@ de activacion opcional.
 ```
 
 La especificacion completa de la paleta Tachyons esta documentada en
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 la version publicada aqui es la que Skeletonic compila.
 
 [Volver a componentes →](/es/componentes/)

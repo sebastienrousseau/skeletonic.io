@@ -1,12 +1,12 @@
 {
   "date": "2026-04-08",
-  "layout": "page",
+  "language": "he",
   "permalink": "https://skeletonic.io/he/tnaim/",
+  "layout": "page",
   "description": "תנאים המסדירים את השימוש שלכם ב-skeletonic.io ובספריית Skeletonic Stylus.",
   "title": "תנאי שימוש",
-  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "he",
   "keywords": "תנאי שימוש, רישיון, mit, apache 2",
-  "name": "Skeletonic Stylus"
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau"
 }

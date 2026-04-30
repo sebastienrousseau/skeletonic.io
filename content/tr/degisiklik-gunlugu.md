@@ -54,7 +54,7 @@ keywords: "skeletonic degisiklik gunlugu, surum notlari, v1.1.7, semver"
 - **`.alert-*` ad alani** — durum siniflariyla catismayi onlemek icin
   `.alert.success` → `.alert.alert-success`.
 
-[GitHub'da tam v1.1.7 surum notlari ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[GitHub'da tam v1.1.7 surum notlari ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Gecmis">
 

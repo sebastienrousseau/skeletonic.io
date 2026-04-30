@@ -56,7 +56,7 @@ Pruchod „pripravenost k vydani": pristupnost, dodavatelsky retezec, hygiena re
 - **Jmenne prostory `.alert-*`** — `.alert.success` → `.alert.alert-success`
   pro zamezeni kolizi se stavovymi tridami.
 
-[Kompletni poznamky k vydani v1.1.7 na GitHubu ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Kompletni poznamky k vydani v1.1.7 na GitHubu ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historie">
 

@@ -56,7 +56,7 @@ Il passaggio di "preparazione al rilascio": a11y, supply chain, igiene del repos
 - **Namespace `.alert-*`** — `.alert.success` → `.alert.alert-success`
   per evitare collisioni con classi di stato.
 
-[Note complete del rilascio v1.1.7 su GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Note complete del rilascio v1.1.7 su GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Cronologia">
 

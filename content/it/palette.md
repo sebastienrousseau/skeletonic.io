@@ -94,7 +94,7 @@ Quando carichi `skeletonic-tachyons.min.css` ottieni un set completo di classi c
 ```
 
 La specifica completa della palette Tachyons e documentata su
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 la versione qui inclusa e quella compilata da Skeletonic.
 
 [Torna ai componenti →](/it/componenti/)

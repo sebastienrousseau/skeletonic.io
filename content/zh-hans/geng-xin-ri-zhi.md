@@ -47,7 +47,7 @@ keywords: "skeletonic 更新日志, 发布说明, v1.1.7, semver"
 - **`.alternate`** 错误地应用了 `animation-direction: reverse` 而非 `alternate`。
 - **`.alert-*` 命名空间** — `.alert.success` → `.alert.alert-success`，避免与状态类冲突。
 
-[GitHub 上的完整 v1.1.7 发布说明 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[GitHub 上的完整 v1.1.7 发布说明 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="历史版本">
 

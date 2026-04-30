@@ -47,7 +47,7 @@ keywords: "skeletonic 変更履歴, リリースノート, v1.1.7, semver"
 - **`.alternate`** が `alternate` ではなく `animation-direction: reverse` を誤って適用していた問題を修正。
 - **`.alert-*` の名前空間化** — `.alert.success` → `.alert.alert-success` に変更し、ステートクラスとの衝突を回避。
 
-[GitHub で v1.1.7 の完全なリリースノートを見る ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[GitHub で v1.1.7 の完全なリリースノートを見る ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="履歴">
 

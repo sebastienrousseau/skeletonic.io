@@ -1,12 +1,12 @@
 {
-  "description": "ชุดสี Material, Tachyons และ Web-safe ที่มาพร้อมกับ Skeletonic Stylus v1.1.7",
-  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
   "title": "ชุดสี",
-  "permalink": "https://skeletonic.io/th/chan-si/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
+  "keywords": "ชุดสี css, material, tachyons, websafe, design tokens",
+  "description": "ชุดสี Material, Tachyons และ Web-safe ที่มาพร้อมกับ Skeletonic Stylus v1.1.7",
+  "author": "Sebastien Rousseau",
   "language": "th",
   "date": "2026-04-08",
-  "keywords": "ชุดสี css, material, tachyons, websafe, design tokens"
+  "permalink": "https://skeletonic.io/th/chan-si/"
 }

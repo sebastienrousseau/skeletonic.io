@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/id/kontribusi/",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
   "description": "Cara mengajukan isu, mengusulkan perubahan, dan mengirimkan pull request ke Skeletonic Stylus.",
+  "permalink": "https://skeletonic.io/id/kontribusi/",
   "language": "id",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "title": "Kontribusi",
   "date": "2026-04-08",
+  "title": "Kontribusi",
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "kontribusi, sumber terbuka, pull request, isu, konvensi"
 }

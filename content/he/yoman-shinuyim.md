@@ -59,7 +59,7 @@ keywords: "יומן שינויים skeletonic, הערות שחרור, v1.1.7, se
 - **מרחוב שמות `.alert-*`** — `.alert.success` הפך
   ל-`.alert.alert-success` כדי למנוע התנגשויות עם מחלקות מצב.
 
-[הערות שחרור מלאות של v1.1.7 ב-GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[הערות שחרור מלאות של v1.1.7 ב-GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="היסטוריה">
 

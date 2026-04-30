@@ -1,11 +1,11 @@
 {
   "language": "he",
-  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "title": "יומן שינויים",
+  "keywords": "יומן שינויים skeletonic, הערות שחרור, v1.1.7, semver",
   "permalink": "https://skeletonic.io/he/yoman-shinuyim/",
-  "description": "הערות שחרור עבור Skeletonic Stylus, עם v1.1.7 במלואה.",
   "author": "Sebastien Rousseau",
-  "keywords": "יומן שינויים skeletonic, הערות שחרור, v1.1.7, semver"
+  "layout": "page",
+  "description": "הערות שחרור עבור Skeletonic Stylus, עם v1.1.7 במלואה.",
+  "name": "Skeletonic Stylus",
+  "title": "יומן שינויים"
 }

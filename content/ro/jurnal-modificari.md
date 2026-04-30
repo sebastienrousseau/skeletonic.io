@@ -49,7 +49,7 @@ Runda de „pregătire pentru lansare": accesibilitate, lanț de aprovizionare, 
 - **`.alternate`** aplica eronat `animation-direction: reverse` în loc de `alternate`.
 - **Prefixare `.alert-*`** — `.alert.success` → `.alert.alert-success` pentru a evita coliziunile cu clasele de stare.
 
-[Note complete lansare v1.1.7 pe GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Note complete lansare v1.1.7 pe GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Istoric">
 

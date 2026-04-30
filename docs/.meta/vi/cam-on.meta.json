@@ -1,12 +1,12 @@
 {
   "name": "Skeletonic Stylus",
-  "layout": "thanks",
-  "language": "vi",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/vi/cam-on/",
-  "title": "Cam on!",
+  "description": "Tin nhan cua ban da duoc gui thanh cong.",
   "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/vi/cam-on/",
+  "layout": "thanks",
+  "title": "Cam on!",
   "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "cam on",
-  "description": "Tin nhan cua ban da duoc gui thanh cong."
+  "language": "vi",
+  "author": "Sebastien Rousseau"
 }

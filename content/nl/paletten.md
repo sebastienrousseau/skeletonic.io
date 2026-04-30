@@ -100,7 +100,7 @@ eendoels kleurklassen — hetzelfde geleverde artefact, opt-in-module.
 ```
 
 De volledige Tachyons-paletspecificatie is gedocumenteerd op
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 de hier geleverde versie is degene die Skeletonic compileert.
 
 [Terug naar componenten →](/nl/componenten/)

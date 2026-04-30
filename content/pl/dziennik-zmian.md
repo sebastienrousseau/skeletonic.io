@@ -47,7 +47,7 @@ Przejscie „gotowosc do wydania": a11y, lancuch dostaw, higiena repozytorium.
 - **`.alternate`** blednie stosowal `animation-direction: reverse` zamiast `alternate`.
 - **Przestrzenie nazw `.alert-*`** — `.alert.success` → `.alert.alert-success` aby uniknac kolizji z klasami stanu.
 
-[Pelne notatki z wydania v1.1.7 na GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Pelne notatki z wydania v1.1.7 na GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historia">
 

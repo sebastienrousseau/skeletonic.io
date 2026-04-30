@@ -102,7 +102,7 @@ module optionnel.
 ```
 
 La spécification complète de la palette Tachyons est documentée sur
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/) ;
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/) ;
 la version livrée ici est celle compilée par Skeletonic.
 
 [Retour aux composants →](/fr/composants/)

@@ -100,7 +100,7 @@ Skeletonic Stylus v1.1.7 постачається з **трьома опціон
 ```
 
 Повна специфікація палітри Tachyons задокументована на
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 тут представлена версія, яку компілює Skeletonic.
 
 [Повернутися до компонентів →](/uk/komponenty/)

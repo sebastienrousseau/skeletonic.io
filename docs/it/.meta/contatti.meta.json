@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/it/contatti/",
-  "date": "2026-04-08",
-  "description": "Mettiti in contatto per Skeletonic Stylus — segnalazioni di bug, idee per nuove funzionalita, partnership o feedback generale.",
-  "author": "Sebastien Rousseau",
   "language": "it",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "description": "Mettiti in contatto per Skeletonic Stylus — segnalazioni di bug, idee per nuove funzionalita, partnership o feedback generale.",
+  "permalink": "https://skeletonic.io/it/contatti/",
+  "layout": "contact",
   "title": "Contatti",
-  "keywords": "contatti, supporto, feedback, skeletonic",
   "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "layout": "contact"
+  "keywords": "contatti, supporto, feedback, skeletonic"
 }

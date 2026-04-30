@@ -56,7 +56,7 @@ Passet for "releaseredskap": a11y, leveranskedja, repohydien.
 - **`.alert-*` namnrymdsandring** — `.alert.success` → `.alert.alert-success`
   for att undvika kollisioner med tillstandsklasser.
 
-[Fullstandiga v1.1.7-releaseanteckningar pa GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Fullstandiga v1.1.7-releaseanteckningar pa GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historik">
 

@@ -1,12 +1,12 @@
 {
-  "keywords": "css 安全, sbom, cyclonedx, npm provenance, openssf scorecard, 供應鏈",
   "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
   "description": "Skeletonic Stylus v1.1.7 如何保護其建置管線、簽署發行版本並提供 SBOM。",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "language": "zh-hant",
   "permalink": "https://skeletonic.io/zh-hant/an-quan/",
   "title": "安全與供應鏈",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "zh-hant"
+  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "keywords": "css 安全, sbom, cyclonedx, npm provenance, openssf scorecard, 供應鏈"
 }

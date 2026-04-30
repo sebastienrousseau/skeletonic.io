@@ -1,12 +1,12 @@
 {
-  "keywords": "конфиденциальность, gdpr, cookies, без отслеживания",
+  "language": "ru",
+  "title": "Конфиденциальность",
   "author": "Sebastien Rousseau",
-  "description": "Какие данные собирает skeletonic.io, зачем и как отказаться.",
   "date": "2026-04-08",
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/ru/konfidentsialnost/",
-  "title": "Конфиденциальность",
-  "language": "ru"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Какие данные собирает skeletonic.io, зачем и как отказаться.",
+  "layout": "page",
+  "keywords": "конфиденциальность, gdpr, cookies, без отслеживания"
 }

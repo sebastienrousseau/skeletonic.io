@@ -98,7 +98,7 @@ single-purpose colour classes — same shipped artefact, opt-in module.
 ```
 
 The full Tachyons palette spec is documented at
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 the version shipped here is the one Skeletonic compiles.
 
 [Back to components →](/components/)

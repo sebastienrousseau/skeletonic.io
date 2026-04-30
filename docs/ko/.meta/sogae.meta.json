@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
   "layout": "page",
-  "title": "Skeletonic Stylus 소개",
-  "author": "Sebastien Rousseau",
-  "description": "Skeletonic Stylus는 접근성 높고 빠르며 모듈화된 UI 스타일링을 위한 오픈소스 Stylus CSS 라이브러리입니다.",
   "keywords": "skeletonic, 소개, stylus, css 프레임워크, 철학",
-  "permalink": "https://skeletonic.io/ko/sogae/",
-  "language": "ko"
+  "language": "ko",
+  "title": "Skeletonic Stylus 소개",
+  "name": "Skeletonic Stylus",
+  "description": "Skeletonic Stylus는 접근성 높고 빠르며 모듈화된 UI 스타일링을 위한 오픈소스 Stylus CSS 라이브러리입니다.",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/ko/sogae/"
 }

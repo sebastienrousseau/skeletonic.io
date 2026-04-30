@@ -1,12 +1,12 @@
 {
-  "title": "सुरक्षा और आपूर्ति श्रृंखला",
-  "description": "Skeletonic Stylus v1.1.7 अपनी बिल्ड पाइपलाइन को कैसे सुरक्षित करती है, रिलीज़ साइन करती है, और SBOM शिप करती है।",
-  "language": "hi",
   "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
+  "language": "hi",
   "keywords": "css सुरक्षा, sbom, cyclonedx, npm provenance, openssf scorecard, आपूर्ति श्रृंखला",
-  "permalink": "https://skeletonic.io/hi/suraksha/",
-  "date": "2026-04-08"
+  "description": "Skeletonic Stylus v1.1.7 अपनी बिल्ड पाइपलाइन को कैसे सुरक्षित करती है, रिलीज़ साइन करती है, और SBOM शिप करती है।",
+  "title": "सुरक्षा और आपूर्ति श्रृंखला",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/hi/suraksha/"
 }

@@ -1,12 +1,12 @@
 {
-  "layout": "page",
+  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/hi/niyam/",
   "description": "skeletonic.io और Skeletonic Stylus लाइब्रेरी के उपयोग को नियंत्रित करने वाली शर्तें।",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
   "title": "उपयोग की शर्तें",
   "language": "hi",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
   "author": "Sebastien Rousseau",
-  "keywords": "उपयोग की शर्तें, लाइसेंस, mit, apache 2",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "date": "2026-04-08",
+  "keywords": "उपयोग की शर्तें, लाइसेंस, mit, apache 2"
 }

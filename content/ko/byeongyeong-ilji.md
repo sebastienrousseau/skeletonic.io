@@ -47,7 +47,7 @@ keywords: "skeletonic 변경 이력, 릴리스 노트, v1.1.7, 시맨틱 버전"
 - **`.alternate`** — `animation-direction: reverse` 대신 올바르게 `alternate` 적용.
 - **`.alert-*` 네임스페이스화** — `.alert.success` → `.alert.alert-success`로 변경하여 상태 클래스와의 충돌 방지.
 
-[GitHub의 전체 v1.1.7 릴리스 노트 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[GitHub의 전체 v1.1.7 릴리스 노트 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="이력">
 

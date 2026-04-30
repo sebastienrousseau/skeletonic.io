@@ -55,7 +55,7 @@ keywords: "سجل تغييرات skeletonic, ملاحظات الإصدار, v1.1
 - **تسمية `.alert-*`** — `.alert.success` ← `.alert.alert-success`
   لتجنب التعارض مع فئات الحالة.
 
-[ملاحظات إصدار v1.1.7 الكاملة على GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[ملاحظات إصدار v1.1.7 الكاملة على GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="التاريخ">
 

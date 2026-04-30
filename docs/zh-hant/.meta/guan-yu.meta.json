@@ -1,12 +1,12 @@
 {
-  "language": "zh-hant",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Skeletonic Stylus 是一個開源的 Stylus CSS 函式庫，用於無障礙、快速、模組化的 UI 樣式設計。",
-  "permalink": "https://skeletonic.io/zh-hant/guan-yu/",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
-  "date": "2026-04-08",
   "name": "Skeletonic Stylus",
   "title": "關於 Skeletonic Stylus",
-  "keywords": "skeletonic, 關於, stylus, css 框架, 設計理念"
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "skeletonic, 關於, stylus, css 框架, 設計理念",
+  "language": "zh-hant",
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/zh-hant/guan-yu/",
+  "description": "Skeletonic Stylus 是一個開源的 Stylus CSS 函式庫，用於無障礙、快速、模組化的 UI 樣式設計。"
 }

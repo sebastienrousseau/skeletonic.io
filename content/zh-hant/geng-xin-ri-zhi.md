@@ -47,7 +47,7 @@ keywords: "skeletonic 更新日誌, 發行說明, v1.1.7, 語意化版本"
 - **`.alternate`** 錯誤地套用 `animation-direction: reverse` 而非 `alternate`。
 - **`.alert-*` 命名空間化** — `.alert.success` → `.alert.alert-success`，避免與狀態類別衝突。
 
-[GitHub 上的完整 v1.1.7 發行說明 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[GitHub 上的完整 v1.1.7 發行說明 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="歷史">
 

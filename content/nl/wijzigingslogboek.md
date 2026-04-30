@@ -56,7 +56,7 @@ De "release-gereedheid"-controle: a11y, toeleveringsketen, repositoryhygiëne.
 - **`.alert-*`-naamgeving** — `.alert.success` → `.alert.alert-success`
   om botsingen met statusklassen te voorkomen.
 
-[Volledige v1.1.7-releasenotities op GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Volledige v1.1.7-releasenotities op GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Geschiedenis">
 

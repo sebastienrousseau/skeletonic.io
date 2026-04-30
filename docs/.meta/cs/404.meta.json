@@ -1,11 +1,11 @@
 {
-  "title": "Stranka nenalezena",
-  "description": "Stranka, kterou jste pozadovali, na skeletonic.io neexistuje.",
-  "keywords": "404, nenalezeno",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "cs",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/cs/404/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "keywords": "404, nenalezeno",
+  "author": "Sebastien Rousseau",
   "layout": "page",
-  "name": "Skeletonic Stylus"
+  "description": "Stranka, kterou jste pozadovali, na skeletonic.io neexistuje.",
+  "language": "cs",
+  "title": "Stranka nenalezena"
 }

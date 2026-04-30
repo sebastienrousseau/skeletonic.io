@@ -56,7 +56,7 @@ La passe de « préparation au déploiement » : a11y, chaîne d'approvisionneme
 - **Nommage `.alert-*`** — `.alert.success` → `.alert.alert-success`
   pour éviter les collisions avec les classes d'état.
 
-[Notes de version complètes v1.1.7 sur GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Notes de version complètes v1.1.7 sur GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historique">
 

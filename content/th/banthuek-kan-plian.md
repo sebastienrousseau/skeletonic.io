@@ -55,7 +55,7 @@ keywords: "บันทึกการเปลี่ยนแปลง skeleton
 - **namespace `.alert-*`** — `.alert.success` → `.alert.alert-success`
   เพื่อหลีกเลี่ยงการชนกับคลาสสถานะ
 
-[บันทึกรีลีส v1.1.7 ฉบับเต็มบน GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[บันทึกรีลีส v1.1.7 ฉบับเต็มบน GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="ประวัติ">
 

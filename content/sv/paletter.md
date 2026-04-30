@@ -99,7 +99,7 @@ av fargklasser med ett enda syfte — samma levererade artefakt, opt-in-modul.
 ```
 
 Den fullstandiga Tachyons-palettspecifikationen ar dokumenterad pa
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 versionen som levereras har ar den som Skeletonic kompilerar.
 
 [Tillbaka till komponenter →](/sv/komponenter/)

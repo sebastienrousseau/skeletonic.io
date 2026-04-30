@@ -97,7 +97,7 @@ single-purpose na colour class — parehong shipped na artefact, opt-in na modul
 ```
 
 Ang buong Tachyons palette spec ay nakadokumento sa
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 ang bersyon na narito ay ang kino-compile ng Skeletonic.
 
 [Bumalik sa mga bahagi →](/fil/mga-bahagi/)

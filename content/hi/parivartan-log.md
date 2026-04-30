@@ -59,7 +59,7 @@ keywords: "skeletonic परिवर्तन लॉग, रिलीज़ न
 - **`.alert-*` नेमस्पेसिंग** — `.alert.success` → `.alert.alert-success`
   state क्लास से टकराव रोकने के लिए।
 
-[GitHub पर पूर्ण v1.1.7 रिलीज़ नोट्स ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[GitHub पर पूर्ण v1.1.7 रिलीज़ नोट्स ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="इतिहास">
 

@@ -99,7 +99,7 @@ Skeletonic Stylus v1.1.7 מגיעה עם **שלוש פלטות צבעים אופ
 ```
 
 מפרט פלטת Tachyons המלא מתועד ב-
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 הגרסה הנשלחת כאן היא זו ש-Skeletonic מהדרת.
 
 [חזרה לרכיבים &larr;](/he/rekhivim/)

@@ -48,7 +48,7 @@ keywords: "skeletonic журнал изменений, заметки о рел�
 - **`.alternate`** ошибочно применял `animation-direction: reverse` вместо `alternate`.
 - **Пространство имён `.alert-*`** — `.alert.success` → `.alert.alert-success` для предотвращения конфликтов с классами состояний.
 
-[Полные заметки о релизе v1.1.7 на GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Полные заметки о релизе v1.1.7 на GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="История">
 

@@ -93,6 +93,6 @@ v1.1.7에서 주 색상과 보조 색상 토큰이 흰색 텍스트에 대해 **
 ```
 
 전체 Tachyons 팔레트 사양은
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/)에서 문서화되어 있으며, 여기에 포함된 버전은 Skeletonic이 컴파일한 버전입니다.
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/)에서 문서화되어 있으며, 여기에 포함된 버전은 Skeletonic이 컴파일한 버전입니다.
 
 [구성 요소로 돌아가기 →](/ko/kuseong-yoso/)

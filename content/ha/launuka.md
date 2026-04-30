@@ -94,7 +94,7 @@ Lokacin da kuka loda `skeletonic-tachyons.min.css` kuna samun cikakken saitin az
 ```
 
 An rubuta cikakken ƙayyadaddun tsarin launuka na Tachyons a
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 sigar da aka aika a nan ita ce wadda Skeletonic ke tattarawa.
 
 [Komawa abubuwan hadi →](/ha/abubuwan-hadi/)

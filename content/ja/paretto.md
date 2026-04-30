@@ -92,6 +92,6 @@ v1.1.7 では、プライマリとセカンダリのトークンが暗くなり�
 <span class="bg-washed-yellow dark-gray pa2">.bg-washed-yellow .dark-gray</span>
 ```
 
-完全な Tachyons パレット仕様は [tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/) に文書化されています。ここで配信されるバージョンは Skeletonic がコンパイルしたものです。
+完全な Tachyons パレット仕様は [tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/) に文書化されています。ここで配信されるバージョンは Skeletonic がコンパイルしたものです。
 
 [コンポーネントに戻る →](/ja/konponentsu/)

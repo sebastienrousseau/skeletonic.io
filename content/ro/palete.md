@@ -100,7 +100,7 @@ clase de culoare cu scop unic — același artefact livrat, modul opt-in.
 ```
 
 Specificația completă a paletei Tachyons este documentată la
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 versiunea livrată aici este cea compilată de Skeletonic.
 
 [Înapoi la componente →](/ro/componente/)

@@ -56,7 +56,7 @@ El pase de "preparacion para release": a11y, cadena de suministro, higiene del r
 - **Namespacing de `.alert-*`** — `.alert.success` → `.alert.alert-success`
   para evitar colisiones con clases de estado.
 
-[Notas completas de la version v1.1.7 en GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Notas completas de la version v1.1.7 en GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historial">
 

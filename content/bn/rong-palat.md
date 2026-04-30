@@ -100,7 +100,7 @@ v1.1.7-এ প্রাইমারি ও সেকেন্ডারি টো
 ```
 
 সম্পূর্ণ Tachyons প্যালেট স্পেসিফিকেশন ডকুমেন্ট করা আছে
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/)-এ;
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/)-এ;
 এখানে শিপ করা সংস্করণটি Skeletonic যা কম্পাইল করে।
 
 [উপাদানে ফিরে যান →](/bn/upadan/)

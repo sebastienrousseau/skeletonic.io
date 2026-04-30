@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
   "date": "2026-04-08",
-  "keywords": "installera skeletonic, stylus installation, css cdn, kom igang",
-  "language": "sv",
-  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/sv/kom-igang/",
   "author": "Sebastien Rousseau",
-  "title": "Kom igang med Skeletonic Stylus",
-  "description": "Installera Skeletonic Stylus fran npm eller ett CDN, importera det i din Stylus-build och overskriv variabler pa sekunder."
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "sv",
+  "keywords": "installera skeletonic, stylus installation, css cdn, kom igang",
+  "layout": "page",
+  "description": "Installera Skeletonic Stylus fran npm eller ett CDN, importera det i din Stylus-build och overskriv variabler pa sekunder.",
+  "title": "Kom igang med Skeletonic Stylus"
 }

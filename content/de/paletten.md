@@ -102,7 +102,7 @@ Artefakt, als optionales Modul.
 ```
 
 Die vollständige Tachyons-Palettenspezifikation finden Sie unter
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 die hier ausgelieferte Version ist diejenige, die Skeletonic kompiliert.
 
 [Zurück zu Komponenten →](/de/komponenten/)

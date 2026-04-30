@@ -59,7 +59,7 @@ higiene do repositorio.
 - **Namespacing `.alert-*`** — `.alert.success` → `.alert.alert-success`
   para evitar colisoes com classes de estado.
 
-[Notas completas do release v1.1.7 no GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Notas completas do release v1.1.7 no GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historico">
 

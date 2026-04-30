@@ -1,12 +1,12 @@
 {
-  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/es/tags/",
-  "title": "Etiquetas",
   "description": "Explora la documentacion de Skeletonic Stylus por etiqueta.",
+  "title": "Etiquetas",
+  "permalink": "https://skeletonic.io/es/tags/",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "language": "es",
-  "keywords": "skeletonic, etiquetas, indice, taxonomia"
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "keywords": "skeletonic, etiquetas, indice, taxonomia",
+  "language": "es"
 }

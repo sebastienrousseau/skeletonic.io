@@ -64,7 +64,7 @@ The "release-readiness" pass: a11y, supply chain, repo hygiene.
 - **`.alert-*` namespacing** — `.alert.success` → `.alert.alert-success`
   to avoid collisions with state classes.
 
-[Full v1.1.7 release notes on GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[All releases on GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="History">
 

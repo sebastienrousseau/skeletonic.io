@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/ro/despre/",
-  "keywords": "skeletonic, despre, stylus, framework css, filosofie",
-  "language": "ro",
-  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "title": "Despre Skeletonic Stylus",
   "description": "Skeletonic Stylus este o bibliotecă CSS Stylus open-source pentru stilizare UI accesibilă, rapidă și modulară.",
   "author": "Sebastien Rousseau",
   "date": "2026-04-08",
-  "layout": "page"
+  "layout": "page",
+  "keywords": "skeletonic, despre, stylus, framework css, filosofie",
+  "permalink": "https://skeletonic.io/ro/despre/",
+  "language": "ro",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Despre Skeletonic Stylus"
 }

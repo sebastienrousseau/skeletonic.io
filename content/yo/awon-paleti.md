@@ -98,7 +98,7 @@ kilasi awọ idi-kan — ohun kanna ti a fi ranṣẹ, modulu yan.
 ```
 
 Pato palẹti Tachyons ni kikun ni a ṣe akọsilẹ ni
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 ẹya ti a fi ranṣẹ nibi ni eyi ti Skeletonic ṣajọ.
 
 [Pada si awọn paati →](/yo/awon-paati/)

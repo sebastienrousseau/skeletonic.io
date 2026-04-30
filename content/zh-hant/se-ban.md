@@ -92,6 +92,6 @@ Skeletonic Stylus v1.1.7 隨附**三套可選色板**，每套均以獨立的壓
 <span class="bg-washed-yellow dark-gray pa2">.bg-washed-yellow .dark-gray</span>
 ```
 
-完整的 Tachyons 色板規範請參閱 [tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/)；此處隨附的是 Skeletonic 編譯的版本。
+完整的 Tachyons 色板規範請參閱 [tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/)；此處隨附的是 Skeletonic 編譯的版本。
 
 [返回組件 →](/zh-hant/zu-jian/)

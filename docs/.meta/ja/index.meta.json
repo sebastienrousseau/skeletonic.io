@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "language": "ja",
-  "keywords": "css, stylus, css フレームワーク, アクセシブル css, wcag 2.2, 軽量 css, カスケードレイヤー, デザインシステム",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/ja/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Skeletonic Stylus は軽量でモジュール式の Stylus CSS ライブラリです。WCAG 2.2 対応、カスケードレイヤー採用、gzip圧縮で約8.3 KB — モダンな Web UI 開発を効率化するために設計されています。",
-  "layout": "index",
   "date": "2026-04-08",
-  "title": "Skeletonic Stylus — アクセシブルなCSS、gzip圧縮で約8.3 KB"
+  "title": "Skeletonic Stylus — アクセシブルなCSS、gzip圧縮で約8.3 KB",
+  "description": "Skeletonic Stylus は軽量でモジュール式の Stylus CSS ライブラリです。WCAG 2.2 対応、カスケードレイヤー採用、gzip圧縮で約8.3 KB — モダンな Web UI 開発を効率化するために設計されています。",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "layout": "index",
+  "keywords": "css, stylus, css フレームワーク, アクセシブル css, wcag 2.2, 軽量 css, カスケードレイヤー, デザインシステム",
+  "language": "ja",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "title": "安全与供应链",
-  "permalink": "https://skeletonic.io/zh-hans/an-quan/",
-  "layout": "page",
   "keywords": "css 安全, sbom, cyclonedx, npm 来源验证, openssf 评分, 供应链",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "zh-hans",
   "name": "Skeletonic Stylus",
-  "description": "Skeletonic Stylus v1.1.7 如何保护其构建管线、签署发布包，以及提供 SBOM。"
+  "title": "安全与供应链",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/zh-hans/an-quan/",
+  "language": "zh-hans",
+  "description": "Skeletonic Stylus v1.1.7 如何保护其构建管线、签署发布包，以及提供 SBOM。",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

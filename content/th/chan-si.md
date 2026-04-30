@@ -98,7 +98,7 @@ Skeletonic Stylus v1.1.7 มาพร้อม **ชุดสีเสริม�
 ```
 
 ข้อมูลจำเพาะชุดสี Tachyons ฉบับเต็มอยู่ที่
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 เวอร์ชันที่มาพร้อมที่นี่คือเวอร์ชันที่ Skeletonic คอมไพล์
 
 [กลับไปที่ส่วนประกอบ →](/th/suan-prakop/)

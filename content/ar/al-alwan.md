@@ -98,7 +98,7 @@ keywords: "لوحة ألوان css, material, tachyons, websafe, رموز الت
 ```
 
 مواصفات لوحة Tachyons الكاملة موثّقة في
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 والنسخة المُشحونة هنا هي تلك التي يجمّعها Skeletonic.
 
 [العودة إلى المكوّنات →](/ar/al-mukawwinat/)

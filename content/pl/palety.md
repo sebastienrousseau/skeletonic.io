@@ -94,7 +94,7 @@ Po zaladowaniu `skeletonic-tachyons.min.css` otrzymujesz pelny zestaw jednofunkc
 ```
 
 Pelna specyfikacja palety Tachyons jest udokumentowana na
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 wersja dostarczana tutaj jest ta kompilowana przez Skeletonic.
 
 [Powrot do komponentow →](/pl/komponenty/)

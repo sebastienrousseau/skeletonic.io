@@ -1,13 +1,13 @@
 {
-  "description": "Module na motsin rai na zaɓi da Skeletonic Stylus v1.1.7 ke aikawa — bounce, pulse, fade, zoom, shake, da abokai, duka a bayan prefers-reduced-motion.",
-  "title": "Motsin Rai",
   "layout": "page",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "title": "Motsin Rai",
   "language": "ha",
+  "description": "Module na motsin rai na zaɓi da Skeletonic Stylus v1.1.7 ke aikawa — bounce, pulse, fade, zoom, shake, da abokai, duka a bayan prefers-reduced-motion.",
+  "permalink": "https://skeletonic.io/ha/motsin-rai/",
   "theme_color": "hsl(210, 100%, 42%)",
   "load_animations": true,
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/ha/motsin-rai/",
-  "author": "Sebastien Rousseau",
-  "keywords": "motsin rai na css, keyframes, prefers-reduced-motion, bounce, pulse, fade"
+  "keywords": "motsin rai na css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
+  "name": "Skeletonic Stylus"
 }

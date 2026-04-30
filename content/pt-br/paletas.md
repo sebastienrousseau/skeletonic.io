@@ -101,7 +101,7 @@ distribuido, modulo opt-in.
 ```
 
 A especificacao completa da paleta Tachyons esta documentada em
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 a versao incluida aqui e a compilada pelo Skeletonic.
 
 [Voltar para componentes →](/pt-br/componentes/)

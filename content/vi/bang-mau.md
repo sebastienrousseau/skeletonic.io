@@ -99,7 +99,7 @@ mau don muc dich — cung san pham, mo-dun tuy chon.
 ```
 
 Dac ta day du cua bang mau Tachyons duoc ghi tai
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 phien ban duoc cung cap o day la phien ban Skeletonic bien dich.
 
 [Quay lai thanh phan →](/vi/thanh-phan/)

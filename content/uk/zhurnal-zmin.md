@@ -60,7 +60,7 @@ keywords: "skeletonic журнал змін, примітки до релізу,
 - **Простір імен `.alert-*`** — `.alert.success` → `.alert.alert-success`
   для уникнення конфліктів із класами стану.
 
-[Повні примітки до релізу v1.1.7 на GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[Повні примітки до релізу v1.1.7 на GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Історія">
 

@@ -54,7 +54,7 @@ keywords: "skeletonic পরিবর্তন তালিকা, রিলি�
 - **`.alert-*` নেমস্পেসিং** — স্টেট ক্লাসের সাথে সংঘর্ষ এড়াতে
   `.alert.success` → `.alert.alert-success`।
 
-[সম্পূর্ণ v1.1.7 রিলিজ নোট GitHub-এ ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases/tag/v1.1.7)
+[সম্পূর্ণ v1.1.7 রিলিজ নোট GitHub-এ ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="ইতিহাস">
 

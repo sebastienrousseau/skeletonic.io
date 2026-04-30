@@ -94,7 +94,7 @@ Saat Anda memuat `skeletonic-tachyons.min.css`, Anda mendapatkan seperangkat len
 ```
 
 Spesifikasi palet Tachyons lengkap didokumentasikan di
-[tachyons.io/docs/themes/colors](https://tachyons.io/docs/themes/colors/);
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
 versi yang disertakan di sini adalah yang dikompilasi oleh Skeletonic.
 
 [Kembali ke komponen →](/id/komponen/)
