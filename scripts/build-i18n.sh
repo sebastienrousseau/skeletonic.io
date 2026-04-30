@@ -123,8 +123,10 @@ if [ "$BUILD_EN" -eq 1 ]; then
     if ls docs/css/*.css >/dev/null 2>&1; then break; fi
     sleep 1
   done
-  # Give the post-build plugins (a11y, fingerprint) a moment to finish.
-  sleep 2
+  # Give the post-build plugins (a11y, fingerprint, link-checker, page-write)
+  # enough time to finish — large content trees with many new pages need
+  # several seconds of settling after the CSS is fingerprinted.
+  sleep 8
   kill "$SSG_PID" 2>/dev/null || true
   wait "$SSG_PID" 2>/dev/null || true
   # Prevent GitHub Pages from running Jekyll on the output.
