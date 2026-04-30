@@ -65,9 +65,12 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           args: >-
+            --base docs
             --exclude formspree.io
             --exclude paypal.com
             --exclude validator.schema.org
+            --exclude '^https://skeletonic\.io'
+            --exclude '^https?://(www\.)?npmjs\.com'
             docs/**/*.html
 
       - name: Commit docs/ back to main (push only)
