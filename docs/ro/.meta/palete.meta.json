@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
+  "language": "ro",
   "title": "Palete",
-  "layout": "page",
   "permalink": "https://skeletonic.io/ro/palete/",
+  "layout": "page",
   "description": "Paletele de culori Material, Tachyons și web-safe livrate cu Skeletonic Stylus v1.1.7.",
   "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
   "keywords": "paletă css, material, tachyons, websafe, token-uri de design",
-  "language": "ro"
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus"
 }

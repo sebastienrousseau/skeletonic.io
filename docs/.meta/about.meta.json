@@ -1,11 +1,11 @@
 {
-  "description": "Skeletonic Stylus is an open-source Stylus CSS library for accessible, fast, modular UI styling.",
+  "name": "Skeletonic Stylus",
   "layout": "page",
-  "date": "2026-04-08",
-  "title": "About Skeletonic Stylus",
+  "description": "Skeletonic Stylus is an open-source Stylus CSS library for accessible, fast, modular UI styling.",
   "permalink": "https://skeletonic.io/about/",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "keywords": "skeletonic, about, stylus, css framework, philosophy",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "skeletonic, about, stylus, css framework, philosophy"
+  "title": "About Skeletonic Stylus"
 }

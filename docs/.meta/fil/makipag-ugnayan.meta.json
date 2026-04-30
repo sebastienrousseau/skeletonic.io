@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/fil/makipag-ugnayan/",
-  "layout": "contact",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Makipag-ugnayan",
-  "description": "Makipag-ugnayan tungkol sa Skeletonic Stylus — mga ulat ng bug, ideya para sa tampok, pakikipagtulungan, o pangkalahatang feedback.",
-  "language": "fil",
   "author": "Sebastien Rousseau",
+  "title": "Makipag-ugnayan",
+  "language": "fil",
+  "description": "Makipag-ugnayan tungkol sa Skeletonic Stylus — mga ulat ng bug, ideya para sa tampok, pakikipagtulungan, o pangkalahatang feedback.",
   "keywords": "makipag-ugnayan, suporta, feedback, skeletonic",
-  "date": "2026-04-08"
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "contact",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/fil/makipag-ugnayan/"
 }

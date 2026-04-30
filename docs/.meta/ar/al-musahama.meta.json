@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/ar/al-musahama/",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
-  "language": "ar",
+  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
   "title": "المساهمة",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "كيفية تقديم المشكلات واقتراح التغييرات وإرسال طلبات السحب إلى Skeletonic Stylus.",
+  "permalink": "https://skeletonic.io/ar/al-musahama/",
+  "language": "ar",
+  "keywords": "المساهمة, مفتوح المصدر, طلب سحب, مشكلة, اتفاقيات",
   "date": "2026-04-08",
-  "keywords": "المساهمة, مفتوح المصدر, طلب سحب, مشكلة, اتفاقيات"
+  "description": "كيفية تقديم المشكلات واقتراح التغييرات وإرسال طلبات السحب إلى Skeletonic Stylus.",
+  "layout": "page",
+  "author": "Sebastien Rousseau"
 }

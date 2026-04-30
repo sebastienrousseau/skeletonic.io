@@ -1,13 +1,13 @@
 {
-  "language": "ru",
-  "title": "Анимации",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "keywords": "css анимации, keyframes, prefers-reduced-motion, bounce, pulse, fade",
-  "load_animations": true,
-  "permalink": "https://skeletonic.io/ru/animatsii/",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
   "layout": "page",
-  "description": "Опциональный модуль анимаций, поставляемый с Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake и другие, все под защитой prefers-reduced-motion."
+  "language": "ru",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "load_animations": true,
+  "name": "Skeletonic Stylus",
+  "title": "Анимации",
+  "description": "Опциональный модуль анимаций, поставляемый с Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake и другие, все под защитой prefers-reduced-motion.",
+  "permalink": "https://skeletonic.io/ru/animatsii/",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "keywords": "css анимации, keyframes, prefers-reduced-motion, bounce, pulse, fade"
 }

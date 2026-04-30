@@ -451,7 +451,11 @@
       }
       a{color:var(--c-accent);text-underline-offset:.15em;text-decoration:underline}
       a:hover{color:var(--c-accent-hover);text-decoration:underline}
-      strong{font-weight:600}
+      /* Use the heading colour token so <strong> is highest-contrast in
+         both light and dark modes. Without an explicit colour, Skeletonic's
+         layered defaults could leave bold text near-invisible on dark
+         backgrounds (e.g. inside table cells). */
+      strong,b{font-weight:600;color:var(--c-heading)}
       code{
         background:var(--c-surface);
         color:var(--c-code);

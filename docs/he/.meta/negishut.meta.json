@@ -1,12 +1,12 @@
 {
-  "language": "he",
-  "description": "מה v1.1.7 מספקת ישירות מהקופסה לתאימות WCAG 2.2 — טבעות פוקוס, ניגודיות, קישורי דילוג, תנועה ומצב כהה.",
-  "permalink": "https://skeletonic.io/he/negishut/",
+  "title": "נגישות — WCAG 2.2 ב-v1.1.7",
   "name": "Skeletonic Stylus",
   "date": "2026-04-08",
-  "title": "נגישות — WCAG 2.2 ב-v1.1.7",
+  "permalink": "https://skeletonic.io/he/negishut/",
+  "language": "he",
+  "description": "מה v1.1.7 מספקת ישירות מהקופסה לתאימות WCAG 2.2 — טבעות פוקוס, ניגודיות, קישורי דילוג, תנועה ומצב כהה.",
   "author": "Sebastien Rousseau",
-  "keywords": "wcag 2.2, נגישות, focus visible, קישור דילוג, prefers reduced motion, ניגודיות",
   "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "wcag 2.2, נגישות, focus visible, קישור דילוג, prefers reduced motion, ניגודיות",
   "layout": "page"
 }

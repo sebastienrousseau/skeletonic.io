@@ -1,11 +1,11 @@
 {
-  "layout": "page",
-  "keywords": "jurnal de modificări skeletonic, note de lansare, v1.1.7, semver",
-  "permalink": "https://skeletonic.io/ro/jurnal-modificari/",
+  "title": "Jurnal de modificări",
   "language": "ro",
   "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/ro/jurnal-modificari/",
   "description": "Note de lansare pentru Skeletonic Stylus, cu v1.1.7 detaliat complet.",
-  "title": "Jurnal de modificări",
+  "keywords": "jurnal de modificări skeletonic, note de lansare, v1.1.7, semver",
+  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "layout": "page"
 }

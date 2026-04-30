@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
   "name": "Skeletonic Stylus",
+  "layout": "page",
+  "keywords": "wcag 2.2, irayẹ-si, focus visible, skip link, prefers reduced motion, iyatọ",
+  "author": "Sebastien Rousseau",
+  "language": "yo",
+  "title": "Irayẹ-si — WCAG 2.2 ninu v1.1.7",
+  "date": "2026-04-08",
   "description": "Ohun ti v1.1.7 fi ranṣẹ lẹsẹkẹsẹ fun ibamu WCAG 2.2 — awọn oruka idojukọ, iyatọ, awọn ọna asọye, iṣipopada, ati ipo dudu.",
   "permalink": "https://skeletonic.io/yo/iraye-si/",
-  "language": "yo",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "wcag 2.2, irayẹ-si, focus visible, skip link, prefers reduced motion, iyatọ",
-  "title": "Irayẹ-si — WCAG 2.2 ninu v1.1.7",
-  "author": "Sebastien Rousseau",
-  "layout": "page"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

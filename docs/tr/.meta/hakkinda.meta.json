@@ -1,12 +1,12 @@
 {
-  "layout": "page",
+  "title": "Skeletonic Stylus Hakkinda",
   "permalink": "https://skeletonic.io/tr/hakkinda/",
+  "layout": "page",
   "date": "2026-04-08",
   "keywords": "skeletonic, hakkinda, stylus, css framework, felsefe",
+  "language": "tr",
   "name": "Skeletonic Stylus",
-  "title": "Skeletonic Stylus Hakkinda",
-  "author": "Sebastien Rousseau",
   "description": "Skeletonic Stylus, erisilebilir, hizli ve moduler arayuz stillemesi icin olusturulmus acik kaynakli bir Stylus CSS kutuphanesidir.",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "tr"
+  "author": "Sebastien Rousseau"
 }

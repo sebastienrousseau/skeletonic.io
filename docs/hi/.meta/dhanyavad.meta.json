@@ -1,12 +1,12 @@
 {
-  "language": "hi",
-  "title": "धन्यवाद!",
   "name": "Skeletonic Stylus",
-  "description": "आपका संदेश सफलतापूर्वक भेज दिया गया।",
-  "keywords": "धन्यवाद",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/hi/dhanyavad/",
   "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "hi",
+  "title": "धन्यवाद!",
+  "description": "आपका संदेश सफलतापूर्वक भेज दिया गया।",
   "layout": "thanks",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "author": "Sebastien Rousseau",
+  "keywords": "धन्यवाद"
 }

@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "permalink": "https://skeletonic.io/tr/paletler/",
+  "name": "Skeletonic Stylus",
   "keywords": "css palet, material, tachyons, websafe, tasarim tokenlari",
-  "date": "2026-04-08",
-  "description": "Skeletonic Stylus v1.1.7 ile gelen Material, Tachyons ve web-safe renk paletleri.",
   "language": "tr",
   "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "layout": "page",
   "title": "Paletler — Skeletonic Stylus",
-  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/tr/paletler/",
+  "description": "Skeletonic Stylus v1.1.7 ile gelen Material, Tachyons ve web-safe renk paletleri.",
   "theme_color": "hsl(210, 100%, 42%)"
 }

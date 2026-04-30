@@ -1,11 +1,11 @@
 {
-  "permalink": "https://skeletonic.io/zh-hans/404/",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
+  "description": "你请求的页面在 skeletonic.io 上不存在。",
   "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "title": "页面未找到",
   "language": "zh-hans",
   "keywords": "404, 未找到",
-  "title": "页面未找到",
-  "description": "你请求的页面在 skeletonic.io 上不存在。"
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/zh-hans/404/"
 }

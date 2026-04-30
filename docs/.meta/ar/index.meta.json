@@ -1,12 +1,12 @@
 {
   "permalink": "https://skeletonic.io/ar/",
+  "language": "ar",
+  "layout": "index",
+  "description": "Skeletonic Stylus هي مكتبة CSS خفيفة ومعيارية مبنية بـ Stylus — متوافقة مع WCAG 2.2، تعتمد على طبقات التسلسل، بحجم ~7.5 كيلوبايت مضغوط — مصممة لتبسيط تطوير واجهات الويب الحديثة.",
+  "title": "Skeletonic Stylus — CSS سهل الوصول، بحجم ~7.5 كيلوبايت مضغوط",
+  "keywords": "css, stylus, إطار عمل css, css سهل الوصول, wcag 2.2, css خفيف, طبقات التسلسل, نظام تصميم",
   "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "language": "ar",
-  "title": "Skeletonic Stylus — CSS سهل الوصول، بحجم ~7.5 كيلوبايت مضغوط",
   "date": "2026-04-08",
-  "description": "Skeletonic Stylus هي مكتبة CSS خفيفة ومعيارية مبنية بـ Stylus — متوافقة مع WCAG 2.2، تعتمد على طبقات التسلسل، بحجم ~7.5 كيلوبايت مضغوط — مصممة لتبسيط تطوير واجهات الويب الحديثة.",
-  "keywords": "css, stylus, إطار عمل css, css سهل الوصول, wcag 2.2, css خفيف, طبقات التسلسل, نظام تصميم",
-  "layout": "index",
   "theme_color": "hsl(210, 100%, 42%)"
 }

@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "title": "Bat dau voi Skeletonic Stylus",
-  "keywords": "cai dat skeletonic, thiet lap stylus, css cdn, bat dau",
-  "name": "Skeletonic Stylus",
-  "description": "Cai dat Skeletonic Stylus tu npm hoac CDN, nhap vao pipeline Stylus cua ban va ghi de cac bien trong vai giay.",
-  "permalink": "https://skeletonic.io/vi/bat-dau/",
   "author": "Sebastien Rousseau",
   "layout": "page",
+  "title": "Bat dau voi Skeletonic Stylus",
   "language": "vi",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "permalink": "https://skeletonic.io/vi/bat-dau/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "description": "Cai dat Skeletonic Stylus tu npm hoac CDN, nhap vao pipeline Stylus cua ban va ghi de cac bien trong vai giay.",
+  "keywords": "cai dat skeletonic, thiet lap stylus, css cdn, bat dau"
 }

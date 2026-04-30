@@ -1,12 +1,12 @@
 {
   "title": "Ești offline",
-  "description": "skeletonic.io nu poate accesa rețeaua. Pagina solicitată nu a fost încă memorată în cache.",
-  "date": "2026-04-08",
-  "keywords": "offline, service worker, pwa",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/ro/offline/",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "description": "skeletonic.io nu poate accesa rețeaua. Pagina solicitată nu a fost încă memorată în cache.",
   "language": "ro",
-  "layout": "page"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "keywords": "offline, service worker, pwa"
 }

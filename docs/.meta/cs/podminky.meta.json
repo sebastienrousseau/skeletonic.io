@@ -1,12 +1,12 @@
 {
-  "description": "Podminky upravujici pouzivani skeletonic.io a knihovny Skeletonic Stylus.",
-  "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
   "keywords": "podminky pouziti, licence, mit, apache 2",
   "title": "Podminky pouziti — Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/cs/podminky/",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/cs/podminky/",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
   "language": "cs",
-  "layout": "page"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Podminky upravujici pouzivani skeletonic.io a knihovny Skeletonic Stylus."
 }

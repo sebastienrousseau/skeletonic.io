@@ -1,12 +1,12 @@
 {
-  "description": "O skeletonic.io nao conseguiu acessar a rede. A pagina solicitada ainda nao foi armazenada em cache.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
-  "title": "Voce esta offline",
   "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/pt-br/offline/",
+  "title": "Voce esta offline",
   "language": "pt-br",
+  "description": "O skeletonic.io nao conseguiu acessar a rede. A pagina solicitada ainda nao foi armazenada em cache.",
   "layout": "page",
-  "keywords": "offline, service worker, pwa"
+  "date": "2026-04-08",
+  "keywords": "offline, service worker, pwa",
+  "author": "Sebastien Rousseau"
 }

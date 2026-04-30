@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "description": "Mga colour palette na Material, Tachyons at web-safe na kasama sa Skeletonic Stylus v1.1.7.",
-  "language": "fil",
-  "permalink": "https://skeletonic.io/fil/mga-paleta/",
-  "keywords": "css palette, material, tachyons, websafe, design token",
-  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Mga Paleta",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/fil/mga-paleta/",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "description": "Mga colour palette na Material, Tachyons at web-safe na kasama sa Skeletonic Stylus v1.1.7.",
+  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
-  "layout": "page"
+  "keywords": "css palette, material, tachyons, websafe, design token",
+  "language": "fil"
 }

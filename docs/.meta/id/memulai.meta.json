@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/id/memulai/",
-  "description": "Instal Skeletonic Stylus dari npm atau CDN, impor ke dalam build Stylus Anda, dan timpa variabel dalam hitungan detik.",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "keywords": "instal skeletonic, setup stylus, css cdn, memulai",
-  "language": "id",
   "title": "Memulai dengan Skeletonic Stylus",
-  "name": "Skeletonic Stylus"
+  "language": "id",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/id/memulai/",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "keywords": "instal skeletonic, setup stylus, css cdn, memulai",
+  "author": "Sebastien Rousseau",
+  "description": "Instal Skeletonic Stylus dari npm atau CDN, impor ke dalam build Stylus Anda, dan timpa variabel dalam hitungan detik.",
+  "layout": "page"
 }
