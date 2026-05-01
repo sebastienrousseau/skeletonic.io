@@ -1,12 +1,12 @@
 {
+  "description": "Live-HTML-Beispiele aller Skeletonic-Stylus-Komponenten — gruppiert, verankert und mit genau dem Stylesheet gerendert, das hier vorgestellt wird.",
   "name": "Skeletonic Stylus",
   "layout": "page",
-  "language": "de",
   "keywords": "skeletonic komponenten, schaltflaechen, karten, formulare, hinweise, badges, kopfzeile, navigation, css hamburger menue",
+  "permalink": "https://skeletonic.io/de/komponenten/",
   "date": "2026-04-08",
   "author": "Sebastien Rousseau",
-  "description": "Live-HTML-Beispiele aller Skeletonic-Stylus-Komponenten — gruppiert, verankert und mit genau dem Stylesheet gerendert, das hier vorgestellt wird.",
-  "permalink": "https://skeletonic.io/de/komponenten/",
   "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Komponenten — Skeletonic Stylus"
+  "title": "Komponenten — Skeletonic Stylus",
+  "language": "de"
 }

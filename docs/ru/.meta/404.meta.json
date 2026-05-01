@@ -1,11 +1,11 @@
 {
-  "name": "Skeletonic Stylus",
-  "keywords": "404, не найдено",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ru",
-  "title": "Страница не найдена",
   "layout": "page",
+  "name": "Skeletonic Stylus",
   "description": "Запрошенная страница не существует на skeletonic.io.",
+  "language": "ru",
+  "keywords": "404, не найдено",
+  "title": "Страница не найдена",
+  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/ru/404/",
   "author": "Sebastien Rousseau"
 }

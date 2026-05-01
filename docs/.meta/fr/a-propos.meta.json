@@ -1,12 +1,12 @@
 {
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "skeletonic, à propos, stylus, framework css, philosophie",
   "title": "À propos de Skeletonic Stylus",
-  "language": "fr",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/fr/a-propos/",
+  "language": "fr",
   "date": "2026-04-08",
   "layout": "page",
-  "keywords": "skeletonic, à propos, stylus, framework css, philosophie",
-  "name": "Skeletonic Stylus",
   "description": "Skeletonic Stylus est une bibliothèque CSS Stylus open source conçue pour un stylage d'interfaces accessible, rapide et modulaire."
 }

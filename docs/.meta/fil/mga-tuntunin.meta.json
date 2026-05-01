@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "fil",
   "title": "Mga Tuntunin ng Paggamit",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/fil/mga-tuntunin/",
-  "keywords": "mga tuntunin ng paggamit, lisensya, mit, apache 2",
   "description": "Mga tuntunin na namamahala sa iyong paggamit ng skeletonic.io at ng Skeletonic Stylus library.",
-  "layout": "page"
+  "author": "Sebastien Rousseau",
+  "language": "fil",
+  "keywords": "mga tuntunin ng paggamit, lisensya, mit, apache 2",
+  "permalink": "https://skeletonic.io/fil/mga-tuntunin/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "date": "2026-04-08"
 }

@@ -1,11 +1,11 @@
 {
   "permalink": "https://skeletonic.io/nl/404/",
   "layout": "page",
-  "language": "nl",
-  "description": "De pagina die je hebt opgevraagd bestaat niet op skeletonic.io.",
   "title": "Pagina niet gevonden",
+  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "404, niet gevonden",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus"
+  "language": "nl",
+  "name": "Skeletonic Stylus",
+  "description": "De pagina die je hebt opgevraagd bestaat niet op skeletonic.io."
 }

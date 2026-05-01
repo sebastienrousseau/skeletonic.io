@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "description": "Skeletonic Stylus v1.1.7이 빌드 파이프라인을 보호하고, 릴리스에 서명하며, SBOM을 제공하는 방법입니다.",
+  "language": "ko",
   "layout": "page",
   "keywords": "css 보안, sbom, cyclonedx, npm 출처 증명, openssf scorecard, 공급망",
+  "permalink": "https://skeletonic.io/ko/boaan/",
+  "date": "2026-04-08",
+  "description": "Skeletonic Stylus v1.1.7이 빌드 파이프라인을 보호하고, 릴리스에 서명하며, SBOM을 제공하는 방법입니다.",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ko",
-  "name": "Skeletonic Stylus",
   "title": "보안 &amp; 공급망",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/ko/boaan/"
+  "name": "Skeletonic Stylus"
 }

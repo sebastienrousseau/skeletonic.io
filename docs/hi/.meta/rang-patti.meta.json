@@ -1,12 +1,12 @@
 {
-  "language": "hi",
-  "layout": "page",
   "permalink": "https://skeletonic.io/hi/rang-patti/",
-  "title": "रंग पट्टी",
-  "keywords": "css पैलेट, material, tachyons, websafe, डिज़ाइन टोकन",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "description": "Skeletonic Stylus v1.1.7 में शिप Material, Tachyons और web-safe रंग पैलेट।",
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08"
+  "keywords": "css पैलेट, material, tachyons, websafe, डिज़ाइन टोकन",
+  "description": "Skeletonic Stylus v1.1.7 में शिप Material, Tachyons और web-safe रंग पैलेट।",
+  "date": "2026-04-08",
+  "language": "hi",
+  "title": "रंग पट्टी",
+  "layout": "page"
 }

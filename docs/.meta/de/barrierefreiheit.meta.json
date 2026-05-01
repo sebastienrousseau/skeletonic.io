@@ -1,12 +1,12 @@
 {
   "title": "Barrierefreiheit — WCAG 2.2 in v1.1.7",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "description": "Was v1.1.7 standardmäßig für WCAG-2.2-Konformität mitbringt — Fokusringe, Kontrast, Skip-Links, Bewegung und Dunkelmodus.",
+  "language": "de",
   "layout": "page",
+  "author": "Sebastien Rousseau",
+  "description": "Was v1.1.7 standardmäßig für WCAG-2.2-Konformität mitbringt — Fokusringe, Kontrast, Skip-Links, Bewegung und Dunkelmodus.",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
   "keywords": "wcag 2.2, accessibility, focus visible, skip link, prefers reduced motion, contrast",
-  "author": "Sebastien Rousseau",
-  "language": "de",
   "permalink": "https://skeletonic.io/de/barrierefreiheit/"
 }

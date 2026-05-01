@@ -1,13 +1,13 @@
 {
-  "name": "Skeletonic Stylus",
-  "layout": "page",
-  "language": "uk",
-  "description": "Опціональний модуль анімацій Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake та інші, всі за перевіркою prefers-reduced-motion.",
-  "keywords": "css анімації, keyframes, prefers-reduced-motion, bounce, pulse, fade",
-  "permalink": "https://skeletonic.io/uk/animatsii/",
+  "title": "Анімації",
   "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
-  "title": "Анімації",
-  "load_animations": true
+  "language": "uk",
+  "load_animations": true,
+  "layout": "page",
+  "permalink": "https://skeletonic.io/uk/animatsii/",
+  "description": "Опціональний модуль анімацій Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake та інші, всі за перевіркою prefers-reduced-motion.",
+  "keywords": "css анімації, keyframes, prefers-reduced-motion, bounce, pulse, fade"
 }

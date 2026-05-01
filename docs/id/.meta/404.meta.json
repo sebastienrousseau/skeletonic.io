@@ -1,11 +1,11 @@
 {
-  "permalink": "https://skeletonic.io/id/404/",
-  "name": "Skeletonic Stylus",
+  "language": "id",
   "title": "Halaman tidak ditemukan",
   "author": "Sebastien Rousseau",
-  "keywords": "404, tidak ditemukan",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "id",
+  "permalink": "https://skeletonic.io/id/404/",
+  "description": "Halaman yang Anda minta tidak ada di skeletonic.io.",
+  "name": "Skeletonic Stylus",
   "layout": "page",
-  "description": "Halaman yang Anda minta tidak ada di skeletonic.io."
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "404, tidak ditemukan"
 }

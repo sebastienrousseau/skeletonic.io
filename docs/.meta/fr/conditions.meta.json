@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
   "language": "fr",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
-  "title": "Conditions d'utilisation",
-  "layout": "page",
-  "description": "Conditions régissant l'utilisation de skeletonic.io et de la bibliothèque Skeletonic Stylus.",
-  "keywords": "conditions d'utilisation, licence, mit, apache 2",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/fr/conditions/"
+  "title": "Conditions d'utilisation",
+  "permalink": "https://skeletonic.io/fr/conditions/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "conditions d'utilisation, licence, mit, apache 2",
+  "description": "Conditions régissant l'utilisation de skeletonic.io et de la bibliothèque Skeletonic Stylus.",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "layout": "page"
 }

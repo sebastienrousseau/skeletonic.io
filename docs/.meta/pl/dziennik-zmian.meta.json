@@ -1,11 +1,11 @@
 {
-  "layout": "page",
-  "permalink": "https://skeletonic.io/pl/dziennik-zmian/",
-  "keywords": "dziennik zmian skeletonic, notatki z wydan, v1.1.7, semver",
-  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
   "language": "pl",
-  "description": "Notatki z wydan Skeletonic Stylus, z pelnym opisem v1.1.7.",
-  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
   "title": "Dziennik zmian",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "keywords": "dziennik zmian skeletonic, notatki z wydan, v1.1.7, semver",
+  "description": "Notatki z wydan Skeletonic Stylus, z pelnym opisem v1.1.7.",
+  "permalink": "https://skeletonic.io/pl/dziennik-zmian/",
+  "layout": "page",
+  "name": "Skeletonic Stylus"
 }

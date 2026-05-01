@@ -1,11 +1,11 @@
 {
-  "keywords": "offline, service worker, pwa",
-  "description": "skeletonic.io could not reach the network. The page you requested has not been cached yet.",
+  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
+  "description": "skeletonic.io could not reach the network. The page you requested has not been cached yet.",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
   "title": "You're offline",
   "layout": "page",
-  "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
+  "keywords": "offline, service worker, pwa",
   "permalink": "https://skeletonic.io/offline/"
 }

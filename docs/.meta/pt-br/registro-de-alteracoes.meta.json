@@ -1,11 +1,11 @@
 {
-  "permalink": "https://skeletonic.io/pt-br/registro-de-alteracoes/",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
   "name": "Skeletonic Stylus",
-  "description": "Notas de release do Skeletonic Stylus, com a v1.1.7 completa.",
   "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Notas de release do Skeletonic Stylus, com a v1.1.7 completa.",
+  "layout": "page",
   "title": "Registro de alteracoes",
-  "keywords": "skeletonic changelog, notas de release, v1.1.7, semver",
-  "language": "pt-br"
+  "language": "pt-br",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/pt-br/registro-de-alteracoes/",
+  "keywords": "skeletonic changelog, notas de release, v1.1.7, semver"
 }

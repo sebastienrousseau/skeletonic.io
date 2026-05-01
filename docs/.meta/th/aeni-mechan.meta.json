@@ -1,12 +1,12 @@
 {
-  "language": "th",
-  "title": "แอนิเมชัน",
-  "name": "Skeletonic Stylus",
   "date": "2026-04-08",
-  "keywords": "แอนิเมชัน css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
+  "name": "Skeletonic Stylus",
+  "title": "แอนิเมชัน",
   "author": "Sebastien Rousseau",
   "load_animations": true,
+  "language": "th",
   "description": "โมดูลแอนิเมชันเสริมที่มาพร้อมกับ Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake และอื่น ๆ ทั้งหมดอยู่หลัง prefers-reduced-motion",
+  "keywords": "แอนิเมชัน css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
   "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/th/aeni-mechan/"

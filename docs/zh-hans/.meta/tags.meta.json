@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
   "keywords": "skeletonic, 标签, 索引, 分类",
-  "title": "标签",
-  "description": "按标签浏览 Skeletonic Stylus 文档。",
   "language": "zh-hans",
-  "permalink": "https://skeletonic.io/zh-hans/tags/",
-  "layout": "page",
   "date": "2026-04-08",
+  "layout": "page",
+  "description": "按标签浏览 Skeletonic Stylus 文档。",
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau"
+  "permalink": "https://skeletonic.io/zh-hans/tags/",
+  "author": "Sebastien Rousseau",
+  "title": "标签"
 }

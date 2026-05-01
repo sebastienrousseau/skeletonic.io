@@ -1,12 +1,12 @@
 {
-  "title": "Componente",
-  "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "description": "Exemple HTML live pentru fiecare componentă Skeletonic Stylus, grupate, ancorate și randate cu stylesheet-ul demonstrat.",
-  "keywords": "componente skeletonic, butoane, carduri, formulare, alerte, badge-uri, header, navbar, hamburger css",
-  "theme_color": "hsl(210, 100%, 42%)",
   "language": "ro",
+  "description": "Exemple HTML live pentru fiecare componentă Skeletonic Stylus, grupate, ancorate și randate cu stylesheet-ul demonstrat.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "componente skeletonic, butoane, carduri, formulare, alerte, badge-uri, header, navbar, hamburger css",
   "permalink": "https://skeletonic.io/ro/componente/",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "title": "Componente",
   "layout": "page",
-  "author": "Sebastien Rousseau"
+  "date": "2026-04-08"
 }

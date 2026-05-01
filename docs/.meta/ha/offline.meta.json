@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Ba ku da haɗin yanar gizo",
-  "language": "ha",
-  "keywords": "offline, service worker, pwa",
-  "permalink": "https://skeletonic.io/ha/offline/",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
   "layout": "page",
-  "description": "skeletonic.io ba ta iya isa ga cibiyar sadarwa ba. Ba a adana shafin da kuka nema ba tukuna."
+  "name": "Skeletonic Stylus",
+  "title": "Ba ku da haɗin yanar gizo",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "description": "skeletonic.io ba ta iya isa ga cibiyar sadarwa ba. Ba a adana shafin da kuka nema ba tukuna.",
+  "language": "ha",
+  "permalink": "https://skeletonic.io/ha/offline/",
+  "keywords": "offline, service worker, pwa"
 }

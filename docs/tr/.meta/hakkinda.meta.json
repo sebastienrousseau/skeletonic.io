@@ -1,12 +1,12 @@
 {
   "author": "Sebastien Rousseau",
-  "description": "Skeletonic Stylus, erisilebilir, hizli ve moduler arayuz stillemesi icin olusturulmus acik kaynakli bir Stylus CSS kutuphanesidir.",
-  "language": "tr",
-  "name": "Skeletonic Stylus",
   "date": "2026-04-08",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/tr/hakkinda/",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "skeletonic, hakkinda, stylus, css framework, felsefe",
   "title": "Skeletonic Stylus Hakkinda",
-  "keywords": "skeletonic, hakkinda, stylus, css framework, felsefe"
+  "name": "Skeletonic Stylus",
+  "description": "Skeletonic Stylus, erisilebilir, hizli ve moduler arayuz stillemesi icin olusturulmus acik kaynakli bir Stylus CSS kutuphanesidir.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "tr",
+  "permalink": "https://skeletonic.io/tr/hakkinda/",
+  "layout": "page"
 }
