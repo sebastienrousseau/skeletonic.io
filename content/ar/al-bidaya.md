@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "تثبيت skeletonic, إعداد stylus, css cdn, البدء"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## مقدمة
 
-جديد على Skeletonic Stylus؟ في **الإصدار 1.1.7** أصبح من الأسهل من أي
+جديد على Skeletonic Stylus؟ في **الإصدار 2.0.0** أصبح من الأسهل من أي
 وقت مضى اختيار الميزات التي تحتاجها فقط. بفضل حجمها الصغير (~7.5&nbsp;كيلوبايت
 مضغوط لورقة الأنماط الأساسية)، تتكامل بسرعة مع أي تطبيق ويب
 — لا يتطلب إطار عمل JavaScript، ولا خطوة بناء إذا استخدمت CDN.
@@ -34,13 +34,13 @@ keywords: "تثبيت skeletonic, إعداد stylus, css cdn, البدء"
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### من CDN
@@ -51,25 +51,25 @@ yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-للحصول على أقصى سلامة، انسخ **تجزئة SRI** من ملاحظات إصدار v1.1.7
+للحصول على أقصى سلامة، انسخ **تجزئة SRI** من ملاحظات إصدار v2.0.0
 وأضف سمة `integrity="sha384-…"`.
 
 ### مواقع CDN بديلة
 
 | CDN | الرابط | HTTPS | دمج |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | نعم | نعم |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | نعم | لا |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | نعم | نعم |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | نعم | لا |
 
 ### تحميل إصدار GitHub
 
@@ -152,7 +152,7 @@ pnpm run build
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>إنها تعمل.</h1>
@@ -169,7 +169,7 @@ pnpm run build
 وخرائط المصدر، وشجرة Stylus كاملة منظّمة حسب الفئة:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -208,7 +208,7 @@ pnpm run build
 ## الأسئلة الشائعة
 
 **كيف أثبّت Skeletonic Stylus؟**
-شغّل `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. أو حمّل CSS
+شغّل `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. أو حمّل CSS
 المُجمّع مباشرة من CDN — بدون خطوة بناء مطلوبة.
 
 **هل تتطلب JavaScript؟**
@@ -216,7 +216,7 @@ pnpm run build
 تعمل بدون سطر واحد من JS.
 
 **هل هي متوافقة مع WCAG 2.2؟**
-نعم. الإصدار 1.1.7 يشحن تباين AA، وحلقات focus-visible،
+نعم. الإصدار 2.0.0 يشحن تباين AA، وحلقات focus-visible،
 ومساعدات رابط التخطي، ودعم تقليل الحركة، والوضع الداكن افتراضيًا.
 
 **ما الحجم المضغوط؟**
@@ -237,7 +237,7 @@ pnpm run build
       "name": "كيف أثبّت Skeletonic Stylus؟",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "شغّل pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. أو حمّل CSS المُجمّع مباشرة من CDN — بدون خطوة بناء مطلوبة."
+        "text": "شغّل pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. أو حمّل CSS المُجمّع مباشرة من CDN — بدون خطوة بناء مطلوبة."
       }
     },
     {
@@ -253,7 +253,7 @@ pnpm run build
       "name": "هل Skeletonic Stylus متوافقة مع WCAG 2.2؟",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "نعم. الإصدار 1.1.7 يشحن تباين AA، وحلقات focus-visible، ومساعدات رابط التخطي، ودعم تقليل الحركة، والوضع الداكن افتراضيًا."
+        "text": "نعم. الإصدار 2.0.0 يشحن تباين AA، وحلقات focus-visible، ومساعدات رابط التخطي، ودعم تقليل الحركة، والوضع الداكن افتراضيًا."
       }
     },
     {

@@ -1,21 +1,21 @@
 ---
 title: "Журнал изменений"
 name: "Skeletonic Stylus"
-description: "Заметки о релизах Skeletonic Stylus с полным описанием v1.1.7."
+description: "Заметки о релизах Skeletonic Stylus с полным описанием v2.0.0."
 layout: page
 permalink: https://skeletonic.io/ru/zhurnal-izmeneniy/
 author: Sebastien Rousseau
 language: ru
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic журнал изменений, заметки о релизах, v1.1.7, semver"
+keywords: "skeletonic журнал изменений, заметки о релизах, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (текущая)
+## v2.0.0 — 2026-04 (текущая)
 
 Проход «готовность к публикации»: доступность, цепочка поставок, гигиена репозитория.
 
@@ -39,7 +39,7 @@ keywords: "skeletonic журнал изменений, заметки о рел�
 
 ### Гигиена репозитория и потребительский пакет
 - Устаревший каталог `package/` удалён; `dist/` теперь единственный источник для потребителей.
-- README переписан с учётом путей установки v1.1.7.
+- README переписан с учётом путей установки v2.0.0.
 - `dist/` коммитится; `debug/` генерируется и добавлен в gitignore.
 - Новый `.github/workflows/npm-publish.yml` управляется тегами.
 
@@ -48,7 +48,7 @@ keywords: "skeletonic журнал изменений, заметки о рел�
 - **`.alternate`** ошибочно применял `animation-direction: reverse` вместо `alternate`.
 - **Пространство имён `.alert-*`** — `.alert.success` → `.alert.alert-success` для предотвращения конфликтов с классами состояний.
 
-[Полные заметки о релизе v1.1.7 на GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Полные заметки о релизе v2.0.0 на GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="История">
 

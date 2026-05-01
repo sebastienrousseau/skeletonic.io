@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -113,8 +113,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
-<meta name="description" content="Translation note (2026-04-30). v1.1.7 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta property="og:description" content="Translation note (2026-04-30). v1.1.7 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -213,13 +213,13 @@
       <div class="text-start">
         
 <blockquote>
-<p><strong>Translation note (2026-04-30).</strong> v1.1.7 adds RTL support and a refreshed
+<p><strong>Translation note (2026-04-30).</strong> v2.0.0 adds RTL support and a refreshed
 2026 framework comparison. The English source is the canonical reference
 while these translations catch up. See <a href="https://skeletonic.io/about/">https://skeletonic.io/about/</a> ·
 <a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
 </blockquote>
 <h2>Introducere</h2>
-<p>Nou cu Skeletonic Stylus? În <strong>v1.1.7</strong> este mai ușor ca niciodată să
+<p>Nou cu Skeletonic Stylus? În <strong>v2.0.0</strong> este mai ușor ca niciodată să
 alegi doar funcționalitățile de care ai nevoie. Datorită amprentei
 minuscule (8,3 KB gzipped pentru stylesheet-ul principal), se
 integrează rapid în orice aplicație web — fără framework JavaScript,
@@ -232,13 +232,13 @@ fișierele de distribuție.</p>
 <h3>Dintr-un manager de pachete (recomandat)</h3>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
 <span style="color:#65737e;"># pnpm
-</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;"># npm
-</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;"># yarn
-</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span></pre>
 </code></pre>
 <h3>De pe un CDN</h3>
@@ -247,17 +247,17 @@ fișierele de distribuție.</p>
 <span style="color:#65737e;">&lt;!-- jsDelivr --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;">&lt;!-- unpkg --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>Pentru integritate maximă, copiază <strong>hash-ul SRI</strong> din notele de lansare v1.1.7 și adaugă un atribut <code>integrity=&quot;sha384-…&quot;</code>.</p>
+<p>Pentru integritate maximă, copiază <strong>hash-ul SRI</strong> din notele de lansare v2.0.0 și adaugă un atribut <code>integrity=&quot;sha384-…&quot;</code>.</p>
 <h3>Locații CDN alternative</h3>
 <div class="table-responsive"><table class="table">
 <thead>
@@ -271,13 +271,13 @@ fișierele de distribuție.</p>
 <tbody>
 <tr>
 <td class="text-left"><strong>jsDelivr</strong></td>
-<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
 <td class="text-left">Da</td>
 <td class="text-left">Da</td>
 </tr>
 <tr>
 <td class="text-left"><strong>unpkg</strong></td>
-<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
 <td class="text-left">Da</td>
 <td class="text-left">Nu</td>
 </tr>
@@ -321,7 +321,7 @@ configurația globală git).</p>
 <tr>
 <td class="text-left"><code>animations/skeletonic-animations.min.css</code></td>
 <td class="text-left">Modul opțional de animații</td>
-<td class="text-left">≈213 KB / ≈6.9 KB</td>
+<td class="text-left">≈213 KB / ≈7.2 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>palettes/material/skeletonic-material.min.css</code></td>
@@ -375,7 +375,7 @@ configurația globală git).</p>
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">charset</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">utf-8</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">link </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">body </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">container padding-3</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;Funcționează.&lt;/</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;
@@ -388,7 +388,7 @@ configurația globală git).</p>
 <h2>6. Ce este inclus</h2>
 <p>În interiorul pachetului vei găsi toate fișierele sursă, bundle-urile CSS compilate și minificate, source maps și un arbore Stylus complet organizat pe categorii:</p>
 <pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">├── CHANGELOG.md
 </span><span style="color:#c0c5ce;">├── LICENSE-APACHE
 </span><span style="color:#c0c5ce;">├── LICENSE-MIT
@@ -424,11 +424,11 @@ configurația globală git).</p>
 <p>Fiecare modul este independent — include doar bundle-urile de care ai nevoie pentru a menține CSS-ul livrat cât mai mic posibil.</p>
 <h2>Întrebări frecvente</h2>
 <p><strong>Cum instalez Skeletonic Stylus?</strong>
-Rulează <code>pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7</code>. Sau încarcă CSS-ul compilat direct de pe un CDN — fără pas de build necesar.</p>
+Rulează <code>pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0</code>. Sau încarcă CSS-ul compilat direct de pe un CDN — fără pas de build necesar.</p>
 <p><strong>Necesită JavaScript?</strong>
 Nu. Stylesheet-ul principal este CSS pur, cu zero costuri la runtime. Componentele funcționează fără o singură linie de JS.</p>
 <p><strong>Este compatibil WCAG 2.2?</strong>
-Da. v1.1.7 include contrast AA conform, inele focus-visible, helpere skip-link, suport pentru mișcare redusă și mod întunecat implicit.</p>
+Da. v2.0.0 include contrast AA conform, inele focus-visible, helpere skip-link, suport pentru mișcare redusă și mod întunecat implicit.</p>
 <p><strong>Care este dimensiunea gzipped?</strong>
 45,7 KB minificat, <strong>8,3 KB gzipped</strong>, 6,9 KB brotli pentru stylesheet-ul principal complet. Limita de 8 KB este impusă în CI.</p>
 <p><strong>Ce licență folosește?</strong>
@@ -443,7 +443,7 @@ Licență duală sub MIT și Apache 2.0 — alege pe cea potrivită proiectului 
       "name": "Cum instalez Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rulează pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Sau încarcă CSS-ul compilat direct de pe un CDN — fără pas de build necesar."
+        "text": "Rulează pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Sau încarcă CSS-ul compilat direct de pe un CDN — fără pas de build necesar."
       }
     },
     {
@@ -459,7 +459,7 @@ Licență duală sub MIT și Apache 2.0 — alege pe cea potrivită proiectului 
       "name": "Este Skeletonic Stylus compatibil WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Da. v1.1.7 include contrast AA conform, inele focus-visible, helpere skip-link, suport pentru mișcare redusă și mod întunecat implicit."
+        "text": "Da. v2.0.0 include contrast AA conform, inele focus-visible, helpere skip-link, suport pentru mișcare redusă și mod întunecat implicit."
       }
     },
     {

@@ -17,4 +17,4 @@ A halin yanzu, idan ba ku riga kun yi ba:
 
 - [Sanya tauraro a kan aikin a GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Duba fakitin npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Karanta tarihin canje-canjen v1.1.7](/ha/tarihin-canje-canje/)
+- [Karanta tarihin canje-canjen v2.0.0](/ha/tarihin-canje-canje/)

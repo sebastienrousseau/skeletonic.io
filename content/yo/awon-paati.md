@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "awọn paati skeletonic, awọn bọtini, awọn kaadi, awọn fọọmu, awọn itaniji, awọn aami, akọle, navbar, hamburger css nikan"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -110,7 +110,7 @@ Awọn oju ti o sọ fun alejo pe nkan kan ṣẹlẹ — tabi pe yoo ṣẹlẹ
 
 <h3 id="alerts">Awọn itaniji</h3>
 
-Awọn ifiranṣẹ ipo pẹlu idi ti itumọ. **Ninu v1.1.7 gbogbo ẹya ni a
+Awọn ifiranṣẹ ipo pẹlu idi ti itumọ. **Ninu v2.0.0 gbogbo ẹya ni a
 ṣe orukọ ni kedere** labẹ `.alert-{primary,secondary,info,success,warning,error}`
 nitorinaa kilasi ẹya ko le kọlu pẹlu awọn kilasi ipo ni ibi miiran lori
 oju-iwe naa.
@@ -169,7 +169,7 @@ mọ grid `flex-N` fun awọn odi kaadi ti o dahun.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -191,7 +191,7 @@ mọ grid `flex-N` fun awọn odi kaadi ti o dahun.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Fẹẹrẹfẹ</h3>
-      <p>45.7&nbsp;KB minified, 8.3&nbsp;KB gzipped.</p>
+      <p>45.0&nbsp;KB minified, 8.6&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -382,7 +382,7 @@ mu idojukọ mu ni deede funrarẹ.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Awọn paati Skeletonic Stylus",
-  "description": "Gbogbo paati ti a fi ranṣẹ ninu Skeletonic Stylus v1.1.7.",
+  "description": "Gbogbo paati ti a fi ranṣẹ ninu Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

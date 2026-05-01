@@ -1,7 +1,7 @@
 ---
-title: "অ্যানিমেশন — v1.1.7-এ prefers-reduced-motion"
+title: "অ্যানিমেশন — v2.0.0-এ prefers-reduced-motion"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7-এর সাথে শিপ করা ঐচ্ছিক অ্যানিমেশন মডিউল — bounce, pulse, fade, zoom, shake এবং আরও অনেক, সবই prefers-reduced-motion দ্বারা নিয়ন্ত্রিত।"
+description: "Skeletonic Stylus v2.0.0-এর সাথে শিপ করা ঐচ্ছিক অ্যানিমেশন মডিউল — bounce, pulse, fade, zoom, shake এবং আরও অনেক, সবই prefers-reduced-motion দ্বারা নিয়ন্ত্রিত।"
 layout: page
 permalink: https://skeletonic.io/bn/animations/
 date: 2026-04-08
@@ -21,7 +21,7 @@ load_animations: true
   href="/css/skeletonic-animations.min.css">
 ```
 
-v1.1.7-এ প্রতিটি অ্যানিমেশন ক্লাস একটি
+v2.0.0-এ প্রতিটি অ্যানিমেশন ক্লাস একটি
 **`@media (prefers-reduced-motion: no-preference)`** ব্লকে মোড়ানো,
 অর্থাৎ যে ব্যবহারকারী OS স্তরে "reduce motion" সেট করেছেন তিনি
 কোনো অ্যানিমেশনই দেখবেন না — লেআউট এখনও কাজ করে, শুধু মোশন দমন করা হয়।
@@ -89,7 +89,7 @@ v1.1.7-এ প্রতিটি অ্যানিমেশন ক্লাস 
 
 <p class="anim-note-rm">
   আপনার OS-এ Reduce Motion সক্রিয়, তাই নিচের টার্গেট স্থির থাকবে
-  — এটি v1.1.7-এর প্রবেশাধিকার আচরণ সঠিকভাবে কাজ করছে।
+  — এটি v2.0.0-এর প্রবেশাধিকার আচরণ সঠিকভাবে কাজ করছে।
 </p>
 
 <div class="anim-grid">
@@ -225,7 +225,7 @@ v1.1.7-এ প্রতিটি অ্যানিমেশন ক্লাস 
 </div>
 
 <script>
-  // v1.1.7-এ শিপ করা অ্যানিমেশন ক্লাস সিলেক্টরে animation-name সেট করে।
+  // v2.0.0-এ শিপ করা অ্যানিমেশন ক্লাস সিলেক্টরে animation-name সেট করে।
   // keyframe রিপ্লে করতে ক্লাস মুছে, লেআউট ফ্লাশ জোর করে, তারপর ক্লাস ফেরত যোগ করতে হয়।
   function replayAnim(btn, name){
     var target = btn.closest('.anim-card').querySelector('.anim-target');
@@ -269,9 +269,9 @@ v1.1.7-এ প্রতিটি অ্যানিমেশন ক্লাস 
 | `.vanishIn` / `.vanishOut` | Material-স্টাইল আবির্ভাব |
 | `.chameleonbackground` / `.chameleontext` | হিউ সাইকেল |
 
-## মাথায় রাখুন — পরিচিত v1.1.7 সীমাবদ্ধতা
+## মাথায় রাখুন — পরিচিত v2.0.0 সীমাবদ্ধতা
 
-v1.1.7-এ অ্যানিমেশন ক্লাস শুধু `animation-name` সেট করে। সেগুলো
+v2.0.0-এ অ্যানিমেশন ক্লাস শুধু `animation-name` সেট করে। সেগুলো
 চালাতে আপনাকে বর্তমানে নিজের `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` ও
 `animation-timing-function` দিতে হবে — ঠিক যেমন এই পেজের শীর্ষে

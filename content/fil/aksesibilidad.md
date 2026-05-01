@@ -1,7 +1,7 @@
 ---
-title: "Aksesibilidad — WCAG 2.2 sa v1.1.7"
+title: "Aksesibilidad — WCAG 2.2 sa v2.0.0"
 name: "Skeletonic Stylus"
-description: "Ano ang ipinapadala ng v1.1.7 agad mula sa kahon para sa WCAG 2.2 conformance — focus ring, contrast, skip link, motion, at dark mode."
+description: "Ano ang ipinapadala ng v2.0.0 agad mula sa kahon para sa WCAG 2.2 conformance — focus ring, contrast, skip link, motion, at dark mode."
 layout: page
 permalink: https://skeletonic.io/fil/aksesibilidad/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, aksesibilidad, focus visible, skip link, prefers reduced motion, contrast"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Ang Skeletonic Stylus v1.1.7 ay nagpapadala ng WCAG 2.2 conformance bilang default
+> **Ang Skeletonic Stylus v2.0.0 ay nagpapadala ng WCAG 2.2 conformance bilang default
 > na gawi, hindi bilang opsyonal na theme.** Idinodokumento ng pahinang ito kung ano ang
 > kasama na at kung anong mixin ang maaari mong i-opt in para sa mas detalyadong kontrol.
 
@@ -24,7 +24,7 @@ keywords: "wcag 2.2, aksesibilidad, focus visible, skip link, prefers reduced mo
 
 ## Ano ang nakukuha mo nang libre
 
-| WCAG 2.2 SC | Ano ang ginagawa ng v1.1.7 | Paano i-verify |
+| WCAG 2.2 SC | Ano ang ginagawa ng v2.0.0 | Paano i-verify |
 |---|---|---|
 | **1.4.3 Contrast (Minimum) — AA** | `--cl-primary` at `--cl-secondary` pinaitim sa ≥ 4.5:1 laban sa puti | DevTools → contrast checker |
 | **1.4.11 Non-text Contrast — AA** | Mga border ng form, button, badge lahat ay ≥ 3:1 | Pareho |
@@ -86,5 +86,5 @@ node scripts/a11y-test.mjs https://example.com
 
 Pinapatakbo ng CI ang script na ito laban sa `dist/index.html` na showcase page sa bawat push.
 
-[Basahin ang tungkol sa v1.1.7 release →](/fil/talaan-ng-pagbabago/) ·
+[Basahin ang tungkol sa v2.0.0 release →](/fil/talaan-ng-pagbabago/) ·
 [Tingnan ang pahina ng seguridad →](/fil/seguridad/)

@@ -1,11 +1,11 @@
 {
-  "language": "it",
-  "keywords": "404, non trovata",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Pagina non trovata",
   "name": "Skeletonic Stylus",
-  "layout": "page",
+  "language": "it",
   "permalink": "https://skeletonic.io/it/404/",
-  "description": "La pagina richiesta non esiste su skeletonic.io."
+  "description": "La pagina richiesta non esiste su skeletonic.io.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "title": "Pagina non trovata",
+  "keywords": "404, non trovata",
+  "author": "Sebastien Rousseau"
 }

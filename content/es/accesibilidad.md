@@ -1,7 +1,7 @@
 ---
-title: "Accesibilidad — WCAG 2.2 en v1.1.7"
+title: "Accesibilidad — WCAG 2.2 en v2.0.0"
 name: "Skeletonic Stylus"
-description: "Lo que v1.1.7 incluye de serie para la conformidad con WCAG 2.2 — anillos de enfoque, contraste, skip links, movimiento y modo oscuro."
+description: "Lo que v2.0.0 incluye de serie para la conformidad con WCAG 2.2 — anillos de enfoque, contraste, skip links, movimiento y modo oscuro."
 layout: page
 permalink: https://skeletonic.io/es/accesibilidad/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, accesibilidad, focus visible, skip link, prefers reduced motion, contraste"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 incluye conformidad con WCAG 2.2 como
+> **Skeletonic Stylus v2.0.0 incluye conformidad con WCAG 2.2 como
 > comportamiento predeterminado, no como un tema opcional.** Esta pagina
 > documenta lo que viene integrado y que mixins puedes activar para un
 > control mas preciso.
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, accesibilidad, focus visible, skip link, prefers reduced mo
 
 ## Lo que obtienes gratis
 
-| WCAG 2.2 SC | Que hace v1.1.7 | Como verificar |
+| WCAG 2.2 SC | Que hace v2.0.0 | Como verificar |
 |---|---|---|
 | **1.4.3 Contraste (Minimo) — AA** | `--cl-primary` y `--cl-secondary` oscurecidos a ≥ 4,5:1 contra blanco | DevTools → verificador de contraste |
 | **1.4.11 Contraste No Textual — AA** | Bordes de formularios, botones, insignias todos ≥ 3:1 | Igual |
@@ -92,5 +92,5 @@ node scripts/a11y-test.mjs https://example.com
 CI ejecuta este script contra la pagina de muestra `dist/index.html`
 en cada push.
 
-[Leer sobre la version v1.1.7 →](/es/registro-de-cambios/) ·
+[Leer sobre la version v2.0.0 →](/es/registro-de-cambios/) ·
 [Ver la pagina de seguridad →](/es/seguridad/)

@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic komponenty, tlacitka, karty, formulare, upozorneni, stitky, zahlavi, navigace, css hamburger menu"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -113,7 +113,7 @@ stane.
 
 <h3 id="alerts">Upozorneni</h3>
 
-Stavove zpravy se semantickym vyznamem. **Ve v1.1.7 je kazda varianta
+Stavove zpravy se semantickym vyznamem. **Ve v2.0.0 je kazda varianta
 explicitne pojmenovana** pod `.alert-{primary,secondary,info,success,warning,error}`,
 aby trida varianty nekolidovala se stavovymi tridami jinde na strance.
 
@@ -171,7 +171,7 @@ s mrizkou `flex-N` pro responzivni steny karet.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -385,7 +385,7 @@ a spravuje fokus samo.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Komponenty Skeletonic Stylus",
-  "description": "Vsechny komponenty dodavane ve Skeletonic Stylus v1.1.7.",
+  "description": "Vsechny komponenty dodavane ve Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

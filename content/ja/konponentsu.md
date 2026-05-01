@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic コンポーネント, ボタン, カード, フォーム, アラート, バッジ, ヘッダー, ナビバー, css ハンバーガー"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -99,7 +99,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
 
 <h3 id="alerts">アラート</h3>
 
-セマンティックな意図を持つステータスメッセージです。**v1.1.7 ではすべてのバリアントが `.alert-{primary,secondary,info,success,warning,error}` の下に明示的に名前空間化されている** ため、バリアントクラスがページ上の他のステートクラスと衝突することはありません。
+セマンティックな意図を持つステータスメッセージです。**v2.0.0 ではすべてのバリアントが `.alert-{primary,secondary,info,success,warning,error}` の下に明示的に名前空間化されている** ため、バリアントクラスがページ上の他のステートクラスと衝突することはありません。
 
 ```html
 <div class="alert alert-primary" role="alert">
@@ -151,7 +151,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">軽量</h3>
-      <p>ミニファイ済み 45.7 KB、gzip圧縮 8.3 KB。</p>
+      <p>ミニファイ済み 45.0 KB、gzip圧縮 8.6 KB。</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">軽量</h3>
-      <p>ミニファイ済み 45.7&nbsp;KB、gzip圧縮 8.3&nbsp;KB。</p>
+      <p>ミニファイ済み 45.0&nbsp;KB、gzip圧縮 8.6&nbsp;KB。</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -346,7 +346,7 @@ flexbox ベースのレスポンシブ `flex-N` グリッド（1 → 12カラム
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus コンポーネント",
-  "description": "Skeletonic Stylus v1.1.7 に含まれるすべてのコンポーネント。",
+  "description": "Skeletonic Stylus v2.0.0 に含まれるすべてのコンポーネント。",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

@@ -1,7 +1,7 @@
 ---
 title: "Анімації"
 name: "Skeletonic Stylus"
-description: "Опціональний модуль анімацій Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake та інші, всі за перевіркою prefers-reduced-motion."
+description: "Опціональний модуль анімацій Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake та інші, всі за перевіркою prefers-reduced-motion."
 layout: page
 language: uk
 permalink: https://skeletonic.io/uk/animatsii/
@@ -22,7 +22,7 @@ load_animations: true
 ```
 
 Кожен клас анімації загорнуто в блок
-**`@media (prefers-reduced-motion: no-preference)`** у v1.1.7, що
+**`@media (prefers-reduced-motion: no-preference)`** у v2.0.0, що
 означає: якщо користувач увімкнув «зменшити рух» на рівні ОС, він не
 побачить жодної анімації — макет працюватиме, просто рух буде
 придушений.
@@ -91,7 +91,7 @@ load_animations: true
 
 <p class="anim-note-rm">
   На вашій ОС увімкнено режим зменшення руху, тому елементи нижче
-  залишатимуться нерухомими — саме так працює доступність у v1.1.7.
+  залишатимуться нерухомими — саме так працює доступність у v2.0.0.
 </p>
 
 <div class="anim-grid">
@@ -227,7 +227,7 @@ load_animations: true
 </div>
 
 <script>
-  // Класи анімацій v1.1.7 встановлюють animation-name у самому
+  // Класи анімацій v2.0.0 встановлюють animation-name у самому
   // селекторі. Для повторного відтворення ключових кадрів потрібно
   // видалити клас, примусово оновити макет, а потім додати клас знову.
   function replayAnim(btn, name){
@@ -272,9 +272,9 @@ load_animations: true
 | `.vanishIn` / `.vanishOut` | Поява у стилі Material |
 | `.chameleonbackground` / `.chameleontext` | Циклічна зміна відтінку |
 
-## Увага — відоме обмеження v1.1.7
+## Увага — відоме обмеження v2.0.0
 
-Класи анімацій у v1.1.7 встановлюють лише `animation-name`. Для їх
+Класи анімацій у v2.0.0 встановлюють лише `animation-name`. Для їх
 відтворення наразі потрібно самостійно вказати `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` та
 `animation-timing-function` — саме так, як демонструє блок `<style>`

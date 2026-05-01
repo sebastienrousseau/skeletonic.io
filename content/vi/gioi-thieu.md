@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, gioi thieu, stylus, css framework, triet ly"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, gioi thieu, stylus, css framework, triet ly"
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Luot tai hang thang" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="Phien ban npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Kich thuoc goi" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Kich thuoc goi" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Giay phep" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -116,7 +116,7 @@ Skeletonic Stylus tuan theo [Semantic Versioning 2.0](https://semver.org).
 |---|---|---|
 | **Major** | Xoa hoac doi ten mot lop cong khai, mixin, hoac token | 1.x → 2.0 |
 | **Minor** | Them thanh phan, mixin, hoac token moi | 1.1 → 1.2 |
-| **Patch** | Sua loi, cai thien a11y, hieu suat, bao mat | 1.1.6 → 1.1.7 |
+| **Patch** | Sua loi, cai thien a11y, hieu suat, bao mat | 1.1.6 → 2.0.0 |
 
 Tat ca ten lop cong khai, tat ca thuoc tinh CSS tuy chinh, va tat ca
 Stylus mixin duoc xuat la mot phan cua API cong khai. Mot thay doi khong

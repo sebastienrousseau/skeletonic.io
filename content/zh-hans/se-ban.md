@@ -1,7 +1,7 @@
 ---
 title: "色板"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 内置的 Material、Tachyons 和 Web 安全配色方案。"
+description: "Skeletonic Stylus v2.0.0 内置的 Material、Tachyons 和 Web 安全配色方案。"
 language: zh-hans
 layout: page
 permalink: https://skeletonic.io/zh-hans/se-ban/
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css 色板, material, tachyons, websafe, 设计令牌"
 ---
 
-Skeletonic Stylus v1.1.7 附带**三个可选配色方案**，每个方案都作为独立的压缩样式表分发，你只需为所用的部分付出体积代价。
+Skeletonic Stylus v2.0.0 附带**三个可选配色方案**，每个方案都作为独立的压缩样式表分发，你只需为所用的部分付出体积代价。
 
 | 色板 | 文件 | 体积 (min) |
 |---|---|---|
@@ -59,9 +59,9 @@ Skeletonic Stylus v1.1.7 附带**三个可选配色方案**，每个方案都作
 
 <hr class="hr-text" data-content="品牌色">
 
-## 品牌色（v1.1.7 — AA 对比度）
+## 品牌色（v2.0.0 — AA 对比度）
 
-在 v1.1.7 中，主色和次色令牌已加深，以满足白色文本上 **WCAG 4.5:1** 的对比度开箱要求。
+在 v2.0.0 中，主色和次色令牌已加深，以满足白色文本上 **WCAG 4.5:1** 的对比度开箱要求。
 
 <div class="row margin-top-3">
   <div class="flex-4 padding-3 text-center" style="background-color: hsl(210, 100%, 42%); color: #fff;">

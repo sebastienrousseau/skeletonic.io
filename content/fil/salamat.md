@@ -17,4 +17,4 @@ Samantala, kung hindi mo pa nagagawa:
 
 - [I-star ang proyekto sa GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Tingnan ang npm package](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Basahin ang v1.1.7 na talaan ng pagbabago](/fil/talaan-ng-pagbabago/)
+- [Basahin ang v2.0.0 na talaan ng pagbabago](/fil/talaan-ng-pagbabago/)

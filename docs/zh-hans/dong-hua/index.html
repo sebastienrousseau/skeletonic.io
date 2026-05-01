@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -219,7 +219,7 @@
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">/css/skeletonic-animations.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>在 v1.1.7 中，每个动画类都包裹在 <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> 块中，这意味着在操作系统层面设置了&quot;减弱动效&quot;的用户将看不到任何动画——布局依然正常，动效只是被抑制了。</p>
+<p>在 v2.0.0 中，每个动画类都包裹在 <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> 块中，这意味着在操作系统层面设置了&quot;减弱动效&quot;的用户将看不到任何动画——布局依然正常，动效只是被抑制了。</p>
 <style>
   /*
    * 页面内演示样式。skeletonic-animations.min.css 中的动画类仅设置
@@ -274,7 +274,7 @@
 <h2>演示</h2>
 <p>点击任意卡片上的<strong>播放</strong>按钮即可重播动画。动画类本身与 <code>skeletonic-animations.min.css</code> 中的完全一致——仅设置了 <code>animation-name</code>，上方的 <code>&lt;style&gt;</code> 块添加了缺失的 <code>animation-duration</code> / <code>animation-iteration-count</code> / <code>animation-fill-mode</code> 属性以使关键帧可见。</p>
 <p class="anim-note-rm">
-  你的操作系统已启用减弱动效，因此以下目标将保持静止——这正是 v1.1.7 无障碍行为的正确表现。
+  你的操作系统已启用减弱动效，因此以下目标将保持静止——这正是 v2.0.0 无障碍行为的正确表现。
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -391,7 +391,7 @@
   </div>
 </div>
 <script>
-  // v1.1.7 中的动画类在选择器中设置 animation-name。要重播关键帧，
+  // v2.0.0 中的动画类在选择器中设置 animation-name。要重播关键帧，
   // 需要先移除类名，强制布局刷新，然后重新添加。
   function replayAnim(btn, name){
     var target = btn.closest('.anim-card').querySelector('.anim-target');
@@ -486,8 +486,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>注意 — v1.1.7 已知限制</h2>
-<p>v1.1.7 中的动画类仅设置 <code>animation-name</code>。要播放它们，你目前需要自行提供 <code>animation-duration</code>、<code>animation-iteration-count</code>、<code>animation-fill-mode</code> 和 <code>animation-timing-function</code>——正如本页顶部的 <code>&lt;style&gt;</code> 块所演示的。未来版本将内联合理的默认基础配置，使 <code>&lt;div class=&quot;bounce&quot;&gt;</code> 开箱即用。</p>
+<h2>注意 — v2.0.0 已知限制</h2>
+<p>v2.0.0 中的动画类仅设置 <code>animation-name</code>。要播放它们，你目前需要自行提供 <code>animation-duration</code>、<code>animation-iteration-count</code>、<code>animation-fill-mode</code> 和 <code>animation-timing-function</code>——正如本页顶部的 <code>&lt;style&gt;</code> 块所演示的。未来版本将内联合理的默认基础配置，使 <code>&lt;div class=&quot;bounce&quot;&gt;</code> 开箱即用。</p>
 <p><a href="/zh-hans/wu-zhang-ai/">查看无障碍说明 →</a></p>
 
 

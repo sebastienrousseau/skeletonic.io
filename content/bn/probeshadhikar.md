@@ -1,7 +1,7 @@
 ---
-title: "প্রবেশাধিকার — v1.1.7-এ WCAG 2.2"
+title: "প্রবেশাধিকার — v2.0.0-এ WCAG 2.2"
 name: "Skeletonic Stylus"
-description: "WCAG 2.2 সামঞ্জস্যের জন্য v1.1.7 বাক্সের বাইরে কী শিপ করে — ফোকাস রিং, কনট্রাস্ট, স্কিপ লিংক, মোশন এবং ডার্ক মোড।"
+description: "WCAG 2.2 সামঞ্জস্যের জন্য v2.0.0 বাক্সের বাইরে কী শিপ করে — ফোকাস রিং, কনট্রাস্ট, স্কিপ লিংক, মোশন এবং ডার্ক মোড।"
 layout: page
 permalink: https://skeletonic.io/bn/probeshadhikar/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, প্রবেশাধিকার, focus visible, skip link, prefers reduced motion, কনট্রাস্ট"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 WCAG 2.2 সামঞ্জস্যকে ডিফল্ট আচরণ
+> **Skeletonic Stylus v2.0.0 WCAG 2.2 সামঞ্জস্যকে ডিফল্ট আচরণ
 > হিসেবে শিপ করে, ঐচ্ছিক থিম হিসেবে নয়।** এই পেজ ডকুমেন্ট করে
 > কী অন্তর্নির্মিত এবং সূক্ষ্ম নিয়ন্ত্রণের জন্য কোন মিক্সিনে
 > অপ্ট ইন করতে পারেন।
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, প্রবেশাধিকার, focus visible, skip l
 
 ## আপনি বিনামূল্যে যা পান
 
-| WCAG 2.2 SC | v1.1.7 কী করে | কীভাবে যাচাই করবেন |
+| WCAG 2.2 SC | v2.0.0 কী করে | কীভাবে যাচাই করবেন |
 |---|---|---|
 | **1.4.3 কনট্রাস্ট (ন্যূনতম) — AA** | `--cl-primary` ও `--cl-secondary` সাদার বিপরীতে ≥ 4.5:1 এ গাঢ় করা | DevTools → contrast checker |
 | **1.4.11 নন-টেক্সট কনট্রাস্ট — AA** | ফর্ম বর্ডার, বাটন, ব্যাজ সব ≥ 3:1 | একই |
@@ -91,5 +91,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI প্রতিটি পুশে `dist/index.html` শোকেস পেজের বিরুদ্ধে এই স্ক্রিপ্ট চালায়।
 
-[v1.1.7 রিলিজ সম্পর্কে পড়ুন →](/bn/poriborton-talika/) ·
+[v2.0.0 রিলিজ সম্পর্কে পড়ুন →](/bn/poriborton-talika/) ·
 [নিরাপত্তা পেজ দেখুন →](/bn/nirapotta/)

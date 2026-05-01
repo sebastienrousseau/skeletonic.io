@@ -18,4 +18,4 @@ Trong thoi gian cho, neu ban chua lam:
 
 - [Gat sao du an tren GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Duyet goi npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Doc nhat ky thay doi v1.1.7](/vi/nhat-ky-thay-doi/)
+- [Doc nhat ky thay doi v2.0.0](/vi/nhat-ky-thay-doi/)

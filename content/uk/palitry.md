@@ -1,7 +1,7 @@
 ---
 title: "Палітри"
 name: "Skeletonic Stylus"
-description: "Кольорові палітри Material, Tachyons та Web-safe, що постачаються зі Skeletonic Stylus v1.1.7."
+description: "Кольорові палітри Material, Tachyons та Web-safe, що постачаються зі Skeletonic Stylus v2.0.0."
 layout: page
 language: uk
 permalink: https://skeletonic.io/uk/palitry/
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css палітра, material, tachyons, websafe, дизайн-токени"
 ---
 
-Skeletonic Stylus v1.1.7 постачається з **трьома опціональними кольоровими
+Skeletonic Stylus v2.0.0 постачається з **трьома опціональними кольоровими
 палітрами**, кожна з яких розповсюджується як окремий мініфікований файл
 стилів, тож ви платите лише за те, що використовуєте.
 
@@ -63,9 +63,9 @@ Skeletonic Stylus v1.1.7 постачається з **трьома опціон
 
 <hr class="hr-text" data-content="Бренд">
 
-## Фірмові кольори (v1.1.7 — контраст AA)
+## Фірмові кольори (v2.0.0 — контраст AA)
 
-У v1.1.7 токени primary та secondary були затемнені для досягнення
+У v2.0.0 токени primary та secondary були затемнені для досягнення
 контрасту **WCAG 4.5:1** відносно білого тексту із коробки.
 
 <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem;">

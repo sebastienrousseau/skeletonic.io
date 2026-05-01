@@ -1,7 +1,7 @@
 ---
-title: "无障碍 — v1.1.7 中的 WCAG 2.2"
+title: "无障碍 — v2.0.0 中的 WCAG 2.2"
 name: "Skeletonic Stylus"
-description: "v1.1.7 开箱即用的 WCAG 2.2 合规能力——焦点环、对比度、跳转链接、动效控制和深色模式。"
+description: "v2.0.0 开箱即用的 WCAG 2.2 合规能力——焦点环、对比度、跳转链接、动效控制和深色模式。"
 language: zh-hans
 layout: page
 permalink: https://skeletonic.io/zh-hans/wu-zhang-ai/
@@ -11,18 +11,18 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, 无障碍, focus visible, 跳转链接, prefers reduced motion, 对比度"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 将 WCAG 2.2 合规作为默认行为，而非可选主题。** 本页说明了内置功能以及可选启用的混入。
+> **Skeletonic Stylus v2.0.0 将 WCAG 2.2 合规作为默认行为，而非可选主题。** 本页说明了内置功能以及可选启用的混入。
 
 <hr class="hr-text" data-content="开箱即用">
 
 ## 开箱即用的功能
 
-| WCAG 2.2 SC | v1.1.7 的实现 | 验证方式 |
+| WCAG 2.2 SC | v2.0.0 的实现 | 验证方式 |
 |---|---|---|
 | **1.4.3 对比度（最低要求）— AA** | `--cl-primary` 和 `--cl-secondary` 加深至白色背景上 ≥ 4.5:1 | 开发者工具 → 对比度检查器 |
 | **1.4.11 非文本对比度 — AA** | 表单边框、按钮、徽章均 ≥ 3:1 | 同上 |
@@ -82,5 +82,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI 在每次推送时都会对 `dist/index.html` 展示页面运行此脚本。
 
-[了解 v1.1.7 版本发布 →](/zh-hans/geng-xin-ri-zhi/) ·
+[了解 v2.0.0 版本发布 →](/zh-hans/geng-xin-ri-zhi/) ·
 [查看安全页面 →](/zh-hans/an-quan/)

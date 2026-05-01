@@ -18,4 +18,4 @@ Bu arada, henuz yapmadiysaniz:
 
 - [Projeyi GitHub'da yildizlayin](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [npm paketine goz atin](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [v1.1.7 degisiklik gunlugunu okuyun](/tr/degisiklik-gunlugu/)
+- [v2.0.0 degisiklik gunlugunu okuyun](/tr/degisiklik-gunlugu/)

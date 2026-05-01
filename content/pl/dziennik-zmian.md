@@ -1,21 +1,21 @@
 ---
 title: "Dziennik zmian"
 name: "Skeletonic Stylus"
-description: "Notatki z wydan Skeletonic Stylus, z pelnym opisem v1.1.7."
+description: "Notatki z wydan Skeletonic Stylus, z pelnym opisem v2.0.0."
 layout: page
 permalink: https://skeletonic.io/pl/dziennik-zmian/
 author: Sebastien Rousseau
 language: pl
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "dziennik zmian skeletonic, notatki z wydan, v1.1.7, semver"
+keywords: "dziennik zmian skeletonic, notatki z wydan, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (aktualna)
+## v2.0.0 — 2026-04 (aktualna)
 
 Przejscie „gotowosc do wydania": a11y, lancuch dostaw, higiena repozytorium.
 
@@ -38,7 +38,7 @@ Przejscie „gotowosc do wydania": a11y, lancuch dostaw, higiena repozytorium.
 
 ### Higiena repozytorium &amp; paczka konsumencka
 - Usuniety starszy katalog `package/`; `dist/` jest teraz jedynym zrodlem prawdy dla konsumentow.
-- README przepisany, aby odzwierciedlac sciezki instalacji v1.1.7.
+- README przepisany, aby odzwierciedlac sciezki instalacji v2.0.0.
 - `dist/` jest commitowany; `debug/` jest generowany i gitignorowany.
 - Nowy `.github/workflows/npm-publish.yml` oparty na tagach.
 
@@ -47,7 +47,7 @@ Przejscie „gotowosc do wydania": a11y, lancuch dostaw, higiena repozytorium.
 - **`.alternate`** blednie stosowal `animation-direction: reverse` zamiast `alternate`.
 - **Przestrzenie nazw `.alert-*`** — `.alert.success` → `.alert.alert-success` aby uniknac kolizji z klasami stanu.
 
-[Pelne notatki z wydania v1.1.7 na GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Pelne notatki z wydania v2.0.0 na GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historia">
 

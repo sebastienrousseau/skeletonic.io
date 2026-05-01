@@ -11,15 +11,15 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "התקנת skeletonic, הגדרת stylus, css cdn, התחלה"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## מבוא
 
-חדשים ב-Skeletonic Stylus? ב-**v1.1.7** קל מתמיד לבחור רק את
-התכונות שאתם צריכים. הודות לטביעת רגל זעירה (כ-8.3&nbsp;KB בדחיסת
+חדשים ב-Skeletonic Stylus? ב-**v2.0.0** קל מתמיד לבחור רק את
+התכונות שאתם צריכים. הודות לטביעת רגל זעירה (כ-8.6&nbsp;KB בדחיסת
 gzip עבור גיליון הסגנונות הליבתי), היא משתלבת במהירות בכל יישום
 אינטרנט — ללא צורך ב-framework של JavaScript, ללא שלב בנייה אם
 אתם משתמשים ב-CDN.
@@ -36,13 +36,13 @@ gzip עבור גיליון הסגנונות הליבתי), היא משתלבת �
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### מ-CDN
@@ -53,25 +53,25 @@ yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-לשלמות מרבית, העתיקו את ה-**SRI hash** מהערות השחרור של v1.1.7
+לשלמות מרבית, העתיקו את ה-**SRI hash** מהערות השחרור של v2.0.0
 והוסיפו תכונת `integrity="sha384-…"`.
 
 ### מיקומי CDN חלופיים
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | כן | כן |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | כן | לא |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | כן | כן |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | כן | לא |
 
 ### הורדת שחרור GitHub
 
@@ -102,7 +102,7 @@ pnpm run build
 
 | קובץ | מטרה | גודל (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + טוקנים + פריסה + אלמנטים + רכיבים + שירות | 45.7 KB / 8.3 KB |
+| `core/skeletonic.min.css` | Reset + טוקנים + פריסה + אלמנטים + רכיבים + שירות | 45.0 KB / 8.6 KB |
 | `animations/skeletonic-animations.min.css` | מודול אנימציות אופציונלי | כ-18 KB / כ-4 KB |
 | `palettes/material/skeletonic-material.min.css` | פלטת צבעים Material | כ-8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | פלטת שירות Tachyons | 7.3 KB |
@@ -154,7 +154,7 @@ Skeletonic חושפת את טוקני העיצוב שלה כ-**משתני CSS** 
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>זה עובד.</h1>
@@ -171,7 +171,7 @@ Skeletonic חושפת את טוקני העיצוב שלה כ-**משתני CSS** 
 מפות מקור, ועץ Stylus מלא מאורגן לפי קטגוריה:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -210,7 +210,7 @@ Skeletonic חושפת את טוקני העיצוב שלה כ-**משתני CSS** 
 ## שאלות נפוצות
 
 **כיצד מתקינים את Skeletonic Stylus?**
-הריצו `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. או
+הריצו `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. או
 טענו את ה-CSS המהודר ישירות מ-CDN — ללא צורך בשלב בנייה.
 
 **האם נדרש JavaScript?**
@@ -218,11 +218,11 @@ Skeletonic חושפת את טוקני העיצוב שלה כ-**משתני CSS** 
 עובדים ללא שורת JavaScript אחת.
 
 **האם היא תואמת WCAG 2.2?**
-כן. v1.1.7 מגיעה עם ניגודיות תואמת AA, טבעות focus-visible, קישורי
+כן. v2.0.0 מגיעה עם ניגודיות תואמת AA, טבעות focus-visible, קישורי
 דילוג, תמיכה בתנועה מופחתת ומצב כהה כברירת מחדל.
 
 **מה הגודל בדחיסת gzip?**
-45.7&nbsp;KB ממוזער, **כ-8.3&nbsp;KB בדחיסת gzip**, כ-6.9&nbsp;KB
+45.0&nbsp;KB ממוזער, **כ-8.6&nbsp;KB בדחיסת gzip**, כ-7.2&nbsp;KB
 brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8&nbsp;KB נאכפת ב-CI.
 
 **באיזה רישיון היא משתמשת?**
@@ -239,7 +239,7 @@ brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8&
       "name": "כיצד מתקינים את Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "הריצו pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. או טענו את ה-CSS המהודר ישירות מ-CDN — ללא צורך בשלב בנייה."
+        "text": "הריצו pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. או טענו את ה-CSS המהודר ישירות מ-CDN — ללא צורך בשלב בנייה."
       }
     },
     {
@@ -255,7 +255,7 @@ brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8&
       "name": "האם Skeletonic Stylus תואמת WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "כן. v1.1.7 מגיעה עם ניגודיות תואמת AA, טבעות focus-visible, קישורי דילוג, תמיכה בתנועה מופחתת ומצב כהה כברירת מחדל."
+        "text": "כן. v2.0.0 מגיעה עם ניגודיות תואמת AA, טבעות focus-visible, קישורי דילוג, תמיכה בתנועה מופחתת ומצב כהה כברירת מחדל."
       }
     },
     {
@@ -263,7 +263,7 @@ brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8&
       "name": "מה הגודל בדחיסת gzip של Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.7 KB ממוזער, כ-8.3 KB בדחיסת gzip, כ-6.9 KB brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8 KB נאכפת ב-CI בכל commit."
+        "text": "45.0 KB ממוזער, כ-8.6 KB בדחיסת gzip, כ-7.2 KB brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8 KB נאכפת ב-CI בכל commit."
       }
     },
     {

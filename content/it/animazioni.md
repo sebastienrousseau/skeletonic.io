@@ -1,7 +1,7 @@
 ---
 title: "Animazioni"
 name: "Skeletonic Stylus"
-description: "Modulo animazioni opzionale incluso in Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake e altro, il tutto dietro prefers-reduced-motion."
+description: "Modulo animazioni opzionale incluso in Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake e altro, il tutto dietro prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/it/animazioni/
 date: 2026-04-08
@@ -21,7 +21,7 @@ Il **modulo animazioni** e distribuito come file opzionale separato cosi il fogl
 ```
 
 Ogni classe di animazione e racchiusa in un blocco
-**`@media (prefers-reduced-motion: no-preference)`** nella v1.1.7, il che significa che un utente che ha impostato "ridurre il movimento" a livello di sistema operativo non vedra alcuna animazione — il layout funziona comunque, il movimento viene semplicemente soppresso.
+**`@media (prefers-reduced-motion: no-preference)`** nella v2.0.0, il che significa che un utente che ha impostato "ridurre il movimento" a livello di sistema operativo non vedra alcuna animazione — il layout funziona comunque, il movimento viene semplicemente soppresso.
 
 <style>
   /*
@@ -84,7 +84,7 @@ Premi **Riproduci** su qualsiasi card per riprodurre l'animazione sul quadrato. 
 <p class="anim-note-rm">
   La riduzione del movimento e attiva nel tuo sistema operativo, quindi i
   target qui sotto resteranno fermi — e il comportamento di accessibilita
-  della v1.1.7 che funziona correttamente.
+  della v2.0.0 che funziona correttamente.
 </p>
 
 <div class="anim-grid">
@@ -220,7 +220,7 @@ Premi **Riproduci** su qualsiasi card per riprodurre l'animazione sul quadrato. 
 </div>
 
 <script>
-  // Le classi di animazione incluse nella v1.1.7 impostano animation-name
+  // Le classi di animazione incluse nella v2.0.0 impostano animation-name
   // nel selettore stesso. Per riprodurre il keyframe bisogna rimuovere la
   // classe, forzare un reflow del layout, quindi riaggiungere la classe.
   function replayAnim(btn, name){
@@ -265,8 +265,8 @@ Premi **Riproduci** su qualsiasi card per riprodurre l'animazione sul quadrato. 
 | `.vanishIn` / `.vanishOut` | Apparizione stile Material |
 | `.chameleonbackground` / `.chameleontext` | Ciclo di tonalita |
 
-## Avvertenza — caveat noto nella v1.1.7
+## Avvertenza — caveat noto nella v2.0.0
 
-Le classi di animazione nella v1.1.7 impostano solo `animation-name`. Per riprodurle attualmente devi fornire i tuoi `animation-duration`, `animation-iteration-count`, `animation-fill-mode` e `animation-timing-function` — esattamente come dimostra il blocco `<style>` in cima a questa pagina. Un rilascio futuro includera una configurazione di base predefinita cosi `<div class="bounce">` funzionera direttamente.
+Le classi di animazione nella v2.0.0 impostano solo `animation-name`. Per riprodurle attualmente devi fornire i tuoi `animation-duration`, `animation-iteration-count`, `animation-fill-mode` e `animation-timing-function` — esattamente come dimostra il blocco `<style>` in cima a questa pagina. Un rilascio futuro includera una configurazione di base predefinita cosi `<div class="bounce">` funzionera direttamente.
 
 [Vedi le note sull'accessibilita →](/it/accessibilita/)

@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -113,8 +113,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
-<meta name="description" content="Translation note (2026-04-30). v1.1.7 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta property="og:description" content="Translation note (2026-04-30). v1.1.7 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -213,13 +213,13 @@
       <div class="text-start">
         
 <blockquote>
-<p><strong>Translation note (2026-04-30).</strong> v1.1.7 adds RTL support and a refreshed
+<p><strong>Translation note (2026-04-30).</strong> v2.0.0 adds RTL support and a refreshed
 2026 framework comparison. The English source is the canonical reference
 while these translations catch up. See <a href="https://skeletonic.io/about/">https://skeletonic.io/about/</a> ·
 <a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
 </blockquote>
 <h2>Introduktion</h2>
-<p>Ny med Skeletonic Stylus? I <strong>v1.1.7</strong> ar det enklare an nagonsin att valja
+<p>Ny med Skeletonic Stylus? I <strong>v2.0.0</strong> ar det enklare an nagonsin att valja
 just de funktioner du behover. Tack vare det lilla fotavtrycket (8,3 KB
 gzippat for karn-stylesheetet) integreras det snabbt i vilken webbapp som
 helst — inget JavaScript-ramverk kravs, inget byggsteg behov om du
@@ -232,13 +232,13 @@ lokalt om du foredrar det.</p>
 <h3>Fran en pakethanterare (rekommenderat)</h3>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
 <span style="color:#65737e;"># pnpm
-</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;"># npm
-</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;"># yarn
-</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span></pre>
 </code></pre>
 <h3>Fran ett CDN</h3>
@@ -247,17 +247,17 @@ lokalt om du foredrar det.</p>
 <span style="color:#65737e;">&lt;!-- jsDelivr --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;">&lt;!-- unpkg --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>For maximal integritet, kopiera <strong>SRI-hashen</strong> fran v1.1.7-releasenoterna
+<p>For maximal integritet, kopiera <strong>SRI-hashen</strong> fran v2.0.0-releasenoterna
 och lagg till ett <code>integrity=&quot;sha384-…&quot;</code>-attribut.</p>
 <h3>Alternativa CDN-platser</h3>
 <div class="table-responsive"><table class="table">
@@ -272,13 +272,13 @@ och lagg till ett <code>integrity=&quot;sha384-…&quot;</code>-attribut.</p>
 <tbody>
 <tr>
 <td class="text-left"><strong>jsDelivr</strong></td>
-<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
 <td class="text-left">Ja</td>
 <td class="text-left">Ja</td>
 </tr>
 <tr>
 <td class="text-left"><strong>unpkg</strong></td>
-<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
 <td class="text-left">Ja</td>
 <td class="text-left">Nej</td>
 </tr>
@@ -322,7 +322,7 @@ globala git-konfiguration).</p>
 <tr>
 <td class="text-left"><code>animations/skeletonic-animations.min.css</code></td>
 <td class="text-left">Valfri animationsmodul</td>
-<td class="text-left">≈213 KB / ≈6.9 KB</td>
+<td class="text-left">≈213 KB / ≈7.2 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>palettes/material/skeletonic-material.min.css</code></td>
@@ -378,7 +378,7 @@ att du kan tematisera utan att kompilera om Stylus:</p>
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">charset</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">utf-8</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">link </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">body </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">container padding-3</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;Det fungerar.&lt;/</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;
@@ -394,7 +394,7 @@ ar du klar.</p>
 minifierade CSS-paketen, source maps och ett komplett Stylus-trad
 organiserat efter kategori:</p>
 <pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">├── CHANGELOG.md
 </span><span style="color:#c0c5ce;">├── LICENSE-APACHE
 </span><span style="color:#c0c5ce;">├── LICENSE-MIT
@@ -431,13 +431,13 @@ organiserat efter kategori:</p>
 halla din CSS-payload sa liten som mojligt.</p>
 <h2>Vanliga fragor</h2>
 <p><strong>Hur installerar jag Skeletonic Stylus?</strong>
-Kor <code>pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7</code>. Eller ladda den
+Kor <code>pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0</code>. Eller ladda den
 kompilerade CSS:en direkt fran ett CDN — inget byggsteg kravs.</p>
 <p><strong>Kraver det JavaScript?</strong>
 Nej. Karn-stylesheetet ar ren CSS, utan nagra runtimekostnader. Komponenter
 fungerar utan en enda rad JS.</p>
 <p><strong>Ar det WCAG 2.2-klart?</strong>
-Ja. v1.1.7 levererar AA-uppfyllande kontrast, focus-visible-ringar,
+Ja. v2.0.0 levererar AA-uppfyllande kontrast, focus-visible-ringar,
 skip-link-hjalp, stod for reducerad rorelse och morkt lage som standard.</p>
 <p><strong>Vad ar den gzippade storleken?</strong>
 45,7 KB minifierad, <strong>8,3 KB gzippad</strong>, 6,9 KB brotli for
@@ -455,7 +455,7 @@ projekt. Gratis for kommersiellt och personligt bruk.</p>
       "name": "Hur installerar jag Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kor pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Eller ladda den kompilerade CSS:en direkt fran ett CDN — inget byggsteg kravs."
+        "text": "Kor pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Eller ladda den kompilerade CSS:en direkt fran ett CDN — inget byggsteg kravs."
       }
     },
     {
@@ -471,7 +471,7 @@ projekt. Gratis for kommersiellt och personligt bruk.</p>
       "name": "Ar Skeletonic Stylus WCAG 2.2-klart?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. v1.1.7 levererar AA-uppfyllande kontrast, focus-visible-ringar, skip-link-hjalp, stod for reducerad rorelse och morkt lage som standard."
+        "text": "Ja. v2.0.0 levererar AA-uppfyllande kontrast, focus-visible-ringar, skip-link-hjalp, stod for reducerad rorelse och morkt lage som standard."
       }
     },
     {

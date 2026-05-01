@@ -1,7 +1,7 @@
 ---
-title: "Acessibilidade — WCAG 2.2 na v1.1.7"
+title: "Acessibilidade — WCAG 2.2 na v2.0.0"
 name: "Skeletonic Stylus"
-description: "O que a v1.1.7 entrega por padrao para conformidade com WCAG 2.2 — aneis de foco, contraste, skip links, movimento e modo escuro."
+description: "O que a v2.0.0 entrega por padrao para conformidade com WCAG 2.2 — aneis de foco, contraste, skip links, movimento e modo escuro."
 layout: page
 permalink: https://skeletonic.io/pt-br/acessibilidade/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, acessibilidade, focus visible, skip link, prefers reduced motion, contraste"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **O Skeletonic Stylus v1.1.7 entrega conformidade com WCAG 2.2 como
+> **O Skeletonic Stylus v2.0.0 entrega conformidade com WCAG 2.2 como
 > comportamento padrao, nao como um tema opcional.** Esta pagina documenta
 > o que esta integrado e quais mixins voce pode optar por usar para um
 > controle mais refinado.
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, acessibilidade, focus visible, skip link, prefers reduced m
 
 ## O que voce recebe gratuitamente
 
-| WCAG 2.2 SC | O que a v1.1.7 faz | Como verificar |
+| WCAG 2.2 SC | O que a v2.0.0 faz | Como verificar |
 |---|---|---|
 | **1.4.3 Contraste (Minimo) — AA** | `--cl-primary` e `--cl-secondary` escurecidos para ≥ 4.5:1 contra branco | DevTools → verificador de contraste |
 | **1.4.11 Contraste Nao-Textual — AA** | Bordas de formularios, botoes e badges todos ≥ 3:1 | Idem |
@@ -92,5 +92,5 @@ node scripts/a11y-test.mjs https://example.com
 O CI executa este script contra a pagina de demonstracao `dist/index.html`
 a cada push.
 
-[Leia sobre o release v1.1.7 →](/pt-br/registro-de-alteracoes/) ·
+[Leia sobre o release v2.0.0 →](/pt-br/registro-de-alteracoes/) ·
 [Veja a pagina de seguranca →](/pt-br/seguranca/)

@@ -1,7 +1,7 @@
 ---
-title: "Доступність — WCAG 2.2 у v1.1.7"
+title: "Доступність — WCAG 2.2 у v2.0.0"
 name: "Skeletonic Stylus"
-description: "Що постачається із коробки у v1.1.7 для відповідності WCAG 2.2 — кільця фокусу, контраст, skip-посилання, рух та темний режим."
+description: "Що постачається із коробки у v2.0.0 для відповідності WCAG 2.2 — кільця фокусу, контраст, skip-посилання, рух та темний режим."
 layout: page
 language: uk
 permalink: https://skeletonic.io/uk/dostupnist/
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, доступність, focus visible, skip link, prefers reduced motion, контраст"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 постачає відповідність WCAG 2.2 як
+> **Skeletonic Stylus v2.0.0 постачає відповідність WCAG 2.2 як
 > поведінку за замовчуванням, а не як опціональну тему.** Ця сторінка
 > документує те, що вбудовано, та які міксини ви можете підключити для
 > тонкого налаштування.
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, доступність, focus visible, skip link, prefers r
 
 ## Що ви отримуєте безкоштовно
 
-| WCAG 2.2 SC | Що робить v1.1.7 | Як перевірити |
+| WCAG 2.2 SC | Що робить v2.0.0 | Як перевірити |
 |---|---|---|
 | **1.4.3 Контраст (Мінімум) — AA** | `--cl-primary` та `--cl-secondary` затемнені до ≥ 4.5:1 відносно білого | DevTools → перевірка контрасту |
 | **1.4.11 Нетекстовий контраст — AA** | Рамки форм, кнопки, значки — всі ≥ 3:1 | Аналогічно |
@@ -93,5 +93,5 @@ node scripts/a11y-test.mjs https://example.com
 CI запускає цей скрипт на сторінці-вітрині `dist/index.html` при
 кожному push.
 
-[Дізнатися про реліз v1.1.7 →](/uk/zhurnal-zmin/) ·
+[Дізнатися про реліз v2.0.0 →](/uk/zhurnal-zmin/) ·
 [Переглянути сторінку безпеки →](/uk/bezpeka/)

@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더, 네비게이션 바, css 전용 햄버거"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -99,7 +99,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
 
 <h3 id="alerts">알림</h3>
 
-시맨틱 의도를 가진 상태 메시지입니다. **v1.1.7에서 모든 변형은 명시적으로** `.alert-{primary,secondary,info,success,warning,error}` 하에 네임스페이스화되어 변형 클래스가 페이지의 다른 상태 클래스와 충돌하지 않습니다.
+시맨틱 의도를 가진 상태 메시지입니다. **v2.0.0에서 모든 변형은 명시적으로** `.alert-{primary,secondary,info,success,warning,error}` 하에 네임스페이스화되어 변형 클래스가 페이지의 다른 상태 클래스와 충돌하지 않습니다.
 
 ```html
 <div class="alert alert-primary" role="alert">
@@ -151,7 +151,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">경량</h3>
-      <p>45.7&nbsp;KB 최소화, 8.3&nbsp;KB gzipped.</p>
+      <p>45.0&nbsp;KB 최소화, 8.6&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -346,7 +346,7 @@ Flexbox 기반의 반응형 `flex-N` 그리드(1 → 12열)입니다. `.row` 부
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus 구성 요소",
-  "description": "Skeletonic Stylus v1.1.7에 포함된 모든 구성 요소입니다.",
+  "description": "Skeletonic Stylus v2.0.0에 포함된 모든 구성 요소입니다.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

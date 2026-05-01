@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -221,7 +221,7 @@
 </span></pre>
 </code></pre>
 <p>Кожен клас анімації загорнуто в блок
-<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> у v1.1.7, що
+<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> у v2.0.0, що
 означає: якщо користувач увімкнув «зменшити рух» на рівні ОС, він не
 побачить жодної анімації — макет працюватиме, просто рух буде
 придушений.</p>
@@ -285,7 +285,7 @@
 <code>animation-fill-mode</code> для видимості ключових кадрів.</p>
 <p class="anim-note-rm">
   На вашій ОС увімкнено режим зменшення руху, тому елементи нижче
-  залишатимуться нерухомими — саме так працює доступність у v1.1.7.
+  залишатимуться нерухомими — саме так працює доступність у v2.0.0.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -402,7 +402,7 @@
   </div>
 </div>
 <script>
-  // Класи анімацій v1.1.7 встановлюють animation-name у самому
+  // Класи анімацій v2.0.0 встановлюють animation-name у самому
   // селекторі. Для повторного відтворення ключових кадрів потрібно
   // видалити клас, примусово оновити макет, а потім додати клас знову.
   function replayAnim(btn, name){
@@ -499,8 +499,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>Увага — відоме обмеження v1.1.7</h2>
-<p>Класи анімацій у v1.1.7 встановлюють лише <code>animation-name</code>. Для їх
+<h2>Увага — відоме обмеження v2.0.0</h2>
+<p>Класи анімацій у v2.0.0 встановлюють лише <code>animation-name</code>. Для їх
 відтворення наразі потрібно самостійно вказати <code>animation-duration</code>,
 <code>animation-iteration-count</code>, <code>animation-fill-mode</code> та
 <code>animation-timing-function</code> — саме так, як демонструє блок <code>&lt;style&gt;</code>

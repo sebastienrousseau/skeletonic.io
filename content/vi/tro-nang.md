@@ -1,7 +1,7 @@
 ---
-title: "Tro nang — WCAG 2.2 trong v1.1.7"
+title: "Tro nang — WCAG 2.2 trong v2.0.0"
 name: "Skeletonic Stylus"
-description: "Nhung gi v1.1.7 cung cap san cho tuan thu WCAG 2.2 — vong focus, do tuong phan, lien ket bo qua, chuyen dong va che do toi."
+description: "Nhung gi v2.0.0 cung cap san cho tuan thu WCAG 2.2 — vong focus, do tuong phan, lien ket bo qua, chuyen dong va che do toi."
 layout: page
 language: vi
 permalink: https://skeletonic.io/vi/tro-nang/
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, tro nang, focus visible, skip link, prefers reduced motion, do tuong phan"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 cung cap tuan thu WCAG 2.2 nhu hanh vi
+> **Skeletonic Stylus v2.0.0 cung cap tuan thu WCAG 2.2 nhu hanh vi
 > mac dinh, khong phai chu de tuy chon.** Trang nay ghi lai nhung gi
 > duoc tich hop san va nhung mixin ban co the chon su dung de kiem
 > soat chi tiet hon.
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, tro nang, focus visible, skip link, prefers reduced motion,
 
 ## Nhung gi ban nhan duoc mien phi
 
-| WCAG 2.2 SC | v1.1.7 lam gi | Cach xac minh |
+| WCAG 2.2 SC | v2.0.0 lam gi | Cach xac minh |
 |---|---|---|
 | **1.4.3 Do tuong phan (Toi thieu) — AA** | `--cl-primary` va `--cl-secondary` duoc lam dam den ≥ 4,5:1 voi trang | DevTools → kiem tra do tuong phan |
 | **1.4.11 Do tuong phan phi van ban — AA** | Vien bieu mau, nut bam, huy hieu deu ≥ 3:1 | Tuong tu |
@@ -91,5 +91,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI chay script nay tren trang gioi thieu `dist/index.html` moi lan push.
 
-[Doc ve ban phat hanh v1.1.7 →](/vi/nhat-ky-thay-doi/) ·
+[Doc ve ban phat hanh v2.0.0 →](/vi/nhat-ky-thay-doi/) ·
 [Xem trang bao mat →](/vi/bao-mat/)

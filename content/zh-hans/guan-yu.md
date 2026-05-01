@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, 关于, stylus, css 框架, 设计理念"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, 关于, stylus, css 框架, 设计理念"
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="月下载量" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="npm 版本" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="压缩体积" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="压缩体积" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="许可证" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -44,7 +44,7 @@ CSS 库，用于无障碍、高性能、模块化的 UI 样式开发。
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="羽毛" width="64" height="64" loading="lazy" decoding="async">
     <h3>轻量小巧</h3>
-    <p>gzip 后约 8.3&nbsp;KB。页面加载更快，核心构建块一个不少。</p>
+    <p>gzip 后约 8.6&nbsp;KB。页面加载更快，核心构建块一个不少。</p>
   </article>
 
   <article class="feature-card">
@@ -78,7 +78,7 @@ CSS 库，用于无障碍、高性能、模块化的 UI 样式开发。
 
 | 特性 | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Gzip 体积 | **约 8.3&nbsp;KB** | 约 30&nbsp;KB | 约 10&nbsp;KB (varies) | 约 30&nbsp;KB |
+| Gzip 体积 | **约 8.6&nbsp;KB** | 约 30&nbsp;KB | 约 10&nbsp;KB (varies) | 约 30&nbsp;KB |
 | WCAG 2.2 合规 | **内置** | 部分 | 手动 | 部分 |
 | 级联层 | **支持 (`@layer`)** | 不支持 | 不支持 | 不支持 |
 | 深色模式 | **`prefers-color-scheme`** | 可选启用 | 基于类名 | 可选启用 |
@@ -105,7 +105,7 @@ Skeletonic Stylus 遵循 [语义化版本 2.0](https://semver.org)。
 |---|---|---|
 | **主版本** | 移除或重命名公共类、混入或令牌 | 1.x → 2.0 |
 | **次版本** | 新增组件、混入或令牌 | 1.1 → 1.2 |
-| **补丁版本** | Bug 修复、无障碍优化、性能、安全 | 1.1.6 → 1.1.7 |
+| **补丁版本** | Bug 修复、无障碍优化、性能、安全 | 1.1.6 → 2.0.0 |
 
 所有公共类名、所有 CSS 自定义属性以及所有导出的 Stylus 混入均属于公共 API。破坏性变更将触发主版本升级并附带迁移指南。
 

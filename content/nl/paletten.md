@@ -1,7 +1,7 @@
 ---
 title: "Paletten"
 name: "Skeletonic Stylus"
-description: "Material-, Tachyons- en webveilige kleurenpaletten geleverd in Skeletonic Stylus v1.1.7."
+description: "Material-, Tachyons- en webveilige kleurenpaletten geleverd in Skeletonic Stylus v2.0.0."
 layout: page
 permalink: https://skeletonic.io/nl/paletten/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css palet, material, tachyons, websafe, ontwerptokens"
 ---
 
-Skeletonic Stylus v1.1.7 levert **drie optionele kleurenpaletten**, elk
+Skeletonic Stylus v2.0.0 levert **drie optionele kleurenpaletten**, elk
 gedistribueerd als een eigen geminificeerd stylesheet zodat je alleen betaalt
 voor wat je gebruikt.
 
@@ -63,9 +63,9 @@ als `--cl-grey-100` … `--cl-grey-1000`.
 
 <hr class="hr-text" data-content="Merk">
 
-## Merkkleuren (v1.1.7 — AA-contrast)
+## Merkkleuren (v2.0.0 — AA-contrast)
 
-In v1.1.7 zijn de primaire en secundaire tokens donkerder gemaakt om
+In v2.0.0 zijn de primaire en secundaire tokens donkerder gemaakt om
 **WCAG 4.5:1** contrast tegen witte tekst standaard te halen.
 
 <div class="row margin-top-3">

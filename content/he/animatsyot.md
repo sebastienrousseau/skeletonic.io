@@ -1,7 +1,7 @@
 ---
 title: "אנימציות"
 name: "Skeletonic Stylus"
-description: "מודול אנימציות אופציונלי הנשלח עם Skeletonic Stylus v1.1.7 — קפיצה, פעימה, דעיכה, זום, רעידה ועוד, הכול מאחורי prefers-reduced-motion."
+description: "מודול אנימציות אופציונלי הנשלח עם Skeletonic Stylus v2.0.0 — קפיצה, פעימה, דעיכה, זום, רעידה ועוד, הכול מאחורי prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/he/animatsyot/
 date: 2026-04-08
@@ -22,7 +22,7 @@ load_animations: true
 ```
 
 כל מחלקת אנימציה עטופה בבלוק
-**`@media (prefers-reduced-motion: no-preference)`** ב-v1.1.7, מה
+**`@media (prefers-reduced-motion: no-preference)`** ב-v2.0.0, מה
 שאומר שמשתמש שהגדיר "הפחתת תנועה" ברמת מערכת ההפעלה לא יראה
 אנימציה כלל — הפריסה עדיין עובדת, רק התנועה מדוכאת.
 
@@ -92,7 +92,7 @@ load_animations: true
 
 <p class="anim-note-rm">
   הפחתת תנועה מופעלת במערכת ההפעלה שלכם, אז היעדים למטה יישארו
-  ללא תנועה — זו התנהגות הנגישות של v1.1.7 שעובדת כראוי.
+  ללא תנועה — זו התנהגות הנגישות של v2.0.0 שעובדת כראוי.
 </p>
 
 <div class="anim-grid">
@@ -228,7 +228,7 @@ load_animations: true
 </div>
 
 <script>
-  // מחלקות האנימציה הנשלחות ב-v1.1.7 מגדירות animation-name בבורר
+  // מחלקות האנימציה הנשלחות ב-v2.0.0 מגדירות animation-name בבורר
   // עצמו. כדי להפעיל מחדש את ה-keyframe צריך להסיר את המחלקה,
   // לאלץ flush של הפריסה, ואז להוסיף את המחלקה בחזרה.
   function replayAnim(btn, name){
@@ -273,9 +273,9 @@ load_animations: true
 | `.vanishIn` / `.vanishOut` | הופעה בסגנון Material |
 | `.chameleonbackground` / `.chameleontext` | מחזור גוון |
 
-## שימו לב — סייג ידוע של v1.1.7
+## שימו לב — סייג ידוע של v2.0.0
 
-מחלקות האנימציה ב-v1.1.7 מגדירות `animation-name` בלבד. כדי להפעיל
+מחלקות האנימציה ב-v2.0.0 מגדירות `animation-name` בלבד. כדי להפעיל
 אותן עליכם כרגע לספק בעצמכם `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode`
 ו-`animation-timing-function` — בדיוק כפי שבלוק ה-`<style>` בראש

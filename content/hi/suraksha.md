@@ -1,7 +1,7 @@
 ---
 title: "सुरक्षा और आपूर्ति श्रृंखला"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 अपनी बिल्ड पाइपलाइन को कैसे सुरक्षित करती है, रिलीज़ साइन करती है, और SBOM शिप करती है।"
+description: "Skeletonic Stylus v2.0.0 अपनी बिल्ड पाइपलाइन को कैसे सुरक्षित करती है, रिलीज़ साइन करती है, और SBOM शिप करती है।"
 layout: page
 permalink: https://skeletonic.io/hi/suraksha/
 date: 2026-04-08
@@ -13,7 +13,7 @@ keywords: "css सुरक्षा, sbom, cyclonedx, npm provenance, openssf s
 
 ## प्रदर्शन
 
-- **45.7&nbsp;KB minified · 8.3&nbsp;KB gzipped · 6.9&nbsp;KB brotli** पूर्ण कोर स्टाइलशीट के लिए।
+- **45.0&nbsp;KB minified · 8.6&nbsp;KB gzipped · 7.2&nbsp;KB brotli** पूर्ण कोर स्टाइलशीट के लिए।
 - **शून्य JavaScript** — शुद्ध Stylus → शुद्ध CSS, कोई रनटाइम लागत नहीं।
 - **Cascade-layered** — ओवरराइड `!important` के बिना जीतते हैं।
 - **`size-limit` बजट** हर कमिट पर CI में लागू।
@@ -23,7 +23,7 @@ keywords: "css सुरक्षा, sbom, cyclonedx, npm provenance, openssf s
 
 ## आपूर्ति-श्रृंखला सारांश
 
-| नियंत्रण | v1.1.7 स्थिति |
+| नियंत्रण | v2.0.0 स्थिति |
 |---|---|
 | **CycloneDX SBOM** | हर रिलीज़ पर जनरेट, `dist/sbom.json` में कमिट |
 | **npm provenance** | सक्षम (`--provenance --access public`) |
@@ -42,10 +42,10 @@ keywords: "css सुरक्षा, sbom, cyclonedx, npm provenance, openssf s
 ताज़ा इंस्टॉल किए पैकेज को इस प्रकार सत्यापित करें:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM प्रकाशन वर्कफ़्लो के दौरान `cyclonedx-npm` से जनरेट होता है।
@@ -61,7 +61,7 @@ SBOM प्रकाशन वर्कफ़्लो के दौरान `c
 इंस्टॉलेशन के बाद इस प्रकार सत्यापित करें:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -74,7 +74,7 @@ npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
 
 | CVE | गंभीरता | स्थिति |
 |---|---|---|
-| **CVE-2023-44270** (postcss line return parsing) | मध्यम | **पैच** v1.1.7 में `pnpm.overrides` से `postcss` को ≥ 8.4.31 में अपग्रेड करके |
+| **CVE-2023-44270** (postcss line return parsing) | मध्यम | **पैच** v2.0.0 में `pnpm.overrides` से `postcss` को ≥ 8.4.31 में अपग्रेड करके |
 
 Snyk एडवाइज़री डेटाबेस और GitHub Security Advisories फ़ीड की लगातार
 निगरानी की जाती है; सुरक्षा पैच **पैच-स्तर रिलीज़** के रूप में शिप

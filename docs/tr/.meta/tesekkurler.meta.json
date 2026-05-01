@@ -1,12 +1,12 @@
 {
-  "keywords": "tesekkurler",
-  "language": "tr",
-  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Tesekkurler!",
-  "permalink": "https://skeletonic.io/tr/tesekkurler/",
+  "language": "tr",
   "description": "Mesajiniz basariyla gonderildi.",
-  "layout": "thanks",
   "date": "2026-04-08",
+  "layout": "thanks",
+  "theme_color": "hsl(210, 100%, 42%)",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus"
+  "permalink": "https://skeletonic.io/tr/tesekkurler/",
+  "name": "Skeletonic Stylus",
+  "keywords": "tesekkurler"
 }

@@ -1,7 +1,7 @@
 ---
-title: "접근성 — v1.1.7의 WCAG 2.2"
+title: "접근성 — v2.0.0의 WCAG 2.2"
 name: "Skeletonic Stylus"
-description: "v1.1.7이 WCAG 2.2 준수를 위해 기본 제공하는 기능 — 포커스 링, 대비, 스킵 링크, 모션 및 다크 모드."
+description: "v2.0.0이 WCAG 2.2 준수를 위해 기본 제공하는 기능 — 포커스 링, 대비, 스킵 링크, 모션 및 다크 모드."
 layout: page
 permalink: https://skeletonic.io/ko/jeobgeun-seong/
 date: 2026-04-08
@@ -11,18 +11,18 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, 접근성, focus visible, 스킵 링크, prefers reduced motion, 대비"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7은 WCAG 2.2 준수를 선택적 테마가 아닌 기본 동작으로 제공합니다.** 이 페이지에서는 기본 제공 기능과 더 세밀한 제어를 위해 선택할 수 있는 믹스인을 설명합니다.
+> **Skeletonic Stylus v2.0.0은 WCAG 2.2 준수를 선택적 테마가 아닌 기본 동작으로 제공합니다.** 이 페이지에서는 기본 제공 기능과 더 세밀한 제어를 위해 선택할 수 있는 믹스인을 설명합니다.
 
 <hr class="hr-text" data-content="기본 제공">
 
 ## 기본으로 제공되는 기능
 
-| WCAG 2.2 SC | v1.1.7의 대응 | 확인 방법 |
+| WCAG 2.2 SC | v2.0.0의 대응 | 확인 방법 |
 |---|---|---|
 | **1.4.3 대비 (최소) — AA** | `--cl-primary` 및 `--cl-secondary`가 흰색 대비 4.5:1 이상으로 어둡게 조정됨 | DevTools → 대비 검사기 |
 | **1.4.11 비텍스트 대비 — AA** | 폼 테두리, 버튼, 뱃지 모두 3:1 이상 | 동일 |
@@ -82,5 +82,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI는 매 푸시마다 `dist/index.html` 쇼케이스 페이지에 대해 이 스크립트를 실행합니다.
 
-[v1.1.7 릴리스 정보 읽기 →](/ko/byeongyeong-ilji/) ·
+[v2.0.0 릴리스 정보 읽기 →](/ko/byeongyeong-ilji/) ·
 [보안 페이지 보기 →](/ko/boaan/)

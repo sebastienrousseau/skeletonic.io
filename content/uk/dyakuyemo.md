@@ -18,4 +18,4 @@ keywords: "дякуємо"
 
 - [Поставте зірку проєкту на GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Переглянути npm-пакет](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Прочитати журнал змін v1.1.7](/uk/zhurnal-zmin/)
+- [Прочитати журнал змін v2.0.0](/uk/zhurnal-zmin/)

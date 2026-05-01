@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic component, button, card, form, alert, badge, header, navbar, css only hamburger"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -105,7 +105,7 @@ Mga surface na nagsasabi sa bisita na may nangyari — o malapit nang mangyari.
 
 <h3 id="alerts">Mga Alert</h3>
 
-Mga mensahe ng status na may semantic na layunin. **Sa v1.1.7 bawat variant ay
+Mga mensahe ng status na may semantic na layunin. **Sa v2.0.0 bawat variant ay
 tahasang naka-namespace** sa ilalim ng `.alert-{primary,secondary,info,success,warning,error}`
 kaya ang variant na klase ay hindi magko-collide sa mga state class sa ibang bahagi
 ng pahina.
@@ -164,7 +164,7 @@ Isang bordered, padded na container para sa isang koherenteng yunit. Ipares sa
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Magaan</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -186,7 +186,7 @@ Isang bordered, padded na container para sa isang koherenteng yunit. Ipares sa
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Magaan</h3>
-      <p>45.7&nbsp;KB minified, 8.3&nbsp;KB gzipped.</p>
+      <p>45.0&nbsp;KB minified, 8.6&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -377,7 +377,7 @@ at mag-ta-trap ng focus nang tama nang mag-isa.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Mga component ng Skeletonic Stylus",
-  "description": "Bawat component na kasama sa Skeletonic Stylus v1.1.7.",
+  "description": "Bawat component na kasama sa Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

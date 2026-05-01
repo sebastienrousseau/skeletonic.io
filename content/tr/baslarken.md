@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic kurulum, stylus ayarlama, css cdn, baslarken"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Giris
 
-Skeletonic Stylus'ta yeni misiniz? **v1.1.7** ile ihtiyaciniz olan
+Skeletonic Stylus'ta yeni misiniz? **v2.0.0** ile ihtiyaciniz olan
 ozellikleri secmek her zamankinden daha kolay. Kucuk ayak izi sayesinde
 (cekirdek stil sayfasi icin 8,3&nbsp;KB gzipped), herhangi bir web
 uygulamasina hizla entegre olur — JavaScript framework gerektirmez,
@@ -36,13 +36,13 @@ dosyalarini yerel olarak da barindirebilirsiniz.
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### CDN'den
@@ -53,25 +53,25 @@ Yalnizca derlenmmis CSS'e ihtiyaciniz varsa, bunlardan birini `<head>` icerisine
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-Maksimum butunluk icin v1.1.7 surum notlarindan **SRI hash**'ini
+Maksimum butunluk icin v2.0.0 surum notlarindan **SRI hash**'ini
 kopyalayin ve bir `integrity="sha384-..."` ozeligi ekleyin.
 
 ### Alternatif CDN konumlari
 
 | CDN | URL | HTTPS | Kombo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Evet | Evet |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Evet | Hayir |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Evet | Evet |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Evet | Hayir |
 
 ### GitHub surumunu indirin
 
@@ -104,7 +104,7 @@ derlenmis paket sunar:
 | Dosya | Amac | Boyut (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token'lar + duzen + ogeler + bilesenler + yardimcilar | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Istege bagli animasyonlar modulu | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Istege bagli animasyonlar modulu | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Material renk paleti | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons yardimci paleti | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Web-safe paleti | ≈3.5 KB |
@@ -155,7 +155,7 @@ Minimal bir "calisiyor mu?" kontrolu:
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Calisiyor.</h1>
@@ -174,7 +174,7 @@ paketlerini, kaynak haritalarini ve kategorilere gore duzenlenmis tam
 bir Stylus agacini bulacaksiniz:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -213,7 +213,7 @@ icin yalnizca ihtiyaciniz olan paketleri dahil edin.
 ## Sikca sorulan sorular
 
 **Skeletonic Stylus'u nasil kurabilirim?**
-`pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7` komutunu calistirin.
+`pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0` komutunu calistirin.
 Veya derlenmis CSS'i dogrudan CDN'den yukleyin — derleme adimi gerekmez.
 
 **JavaScript gerektirir mi?**
@@ -221,7 +221,7 @@ Hayir. Cekirdek stil sayfasi saf CSS'tir, sifir calisma zamani maliyeti.
 Bilesenler tek bir satir JS olmadan calisir.
 
 **WCAG 2.2'ye uyumlu mu?**
-Evet. v1.1.7, AA uyumlu kontrast, focus-visible halkalari, atlama
+Evet. v2.0.0, AA uyumlu kontrast, focus-visible halkalari, atlama
 baglantisi yardimcilari, azaltilmis hareket destegi ve varsayilan
 karanlik mod ile gelir.
 
@@ -243,7 +243,7 @@ ve kisisel kullanim icin ucretsiz.
       "name": "Skeletonic Stylus nasil kurulur?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7 komutunu calistirin. Veya derlenmis CSS'i dogrudan bir CDN'den yukleyin — derleme adimi gerekmez."
+        "text": "pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0 komutunu calistirin. Veya derlenmis CSS'i dogrudan bir CDN'den yukleyin — derleme adimi gerekmez."
       }
     },
     {
@@ -259,7 +259,7 @@ ve kisisel kullanim icin ucretsiz.
       "name": "Skeletonic Stylus WCAG 2.2'ye uyumlu mu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Evet. v1.1.7, AA uyumlu kontrast, focus-visible halkalari, atlama baglantisi yardimcilari, azaltilmis hareket destegi ve varsayilan karanlik mod ile gelir."
+        "text": "Evet. v2.0.0, AA uyumlu kontrast, focus-visible halkalari, atlama baglantisi yardimcilari, azaltilmis hareket destegi ve varsayilan karanlik mod ile gelir."
       }
     },
     {

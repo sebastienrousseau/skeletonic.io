@@ -1,12 +1,12 @@
 {
-  "description": "ตัวอย่าง HTML แบบสดของทุกส่วนประกอบ Skeletonic Stylus จัดกลุ่ม เชื่อมลิงก์แท็ก และเรนเดอร์ด้วยสไตล์ชีตเดียวกันที่กำลังสาธิต",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "layout": "page",
+  "title": "ส่วนประกอบ",
   "keywords": "ส่วนประกอบ skeletonic, ปุ่ม, การ์ด, ฟอร์ม, แจ้งเตือน, ป้ายกำกับ, ส่วนหัว, แฮมเบอร์เกอร์เมนู css",
   "name": "Skeletonic Stylus",
+  "description": "ตัวอย่าง HTML แบบสดของทุกส่วนประกอบ Skeletonic Stylus จัดกลุ่ม เชื่อมลิงก์แท็ก และเรนเดอร์ด้วยสไตล์ชีตเดียวกันที่กำลังสาธิต",
+  "date": "2026-04-08",
   "permalink": "https://skeletonic.io/th/suan-prakop/",
-  "language": "th",
   "theme_color": "hsl(210, 100%, 42%)",
-  "title": "ส่วนประกอบ"
+  "layout": "page",
+  "language": "th",
+  "author": "Sebastien Rousseau"
 }

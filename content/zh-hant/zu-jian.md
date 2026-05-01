@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首, 導覽列, 純 css 漢堡選單"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -99,7 +99,7 @@ keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首,
 
 <h3 id="alerts">提示框</h3>
 
-帶有語義意圖的狀態訊息。**在 v1.1.7 中，每個變體均明確以 `.alert-{primary,secondary,info,success,warning,error}` 命名空間化**，使變體類別不會與頁面上其他狀態類別衝突。
+帶有語義意圖的狀態訊息。**在 v2.0.0 中，每個變體均明確以 `.alert-{primary,secondary,info,success,warning,error}` 命名空間化**，使變體類別不會與頁面上其他狀態類別衝突。
 
 ```html
 <div class="alert alert-primary" role="alert">
@@ -151,7 +151,7 @@ keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">輕量級</h3>
-      <p>壓縮後 45.7&nbsp;KB，gzip 後 8.3&nbsp;KB。</p>
+      <p>壓縮後 45.0&nbsp;KB，gzip 後 8.6&nbsp;KB。</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -346,7 +346,7 @@ keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首,
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus 組件",
-  "description": "Skeletonic Stylus v1.1.7 中隨附的每個組件。",
+  "description": "Skeletonic Stylus v2.0.0 中隨附的每個組件。",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

@@ -1,12 +1,12 @@
 {
-  "title": "您目前離線",
-  "keywords": "離線, service worker, pwa",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "zh-hant",
-  "name": "Skeletonic Stylus",
   "description": "skeletonic.io 無法連線至網路。您請求的頁面尚未被快取。",
-  "author": "Sebastien Rousseau",
+  "title": "您目前離線",
+  "date": "2026-04-08",
+  "language": "zh-hant",
+  "keywords": "離線, service worker, pwa",
   "layout": "page",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/zh-hant/offline/"
 }

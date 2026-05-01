@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "компоненти skeletonic, кнопки, картки, форми, сповіщення, значки, заголовок, навігація, css-only гамбургер"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -112,7 +112,7 @@ keywords: "компоненти skeletonic, кнопки, картки, форм
 
 <h3 id="alerts">Сповіщення</h3>
 
-Повідомлення про статус із семантичним призначенням. **У v1.1.7 кожен
+Повідомлення про статус із семантичним призначенням. **У v2.0.0 кожен
 варіант явно виділено в простір імен** під
 `.alert-{primary,secondary,info,success,warning,error}`, тож клас
 варіанту не може конфліктувати з класами стану в інших місцях сторінки.
@@ -171,7 +171,7 @@ keywords: "компоненти skeletonic, кнопки, картки, форм
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -385,7 +385,7 @@ keywords: "компоненти skeletonic, кнопки, картки, форм
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Компоненти Skeletonic Stylus",
-  "description": "Усі компоненти, що постачаються зі Skeletonic Stylus v1.1.7.",
+  "description": "Усі компоненти, що постачаються зі Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

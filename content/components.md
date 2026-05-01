@@ -166,7 +166,7 @@ happen.
 
 <h3 id="alerts">Alerts</h3>
 
-Status messages with semantic intent. **In v1.1.7 every variant is
+Status messages with semantic intent. **In v2.0.0 every variant is
 explicitly namespaced** under `.alert-{primary,secondary,info,success,warning,error}`
 so the variant class cannot collide with state classes elsewhere on
 the page.
@@ -319,7 +319,7 @@ Plain `<table>` elements get bordered cells and a contrast-flipped
     <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
   </thead>
   <tbody>
-    <tr><td>Skeletonic</td><td>6.9 KB</td><td>Yes</td></tr>
+    <tr><td>Skeletonic</td><td>7.2 KB</td><td>Yes</td></tr>
     <tr><td>Pico CSS</td><td>10.1 KB</td><td>Yes</td></tr>
     <tr><td>Bootstrap</td><td>23.0 KB</td><td>No (Popper)</td></tr>
   </tbody>
@@ -332,7 +332,7 @@ Plain `<table>` elements get bordered cells and a contrast-flipped
     <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
   </thead>
   <tbody>
-    <tr><td>Skeletonic</td><td>6.9 KB</td><td>Yes</td></tr>
+    <tr><td>Skeletonic</td><td>7.2 KB</td><td>Yes</td></tr>
     <tr><td>Pico CSS</td><td>10.1 KB</td><td>Yes</td></tr>
     <tr><td>Bootstrap</td><td>23.0 KB</td><td>No (Popper)</td></tr>
   </tbody>
@@ -594,37 +594,55 @@ whole page.
 
 <h3 id="grid">Grid</h3>
 
-A responsive `flex-N` grid (1 → 12 columns) built on flexbox. The
-`.row` parent gaps and wraps automatically.
+Native CSS Grid since v2.0. `.grid` sets `display: grid` and a
+gap; `.grid-cols-N` (1–12) generates the column tracks; `.col-span-N`
+(1–12) lets a single child span multiple cells.
 
 ```html
-<div class="row">
-  <div class="flex-6">Half</div>
-  <div class="flex-6">Half</div>
+<div class="grid grid-cols-2">
+  <div>Half</div>
+  <div>Half</div>
 </div>
-<div class="row">
-  <div class="flex-4">Third</div>
-  <div class="flex-4">Third</div>
-  <div class="flex-4">Third</div>
+
+<div class="grid grid-cols-3">
+  <div>Third</div>
+  <div>Third</div>
+  <div>Third</div>
+</div>
+
+<div class="grid grid-cols-3">
+  <div class="col-span-2">Two thirds</div>
+  <div>Third</div>
 </div>
 ```
 
 <section aria-labelledby="grid">
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;">
-  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Half</div>
-  <div style="flex:1 1 0;padding:.75rem;background:#e4e4e7;border-radius:.25rem;text-align:center;">Half</div>
+<div class="grid grid-cols-2" style="margin-bottom:.5rem;">
+  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Half</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Half</div>
 </div>
 
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem;">
-  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Third</div>
-  <div style="flex:1 1 0;padding:.75rem;background:#e4e4e7;border-radius:.25rem;text-align:center;">Third</div>
-  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Third</div>
+<div class="grid grid-cols-3" style="margin-bottom:.5rem;">
+  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Third</div>
+</div>
+
+<div class="grid grid-cols-3">
+  <div class="col-span-2" style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Two thirds (col-span-2)</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Third</div>
 </div>
 </section>
 
 > **Accessibility note.** Visual order should match DOM order. Avoid
-> reordering rows with `flex-direction: row-reverse` or `order:` —
-> screen readers and keyboard users follow the source, not the paint.
+> reordering with `grid-auto-flow: dense` or explicit `grid-row` /
+> `grid-column` shuffling — screen readers and keyboard users follow
+> the source, not the paint.
+
+> **Migrating from v1.x.** The `.flex-N` / `.row` flexbox grid is
+> gone. Replace `<div class="row"><div class="flex-6">…` with
+> `<div class="grid grid-cols-2"><div>…`. The new system is shorter,
+> uses native CSS Grid, and avoids margin-collapse quirks.
 
 <h3 id="header">Header &amp; hamburger nav</h3>
 
@@ -708,7 +726,7 @@ and traps focus correctly on its own.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus components",
-  "description": "Every component, element and effect shipped in Skeletonic Stylus v1.1.7.",
+  "description": "Every component, element and effect shipped in Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 14,
   "itemListElement": [

@@ -17,4 +17,4 @@ keywords: "ありがとう"
 
 - [GitHub でプロジェクトにスターを付ける](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [npm パッケージを見る](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [v1.1.7 の変更履歴を読む](/ja/henkou-rireki/)
+- [v2.0.0 の変更履歴を読む](/ja/henkou-rireki/)

@@ -1,21 +1,21 @@
 ---
 title: "Änderungsprotokoll"
 name: "Skeletonic Stylus"
-description: "Release-Hinweise fuer Skeletonic Stylus, mit v1.1.7 im Detail."
+description: "Release-Hinweise fuer Skeletonic Stylus, mit v2.0.0 im Detail."
 layout: page
 language: de
 permalink: https://skeletonic.io/de/aenderungsprotokoll/
 author: Sebastien Rousseau
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic aenderungsprotokoll, release notes, v1.1.7, semver"
+keywords: "skeletonic aenderungsprotokoll, release notes, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (aktuell)
+## v2.0.0 — 2026-04 (aktuell)
 
 Der Release-Readiness-Durchlauf: Barrierefreiheit, Lieferkette, Repository-Hygiene.
 
@@ -44,7 +44,7 @@ Der Release-Readiness-Durchlauf: Barrierefreiheit, Lieferkette, Repository-Hygie
 ### Repository-Hygiene und Consumer-Paket
 - Legacy-Verzeichnis `package/` entfernt; `dist/` ist nun die einzige
   Quelle der Wahrheit fuer Nutzer.
-- README ueberarbeitet, um die v1.1.7-Installationspfade abzubilden.
+- README ueberarbeitet, um die v2.0.0-Installationspfade abzubilden.
 - `dist/` wird committet; `debug/` wird generiert und per gitignore ausgeschlossen.
 - Neuer `.github/workflows/npm-publish.yml` ist Tag-gesteuert.
 
@@ -56,7 +56,7 @@ Der Release-Readiness-Durchlauf: Barrierefreiheit, Lieferkette, Repository-Hygie
 - **`.alert-*`-Namensraeume** — `.alert.success` zu `.alert.alert-success`
   geaendert, um Kollisionen mit Statusklassen zu vermeiden.
 
-[Vollstaendige v1.1.7-Release-Notes auf GitHub](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Vollstaendige v2.0.0-Release-Notes auf GitHub](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historie">
 

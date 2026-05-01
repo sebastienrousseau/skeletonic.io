@@ -1,7 +1,7 @@
 ---
 title: "Animasyonlar — Skeletonic Stylus"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 ile gelen istege bagli animasyonlar modulu — bounce, pulse, fade, zoom, shake ve digerleri, tamami prefers-reduced-motion arkasinda."
+description: "Skeletonic Stylus v2.0.0 ile gelen istege bagli animasyonlar modulu — bounce, pulse, fade, zoom, shake ve digerleri, tamami prefers-reduced-motion arkasinda."
 layout: page
 permalink: https://skeletonic.io/tr/animasyonlar/
 date: 2026-04-08
@@ -22,7 +22,7 @@ gonderilir.
   href="/css/skeletonic-animations.min.css">
 ```
 
-v1.1.7'de her animasyon sinifi bir
+v2.0.0'de her animasyon sinifi bir
 **`@media (prefers-reduced-motion: no-preference)`** bloguna
 sarilmistir, bu da isletim sistemi duzeyinde "hareketi azalt" ayarini
 yapan kullanicilarin hic animasyon goremeyecegi anlamina gelir — duzen
@@ -94,7 +94,7 @@ ozelliklerini ekler.
 
 <p class="anim-note-rm">
   Isletim sisteminizde Azaltilmis Hareket etkin, bu nedenle asagidaki
-  hedefler hareketsiz kalacaktir — bu, v1.1.7 erisilebilirlik
+  hedefler hareketsiz kalacaktir — bu, v2.0.0 erisilebilirlik
   davranisinin dogru calismasi demektir.
 </p>
 
@@ -231,7 +231,7 @@ ozelliklerini ekler.
 </div>
 
 <script>
-  // v1.1.7'deki animasyon siniflari secici icerisinde animation-name
+  // v2.0.0'deki animasyon siniflari secici icerisinde animation-name
   // ayarlar. Keyframe'i tekrar oynatmak icin sinifi kaldirip bir
   // duzen yenileme zorlayip tekrar eklemeliyiz.
   function replayAnim(btn, name){
@@ -276,9 +276,9 @@ ozelliklerini ekler.
 | `.vanishIn` / `.vanishOut` | Material tarzi belirme |
 | `.chameleonbackground` / `.chameleontext` | Ton donguleme |
 
-## Dikkat — bilinen v1.1.7 sinirlamasi
+## Dikkat — bilinen v2.0.0 sinirlamasi
 
-v1.1.7'deki animasyon siniflari yalnizca `animation-name` ayarlar.
+v2.0.0'deki animasyon siniflari yalnizca `animation-name` ayarlar.
 Bunlari oynatmak icin su anda kendi `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` ve
 `animation-timing-function` degerlerinizi saglmaniz gerekir — tam

@@ -1,7 +1,7 @@
 ---
 title: "Paletler — Skeletonic Stylus"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 ile gelen Material, Tachyons ve web-safe renk paletleri."
+description: "Skeletonic Stylus v2.0.0 ile gelen Material, Tachyons ve web-safe renk paletleri."
 layout: page
 permalink: https://skeletonic.io/tr/paletler/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css palet, material, tachyons, websafe, tasarim tokenlari"
 ---
 
-Skeletonic Stylus v1.1.7, her biri ayri kucultulmus bir stil sayfasi
+Skeletonic Stylus v2.0.0, her biri ayri kucultulmus bir stil sayfasi
 olarak dagitilan **uc istege bagli renk paleti** sunar; boylece yalnizca
 kullandiginiz icin odeme yaparsiniz.
 
@@ -63,9 +63,9 @@ acilan erisilebilir 11 adimli bir gri olcegi sunar.
 
 <hr class="hr-text" data-content="Marka">
 
-## Marka renkleri (v1.1.7 — AA kontrast)
+## Marka renkleri (v2.0.0 — AA kontrast)
 
-v1.1.7'de birincil ve ikincil token'lar, beyaz metin uzerinde kutudan
+v2.0.0'de birincil ve ikincil token'lar, beyaz metin uzerinde kutudan
 ciktiginda **WCAG 4,5:1** kontrast oranini karsilamak icin
 karartilmistir.
 

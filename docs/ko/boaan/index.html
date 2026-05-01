@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -113,8 +113,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
-<meta name="description" content="성능 45.7 KB 최소화 · 8.3 KB gzipped · 6.9 KB brotli (전체 코어 스타일시트 기준). JavaScript 없음 — 순수 Stylus → 순수 CSS,">
-<meta property="og:description" content="성능 45.7 KB 최소화 · 8.3 KB gzipped · 6.9 KB brotli (전체 코어 스타일시트 기준). JavaScript 없음 — 순수 Stylus → 순수 CSS,">
+<meta name="description" content="성능 45.0 KB 최소화 · 8.6 KB gzipped · 7.2 KB brotli (전체 코어 스타일시트 기준). JavaScript 없음 — 순수 Stylus → 순수 CSS,">
+<meta property="og:description" content="성능 45.0 KB 최소화 · 8.6 KB gzipped · 7.2 KB brotli (전체 코어 스타일시트 기준). JavaScript 없음 — 순수 Stylus → 순수 CSS,">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -214,7 +214,7 @@
         
 <h2>성능</h2>
 <ul>
-<li><strong>45.7 KB 최소화 · 8.3 KB gzipped · 6.9 KB brotli</strong> (전체 코어 스타일시트 기준).</li>
+<li><strong>45.0 KB 최소화 · 8.6 KB gzipped · 7.2 KB brotli</strong> (전체 코어 스타일시트 기준).</li>
 <li><strong>JavaScript 없음</strong> — 순수 Stylus → 순수 CSS, 런타임 비용 없음.</li>
 <li><strong>캐스케이드 레이어</strong> — <code>!important</code> 없이 오버라이드가 적용됩니다.</li>
 <li><strong><code>size-limit</code> 예산이 CI에서</strong> 매 커밋마다 적용됩니다.</li>
@@ -225,7 +225,7 @@
 <thead>
 <tr>
 <th>통제</th>
-<th>v1.1.7 상태</th>
+<th>v2.0.0 상태</th>
 </tr>
 </thead>
 <tbody>
@@ -267,10 +267,10 @@
 <h2>CycloneDX SBOM</h2>
 <p>모든 게시된 tarball에는 <code>dist/sbom.json</code>에 CycloneDX SBOM이 포함되어 있습니다. 새로 설치한 패키지를 다음과 같이 확인할 수 있습니다:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.metadata.component.version</span><span style="color:#c0c5ce;">&#39; \
 </span><span style="color:#c0c5ce;">  node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-</span><span style="color:#65737e;"># → &quot;1.1.7&quot;
+</span><span style="color:#65737e;"># → &quot;2.0.0&quot;
 </span></pre>
 </code></pre>
 <p>SBOM은 게시 워크플로우 중 <code>cyclonedx-npm</code>으로 생성됩니다.</p>
@@ -279,7 +279,7 @@
 <p>게시된 산출물은 <a href="https://docs.npmjs.com/generating-provenance-statements">npm 패키지 출처 증명</a>을 사용하여 서명됩니다.</p>
 <p>설치 후 다음과 같이 확인할 수 있습니다:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@1.1.7</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
+<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@2.0.0</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
 </span><span style="color:#c0c5ce;">  </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.dist.&quot;npm-signature&quot;</span><span style="color:#c0c5ce;">&#39;
 </span></pre>
 </code></pre>
@@ -298,7 +298,7 @@
 <tr>
 <td class="text-left"><strong>CVE-2023-44270</strong> (postcss 줄바꿈 파싱)</td>
 <td class="text-left">보통</td>
-<td class="text-left"><code>pnpm.overrides</code>를 통해 <code>postcss</code>를 8.4.31 이상으로 업그레이드하여 v1.1.7에서 <strong>패치 완료</strong></td>
+<td class="text-left"><code>pnpm.overrides</code>를 통해 <code>postcss</code>를 8.4.31 이상으로 업그레이드하여 v2.0.0에서 <strong>패치 완료</strong></td>
 </tr>
 </tbody>
 </table>

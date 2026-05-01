@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "install skeletonic, stylus setup, css cdn, pagsisimula"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Panimula
 
-Bago ka sa Skeletonic Stylus? Sa **v1.1.7** mas madali na kaysa dati ang pumili ng mga tampok na kailangan mo lamang. Dahil sa maliit na footprint nito (8.3&nbsp;KB gzipped para sa core stylesheet), mabilis itong nag-integrate sa anumang web app — hindi kailangan ng JavaScript framework, hindi kailangan ng build step kung gagamitin mo ang CDN.
+Bago ka sa Skeletonic Stylus? Sa **v2.0.0** mas madali na kaysa dati ang pumili ng mga tampok na kailangan mo lamang. Dahil sa maliit na footprint nito (8.6&nbsp;KB gzipped para sa core stylesheet), mabilis itong nag-integrate sa anumang web app — hindi kailangan ng JavaScript framework, hindi kailangan ng build step kung gagamitin mo ang CDN.
 
 Bawat paraan ay nakadokumento sa ibaba — piliin ang naaangkop sa iyo.
 
@@ -30,13 +30,13 @@ Maaari mong i-install ang Skeletonic Stylus sa pamamagitan ng **pnpm**, **npm** 
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Mula sa isang CDN
@@ -47,24 +47,24 @@ Kung kailangan mo lang ang compiled CSS, i-drop ang isa sa mga ito sa iyong `<he
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-Para sa pinakamataas na integridad, kopyahin ang **SRI hash** mula sa v1.1.7 release notes at idagdag ang isang `integrity="sha384-…"` na attribute.
+Para sa pinakamataas na integridad, kopyahin ang **SRI hash** mula sa v2.0.0 release notes at idagdag ang isang `integrity="sha384-…"` na attribute.
 
 ### Alternatibong CDN na lokasyon
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Oo | Oo |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Oo | Hindi |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Oo | Oo |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Oo | Hindi |
 
 ### I-download ang GitHub release
 
@@ -94,8 +94,8 @@ Nagpapadala ang library ng ilang pre-built na bundle sa ilalim ng
 
 | File | Layunin | Laki (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + token + layout + element + component + utility | 45.7 KB / 8.3 KB |
-| `animations/skeletonic-animations.min.css` | Opsyonal na module ng animasyon | ≈213 KB / ≈6.9 KB |
+| `core/skeletonic.min.css` | Reset + token + layout + element + component + utility | 45.0 KB / 8.6 KB |
+| `animations/skeletonic-animations.min.css` | Opsyonal na module ng animasyon | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Material na colour palette | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility palette | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Web-safe na palette | ≈3.5 KB |
@@ -144,7 +144,7 @@ Isang simpleng "gumana ba?" na pagsusuri:
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Gumagana na.</h1>
@@ -160,7 +160,7 @@ Kung ang heading ay naka-size nang fluid at ang button ay may asul na pill shape
 Sa loob ng package ay makikita mo ang bawat source file, ang compiled at minified na CSS bundle, source map, at isang buong Stylus tree na nakaayos ayon sa kategorya:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -198,16 +198,16 @@ Independiyente ang bawat module — i-pull in lang ang mga bundle na kailangan m
 ## Mga madalas itanong
 
 **Paano ko i-install ang Skeletonic Stylus?**
-Patakbuhin ang `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. O i-load ang compiled CSS nang diretso mula sa isang CDN — hindi kailangan ng build step.
+Patakbuhin ang `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. O i-load ang compiled CSS nang diretso mula sa isang CDN — hindi kailangan ng build step.
 
 **Kailangan ba nito ang JavaScript?**
 Hindi. Ang core stylesheet ay purong CSS, na walang runtime cost. Gumagana ang mga component nang walang kahit isang linya ng JS.
 
 **Handa ba ito sa WCAG 2.2?**
-Oo. Nagpapadala ang v1.1.7 ng AA-conformant na contrast, focus-visible ring, skip-link helper, reduced-motion support at dark mode bilang default.
+Oo. Nagpapadala ang v2.0.0 ng AA-conformant na contrast, focus-visible ring, skip-link helper, reduced-motion support at dark mode bilang default.
 
 **Ano ang laki nito kapag gzipped?**
-45.7&nbsp;KB minified, **8.3&nbsp;KB gzipped**, 6.9&nbsp;KB brotli para sa buong core stylesheet. Ang 8&nbsp;KB na limitasyon ay ipinatutupad sa CI.
+45.0&nbsp;KB minified, **8.6&nbsp;KB gzipped**, 7.2&nbsp;KB brotli para sa buong core stylesheet. Ang 8&nbsp;KB na limitasyon ay ipinatutupad sa CI.
 
 **Anong lisensya ang ginagamit nito?**
 Dual-licensed sa ilalim ng MIT at Apache 2.0 — piliin ang kailangan ng iyong proyekto. Libre para sa komersyal at personal na paggamit.
@@ -222,7 +222,7 @@ Dual-licensed sa ilalim ng MIT at Apache 2.0 — piliin ang kailangan ng iyong p
       "name": "Paano ko i-install ang Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Patakbuhin ang pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. O i-load ang compiled CSS nang diretso mula sa isang CDN — hindi kailangan ng build step."
+        "text": "Patakbuhin ang pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. O i-load ang compiled CSS nang diretso mula sa isang CDN — hindi kailangan ng build step."
       }
     },
     {
@@ -238,7 +238,7 @@ Dual-licensed sa ilalim ng MIT at Apache 2.0 — piliin ang kailangan ng iyong p
       "name": "Handa ba ang Skeletonic Stylus sa WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oo. Nagpapadala ang v1.1.7 ng AA-conformant na contrast, focus-visible ring, skip-link helper, reduced-motion support at dark mode bilang default."
+        "text": "Oo. Nagpapadala ang v2.0.0 ng AA-conformant na contrast, focus-visible ring, skip-link helper, reduced-motion support at dark mode bilang default."
       }
     },
     {
@@ -246,7 +246,7 @@ Dual-licensed sa ilalim ng MIT at Apache 2.0 — piliin ang kailangan ng iyong p
       "name": "Ano ang laki ng Skeletonic Stylus kapag gzipped?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.7 KB minified, 8.3 KB gzipped, 6.9 KB brotli para sa buong core stylesheet. Ang 8 KB na limitasyon ay ipinatutupad sa CI sa bawat commit."
+        "text": "45.0 KB minified, 8.6 KB gzipped, 7.2 KB brotli para sa buong core stylesheet. Ang 8 KB na limitasyon ay ipinatutupad sa CI sa bawat commit."
       }
     },
     {

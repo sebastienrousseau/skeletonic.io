@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "thanh phan skeletonic, nut bam, the, bieu mau, canh bao, huy hieu, header, navbar, hamburger css"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -111,7 +111,7 @@ xay ra.
 
 <h3 id="alerts">Canh bao</h3>
 
-Thong bao trang thai voi y nghia ngu nghia. **Trong v1.1.7 moi bien the
+Thong bao trang thai voi y nghia ngu nghia. **Trong v2.0.0 moi bien the
 duoc dat ten ro rang** trong `.alert-{primary,secondary,info,success,warning,error}`
 de lop bien the khong xung dot voi cac lop trang thai khac tren trang.
 
@@ -380,7 +380,7 @@ cach.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Cac thanh phan Skeletonic Stylus",
-  "description": "Moi thanh phan duoc cung cap trong Skeletonic Stylus v1.1.7.",
+  "description": "Moi thanh phan duoc cung cap trong Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

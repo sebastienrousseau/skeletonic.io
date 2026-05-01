@@ -1,21 +1,21 @@
 ---
 title: "परिवर्तन लॉग"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus की रिलीज़ नोट्स, v1.1.7 का पूर्ण विवरण।"
+description: "Skeletonic Stylus की रिलीज़ नोट्स, v2.0.0 का पूर्ण विवरण।"
 layout: page
 permalink: https://skeletonic.io/hi/parivartan-log/
 author: Sebastien Rousseau
 language: hi
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic परिवर्तन लॉग, रिलीज़ नोट्स, v1.1.7, semver"
+keywords: "skeletonic परिवर्तन लॉग, रिलीज़ नोट्स, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (वर्तमान)
+## v2.0.0 — 2026-04 (वर्तमान)
 
 "रिलीज़-तैयारी" पास: a11y, आपूर्ति श्रृंखला, रिपॉज़िटरी स्वच्छता।
 
@@ -47,7 +47,7 @@ keywords: "skeletonic परिवर्तन लॉग, रिलीज़ न
 ### रिपॉज़िटरी स्वच्छता और उपभोक्ता पैकेज
 - पुरानी `package/` डायरेक्ट्री हटाई; `dist/` अब उपभोक्ताओं के लिए
   एकमात्र सत्य स्रोत है।
-- v1.1.7 इंस्टॉल पथ दर्शाने के लिए README पुनर्लिखित।
+- v2.0.0 इंस्टॉल पथ दर्शाने के लिए README पुनर्लिखित।
 - `dist/` कमिट है; `debug/` जनरेट और gitignored है।
 - नया `.github/workflows/npm-publish.yml` टैग-संचालित।
 
@@ -59,7 +59,7 @@ keywords: "skeletonic परिवर्तन लॉग, रिलीज़ न
 - **`.alert-*` नेमस्पेसिंग** — `.alert.success` → `.alert.alert-success`
   state क्लास से टकराव रोकने के लिए।
 
-[GitHub पर पूर्ण v1.1.7 रिलीज़ नोट्स ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[GitHub पर पूर्ण v2.0.0 रिलीज़ नोट्स ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="इतिहास">
 

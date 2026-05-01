@@ -11,16 +11,16 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "fi skeletonic sori ẹrọ, iṣeto stylus, css cdn, bẹrẹ nibi"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Ifihan
 
-Ṣe o tuntun si Skeletonic Stylus? Ninu **v1.1.7** o rọrun ju ti tẹlẹ
+Ṣe o tuntun si Skeletonic Stylus? Ninu **v2.0.0** o rọrun ju ti tẹlẹ
 lọ lati yan awọn ẹya ti o nilo nikan. O ṣeun si iwọn kekere rẹ
-(8.3&nbsp;KB gzipped fun iwe-aṣa akọkọ), o darapọ mọ ohun elo wẹẹbu
+(8.6&nbsp;KB gzipped fun iwe-aṣa akọkọ), o darapọ mọ ohun elo wẹẹbu
 eyikeyi ni kiakia — ko si ilana JavaScript ti a beere, ko si igbesẹ ikọ
 ti a nilo ti o ba lo CDN.
 
@@ -36,13 +36,13 @@ pinpin ni agbegbe ti o ba fẹ.
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Lati CDN
@@ -53,25 +53,25 @@ Ti o ba nilo CSS ti a ṣajọ nikan, fi ọkan ninu iwọnyi sinu `<head>` rẹ
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
 Fun iduroṣinṣin ti o pọ julọ, daakọ **SRI hash** lati awọn akọsilẹ itusilẹ
-v1.1.7 ki o fi ẹya `integrity="sha384-…"` kun.
+v2.0.0 ki o fi ẹya `integrity="sha384-…"` kun.
 
 ### Awọn ipo CDN miiran
 
 | CDN | URL | HTTPS | Apapọ |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Bẹẹni | Bẹẹni |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Bẹẹni | Rara |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Bẹẹni | Bẹẹni |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Bẹẹni | Rara |
 
 ### Gba itusilẹ GitHub
 
@@ -101,8 +101,8 @@ Ile-ikawe naa fi ọpọlọpọ awọn akopọ ti a ti kọ tẹlẹ ranṣẹ 
 
 | Faili | Idi | Iwọn (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Atunṣeto + awọn ami + eto + awọn ẹya + awọn paati + awọn iwulo | 45.7 KB / 8.3 KB |
-| `animations/skeletonic-animations.min.css` | Modulu ere idasọnu yan | ≈213 KB / ≈6.9 KB |
+| `core/skeletonic.min.css` | Atunṣeto + awọn ami + eto + awọn ẹya + awọn paati + awọn iwulo | 45.0 KB / 8.6 KB |
+| `animations/skeletonic-animations.min.css` | Modulu ere idasọnu yan | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Palẹti awọ Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Palẹti iwulo Tachyons | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Palẹti aabo wẹẹbu | ≈3.5 KB |
@@ -153,7 +153,7 @@ Ayẹwo "ṣe o ṣiṣẹ?" ti o kere julọ:
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>O n ṣiṣẹ.</h1>
@@ -172,7 +172,7 @@ Ninu package naa iwọ yoo ri gbogbo faili orisun, awọn akopọ CSS ti a
 nipasẹ ẹka:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -211,7 +211,7 @@ aṣẹ CSS rẹ kere bi o ti ṣee.
 ## Awọn ibeere ti a ma n beere nigbagbogbo
 
 **Bawo ni MO ṣe le fi Skeletonic Stylus sori ẹrọ?**
-Ṣiṣẹ `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Tabi gba
+Ṣiṣẹ `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Tabi gba
 CSS ti a ṣajọ taara lati CDN — ko si igbesẹ ikọ ti a beere.
 
 **Ṣe o nilo JavaScript?**
@@ -219,12 +219,12 @@ Rara. Iwe-aṣa akọkọ jẹ CSS mimọ, pẹlu iye owo iṣiṣẹ odo. Awọ
 ṣiṣẹ laisi ila JS kan.
 
 **Ṣe o setan fun WCAG 2.2?**
-Bẹẹni. v1.1.7 fi iyatọ ti o ni ibamu AA, awọn oruka focus-visible,
+Bẹẹni. v2.0.0 fi iyatọ ti o ni ibamu AA, awọn oruka focus-visible,
 awọn oluranlọwọ skip-link, atilẹyin idinku-iṣipopada ati ipo dudu
 nipasẹ aiyipada ranṣẹ.
 
 **Kini iwọn gzipped?**
-45.7&nbsp;KB minified, **8.3&nbsp;KB gzipped**, 6.9&nbsp;KB brotli fun
+45.0&nbsp;KB minified, **8.6&nbsp;KB gzipped**, 7.2&nbsp;KB brotli fun
 iwe-aṣa akọkọ ni kikun. Opin 8&nbsp;KB ni a fi ipa mu ninu CI.
 
 **Kini iwe-aṣẹ ti o lo?**
@@ -241,7 +241,7 @@ iṣẹ-akanṣe rẹ nilo. Ọfẹ fun lilo iṣowo ati ti ara ẹni.
       "name": "Bawo ni MO ṣe le fi Skeletonic Stylus sori ẹrọ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ṣiṣẹ pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Tabi gba CSS ti a ṣajọ taara lati CDN — ko si igbesẹ ikọ ti a beere."
+        "text": "Ṣiṣẹ pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Tabi gba CSS ti a ṣajọ taara lati CDN — ko si igbesẹ ikọ ti a beere."
       }
     },
     {
@@ -257,7 +257,7 @@ iṣẹ-akanṣe rẹ nilo. Ọfẹ fun lilo iṣowo ati ti ara ẹni.
       "name": "Ṣe Skeletonic Stylus setan fun WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Bẹẹni. v1.1.7 fi iyatọ ti o ni ibamu AA, awọn oruka focus-visible, awọn oluranlọwọ skip-link, atilẹyin idinku-iṣipopada ati ipo dudu nipasẹ aiyipada ranṣẹ."
+        "text": "Bẹẹni. v2.0.0 fi iyatọ ti o ni ibamu AA, awọn oruka focus-visible, awọn oluranlọwọ skip-link, atilẹyin idinku-iṣipopada ati ipo dudu nipasẹ aiyipada ranṣẹ."
       }
     },
     {
@@ -265,7 +265,7 @@ iṣẹ-akanṣe rẹ nilo. Ọfẹ fun lilo iṣowo ati ti ara ẹni.
       "name": "Kini iwọn gzipped ti Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.7 KB minified, 8.3 KB gzipped, 6.9 KB brotli fun iwe-aṣa akọkọ ni kikun. Opin 8 KB ni a fi ipa mu ninu CI lori gbogbo adehun."
+        "text": "45.0 KB minified, 8.6 KB gzipped, 7.2 KB brotli fun iwe-aṣa akọkọ ni kikun. Opin 8 KB ni a fi ipa mu ninu CI lori gbogbo adehun."
       }
     },
     {

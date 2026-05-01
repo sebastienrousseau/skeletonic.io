@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -221,7 +221,7 @@
 </span></pre>
 </code></pre>
 <p>Fiecare clasă de animație este înfășurată într-un bloc
-<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> în v1.1.7, ceea ce
+<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> în v2.0.0, ceea ce
 înseamnă că un utilizator care a setat „reducere mișcare&quot; la nivel de
 sistem de operare nu va vedea nicio animație — layout-ul funcționează în
 continuare, mișcarea este doar suprimată.</p>
@@ -263,7 +263,7 @@ continuare, mișcarea este doar suprimată.</p>
     height:64px;
     border-radius:50%;
     background:hsl(210,100%,42%);
-    /* proprietățile lipsă sunt aici pentru ca clasele de animație din v1.1.7
+    /* proprietățile lipsă sunt aici pentru ca clasele de animație din v2.0.0
        să ruleze efectiv când sunt adăugate pe țintă */
     animation-duration:1.2s;
     animation-iteration-count:1;
@@ -290,7 +290,7 @@ pentru a face keyframe-urile vizibile.</p>
 <p class="anim-note-rm">
   Opțiunea Reducere mișcare este activată în sistemul tău de operare,
   astfel încât țintele de mai jos vor rămâne nemișcate — acesta este
-  comportamentul de accesibilitate din v1.1.7 care funcționează corect.
+  comportamentul de accesibilitate din v2.0.0 care funcționează corect.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -407,7 +407,7 @@ pentru a face keyframe-urile vizibile.</p>
   </div>
 </div>
 <script>
-  // Clasele de animație livrate în v1.1.7 setează animation-name în
+  // Clasele de animație livrate în v2.0.0 setează animation-name în
   // selectorul propriu. Pentru a rula din nou keyframe-ul, trebuie să
   // eliminăm clasa, să forțăm un layout flush, apoi să adăugăm din
   // nou clasa.
@@ -506,8 +506,8 @@ pentru a face keyframe-urile vizibile.</p>
 </tr>
 </tbody>
 </table></div>
-<h2>Avertisment — limitare cunoscută v1.1.7</h2>
-<p>Clasele de animație din v1.1.7 setează doar <code>animation-name</code>. Pentru a le
+<h2>Avertisment — limitare cunoscută v2.0.0</h2>
+<p>Clasele de animație din v2.0.0 setează doar <code>animation-name</code>. Pentru a le
 rula, trebuie să furnizezi propriile <code>animation-duration</code>,
 <code>animation-iteration-count</code>, <code>animation-fill-mode</code> și
 <code>animation-timing-function</code> — exact ca în blocul <code>&lt;style&gt;</code> de la

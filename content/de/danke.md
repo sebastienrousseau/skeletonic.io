@@ -17,4 +17,4 @@ In der Zwischenzeit, falls noch nicht geschehen:
 
 - ⭐ [Projekt auf GitHub mit einem Stern versehen](https://github.com/sebastienrousseau/skeletonic-stylus)
 - 📦 [npm-Paket durchsuchen](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- 📖 [Änderungsprotokoll v1.1.7 lesen](/de/aenderungsprotokoll/)
+- 📖 [Änderungsprotokoll v2.0.0 lesen](/de/aenderungsprotokoll/)

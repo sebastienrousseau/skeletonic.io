@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, אודות, stylus, css framework, פילוסופיה"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, אודות, stylus, css framework, פילוסופיה"
   <img alt="כוכבים ב-GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="הורדות חודשיות" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="גרסת npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="גודל חבילה" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="גודל חבילה" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="רישיון" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -47,7 +47,7 @@ keywords: "skeletonic, אודות, stylus, css framework, פילוסופיה"
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="נוצה" width="64" height="64" loading="lazy" decoding="async">
     <h3>קלת משקל</h3>
-    <p>כ-8.3&nbsp;KB בדחיסת gzip. הדפים נטענים מהר יותר. כל אבן בניין חיונית נשארת.</p>
+    <p>כ-8.6&nbsp;KB בדחיסת gzip. הדפים נטענים מהר יותר. כל אבן בניין חיונית נשארת.</p>
   </article>
 
   <article class="feature-card">
@@ -83,7 +83,7 @@ keywords: "skeletonic, אודות, stylus, css framework, פילוסופיה"
 
 | תכונה | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| גודל gzip | **כ-8.3&nbsp;KB** | כ-30&nbsp;KB | כ-10&nbsp;KB (varies) | כ-30&nbsp;KB |
+| גודל gzip | **כ-8.6&nbsp;KB** | כ-30&nbsp;KB | כ-10&nbsp;KB (varies) | כ-30&nbsp;KB |
 | תאימות WCAG 2.2 | **מובנית** | חלקית | ידנית | חלקית |
 | שכבות קסקייד | **כן (`@layer`)** | לא | לא | לא |
 | מצב כהה | **`prefers-color-scheme`** | הצטרפות | מבוסס מחלקה | הצטרפות |
@@ -117,7 +117,7 @@ Skeletonic Stylus פועלת לפי [ניהול גרסאות סמנטי 2.0](htt
 |---|---|---|
 | **מג'ורית** | הסרה או שינוי שם של מחלקה, מיקסין או טוקן ציבורי | 1.x &larr; 2.0 |
 | **מינורית** | הוספת רכיב, מיקסין או טוקן חדש | 1.1 &larr; 1.2 |
-| **טלאי** | תיקוני באגים, שיפורי נגישות, ביצועים, אבטחה | 1.1.6 &larr; 1.1.7 |
+| **טלאי** | תיקוני באגים, שיפורי נגישות, ביצועים, אבטחה | 1.1.6 &larr; 2.0.0 |
 
 כל שמות המחלקות הציבוריים, כל משתני ה-CSS המותאמים אישית וכל
 מיקסיני Stylus המיוצאים הם חלק מה-API הציבורי. שינוי שובר זוכה

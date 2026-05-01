@@ -1,21 +1,21 @@
 ---
 title: "سجل التغييرات"
 name: "Skeletonic Stylus"
-description: "ملاحظات الإصدار لـ Skeletonic Stylus، مع الإصدار 1.1.7 بالكامل."
+description: "ملاحظات الإصدار لـ Skeletonic Stylus، مع الإصدار 2.0.0 بالكامل."
 layout: page
 permalink: https://skeletonic.io/ar/sijil-al-taghyirat/
 author: Sebastien Rousseau
 language: ar
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "سجل تغييرات skeletonic, ملاحظات الإصدار, v1.1.7, semver"
+keywords: "سجل تغييرات skeletonic, ملاحظات الإصدار, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## الإصدار 1.1.7 — 2026-04 (الحالي)
+## الإصدار 2.0.0 — 2026-04 (الحالي)
 
 مرحلة "جاهزية الإصدار": إمكانية الوصول، سلسلة التوريد، نظافة المستودع.
 
@@ -43,7 +43,7 @@ keywords: "سجل تغييرات skeletonic, ملاحظات الإصدار, v1.1
 ### نظافة المستودع وحزمة المستهلك
 - أُزيل مجلد `package/` القديم؛ `dist/` هو الآن المصدر الوحيد
   للحقيقة للمستهلكين.
-- أُعيدت كتابة README لتعكس مسارات التثبيت في الإصدار 1.1.7.
+- أُعيدت كتابة README لتعكس مسارات التثبيت في الإصدار 2.0.0.
 - `dist/` محفوظ في git؛ `debug/` يُولّد ويُتجاهل.
 - سير عمل `.github/workflows/npm-publish.yml` الجديد يعتمد على الوسوم.
 
@@ -55,7 +55,7 @@ keywords: "سجل تغييرات skeletonic, ملاحظات الإصدار, v1.1
 - **تسمية `.alert-*`** — `.alert.success` ← `.alert.alert-success`
   لتجنب التعارض مع فئات الحالة.
 
-[ملاحظات إصدار v1.1.7 الكاملة على GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[ملاحظات إصدار v2.0.0 الكاملة على GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="التاريخ">
 

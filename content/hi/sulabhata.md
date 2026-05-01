@@ -1,7 +1,7 @@
 ---
-title: "सुलभता — v1.1.7 में WCAG 2.2"
+title: "सुलभता — v2.0.0 में WCAG 2.2"
 name: "Skeletonic Stylus"
-description: "v1.1.7 WCAG 2.2 अनुरूपता के लिए बॉक्स से क्या शिप करती है — फ़ोकस रिंग, कंट्रास्ट, स्किप लिंक, मोशन और डार्क मोड।"
+description: "v2.0.0 WCAG 2.2 अनुरूपता के लिए बॉक्स से क्या शिप करती है — फ़ोकस रिंग, कंट्रास्ट, स्किप लिंक, मोशन और डार्क मोड।"
 layout: page
 permalink: https://skeletonic.io/hi/sulabhata/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, सुलभता, focus visible, skip link, prefers reduced motion, कंट्रास्ट"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 WCAG 2.2 अनुरूपता को डिफ़ॉल्ट व्यवहार
+> **Skeletonic Stylus v2.0.0 WCAG 2.2 अनुरूपता को डिफ़ॉल्ट व्यवहार
 > के रूप में शिप करती है, वैकल्पिक थीम के रूप में नहीं।** यह पेज
 > बताता है कि क्या अंतर्निहित है और बारीक नियंत्रण के लिए कौन से
 > मिक्सिन उपलब्ध हैं।
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, सुलभता, focus visible, skip link, prefers reduc
 
 ## आपको मुफ़्त में क्या मिलता है
 
-| WCAG 2.2 SC | v1.1.7 क्या करती है | कैसे सत्यापित करें |
+| WCAG 2.2 SC | v2.0.0 क्या करती है | कैसे सत्यापित करें |
 |---|---|---|
 | **1.4.3 कंट्रास्ट (न्यूनतम) — AA** | `--cl-primary` और `--cl-secondary` को सफ़ेद के विरुद्ध ≥ 4.5:1 तक गहरा किया गया | DevTools → contrast checker |
 | **1.4.11 गैर-टेक्स्ट कंट्रास्ट — AA** | फ़ॉर्म बॉर्डर, बटन, बैज सब ≥ 3:1 | वही |
@@ -92,5 +92,5 @@ node scripts/a11y-test.mjs https://example.com
 CI हर push पर `dist/index.html` शोकेस पेज पर यह स्क्रिप्ट चलाता
 है।
 
-[v1.1.7 रिलीज़ के बारे में पढ़ें →](/hi/parivartan-log/) ·
+[v2.0.0 रिलीज़ के बारे में पढ़ें →](/hi/parivartan-log/) ·
 [सुरक्षा पेज देखें →](/hi/suraksha/)

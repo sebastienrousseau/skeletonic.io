@@ -1,7 +1,7 @@
 ---
 title: "動畫"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 隨附的可選動畫模組——彈跳、脈衝、淡入、縮放、抖動等，全部受 prefers-reduced-motion 控制。"
+description: "Skeletonic Stylus v2.0.0 隨附的可選動畫模組——彈跳、脈衝、淡入、縮放、抖動等，全部受 prefers-reduced-motion 控制。"
 language: zh-hant
 layout: page
 permalink: https://skeletonic.io/zh-hant/dong-hua/
@@ -20,7 +20,7 @@ load_animations: true
   href="/css/skeletonic-animations.min.css">
 ```
 
-在 v1.1.7 中，每個動畫類別都包裹在 **`@media (prefers-reduced-motion: no-preference)`** 區塊中，這意味著在作業系統層級設定了「減少動態效果」的使用者將看不到任何動畫——版面依然正常運作，只是動效被抑制。
+在 v2.0.0 中，每個動畫類別都包裹在 **`@media (prefers-reduced-motion: no-preference)`** 區塊中，這意味著在作業系統層級設定了「減少動態效果」的使用者將看不到任何動畫——版面依然正常運作，只是動效被抑制。
 
 <style>
   /*
@@ -81,7 +81,7 @@ load_animations: true
 按下任一卡片上的**播放**按鈕即可重播該動畫。動畫類別本身與 `skeletonic-animations.min.css` 中隨附的完全一致——函式庫僅設定 `animation-name`，因此上方的 `<style>` 區塊添加了缺失的 `animation-duration` / `animation-iteration-count` / `animation-fill-mode` 屬性，使 keyframes 得以可見。
 
 <p class="anim-note-rm">
-  您的作業系統已啟用「減少動態效果」，因此下方的目標將保持靜止——這正是 v1.1.7 無障礙行為的正確表現。
+  您的作業系統已啟用「減少動態效果」，因此下方的目標將保持靜止——這正是 v2.0.0 無障礙行為的正確表現。
 </p>
 
 <div class="anim-grid">
@@ -217,7 +217,7 @@ load_animations: true
 </div>
 
 <script>
-  // v1.1.7 中的動畫類別在選擇器中設定 animation-name。
+  // v2.0.0 中的動畫類別在選擇器中設定 animation-name。
   // 要重播 keyframe，我們需要移除類別、強制佈局重排，
   // 然後重新添加類別。
   function replayAnim(btn, name){
@@ -262,8 +262,8 @@ load_animations: true
 | `.vanishIn` / `.vanishOut` | Material 風格顯現 |
 | `.chameleonbackground` / `.chameleontext` | 色相循環 |
 
-## 注意——v1.1.7 已知限制
+## 注意——v2.0.0 已知限制
 
-v1.1.7 中的動畫類別僅設定 `animation-name`。要播放動畫，您目前需要自行提供 `animation-duration`、`animation-iteration-count`、`animation-fill-mode` 和 `animation-timing-function`——正如本頁頂部的 `<style>` 區塊所示範的那樣。未來版本將內建合理的預設基礎設定，讓 `<div class="bounce">` 開箱即用。
+v2.0.0 中的動畫類別僅設定 `animation-name`。要播放動畫，您目前需要自行提供 `animation-duration`、`animation-iteration-count`、`animation-fill-mode` 和 `animation-timing-function`——正如本頁頂部的 `<style>` 區塊所示範的那樣。未來版本將內建合理的預設基礎設定，讓 `<div class="bounce">` 開箱即用。
 
 [查看無障礙說明 →](/zh-hant/wu-zhang-ai/)

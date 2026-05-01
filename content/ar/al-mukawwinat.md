@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تنبيهات, شارات, ترويسة, قائمة تنقل, hamburger css فقط"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -110,7 +110,7 @@ keywords: "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تن
 
 <h3 id="alerts">التنبيهات</h3>
 
-رسائل حالة ذات قصد دلالي. **في الإصدار 1.1.7 كل متغير مُسمّى بشكل
+رسائل حالة ذات قصد دلالي. **في الإصدار 2.0.0 كل متغير مُسمّى بشكل
 صريح** تحت `.alert-{primary,secondary,info,success,warning,error}`
 لكي لا تتعارض فئة المتغير مع فئات الحالة في أماكن أخرى من الصفحة.
 
@@ -167,7 +167,7 @@ keywords: "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تن
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -379,7 +379,7 @@ keywords: "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تن
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "مكوّنات Skeletonic Stylus",
-  "description": "كل مكوّن يُشحن في Skeletonic Stylus الإصدار 1.1.7.",
+  "description": "كل مكوّن يُشحن في Skeletonic Stylus الإصدار 2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

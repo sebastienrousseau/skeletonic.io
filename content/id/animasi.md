@@ -1,7 +1,7 @@
 ---
 title: "Animasi"
 name: "Skeletonic Stylus"
-description: "Modul animasi opsional yang disertakan dengan Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake, dan lainnya, semuanya di belakang prefers-reduced-motion."
+description: "Modul animasi opsional yang disertakan dengan Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake, dan lainnya, semuanya di belakang prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/id/animasi/
 date: 2026-04-08
@@ -20,7 +20,7 @@ load_animations: true
   href="/css/skeletonic-animations.min.css">
 ```
 
-Setiap kelas animasi dibungkus dalam blok **`@media (prefers-reduced-motion: no-preference)`** di v1.1.7, yang berarti pengguna yang telah mengatur "kurangi gerakan" di tingkat OS tidak akan melihat animasi sama sekali — tata letak tetap berfungsi, hanya gerakannya yang ditekan.
+Setiap kelas animasi dibungkus dalam blok **`@media (prefers-reduced-motion: no-preference)`** di v2.0.0, yang berarti pengguna yang telah mengatur "kurangi gerakan" di tingkat OS tidak akan melihat animasi sama sekali — tata letak tetap berfungsi, hanya gerakannya yang ditekan.
 
 <style>
   /*
@@ -81,7 +81,7 @@ Setiap kelas animasi dibungkus dalam blok **`@media (prefers-reduced-motion: no-
 Tekan **Putar** pada kartu mana pun untuk memutar ulang animasi pada kotak. Kelas animasi itu sendiri persis seperti yang disertakan dalam `skeletonic-animations.min.css` — hanya `animation-name` yang diatur oleh pustaka, sehingga blok `<style>` di atas menambahkan properti `animation-duration` / `animation-iteration-count` / `animation-fill-mode` yang hilang agar keyframe terlihat.
 
 <p class="anim-note-rm">
-  Kurangi Gerakan diaktifkan di OS Anda, sehingga target di bawah akan tetap diam — itulah perilaku aksesibilitas v1.1.7 yang bekerja dengan benar.
+  Kurangi Gerakan diaktifkan di OS Anda, sehingga target di bawah akan tetap diam — itulah perilaku aksesibilitas v2.0.0 yang bekerja dengan benar.
 </p>
 
 <div class="anim-grid">
@@ -217,7 +217,7 @@ Tekan **Putar** pada kartu mana pun untuk memutar ulang animasi pada kotak. Kela
 </div>
 
 <script>
-  // Kelas animasi yang disertakan di v1.1.7 mengatur animation-name di
+  // Kelas animasi yang disertakan di v2.0.0 mengatur animation-name di
   // selector itu sendiri. Untuk memutar ulang keyframe kita harus menghapus
   // kelas, memaksa layout flush, lalu menambahkan kelas kembali.
   function replayAnim(btn, name){
@@ -262,8 +262,8 @@ Tekan **Putar** pada kartu mana pun untuk memutar ulang animasi pada kotak. Kela
 | `.vanishIn` / `.vanishOut` | Kemunculan gaya Material |
 | `.chameleonbackground` / `.chameleontext` | Siklus hue |
 
-## Catatan — peringatan v1.1.7 yang diketahui
+## Catatan — peringatan v2.0.0 yang diketahui
 
-Kelas animasi di v1.1.7 hanya mengatur `animation-name`. Untuk memutarnya, saat ini Anda harus menyediakan sendiri `animation-duration`, `animation-iteration-count`, `animation-fill-mode`, dan `animation-timing-function` — persis seperti yang ditunjukkan blok `<style>` di bagian atas halaman ini. Rilis mendatang akan menyertakan pengaturan dasar bawaan yang masuk akal sehingga `<div class="bounce">` berfungsi langsung.
+Kelas animasi di v2.0.0 hanya mengatur `animation-name`. Untuk memutarnya, saat ini Anda harus menyediakan sendiri `animation-duration`, `animation-iteration-count`, `animation-fill-mode`, dan `animation-timing-function` — persis seperti yang ditunjukkan blok `<style>` di bagian atas halaman ini. Rilis mendatang akan menyertakan pengaturan dasar bawaan yang masuk akal sehingga `<div class="bounce">` berfungsi langsung.
 
 [Lihat catatan aksesibilitas →](/id/aksesibilitas/)

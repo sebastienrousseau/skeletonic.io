@@ -1,21 +1,21 @@
 ---
 title: "บันทึกการเปลี่ยนแปลง"
 name: "Skeletonic Stylus"
-description: "บันทึกรีลีสของ Skeletonic Stylus พร้อมรายละเอียดฉบับเต็มของ v1.1.7"
+description: "บันทึกรีลีสของ Skeletonic Stylus พร้อมรายละเอียดฉบับเต็มของ v2.0.0"
 layout: page
 permalink: https://skeletonic.io/th/banthuek-kan-plian/
 author: Sebastien Rousseau
 language: th
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "บันทึกการเปลี่ยนแปลง skeletonic, บันทึกรีลีส, v1.1.7, semver"
+keywords: "บันทึกการเปลี่ยนแปลง skeletonic, บันทึกรีลีส, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (ปัจจุบัน)
+## v2.0.0 — 2026-04 (ปัจจุบัน)
 
 รอบ "ความพร้อมเผยแพร่": a11y, supply chain, ความเป็นระเบียบของ repo
 
@@ -43,7 +43,7 @@ keywords: "บันทึกการเปลี่ยนแปลง skeleton
 ### ความเป็นระเบียบของ repo และแพ็กเกจผู้บริโภค
 - ลบไดเรกทอรี `package/` แบบเก่า; `dist/` เป็นแหล่งข้อมูลเดียว
   สำหรับผู้บริโภค
-- เขียน README ใหม่ให้สะท้อนเส้นทางติดตั้ง v1.1.7
+- เขียน README ใหม่ให้สะท้อนเส้นทางติดตั้ง v2.0.0
 - `dist/` ถูกคอมมิต; `debug/` ถูกสร้างและ gitignore
 - `.github/workflows/npm-publish.yml` ใหม่ขับเคลื่อนด้วยแท็ก
 
@@ -55,7 +55,7 @@ keywords: "บันทึกการเปลี่ยนแปลง skeleton
 - **namespace `.alert-*`** — `.alert.success` → `.alert.alert-success`
   เพื่อหลีกเลี่ยงการชนกับคลาสสถานะ
 
-[บันทึกรีลีส v1.1.7 ฉบับเต็มบน GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[บันทึกรีลีส v2.0.0 ฉบับเต็มบน GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="ประวัติ">
 

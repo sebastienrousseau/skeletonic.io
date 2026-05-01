@@ -1,7 +1,7 @@
 ---
 title: "Seguridad &amp; supply chain"
 name: "Skeletonic Stylus"
-description: "Paano sinisiguro ng Skeletonic Stylus v1.1.7 ang build pipeline nito, nilalagdaan ang mga release, at nagpapadala ng SBOM."
+description: "Paano sinisiguro ng Skeletonic Stylus v2.0.0 ang build pipeline nito, nilalagdaan ang mga release, at nagpapadala ng SBOM."
 layout: page
 permalink: https://skeletonic.io/fil/seguridad/
 date: 2026-04-08
@@ -13,7 +13,7 @@ keywords: "css security, sbom, cyclonedx, npm provenance, openssf scorecard, sup
 
 ## Performance
 
-- **45.7&nbsp;KB minified · 8.3&nbsp;KB gzipped · 6.9&nbsp;KB brotli** para sa buong core stylesheet.
+- **45.0&nbsp;KB minified · 8.6&nbsp;KB gzipped · 7.2&nbsp;KB brotli** para sa buong core stylesheet.
 - **Walang JavaScript** — purong Stylus → purong CSS, walang runtime cost.
 - **Cascade-layered** — nananalo ang mga override nang walang `!important`.
 - **`size-limit` budget na ipinatutupad** sa CI sa bawat commit.
@@ -22,7 +22,7 @@ Ang performance ay isang security control. Bawat byte na hindi ipinapadala ay is
 
 ## Supply-chain TL;DR
 
-| Kontrol | Status sa v1.1.7 |
+| Kontrol | Status sa v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Ginagawa sa bawat release, kinokompromiso sa ilalim ng `dist/sbom.json` |
 | **npm provenance** | Naka-enable (`--provenance --access public`) |
@@ -41,10 +41,10 @@ Bawat na-publish na tarball ay may kasamang CycloneDX SBOM sa `dist/sbom.json`.
 Maaari mong i-verify ang isang bagong na-install na package gamit ang:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 Ang SBOM ay ginagawa gamit ang `cyclonedx-npm` sa panahon ng publish workflow.
@@ -59,7 +59,7 @@ Ang na-publish na artefact ay nilalagdaan gamit ang
 Maaari mo itong i-verify pagkatapos ng pag-install gamit ang:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -71,7 +71,7 @@ Ikinokonekta ng signed attestation ang tarball pabalik sa eksaktong GitHub Actio
 
 | CVE | Kalubhaan | Status |
 |---|---|---|
-| **CVE-2023-44270** (postcss line return parsing) | Katamtaman | **Na-patch** sa v1.1.7 sa pamamagitan ng `pnpm.overrides` na nag-a-upgrade ng `postcss` sa ≥ 8.4.31 |
+| **CVE-2023-44270** (postcss line return parsing) | Katamtaman | **Na-patch** sa v2.0.0 sa pamamagitan ng `pnpm.overrides` na nag-a-upgrade ng `postcss` sa ≥ 8.4.31 |
 
 Patuloy na minomonitor ang Snyk advisory database at ang GitHub Security Advisories feed; ang mga security patch ay ipinapadala bilang **patch-level na release**.
 

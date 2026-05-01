@@ -1,7 +1,7 @@
 ---
-title: "การเข้าถึง — WCAG 2.2 ใน v1.1.7"
+title: "การเข้าถึง — WCAG 2.2 ใน v2.0.0"
 name: "Skeletonic Stylus"
-description: "สิ่งที่ v1.1.7 มาพร้อมสำหรับการรองรับ WCAG 2.2 — วงแหวนโฟกัส คอนทราสต์ ลิงก์ข้าม การเคลื่อนไหว และโหมดมืด"
+description: "สิ่งที่ v2.0.0 มาพร้อมสำหรับการรองรับ WCAG 2.2 — วงแหวนโฟกัส คอนทราสต์ ลิงก์ข้าม การเคลื่อนไหว และโหมดมืด"
 layout: page
 permalink: https://skeletonic.io/th/kan-khao-thueng/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, การเข้าถึง, focus visible, ลิงก์ข้าม, prefers reduced motion, คอนทราสต์"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 มาพร้อมการรองรับ WCAG 2.2 เป็นพฤติกรรม
+> **Skeletonic Stylus v2.0.0 มาพร้อมการรองรับ WCAG 2.2 เป็นพฤติกรรม
 > เริ่มต้น ไม่ใช่ธีมเสริม** หน้านี้อธิบายสิ่งที่รวมอยู่แล้วและ
 > mixins ที่สามารถเลือกเปิดใช้เพื่อการควบคุมที่ละเอียดขึ้น
 
@@ -24,7 +24,7 @@ keywords: "wcag 2.2, การเข้าถึง, focus visible, ลิงก
 
 ## สิ่งที่คุณได้ฟรี
 
-| WCAG 2.2 SC | สิ่งที่ v1.1.7 ทำ | วิธีตรวจสอบ |
+| WCAG 2.2 SC | สิ่งที่ v2.0.0 ทำ | วิธีตรวจสอบ |
 |---|---|---|
 | **1.4.3 คอนทราสต์ (ขั้นต่ำ) — AA** | `--cl-primary` และ `--cl-secondary` ถูกทำให้เข้มขึ้นเป็น ≥ 4.5:1 กับสีขาว | DevTools → ตรวจสอบคอนทราสต์ |
 | **1.4.11 คอนทราสต์ที่ไม่ใช่ข้อความ — AA** | ขอบฟอร์ม ปุ่ม ป้ายกำกับ ทั้งหมด ≥ 3:1 | เช่นเดียวกัน |
@@ -90,5 +90,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI รันสคริปต์นี้กับหน้า showcase `dist/index.html` ทุกครั้งที่ push
 
-[อ่านเกี่ยวกับรีลีส v1.1.7 →](/th/banthuek-kan-plian/) ·
+[อ่านเกี่ยวกับรีลีส v2.0.0 →](/th/banthuek-kan-plian/) ·
 [ดูหน้าความปลอดภัย →](/th/khwam-plodphai/)

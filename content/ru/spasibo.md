@@ -17,4 +17,4 @@ keywords: "спасибо"
 
 - [Поставьте звезду проекту на GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Просмотрите npm-пакет](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Прочитайте журнал изменений v1.1.7](/ru/zhurnal-izmeneniy/)
+- [Прочитайте журнал изменений v2.0.0](/ru/zhurnal-izmeneniy/)

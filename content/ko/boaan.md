@@ -1,7 +1,7 @@
 ---
 title: "보안 &amp; 공급망"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7이 빌드 파이프라인을 보호하고, 릴리스에 서명하며, SBOM을 제공하는 방법입니다."
+description: "Skeletonic Stylus v2.0.0이 빌드 파이프라인을 보호하고, 릴리스에 서명하며, SBOM을 제공하는 방법입니다."
 layout: page
 permalink: https://skeletonic.io/ko/boaan/
 date: 2026-04-08
@@ -13,7 +13,7 @@ keywords: "css 보안, sbom, cyclonedx, npm 출처 증명, openssf scorecard, �
 
 ## 성능
 
-- **45.7&nbsp;KB 최소화 · 8.3&nbsp;KB gzipped · 6.9&nbsp;KB brotli** (전체 코어 스타일시트 기준).
+- **45.0&nbsp;KB 최소화 · 8.6&nbsp;KB gzipped · 7.2&nbsp;KB brotli** (전체 코어 스타일시트 기준).
 - **JavaScript 없음** — 순수 Stylus → 순수 CSS, 런타임 비용 없음.
 - **캐스케이드 레이어** — `!important` 없이 오버라이드가 적용됩니다.
 - **`size-limit` 예산이 CI에서** 매 커밋마다 적용됩니다.
@@ -22,7 +22,7 @@ keywords: "css 보안, sbom, cyclonedx, npm 출처 증명, openssf scorecard, �
 
 ## 공급망 요약
 
-| 통제 | v1.1.7 상태 |
+| 통제 | v2.0.0 상태 |
 |---|---|
 | **CycloneDX SBOM** | 매 릴리스마다 생성, `dist/sbom.json`에 커밋 |
 | **npm 출처 증명** | 활성화 (`--provenance --access public`) |
@@ -40,10 +40,10 @@ keywords: "css 보안, sbom, cyclonedx, npm 출처 증명, openssf scorecard, �
 모든 게시된 tarball에는 `dist/sbom.json`에 CycloneDX SBOM이 포함되어 있습니다. 새로 설치한 패키지를 다음과 같이 확인할 수 있습니다:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM은 게시 워크플로우 중 `cyclonedx-npm`으로 생성됩니다.
@@ -57,7 +57,7 @@ SBOM은 게시 워크플로우 중 `cyclonedx-npm`으로 생성됩니다.
 설치 후 다음과 같이 확인할 수 있습니다:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -69,7 +69,7 @@ npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
 
 | CVE | 심각도 | 상태 |
 |---|---|---|
-| **CVE-2023-44270** (postcss 줄바꿈 파싱) | 보통 | `pnpm.overrides`를 통해 `postcss`를 8.4.31 이상으로 업그레이드하여 v1.1.7에서 **패치 완료** |
+| **CVE-2023-44270** (postcss 줄바꿈 파싱) | 보통 | `pnpm.overrides`를 통해 `postcss`를 8.4.31 이상으로 업그레이드하여 v2.0.0에서 **패치 완료** |
 
 Snyk 권고 데이터베이스와 GitHub Security Advisories 피드가 지속적으로 모니터링됩니다. 보안 패치는 **패치 수준 릴리스**로 제공됩니다.
 

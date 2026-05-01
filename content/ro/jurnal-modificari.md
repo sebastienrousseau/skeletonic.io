@@ -1,21 +1,21 @@
 ---
 title: "Jurnal de modificări"
 name: "Skeletonic Stylus"
-description: "Note de lansare pentru Skeletonic Stylus, cu v1.1.7 detaliat complet."
+description: "Note de lansare pentru Skeletonic Stylus, cu v2.0.0 detaliat complet."
 layout: page
 permalink: https://skeletonic.io/ro/jurnal-modificari/
 author: Sebastien Rousseau
 language: ro
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "jurnal de modificări skeletonic, note de lansare, v1.1.7, semver"
+keywords: "jurnal de modificări skeletonic, note de lansare, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (curent)
+## v2.0.0 — 2026-04 (curent)
 
 Runda de „pregătire pentru lansare": accesibilitate, lanț de aprovizionare, igienă depozit.
 
@@ -40,7 +40,7 @@ Runda de „pregătire pentru lansare": accesibilitate, lanț de aprovizionare, 
 
 ### Igienă depozit &amp; pachet consumator
 - Directorul legacy `package/` eliminat; `dist/` este acum singura sursă de adevăr pentru consumatori.
-- README rescris pentru a reflecta căile de instalare v1.1.7.
+- README rescris pentru a reflecta căile de instalare v2.0.0.
 - `dist/` este commis; `debug/` este generat și gitignored.
 - Noul `.github/workflows/npm-publish.yml` este bazat pe tag-uri.
 
@@ -49,7 +49,7 @@ Runda de „pregătire pentru lansare": accesibilitate, lanț de aprovizionare, 
 - **`.alternate`** aplica eronat `animation-direction: reverse` în loc de `alternate`.
 - **Prefixare `.alert-*`** — `.alert.success` → `.alert.alert-success` pentru a evita coliziunile cu clasele de stare.
 
-[Note complete lansare v1.1.7 pe GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Note complete lansare v2.0.0 pe GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Istoric">
 

@@ -1,11 +1,11 @@
 {
-  "keywords": "skeletonic andringslogg, releaseanteckningar, v1.1.7, semver",
-  "layout": "page",
-  "description": "Releaseanteckningar for Skeletonic Stylus, med v1.1.7 i sin helhet.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/sv/andringslogg/",
+  "keywords": "skeletonic andringslogg, releaseanteckningar, v2.0.0, semver",
+  "layout": "page",
+  "title": "Andringslogg",
   "language": "sv",
-  "title": "Andringslogg"
+  "name": "Skeletonic Stylus",
+  "description": "Releaseanteckningar for Skeletonic Stylus, med v2.0.0 i sin helhet.",
+  "permalink": "https://skeletonic.io/sv/andringslogg/",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

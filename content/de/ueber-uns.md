@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, über uns, stylus, css framework, philosophie"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, über uns, stylus, css framework, philosophie"
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Monatliche Downloads" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="npm-Version" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Bundle-Größe" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Bundle-Größe" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Lizenz" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -104,7 +104,7 @@ Skeletonic Stylus folgt [Semantic Versioning 2.0](https://semver.org).
 |---|---|---|
 | **Major** | Entfernen oder Umbenennen einer öffentlichen Klasse, eines Mixins oder Tokens | 1.x → 2.0 |
 | **Minor** | Hinzufügen einer neuen Komponente, eines Mixins oder Tokens | 1.1 → 1.2 |
-| **Patch** | Bugfixes, A11y-Feinschliff, Performance, Sicherheit | 1.1.6 → 1.1.7 |
+| **Patch** | Bugfixes, A11y-Feinschliff, Performance, Sicherheit | 1.1.6 → 2.0.0 |
 
 Alle öffentlichen Klassennamen, alle CSS Custom Properties und alle exportierten Stylus-Mixins sind Teil der öffentlichen API. Eine brechende Änderung erhält einen Major-Bump und einen Migrationsleitfaden.
 

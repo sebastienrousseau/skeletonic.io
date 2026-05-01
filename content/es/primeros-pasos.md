@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instalar skeletonic, configuracion stylus, css cdn, primeros pasos"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Introduccion
 
-Nuevo en Skeletonic Stylus? En **v1.1.7** es mas facil que nunca elegir
+Nuevo en Skeletonic Stylus? En **v2.0.0** es mas facil que nunca elegir
 solo las funcionalidades que necesitas. Gracias a su huella minima
 (8,3&nbsp;KB gzipped para la hoja de estilos principal), se integra
 rapidamente en cualquier aplicacion web — sin necesidad de framework
@@ -36,13 +36,13 @@ distribucion localmente si lo prefieres.
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Desde un CDN
@@ -53,25 +53,25 @@ Si solo necesitas el CSS compilado, anade una de estas lineas en tu `<head>`:
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
 Para maxima integridad, copia el **hash SRI** de las notas de la version
-v1.1.7 y anade un atributo `integrity="sha384-…"`.
+v2.0.0 y anade un atributo `integrity="sha384-…"`.
 
 ### Ubicaciones alternativas de CDN
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Si | Si |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Si | No |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Si | Si |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Si | No |
 
 ### Descargar la release de GitHub
 
@@ -103,7 +103,7 @@ La biblioteca incluye varios bundles preconstruidos bajo
 | Archivo | Proposito | Tamano (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elementos + componentes + utilidades | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modulo de animaciones opcional | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Modulo de animaciones opcional | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de colores Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta de utilidades Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Paleta web-safe | ≈3.5 KB |
@@ -154,7 +154,7 @@ Una comprobacion minima de "funciona?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Funciona.</h1>
@@ -173,7 +173,7 @@ compilados y minificados, mapas de origen, y un arbol Stylus completo
 organizado por categoria:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -212,7 +212,7 @@ mantener tu carga CSS lo mas ligera posible.
 ## Preguntas frecuentes
 
 **Como instalo Skeletonic Stylus?**
-Ejecuta `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. O carga el
+Ejecuta `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. O carga el
 CSS compilado directamente desde un CDN — sin paso de compilacion requerido.
 
 **Requiere JavaScript?**
@@ -220,7 +220,7 @@ No. La hoja de estilos principal es CSS puro, con cero coste en tiempo de
 ejecucion. Los componentes funcionan sin una sola linea de JS.
 
 **Es compatible con WCAG 2.2?**
-Si. v1.1.7 incluye contraste conforme AA, anillos focus-visible, skip-link
+Si. v2.0.0 incluye contraste conforme AA, anillos focus-visible, skip-link
 helpers, soporte de movimiento reducido y modo oscuro por defecto.
 
 **Cual es el tamano gzipped?**
@@ -241,7 +241,7 @@ Gratuito para uso comercial y personal.
       "name": "Como instalo Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ejecuta pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. O carga el CSS compilado directamente desde un CDN — sin paso de compilacion requerido."
+        "text": "Ejecuta pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. O carga el CSS compilado directamente desde un CDN — sin paso de compilacion requerido."
       }
     },
     {
@@ -257,7 +257,7 @@ Gratuito para uso comercial y personal.
       "name": "Skeletonic Stylus es compatible con WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Si. v1.1.7 incluye contraste conforme AA, anillos focus-visible, skip-link helpers, soporte de movimiento reducido y modo oscuro por defecto."
+        "text": "Si. v2.0.0 incluye contraste conforme AA, anillos focus-visible, skip-link helpers, soporte de movimiento reducido y modo oscuro por defecto."
       }
     },
     {

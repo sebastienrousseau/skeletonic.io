@@ -1,7 +1,7 @@
 ---
 title: "Palettes"
 name: "Skeletonic Stylus"
-description: "Material, Tachyons and web-safe colour palettes shipped inside Skeletonic Stylus v1.1.7."
+description: "Material, Tachyons and web-safe colour palettes shipped inside Skeletonic Stylus v2.0.0."
 layout: page
 permalink: https://skeletonic.io/palettes/
 date: 2026-04-08
@@ -10,7 +10,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css palette, material, tachyons, websafe, design tokens"
 ---
 
-Skeletonic Stylus v1.1.7 ships **three optional colour palettes**, each
+Skeletonic Stylus v2.0.0 ships **three optional colour palettes**, each
 distributed as its own minified stylesheet so you only pay for what you
 use.
 
@@ -62,9 +62,9 @@ The core stylesheet ships an accessible 11-step grey scale exposed as
 
 <hr class="hr-text" data-content="Brand">
 
-## Brand colours (v1.1.7 — AA contrast)
+## Brand colours (v2.0.0 — AA contrast)
 
-In v1.1.7 the primary and secondary tokens were darkened to meet
+In v2.0.0 the primary and secondary tokens were darkened to meet
 **WCAG 4.5:1** contrast against white text out of the box.
 
 <div class="row margin-top-3">

@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic installeren, stylus setup, css cdn, aan de slag"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Introductie
 
-Nieuw bij Skeletonic Stylus? In **v1.1.7** is het eenvoudiger dan ooit om
+Nieuw bij Skeletonic Stylus? In **v2.0.0** is het eenvoudiger dan ooit om
 precies de functies te kiezen die je nodig hebt. Dankzij de kleine
 footprint (8,3&nbsp;KB gzipped voor het kernstylesheet) integreert het
 snel in elke webapp — geen JavaScript-framework vereist, geen buildstap
@@ -36,13 +36,13 @@ lokaal hosten als je dat liever hebt.
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Via een CDN
@@ -53,25 +53,25 @@ Als je alleen de gecompileerde CSS nodig hebt, voeg een van deze toe aan je `<he
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-Voor maximale integriteit kopieer je de **SRI-hash** uit de v1.1.7-releasenotities
+Voor maximale integriteit kopieer je de **SRI-hash** uit de v2.0.0-releasenotities
 en voeg je een `integrity="sha384-…"` attribuut toe.
 
 ### Alternatieve CDN-locaties
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Ja | Ja |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Ja | Nee |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ja | Ja |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ja | Nee |
 
 ### Download de GitHub-release
 
@@ -103,7 +103,7 @@ De bibliotheek levert meerdere voorgebouwde bundels onder
 | Bestand | Doel | Grootte (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elementen + componenten + utilities | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Optionele animatiemodule | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Optionele animatiemodule | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Material-kleurenpalet | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility-palet | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Webveilig palet | ≈3.5 KB |
@@ -154,7 +154,7 @@ Een minimale "werkt het?"-controle:
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Het werkt.</h1>
@@ -173,7 +173,7 @@ geminificeerde CSS-bundels, source maps en een volledige Stylus-boom
 georganiseerd per categorie:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -212,7 +212,7 @@ hebt om je CSS-payload zo klein mogelijk te houden.
 ## Veelgestelde vragen
 
 **Hoe installeer ik Skeletonic Stylus?**
-Voer `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7` uit. Of laad
+Voer `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0` uit. Of laad
 de gecompileerde CSS rechtstreeks vanaf een CDN — geen buildstap vereist.
 
 **Vereist het JavaScript?**
@@ -220,7 +220,7 @@ Nee. Het kernstylesheet is pure CSS, zonder runtime-kosten. Componenten
 werken zonder een enkele regel JS.
 
 **Is het WCAG 2.2 klaar?**
-Ja. v1.1.7 levert AA-conform contrast, focus-visible-ringen,
+Ja. v2.0.0 levert AA-conform contrast, focus-visible-ringen,
 skip-link-helpers, ondersteuning voor beperkte beweging en donkere modus standaard.
 
 **Wat is de gzipped-grootte?**
@@ -241,7 +241,7 @@ project past. Gratis voor commercieel en persoonlijk gebruik.
       "name": "Hoe installeer ik Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Voer pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7 uit. Of laad de gecompileerde CSS rechtstreeks vanaf een CDN — geen buildstap vereist."
+        "text": "Voer pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0 uit. Of laad de gecompileerde CSS rechtstreeks vanaf een CDN — geen buildstap vereist."
       }
     },
     {
@@ -257,7 +257,7 @@ project past. Gratis voor commercieel en persoonlijk gebruik.
       "name": "Is Skeletonic Stylus WCAG 2.2 klaar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. v1.1.7 levert AA-conform contrast, focus-visible-ringen, skip-link-helpers, ondersteuning voor beperkte beweging en donkere modus standaard."
+        "text": "Ja. v2.0.0 levert AA-conform contrast, focus-visible-ringen, skip-link-helpers, ondersteuning voor beperkte beweging en donkere modus standaard."
       }
     },
     {

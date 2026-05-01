@@ -1,7 +1,7 @@
 ---
 title: "Animacje"
 name: "Skeletonic Stylus"
-description: "Opcjonalny modul animacji dostarczany z Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake i inne, wszystkie za prefers-reduced-motion."
+description: "Opcjonalny modul animacji dostarczany z Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake i inne, wszystkie za prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/pl/animacje/
 date: 2026-04-08
@@ -20,7 +20,7 @@ load_animations: true
   href="/css/skeletonic-animations.min.css">
 ```
 
-Kazda klasa animacji jest opakowana w blok **`@media (prefers-reduced-motion: no-preference)`** w v1.1.7, co oznacza, ze uzytkownik, ktory wlaczyl „ograniczenie ruchu" na poziomie systemu operacyjnego, nie zobaczy zadnej animacji — uklad nadal dziala, ruch jest po prostu stlumiony.
+Kazda klasa animacji jest opakowana w blok **`@media (prefers-reduced-motion: no-preference)`** w v2.0.0, co oznacza, ze uzytkownik, ktory wlaczyl „ograniczenie ruchu" na poziomie systemu operacyjnego, nie zobaczy zadnej animacji — uklad nadal dziala, ruch jest po prostu stlumiony.
 
 <style>
   /*
@@ -82,7 +82,7 @@ Nacisnij **Odtworz** na dowolnej karcie, aby ponownie odtworzyc animacje na kwad
 
 <p class="anim-note-rm">
   Ograniczenie ruchu jest wlaczone w Twoim systemie operacyjnym, wiec cele ponizej
-  pozostana nieruchome — to zachowanie dostepnosci v1.1.7 dziala prawidlowo.
+  pozostana nieruchome — to zachowanie dostepnosci v2.0.0 dziala prawidlowo.
 </p>
 
 <div class="anim-grid">
@@ -258,8 +258,8 @@ Nacisnij **Odtworz** na dowolnej karcie, aby ponownie odtworzyc animacje na kwad
 | `.vanishIn` / `.vanishOut` | Pojawienie w stylu Material |
 | `.chameleonbackground` / `.chameleontext` | Cykl barwy |
 
-## Uwaga — znane zastrzezenie v1.1.7
+## Uwaga — znane zastrzezenie v2.0.0
 
-Klasy animacji w v1.1.7 ustawiaja tylko `animation-name`. Aby je odtworzyc, musisz obecnie samodzielnie dostarczyc `animation-duration`, `animation-iteration-count`, `animation-fill-mode` i `animation-timing-function` — dokladnie tak, jak pokazuje blok `<style>` na gorze tej strony. Przyszle wydanie bedzie zawierac sensowna domyslna konfiguracje, dzieki czemu `<div class="bounce">` zadziala od razu.
+Klasy animacji w v2.0.0 ustawiaja tylko `animation-name`. Aby je odtworzyc, musisz obecnie samodzielnie dostarczyc `animation-duration`, `animation-iteration-count`, `animation-fill-mode` i `animation-timing-function` — dokladnie tak, jak pokazuje blok `<style>` na gorze tej strony. Przyszle wydanie bedzie zawierac sensowna domyslna konfiguracje, dzieki czemu `<div class="bounce">` zadziala od razu.
 
 [Zobacz notatki o dostepnosci →](/pl/dostepnosc/)

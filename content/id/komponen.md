@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "komponen skeletonic, tombol, kartu, formulir, peringatan, badge, header, navbar, hamburger css"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -99,7 +99,7 @@ Permukaan yang memberi tahu pengunjung bahwa sesuatu telah terjadi — atau akan
 
 <h3 id="alerts">Peringatan</h3>
 
-Pesan status dengan maksud semantik. **Di v1.1.7 setiap varian diberi namespace secara eksplisit** di bawah `.alert-{primary,secondary,info,success,warning,error}` sehingga kelas varian tidak akan bentrok dengan kelas state lain di halaman.
+Pesan status dengan maksud semantik. **Di v2.0.0 setiap varian diberi namespace secara eksplisit** di bawah `.alert-{primary,secondary,info,success,warning,error}` sehingga kelas varian tidak akan bentrok dengan kelas state lain di halaman.
 
 ```html
 <div class="alert alert-primary" role="alert">
@@ -346,7 +346,7 @@ Header lengkap khusus CSS dengan toggle hamburger responsif. **Tanpa JavaScript.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Komponen Skeletonic Stylus",
-  "description": "Setiap komponen yang disertakan dalam Skeletonic Stylus v1.1.7.",
+  "description": "Setiap komponen yang disertakan dalam Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

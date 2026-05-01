@@ -1,21 +1,21 @@
 ---
 title: "Registro modifiche"
 name: "Skeletonic Stylus"
-description: "Note di rilascio per Skeletonic Stylus, con la v1.1.7 completa."
+description: "Note di rilascio per Skeletonic Stylus, con la v2.0.0 completa."
 layout: page
 permalink: https://skeletonic.io/it/registro-modifiche/
 author: Sebastien Rousseau
 language: it
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "registro modifiche skeletonic, note di rilascio, v1.1.7, semver"
+keywords: "registro modifiche skeletonic, note di rilascio, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (attuale)
+## v2.0.0 — 2026-04 (attuale)
 
 Il passaggio di "preparazione al rilascio": a11y, supply chain, igiene del repository.
 
@@ -44,7 +44,7 @@ Il passaggio di "preparazione al rilascio": a11y, supply chain, igiene del repos
 ### Igiene del repository &amp; pacchetto per i consumatori
 - Directory legacy `package/` rimossa; `dist/` e ora l'unica fonte
   di verita per i consumatori.
-- README riscritto per riflettere i percorsi di installazione v1.1.7.
+- README riscritto per riflettere i percorsi di installazione v2.0.0.
 - `dist/` e committato; `debug/` e generato e incluso nel gitignore.
 - Nuovo `.github/workflows/npm-publish.yml` guidato da tag.
 
@@ -56,7 +56,7 @@ Il passaggio di "preparazione al rilascio": a11y, supply chain, igiene del repos
 - **Namespace `.alert-*`** — `.alert.success` → `.alert.alert-success`
   per evitare collisioni con classi di stato.
 
-[Note complete del rilascio v1.1.7 su GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Note complete del rilascio v2.0.0 su GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Cronologia">
 

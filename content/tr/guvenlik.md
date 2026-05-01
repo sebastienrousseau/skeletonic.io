@@ -1,7 +1,7 @@
 ---
 title: "Guvenlik ve tedarik zinciri"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7'nin derleme hattini nasil guvence altina aldigi, surumleri nasil imzaladigi ve SBOM nasil gonderdigi."
+description: "Skeletonic Stylus v2.0.0'nin derleme hattini nasil guvence altina aldigi, surumleri nasil imzaladigi ve SBOM nasil gonderdigi."
 layout: page
 permalink: https://skeletonic.io/tr/guvenlik/
 date: 2026-04-08
@@ -23,7 +23,7 @@ imzalanmasi ve dogrulanmasi gereken bir bayt azdir.
 
 ## Tedarik zinciri ozeti
 
-| Kontrol | v1.1.7 durumu |
+| Kontrol | v2.0.0 durumu |
 |---|---|
 | **CycloneDX SBOM** | Her surumde olusturulur, `dist/sbom.json` altinda commit edilir |
 | **npm provenance** | Etkin (`--provenance --access public`) |
@@ -42,10 +42,10 @@ Yayinlanan her tarball, `dist/sbom.json` konumunda bir CycloneDX SBOM
 icerir. Yeni kurulan bir paketi soyle dogrulayabilirsiniz:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM, yayinlama is akisi sirasinda `cyclonedx-npm` ile olusturulur.
@@ -61,7 +61,7 @@ kullanilarak imzalanir.
 Kurulumdan sonra soyle dogrulayabilirsiniz:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -74,7 +74,7 @@ baglar.
 
 | CVE | Siddet | Durum |
 |---|---|---|
-| **CVE-2023-44270** (postcss satir donus ayrisitrma) | Orta | **Yamali** — v1.1.7'de `pnpm.overrides` ile `postcss` ≥ 8.4.31'e yukseltildi |
+| **CVE-2023-44270** (postcss satir donus ayrisitrma) | Orta | **Yamali** — v2.0.0'de `pnpm.overrides` ile `postcss` ≥ 8.4.31'e yukseltildi |
 
 Snyk danisma veritabani ve GitHub Guvenlik Danisman beslemesi surekli
 izlenmektedir; guvenlik yamalari **yama duzeyinde surumler** olarak

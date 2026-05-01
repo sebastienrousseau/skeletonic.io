@@ -1,7 +1,7 @@
 ---
 title: "Animacoes"
 name: "Skeletonic Stylus"
-description: "Modulo de animacoes opcional incluido no Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake e outros, todos protegidos por prefers-reduced-motion."
+description: "Modulo de animacoes opcional incluido no Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake e outros, todos protegidos por prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/pt-br/animacoes/
 date: 2026-04-08
@@ -23,7 +23,7 @@ gzipped.
 ```
 
 Cada classe de animacao esta envolvida em um bloco
-**`@media (prefers-reduced-motion: no-preference)`** na v1.1.7, o que
+**`@media (prefers-reduced-motion: no-preference)`** na v2.0.0, o que
 significa que um usuario que definiu "reduzir movimento" no nivel do SO
 nao vera nenhuma animacao — o layout continua funcionando, o movimento e
 apenas suprimido.
@@ -95,7 +95,7 @@ faltantes `animation-duration` / `animation-iteration-count` /
 <p class="anim-note-rm">
   O Reduzir Movimento esta ativado no seu SO, entao os alvos abaixo
   permanecerao parados — esse e o comportamento de acessibilidade da
-  v1.1.7 funcionando corretamente.
+  v2.0.0 funcionando corretamente.
 </p>
 
 <div class="anim-grid">
@@ -231,7 +231,7 @@ faltantes `animation-duration` / `animation-iteration-count` /
 </div>
 
 <script>
-  // As classes de animacao incluidas na v1.1.7 definem animation-name no
+  // As classes de animacao incluidas na v2.0.0 definem animation-name no
   // proprio seletor. Para reproduzir o keyframe, precisamos remover a
   // classe, forcar um layout flush e entao adicionar a classe novamente.
   function replayAnim(btn, name){
@@ -277,9 +277,9 @@ faltantes `animation-duration` / `animation-iteration-count` /
 | `.vanishIn` / `.vanishOut` | Aparecimento estilo Material |
 | `.chameleonbackground` / `.chameleontext` | Ciclo de matiz |
 
-## Atencao — ressalva conhecida da v1.1.7
+## Atencao — ressalva conhecida da v2.0.0
 
-As classes de animacao na v1.1.7 definem apenas `animation-name`. Para
+As classes de animacao na v2.0.0 definem apenas `animation-name`. Para
 reproduzi-las, voce precisa fornecer seus proprios `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` e
 `animation-timing-function` — exatamente como o bloco `<style>` no

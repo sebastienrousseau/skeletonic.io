@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -220,7 +220,7 @@ het kernstylesheet onder 8 KB gzipped blijft.</p>
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">/css/skeletonic-animations.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>Elke animatieklasse is in v1.1.7 gewikkeld in een
+<p>Elke animatieklasse is in v2.0.0 gewikkeld in een
 <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> blok, wat betekent
 dat een gebruiker die &quot;beperkte beweging&quot; heeft ingesteld op OS-niveau
 helemaal geen animatie ziet — de layout werkt nog steeds, de beweging wordt
@@ -262,7 +262,7 @@ simpelweg onderdrukt.</p>
     height:64px;
     border-radius:50%;
     background:hsl(210,100%,42%);
-    /* de ontbrekende eigenschappen staan hier zodat de animatieklassen van v1.1.7
+    /* de ontbrekende eigenschappen staan hier zodat de animatieklassen van v2.0.0
        daadwerkelijk draaien wanneer ze aan het target worden toegevoegd */
     animation-duration:1.2s;
     animation-iteration-count:1;
@@ -288,7 +288,7 @@ bibliotheek, dus het omringende <code>&lt;style&gt;</code>-blok hierboven voegt 
 eigenschappen toe om de keyframes zichtbaar te maken.</p>
 <p class="anim-note-rm">
   Beperkte Beweging is ingeschakeld in je OS, dus de targets hieronder blijven
-  stilstaan — dat is het v1.1.7-toegankelijkheidsgedrag dat correct werkt.
+  stilstaan — dat is het v2.0.0-toegankelijkheidsgedrag dat correct werkt.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -405,7 +405,7 @@ eigenschappen toe om de keyframes zichtbaar te maken.</p>
   </div>
 </div>
 <script>
-  // De animatieklassen geleverd in v1.1.7 stellen animation-name in via de
+  // De animatieklassen geleverd in v2.0.0 stellen animation-name in via de
   // selector zelf. Om de keyframe opnieuw af te spelen moeten we de klasse
   // verwijderen, een layout-flush forceren en dan de klasse weer toevoegen.
   function replayAnim(btn, name){
@@ -502,8 +502,8 @@ eigenschappen toe om de keyframes zichtbaar te maken.</p>
 </tr>
 </tbody>
 </table></div>
-<h2>Let op — bekend v1.1.7-voorbehoud</h2>
-<p>De animatieklassen in v1.1.7 stellen alleen <code>animation-name</code> in. Om ze af te
+<h2>Let op — bekend v2.0.0-voorbehoud</h2>
+<p>De animatieklassen in v2.0.0 stellen alleen <code>animation-name</code> in. Om ze af te
 spelen moet je momenteel zelf <code>animation-duration</code>,
 <code>animation-iteration-count</code>, <code>animation-fill-mode</code> en
 <code>animation-timing-function</code> opgeven — precies zoals het <code>&lt;style&gt;</code>-blok bovenaan

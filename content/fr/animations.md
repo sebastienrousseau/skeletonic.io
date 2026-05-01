@@ -1,7 +1,7 @@
 ---
 title: "Animations"
 name: "Skeletonic Stylus"
-description: "Module d'animations optionnel livré avec Skeletonic Stylus v1.1.7 — rebond, pulsation, fondu, zoom, secousse et autres, tous protégés par prefers-reduced-motion."
+description: "Module d'animations optionnel livré avec Skeletonic Stylus v2.0.0 — rebond, pulsation, fondu, zoom, secousse et autres, tous protégés par prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/fr/animations/
 date: 2026-04-08
@@ -22,7 +22,7 @@ afin que la feuille de style principale reste sous 8 Ko gzippé.
 ```
 
 Chaque classe d'animation est encapsulée dans un bloc
-**`@media (prefers-reduced-motion: no-preference)`** dans la v1.1.7,
+**`@media (prefers-reduced-motion: no-preference)`** dans la v2.0.0,
 ce qui signifie qu'un utilisateur ayant activé « réduire les animations »
 au niveau du système d'exploitation ne verra aucune animation — la mise
 en page fonctionne toujours, seul le mouvement est supprimé.
@@ -87,7 +87,7 @@ keyframes visibles.
 <p class="anim-note-rm">
   L'option Réduire les animations est activée sur votre système — les
   cibles ci-dessous resteront immobiles. C'est le comportement
-  d'accessibilité v1.1.7 qui fonctionne correctement.
+  d'accessibilité v2.0.0 qui fonctionne correctement.
 </p>
 
 <div class="anim-grid">
@@ -263,9 +263,9 @@ keyframes visibles.
 | `.vanishIn` / `.vanishOut` | Apparition style Material |
 | `.chameleonbackground` / `.chameleontext` | Cycle de teinte |
 
-## Avertissement — limitation connue v1.1.7
+## Avertissement — limitation connue v2.0.0
 
-Les classes d'animation de la v1.1.7 ne définissent que
+Les classes d'animation de la v2.0.0 ne définissent que
 `animation-name`. Pour les lancer, vous devez actuellement fournir vos
 propres `animation-duration`, `animation-iteration-count`,
 `animation-fill-mode` et `animation-timing-function` — exactement comme

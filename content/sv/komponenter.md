@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic komponenter, knappar, kort, formular, notiser, marken, header, navbar, css-only hamburgare"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -111,7 +111,7 @@ handa.
 
 <h3 id="alerts">Notiser</h3>
 
-Statusmeddelanden med semantisk avsikt. **I v1.1.7 ar varje variant
+Statusmeddelanden med semantisk avsikt. **I v2.0.0 ar varje variant
 uttryckligen namnrymd** under `.alert-{primary,secondary,info,success,warning,error}`
 sa att variantklassen inte kan kollidera med tillstandsklasser pa andra
 stallen pa sidan.
@@ -170,7 +170,7 @@ En kantad, paddad behallare for en enskild sammanhangande enhet. Kombinera med
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -383,7 +383,7 @@ och fangar fokus korrekt pa egen hand.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Komponenter i Skeletonic Stylus",
-  "description": "Varje komponent som levereras i Skeletonic Stylus v1.1.7.",
+  "description": "Varje komponent som levereras i Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

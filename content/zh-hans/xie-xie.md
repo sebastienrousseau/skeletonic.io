@@ -17,4 +17,4 @@ keywords: "感谢"
 
 - [在 GitHub 上为项目加星](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [浏览 npm 包](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [阅读 v1.1.7 更新日志](/zh-hans/geng-xin-ri-zhi/)
+- [阅读 v2.0.0 更新日志](/zh-hans/geng-xin-ri-zhi/)

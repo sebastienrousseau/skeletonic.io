@@ -1,7 +1,7 @@
 ---
 title: "Bezpieczenstwo &amp; lancuch dostaw"
 name: "Skeletonic Stylus"
-description: "Jak Skeletonic Stylus v1.1.7 zabezpiecza swoj pipeline budowania, podpisuje wydania i dostarcza SBOM."
+description: "Jak Skeletonic Stylus v2.0.0 zabezpiecza swoj pipeline budowania, podpisuje wydania i dostarcza SBOM."
 layout: page
 permalink: https://skeletonic.io/pl/bezpieczenstwo/
 date: 2026-04-08
@@ -22,7 +22,7 @@ Wydajnosc to kontrola bezpieczenstwa. Kazdy niedostarczony bajt to o jeden bajt 
 
 ## Lancuch dostaw — podsumowanie
 
-| Kontrola | Status v1.1.7 |
+| Kontrola | Status v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Generowany przy kazdym wydaniu, commitowany do `dist/sbom.json` |
 | **npm provenance** | Wlaczone (`--provenance --access public`) |
@@ -40,10 +40,10 @@ Wydajnosc to kontrola bezpieczenstwa. Kazdy niedostarczony bajt to o jeden bajt 
 Kazdy opublikowany tarball zawiera CycloneDX SBOM w `dist/sbom.json`. Mozesz zweryfikowac swiezo zainstalowana paczke za pomoca:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM jest generowany za pomoca `cyclonedx-npm` podczas workflow publikacji.
@@ -58,7 +58,7 @@ Opublikowany artefakt jest podpisany za pomoca
 Mozesz go zweryfikowac po instalacji za pomoca:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -70,7 +70,7 @@ Podpisana atestacja laczy tarball z dokladnym przebiegiem GitHub Actions, ktory 
 
 | CVE | Poziom waznosci | Status |
 |---|---|---|
-| **CVE-2023-44270** (parsowanie znakow nowej linii w postcss) | Umiarkowany | **Poprawiony** w v1.1.7 przez `pnpm.overrides` aktualizujace `postcss` do >= 8.4.31 |
+| **CVE-2023-44270** (parsowanie znakow nowej linii w postcss) | Umiarkowany | **Poprawiony** w v2.0.0 przez `pnpm.overrides` aktualizujace `postcss` do >= 8.4.31 |
 
 Baza porad Snyk i feed GitHub Security Advisories sa monitorowane na biezaco; poprawki bezpieczenstwa sa dostarczane jako **wydania na poziomie patch**.
 

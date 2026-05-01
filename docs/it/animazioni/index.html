@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -220,7 +220,7 @@
 </span></pre>
 </code></pre>
 <p>Ogni classe di animazione e racchiusa in un blocco
-<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> nella v1.1.7, il che significa che un utente che ha impostato &quot;ridurre il movimento&quot; a livello di sistema operativo non vedra alcuna animazione — il layout funziona comunque, il movimento viene semplicemente soppresso.</p>
+<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> nella v2.0.0, il che significa che un utente che ha impostato &quot;ridurre il movimento&quot; a livello di sistema operativo non vedra alcuna animazione — il layout funziona comunque, il movimento viene semplicemente soppresso.</p>
 <style>
   /*
    * Stili demo locali della pagina. Le classi di animazione incluse in
@@ -278,7 +278,7 @@
 <p class="anim-note-rm">
   La riduzione del movimento e attiva nel tuo sistema operativo, quindi i
   target qui sotto resteranno fermi — e il comportamento di accessibilita
-  della v1.1.7 che funziona correttamente.
+  della v2.0.0 che funziona correttamente.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -395,7 +395,7 @@
   </div>
 </div>
 <script>
-  // Le classi di animazione incluse nella v1.1.7 impostano animation-name
+  // Le classi di animazione incluse nella v2.0.0 impostano animation-name
   // nel selettore stesso. Per riprodurre il keyframe bisogna rimuovere la
   // classe, forzare un reflow del layout, quindi riaggiungere la classe.
   function replayAnim(btn, name){
@@ -492,8 +492,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>Avvertenza — caveat noto nella v1.1.7</h2>
-<p>Le classi di animazione nella v1.1.7 impostano solo <code>animation-name</code>. Per riprodurle attualmente devi fornire i tuoi <code>animation-duration</code>, <code>animation-iteration-count</code>, <code>animation-fill-mode</code> e <code>animation-timing-function</code> — esattamente come dimostra il blocco <code>&lt;style&gt;</code> in cima a questa pagina. Un rilascio futuro includera una configurazione di base predefinita cosi <code>&lt;div class=&quot;bounce&quot;&gt;</code> funzionera direttamente.</p>
+<h2>Avvertenza — caveat noto nella v2.0.0</h2>
+<p>Le classi di animazione nella v2.0.0 impostano solo <code>animation-name</code>. Per riprodurle attualmente devi fornire i tuoi <code>animation-duration</code>, <code>animation-iteration-count</code>, <code>animation-fill-mode</code> e <code>animation-timing-function</code> — esattamente come dimostra il blocco <code>&lt;style&gt;</code> in cima a questa pagina. Un rilascio futuro includera una configurazione di base predefinita cosi <code>&lt;div class=&quot;bounce&quot;&gt;</code> funzionera direttamente.</p>
 <p><a href="/it/accessibilita/">Vedi le note sull'accessibilita →</a></p>
 
 

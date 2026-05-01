@@ -1,21 +1,21 @@
 ---
 title: "יומן שינויים"
 name: "Skeletonic Stylus"
-description: "הערות שחרור עבור Skeletonic Stylus, עם v1.1.7 במלואה."
+description: "הערות שחרור עבור Skeletonic Stylus, עם v2.0.0 במלואה."
 layout: page
 permalink: https://skeletonic.io/he/yoman-shinuyim/
 author: Sebastien Rousseau
 language: he
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "יומן שינויים skeletonic, הערות שחרור, v1.1.7, semver"
+keywords: "יומן שינויים skeletonic, הערות שחרור, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (נוכחית)
+## v2.0.0 — 2026-04 (נוכחית)
 
 סבב "מוכנות לפרסום": נגישות, שרשרת אספקה, היגיינת מאגר.
 
@@ -46,7 +46,7 @@ keywords: "יומן שינויים skeletonic, הערות שחרור, v1.1.7, se
 ### היגיינת מאגר וחבילת צרכן
 - תיקיית `package/` הישנה הוסרה; `dist/` הוא כעת מקור האמת
   היחיד לצרכנים.
-- README נכתב מחדש כדי לשקף נתיבי התקנה של v1.1.7.
+- README נכתב מחדש כדי לשקף נתיבי התקנה של v2.0.0.
 - `dist/` מועבר; `debug/` נוצר ומוגדר ב-gitignore.
 - תהליך `npm-publish.yml` חדש ב-`.github/workflows/` מונע
   על ידי תגים.
@@ -59,7 +59,7 @@ keywords: "יומן שינויים skeletonic, הערות שחרור, v1.1.7, se
 - **מרחוב שמות `.alert-*`** — `.alert.success` הפך
   ל-`.alert.alert-success` כדי למנוע התנגשויות עם מחלקות מצב.
 
-[הערות שחרור מלאות של v1.1.7 ב-GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[הערות שחרור מלאות של v2.0.0 ב-GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="היסטוריה">
 

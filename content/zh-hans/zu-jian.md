@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic 组件, 按钮, 卡片, 表单, 提示框, 徽章, 页头, 导航栏, 纯 css 汉堡菜单"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -99,7 +99,7 @@ keywords: "skeletonic 组件, 按钮, 卡片, 表单, 提示框, 徽章, 页头,
 
 <h3 id="alerts">提示框</h3>
 
-带有语义意图的状态消息。**在 v1.1.7 中，每个变体均显式命名空间化**为 `.alert-{primary,secondary,info,success,warning,error}`，因此变体类不会与页面其他地方的状态类冲突。
+带有语义意图的状态消息。**在 v2.0.0 中，每个变体均显式命名空间化**为 `.alert-{primary,secondary,info,success,warning,error}`，因此变体类不会与页面其他地方的状态类冲突。
 
 ```html
 <div class="alert alert-primary" role="alert">
@@ -151,7 +151,7 @@ keywords: "skeletonic 组件, 按钮, 卡片, 表单, 提示框, 徽章, 页头,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ keywords: "skeletonic 组件, 按钮, 卡片, 表单, 提示框, 徽章, 页头,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">轻量</h3>
-      <p>45.7&nbsp;KB 压缩后，8.3&nbsp;KB gzip。</p>
+      <p>45.0&nbsp;KB 压缩后，8.6&nbsp;KB gzip。</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -346,7 +346,7 @@ keywords: "skeletonic 组件, 按钮, 卡片, 表单, 提示框, 徽章, 页头,
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus 组件",
-  "description": "Skeletonic Stylus v1.1.7 中的所有组件。",
+  "description": "Skeletonic Stylus v2.0.0 中的所有组件。",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

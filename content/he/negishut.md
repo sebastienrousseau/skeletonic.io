@@ -1,7 +1,7 @@
 ---
-title: "נגישות — WCAG 2.2 ב-v1.1.7"
+title: "נגישות — WCAG 2.2 ב-v2.0.0"
 name: "Skeletonic Stylus"
-description: "מה v1.1.7 מספקת ישירות מהקופסה לתאימות WCAG 2.2 — טבעות פוקוס, ניגודיות, קישורי דילוג, תנועה ומצב כהה."
+description: "מה v2.0.0 מספקת ישירות מהקופסה לתאימות WCAG 2.2 — טבעות פוקוס, ניגודיות, קישורי דילוג, תנועה ומצב כהה."
 layout: page
 permalink: https://skeletonic.io/he/negishut/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, נגישות, focus visible, קישור דילוג, prefers reduced motion, ניגודיות"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 מספקת תאימות WCAG 2.2 כהתנהגות ברירת
+> **Skeletonic Stylus v2.0.0 מספקת תאימות WCAG 2.2 כהתנהגות ברירת
 > מחדל, לא כערכת נושא אופציונלית.** דף זה מתעד את מה שמובנה ואילו
 > מיקסינים תוכלו להצטרף אליהם לשליטה עדינה יותר.
 
@@ -24,7 +24,7 @@ keywords: "wcag 2.2, נגישות, focus visible, קישור דילוג, prefers
 
 ## מה אתם מקבלים חינם
 
-| WCAG 2.2 SC | מה v1.1.7 עושה | כיצד לאמת |
+| WCAG 2.2 SC | מה v2.0.0 עושה | כיצד לאמת |
 |---|---|---|
 | **1.4.3 ניגודיות (מינימום) — AA** | `--cl-primary` ו-`--cl-secondary` הוכהו ל-4.5:1 לפחות מול לבן | DevTools &larr; בודק ניגודיות |
 | **1.4.11 ניגודיות לא-טקסטואלית — AA** | גבולות טפסים, כפתורים, תגיות 3:1 לפחות | כנ"ל |
@@ -90,5 +90,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI מריץ סקריפט זה מול דף התצוגה `dist/index.html` בכל push.
 
-[קראו על שחרור v1.1.7 &larr;](/he/yoman-shinuyim/) ·
+[קראו על שחרור v2.0.0 &larr;](/he/yoman-shinuyim/) ·
 [ראו את דף האבטחה &larr;](/he/avtakha/)

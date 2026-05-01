@@ -1,7 +1,7 @@
 ---
 title: "动画"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 附带的可选动画模块——弹跳、脉冲、淡入、缩放、抖动等，均受 prefers-reduced-motion 控制。"
+description: "Skeletonic Stylus v2.0.0 附带的可选动画模块——弹跳、脉冲、淡入、缩放、抖动等，均受 prefers-reduced-motion 控制。"
 language: zh-hans
 layout: page
 permalink: https://skeletonic.io/zh-hans/dong-hua/
@@ -20,7 +20,7 @@ load_animations: true
   href="/css/skeletonic-animations.min.css">
 ```
 
-在 v1.1.7 中，每个动画类都包裹在 **`@media (prefers-reduced-motion: no-preference)`** 块中，这意味着在操作系统层面设置了"减弱动效"的用户将看不到任何动画——布局依然正常，动效只是被抑制了。
+在 v2.0.0 中，每个动画类都包裹在 **`@media (prefers-reduced-motion: no-preference)`** 块中，这意味着在操作系统层面设置了"减弱动效"的用户将看不到任何动画——布局依然正常，动效只是被抑制了。
 
 <style>
   /*
@@ -80,7 +80,7 @@ load_animations: true
 点击任意卡片上的**播放**按钮即可重播动画。动画类本身与 `skeletonic-animations.min.css` 中的完全一致——仅设置了 `animation-name`，上方的 `<style>` 块添加了缺失的 `animation-duration` / `animation-iteration-count` / `animation-fill-mode` 属性以使关键帧可见。
 
 <p class="anim-note-rm">
-  你的操作系统已启用减弱动效，因此以下目标将保持静止——这正是 v1.1.7 无障碍行为的正确表现。
+  你的操作系统已启用减弱动效，因此以下目标将保持静止——这正是 v2.0.0 无障碍行为的正确表现。
 </p>
 
 <div class="anim-grid">
@@ -216,7 +216,7 @@ load_animations: true
 </div>
 
 <script>
-  // v1.1.7 中的动画类在选择器中设置 animation-name。要重播关键帧，
+  // v2.0.0 中的动画类在选择器中设置 animation-name。要重播关键帧，
   // 需要先移除类名，强制布局刷新，然后重新添加。
   function replayAnim(btn, name){
     var target = btn.closest('.anim-card').querySelector('.anim-target');
@@ -259,8 +259,8 @@ load_animations: true
 | `.vanishIn` / `.vanishOut` | Material 风格出现 |
 | `.chameleonbackground` / `.chameleontext` | 色相循环 |
 
-## 注意 — v1.1.7 已知限制
+## 注意 — v2.0.0 已知限制
 
-v1.1.7 中的动画类仅设置 `animation-name`。要播放它们，你目前需要自行提供 `animation-duration`、`animation-iteration-count`、`animation-fill-mode` 和 `animation-timing-function`——正如本页顶部的 `<style>` 块所演示的。未来版本将内联合理的默认基础配置，使 `<div class="bounce">` 开箱即用。
+v2.0.0 中的动画类仅设置 `animation-name`。要播放它们，你目前需要自行提供 `animation-duration`、`animation-iteration-count`、`animation-fill-mode` 和 `animation-timing-function`——正如本页顶部的 `<style>` 块所演示的。未来版本将内联合理的默认基础配置，使 `<div class="bounce">` 开箱即用。
 
 [查看无障碍说明 →](/zh-hans/wu-zhang-ai/)

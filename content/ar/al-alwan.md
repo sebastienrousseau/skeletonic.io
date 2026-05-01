@@ -1,7 +1,7 @@
 ---
 title: "لوحات الألوان"
 name: "Skeletonic Stylus"
-description: "لوحات ألوان Material وTachyons والألوان الآمنة للويب المُشحونة مع Skeletonic Stylus الإصدار 1.1.7."
+description: "لوحات ألوان Material وTachyons والألوان الآمنة للويب المُشحونة مع Skeletonic Stylus الإصدار 2.0.0."
 layout: page
 permalink: https://skeletonic.io/ar/al-alwan/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "لوحة ألوان css, material, tachyons, websafe, رموز التصميم"
 ---
 
-يشحن Skeletonic Stylus الإصدار 1.1.7 **ثلاث لوحات ألوان اختيارية**، كل
+يشحن Skeletonic Stylus الإصدار 2.0.0 **ثلاث لوحات ألوان اختيارية**، كل
 منها موزّعة كورقة أنماط مصغّرة خاصة بها حتى لا تدفع إلا ثمن ما تستخدمه.
 
 | اللوحة | الملف | الحجم (min) |
@@ -62,9 +62,9 @@ keywords: "لوحة ألوان css, material, tachyons, websafe, رموز الت
 
 <hr class="hr-text" data-content="العلامة التجارية">
 
-## ألوان العلامة التجارية (الإصدار 1.1.7 — تباين AA)
+## ألوان العلامة التجارية (الإصدار 2.0.0 — تباين AA)
 
-في الإصدار 1.1.7 تم تغميق رموز الأساسي والثانوي لتحقيق
+في الإصدار 2.0.0 تم تغميق رموز الأساسي والثانوي لتحقيق
 **نسبة تباين WCAG بقيمة 4.5:1** مقابل النص الأبيض مباشرة.
 
 <div class="row margin-top-3">

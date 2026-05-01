@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — Accessible na CSS, 8.3 KB gzipped"
+title: "Skeletonic Stylus — Accessible na CSS, 8.6 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Ang Skeletonic Stylus ay isang magaan at modular na Stylus CSS library — handa sa WCAG 2.2, cascade-layered, 8.3 KB gzipped — na idinisenyo upang gawing mas madali ang modernong web UI development."
+description: "Ang Skeletonic Stylus ay isang magaan at modular na Stylus CSS library — handa sa WCAG 2.2, cascade-layered, 8.6 KB gzipped — na idinisenyo upang gawing mas madali ang modernong web UI development."
 layout: index
 permalink: https://skeletonic.io/fil/
 date: 2026-04-08
@@ -15,7 +15,7 @@ Accessible na CSS sa **wala pang 8&nbsp;KB gzipped**. Handa sa WCAG&nbsp;2.2.
 Cascade-layered. Walang JavaScript. I-drop sa kahit anong pahina.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Ang Anatomya ng Skeletonic

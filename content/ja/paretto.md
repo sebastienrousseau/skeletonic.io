@@ -1,7 +1,7 @@
 ---
 title: "パレット"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 に付属する Material、Tachyons、ウェブセーフのカラーパレット。"
+description: "Skeletonic Stylus v2.0.0 に付属する Material、Tachyons、ウェブセーフのカラーパレット。"
 layout: page
 permalink: https://skeletonic.io/ja/paretto/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css パレット, material, tachyons, ウェブセーフ, デザイントークン"
 ---
 
-Skeletonic Stylus v1.1.7 には **3つのオプションカラーパレット** が付属しており、それぞれ独立したミニファイ済みスタイルシートとして配布されるため、使用するものだけにコストを支払います。
+Skeletonic Stylus v2.0.0 には **3つのオプションカラーパレット** が付属しており、それぞれ独立したミニファイ済みスタイルシートとして配布されるため、使用するものだけにコストを支払います。
 
 | パレット | ファイル | サイズ (min) |
 |---|---|---|
@@ -59,9 +59,9 @@ Skeletonic Stylus v1.1.7 には **3つのオプションカラーパレット** 
 
 <hr class="hr-text" data-content="ブランド">
 
-## ブランドカラー (v1.1.7 — AA コントラスト)
+## ブランドカラー (v2.0.0 — AA コントラスト)
 
-v1.1.7 では、プライマリとセカンダリのトークンが暗くなり、白いテキストに対して **WCAG 4.5:1** コントラストをそのまま満たすようになりました。
+v2.0.0 では、プライマリとセカンダリのトークンが暗くなり、白いテキストに対して **WCAG 4.5:1** コントラストをそのまま満たすようになりました。
 
 <div class="row margin-top-3">
   <div class="flex-4 padding-3 text-center" style="background-color: hsl(210, 100%, 42%); color: #fff;">

@@ -1,7 +1,7 @@
 ---
 title: "Безопасность и цепочка поставок"
 name: "Skeletonic Stylus"
-description: "Как Skeletonic Stylus v1.1.7 защищает конвейер сборки, подписывает релизы и поставляет SBOM."
+description: "Как Skeletonic Stylus v2.0.0 защищает конвейер сборки, подписывает релизы и поставляет SBOM."
 layout: page
 permalink: https://skeletonic.io/ru/bezopasnost/
 date: 2026-04-08
@@ -22,7 +22,7 @@ keywords: "css безопасность, sbom, cyclonedx, npm провенанс
 
 ## Краткое резюме по цепочке поставок
 
-| Контроль | Статус v1.1.7 |
+| Контроль | Статус v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Генерируется при каждом релизе, включён в `dist/sbom.json` |
 | **npm-провенанс** | Включён (`--provenance --access public`) |
@@ -40,10 +40,10 @@ keywords: "css безопасность, sbom, cyclonedx, npm провенанс
 Каждый опубликованный архив включает CycloneDX SBOM в `dist/sbom.json`. Вы можете проверить свежеустановленный пакет:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM генерируется с помощью `cyclonedx-npm` в процессе публикации.
@@ -58,7 +58,7 @@ SBOM генерируется с помощью `cyclonedx-npm` в процес�
 Вы можете проверить его после установки:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -70,7 +70,7 @@ npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
 
 | CVE | Серьёзность | Статус |
 |---|---|---|
-| **CVE-2023-44270** (парсинг переноса строки postcss) | Умеренная | **Исправлена** в v1.1.7 через `pnpm.overrides`, обновляющий `postcss` до ≥ 8.4.31 |
+| **CVE-2023-44270** (парсинг переноса строки postcss) | Умеренная | **Исправлена** в v2.0.0 через `pnpm.overrides`, обновляющий `postcss` до ≥ 8.4.31 |
 
 База данных рекомендаций Snyk и лента GitHub Security Advisories отслеживаются непрерывно; исправления безопасности поставляются как **патч-релизы**.
 

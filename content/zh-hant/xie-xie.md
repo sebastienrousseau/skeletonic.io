@@ -17,4 +17,4 @@ keywords: "感謝"
 
 - ⭐ [在 GitHub 上為專案加星標](https://github.com/sebastienrousseau/skeletonic-stylus)
 - 📦 [瀏覽 npm 套件](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- 📖 [閱讀 v1.1.7 更新日誌](/zh-hant/geng-xin-ri-zhi/)
+- 📖 [閱讀 v2.0.0 更新日誌](/zh-hant/geng-xin-ri-zhi/)

@@ -1,7 +1,7 @@
 ---
-title: "Доступность — WCAG 2.2 в v1.1.7"
+title: "Доступность — WCAG 2.2 в v2.0.0"
 name: "Skeletonic Stylus"
-description: "Что v1.1.7 предоставляет из коробки для соответствия WCAG 2.2 — кольца фокуса, контраст, skip-ссылки, уменьшенное движение и тёмная тема."
+description: "Что v2.0.0 предоставляет из коробки для соответствия WCAG 2.2 — кольца фокуса, контраст, skip-ссылки, уменьшенное движение и тёмная тема."
 layout: page
 permalink: https://skeletonic.io/ru/dostupnost/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, доступность, focus visible, skip link, prefers reduced motion, контраст"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 обеспечивает соответствие WCAG 2.2 как поведение
+> **Skeletonic Stylus v2.0.0 обеспечивает соответствие WCAG 2.2 как поведение
 > по умолчанию, а не как опциональную тему.** На этой странице описано, что
 > встроено, и какие миксины вы можете подключить для более тонкой настройки.
 
@@ -24,7 +24,7 @@ keywords: "wcag 2.2, доступность, focus visible, skip link, prefers r
 
 ## Что вы получаете бесплатно
 
-| WCAG 2.2 SC | Что делает v1.1.7 | Как проверить |
+| WCAG 2.2 SC | Что делает v2.0.0 | Как проверить |
 |---|---|---|
 | **1.4.3 Контраст (минимум) — AA** | `--cl-primary` и `--cl-secondary` затемнены до ≥ 4.5:1 на белом фоне | DevTools → проверка контраста |
 | **1.4.11 Контраст нетекстовых элементов — AA** | Границы форм, кнопки, бейджи — все ≥ 3:1 | Аналогично |
@@ -86,5 +86,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI запускает этот скрипт для демонстрационной страницы `dist/index.html` при каждом push.
 
-[Читать о релизе v1.1.7 →](/ru/zhurnal-izmeneniy/) ·
+[Читать о релизе v2.0.0 →](/ru/zhurnal-izmeneniy/) ·
 [Страница безопасности →](/ru/bezopasnost/)

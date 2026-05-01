@@ -18,4 +18,4 @@ zile lucrătoare.
 
 - [Pune o stea proiectului pe GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Explorează pachetul npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Citește jurnalul de modificări v1.1.7](/ro/jurnal-modificari/)
+- [Citește jurnalul de modificări v2.0.0](/ro/jurnal-modificari/)

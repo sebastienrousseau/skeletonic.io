@@ -1,7 +1,7 @@
 ---
 title: "الأمان وسلسلة التوريد"
 name: "Skeletonic Stylus"
-description: "كيف يؤمّن Skeletonic Stylus الإصدار 1.1.7 خط أنابيب البناء، ويوقّع الإصدارات، ويشحن قائمة مواد البرمجيات."
+description: "كيف يؤمّن Skeletonic Stylus الإصدار 2.0.0 خط أنابيب البناء، ويوقّع الإصدارات، ويشحن قائمة مواد البرمجيات."
 layout: page
 permalink: https://skeletonic.io/ar/al-aman/
 date: 2026-04-08
@@ -22,7 +22,7 @@ keywords: "أمان css, sbom, cyclonedx, مصدر npm, openssf scorecard, سل�
 
 ## ملخص سلسلة التوريد
 
-| الضابط | حالة الإصدار 1.1.7 |
+| الضابط | حالة الإصدار 2.0.0 |
 |---|---|
 | **قائمة مواد CycloneDX** | تُولّد مع كل إصدار، محفوظة تحت `dist/sbom.json` |
 | **مصدر npm** | مُفعّل (`--provenance --access public`) |
@@ -41,10 +41,10 @@ keywords: "أمان css, sbom, cyclonedx, مصدر npm, openssf scorecard, سل�
 يمكنك التحقق من حزمة مثبّتة حديثًا بـ:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 تُولّد قائمة المواد بـ `cyclonedx-npm` أثناء سير عمل النشر.
@@ -59,7 +59,7 @@ jq '.metadata.component.version' \
 يمكنك التحقق منها بعد التثبيت بـ:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -71,7 +71,7 @@ npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
 
 | CVE | الخطورة | الحالة |
 |---|---|---|
-| **CVE-2023-44270** (تحليل سطر الإرجاع في postcss) | متوسطة | **مرقّعة** في الإصدار 1.1.7 عبر `pnpm.overrides` لترقية `postcss` إلى ≥ 8.4.31 |
+| **CVE-2023-44270** (تحليل سطر الإرجاع في postcss) | متوسطة | **مرقّعة** في الإصدار 2.0.0 عبر `pnpm.overrides` لترقية `postcss` إلى ≥ 8.4.31 |
 
 تُراقَب قاعدة بيانات Snyk الاستشارية وتنبيهات أمان GitHub باستمرار؛
 ترقيعات الأمان تُشحن كـ **إصدارات ترقيعية**.

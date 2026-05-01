@@ -1,7 +1,7 @@
 ---
-title: "Tillganglighet — WCAG 2.2 i v1.1.7"
+title: "Tillganglighet — WCAG 2.2 i v2.0.0"
 name: "Skeletonic Stylus"
-description: "Vad v1.1.7 levererar direkt for WCAG 2.2-uppfyllnad — fokusringar, kontrast, skip-lankar, rorelse och morkt lage."
+description: "Vad v2.0.0 levererar direkt for WCAG 2.2-uppfyllnad — fokusringar, kontrast, skip-lankar, rorelse och morkt lage."
 layout: page
 permalink: https://skeletonic.io/sv/tillganglighet/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, tillganglighet, focus visible, skip-lank, prefers reduced motion, kontrast"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 levererar WCAG 2.2-uppfyllnad som
+> **Skeletonic Stylus v2.0.0 levererar WCAG 2.2-uppfyllnad som
 > standardbeteende, inte som ett valfritt tema.** Denna sida dokumenterar vad
 > som ar inbyggt och vilka mixins du kan valja till for finare kontroll.
 
@@ -24,7 +24,7 @@ keywords: "wcag 2.2, tillganglighet, focus visible, skip-lank, prefers reduced m
 
 ## Vad du far gratis
 
-| WCAG 2.2 SC | Vad v1.1.7 gor | Hur du verifierar |
+| WCAG 2.2 SC | Vad v2.0.0 gor | Hur du verifierar |
 |---|---|---|
 | **1.4.3 Kontrast (Minimum) — AA** | `--cl-primary` och `--cl-secondary` morkade till ≥ 4.5:1 mot vitt | DevTools → kontrastkontroll |
 | **1.4.11 Icke-textkontrast — AA** | Formularkantar, knappar, marken alla ≥ 3:1 | Samma |
@@ -89,5 +89,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI kor detta skript mot `dist/index.html`-visningssidan vid varje push.
 
-[Las om v1.1.7-releasen →](/sv/andringslogg/) ·
+[Las om v2.0.0-releasen →](/sv/andringslogg/) ·
 [Se sakerhetssidan →](/sv/sakerhet/)

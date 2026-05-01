@@ -1,7 +1,7 @@
 ---
 title: "Paletas"
 name: "Skeletonic Stylus"
-description: "Paletas de cores Material, Tachyons e web-safe incluidas no Skeletonic Stylus v1.1.7."
+description: "Paletas de cores Material, Tachyons e web-safe incluidas no Skeletonic Stylus v2.0.0."
 layout: page
 permalink: https://skeletonic.io/pt-br/paletas/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "paleta css, material, tachyons, websafe, design tokens"
 ---
 
-O Skeletonic Stylus v1.1.7 inclui **tres paletas de cores opcionais**,
+O Skeletonic Stylus v2.0.0 inclui **tres paletas de cores opcionais**,
 cada uma distribuida como sua propria folha de estilos minificada para
 que voce pague apenas pelo que usar.
 
@@ -63,9 +63,9 @@ A folha de estilos principal inclui uma escala de cinzas acessivel com
 
 <hr class="hr-text" data-content="Marca">
 
-## Cores da marca (v1.1.7 — contraste AA)
+## Cores da marca (v2.0.0 — contraste AA)
 
-Na v1.1.7, os tokens primario e secundario foram escurecidos para
+Na v2.0.0, os tokens primario e secundario foram escurecidos para
 atender ao **contraste WCAG 4.5:1** contra texto branco por padrao.
 
 <div class="row margin-top-3">

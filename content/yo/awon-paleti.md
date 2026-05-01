@@ -1,7 +1,7 @@
 ---
 title: "Awọn Palẹti"
 name: "Skeletonic Stylus"
-description: "Awọn palẹti awọ Material, Tachyons ati aabo wẹẹbu ti a fi ranṣẹ ninu Skeletonic Stylus v1.1.7."
+description: "Awọn palẹti awọ Material, Tachyons ati aabo wẹẹbu ti a fi ranṣẹ ninu Skeletonic Stylus v2.0.0."
 language: yo
 layout: page
 permalink: https://skeletonic.io/yo/awon-paleti/
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "palẹti css, material, tachyons, websafe, awọn ami apẹrẹ"
 ---
 
-Skeletonic Stylus v1.1.7 fi **awọn palẹti awọ yan mẹta** ranṣẹ, ọkọọkan
+Skeletonic Stylus v2.0.0 fi **awọn palẹti awọ yan mẹta** ranṣẹ, ọkọọkan
 ni a pin bi iwe-aṣa ti a dinku tirẹ nitorinaa o san fun ohun ti o lo nikan.
 
 | Palẹti | Faili | Iwọn (min) |
@@ -62,9 +62,9 @@ bi `--cl-grey-100` … `--cl-grey-1000`.
 
 <hr class="hr-text" data-content="Ami iyasọtọ">
 
-## Awọn awọ ami iyasọtọ (v1.1.7 — iyatọ AA)
+## Awọn awọ ami iyasọtọ (v2.0.0 — iyatọ AA)
 
-Ninu v1.1.7 awọn ami akọkọ ati keji ni a ṣe dudu lati pade
+Ninu v2.0.0 awọn ami akọkọ ati keji ni a ṣe dudu lati pade
 **WCAG 4.5:1** iyatọ si ọrọ funfun lẹsẹkẹsẹ.
 
 <div class="row margin-top-3">

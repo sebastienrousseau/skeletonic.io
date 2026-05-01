@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — 无障碍 CSS，gzip 后约 8.3 KB"
+title: "Skeletonic Stylus — 无障碍 CSS，gzip 后约 8.6 KB"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus 是一个轻量级、模块化的 Stylus CSS 库——符合 WCAG 2.2 标准、采用级联层架构、gzip 后约 8.3 KB——旨在简化现代 Web UI 开发。"
+description: "Skeletonic Stylus 是一个轻量级、模块化的 Stylus CSS 库——符合 WCAG 2.2 标准、采用级联层架构、gzip 后约 8.6 KB——旨在简化现代 Web UI 开发。"
 language: zh-hans
 layout: index
 permalink: https://skeletonic.io/zh-hans/
@@ -15,7 +15,7 @@ keywords: "css, stylus, css 框架, 无障碍 css, wcag 2.2, 轻量级 css, 级�
 级联层架构。零 JavaScript。即插即用。
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Skeletonic 架构解析

@@ -1,7 +1,7 @@
 ---
 title: "एनिमेशन"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 के साथ शिप वैकल्पिक एनिमेशन मॉड्यूल — bounce, pulse, fade, zoom, shake, और अन्य, सब prefers-reduced-motion के पीछे।"
+description: "Skeletonic Stylus v2.0.0 के साथ शिप वैकल्पिक एनिमेशन मॉड्यूल — bounce, pulse, fade, zoom, shake, और अन्य, सब prefers-reduced-motion के पीछे।"
 layout: page
 permalink: https://skeletonic.io/hi/animations/
 date: 2026-04-08
@@ -21,7 +21,7 @@ load_animations: true
   href="/css/skeletonic-animations.min.css">
 ```
 
-v1.1.7 में हर एनिमेशन क्लास
+v2.0.0 में हर एनिमेशन क्लास
 **`@media (prefers-reduced-motion: no-preference)`** ब्लॉक में लपेटा
 हुआ है, जिसका मतलब है कि जिस उपयोगकर्ता ने OS स्तर पर "reduce
 motion" सेट किया है, उसे कोई एनिमेशन नहीं दिखेगा — लेआउट फिर भी काम
@@ -92,7 +92,7 @@ motion" सेट किया है, उसे कोई एनिमेशन
 
 <p class="anim-note-rm">
   Reduce Motion आपके OS में सक्षम है, इसलिए नीचे के टार्गेट स्थिर
-  रहेंगे — यह v1.1.7 का सुलभता व्यवहार सही ढंग से काम कर रहा है।
+  रहेंगे — यह v2.0.0 का सुलभता व्यवहार सही ढंग से काम कर रहा है।
 </p>
 
 <div class="anim-grid">
@@ -268,9 +268,9 @@ motion" सेट किया है, उसे कोई एनिमेशन
 | `.vanishIn` / `.vanishOut` | Material-style प्रकट |
 | `.chameleonbackground` / `.chameleontext` | Hue साइकिल |
 
-## ध्यान दें — ज्ञात v1.1.7 सीमा
+## ध्यान दें — ज्ञात v2.0.0 सीमा
 
-v1.1.7 में एनिमेशन क्लास केवल `animation-name` सेट करती हैं। उन्हें
+v2.0.0 में एनिमेशन क्लास केवल `animation-name` सेट करती हैं। उन्हें
 चलाने के लिए आपको वर्तमान में अपना `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` और
 `animation-timing-function` प्रदान करना होगा — ठीक वैसे जैसे इस पेज

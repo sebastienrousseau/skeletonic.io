@@ -1,7 +1,7 @@
 ---
 title: "Animationen"
 name: "Skeletonic Stylus"
-description: "Optionales Animationsmodul in Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake und mehr, alles hinter prefers-reduced-motion."
+description: "Optionales Animationsmodul in Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake und mehr, alles hinter prefers-reduced-motion."
 layout: page
 language: de
 permalink: https://skeletonic.io/de/animationen/
@@ -21,7 +21,7 @@ damit das Kern-Stylesheet unter 8&nbsp;KB gzipped bleibt.
   href="/css/skeletonic-animations.min.css">
 ```
 
-Jede Animationsklasse ist in v1.1.7 in einen
+Jede Animationsklasse ist in v2.0.0 in einen
 **`@media (prefers-reduced-motion: no-preference)`**-Block eingebettet.
 Das bedeutet: Hat ein Nutzer auf Betriebssystemebene „Bewegung
 reduzieren" aktiviert, wird keine Animation abgespielt — das Layout
@@ -64,7 +64,7 @@ funktioniert weiterhin, nur die Bewegung wird unterdrückt.
     height:64px;
     border-radius:50%;
     background:hsl(210,100%,42%);
-    /* the missing properties live here so v1.1.7's animation classes
+    /* the missing properties live here so v2.0.0's animation classes
        actually run when added to the target */
     animation-duration:1.2s;
     animation-iteration-count:1;
@@ -96,7 +96,7 @@ Keyframes sichtbar werden.
 <p class="anim-note-rm">
   „Bewegung reduzieren" ist in Ihrem Betriebssystem aktiviert — die
   Elemente unten bleiben daher still. Das ist das korrekte
-  Barrierefreiheitsverhalten von v1.1.7.
+  Barrierefreiheitsverhalten von v2.0.0.
 </p>
 
 <div class="anim-grid">
@@ -232,7 +232,7 @@ Keyframes sichtbar werden.
 </div>
 
 <script>
-  // The animation classes shipped in v1.1.7 set animation-name in the
+  // The animation classes shipped in v2.0.0 set animation-name in the
   // selector itself. To replay the keyframe we have to remove the class,
   // force a layout flush, then add the class back.
   function replayAnim(btn, name){
@@ -277,9 +277,9 @@ Keyframes sichtbar werden.
 | `.vanishIn` / `.vanishOut` | Erscheinen im Material-Stil |
 | `.chameleonbackground` / `.chameleontext` | Farbtonzyklus |
 
-## Hinweis — bekannter Vorbehalt in v1.1.7
+## Hinweis — bekannter Vorbehalt in v2.0.0
 
-Die Animationsklassen in v1.1.7 setzen ausschließlich `animation-name`.
+Die Animationsklassen in v2.0.0 setzen ausschließlich `animation-name`.
 Um sie abzuspielen, müssen Sie derzeit selbst `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` und
 `animation-timing-function` angeben — genau wie der `<style>`-Block am

@@ -15,7 +15,7 @@ Dostepny CSS w **ponizej 8&nbsp;KB gzipped**. Zgodny z WCAG&nbsp;2.2.
 Warstwy kaskadowe. Zero JavaScript. Dodaj do dowolnej strony.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Anatomia Skeletonic

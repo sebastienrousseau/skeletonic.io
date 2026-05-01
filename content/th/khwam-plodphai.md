@@ -1,7 +1,7 @@
 ---
 title: "ความปลอดภัยและ supply chain"
 name: "Skeletonic Stylus"
-description: "วิธีที่ Skeletonic Stylus v1.1.7 รักษาความปลอดภัย build pipeline ลงนามรีลีส และจัดส่ง SBOM"
+description: "วิธีที่ Skeletonic Stylus v2.0.0 รักษาความปลอดภัย build pipeline ลงนามรีลีส และจัดส่ง SBOM"
 layout: page
 permalink: https://skeletonic.io/th/khwam-plodphai/
 date: 2026-04-08
@@ -13,7 +13,7 @@ keywords: "ความปลอดภัย css, sbom, cyclonedx, npm provenanc
 
 ## ประสิทธิภาพ
 
-- **45.7&nbsp;KB minified · 8.3&nbsp;KB gzipped · 6.9&nbsp;KB brotli** สำหรับสไตล์ชีตหลักทั้งหมด
+- **45.0&nbsp;KB minified · 8.6&nbsp;KB gzipped · 7.2&nbsp;KB brotli** สำหรับสไตล์ชีตหลักทั้งหมด
 - **ไม่มี JavaScript** — Stylus บริสุทธิ์ → CSS บริสุทธิ์ ไม่มีต้นทุน runtime
 - **Cascade-layered** — override ชนะโดยไม่ต้อง `!important`
 - **งบประมาณ `size-limit`** ถูกบังคับใน CI ทุกคอมมิต
@@ -23,7 +23,7 @@ keywords: "ความปลอดภัย css, sbom, cyclonedx, npm provenanc
 
 ## สรุป supply chain
 
-| การควบคุม | สถานะ v1.1.7 |
+| การควบคุม | สถานะ v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | สร้างทุกรีลีส อยู่ภายใต้ `dist/sbom.json` |
 | **npm provenance** | เปิดใช้ (`--provenance --access public`) |
@@ -42,10 +42,10 @@ keywords: "ความปลอดภัย css, sbom, cyclonedx, npm provenanc
 คุณสามารถตรวจสอบแพ็กเกจที่เพิ่งติดตั้งด้วย:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM ถูกสร้างด้วย `cyclonedx-npm` ระหว่าง publish workflow
@@ -60,7 +60,7 @@ artefact ที่เผยแพร่ถูกลงนามโดยใช�
 คุณสามารถตรวจสอบหลังการติดตั้งด้วย:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -73,7 +73,7 @@ npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
 
 | CVE | ระดับความรุนแรง | สถานะ |
 |---|---|---|
-| **CVE-2023-44270** (postcss line return parsing) | ปานกลาง | **แก้ไขแล้ว** ใน v1.1.7 ผ่าน `pnpm.overrides` ที่อัปเกรด `postcss` เป็น ≥ 8.4.31 |
+| **CVE-2023-44270** (postcss line return parsing) | ปานกลาง | **แก้ไขแล้ว** ใน v2.0.0 ผ่าน `pnpm.overrides` ที่อัปเกรด `postcss` เป็น ≥ 8.4.31 |
 
 ฐานข้อมูลคำแนะนำ Snyk และ GitHub Security Advisories ถูกติดตามอย่างต่อเนื่อง;
 แพตช์ความปลอดภัยจะออกเป็น **รีลีสระดับ patch**

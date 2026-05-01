@@ -1,7 +1,7 @@
 ---
 title: "Security &amp; supply chain"
 name: "Skeletonic Stylus"
-description: "How Skeletonic Stylus v1.1.7 secures its build pipeline, signs releases, and ships an SBOM."
+description: "How Skeletonic Stylus v2.0.0 secures its build pipeline, signs releases, and ships an SBOM."
 layout: page
 permalink: https://skeletonic.io/security/
 date: 2026-04-08
@@ -22,7 +22,7 @@ byte to audit, sign, and verify.
 
 ## Supply-chain TL;DR
 
-| Control | v1.1.7 status |
+| Control | v2.0.0 status |
 |---|---|
 | **CycloneDX SBOM** | Generated on every release, committed under `dist/sbom.json` |
 | **npm provenance** | Enabled (`--provenance --access public`) |
@@ -41,10 +41,10 @@ Every published tarball includes a CycloneDX SBOM at `dist/sbom.json`.
 You can verify a freshly installed package with:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 The SBOM is generated with `cyclonedx-npm` during the publish workflow.
@@ -59,7 +59,7 @@ The published artefact is signed using
 You can verify it after installation with:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -72,7 +72,7 @@ Actions run that produced it.
 
 | CVE | Severity | Status |
 |---|---|---|
-| **CVE-2023-44270** (postcss line return parsing) | Moderate | **Patched** in v1.1.7 via `pnpm.overrides` upgrading `postcss` to ≥ 8.4.31 |
+| **CVE-2023-44270** (postcss line return parsing) | Moderate | **Patched** in v2.0.0 via `pnpm.overrides` upgrading `postcss` to ≥ 8.4.31 |
 
 The Snyk advisory database and GitHub Security Advisories feed are
 monitored continuously. Security patches ship as **patch-level releases**.

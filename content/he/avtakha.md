@@ -1,7 +1,7 @@
 ---
 title: "אבטחה ושרשרת אספקה"
 name: "Skeletonic Stylus"
-description: "כיצד Skeletonic Stylus v1.1.7 מאבטחת את צינור הבנייה שלה, חותמת שחרורים ושולחת SBOM."
+description: "כיצד Skeletonic Stylus v2.0.0 מאבטחת את צינור הבנייה שלה, חותמת שחרורים ושולחת SBOM."
 layout: page
 permalink: https://skeletonic.io/he/avtakha/
 date: 2026-04-08
@@ -13,7 +13,7 @@ keywords: "אבטחת css, sbom, cyclonedx, מקוריות npm, openssf scorecar
 
 ## ביצועים
 
-- **45.7&nbsp;KB ממוזער · 8.3&nbsp;KB בדחיסת gzip · 6.9&nbsp;KB brotli** עבור גיליון הסגנונות הליבתי המלא.
+- **45.0&nbsp;KB ממוזער · 8.6&nbsp;KB בדחיסת gzip · 7.2&nbsp;KB brotli** עבור גיליון הסגנונות הליבתי המלא.
 - **אפס JavaScript** — Stylus טהור &larr; CSS טהור, ללא עלות ריצה.
 - **מאורגן בשכבות קסקייד** — דריסות מנצחות ללא `!important`.
 - **תקציבי `size-limit`** נאכפים ב-CI בכל commit.
@@ -23,7 +23,7 @@ keywords: "אבטחת css, sbom, cyclonedx, מקוריות npm, openssf scorecar
 
 ## שרשרת אספקה בקיצור
 
-| בקרה | סטטוס v1.1.7 |
+| בקרה | סטטוס v2.0.0 |
 |---|---|
 | **SBOM מסוג CycloneDX** | נוצר בכל שחרור, מועבר תחת `dist/sbom.json` |
 | **מקוריות npm** | מופעלת (`--provenance --access public`) |
@@ -42,10 +42,10 @@ keywords: "אבטחת css, sbom, cyclonedx, מקוריות npm, openssf scorecar
 תוכלו לאמת חבילה שהותקנה זה עתה עם:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 ה-SBOM נוצר עם `cyclonedx-npm` במהלך תהליך הפרסום.
@@ -60,7 +60,7 @@ jq '.metadata.component.version' \
 תוכלו לאמת זאת לאחר ההתקנה עם:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -73,7 +73,7 @@ npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
 
 | CVE | חומרה | סטטוס |
 |---|---|---|
-| **CVE-2023-44270** (ניתוח שורה חדשה ב-postcss) | בינונית | **תוקנה** ב-v1.1.7 דרך `pnpm.overrides` שמשדרגת `postcss` ל-8.4.31 ומעלה |
+| **CVE-2023-44270** (ניתוח שורה חדשה ב-postcss) | בינונית | **תוקנה** ב-v2.0.0 דרך `pnpm.overrides` שמשדרגת `postcss` ל-8.4.31 ומעלה |
 
 מאגר ההמלצות של Snyk ועדכוני GitHub Security Advisories מנוטרים
 באופן רציף; תיקוני אבטחה נשלחים כ**שחרורי טלאי**.

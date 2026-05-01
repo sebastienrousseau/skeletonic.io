@@ -1,7 +1,7 @@
 ---
 title: "Mga Animasyon"
 name: "Skeletonic Stylus"
-description: "Opsyonal na module ng animasyon na kasama sa Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake, at iba pa, lahat sa likod ng prefers-reduced-motion."
+description: "Opsyonal na module ng animasyon na kasama sa Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake, at iba pa, lahat sa likod ng prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/fil/mga-animasyon/
 date: 2026-04-08
@@ -21,7 +21,7 @@ Ang **module ng animasyon** ay ipinapadala bilang isang hiwalay na opsyonal na f
 ```
 
 Bawat animation class ay nakabalot sa isang
-**`@media (prefers-reduced-motion: no-preference)`** na bloke sa v1.1.7,
+**`@media (prefers-reduced-motion: no-preference)`** na bloke sa v2.0.0,
 na nangangahulugang ang isang gumagamit na nagtakda ng "reduce motion" sa antas ng OS ay hindi makakakita
 ng anumang animasyon — gumagana pa rin ang layout, sinusupil lang ang galaw.
 
@@ -85,7 +85,7 @@ Pindutin ang **Play** sa anumang card upang i-replay ang animasyon sa parisukat.
 `skeletonic-animations.min.css` — ang `animation-name` lamang ang itinatakda ng library, kaya ang nakapalibot na `<style>` na bloke sa itaas ang nagdadagdag ng nawawalang `animation-duration` / `animation-iteration-count` / `animation-fill-mode` na property upang makita ang mga keyframe.
 
 <p class="anim-note-rm">
-  Naka-enable ang Reduce Motion sa iyong OS, kaya ang mga target sa ibaba ay mananatiling tahimik — iyon ang v1.1.7 na accessibility behaviour na gumagana nang tama.
+  Naka-enable ang Reduce Motion sa iyong OS, kaya ang mga target sa ibaba ay mananatiling tahimik — iyon ang v2.0.0 na accessibility behaviour na gumagana nang tama.
 </p>
 
 <div class="anim-grid">
@@ -221,7 +221,7 @@ Pindutin ang **Play** sa anumang card upang i-replay ang animasyon sa parisukat.
 </div>
 
 <script>
-  // Ang mga animation class na ipinadala sa v1.1.7 ay nagtatakda ng animation-name sa
+  // Ang mga animation class na ipinadala sa v2.0.0 ay nagtatakda ng animation-name sa
   // mismong selector. Upang i-replay ang keyframe kailangan nating alisin ang class,
   // pilitin ang layout flush, pagkatapos ay idagdag muli ang class.
   function replayAnim(btn, name){
@@ -266,9 +266,9 @@ Pindutin ang **Play** sa anumang card upang i-replay ang animasyon sa parisukat.
 | `.vanishIn` / `.vanishOut` | Material-style na paglitaw |
 | `.chameleonbackground` / `.chameleontext` | Hue cycle |
 
-## Paunawa — kilalang v1.1.7 na caveat
+## Paunawa — kilalang v2.0.0 na caveat
 
-Ang mga animation class sa v1.1.7 ay nagtatakda lamang ng `animation-name`. Upang i-play ang mga ito
+Ang mga animation class sa v2.0.0 ay nagtatakda lamang ng `animation-name`. Upang i-play ang mga ito
 kailangan mong magbigay ng sarili mong `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` at
 `animation-timing-function` — eksaktong tulad ng ipinakita ng `<style>` na bloke sa itaas ng pahinang ito. Sa isang hinaharap na release ay maglalagay ng isang makatwirang default base setup upang ang `<div class="bounce">` ay gumana nang diretso mula sa kahon.

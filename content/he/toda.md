@@ -18,4 +18,4 @@ keywords: "תודה"
 
 - [סמנו את הפרויקט בכוכב ב-GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [עיינו בחבילת npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [קראו את יומן השינויים של v1.1.7](/he/yoman-shinuyim/)
+- [קראו את יומן השינויים של v2.0.0](/he/yoman-shinuyim/)

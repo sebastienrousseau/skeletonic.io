@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — CSS Ti A Le Wọle Si, 8.3 KB gzipped"
+title: "Skeletonic Stylus — CSS Ti A Le Wọle Si, 8.6 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus jẹ ile-ikawe CSS Stylus ti o fẹẹrẹfẹ, ti o ni awọn modulu — ti o setan fun WCAG 2.2, ti a fi cascade-layer ṣe, 8.3 KB gzipped — ti a ṣe lati mu idagbasoke UI wẹẹbu ode-oni rọrun."
+description: "Skeletonic Stylus jẹ ile-ikawe CSS Stylus ti o fẹẹrẹfẹ, ti o ni awọn modulu — ti o setan fun WCAG 2.2, ti a fi cascade-layer ṣe, 8.6 KB gzipped — ti a ṣe lati mu idagbasoke UI wẹẹbu ode-oni rọrun."
 language: yo
 layout: index
 permalink: https://skeletonic.io/yo/
@@ -15,7 +15,7 @@ CSS ti a le wọle si ni **labẹ 8&nbsp;KB gzipped**. Ti setan fun WCAG&nbsp;2.
 Ti a fi cascade-layer ṣe. JavaScript kankan ko si. Fi si ojulowo eyikeyi.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Ẹya ara Skeletonic

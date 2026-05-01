@@ -14,8 +14,8 @@ keywords: "skeletonic, about, stylus, css framework, philosophy"
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Monthly Downloads" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="npm Version" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Bundle Size" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
-  <img alt="Brotli Size" src="https://img.shields.io/badge/brotli-6.9%20KB-2e7d32?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Bundle Size" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Brotli Size" src="https://img.shields.io/badge/brotli-7.2%20KB-2e7d32?style=for-the-badge" height="28" loading="lazy">
   <img alt="License" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -41,7 +41,7 @@ the goal is unchanged.
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Feather" width="64" height="64" loading="lazy" decoding="async">
     <h3>Lightweight</h3>
-    <p>8.3&nbsp;KB gzip, 6.9&nbsp;KB brotli — measured against the actual minified CDN bundle, not a marketing approximation. <a href="/benchmarks/">See the numbers</a>.</p>
+    <p>8.6&nbsp;KB gzip, 7.2&nbsp;KB brotli — measured against the actual minified CDN bundle, not a marketing approximation. <a href="/benchmarks/">See the numbers</a>.</p>
   </article>
 
   <article class="feature-card">
@@ -80,10 +80,10 @@ from the [framework benchmark](/benchmarks/) (`gzip -9` / `brotli -q 11`
 on the canonical jsDelivr bundle as of 2026-04-30). Where rows are
 honest losses for Skeletonic, they're called out plainly.
 
-| Capability | Skeletonic Stylus 1.1.7 | Pico CSS 2.1 | Bulma 1.0 | Bootstrap 5.3 | Tailwind v4 |
+| Capability | Skeletonic Stylus 2.0.0 | Pico CSS 2.1 | Bulma 1.0 | Bootstrap 5.3 | Tailwind v4 |
 |---|---|---|---|---|---|
-| **Gzip** (canonical CDN bundle) | **8.3&nbsp;KB** | 11.6&nbsp;KB | 64.9&nbsp;KB | 30.9&nbsp;KB | varies (purged build only) |
-| **Brotli** | **6.9&nbsp;KB** | 10.1&nbsp;KB | 36.3&nbsp;KB | 23.0&nbsp;KB | varies |
+| **Gzip** (canonical CDN bundle) | **8.6&nbsp;KB** | 11.6&nbsp;KB | 64.9&nbsp;KB | 30.9&nbsp;KB | varies (purged build only) |
+| **Brotli** | **7.2&nbsp;KB** | 10.1&nbsp;KB | 36.3&nbsp;KB | 23.0&nbsp;KB | varies |
 | **No build step required** | ✅ Yes | ✅ Yes | ❌ Sass | ✅ Yes | ❌ Oxide / PostCSS |
 | **Class-based authoring** | ✅ Yes | ❌ Classless only | ✅ Yes | ✅ Yes | ✅ Utility-first |
 | **JavaScript-free components** | ✅ Yes | ✅ Yes | ✅ Yes | ❌ Popper&nbsp;+&nbsp;BS&nbsp;JS | ✅ CSS-only |
@@ -94,6 +94,10 @@ honest losses for Skeletonic, they're called out plainly.
 | **`forced-colors` (Windows HCM)** fallbacks | ✅ Yes | ⚠️ Partial | ❌ No | ❌ No | ⚠️ Manual |
 | **CycloneDX SBOM** in release | ✅ `dist/sbom.json` | ❌ No | ❌ No | ❌ No | ❌ No |
 | **WCAG 2.2 axe-core CI gate** | ✅ Zero violations | ⚠️ Manual | ⚠️ Manual | ⚠️ Manual | ⚠️ Manual |
+| **OKLCH colour system** | ✅ All tokens | ❌ HSL/sRGB | ❌ HSL/Sass | ❌ HSL | ⚠️ Partial |
+| **Native CSS Grid utilities** | ✅ `.grid`, `.grid-cols-N`, `.col-span-N` | ❌ Classless | ⚠️ Sass-only | ✅ Yes | ⚠️ via plugins |
+| **Container queries** (`@container`) | ✅ `.card` | ❌ No | ❌ No | ❌ No | ⚠️ Plugin |
+| **View Transitions / scroll-driven animation** | ✅ Native utilities | ❌ No | ❌ No | ❌ No | ❌ No |
 | **License** | **MIT&nbsp;OR&nbsp;Apache‑2.0** | MIT | MIT | MIT | MIT |
 
 **Where Skeletonic loses, honestly.** Pico CSS is smaller in gzip terms
@@ -133,7 +137,7 @@ Skeletonic Stylus follows [Semantic Versioning 2.0](https://semver.org).
 |---|---|---|
 | **Major** | Removing or renaming a public class, mixin, or token | 1.x → 2.0 |
 | **Minor** | Adding a new component, mixin, or token | 1.1 → 1.2 |
-| **Patch** | Bug fixes, a11y polish, performance, security | 1.1.6 → 1.1.7 |
+| **Patch** | Bug fixes, a11y polish, performance, security | 1.1.6 → 2.0.0 |
 
 All public class names, all CSS custom properties, and all exported
 Stylus mixins are part of the public API. A breaking change earns a

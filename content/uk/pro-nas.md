@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, про нас, stylus, css фреймворк, філософія"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, про нас, stylus, css фреймворк, філос
   <img alt="Зірки на GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Завантаження за місяць" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="Версія npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Розмір пакета" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Розмір пакета" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Ліцензія" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -119,7 +119,7 @@ Skeletonic Stylus дотримується [Семантичного версі�
 |---|---|---|
 | **Major** | Видалення або перейменування публічного класу, міксину чи токена | 1.x → 2.0 |
 | **Minor** | Додавання нового компонента, міксину чи токена | 1.1 → 1.2 |
-| **Patch** | Виправлення помилок, покращення a11y, продуктивність, безпека | 1.1.6 → 1.1.7 |
+| **Patch** | Виправлення помилок, покращення a11y, продуктивність, безпека | 1.1.6 → 2.0.0 |
 
 Усі публічні імена класів, усі CSS-змінні та всі експортовані
 Stylus-міксини є частиною публічного API. Зміна, що ламає сумісність,

@@ -1,7 +1,7 @@
 ---
-title: "Accessibilita — WCAG 2.2 nella v1.1.7"
+title: "Accessibilita — WCAG 2.2 nella v2.0.0"
 name: "Skeletonic Stylus"
-description: "Cosa include la v1.1.7 per la conformita WCAG 2.2 — anelli di focus, contrasto, skip link, movimento e modalita scura."
+description: "Cosa include la v2.0.0 per la conformita WCAG 2.2 — anelli di focus, contrasto, skip link, movimento e modalita scura."
 layout: page
 permalink: https://skeletonic.io/it/accessibilita/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, accessibilita, focus visible, skip link, prefers reduced motion, contrasto"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 include la conformita WCAG 2.2 come
+> **Skeletonic Stylus v2.0.0 include la conformita WCAG 2.2 come
 > comportamento predefinito, non come tema opzionale.** Questa pagina
 > documenta cosa e integrato e quali mixin puoi attivare per un
 > controllo piu fine.
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, accessibilita, focus visible, skip link, prefers reduced mo
 
 ## Cosa ottieni gratuitamente
 
-| WCAG 2.2 SC | Cosa fa la v1.1.7 | Come verificare |
+| WCAG 2.2 SC | Cosa fa la v2.0.0 | Come verificare |
 |---|---|---|
 | **1.4.3 Contrasto (Minimo) — AA** | `--cl-primary` e `--cl-secondary` scuriti a ≥ 4,5:1 contro il bianco | DevTools → verifica contrasto |
 | **1.4.11 Contrasto Non-Testo — AA** | Bordi dei form, pulsanti, badge tutti ≥ 3:1 | Idem |
@@ -85,5 +85,5 @@ node scripts/a11y-test.mjs https://example.com
 
 La CI esegue questo script sulla pagina showcase `dist/index.html` ad ogni push.
 
-[Leggi il rilascio v1.1.7 →](/it/registro-modifiche/) ·
+[Leggi il rilascio v2.0.0 →](/it/registro-modifiche/) ·
 [Vedi la pagina sicurezza →](/it/sicurezza/)

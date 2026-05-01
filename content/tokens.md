@@ -1,7 +1,7 @@
 ---
 title: "Design tokens — runtime CSS custom properties"
 name: "Skeletonic Stylus"
-description: "Every CSS custom property exposed by Skeletonic Stylus v1.1.7 — colours, headings, line heights, golden-ratio constants, focus ring, link colours."
+description: "Every CSS custom property exposed by Skeletonic Stylus v2.0.0 — colours, headings, line heights, golden-ratio constants, focus ring, link colours."
 layout: page
 permalink: https://skeletonic.io/tokens/
 date: 2026-04-30
@@ -16,7 +16,7 @@ subtree at runtime — **no Stylus recompile, no rebuild step**.
 
 ```css
 .my-section {
-  --cl-primary: hsl(280, 80%, 45%);
+  --cl-primary: oklch(0.55 0.20 280);   /* purple */
   --gr-h1: 3.6rem;
 }
 ```
@@ -24,22 +24,28 @@ subtree at runtime — **no Stylus recompile, no rebuild step**.
 Every component that resolves these tokens through the cascade picks
 up the override automatically.
 
+> **OKLCH since v2.0.** Every brand, status, and grey token is
+> defined in [oklch()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch) —
+> perceptually uniform contrast, native wide-gamut (P3) support, and
+> a single colour space that behaves the same way under
+> `prefers-color-scheme: dark`.
+
 <hr class="hr-text" data-content="Brand">
 
 ## Brand and status colours
 
-| Token | Light default | Where it's used |
+| Token | Light default (OKLCH) | Where it's used |
 |---|---|---|
-| `--cl-primary` | `hsl(210, 100%, 42%)` | Primary buttons, badges, links |
-| `--cl-secondary` | `hsl(195, 100%, 33%)` | Secondary buttons, secondary code accent |
-| `--cl-tertiary` | grey | Tertiary surfaces |
-| `--cl-disable` | grey-200 | Disabled states |
-| `--cl-info` | blue | Info alert, `.alert-info`, `code.info` |
-| `--cl-success` | green | Success alert, `code.success` |
-| `--cl-warning` | amber | Warning alert, `code.warning` |
-| `--cl-danger` | red | Error alert, `code.error`, `.input-error` |
-| `--cl-link` | `var(--cl-primary)` | Inline `<a>` colour |
-| `--cl-inverse` | white | Foreground on dark surfaces |
+| `--cl-primary` | `oklch(0.55 0.20 250)` | Primary buttons, badges, links |
+| `--cl-secondary` | `oklch(0.45 0.15 200)` | Secondary buttons, secondary code accent |
+| `--cl-tertiary` | `oklch(0.60 0.02 250)` | Tertiary surfaces |
+| `--cl-disable` | `oklch(0.80 0.01 250)` | Disabled states |
+| `--cl-info` | `oklch(0.85 0.15 100)` | Info alert, `.alert-info`, `code.info` |
+| `--cl-success` | `oklch(0.70 0.20 140)` | Success alert, `code.success` |
+| `--cl-warning` | `oklch(0.80 0.15 80)` | Warning alert, `code.warning` |
+| `--cl-danger` | `oklch(0.60 0.25 20)` | Error alert, `code.error`, `.input-error` |
+| `--cl-link` | `oklch(0.60 0.25 250)` | Inline `<a>` colour |
+| `--cl-inverse` | `oklch(1 0 0)` | Foreground on dark surfaces |
 
 Each colour has a paired background token (`--bg-primary`,
 `--bg-secondary`, …) for tinted surfaces.
@@ -84,7 +90,7 @@ shadows, neutral backgrounds.
 
 ## Heading scale (consumed by `<h1>`–`<h6>`)
 
-These are the tokens that actually drive heading sizes in v1.1.7 — set
+These are the tokens that actually drive heading sizes in v2.0.0 — set
 them on any ancestor to retheme typography.
 
 | Token | Default |

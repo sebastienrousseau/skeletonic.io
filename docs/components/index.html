@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -348,7 +348,7 @@ visually-hidden helper: <code>&lt;span class=&quot;visually-hidden&quot;&gt;3 un
 <p>Surfaces that tell the visitor something happened — or is about to
 happen.</p>
 <h3 id="alerts">Alerts</h3>
-<p>Status messages with semantic intent. <strong>In v1.1.7 every variant is
+<p>Status messages with semantic intent. <strong>In v2.0.0 every variant is
 explicitly namespaced</strong> under <code>.alert-{primary,secondary,info,success,warning,error}</code>
 so the variant class cannot collide with state classes elsewhere on
 the page.</p>
@@ -486,7 +486,7 @@ first-class navigable regions.</p>
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">tr</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">th</span><span style="color:#c0c5ce;">&gt;Framework&lt;/</span><span style="color:#bf616a;">th</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">th</span><span style="color:#c0c5ce;">&gt;Brotli&lt;/</span><span style="color:#bf616a;">th</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">th</span><span style="color:#c0c5ce;">&gt;JS-free&lt;/</span><span style="color:#bf616a;">th</span><span style="color:#c0c5ce;">&gt;&lt;/</span><span style="color:#bf616a;">tr</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">thead</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">tbody</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">tr</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;Skeletonic&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;6.9 KB&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;Yes&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;/</span><span style="color:#bf616a;">tr</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">tr</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;Skeletonic&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;7.2 KB&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;Yes&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;/</span><span style="color:#bf616a;">tr</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">tr</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;Pico CSS&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;10.1 KB&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;Yes&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;/</span><span style="color:#bf616a;">tr</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">tr</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;Bootstrap&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;23.0 KB&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;No (Popper)&lt;/</span><span style="color:#bf616a;">td</span><span style="color:#c0c5ce;">&gt;&lt;/</span><span style="color:#bf616a;">tr</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">tbody</span><span style="color:#c0c5ce;">&gt;
@@ -499,7 +499,7 @@ first-class navigable regions.</p>
     <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
   </thead>
   <tbody>
-    <tr><td class="text-left">Skeletonic</td><td class="text-left">6.9 KB</td><td class="text-left">Yes</td></tr>
+    <tr><td class="text-left">Skeletonic</td><td class="text-left">7.2 KB</td><td class="text-left">Yes</td></tr>
     <tr><td class="text-left">Pico CSS</td><td class="text-left">10.1 KB</td><td class="text-left">Yes</td></tr>
     <tr><td class="text-left">Bootstrap</td><td class="text-left">23.0 KB</td><td class="text-left">No (Popper)</td></tr>
   </tbody>
@@ -732,35 +732,53 @@ side the reader is already starting from.</p>
 <p>Structural primitives — grid, container, header — that frame the
 whole page.</p>
 <h3 id="grid">Grid</h3>
-<p>A responsive <code>flex-N</code> grid (1 → 12 columns) built on flexbox. The
-<code>.row</code> parent gaps and wraps automatically.</p>
+<p>Native CSS Grid since v2.0. <code>.grid</code> sets <code>display: grid</code> and a
+gap; <code>.grid-cols-N</code> (1–12) generates the column tracks; <code>.col-span-N</code>
+(1–12) lets a single child span multiple cells.</p>
 <pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">row</span><span style="color:#c0c5ce;">&quot;&gt;
-</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">flex-6</span><span style="color:#c0c5ce;">&quot;&gt;Half&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">flex-6</span><span style="color:#c0c5ce;">&quot;&gt;Half&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">grid grid-cols-2</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;Half&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;Half&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">row</span><span style="color:#c0c5ce;">&quot;&gt;
-</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">flex-4</span><span style="color:#c0c5ce;">&quot;&gt;Third&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">flex-4</span><span style="color:#c0c5ce;">&quot;&gt;Third&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">flex-4</span><span style="color:#c0c5ce;">&quot;&gt;Third&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">grid grid-cols-3</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;Third&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;Third&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;Third&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">grid grid-cols-3</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">col-span-2</span><span style="color:#c0c5ce;">&quot;&gt;Two thirds&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;Third&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
 </span></pre>
 </code></pre>
 <section aria-labelledby="grid">
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;">
-  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Half</div>
-  <div style="flex:1 1 0;padding:.75rem;background:#e4e4e7;border-radius:.25rem;text-align:center;">Half</div>
+<div class="grid grid-cols-2" style="margin-bottom:.5rem;">
+  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Half</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Half</div>
 </div>
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem;">
-  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Third</div>
-  <div style="flex:1 1 0;padding:.75rem;background:#e4e4e7;border-radius:.25rem;text-align:center;">Third</div>
-  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Third</div>
+<div class="grid grid-cols-3" style="margin-bottom:.5rem;">
+  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Third</div>
+</div>
+<div class="grid grid-cols-3">
+  <div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: col-span-2" style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Third</div>
 </div>
 </section>
 <blockquote>
 <p><strong>Accessibility note.</strong> Visual order should match DOM order. Avoid
-reordering rows with <code>flex-direction: row-reverse</code> or <code>order:</code> —
-screen readers and keyboard users follow the source, not the paint.</p>
+reordering with <code>grid-auto-flow: dense</code> or explicit <code>grid-row</code> /
+<code>grid-column</code> shuffling — screen readers and keyboard users follow
+the source, not the paint.</p>
+</blockquote>
+<blockquote>
+<p><strong>Migrating from v1.x.</strong> The <code>.flex-N</code> / <code>.row</code> flexbox grid is
+gone. Replace <code>&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;flex-6&quot;&gt;…</code> with
+<code>&lt;div class=&quot;grid grid-cols-2&quot;&gt;&lt;div&gt;…</code>. The new system is shorter,
+uses native CSS Grid, and avoids margin-collapse quirks.</p>
 </blockquote>
 <h3 id="header">Header &amp; hamburger nav</h3>
 <p>A complete CSS-only header with a responsive hamburger toggle. <strong>Zero
@@ -841,7 +859,7 @@ the burger toggle take over.</p>
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus components",
-  "description": "Every component, element and effect shipped in Skeletonic Stylus v1.1.7.",
+  "description": "Every component, element and effect shipped in Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 14,
   "itemListElement": [

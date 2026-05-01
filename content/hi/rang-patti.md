@@ -1,7 +1,7 @@
 ---
 title: "रंग पट्टी"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 में शिप Material, Tachyons और web-safe रंग पैलेट।"
+description: "Skeletonic Stylus v2.0.0 में शिप Material, Tachyons और web-safe रंग पैलेट।"
 layout: page
 permalink: https://skeletonic.io/hi/rang-patti/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css पैलेट, material, tachyons, websafe, डिज़ाइन टोकन"
 ---
 
-Skeletonic Stylus v1.1.7 **तीन वैकल्पिक रंग पैलेट** शिप करती है,
+Skeletonic Stylus v2.0.0 **तीन वैकल्पिक रंग पैलेट** शिप करती है,
 प्रत्येक अपनी minified स्टाइलशीट के रूप में ताकि आप केवल उतना ही
 भुगतान करें जितना इस्तेमाल करें।
 
@@ -63,9 +63,9 @@ Skeletonic Stylus v1.1.7 **तीन वैकल्पिक रंग पै�
 
 <hr class="hr-text" data-content="ब्रांड">
 
-## ब्रांड रंग (v1.1.7 — AA कंट्रास्ट)
+## ब्रांड रंग (v2.0.0 — AA कंट्रास्ट)
 
-v1.1.7 में प्राइमरी और सेकंडरी टोकन को गहरा किया गया ताकि सफ़ेद
+v2.0.0 में प्राइमरी और सेकंडरी टोकन को गहरा किया गया ताकि सफ़ेद
 टेक्स्ट के विरुद्ध **WCAG 4.5:1** कंट्रास्ट बॉक्स से निकलते ही पूरा
 हो।
 

@@ -12,8 +12,8 @@ keywords: "install skeletonic, stylus setup, css cdn, getting started"
 
 ## Intro
 
-New to Skeletonic Stylus? In **v1.1.7** the core stylesheet is
-**8.3&nbsp;KB gzip / 6.9&nbsp;KB brotli** for the full RTL-ready,
+New to Skeletonic Stylus? In **v2.0.0** the core stylesheet is
+**8.6&nbsp;KB gzip / 7.2&nbsp;KB brotli** for the full RTL-ready,
 WCAG&nbsp;2.2&nbsp;AA bundle — measured against the canonical CDN file,
 not approximated. It integrates into any web app from a single
 `<link>` — no JavaScript framework required, no build step needed if
@@ -31,13 +31,13 @@ files locally if you prefer.
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### From a CDN
@@ -48,25 +48,25 @@ If you only need the compiled CSS, drop one of these into your `<head>`:
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-For maximum integrity, copy the **SRI hash** from the v1.1.7 release
+For maximum integrity, copy the **SRI hash** from the v2.0.0 release
 notes and add an `integrity="sha384-…"` attribute.
 
 ### Alternate CDN locations
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Yes | Yes |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Yes | No |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Yes | Yes |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Yes | No |
 
 ### Download the GitHub release
 
@@ -97,7 +97,7 @@ The library ships several pre-built bundles under
 
 | File | Purpose | Min raw / gzip / brotli |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities, RTL-ready | 45.7 KB / 8.3 KB / 6.9 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities, RTL-ready | 45.0 KB / 8.6 KB / 7.2 KB |
 | `animations/skeletonic-animations.min.css` | 56 keyframes, gated behind `prefers-reduced-motion` | 217.8 KB / 6.7 KB / — |
 | `palettes/material/skeletonic-material.min.css` | Material 19×14 hue/shade utilities | ≈17.9 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility palette | 7.3 KB |
@@ -149,7 +149,7 @@ A minimal "did it work?" check:
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>It works.</h1>
@@ -168,7 +168,7 @@ minified CSS bundles, source maps, and a full Stylus tree organised by
 category:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -207,7 +207,7 @@ your CSS payload as small as possible.
 ## Frequently asked questions
 
 **How do I install Skeletonic Stylus?**
-Run `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Or load the
+Run `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Or load the
 compiled CSS straight from a CDN — no build step required.
 
 **Does it require JavaScript?**
@@ -215,11 +215,11 @@ No. The core stylesheet is pure CSS, with zero runtime cost. Components
 work without a single line of JS.
 
 **Is it WCAG 2.2 ready?**
-Yes. v1.1.7 ships AA-conformant contrast, focus-visible rings,
+Yes. v2.0.0 ships AA-conformant contrast, focus-visible rings,
 skip-link helpers, reduced-motion support and dark mode by default.
 
 **What's the gzipped size?**
-45.7&nbsp;KB minified, **8.3&nbsp;KB gzip**, **6.9&nbsp;KB brotli** for
+45.0&nbsp;KB minified, **8.6&nbsp;KB gzip**, **7.2&nbsp;KB brotli** for
 the full RTL-ready core stylesheet. Compressed budgets (10&nbsp;KB gzip,
 8&nbsp;KB brotli) are enforced in CI on every commit. See
 [the framework benchmark](/benchmarks/) for side-by-side numbers
@@ -239,7 +239,7 @@ needs. Free for commercial and personal use.
       "name": "How do I install Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Run pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Or load the compiled CSS straight from a CDN — no build step required."
+        "text": "Run pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Or load the compiled CSS straight from a CDN — no build step required."
       }
     },
     {
@@ -255,7 +255,7 @@ needs. Free for commercial and personal use.
       "name": "Is Skeletonic Stylus WCAG 2.2 ready?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. v1.1.7 ships AA-conformant contrast, focus-visible rings, skip-link helpers, reduced-motion support and dark mode by default."
+        "text": "Yes. v2.0.0 ships AA-conformant contrast, focus-visible rings, skip-link helpers, reduced-motion support and dark mode by default."
       }
     },
     {
@@ -263,7 +263,7 @@ needs. Free for commercial and personal use.
       "name": "What's the gzipped size of Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.7 KB minified, 8.3 KB gzip, 6.9 KB brotli for the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip, 8 KB brotli) are enforced in CI on every commit."
+        "text": "45.0 KB minified, 8.6 KB gzip, 7.2 KB brotli for the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip, 8 KB brotli) are enforced in CI on every commit."
       }
     },
     {

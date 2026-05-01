@@ -17,4 +17,4 @@ keywords: "شكرًا"
 
 - [ضع نجمة للمشروع على GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [تصفّح حزمة npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [اقرأ سجل تغييرات الإصدار 1.1.7](/ar/sijil-al-taghyirat/)
+- [اقرأ سجل تغييرات الإصدار 2.0.0](/ar/sijil-al-taghyirat/)

@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — CSS Mai Sauki, 8.3 KB gzipped"
+title: "Skeletonic Stylus — CSS Mai Sauki, 8.6 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus wata dakin karatu ne na CSS na Stylus mai saukin nauyi kuma mai tsari — shirye-shiryen WCAG 2.2, tsari na cascade-layered, 8.3 KB gzipped — wanda aka tsara don sauƙaƙa ci gaban fasahar gina yanar gizo na zamani."
+description: "Skeletonic Stylus wata dakin karatu ne na CSS na Stylus mai saukin nauyi kuma mai tsari — shirye-shiryen WCAG 2.2, tsari na cascade-layered, 8.6 KB gzipped — wanda aka tsara don sauƙaƙa ci gaban fasahar gina yanar gizo na zamani."
 layout: index
 permalink: https://skeletonic.io/ha/
 date: 2026-04-08
@@ -15,7 +15,7 @@ CSS mai saukin amfani a cikin **ƙasa da 8&nbsp;KB gzipped**. Shirye-shiryen WCA
 Tsari na cascade-layered. Babu JavaScript. Saka shi a kowace shafi.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Jikin Skeletonic

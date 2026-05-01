@@ -1,22 +1,39 @@
 ---
-title: "Skeletonic Stylus — Accessible, RTL-ready CSS, 8.3 KB gzip"
+title: "Skeletonic Stylus 2.0 — Modern CSS, 8.6 KB gzip"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus is a class-based, JS-free, RTL-ready Stylus CSS library — WCAG 2.2 AA, cascade-layered, 8.3 KB gzipped / 6.9 KB brotli — for the post-bundler hypermedia web."
+description: "Skeletonic Stylus 2.0 — OKLCH colours, native @layer, CSS Grid, container queries, view transitions. Class-based, JS-free, WCAG 2.2 AA, 8.6 KB gzip / 7.2 KB brotli."
 layout: index
 permalink: https://skeletonic.io/
-date: 2026-04-30
+date: 2026-05-01
 author: Sebastien Rousseau
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "css, stylus, css framework, accessible css, wcag 2.2, rtl, logical properties, cascade layers, design system, no javascript, htmx"
+keywords: "css, stylus, css framework, oklch, css grid, container queries, view transitions, css cascade layers, accessible css, wcag 2.2, rtl, no javascript, htmx"
 ---
 
-Class-based CSS for the post-bundler web. **8.3&nbsp;KB&nbsp;gzip · 6.9&nbsp;KB&nbsp;brotli**.
-WCAG&nbsp;2.2 AA. RTL-ready. Cascade-layered. Zero JavaScript.
-One `<link>` and you're done.
+**Skeletonic Stylus 2.0** — modern CSS for the post-bundler web.
+**8.6&nbsp;KB&nbsp;gzip · 7.2&nbsp;KB&nbsp;brotli**. OKLCH colours,
+native `@layer`, CSS Grid, container queries, view transitions.
+WCAG&nbsp;2.2 AA. RTL-ready. Zero JavaScript. One `<link>` and
+you're done.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
+
+## What's new in 2.0
+
+Six 2026-baseline CSS features the library now ships natively.
+
+| Feature | Where it lives |
+|---|---|
+| **OKLCH colour system** | every brand / status / grey token, dark-mode included |
+| **Native `@layer`** | `skeletonic.{base,layout,elements,components}` — drop unlayered overrides anywhere and they win |
+| **CSS Grid layout** | `.grid` + `.grid-cols-1..12` + `.col-span-1..12` |
+| **Container queries** | `.card` reflows to its parent's width, not the viewport's |
+| **View Transitions API** | `.view-transition-name-{root,header,main,footer,article,section}` |
+| **Scroll-driven animation** | `.scroll-timeline`, `.animate-on-scroll` |
+
+[Full v2.0.0 release notes →](/changelog/)
 
 ## The Anatomy of Skeletonic
 
@@ -62,7 +79,7 @@ CDN-served, no purging, measured with `gzip -9` and `brotli -q 11` on
 
 | Framework | Version | Brotli | Gzip |
 |---|---|---:|---:|
-| **Skeletonic Stylus** | 1.1.7 | **6.9 KB** | **8.3 KB** |
+| **Skeletonic Stylus** | 2.0.0 | **7.2 KB** | **8.6 KB** |
 | Pico CSS | 2.1.1 | 10.1 KB | 11.6 KB |
 | Bootstrap | 5.3.8 | 23.0 KB | 30.9 KB |
 | Bulma | 1.0.4 | 36.3 KB | 64.9 KB |
@@ -79,7 +96,7 @@ No surprises in production.
 
 ```html
 <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+      href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
 ```
 
 That's the whole install.

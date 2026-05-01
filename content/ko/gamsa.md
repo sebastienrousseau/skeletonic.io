@@ -17,4 +17,4 @@ keywords: "감사"
 
 - [GitHub에서 프로젝트에 별표 남기기](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [npm 패키지 둘러보기](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [v1.1.7 변경 이력 읽기](/ko/byeongyeong-ilji/)
+- [v2.0.0 변경 이력 읽기](/ko/byeongyeong-ilji/)

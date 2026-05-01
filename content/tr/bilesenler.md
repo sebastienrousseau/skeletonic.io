@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic bilesenler, butonlar, kartlar, formlar, uyarilar, rozetler, baslik, navbar, css hamburger menu"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -112,7 +112,7 @@ yuzeyler.
 
 <h3 id="alerts">Uyarilar</h3>
 
-Semantik amacli durum mesajlari. **v1.1.7'de her varyant acikca
+Semantik amacli durum mesajlari. **v2.0.0'de her varyant acikca
 `.alert-{primary,secondary,info,success,warning,error}` altinda
 adlandirilmistir**, boylece varyant sinifi sayfadaki baska durum
 siniflariyla catismaz.
@@ -171,7 +171,7 @@ kart duvarlari icin `flex-N` izgarasiyla birlestirebilirsiniz.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -390,7 +390,7 @@ dogru sekilde acilir, kapanir ve odagi yakalar.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus bilesenleri",
-  "description": "Skeletonic Stylus v1.1.7 ile gelen tum bilesenler.",
+  "description": "Skeletonic Stylus v2.0.0 ile gelen tum bilesenler.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -221,7 +221,7 @@
 </span></pre>
 </code></pre>
 <p>כל מחלקת אנימציה עטופה בבלוק
-<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> ב-v1.1.7, מה
+<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> ב-v2.0.0, מה
 שאומר שמשתמש שהגדיר &quot;הפחתת תנועה&quot; ברמת מערכת ההפעלה לא יראה
 אנימציה כלל — הפריסה עדיין עובדת, רק התנועה מדוכאת.</p>
 <style>
@@ -286,7 +286,7 @@
 החסרים כדי שה-keyframes יהיו גלויים.</p>
 <p class="anim-note-rm">
   הפחתת תנועה מופעלת במערכת ההפעלה שלכם, אז היעדים למטה יישארו
-  ללא תנועה — זו התנהגות הנגישות של v1.1.7 שעובדת כראוי.
+  ללא תנועה — זו התנהגות הנגישות של v2.0.0 שעובדת כראוי.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -403,7 +403,7 @@
   </div>
 </div>
 <script>
-  // מחלקות האנימציה הנשלחות ב-v1.1.7 מגדירות animation-name בבורר
+  // מחלקות האנימציה הנשלחות ב-v2.0.0 מגדירות animation-name בבורר
   // עצמו. כדי להפעיל מחדש את ה-keyframe צריך להסיר את המחלקה,
   // לאלץ flush של הפריסה, ואז להוסיף את המחלקה בחזרה.
   function replayAnim(btn, name){
@@ -500,8 +500,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>שימו לב — סייג ידוע של v1.1.7</h2>
-<p>מחלקות האנימציה ב-v1.1.7 מגדירות <code>animation-name</code> בלבד. כדי להפעיל
+<h2>שימו לב — סייג ידוע של v2.0.0</h2>
+<p>מחלקות האנימציה ב-v2.0.0 מגדירות <code>animation-name</code> בלבד. כדי להפעיל
 אותן עליכם כרגע לספק בעצמכם <code>animation-duration</code>,
 <code>animation-iteration-count</code>, <code>animation-fill-mode</code>
 ו-<code>animation-timing-function</code> — בדיוק כפי שבלוק ה-<code>&lt;style&gt;</code> בראש

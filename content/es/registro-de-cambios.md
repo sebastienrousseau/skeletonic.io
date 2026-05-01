@@ -1,21 +1,21 @@
 ---
 title: "Registro de cambios"
 name: "Skeletonic Stylus"
-description: "Notas de version de Skeletonic Stylus, con v1.1.7 en detalle."
+description: "Notas de version de Skeletonic Stylus, con v2.0.0 en detalle."
 layout: page
 permalink: https://skeletonic.io/es/registro-de-cambios/
 author: Sebastien Rousseau
 language: es
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic changelog, notas de version, v1.1.7, semver"
+keywords: "skeletonic changelog, notas de version, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (actual)
+## v2.0.0 — 2026-04 (actual)
 
 El pase de "preparacion para release": a11y, cadena de suministro, higiene del repositorio.
 
@@ -44,7 +44,7 @@ El pase de "preparacion para release": a11y, cadena de suministro, higiene del r
 ### Higiene del repositorio y paquete para consumidores
 - Se elimino el directorio legacy `package/`; `dist/` es ahora la unica
   fuente de verdad para los consumidores.
-- README reescrito para reflejar las rutas de instalacion de v1.1.7.
+- README reescrito para reflejar las rutas de instalacion de v2.0.0.
 - `dist/` se commitea; `debug/` se genera y se incluye en gitignore.
 - Nuevo `.github/workflows/npm-publish.yml` dirigido por tags.
 
@@ -56,7 +56,7 @@ El pase de "preparacion para release": a11y, cadena de suministro, higiene del r
 - **Namespacing de `.alert-*`** — `.alert.success` → `.alert.alert-success`
   para evitar colisiones con clases de estado.
 
-[Notas completas de la version v1.1.7 en GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Notas completas de la version v2.0.0 en GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historial">
 

@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instalacja skeletonic, konfiguracja stylus, css cdn, pierwsze kroki"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Wprowadzenie
 
-Pierwszy raz z Skeletonic Stylus? W **v1.1.7** dobor potrzebnych funkcji jest latwiejszy niz kiedykolwiek. Dzieki niewielkiemu rozmiarowi (8,3&nbsp;KB gzipped dla glownego arkusza stylow), integruje sie szybko z kazda aplikacja webowa — bez wymaganego frameworka JavaScript, bez kroku budowania jesli korzystasz z CDN.
+Pierwszy raz z Skeletonic Stylus? W **v2.0.0** dobor potrzebnych funkcji jest latwiejszy niz kiedykolwiek. Dzieki niewielkiemu rozmiarowi (8,3&nbsp;KB gzipped dla glownego arkusza stylow), integruje sie szybko z kazda aplikacja webowa — bez wymaganego frameworka JavaScript, bez kroku budowania jesli korzystasz z CDN.
 
 Kazda sciezka opisana jest ponizej — wybierz odpowiednia.
 
@@ -30,13 +30,13 @@ Mozesz zainstalowac Skeletonic Stylus przez **pnpm**, **npm** lub **yarn**, albo
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Z CDN
@@ -47,24 +47,24 @@ Jesli potrzebujesz tylko skompilowanego CSS, dodaj jedno z ponizszych do `<head>
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-Aby uzyskac maksymalna integralnosc, skopiuj **hash SRI** z informacji o wydaniu v1.1.7 i dodaj atrybut `integrity="sha384-…"`.
+Aby uzyskac maksymalna integralnosc, skopiuj **hash SRI** z informacji o wydaniu v2.0.0 i dodaj atrybut `integrity="sha384-…"`.
 
 ### Alternatywne lokalizacje CDN
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Tak | Tak |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Tak | Nie |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Tak | Tak |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Tak | Nie |
 
 ### Pobranie wydania z GitHub
 
@@ -144,7 +144,7 @@ Minimalny test „czy dziala?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Dziala.</h1>
@@ -160,7 +160,7 @@ Jesli naglowek skaluje sie plynnie, a przycisk ma niebieski ksztalt pigulki, to 
 Wewnatrz paczki znajdziesz wszystkie pliki zrodlowe, skompilowane i zminifikowane pakiety CSS, mapy zrodel oraz pelne drzewo Stylus uporządkowane wedlug kategorii:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -198,13 +198,13 @@ Kazdy modul jest niezalezny — dolaczaj tylko te pakiety, ktorych potrzebujesz,
 ## Najczesciej zadawane pytania
 
 **Jak zainstalowac Skeletonic Stylus?**
-Uruchom `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Mozesz tez zaladowac skompilowany CSS bezposrednio z CDN — bez kroku budowania.
+Uruchom `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Mozesz tez zaladowac skompilowany CSS bezposrednio z CDN — bez kroku budowania.
 
 **Czy wymaga JavaScript?**
 Nie. Glowny arkusz stylow to czysty CSS, bez zadnych kosztow uruchomieniowych. Komponenty dzialaja bez ani jednej linii JS.
 
 **Czy jest zgodny z WCAG 2.2?**
-Tak. Wersja v1.1.7 dostarcza kontrast zgodny z AA, pierscienie focus-visible, helpery skip-link, obsluge ograniczonego ruchu i tryb ciemny domyslnie.
+Tak. Wersja v2.0.0 dostarcza kontrast zgodny z AA, pierscienie focus-visible, helpery skip-link, obsluge ograniczonego ruchu i tryb ciemny domyslnie.
 
 **Jaki jest rozmiar gzipped?**
 45,7&nbsp;KB zminifikowany, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli dla pelnego glownego arkusza stylow. Limit 8&nbsp;KB jest egzekwowany w CI.
@@ -222,7 +222,7 @@ Podwojna licencja: MIT i Apache 2.0 — wybierz te, ktora pasuje do Twojego proj
       "name": "Jak zainstalowac Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Uruchom pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Mozesz tez zaladowac skompilowany CSS bezposrednio z CDN — bez kroku budowania."
+        "text": "Uruchom pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Mozesz tez zaladowac skompilowany CSS bezposrednio z CDN — bez kroku budowania."
       }
     },
     {
@@ -238,7 +238,7 @@ Podwojna licencja: MIT i Apache 2.0 — wybierz te, ktora pasuje do Twojego proj
       "name": "Czy Skeletonic Stylus jest zgodny z WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tak. Wersja v1.1.7 dostarcza kontrast zgodny z AA, pierscienie focus-visible, helpery skip-link, obsluge ograniczonego ruchu i tryb ciemny domyslnie."
+        "text": "Tak. Wersja v2.0.0 dostarcza kontrast zgodny z AA, pierscienie focus-visible, helpery skip-link, obsluge ograniczonego ruchu i tryb ciemny domyslnie."
       }
     },
     {

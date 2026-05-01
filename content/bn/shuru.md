@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "install skeletonic, stylus setup, css cdn, শুরু করুন"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## ভূমিকা
 
-Skeletonic Stylus-এ নতুন? **v1.1.7**-এ আপনার প্রয়োজনীয় ফিচারগুলো
+Skeletonic Stylus-এ নতুন? **v2.0.0**-এ আপনার প্রয়োজনীয় ফিচারগুলো
 বেছে নেওয়া আগের চেয়ে সহজ। এর ক্ষুদ্র আকারের (~৭.৫&nbsp;KB
 gzipped মূল স্টাইলশিটের জন্য) কারণে, এটি যেকোনো ওয়েব অ্যাপে
 দ্রুত ইন্টিগ্রেট হয় — কোনো জাভাস্ক্রিপ্ট ফ্রেমওয়ার্ক লাগে না,
@@ -36,13 +36,13 @@ CDN ব্যবহার করলে কোনো বিল্ড স্টে
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### CDN থেকে
@@ -53,25 +53,25 @@ yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-সর্বোচ্চ ইন্টিগ্রিটির জন্য, v1.1.7 রিলিজ নোটস থেকে **SRI হ্যাশ**
+সর্বোচ্চ ইন্টিগ্রিটির জন্য, v2.0.0 রিলিজ নোটস থেকে **SRI হ্যাশ**
 কপি করে একটি `integrity="sha384-…"` অ্যাট্রিবিউট যোগ করুন।
 
 ### বিকল্প CDN অবস্থান
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | হ্যাঁ | হ্যাঁ |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | হ্যাঁ | না |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | হ্যাঁ | হ্যাঁ |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | হ্যাঁ | না |
 
 ### GitHub রিলিজ ডাউনলোড
 
@@ -101,8 +101,8 @@ pnpm run build
 
 | ফাইল | উদ্দেশ্য | আকার (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 45.7 KB / 8.3 KB |
-| `animations/skeletonic-animations.min.css` | ঐচ্ছিক অ্যানিমেশন মডিউল | ≈213 KB / ≈6.9 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 45.0 KB / 8.6 KB |
+| `animations/skeletonic-animations.min.css` | ঐচ্ছিক অ্যানিমেশন মডিউল | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Material রঙ প্যালেট | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons ইউটিলিটি প্যালেট | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Web-safe প্যালেট | ≈3.5 KB |
@@ -154,7 +154,7 @@ Skeletonic তার ডিজাইন টোকেনগুলো **CSS কা
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>কাজ করছে।</h1>
@@ -173,7 +173,7 @@ CSS বান্ডেল, সোর্স ম্যাপ এবং ক্য�
 Stylus ট্রি পাবেন:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -212,7 +212,7 @@ Stylus ট্রি পাবেন:
 ## প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী
 
 **কীভাবে Skeletonic Stylus ইনস্টল করব?**
-`pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7` চালান। অথবা
+`pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0` চালান। অথবা
 কম্পাইলড CSS সরাসরি CDN থেকে লোড করুন — কোনো বিল্ড স্টেপ লাগে না।
 
 **এটি কি জাভাস্ক্রিপ্ট প্রয়োজন?**
@@ -220,11 +220,11 @@ Stylus ট্রি পাবেন:
 একটি লাইন JS ছাড়াই কাজ করে।
 
 **এটি কি WCAG 2.2 প্রস্তুত?**
-হ্যাঁ। v1.1.7 AA-সামঞ্জস্যপূর্ণ কনট্রাস্ট, focus-visible রিং,
+হ্যাঁ। v2.0.0 AA-সামঞ্জস্যপূর্ণ কনট্রাস্ট, focus-visible রিং,
 skip-link সহায়ক, reduced-motion সমর্থন এবং ডিফল্টরূপে ডার্ক মোড শিপ করে।
 
 **gzipped আকার কত?**
-45.7&nbsp;KB মিনিফাইড, **~৭.৫&nbsp;KB gzipped**, ~৬.৩&nbsp;KB brotli
+45.0&nbsp;KB মিনিফাইড, **~৭.৫&nbsp;KB gzipped**, ~৬.৩&nbsp;KB brotli
 সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮&nbsp;KB সীমা CI-তে বাধ্যতামূলক।
 
 **কোন লাইসেন্স ব্যবহার করা হয়?**
@@ -242,7 +242,7 @@ MIT এবং Apache 2.0 দ্বৈত লাইসেন্সপ্রাপ
       "name": "কীভাবে Skeletonic Stylus ইনস্টল করব?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7 চালান। অথবা কম্পাইলড CSS সরাসরি CDN থেকে লোড করুন — কোনো বিল্ড স্টেপ লাগে না।"
+        "text": "pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0 চালান। অথবা কম্পাইলড CSS সরাসরি CDN থেকে লোড করুন — কোনো বিল্ড স্টেপ লাগে না।"
       }
     },
     {
@@ -258,7 +258,7 @@ MIT এবং Apache 2.0 দ্বৈত লাইসেন্সপ্রাপ
       "name": "Skeletonic Stylus কি WCAG 2.2 প্রস্তুত?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "হ্যাঁ। v1.1.7 AA-সামঞ্জস্যপূর্ণ কনট্রাস্ট, focus-visible রিং, skip-link সহায়ক, reduced-motion সমর্থন এবং ডিফল্টরূপে ডার্ক মোড শিপ করে।"
+        "text": "হ্যাঁ। v2.0.0 AA-সামঞ্জস্যপূর্ণ কনট্রাস্ট, focus-visible রিং, skip-link সহায়ক, reduced-motion সমর্থন এবং ডিফল্টরূপে ডার্ক মোড শিপ করে।"
       }
     },
     {
@@ -266,7 +266,7 @@ MIT এবং Apache 2.0 দ্বৈত লাইসেন্সপ্রাপ
       "name": "Skeletonic Stylus-এর gzipped আকার কত?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.7 KB মিনিফাইড, ~৭.৫ KB gzipped, ~৬.৩ KB brotli সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮ KB সীমা প্রতিটি কমিটে CI-তে বাধ্যতামূলক।"
+        "text": "45.0 KB মিনিফাইড, ~৭.৫ KB gzipped, ~৬.৩ KB brotli সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮ KB সীমা প্রতিটি কমিটে CI-তে বাধ্যতামূলক।"
       }
     },
     {

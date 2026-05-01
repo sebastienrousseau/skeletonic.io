@@ -1,7 +1,7 @@
 ---
 title: "Mga Paleta"
 name: "Skeletonic Stylus"
-description: "Mga colour palette na Material, Tachyons at web-safe na kasama sa Skeletonic Stylus v1.1.7."
+description: "Mga colour palette na Material, Tachyons at web-safe na kasama sa Skeletonic Stylus v2.0.0."
 layout: page
 permalink: https://skeletonic.io/fil/mga-paleta/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css palette, material, tachyons, websafe, design token"
 ---
 
-Ang Skeletonic Stylus v1.1.7 ay nagpapadala ng **tatlong opsyonal na colour palette**, bawat isa ay ipinamamahagi bilang sariling minified na stylesheet kaya nagbabayad ka lamang para sa ginagamit mo.
+Ang Skeletonic Stylus v2.0.0 ay nagpapadala ng **tatlong opsyonal na colour palette**, bawat isa ay ipinamamahagi bilang sariling minified na stylesheet kaya nagbabayad ka lamang para sa ginagamit mo.
 
 | Palette | File | Laki (min) |
 |---|---|---|
@@ -60,9 +60,9 @@ Ang core stylesheet ay nagpapadala ng isang accessible na 11-step na grey scale 
 
 <hr class="hr-text" data-content="Brand">
 
-## Mga kulay ng brand (v1.1.7 — AA contrast)
+## Mga kulay ng brand (v2.0.0 — AA contrast)
 
-Sa v1.1.7 ang mga primary at secondary na token ay pinaitim upang matugunan ang
+Sa v2.0.0 ang mga primary at secondary na token ay pinaitim upang matugunan ang
 **WCAG 4.5:1** na contrast laban sa puting text agad mula sa kahon.
 
 <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem;">

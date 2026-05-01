@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, সম্পর্কে, stylus, css framework, দর্শন"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, সম্পর্কে, stylus, css framework, দর�
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Monthly Downloads" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="npm Version" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Bundle Size" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Bundle Size" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="License" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -117,7 +117,7 @@ Skeletonic Stylus [Semantic Versioning 2.0](https://semver.org) অনুসর�
 |---|---|---|
 | **Major** | কোনো পাবলিক ক্লাস, মিক্সিন বা টোকেন অপসারণ বা পুনঃনামকরণ | 1.x → 2.0 |
 | **Minor** | নতুন কম্পোনেন্ট, মিক্সিন বা টোকেন যোগ | 1.1 → 1.2 |
-| **Patch** | বাগ ফিক্স, a11y উন্নতি, পারফরম্যান্স, নিরাপত্তা | 1.1.6 → 1.1.7 |
+| **Patch** | বাগ ফিক্স, a11y উন্নতি, পারফরম্যান্স, নিরাপত্তা | 1.1.6 → 2.0.0 |
 
 সকল পাবলিক ক্লাস নাম, সকল CSS কাস্টম প্রপার্টি এবং সকল এক্সপোর্টেড
 Stylus মিক্সিন পাবলিক API-র অংশ। একটি ব্রেকিং পরিবর্তন একটি

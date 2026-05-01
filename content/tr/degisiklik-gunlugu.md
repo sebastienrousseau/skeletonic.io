@@ -1,21 +1,21 @@
 ---
 title: "Degisiklik Gunlugu"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus surum notlari, v1.1.7 tamamiyla dahil."
+description: "Skeletonic Stylus surum notlari, v2.0.0 tamamiyla dahil."
 layout: page
 permalink: https://skeletonic.io/tr/degisiklik-gunlugu/
 author: Sebastien Rousseau
 language: tr
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic degisiklik gunlugu, surum notlari, v1.1.7, semver"
+keywords: "skeletonic degisiklik gunlugu, surum notlari, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (guncel)
+## v2.0.0 — 2026-04 (guncel)
 
 "Yayinlanma hazirligina" gecis: erisilebilirlik, tedarik zinciri, depo bakimi.
 
@@ -42,7 +42,7 @@ keywords: "skeletonic degisiklik gunlugu, surum notlari, v1.1.7, semver"
 ### Depo bakimi ve tuketici paketi
 - Eski `package/` dizini kaldirildi; `dist/` artik tuketiciler icin tek
   dogru kaynak.
-- README, v1.1.7 kurulum yollarini yansitacak sekilde yeniden yazildi.
+- README, v2.0.0 kurulum yollarini yansitacak sekilde yeniden yazildi.
 - `dist/` commit edilmis; `debug/` olusturulup gitignore edilmis.
 - Yeni `.github/workflows/npm-publish.yml` etiket odakli.
 
@@ -54,7 +54,7 @@ keywords: "skeletonic degisiklik gunlugu, surum notlari, v1.1.7, semver"
 - **`.alert-*` ad alani** — durum siniflariyla catismayi onlemek icin
   `.alert.success` → `.alert.alert-success`.
 
-[GitHub'da tam v1.1.7 surum notlari ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[GitHub'da tam v2.0.0 surum notlari ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Gecmis">
 

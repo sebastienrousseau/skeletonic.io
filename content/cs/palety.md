@@ -1,7 +1,7 @@
 ---
 title: "Palety — Skeletonic Stylus"
 name: "Skeletonic Stylus"
-description: "Barevne palety Material, Tachyons a web-safe dodavane ve Skeletonic Stylus v1.1.7."
+description: "Barevne palety Material, Tachyons a web-safe dodavane ve Skeletonic Stylus v2.0.0."
 layout: page
 permalink: https://skeletonic.io/cs/palety/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css paleta, material, tachyons, websafe, navrhove tokeny"
 ---
 
-Skeletonic Stylus v1.1.7 dodava **tri volitelne barevne palety**, kazda
+Skeletonic Stylus v2.0.0 dodava **tri volitelne barevne palety**, kazda
 distribuovana jako vlastni minifikovany stylesheet, takze platite pouze za
 to, co pouzivate.
 
@@ -63,9 +63,9 @@ zpristupnenou jako `--cl-grey-100` … `--cl-grey-1000`.
 
 <hr class="hr-text" data-content="Znackove barvy">
 
-## Znackove barvy (v1.1.7 — AA kontrast)
+## Znackove barvy (v2.0.0 — AA kontrast)
 
-Ve v1.1.7 byly primarni a sekundarni tokeny ztmaveny, aby splnovaly
+Ve v2.0.0 byly primarni a sekundarni tokeny ztmaveny, aby splnovaly
 **WCAG 4,5:1** kontrast vuci bilemu textu hned po instalaci.
 
 <div class="row margin-top-3">

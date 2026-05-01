@@ -1,12 +1,12 @@
 {
-  "description": "Skeletonic Stylus เป็นไลบรารี Stylus CSS แบบโอเพนซอร์ส สำหรับการจัดสไตล์ UI ที่เข้าถึงได้ รวดเร็ว และเป็นโมดูล",
   "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/th/kiao-kap/",
+  "layout": "page",
   "title": "เกี่ยวกับ Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "layout": "page",
-  "language": "th",
+  "keywords": "skeletonic, เกี่ยวกับ, stylus, css framework, ปรัชญา",
+  "permalink": "https://skeletonic.io/th/kiao-kap/",
+  "description": "Skeletonic Stylus เป็นไลบรารี Stylus CSS แบบโอเพนซอร์ส สำหรับการจัดสไตล์ UI ที่เข้าถึงได้ รวดเร็ว และเป็นโมดูล",
   "author": "Sebastien Rousseau",
-  "keywords": "skeletonic, เกี่ยวกับ, stylus, css framework, ปรัชญา"
+  "language": "th"
 }

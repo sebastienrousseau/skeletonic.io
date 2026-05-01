@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — CSS נגיש, כ-8.3 KB בדחיסת gzip"
+title: "Skeletonic Stylus — CSS נגיש, כ-8.6 KB בדחיסת gzip"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus היא ספריית CSS קלת משקל ומודולרית מבוססת Stylus — תואמת WCAG 2.2, מאורגנת בשכבות קסקייד, כ-8.3 KB בדחיסת gzip — שתוכננה לייעל פיתוח ממשקי משתמש מודרניים."
+description: "Skeletonic Stylus היא ספריית CSS קלת משקל ומודולרית מבוססת Stylus — תואמת WCAG 2.2, מאורגנת בשכבות קסקייד, כ-8.6 KB בדחיסת gzip — שתוכננה לייעל פיתוח ממשקי משתמש מודרניים."
 layout: index
 permalink: https://skeletonic.io/he/
 date: 2026-04-08
@@ -15,7 +15,7 @@ CSS נגיש ב**פחות מ-8&nbsp;KB בדחיסת gzip**. תואם WCAG&nbsp;2
 מאורגן בשכבות קסקייד. אפס JavaScript. מוכן לשילוב בכל דף.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## האנטומיה של Skeletonic

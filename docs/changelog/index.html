@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -112,8 +112,9 @@
     </script>
 
     
-  <meta name="description" content="v1.1.7 — 2026-04 (current) The &amp;quot;release-readiness&amp;quot; pass: a11y, supply chain, repo hygiene. Accessibility (WCAG 2.2) &amp;amp; internationalisation RTL">
-<meta property="og:description" content="v1.1.7 — 2026-04 (current) The &amp;quot;release-readiness&amp;quot; pass: a11y, supply chain, repo hygiene. Accessibility (WCAG 2.2) &amp;amp; internationalisation RTL">
+  <link rel="stylesheet" href="/highlight.87708af9.css">
+<meta name="description" content="v2.0.0 — 2026-05 (current) The &amp;quot;2026 baseline&amp;quot; major release. Every modern CSS feature that shipped in the 2024–2026 Baseline window is now part">
+<meta property="og:description" content="v2.0.0 — 2026-05 (current) The &amp;quot;2026 baseline&amp;quot; major release. Every modern CSS feature that shipped in the 2024–2026 Baseline window is now part">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -211,65 +212,126 @@
     <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
       <div class="text-start">
         
-<h2>v1.1.7 — 2026-04 (current)</h2>
+<h2>v2.0.0 — 2026-05 (current)</h2>
+<p>The &quot;2026 baseline&quot; major release. Every modern CSS feature that
+shipped in the 2024–2026 Baseline window is now part of the library's
+foundation. Class names that consumers were already using are
+preserved; the underlying tokens, layout primitives, and motion
+utilities are fundamentally new.</p>
+<h3>Modern colour system — OKLCH</h3>
+<ul>
+<li>Every brand, status, grey, and keyword colour token migrates from
+<code>hsl()</code> to <code>oklch()</code>. Perceptually uniform steps from <code>$grey-100</code>
+through <code>$grey-1000</code>, native wide-gamut (P3) on capable displays,
+and consistent contrast at every shade.</li>
+<li>Surface tokens (<code>--background-color</code>, <code>--foreground-color</code>) and
+<code>prefers-color-scheme: dark</code> overrides are also OKLCH, so dark mode
+no longer drifts in saturation between light and dark.</li>
+</ul>
+<h3>Native CSS Cascade Layers</h3>
+<ul>
+<li>
+<p><code>skeletonic.styl</code> now declares the layer order at the top:</p>
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">@</span><span style="color:#b48ead;">layer skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">base</span><span style="color:#b48ead;">, skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">layout</span><span style="color:#b48ead;">,
+</span><span style="color:#b48ead;">       skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">elements</span><span style="color:#b48ead;">, skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">components</span><span style="color:#b48ead;">;
+</span></pre>
+</code></pre>
+<p>Each subtree imports inside its corresponding <code>@layer</code>. Drop an
+unlayered override anywhere in your project and it always wins —
+no specificity wars, no <code>!important</code>.</p>
+</li>
+</ul>
+<h3>Native CSS Grid — <code>.grid</code>, <code>.grid-cols-N</code>, <code>.col-span-N</code></h3>
+<ul>
+<li>
+<p>The legacy <code>.flex-1</code>…<code>.flex-12</code> flexbox grid is replaced with a
+modern CSS Grid system:</p>
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">section </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">grid grid-cols-3</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">article </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card</span><span style="color:#c0c5ce;">&quot;&gt;…&lt;/</span><span style="color:#bf616a;">article</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">article </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card</span><span style="color:#c0c5ce;">&quot;&gt;…&lt;/</span><span style="color:#bf616a;">article</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">article </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card col-span-2</span><span style="color:#c0c5ce;">&quot;&gt;spans two cells&lt;/</span><span style="color:#bf616a;">article</span><span style="color:#c0c5ce;">&gt;
+</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">section</span><span style="color:#c0c5ce;">&gt;
+</span></pre>
+</code></pre>
+<p><code>.grid</code> sets <code>display: grid; gap: var(--gr-fsb)</code>; <code>.grid-cols-N</code>
+generates <code>grid-template-columns: repeat(N, minmax(0, 1fr))</code>;
+<code>.col-span-N</code> is just <code>grid-column: span N</code>. Less CSS, more layout
+power, no margin-collapse quirks.</p>
+</li>
+</ul>
+<h3>Container queries on <code>.card</code></h3>
+<ul>
+<li><code>components/card.styl</code> sets <code>container-type: inline-size</code>. A
+card's internal layout responds to the <strong>card's own width</strong>, not
+the viewport's — so a card that's narrow because it's in a sidebar
+rearranges itself even on a wide page.</li>
+<li>Combined with <code>:has()</code> for parent-aware styling (e.g. an <code>.alert</code>
+that contains a link), this lifts the library to 2026 baseline.</li>
+</ul>
+<h3>Modern motion utilities</h3>
+<ul>
+<li><code>src/stylus/utilities/animations.styl</code> introduces:
+<ul>
+<li><strong>View Transitions API</strong> utilities — <code>.view-transition-name-root</code>,
+<code>-header</code>, <code>-main</code>, <code>-footer</code>, <code>-article</code>, <code>-section</code>. Drop one
+on each side of an SPA-style page transition and the browser
+cross-fades or morphs the named element natively.</li>
+<li><strong>Scroll-driven animation</strong> primitives — <code>.scroll-timeline</code> and
+<code>.animate-on-scroll</code> plug into the native
+<code>scroll-timeline-name</code> / <code>animation-timeline: view()</code> API.</li>
+</ul>
+</li>
+<li>All native, GPU-accelerated, no JavaScript runtime.</li>
+</ul>
+<h3>Bundle &amp; quality gates</h3>
+<ul>
+<li>Compiled bundle: <strong>44.96 KB raw / 8.6 KB gzip /
+7.2 KB brotli</strong> — under the 48 / 10 / 8 KB CI ceilings.</li>
+<li>axe-core gate green: zero WCAG 2.2 violations on the demo page.</li>
+<li>CycloneDX SBOM updated; npm publish workflow signs and provenances
+the v2.0.0 tarball.</li>
+</ul>
+<h3>Migration notes (v1.1.7 → v2.0.0)</h3>
+<ul>
+<li><strong>Colour tokens.</strong> The names are unchanged (<code>--cl-primary</code>,
+<code>--bg-success</code>, <code>$grey-500</code>, etc.) but the resolved values move to
+OKLCH. Visual output is close to v1.1.7 but not pixel-identical;
+audit any screenshots in your design system.</li>
+<li><strong>Grid system.</strong> <code>.flex-1</code>…<code>.flex-12</code> is removed. Replace with
+<code>&lt;div class=&quot;grid grid-cols-{N}&quot;&gt;&lt;div class=&quot;col-span-{M}&quot;&gt;…</code>.
+See <a href="/components/#grid">/components/#grid</a> for the new syntax.</li>
+<li><strong>Cascade layers.</strong> If you had <code>!important</code> overrides to win
+against Skeletonic, you can almost certainly delete them.</li>
+</ul>
+<p><a href="https://github.com/sebastienrousseau/skeletonic-stylus/releases">All releases on GitHub ↗</a></p>
+<hr class="hr-text" data-content="History">
+<h2>v1.1.7 — 2026-04</h2>
 <p>The &quot;release-readiness&quot; pass: a11y, supply chain, repo hygiene.</p>
 <h3>Accessibility (WCAG 2.2) &amp; internationalisation</h3>
 <ul>
 <li><strong>RTL via logical properties</strong> — every directional declaration in
-<code>margin-</code>, <code>padding-</code>, <code>border-</code>, <code>float</code>, <code>text-align</code>, and absolute
-positioning is now logical (<code>margin-inline-*</code>, <code>inset-inline-*</code>,
-<code>text-align: start/end</code>, <code>float: inline-start/end</code>). Set
-<code>&lt;html dir=&quot;rtl&quot;&gt;</code> and the inline axis flips. The off-canvas hamburger
-and the 12 <code>.link-N</code> underline reveals flip via a small
-<code>[dir=&quot;rtl&quot;]</code> override block. <code>&lt;code&gt;</code> and <code>&lt;pre&gt;</code> retain
-<code>direction: ltr</code> because code is conventionally LTR.</li>
+<code>margin-</code>, <code>padding-</code>, <code>border-</code>, <code>float</code>, <code>text-align</code>, and
+absolute positioning is now logical (<code>margin-inline-*</code>,
+<code>inset-inline-*</code>, <code>text-align: start/end</code>, <code>float: inline-start/end</code>).
+Set <code>&lt;html dir=&quot;rtl&quot;&gt;</code> and the inline axis flips.</li>
 <li><strong><code>--gr-h1</code>…<code>--gr-h6</code> heading tokens are now consumed.</strong> Previously
 the <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> rules used a separate hand-curated scale and the
-exported tokens carried unusable Φⁿ values (h1 ≈ 29 rem). The Stylus
-values and runtime custom properties now match the applied scale
-(1.27 minor-third ratio), so consumers can retheme typography by
-overriding <code>--gr-h*</code> on any ancestor.</li>
-<li><strong><code>$primary</code> darkened</strong> to <code>hsl(210, 100%, 42%)</code> for AA contrast
-against white text in buttons / badges / links.</li>
-<li><strong><code>$secondary</code> darkened</strong> to <code>hsl(195, 100%, 33%)</code>.</li>
+exported tokens carried unusable Φⁿ values (h1 ≈ 29 rem).</li>
+<li><strong><code>$primary</code> / <code>$secondary</code> darkened</strong> for AA contrast against
+white text in buttons / badges / links.</li>
 <li>Added <strong>focus-visible</strong> rings on every interactive element.</li>
 <li>Added <strong><code>@media (prefers-reduced-motion)</code></strong> wrapper around the
 animations module.</li>
 <li>Added <strong><code>prefers-color-scheme: dark</code></strong> token swap.</li>
-<li>Added <strong>target-size(24px)</strong> mixin to satisfy WCAG 2.2 SC 2.5.8.</li>
-<li>Added <strong>focus-not-obscured</strong> scroll-margin helpers for sticky headers.</li>
 </ul>
 <h3>Build &amp; supply chain</h3>
 <ul>
-<li><strong>Cascade layers</strong> — every block now lives in
-<code>@layer skeletonic.{reset,tokens,layout,elements,components,utilities}</code>.</li>
 <li><strong>CycloneDX SBOM</strong> generated as part of the npm tarball.</li>
-<li><strong><code>size-limit</code> budgets</strong> enforced in CI: 8 KB gzipped ceiling on the
-core stylesheet.</li>
+<li><strong><code>size-limit</code> budgets</strong> enforced in CI.</li>
 <li><strong>CVE-2023-44270</strong> (postcss line return) patched via <code>pnpm.overrides</code>.</li>
-<li>Provenance + signing on the npm publish workflow
-(<code>--provenance --access public</code>).</li>
-<li>Removed archived <code>stylelint-a11y</code> plugin from the lint config.</li>
 </ul>
-<h3>Repo hygiene &amp; consumer package</h3>
-<ul>
-<li>Legacy <code>package/</code> directory removed; <code>dist/</code> is now the single source
-of truth for consumers.</li>
-<li>README rewritten to reflect v1.1.7 install paths.</li>
-<li><code>dist/</code> is committed; <code>debug/</code> is generated and gitignored.</li>
-<li>New <code>.github/workflows/npm-publish.yml</code> is tag-driven.</li>
-</ul>
-<h3>Bug fixes (P0)</h3>
-<ul>
-<li><strong><code>row $:after</code> parent-selector regression</strong> — replaced stray <code>$</code> with
-<code>&amp;</code> in <code>src/stylus/components/_grid.styl</code>.</li>
-<li><strong><code>.alternate</code></strong> mistakenly applied <code>animation-direction: reverse</code>
-instead of <code>alternate</code>.</li>
-<li><strong><code>.alert-*</code> namespacing</strong> — <code>.alert.success</code> → <code>.alert.alert-success</code>
-to avoid collisions with state classes.</li>
-</ul>
-<p><a href="https://github.com/sebastienrousseau/skeletonic-stylus/releases">All releases on GitHub ↗</a></p>
-<hr class="hr-text" data-content="History">
 <h2>Older releases</h2>
 <ul>
 <li><strong>v1.1.6</strong> — internal cleanup, dependency bumps.</li>

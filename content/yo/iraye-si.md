@@ -1,7 +1,7 @@
 ---
-title: "Irayẹ-si — WCAG 2.2 ninu v1.1.7"
+title: "Irayẹ-si — WCAG 2.2 ninu v2.0.0"
 name: "Skeletonic Stylus"
-description: "Ohun ti v1.1.7 fi ranṣẹ lẹsẹkẹsẹ fun ibamu WCAG 2.2 — awọn oruka idojukọ, iyatọ, awọn ọna asọye, iṣipopada, ati ipo dudu."
+description: "Ohun ti v2.0.0 fi ranṣẹ lẹsẹkẹsẹ fun ibamu WCAG 2.2 — awọn oruka idojukọ, iyatọ, awọn ọna asọye, iṣipopada, ati ipo dudu."
 language: yo
 layout: page
 permalink: https://skeletonic.io/yo/iraye-si/
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, irayẹ-si, focus visible, skip link, prefers reduced motion, iyatọ"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 fi ibamu WCAG 2.2 ranṣẹ bi ihuwasi
+> **Skeletonic Stylus v2.0.0 fi ibamu WCAG 2.2 ranṣẹ bi ihuwasi
 > aiyipada, kii ṣe bi aṣa yan.** Oju-iwe yii ṣe akọsilẹ ohun ti
 > a fi sinu ati awọn adalu ti o le yan wọle fun iṣakoso ti o dara ju.
 
@@ -24,7 +24,7 @@ keywords: "wcag 2.2, irayẹ-si, focus visible, skip link, prefers reduced motio
 
 ## Ohun ti o gba lọfẹ
 
-| WCAG 2.2 SC | Ohun ti v1.1.7 ṣe | Bawo ni a ṣe le ṣayẹwo |
+| WCAG 2.2 SC | Ohun ti v2.0.0 ṣe | Bawo ni a ṣe le ṣayẹwo |
 |---|---|---|
 | **1.4.3 Iyatọ (Ti o kere julọ) — AA** | `--cl-primary` ati `--cl-secondary` ni a ṣe dudu si ≥ 4.5:1 si funfun | DevTools → olutọ iyatọ |
 | **1.4.11 Iyatọ ti kii ṣe ọrọ — AA** | Awọn ala fọọmu, awọn bọtini, awọn aami gbogbo ≥ 3:1 | Kanna |
@@ -91,5 +91,5 @@ node scripts/a11y-test.mjs https://example.com
 CI ṣiṣẹ iwe afọwọkọ yii si oju-iwe ifihan `dist/index.html` lori
 igbewọle kọọkan.
 
-[Ka nipa itusilẹ v1.1.7 →](/yo/iwe-iyipada/) ·
+[Ka nipa itusilẹ v2.0.0 →](/yo/iwe-iyipada/) ·
 [Wo oju-iwe aabo →](/yo/aabo/)

@@ -1,7 +1,7 @@
 ---
 title: "Hieu ung dong"
 name: "Skeletonic Stylus"
-description: "Mo-dun hieu ung dong tuy chon cua Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake va nhieu hon, tat ca deu nam sau prefers-reduced-motion."
+description: "Mo-dun hieu ung dong tuy chon cua Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake va nhieu hon, tat ca deu nam sau prefers-reduced-motion."
 layout: page
 language: vi
 permalink: https://skeletonic.io/vi/hieu-ung/
@@ -22,7 +22,7 @@ stylesheet chinh giu duoi 8&nbsp;KB gzip.
 ```
 
 Moi lop hieu ung dong duoc boc trong khoi
-**`@media (prefers-reduced-motion: no-preference)`** trong v1.1.7,
+**`@media (prefers-reduced-motion: no-preference)`** trong v2.0.0,
 nghia la nguoi dung da bat "giam chuyen dong" o cap he dieu hanh se
 khong thay hieu ung nao — bo cuc van hoat dong, chuyen dong chi bi
 tat di.
@@ -85,7 +85,7 @@ con thieu de keyframe hien thi.
 
 <p class="anim-note-rm">
   Giam chuyen dong da duoc bat trong he dieu hanh cua ban, vi vay cac
-  doi tuong ben duoi se dung yen — do la hanh vi tro nang v1.1.7 hoat
+  doi tuong ben duoi se dung yen — do la hanh vi tro nang v2.0.0 hoat
   dong chinh xac.
 </p>
 
@@ -262,9 +262,9 @@ con thieu de keyframe hien thi.
 | `.vanishIn` / `.vanishOut` | Xuat hien kieu Material |
 | `.chameleonbackground` / `.chameleontext` | Chu ky sac do |
 
-## Luu y — caveat v1.1.7
+## Luu y — caveat v2.0.0
 
-Cac lop hieu ung dong trong v1.1.7 chi dat `animation-name`. De phat
+Cac lop hieu ung dong trong v2.0.0 chi dat `animation-name`. De phat
 chung, ban hien tai phai cung cap `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` va
 `animation-timing-function` cua rieng ban — chinh xac nhu khoi `<style>`

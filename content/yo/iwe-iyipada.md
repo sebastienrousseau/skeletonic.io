@@ -1,21 +1,21 @@
 ---
 title: "Iwe Iyipada"
 name: "Skeletonic Stylus"
-description: "Awọn akiyesi itusilẹ fun Skeletonic Stylus, pẹlu v1.1.7 ni kikun."
+description: "Awọn akiyesi itusilẹ fun Skeletonic Stylus, pẹlu v2.0.0 ni kikun."
 language: yo
 layout: page
 permalink: https://skeletonic.io/yo/iwe-iyipada/
 author: Sebastien Rousseau
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "iwe iyipada skeletonic, awọn akiyesi itusilẹ, v1.1.7, semver"
+keywords: "iwe iyipada skeletonic, awọn akiyesi itusilẹ, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (lọwọlọwọ)
+## v2.0.0 — 2026-04 (lọwọlọwọ)
 
 Ipari "imurasilẹ-itusilẹ": a11y, ẹwọn ipese, itọju ibi-ipamọ.
 
@@ -46,7 +46,7 @@ Ipari "imurasilẹ-itusilẹ": a11y, ẹwọn ipese, itọju ibi-ipamọ.
 ### Itọju ibi-ipamọ &amp; package olumulo
 - A yọ itọsọna `package/` atijọ kuro; `dist/` ni orisun otitọ kan
   bayi fun awọn olumulo.
-- A tun README kọ lati ṣe afihan awọn ọna fifi sori ẹrọ v1.1.7.
+- A tun README kọ lati ṣe afihan awọn ọna fifi sori ẹrọ v2.0.0.
 - A fi `dist/` sinu adehun; a ṣẹda `debug/` ti a si fi sinu gitignore.
 - `.github/workflows/npm-publish.yml` tuntun ni ami-akọle wakọ.
 
@@ -58,7 +58,7 @@ Ipari "imurasilẹ-itusilẹ": a11y, ẹwọn ipese, itọju ibi-ipamọ.
 - **Orukọ `.alert-*`** — `.alert.success` → `.alert.alert-success`
   lati yẹra fun ikọlu pẹlu awọn kilasi ipo.
 
-[Gbogbo awọn akiyesi itusilẹ v1.1.7 lori GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Gbogbo awọn akiyesi itusilẹ v2.0.0 lori GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Itan">
 

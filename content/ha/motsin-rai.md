@@ -1,7 +1,7 @@
 ---
 title: "Motsin Rai"
 name: "Skeletonic Stylus"
-description: "Module na motsin rai na zaɓi da Skeletonic Stylus v1.1.7 ke aikawa — bounce, pulse, fade, zoom, shake, da abokai, duka a bayan prefers-reduced-motion."
+description: "Module na motsin rai na zaɓi da Skeletonic Stylus v2.0.0 ke aikawa — bounce, pulse, fade, zoom, shake, da abokai, duka a bayan prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/ha/motsin-rai/
 date: 2026-04-08
@@ -20,7 +20,7 @@ load_animations: true
   href="/css/skeletonic-animations.min.css">
 ```
 
-An nannaɗe kowane ajin motsin rai a cikin tubalan **`@media (prefers-reduced-motion: no-preference)`** a v1.1.7, wanda ke nufin mai amfani da ya saita "rage motsi" a matakin OS ba zai ga kowane motsin rai ba — tsarin har yanzu yana aiki, motsin kawai an danne shi.
+An nannaɗe kowane ajin motsin rai a cikin tubalan **`@media (prefers-reduced-motion: no-preference)`** a v2.0.0, wanda ke nufin mai amfani da ya saita "rage motsi" a matakin OS ba zai ga kowane motsin rai ba — tsarin har yanzu yana aiki, motsin kawai an danne shi.
 
 <style>
   /*
@@ -80,7 +80,7 @@ An nannaɗe kowane ajin motsin rai a cikin tubalan **`@media (prefers-reduced-mo
 Danna **Kunna** a kowanne katuna don sake kunna motsin rai a kan murabba'in. Azuzuwan motsin rai su ne ainihin abin da ke cikin `skeletonic-animations.min.css` — tubalan `<style>` a sama kawai ya ƙara `animation-duration` / `animation-iteration-count` / `animation-fill-mode` da ba su nan don keyframes su bayyana.
 
 <p class="anim-note-rm">
-  An kunna Rage Motsi a cikin OS ɗin ku, don haka abubuwan da ke ƙasa za su kasance a tsaye — wannan halayen samun dama na v1.1.7 ne ke aiki daidai.
+  An kunna Rage Motsi a cikin OS ɗin ku, don haka abubuwan da ke ƙasa za su kasance a tsaye — wannan halayen samun dama na v2.0.0 ne ke aiki daidai.
 </p>
 
 <div class="anim-grid">
@@ -216,7 +216,7 @@ Danna **Kunna** a kowanne katuna don sake kunna motsin rai a kan murabba'in. Azu
 </div>
 
 <script>
-  // Azuzuwan motsin rai a v1.1.7 suna saita animation-name a cikin
+  // Azuzuwan motsin rai a v2.0.0 suna saita animation-name a cikin
   // selector ɗin kanta. Don sake kunna keyframe dole ne mu cire ajin,
   // tilasta layout flush, sannan mu sake ƙara ajin.
   function replayAnim(btn, name){
@@ -261,8 +261,8 @@ Danna **Kunna** a kowanne katuna don sake kunna motsin rai a kan murabba'in. Azu
 | `.vanishIn` / `.vanishOut` | Bayyanar salon Material |
 | `.chameleonbackground` / `.chameleontext` | Zagayen launi |
 
-## Lura — abin da aka sani a v1.1.7
+## Lura — abin da aka sani a v2.0.0
 
-Azuzuwan motsin rai a v1.1.7 suna saita `animation-name` kawai. Don kunna su a halin yanzu dole ne ku ba da naku `animation-duration`, `animation-iteration-count`, `animation-fill-mode` da `animation-timing-function` — kamar yadda tubalan `<style>` a saman wannan shafin ke nunawa. Sakin gaba zai saka saita tushe mai ma'ana ta tsoho don `<div class="bounce">` ya yi aiki kai tsaye daga cikin akwatin.
+Azuzuwan motsin rai a v2.0.0 suna saita `animation-name` kawai. Don kunna su a halin yanzu dole ne ku ba da naku `animation-duration`, `animation-iteration-count`, `animation-fill-mode` da `animation-timing-function` — kamar yadda tubalan `<style>` a saman wannan shafin ke nunawa. Sakin gaba zai saka saita tushe mai ma'ana ta tsoho don `<div class="bounce">` ya yi aiki kai tsaye daga cikin akwatin.
 
 [Duba bayanan samun dama →](/ha/samun-dama/)

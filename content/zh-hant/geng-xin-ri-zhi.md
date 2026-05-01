@@ -1,21 +1,21 @@
 ---
 title: "更新日誌"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus 發行說明，包含 v1.1.7 完整內容。"
+description: "Skeletonic Stylus 發行說明，包含 v2.0.0 完整內容。"
 language: zh-hant
 layout: page
 permalink: https://skeletonic.io/zh-hant/geng-xin-ri-zhi/
 author: Sebastien Rousseau
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic 更新日誌, 發行說明, v1.1.7, 語意化版本"
+keywords: "skeletonic 更新日誌, 發行說明, v2.0.0, 語意化版本"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04（當前版本）
+## v2.0.0 — 2026-04（當前版本）
 
 「發行就緒」審查：無障礙、供應鏈、儲存庫整理。
 
@@ -38,7 +38,7 @@ keywords: "skeletonic 更新日誌, 發行說明, v1.1.7, 語意化版本"
 
 ### 儲存庫整理與消費者套件
 - 移除舊版 `package/` 目錄；`dist/` 現在是消費者的唯一真實來源。
-- README 重寫以反映 v1.1.7 安裝路徑。
+- README 重寫以反映 v2.0.0 安裝路徑。
 - `dist/` 已提交；`debug/` 為生成目錄且已加入 gitignore。
 - 新的 `.github/workflows/npm-publish.yml` 由標籤驅動。
 
@@ -47,7 +47,7 @@ keywords: "skeletonic 更新日誌, 發行說明, v1.1.7, 語意化版本"
 - **`.alternate`** 錯誤地套用 `animation-direction: reverse` 而非 `alternate`。
 - **`.alert-*` 命名空間化** — `.alert.success` → `.alert.alert-success`，避免與狀態類別衝突。
 
-[GitHub 上的完整 v1.1.7 發行說明 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[GitHub 上的完整 v2.0.0 發行說明 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="歷史">
 

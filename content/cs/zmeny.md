@@ -1,21 +1,21 @@
 ---
 title: "Seznam zmen — Skeletonic Stylus"
 name: "Skeletonic Stylus"
-description: "Poznamky k vydanim Skeletonic Stylus, s kompletnim popisem v1.1.7."
+description: "Poznamky k vydanim Skeletonic Stylus, s kompletnim popisem v2.0.0."
 layout: page
 permalink: https://skeletonic.io/cs/zmeny/
 author: Sebastien Rousseau
 language: cs
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic seznam zmen, poznamky k vydani, v1.1.7, semver"
+keywords: "skeletonic seznam zmen, poznamky k vydani, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (aktualni)
+## v2.0.0 — 2026-04 (aktualni)
 
 Pruchod „pripravenost k vydani": pristupnost, dodavatelsky retezec, hygiena repozitare.
 
@@ -44,7 +44,7 @@ Pruchod „pripravenost k vydani": pristupnost, dodavatelsky retezec, hygiena re
 ### Hygiena repozitare a spotrebitelsky balicek
 - Zastaraly adresar `package/` odstranen; `dist/` je nyni jediny zdroj
   pravdy pro spotrebitele.
-- README prepsano aby odrazelo instalacni cesty v1.1.7.
+- README prepsano aby odrazelo instalacni cesty v2.0.0.
 - `dist/` je commitovano; `debug/` je generovano a gitignorováno.
 - Novy `.github/workflows/npm-publish.yml` je rizeny tagy.
 
@@ -56,7 +56,7 @@ Pruchod „pripravenost k vydani": pristupnost, dodavatelsky retezec, hygiena re
 - **Jmenne prostory `.alert-*`** — `.alert.success` → `.alert.alert-success`
   pro zamezeni kolizi se stavovymi tridami.
 
-[Kompletni poznamky k vydani v1.1.7 na GitHubu ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Kompletni poznamky k vydani v2.0.0 na GitHubu ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historie">
 

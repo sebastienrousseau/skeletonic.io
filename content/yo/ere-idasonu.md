@@ -1,7 +1,7 @@
 ---
 title: "Ere Idasọnu"
 name: "Skeletonic Stylus"
-description: "Modulu ere idasọnu yan ti a fi ranṣẹ pẹlu Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake, ati awọn ọrẹ, gbogbo lẹhin prefers-reduced-motion."
+description: "Modulu ere idasọnu yan ti a fi ranṣẹ pẹlu Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake, ati awọn ọrẹ, gbogbo lẹhin prefers-reduced-motion."
 language: yo
 layout: page
 permalink: https://skeletonic.io/yo/ere-idasonu/
@@ -22,7 +22,7 @@ iwe-aṣa ipilẹ wa labẹ 8&nbsp;KB gzipped.
 ```
 
 Gbogbo kilasi ere idasọnu ni a fi sinu bulọọki
-**`@media (prefers-reduced-motion: no-preference)`** ninu v1.1.7, eyi
+**`@media (prefers-reduced-motion: no-preference)`** ninu v2.0.0, eyi
 ti o tumọ si pe olumulo ti o ti ṣeto "din iṣipopada ku" ni ipele OS ko
 ni ri ere idasọnu kankan — eto naa si ṣiṣẹ, iṣipopada nikan ni a
 dinku.
@@ -85,7 +85,7 @@ awọn keyframes le han.
 
 <p class="anim-note-rm">
   A ti mu Idinku Iṣipopada ṣiṣẹ ni OS rẹ, nitorinaa awọn ibi-afẹde ni
-  isalẹ yoo duro jẹ — iyẹn ni ihuwasi irayẹ-si v1.1.7 n ṣiṣẹ ni deede.
+  isalẹ yoo duro jẹ — iyẹn ni ihuwasi irayẹ-si v2.0.0 n ṣiṣẹ ni deede.
 </p>
 
 <div class="anim-grid">
@@ -261,9 +261,9 @@ awọn keyframes le han.
 | `.vanishIn` / `.vanishOut` | Ifarahan ara Material |
 | `.chameleonbackground` / `.chameleontext` | Iyipo awọ |
 
-## Akiyesi — ohun ti a mọ nipa v1.1.7
+## Akiyesi — ohun ti a mọ nipa v2.0.0
 
-Awọn kilasi ere idasọnu ninu v1.1.7 ṣeto `animation-name` nikan. Lati
+Awọn kilasi ere idasọnu ninu v2.0.0 ṣeto `animation-name` nikan. Lati
 mu wọn ṣiṣẹ o ni lati pese `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` ati
 `animation-timing-function` tirẹ — gẹgẹ bi bulọọki `<style>` ni oke

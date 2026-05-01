@@ -15,7 +15,7 @@ Barrierefreies CSS in **unter 8&nbsp;KB gzipped**. WCAG&nbsp;2.2 konform.
 Cascade-layered. Kein JavaScript. Einfach in jede Seite einbinden.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Die Anatomie von Skeletonic

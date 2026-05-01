@@ -1,7 +1,7 @@
 ---
 title: "Farbpaletten"
 name: "Skeletonic Stylus"
-description: "Material-, Tachyons- und websichere Farbpaletten in Skeletonic Stylus v1.1.7."
+description: "Material-, Tachyons- und websichere Farbpaletten in Skeletonic Stylus v2.0.0."
 layout: page
 language: de
 permalink: https://skeletonic.io/de/paletten/
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css palette, material, tachyons, websafe, design tokens"
 ---
 
-Skeletonic Stylus v1.1.7 liefert **drei optionale Farbpaletten**, jeweils
+Skeletonic Stylus v2.0.0 liefert **drei optionale Farbpaletten**, jeweils
 als eigenständiges, minifiziertes Stylesheet verteilt — so zahlen Sie nur
 für das, was Sie tatsächlich verwenden.
 
@@ -63,9 +63,9 @@ bereitgestellt als `--cl-grey-100` … `--cl-grey-1000`.
 
 <hr class="hr-text" data-content="Marke">
 
-## Markenfarben (v1.1.7 — AA-Kontrast)
+## Markenfarben (v2.0.0 — AA-Kontrast)
 
-In v1.1.7 wurden die primären und sekundären Farbtokens abgedunkelt, um
+In v2.0.0 wurden die primären und sekundären Farbtokens abgedunkelt, um
 den **WCAG-Kontrast von 4,5:1** gegenüber weißem Text standardmäßig
 zu erfüllen.
 

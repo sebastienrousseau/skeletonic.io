@@ -1,12 +1,12 @@
 {
-  "title": "Jste offline",
-  "permalink": "https://skeletonic.io/cs/offline/",
-  "language": "cs",
-  "layout": "page",
   "author": "Sebastien Rousseau",
+  "title": "Jste offline",
+  "layout": "page",
   "date": "2026-04-08",
+  "description": "skeletonic.io se nemuze pripojit k siti. Stranka, kterou jste pozadovali, jeste nebyla ulozena do cache.",
   "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "description": "skeletonic.io se nemuze pripojit k siti. Stranka, kterou jste pozadovali, jeste nebyla ulozena do cache.",
-  "keywords": "offline, service worker, pwa"
+  "language": "cs",
+  "keywords": "offline, service worker, pwa",
+  "permalink": "https://skeletonic.io/cs/offline/"
 }

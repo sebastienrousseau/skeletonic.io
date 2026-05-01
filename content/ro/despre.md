@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, despre, stylus, framework css, filosofie"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, despre, stylus, framework css, filosofie"
   <img alt="Stele GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Descărcări lunare" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="Versiune npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Dimensiune bundle" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Dimensiune bundle" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Licență" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -104,7 +104,7 @@ Skeletonic Stylus urmează [Semantic Versioning 2.0](https://semver.org).
 |---|---|---|
 | **Major** | Eliminarea sau redenumirea unei clase publice, a unui mixin sau token | 1.x → 2.0 |
 | **Minor** | Adăugarea unei componente, a unui mixin sau token nou | 1.1 → 1.2 |
-| **Patch** | Remedieri de erori, rafinări a11y, performanță, securitate | 1.1.6 → 1.1.7 |
+| **Patch** | Remedieri de erori, rafinări a11y, performanță, securitate | 1.1.6 → 2.0.0 |
 
 Toate numele de clase publice, toate proprietățile CSS personalizate și toate mixin-urile Stylus exportate fac parte din API-ul public. O modificare disruptivă primește un bump major și un ghid de migrare.
 

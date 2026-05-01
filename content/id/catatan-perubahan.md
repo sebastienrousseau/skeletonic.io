@@ -1,21 +1,21 @@
 ---
 title: "Catatan Perubahan"
 name: "Skeletonic Stylus"
-description: "Catatan rilis untuk Skeletonic Stylus, dengan v1.1.7 secara lengkap."
+description: "Catatan rilis untuk Skeletonic Stylus, dengan v2.0.0 secara lengkap."
 layout: page
 permalink: https://skeletonic.io/id/catatan-perubahan/
 author: Sebastien Rousseau
 language: id
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "catatan perubahan skeletonic, catatan rilis, v1.1.7, semver"
+keywords: "catatan perubahan skeletonic, catatan rilis, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (terkini)
+## v2.0.0 — 2026-04 (terkini)
 
 Tahap "kesiapan rilis": a11y, rantai pasokan, kebersihan repositori.
 
@@ -38,7 +38,7 @@ Tahap "kesiapan rilis": a11y, rantai pasokan, kebersihan repositori.
 
 ### Kebersihan repositori &amp; paket konsumen
 - Direktori legacy `package/` dihapus; `dist/` sekarang menjadi satu-satunya sumber kebenaran bagi konsumen.
-- README ditulis ulang untuk mencerminkan jalur instal v1.1.7.
+- README ditulis ulang untuk mencerminkan jalur instal v2.0.0.
 - `dist/` di-commit; `debug/` dihasilkan dan di-gitignore.
 - `.github/workflows/npm-publish.yml` baru berbasis tag.
 
@@ -47,7 +47,7 @@ Tahap "kesiapan rilis": a11y, rantai pasokan, kebersihan repositori.
 - **`.alternate`** salah menerapkan `animation-direction: reverse` alih-alih `alternate`.
 - **Namespace `.alert-*`** — `.alert.success` → `.alert.alert-success` untuk menghindari tabrakan dengan kelas state.
 
-[Catatan rilis v1.1.7 lengkap di GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Catatan rilis v2.0.0 lengkap di GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Riwayat">
 

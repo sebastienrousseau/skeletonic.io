@@ -1,7 +1,7 @@
 ---
 title: "Палитры"
 name: "Skeletonic Stylus"
-description: "Цветовые палитры Material, Tachyons и Web-safe, входящие в Skeletonic Stylus v1.1.7."
+description: "Цветовые палитры Material, Tachyons и Web-safe, входящие в Skeletonic Stylus v2.0.0."
 layout: page
 permalink: https://skeletonic.io/ru/palitry/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css палитра, material, tachyons, websafe, дизайн-токены"
 ---
 
-Skeletonic Stylus v1.1.7 поставляется с **тремя опциональными цветовыми палитрами**, каждая из которых распространяется как отдельный минифицированный файл стилей — вы платите только за то, что используете.
+Skeletonic Stylus v2.0.0 поставляется с **тремя опциональными цветовыми палитрами**, каждая из которых распространяется как отдельный минифицированный файл стилей — вы платите только за то, что используете.
 
 | Палитра | Файл | Размер (min) |
 |---|---|---|
@@ -59,9 +59,9 @@ Skeletonic Stylus v1.1.7 поставляется с **тремя опциона
 
 <hr class="hr-text" data-content="Бренд">
 
-## Фирменные цвета (v1.1.7 — контраст AA)
+## Фирменные цвета (v2.0.0 — контраст AA)
 
-В v1.1.7 токены primary и secondary были затемнены для соответствия **WCAG 4.5:1** контраста на белом тексте прямо из коробки.
+В v2.0.0 токены primary и secondary были затемнены для соответствия **WCAG 4.5:1** контраста на белом тексте прямо из коробки.
 
 <div class="row margin-top-3">
   <div class="flex-4 padding-3 text-center" style="background-color: hsl(210, 100%, 42%); color: #fff;">

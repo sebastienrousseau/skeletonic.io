@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -221,7 +221,7 @@ karn-stylesheetet hallar sig under 8 KB gzippat.</p>
 </span></pre>
 </code></pre>
 <p>Varje animationsklass ar inlindad i ett
-<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong>-block i v1.1.7,
+<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong>-block i v2.0.0,
 vilket innebar att en anvandare som har stallt in &quot;reducera rorelse&quot; pa
 OS-niva inte ser nagon animation alls — layouten fungerar fortfarande,
 rorelsen undertrycks bara.</p>
@@ -284,7 +284,7 @@ biblioteket, sa det omgivande <code>&lt;style&gt;</code>-blocket ovan lagger til
 <code>animation-duration</code> / <code>animation-iteration-count</code> / <code>animation-fill-mode</code>-egenskaperna for att gora keyframes synliga.</p>
 <p class="anim-note-rm">
   Reducerad rorelse ar aktiverat i ditt OS, sa malen nedan stannar
-  stilla — det ar v1.1.7:s tillganglighetsbeteende som fungerar korrekt.
+  stilla — det ar v2.0.0:s tillganglighetsbeteende som fungerar korrekt.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -493,8 +493,8 @@ biblioteket, sa det omgivande <code>&lt;style&gt;</code>-blocket ovan lagger til
 </tr>
 </tbody>
 </table></div>
-<h2>Observera — kant v1.1.7-forvaring</h2>
-<p>Animationsklasserna i v1.1.7 sattar bara <code>animation-name</code>. For att spela
+<h2>Observera — kant v2.0.0-forvaring</h2>
+<p>Animationsklasserna i v2.0.0 sattar bara <code>animation-name</code>. For att spela
 dem maste du for narvarande tillhandahalla egna varden for <code>animation-duration</code>,
 <code>animation-iteration-count</code>, <code>animation-fill-mode</code> och
 <code>animation-timing-function</code> — precis som <code>&lt;style&gt;</code>-blocket hogst upp pa

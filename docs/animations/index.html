@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -223,7 +223,7 @@ families</strong>, every one of them gated behind
 </span></pre>
 </code></pre>
 <p>Every animation class is wrapped in a
-<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> block in v1.1.7,
+<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> block in v2.0.0,
 which means a user who has set &quot;reduce motion&quot; at the OS level will see
 no animation at all — the layout still works, the motion is just
 suppressed.</p>
@@ -264,7 +264,7 @@ suppressed.</p>
     height:64px;
     border-radius:50%;
     background:hsl(210,100%,42%);
-    /* the missing properties live here so v1.1.7's animation classes
+    /* the missing properties live here so v2.0.0's animation classes
        actually run when added to the target */
     animation-duration:1.2s;
     animation-iteration-count:1;
@@ -290,7 +290,7 @@ library, so the surrounding <code>&lt;style&gt;</code> block above adds the miss
 properties to make the keyframes visible.</p>
 <p class="anim-note-rm">
   Reduce Motion is enabled in your OS, so the targets below will stay
-  still — that's the v1.1.7 accessibility behaviour working correctly.
+  still — that's the v2.0.0 accessibility behaviour working correctly.
 </p>
 <h3 id="distracting">Distracting (12)</h3>
 <p>Attention-grabbing motion for emphasis, errors, and celebrations.</p>
@@ -425,8 +425,8 @@ for a true spinner.</p>
 </tr>
 </tbody>
 </table></div>
-<h2>Heads up — known v1.1.7 caveat</h2>
-<p>The animation classes in v1.1.7 set <code>animation-name</code> only. To play them
+<h2>Heads up — known v2.0.0 caveat</h2>
+<p>The animation classes in v2.0.0 set <code>animation-name</code> only. To play them
 you currently have to provide your own <code>animation-duration</code>,
 <code>animation-iteration-count</code>, <code>animation-fill-mode</code> and
 <code>animation-timing-function</code> — exactly like the <code>&lt;style&gt;</code> block at the

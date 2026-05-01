@@ -1,7 +1,7 @@
 ---
 title: "Tsaro &amp; sarkar samarwa"
 name: "Skeletonic Stylus"
-description: "Yadda Skeletonic Stylus v1.1.7 ke tabbatar da bututun ginin sa, sanya hannu a kan sakinsa, kuma aika SBOM."
+description: "Yadda Skeletonic Stylus v2.0.0 ke tabbatar da bututun ginin sa, sanya hannu a kan sakinsa, kuma aika SBOM."
 layout: page
 permalink: https://skeletonic.io/ha/tsaro/
 date: 2026-04-08
@@ -13,7 +13,7 @@ keywords: "tsaron css, sbom, cyclonedx, tabbacin npm, openssf scorecard, sarkar 
 
 ## Aiki
 
-- **45.7&nbsp;KB da aka ƙaranta · 8.3&nbsp;KB gzipped · 6.9&nbsp;KB brotli** don dukan stylesheet na tushe.
+- **45.0&nbsp;KB da aka ƙaranta · 8.6&nbsp;KB gzipped · 7.2&nbsp;KB brotli** don dukan stylesheet na tushe.
 - **Babu JavaScript** — Stylus tsantsa → CSS tsantsa, babu kuɗin lokacin aiki.
 - **Cascade-layered** — soke suna cin nasara ba tare da `!important` ba.
 - **An tilasta kasafin `size-limit`** a CI a kan kowanne commit.
@@ -22,7 +22,7 @@ Aiki ikon tsaro ne. Kowane byte da ba a aika shi ba ɗaya ne da ba za a duba shi
 
 ## Taƙaitaccen sarkar samarwa
 
-| Iko | Matsayin v1.1.7 |
+| Iko | Matsayin v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | An ƙirƙira shi a kowanne sakin, an adana shi a ƙarƙashin `dist/sbom.json` |
 | **Tabbacin npm** | An kunna (`--provenance --access public`) |
@@ -40,10 +40,10 @@ Aiki ikon tsaro ne. Kowane byte da ba a aika shi ba ɗaya ne da ba za a duba shi
 Kowanne tarball da aka buga ya haɗa da CycloneDX SBOM a `dist/sbom.json`. Kuna iya tabbatar da fakiti da aka sabo shigar da:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 Ana ƙirƙira SBOM da `cyclonedx-npm` yayin aikin buga.
@@ -57,7 +57,7 @@ An sanya hannu a kan kayan da aka buga ta amfani da [tabbacin fakitin npm](https
 Kuna iya tabbatar da shi bayan shigarwa da:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -69,7 +69,7 @@ Shaida da aka sanya hannu tana haɗa tarball zuwa ainihin gudanar da GitHub Acti
 
 | CVE | Tsanani | Matsayi |
 |---|---|---|
-| **CVE-2023-44270** (matsalar sakin layi ta postcss) | Matsakaici | **An gyara** a v1.1.7 ta hanyar `pnpm.overrides` da ke sabunta `postcss` zuwa ≥ 8.4.31 |
+| **CVE-2023-44270** (matsalar sakin layi ta postcss) | Matsakaici | **An gyara** a v2.0.0 ta hanyar `pnpm.overrides` da ke sabunta `postcss` zuwa ≥ 8.4.31 |
 
 Ana sa ido kan bayanan shawarwarin Snyk da bayanan Shawarwarin Tsaro na GitHub a kullum; gyare-gyaren tsaro ana aika su azaman **sakin matakin gyara**.
 

@@ -1,12 +1,12 @@
 {
-  "language": "hi",
-  "keywords": "संपर्क, सहायता, फ़ीडबैक, skeletonic",
-  "title": "संपर्क",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
   "description": "Skeletonic Stylus के बारे में संपर्क करें — बग रिपोर्ट, फ़ीचर आइडिया, साझेदारी, या सामान्य फ़ीडबैक।",
-  "layout": "contact",
-  "author": "Sebastien Rousseau",
   "date": "2026-04-08",
   "permalink": "https://skeletonic.io/hi/sampark/",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "layout": "contact",
+  "title": "संपर्क",
+  "language": "hi",
+  "author": "Sebastien Rousseau",
+  "keywords": "संपर्क, सहायता, फ़ीडबैक, skeletonic"
 }

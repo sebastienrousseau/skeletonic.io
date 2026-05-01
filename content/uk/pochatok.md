@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "встановити skeletonic, налаштування stylus, css cdn, початок роботи"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Вступ
 
-Вперше знайомитесь зі Skeletonic Stylus? У **v1.1.7** як ніколи просто
+Вперше знайомитесь зі Skeletonic Stylus? У **v2.0.0** як ніколи просто
 обрати лише потрібні вам функції. Завдяки мініатюрному розміру
 (8,3&nbsp;КБ gzip для основної таблиці стилів) бібліотека швидко
 інтегрується в будь-який веб-додаток — без JavaScript-фреймворку, без
@@ -36,13 +36,13 @@ keywords: "встановити skeletonic, налаштування stylus, css
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### З CDN
@@ -53,25 +53,25 @@ yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
 Для максимальної цілісності скопіюйте **SRI-хеш** з приміток до релізу
-v1.1.7 та додайте атрибут `integrity="sha384-…"`.
+v2.0.0 та додайте атрибут `integrity="sha384-…"`.
 
 ### Альтернативні CDN-адреси
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Так | Так |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Так | Ні |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Так | Так |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Так | Ні |
 
 ### Завантаження з релізів GitHub
 
@@ -155,7 +155,7 @@ Skeletonic надає свої дизайн-токени як **CSS-змінні
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Це працює.</h1>
@@ -174,7 +174,7 @@ Skeletonic надає свої дизайн-токени як **CSS-змінні
 організоване за категоріями:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -213,7 +213,7 @@ Skeletonic надає свої дизайн-токени як **CSS-змінні
 ## Часті запитання
 
 **Як встановити Skeletonic Stylus?**
-Виконайте `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Або
+Виконайте `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Або
 завантажте скомпільований CSS безпосередньо з CDN — крок збірки
 не потрібен.
 
@@ -222,7 +222,7 @@ Skeletonic надає свої дизайн-токени як **CSS-змінні
 рантаймі. Компоненти працюють без жодного рядка JS.
 
 **Чи відповідає WCAG 2.2?**
-Так. v1.1.7 постачається з контрастом рівня AA, кільцями focus-visible,
+Так. v2.0.0 постачається з контрастом рівня AA, кільцями focus-visible,
 skip-link хелперами, підтримкою зменшення руху та темним режимом
 за замовчуванням.
 
@@ -245,7 +245,7 @@ skip-link хелперами, підтримкою зменшення руху �
       "name": "Як встановити Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Виконайте pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Або завантажте скомпільований CSS безпосередньо з CDN — крок збірки не потрібен."
+        "text": "Виконайте pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Або завантажте скомпільований CSS безпосередньо з CDN — крок збірки не потрібен."
       }
     },
     {
@@ -261,7 +261,7 @@ skip-link хелперами, підтримкою зменшення руху �
       "name": "Чи відповідає Skeletonic Stylus вимогам WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Так. v1.1.7 постачається з контрастом рівня AA, кільцями focus-visible, skip-link хелперами, підтримкою зменшення руху та темним режимом за замовчуванням."
+        "text": "Так. v2.0.0 постачається з контрастом рівня AA, кільцями focus-visible, skip-link хелперами, підтримкою зменшення руху та темним режимом за замовчуванням."
       }
     },
     {

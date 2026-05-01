@@ -1,7 +1,7 @@
 ---
 title: "Palet"
 name: "Skeletonic Stylus"
-description: "Palet warna Material, Tachyons, dan web-safe yang disertakan dalam Skeletonic Stylus v1.1.7."
+description: "Palet warna Material, Tachyons, dan web-safe yang disertakan dalam Skeletonic Stylus v2.0.0."
 layout: page
 permalink: https://skeletonic.io/id/palet/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "palet css, material, tachyons, websafe, token desain"
 ---
 
-Skeletonic Stylus v1.1.7 menyertakan **tiga palet warna opsional**, masing-masing didistribusikan sebagai stylesheet diminifikasi tersendiri sehingga Anda hanya membayar untuk yang digunakan.
+Skeletonic Stylus v2.0.0 menyertakan **tiga palet warna opsional**, masing-masing didistribusikan sebagai stylesheet diminifikasi tersendiri sehingga Anda hanya membayar untuk yang digunakan.
 
 | Palet | File | Ukuran (min) |
 |---|---|---|
@@ -59,9 +59,9 @@ Stylesheet inti menyertakan skala abu-abu aksesibel 11 langkah yang diekspos seb
 
 <hr class="hr-text" data-content="Merek">
 
-## Warna merek (v1.1.7 — kontras AA)
+## Warna merek (v2.0.0 — kontras AA)
 
-Di v1.1.7, token primary dan secondary digelapkan untuk memenuhi **kontras WCAG 4,5:1** terhadap teks putih secara langsung.
+Di v2.0.0, token primary dan secondary digelapkan untuk memenuhi **kontras WCAG 4,5:1** terhadap teks putih secara langsung.
 
 <div class="row margin-top-3">
   <div class="flex-4 padding-3 text-center" style="background-color: hsl(210, 100%, 42%); color: #fff;">

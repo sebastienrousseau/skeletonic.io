@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — 접근성 높은 CSS, 약 8.3 KB gzipped"
+title: "Skeletonic Stylus — 접근성 높은 CSS, 약 8.6 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus는 가볍고 모듈화된 Stylus CSS 라이브러리입니다. WCAG 2.2 준수, 캐스케이드 레이어 지원, 약 8.3 KB gzipped — 현대적인 웹 UI 개발을 간소화하도록 설계되었습니다."
+description: "Skeletonic Stylus는 가볍고 모듈화된 Stylus CSS 라이브러리입니다. WCAG 2.2 준수, 캐스케이드 레이어 지원, 약 8.6 KB gzipped — 현대적인 웹 UI 개발을 간소화하도록 설계되었습니다."
 layout: index
 permalink: https://skeletonic.io/ko/
 date: 2026-04-08
@@ -15,7 +15,7 @@ keywords: "css, stylus, css 프레임워크, 접근성 css, wcag 2.2, 경량 css
 캐스케이드 레이어 지원. JavaScript 없음. 어떤 페이지에든 바로 적용 가능합니다.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Skeletonic의 구조

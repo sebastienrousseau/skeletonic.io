@@ -1,7 +1,7 @@
 ---
-title: "Accessibility — WCAG 2.2 in v1.1.7"
+title: "Accessibility — WCAG 2.2 in v2.0.0"
 name: "Skeletonic Stylus"
-description: "What v1.1.7 ships out of the box for WCAG 2.2 conformance — focus rings, contrast, skip links, motion, and dark mode."
+description: "What v2.0.0 ships out of the box for WCAG 2.2 conformance — focus rings, contrast, skip links, motion, and dark mode."
 layout: page
 permalink: https://skeletonic.io/accessibility/
 date: 2026-04-08
@@ -10,7 +10,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, accessibility, focus visible, skip link, prefers reduced motion, contrast"
 ---
 
-> **Skeletonic Stylus v1.1.7 ships WCAG 2.2 conformance as the default
+> **Skeletonic Stylus v2.0.0 ships WCAG 2.2 conformance as the default
 > behaviour, not as an optional theme.** This page documents what's
 > baked in and what mixins you can opt into for finer control.
 
@@ -18,7 +18,7 @@ keywords: "wcag 2.2, accessibility, focus visible, skip link, prefers reduced mo
 
 ## What you get for free
 
-| WCAG 2.2 SC | What v1.1.7 does | How to verify |
+| WCAG 2.2 SC | What v2.0.0 does | How to verify |
 |---|---|---|
 | **1.4.3 Contrast (Minimum) — AA** | `--cl-primary` and `--cl-secondary` darkened to ≥ 4.5:1 against white | DevTools → contrast checker |
 | **1.4.11 Non-text Contrast — AA** | Form borders, buttons, badges all ≥ 3:1 | Same |
@@ -102,7 +102,7 @@ left-to-right.
 
 ## Themable headings via `--gr-h1`…`--gr-h6`
 
-v1.1.7 wires the `<h1>`–`<h6>` rules to runtime CSS custom properties
+v2.0.0 wires the `<h1>`–`<h6>` rules to runtime CSS custom properties
 so you can retheme typography without recompiling Stylus. The defaults
 follow a 1.27 (minor third) ratio:
 
@@ -143,5 +143,5 @@ node scripts/a11y-test.mjs https://example.com
 CI runs this script against the `dist/index.html` showcase page on
 every push.
 
-[Read about the v1.1.7 release →](/changelog/) ·
+[Read about the v2.0.0 release →](/changelog/) ·
 [See the security page →](/security/)

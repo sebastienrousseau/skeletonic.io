@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "shigar da skeletonic, saita stylus, css cdn, fara"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Gabatarwa
 
-Sabon zuwa Skeletonic Stylus? A cikin **v1.1.7** ya fi sauƙi fiye da kowane lokaci don zaɓar abubuwan da kuke buƙata kawai. Godiya ga ƙaramin sawun sa (8.3&nbsp;KB gzipped don stylesheet na tushe), yana haɗuwa da sauri cikin kowace manhajan yanar gizo — babu buƙatar tsarin JavaScript, babu buƙatar matakin gini idan kuna amfani da CDN.
+Sabon zuwa Skeletonic Stylus? A cikin **v2.0.0** ya fi sauƙi fiye da kowane lokaci don zaɓar abubuwan da kuke buƙata kawai. Godiya ga ƙaramin sawun sa (8.6&nbsp;KB gzipped don stylesheet na tushe), yana haɗuwa da sauri cikin kowace manhajan yanar gizo — babu buƙatar tsarin JavaScript, babu buƙatar matakin gini idan kuna amfani da CDN.
 
 Kowace hanya an bayyana ta a ƙasa — zaɓi wadda ta dace da ku.
 
@@ -30,13 +30,13 @@ Kuna iya shigar da Skeletonic Stylus ta hanyar **pnpm**, **npm** ko **yarn**, ko
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Daga CDN
@@ -47,24 +47,24 @@ Idan kuna buƙatar CSS da aka tattara kawai, saka ɗaya daga cikin waɗannan a c
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-Don mafi girman amincin kai, kwafa **SRI hash** daga bayanan sakin v1.1.7 kuma ƙara siffar `integrity="sha384-…"`.
+Don mafi girman amincin kai, kwafa **SRI hash** daga bayanan sakin v2.0.0 kuma ƙara siffar `integrity="sha384-…"`.
 
 ### Wuraren CDN na daban
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Eh | Eh |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Eh | A'a |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Eh | Eh |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Eh | A'a |
 
 ### Zazzage sakin GitHub
 
@@ -92,8 +92,8 @@ Dakin karatu yana aika fakiti da yawa da aka riga aka gina a ƙarƙashin `dist/c
 
 | Fayil | Amfani | Girma (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 45.7 KB / 8.3 KB |
-| `animations/skeletonic-animations.min.css` | Ƙarin module na motsin rai | ≈213 KB / ≈6.9 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 45.0 KB / 8.6 KB |
+| `animations/skeletonic-animations.min.css` | Ƙarin module na motsin rai | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Launukan Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Launukan Tachyons | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Launukan Web-safe | ≈3.5 KB |
@@ -142,7 +142,7 @@ Mafi ƙarancin binciken "shin ya yi aiki?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Ya yi aiki.</h1>
@@ -158,7 +158,7 @@ Idan kanun yana da girma mai sassaucin ra'ayi kuma maɓallin yana da siffar kore
 A cikin fakitin za ku sami kowanne fayil na tushe, fakitin CSS da aka tattara da ƙaranta, taswirorin tushe, da bishiyar Stylus cikakkiya da aka tsara ta nau'i:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -196,16 +196,16 @@ Kowanne module yana da kansa — jawo fakitin da kuke buƙata kawai don rage nau
 ## Tambayoyin da ake yawan yi
 
 **Ta yaya zan shigar da Skeletonic Stylus?**
-Gudanar da `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Ko loda CSS da aka tattara kai tsaye daga CDN — babu buƙatar matakin gini.
+Gudanar da `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Ko loda CSS da aka tattara kai tsaye daga CDN — babu buƙatar matakin gini.
 
 **Shin yana buƙatar JavaScript?**
 A'a. Stylesheet na tushe CSS ce tsantsa, babu kuɗin lokacin aiki. Abubuwan hadi suna aiki ba tare da layi guda na JS ba.
 
 **Shin yana shirye don WCAG 2.2?**
-Eh. v1.1.7 yana aika bambancin AA, zoben focus-visible, taimakon skip-link, tallafin rage motsi da yanayin dare ta tsoho.
+Eh. v2.0.0 yana aika bambancin AA, zoben focus-visible, taimakon skip-link, tallafin rage motsi da yanayin dare ta tsoho.
 
 **Mene ne girman gzipped?**
-45.7&nbsp;KB da aka ƙaranta, **8.3&nbsp;KB gzipped**, 6.9&nbsp;KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8&nbsp;KB a CI.
+45.0&nbsp;KB da aka ƙaranta, **8.6&nbsp;KB gzipped**, 7.2&nbsp;KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8&nbsp;KB a CI.
 
 **Wane lasisi yake amfani da shi?**
 An ba da lasisin biyu a ƙarƙashin MIT da Apache 2.0 — zaɓi wanda aikin ku ke buƙata. Kyauta don amfanin kasuwanci da na sirri.
@@ -220,7 +220,7 @@ An ba da lasisin biyu a ƙarƙashin MIT da Apache 2.0 — zaɓi wanda aikin ku k
       "name": "Ta yaya zan shigar da Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gudanar da pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Ko loda CSS da aka tattara kai tsaye daga CDN — babu buƙatar matakin gini."
+        "text": "Gudanar da pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Ko loda CSS da aka tattara kai tsaye daga CDN — babu buƙatar matakin gini."
       }
     },
     {
@@ -236,7 +236,7 @@ An ba da lasisin biyu a ƙarƙashin MIT da Apache 2.0 — zaɓi wanda aikin ku k
       "name": "Shin Skeletonic Stylus yana shirye don WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Eh. v1.1.7 yana aika bambancin AA, zoben focus-visible, taimakon skip-link, tallafin rage motsi da yanayin dare ta tsoho."
+        "text": "Eh. v2.0.0 yana aika bambancin AA, zoben focus-visible, taimakon skip-link, tallafin rage motsi da yanayin dare ta tsoho."
       }
     },
     {
@@ -244,7 +244,7 @@ An ba da lasisin biyu a ƙarƙashin MIT da Apache 2.0 — zaɓi wanda aikin ku k
       "name": "Mene ne girman gzipped na Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.7 KB da aka ƙaranta, 8.3 KB gzipped, 6.9 KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8 KB a CI a kan kowanne commit."
+        "text": "45.0 KB da aka ƙaranta, 8.6 KB gzipped, 7.2 KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8 KB a CI a kan kowanne commit."
       }
     },
     {

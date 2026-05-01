@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -220,7 +220,7 @@
 </span></pre>
 </code></pre>
 <p>Bawat animation class ay nakabalot sa isang
-<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> na bloke sa v1.1.7,
+<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> na bloke sa v2.0.0,
 na nangangahulugang ang isang gumagamit na nagtakda ng &quot;reduce motion&quot; sa antas ng OS ay hindi makakakita
 ng anumang animasyon — gumagana pa rin ang layout, sinusupil lang ang galaw.</p>
 <style>
@@ -279,7 +279,7 @@ ng anumang animasyon — gumagana pa rin ang layout, sinusupil lang ang galaw.</
 <p>Pindutin ang <strong>Play</strong> sa anumang card upang i-replay ang animasyon sa parisukat. Ang mga animation class mismo ay eksaktong kung ano ang ipinapadala sa
 <code>skeletonic-animations.min.css</code> — ang <code>animation-name</code> lamang ang itinatakda ng library, kaya ang nakapalibot na <code>&lt;style&gt;</code> na bloke sa itaas ang nagdadagdag ng nawawalang <code>animation-duration</code> / <code>animation-iteration-count</code> / <code>animation-fill-mode</code> na property upang makita ang mga keyframe.</p>
 <p class="anim-note-rm">
-  Naka-enable ang Reduce Motion sa iyong OS, kaya ang mga target sa ibaba ay mananatiling tahimik — iyon ang v1.1.7 na accessibility behaviour na gumagana nang tama.
+  Naka-enable ang Reduce Motion sa iyong OS, kaya ang mga target sa ibaba ay mananatiling tahimik — iyon ang v2.0.0 na accessibility behaviour na gumagana nang tama.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -396,7 +396,7 @@ ng anumang animasyon — gumagana pa rin ang layout, sinusupil lang ang galaw.</
   </div>
 </div>
 <script>
-  // Ang mga animation class na ipinadala sa v1.1.7 ay nagtatakda ng animation-name sa
+  // Ang mga animation class na ipinadala sa v2.0.0 ay nagtatakda ng animation-name sa
   // mismong selector. Upang i-replay ang keyframe kailangan nating alisin ang class,
   // pilitin ang layout flush, pagkatapos ay idagdag muli ang class.
   function replayAnim(btn, name){
@@ -493,8 +493,8 @@ ng anumang animasyon — gumagana pa rin ang layout, sinusupil lang ang galaw.</
 </tr>
 </tbody>
 </table></div>
-<h2>Paunawa — kilalang v1.1.7 na caveat</h2>
-<p>Ang mga animation class sa v1.1.7 ay nagtatakda lamang ng <code>animation-name</code>. Upang i-play ang mga ito
+<h2>Paunawa — kilalang v2.0.0 na caveat</h2>
+<p>Ang mga animation class sa v2.0.0 ay nagtatakda lamang ng <code>animation-name</code>. Upang i-play ang mga ito
 kailangan mong magbigay ng sarili mong <code>animation-duration</code>,
 <code>animation-iteration-count</code>, <code>animation-fill-mode</code> at
 <code>animation-timing-function</code> — eksaktong tulad ng ipinakita ng <code>&lt;style&gt;</code> na bloke sa itaas ng pahinang ito. Sa isang hinaharap na release ay maglalagay ng isang makatwirang default base setup upang ang <code>&lt;div class=&quot;bounce&quot;&gt;</code> ay gumana nang diretso mula sa kahon.</p>

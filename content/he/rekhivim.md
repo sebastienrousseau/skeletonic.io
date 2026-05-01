@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, התראות, תגיות, כותרת, ניווט hamburger, css only"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -110,7 +110,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
 
 <h3 id="alerts">התראות</h3>
 
-הודעות סטטוס עם כוונה סמנטית. **ב-v1.1.7 כל גרסה ממורחבת
+הודעות סטטוס עם כוונה סמנטית. **ב-v2.0.0 כל גרסה ממורחבת
 במפורש** תחת `.alert-{primary,secondary,info,success,warning,error}`
 כך שמחלקת הגרסה לא תתנגש עם מחלקות מצב במקומות אחרים בדף.
 
@@ -168,7 +168,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -190,7 +190,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">קל משקל</h3>
-      <p>45.7&nbsp;KB ממוזער, 8.3&nbsp;KB בדחיסת gzip.</p>
+      <p>45.0&nbsp;KB ממוזער, 8.6&nbsp;KB בדחיסת gzip.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -380,7 +380,7 @@ JavaScript.** העתיקו את הקטע למטה לדף HTML ריק שכבר ט
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "רכיבי Skeletonic Stylus",
-  "description": "כל רכיב שנשלח ב-Skeletonic Stylus v1.1.7.",
+  "description": "כל רכיב שנשלח ב-Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

@@ -1,7 +1,7 @@
 ---
 title: "Animaties"
 name: "Skeletonic Stylus"
-description: "Optionele animatiemodule geleverd met Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake en meer, allemaal achter prefers-reduced-motion."
+description: "Optionele animatiemodule geleverd met Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake en meer, allemaal achter prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/nl/animaties/
 date: 2026-04-08
@@ -21,7 +21,7 @@ het kernstylesheet onder 8&nbsp;KB gzipped blijft.
   href="/css/skeletonic-animations.min.css">
 ```
 
-Elke animatieklasse is in v1.1.7 gewikkeld in een
+Elke animatieklasse is in v2.0.0 gewikkeld in een
 **`@media (prefers-reduced-motion: no-preference)`** blok, wat betekent
 dat een gebruiker die "beperkte beweging" heeft ingesteld op OS-niveau
 helemaal geen animatie ziet — de layout werkt nog steeds, de beweging wordt
@@ -64,7 +64,7 @@ simpelweg onderdrukt.
     height:64px;
     border-radius:50%;
     background:hsl(210,100%,42%);
-    /* de ontbrekende eigenschappen staan hier zodat de animatieklassen van v1.1.7
+    /* de ontbrekende eigenschappen staan hier zodat de animatieklassen van v2.0.0
        daadwerkelijk draaien wanneer ze aan het target worden toegevoegd */
     animation-duration:1.2s;
     animation-iteration-count:1;
@@ -94,7 +94,7 @@ eigenschappen toe om de keyframes zichtbaar te maken.
 
 <p class="anim-note-rm">
   Beperkte Beweging is ingeschakeld in je OS, dus de targets hieronder blijven
-  stilstaan — dat is het v1.1.7-toegankelijkheidsgedrag dat correct werkt.
+  stilstaan — dat is het v2.0.0-toegankelijkheidsgedrag dat correct werkt.
 </p>
 
 <div class="anim-grid">
@@ -230,7 +230,7 @@ eigenschappen toe om de keyframes zichtbaar te maken.
 </div>
 
 <script>
-  // De animatieklassen geleverd in v1.1.7 stellen animation-name in via de
+  // De animatieklassen geleverd in v2.0.0 stellen animation-name in via de
   // selector zelf. Om de keyframe opnieuw af te spelen moeten we de klasse
   // verwijderen, een layout-flush forceren en dan de klasse weer toevoegen.
   function replayAnim(btn, name){
@@ -275,9 +275,9 @@ eigenschappen toe om de keyframes zichtbaar te maken.
 | `.vanishIn` / `.vanishOut` | Material-stijl verschijning |
 | `.chameleonbackground` / `.chameleontext` | Tintwisseling |
 
-## Let op — bekend v1.1.7-voorbehoud
+## Let op — bekend v2.0.0-voorbehoud
 
-De animatieklassen in v1.1.7 stellen alleen `animation-name` in. Om ze af te
+De animatieklassen in v2.0.0 stellen alleen `animation-name` in. Om ze af te
 spelen moet je momenteel zelf `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` en
 `animation-timing-function` opgeven — precies zoals het `<style>`-blok bovenaan

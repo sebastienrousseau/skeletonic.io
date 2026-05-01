@@ -1,7 +1,7 @@
 ---
 title: "Animations"
 name: "Skeletonic Stylus"
-description: "Optional animations module shipped with Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake, and friends, all behind prefers-reduced-motion."
+description: "Optional animations module shipped with Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake, and friends, all behind prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/animations/
 date: 2026-04-08
@@ -23,7 +23,7 @@ families**, every one of them gated behind
 ```
 
 Every animation class is wrapped in a
-**`@media (prefers-reduced-motion: no-preference)`** block in v1.1.7,
+**`@media (prefers-reduced-motion: no-preference)`** block in v2.0.0,
 which means a user who has set "reduce motion" at the OS level will see
 no animation at all — the layout still works, the motion is just
 suppressed.
@@ -65,7 +65,7 @@ suppressed.
     height:64px;
     border-radius:50%;
     background:hsl(210,100%,42%);
-    /* the missing properties live here so v1.1.7's animation classes
+    /* the missing properties live here so v2.0.0's animation classes
        actually run when added to the target */
     animation-duration:1.2s;
     animation-iteration-count:1;
@@ -95,7 +95,7 @@ properties to make the keyframes visible.
 
 <p class="anim-note-rm">
   Reduce Motion is enabled in your OS, so the targets below will stay
-  still — that's the v1.1.7 accessibility behaviour working correctly.
+  still — that's the v2.0.0 accessibility behaviour working correctly.
 </p>
 
 <h3 id="distracting">Distracting (12)</h3>
@@ -227,9 +227,9 @@ Material-style appear / disappear with blur.
 | **Pop** (2) | `.popIn` · `.popOut` |
 | **Vanishing** (2) | `.vanishIn` · `.vanishOut` |
 
-## Heads up — known v1.1.7 caveat
+## Heads up — known v2.0.0 caveat
 
-The animation classes in v1.1.7 set `animation-name` only. To play them
+The animation classes in v2.0.0 set `animation-name` only. To play them
 you currently have to provide your own `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` and
 `animation-timing-function` — exactly like the `<style>` block at the

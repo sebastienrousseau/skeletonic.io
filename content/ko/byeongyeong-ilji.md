@@ -1,21 +1,21 @@
 ---
 title: "변경 이력"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus의 릴리스 노트, v1.1.7 전체 내용 포함."
+description: "Skeletonic Stylus의 릴리스 노트, v2.0.0 전체 내용 포함."
 layout: page
 permalink: https://skeletonic.io/ko/byeongyeong-ilji/
 author: Sebastien Rousseau
 language: ko
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic 변경 이력, 릴리스 노트, v1.1.7, 시맨틱 버전"
+keywords: "skeletonic 변경 이력, 릴리스 노트, v2.0.0, 시맨틱 버전"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (현재)
+## v2.0.0 — 2026-04 (현재)
 
 "릴리스 준비" 패스: 접근성, 공급망, 저장소 정리.
 
@@ -38,7 +38,7 @@ keywords: "skeletonic 변경 이력, 릴리스 노트, v1.1.7, 시맨틱 버전"
 
 ### 저장소 정리 &amp; 소비자 패키지
 - 레거시 `package/` 디렉토리 제거; `dist/`가 이제 소비자를 위한 단일 소스.
-- v1.1.7 설치 경로를 반영하여 README 재작성.
+- v2.0.0 설치 경로를 반영하여 README 재작성.
 - `dist/`는 커밋됨; `debug/`는 생성되며 gitignore 처리.
 - 새로운 `.github/workflows/npm-publish.yml`은 태그 기반.
 
@@ -47,7 +47,7 @@ keywords: "skeletonic 변경 이력, 릴리스 노트, v1.1.7, 시맨틱 버전"
 - **`.alternate`** — `animation-direction: reverse` 대신 올바르게 `alternate` 적용.
 - **`.alert-*` 네임스페이스화** — `.alert.success` → `.alert.alert-success`로 변경하여 상태 클래스와의 충돌 방지.
 
-[GitHub의 전체 v1.1.7 릴리스 노트 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[GitHub의 전체 v2.0.0 릴리스 노트 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="이력">
 

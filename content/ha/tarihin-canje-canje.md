@@ -1,21 +1,21 @@
 ---
 title: "Tarihin canje-canje"
 name: "Skeletonic Stylus"
-description: "Bayanan sakin Skeletonic Stylus, tare da cikakken bayani na v1.1.7."
+description: "Bayanan sakin Skeletonic Stylus, tare da cikakken bayani na v2.0.0."
 layout: page
 permalink: https://skeletonic.io/ha/tarihin-canje-canje/
 author: Sebastien Rousseau
 language: ha
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "tarihin canje-canje na skeletonic, bayanan sakin, v1.1.7, semver"
+keywords: "tarihin canje-canje na skeletonic, bayanan sakin, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (na yanzu)
+## v2.0.0 — 2026-04 (na yanzu)
 
 Aikin "shirye-shiryen sakin": samun dama, sarkar samarwa, tsaftar ma'ajiya.
 
@@ -38,7 +38,7 @@ Aikin "shirye-shiryen sakin": samun dama, sarkar samarwa, tsaftar ma'ajiya.
 
 ### Tsaftar ma'ajiya &amp; fakitin masu amfani
 - An cire tsohon jakar `package/`; `dist/` yanzu ita ce tushe guda ɗaya na gaskiya don masu amfani.
-- An sake rubuta README don nuna hanyoyin shigarwa na v1.1.7.
+- An sake rubuta README don nuna hanyoyin shigarwa na v2.0.0.
 - An adana `dist/`; an ƙirƙira `debug/` kuma an ɓoye shi daga git.
 - Sabon `.github/workflows/npm-publish.yml` yana gudana ta alamar.
 
@@ -47,7 +47,7 @@ Aikin "shirye-shiryen sakin": samun dama, sarkar samarwa, tsaftar ma'ajiya.
 - **`.alternate`** da kuskure ya sanya `animation-direction: reverse` maimakon `alternate`.
 - **Sunan yankin `.alert-*`** — `.alert.success` → `.alert.alert-success` don guje wa karo da azuzuwan yanayi.
 
-[Cikakken bayanan sakin v1.1.7 a GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Cikakken bayanan sakin v2.0.0 a GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Tarihi">
 

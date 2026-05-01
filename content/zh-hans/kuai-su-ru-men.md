@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "安装 skeletonic, stylus 配置, css cdn, 快速入门"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## 简介
 
-初次使用 Skeletonic Stylus？在 **v1.1.7** 中，按需选取功能变得前所未有的简单。得益于极小的体积（核心样式表 gzip 后约 8.3&nbsp;KB），它能快速集成到任何 Web 应用——无需 JavaScript 框架，使用 CDN 时也无需构建步骤。
+初次使用 Skeletonic Stylus？在 **v2.0.0** 中，按需选取功能变得前所未有的简单。得益于极小的体积（核心样式表 gzip 后约 8.6&nbsp;KB），它能快速集成到任何 Web 应用——无需 JavaScript 框架，使用 CDN 时也无需构建步骤。
 
 准备好安装了吗？所有路径均在下方说明——选择适合的即可。
 
@@ -30,13 +30,13 @@ keywords: "安装 skeletonic, stylus 配置, css cdn, 快速入门"
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### 通过 CDN 加载
@@ -47,24 +47,24 @@ yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-为获得最大完整性保障，请从 v1.1.7 发布说明中复制 **SRI 哈希值**，并添加 `integrity="sha384-…"` 属性。
+为获得最大完整性保障，请从 v2.0.0 发布说明中复制 **SRI 哈希值**，并添加 `integrity="sha384-…"` 属性。
 
 ### 其他 CDN 地址
 
 | CDN | URL | HTTPS | 组合加载 |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | 是 | 是 |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | 是 | 否 |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | 是 | 是 |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | 是 | 否 |
 
 ### 下载 GitHub 发布包
 
@@ -90,7 +90,7 @@ pnpm run build
 
 | 文件 | 用途 | 体积 (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | 重置 + 令牌 + 布局 + 元素 + 组件 + 工具类 | 45.7 KB / 8.3 KB |
+| `core/skeletonic.min.css` | 重置 + 令牌 + 布局 + 元素 + 组件 + 工具类 | 45.0 KB / 8.6 KB |
 | `animations/skeletonic-animations.min.css` | 可选动画模块 | 约 18 KB / 约 4 KB |
 | `palettes/material/skeletonic-material.min.css` | Material 色板 | 约 8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons 工具色板 | 7.3 KB |
@@ -140,7 +140,7 @@ Skeletonic 以 **CSS 自定义属性**的形式暴露设计令牌，你无需重
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>安装成功。</h1>
@@ -156,7 +156,7 @@ Skeletonic 以 **CSS 自定义属性**的形式暴露设计令牌，你无需重
 在安装包中，你可以找到所有源文件、编译和压缩后的 CSS 包、Source Map，以及按类别组织的完整 Stylus 目录树：
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -194,16 +194,16 @@ Skeletonic 以 **CSS 自定义属性**的形式暴露设计令牌，你无需重
 ## 常见问题
 
 **如何安装 Skeletonic Stylus？**
-运行 `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`。或直接从 CDN 加载编译后的 CSS——无需构建步骤。
+运行 `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`。或直接从 CDN 加载编译后的 CSS——无需构建步骤。
 
 **需要 JavaScript 吗？**
 不需要。核心样式表是纯 CSS，运行时零开销。所有组件无需任何一行 JS 即可运行。
 
 **支持 WCAG 2.2 吗？**
-支持。v1.1.7 默认提供 AA 合规的对比度、focus-visible 焦点环、跳转链接辅助、减弱动效支持和深色模式。
+支持。v2.0.0 默认提供 AA 合规的对比度、focus-visible 焦点环、跳转链接辅助、减弱动效支持和深色模式。
 
 **gzip 后体积是多少？**
-45.7&nbsp;KB 压缩后，**gzip 约 8.3&nbsp;KB**，brotli 约 6.9&nbsp;KB（完整核心样式表）。8&nbsp;KB 上限在 CI 中强制执行。
+45.0&nbsp;KB 压缩后，**gzip 约 8.6&nbsp;KB**，brotli 约 7.2&nbsp;KB（完整核心样式表）。8&nbsp;KB 上限在 CI 中强制执行。
 
 **使用什么许可证？**
 双重许可：MIT 和 Apache 2.0——根据项目需要选择。个人和商业用途均免费。
@@ -218,7 +218,7 @@ Skeletonic 以 **CSS 自定义属性**的形式暴露设计令牌，你无需重
       "name": "如何安装 Skeletonic Stylus？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "运行 pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7。或直接从 CDN 加载编译后的 CSS——无需构建步骤。"
+        "text": "运行 pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0。或直接从 CDN 加载编译后的 CSS——无需构建步骤。"
       }
     },
     {
@@ -234,7 +234,7 @@ Skeletonic 以 **CSS 自定义属性**的形式暴露设计令牌，你无需重
       "name": "Skeletonic Stylus 支持 WCAG 2.2 吗？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "支持。v1.1.7 默认提供 AA 合规的对比度、focus-visible 焦点环、跳转链接辅助、减弱动效支持和深色模式。"
+        "text": "支持。v2.0.0 默认提供 AA 合规的对比度、focus-visible 焦点环、跳转链接辅助、减弱动效支持和深色模式。"
       }
     },
     {
@@ -242,7 +242,7 @@ Skeletonic 以 **CSS 自定义属性**的形式暴露设计令牌，你无需重
       "name": "Skeletonic Stylus gzip 后体积是多少？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.7 KB 压缩后，约 8.3 KB gzip，约 6.9 KB brotli（完整核心样式表）。8 KB 上限在 CI 的每次提交中强制执行。"
+        "text": "45.0 KB 压缩后，约 8.6 KB gzip，约 7.2 KB brotli（完整核心样式表）。8 KB 上限在 CI 的每次提交中强制执行。"
       }
     },
     {

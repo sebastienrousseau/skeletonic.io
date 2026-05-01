@@ -1,7 +1,7 @@
 ---
 title: "রঙ প্যালেট"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7-এর সাথে শিপ করা Material, Tachyons এবং web-safe রঙ প্যালেট।"
+description: "Skeletonic Stylus v2.0.0-এর সাথে শিপ করা Material, Tachyons এবং web-safe রঙ প্যালেট।"
 layout: page
 permalink: https://skeletonic.io/bn/rong-palat/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css palette, material, tachyons, websafe, design tokens"
 ---
 
-Skeletonic Stylus v1.1.7 **তিনটি ঐচ্ছিক রঙ প্যালেট** শিপ করে,
+Skeletonic Stylus v2.0.0 **তিনটি ঐচ্ছিক রঙ প্যালেট** শিপ করে,
 প্রতিটি নিজস্ব মিনিফাইড স্টাইলশিট হিসেবে বিতরিত যাতে আপনি শুধু
 যা ব্যবহার করেন তার জন্যই খরচ করেন।
 
@@ -63,9 +63,9 @@ Skeletonic Stylus v1.1.7 **তিনটি ঐচ্ছিক রঙ প্য�
 
 <hr class="hr-text" data-content="ব্র্যান্ড">
 
-## ব্র্যান্ড রঙ (v1.1.7 — AA কনট্রাস্ট)
+## ব্র্যান্ড রঙ (v2.0.0 — AA কনট্রাস্ট)
 
-v1.1.7-এ প্রাইমারি ও সেকেন্ডারি টোকেন সাদা টেক্সটের বিপরীতে
+v2.0.0-এ প্রাইমারি ও সেকেন্ডারি টোকেন সাদা টেক্সটের বিপরীতে
 **WCAG 4.5:1** কনট্রাস্ট পূরণ করতে গাঢ় করা হয়েছে।
 
 <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem;">

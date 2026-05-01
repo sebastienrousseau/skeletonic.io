@@ -1,7 +1,7 @@
 ---
 title: "Bao mat &amp; chuoi cung ung"
 name: "Skeletonic Stylus"
-description: "Cach Skeletonic Stylus v1.1.7 bao mat pipeline build, ky ban phat hanh va cung cap SBOM."
+description: "Cach Skeletonic Stylus v2.0.0 bao mat pipeline build, ky ban phat hanh va cung cap SBOM."
 layout: page
 language: vi
 permalink: https://skeletonic.io/vi/bao-mat/
@@ -23,7 +23,7 @@ byte it hon de kiem tra, ky va xac minh.
 
 ## Tom tat chuoi cung ung
 
-| Kiem soat | Trang thai v1.1.7 |
+| Kiem soat | Trang thai v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Duoc tao moi ban phat hanh, luu tru tai `dist/sbom.json` |
 | **npm provenance** | Da bat (`--provenance --access public`) |
@@ -42,10 +42,10 @@ Moi tarball xuat ban deu bao gom CycloneDX SBOM tai `dist/sbom.json`.
 Ban co the xac minh goi vua cai dat voi:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM duoc tao bang `cyclonedx-npm` trong quy trinh xuat ban.
@@ -60,7 +60,7 @@ San pham xuat ban duoc ky bang
 Ban co the xac minh sau khi cai dat voi:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -73,7 +73,7 @@ da tao ra no.
 
 | CVE | Muc do | Trang thai |
 |---|---|---|
-| **CVE-2023-44270** (phan tich dong tra ve postcss) | Trung binh | **Da va** trong v1.1.7 qua `pnpm.overrides` nang cap `postcss` len ≥ 8.4.31 |
+| **CVE-2023-44270** (phan tich dong tra ve postcss) | Trung binh | **Da va** trong v2.0.0 qua `pnpm.overrides` nang cap `postcss` len ≥ 8.4.31 |
 
 Co so du lieu khuyen cao Snyk va nguon cap GitHub Security Advisories
 duoc theo doi lien tuc; cac ban va bao mat duoc phat hanh nhu **ban va

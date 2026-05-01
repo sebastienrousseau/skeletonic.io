@@ -1,7 +1,7 @@
 ---
 title: "Securitate &amp; lanț de aprovizionare"
 name: "Skeletonic Stylus"
-description: "Cum Skeletonic Stylus v1.1.7 securizează pipeline-ul de build, semnează lansările și livrează un SBOM."
+description: "Cum Skeletonic Stylus v2.0.0 securizează pipeline-ul de build, semnează lansările și livrează un SBOM."
 layout: page
 permalink: https://skeletonic.io/ro/securitate/
 date: 2026-04-08
@@ -22,7 +22,7 @@ Performanța este un control de securitate. Fiecare octet nelivrat este un octet
 
 ## Rezumatul lanțului de aprovizionare
 
-| Control | Stare v1.1.7 |
+| Control | Stare v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Generat la fiecare lansare, salvat sub `dist/sbom.json` |
 | **Proveniență npm** | Activată (`--provenance --access public`) |
@@ -41,10 +41,10 @@ Fiecare tarball publicat include un CycloneDX SBOM la `dist/sbom.json`.
 Poți verifica un pachet proaspăt instalat cu:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM-ul este generat cu `cyclonedx-npm` în timpul workflow-ului de publicare.
@@ -59,7 +59,7 @@ Artefactul publicat este semnat folosind
 Poți verifica după instalare cu:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -72,7 +72,7 @@ care l-a produs.
 
 | CVE | Severitate | Stare |
 |---|---|---|
-| **CVE-2023-44270** (parsare linie nouă postcss) | Moderată | **Rezolvat** în v1.1.7 prin `pnpm.overrides` care actualizează `postcss` la ≥ 8.4.31 |
+| **CVE-2023-44270** (parsare linie nouă postcss) | Moderată | **Rezolvat** în v2.0.0 prin `pnpm.overrides` care actualizează `postcss` la ≥ 8.4.31 |
 
 Baza de date a consultanțelor Snyk și feed-ul GitHub Security
 Advisories sunt monitorizate continuu; patch-urile de securitate sunt

@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "установка skeletonic, настройка stylus, css cdn, начало работы"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Введение
 
-Впервые используете Skeletonic Stylus? В **v1.1.7** стало проще, чем когда-либо, выбрать только те возможности, которые вам нужны. Благодаря минимальному размеру (8,3&nbsp;КБ gzip для основного файла стилей) библиотека быстро интегрируется в любое веб-приложение — без JavaScript-фреймворка, без этапа сборки при использовании CDN.
+Впервые используете Skeletonic Stylus? В **v2.0.0** стало проще, чем когда-либо, выбрать только те возможности, которые вам нужны. Благодаря минимальному размеру (8,3&nbsp;КБ gzip для основного файла стилей) библиотека быстро интегрируется в любое веб-приложение — без JavaScript-фреймворка, без этапа сборки при использовании CDN.
 
 Готовы к установке? Все варианты описаны ниже — выбирайте подходящий.
 
@@ -30,13 +30,13 @@ keywords: "установка skeletonic, настройка stylus, css cdn, н
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Через CDN
@@ -47,24 +47,24 @@ yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-Для максимальной целостности скопируйте **SRI-хеш** из заметок к релизу v1.1.7 и добавьте атрибут `integrity="sha384-…"`.
+Для максимальной целостности скопируйте **SRI-хеш** из заметок к релизу v2.0.0 и добавьте атрибут `integrity="sha384-…"`.
 
 ### Альтернативные CDN-адреса
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Да | Да |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Да | Нет |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Да | Да |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Да | Нет |
 
 ### Загрузка релиза с GitHub
 
@@ -143,7 +143,7 @@ Skeletonic предоставляет свои дизайн-токены как 
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Работает.</h1>
@@ -159,7 +159,7 @@ Skeletonic предоставляет свои дизайн-токены как 
 Внутри пакета вы найдёте все исходные файлы, скомпилированные и минифицированные CSS-сборки, карты исходников и полное дерево Stylus, организованное по категориям:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -197,13 +197,13 @@ Skeletonic предоставляет свои дизайн-токены как 
 ## Часто задаваемые вопросы
 
 **Как установить Skeletonic Stylus?**
-Выполните `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Или загрузите скомпилированный CSS прямо с CDN — этап сборки не требуется.
+Выполните `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Или загрузите скомпилированный CSS прямо с CDN — этап сборки не требуется.
 
 **Требуется ли JavaScript?**
 Нет. Основной файл стилей — чистый CSS, без затрат времени выполнения. Компоненты работают без единой строки JS.
 
 **Соответствует ли WCAG 2.2?**
-Да. В v1.1.7 обеспечен контраст уровня AA, кольца focus-visible, skip-link хелперы, поддержка уменьшенного движения и тёмная тема по умолчанию.
+Да. В v2.0.0 обеспечен контраст уровня AA, кольца focus-visible, skip-link хелперы, поддержка уменьшенного движения и тёмная тема по умолчанию.
 
 **Какой размер в gzip?**
 45,7&nbsp;КБ минифицированный, **8,3&nbsp;КБ gzip**, 6,9&nbsp;КБ brotli для полного основного файла стилей. Лимит в 8&nbsp;КБ контролируется в CI.
@@ -221,7 +221,7 @@ Skeletonic предоставляет свои дизайн-токены как 
       "name": "Как установить Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Выполните pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Или загрузите скомпилированный CSS прямо с CDN — этап сборки не требуется."
+        "text": "Выполните pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Или загрузите скомпилированный CSS прямо с CDN — этап сборки не требуется."
       }
     },
     {
@@ -237,7 +237,7 @@ Skeletonic предоставляет свои дизайн-токены как 
       "name": "Соответствует ли Skeletonic Stylus WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Да. В v1.1.7 обеспечен контраст уровня AA, кольца focus-visible, skip-link хелперы, поддержка уменьшенного движения и тёмная тема по умолчанию."
+        "text": "Да. В v2.0.0 обеспечен контраст уровня AA, кольца focus-visible, skip-link хелперы, поддержка уменьшенного движения и тёмная тема по умолчанию."
       }
     },
     {

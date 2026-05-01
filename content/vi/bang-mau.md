@@ -1,7 +1,7 @@
 ---
 title: "Bang mau"
 name: "Skeletonic Stylus"
-description: "Bang mau Material, Tachyons va web-safe duoc tich hop trong Skeletonic Stylus v1.1.7."
+description: "Bang mau Material, Tachyons va web-safe duoc tich hop trong Skeletonic Stylus v2.0.0."
 layout: page
 language: vi
 permalink: https://skeletonic.io/vi/bang-mau/
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "bang mau css, material, tachyons, websafe, design token"
 ---
 
-Skeletonic Stylus v1.1.7 cung cap **ba bang mau tuy chon**, moi bang
+Skeletonic Stylus v2.0.0 cung cap **ba bang mau tuy chon**, moi bang
 duoc phan phoi nhu stylesheet nen rieng de ban chi tra cho nhung gi
 ban su dung.
 
@@ -63,9 +63,9 @@ nhu `--cl-grey-100` … `--cl-grey-1000`.
 
 <hr class="hr-text" data-content="Thuong hieu">
 
-## Mau thuong hieu (v1.1.7 — do tuong phan AA)
+## Mau thuong hieu (v2.0.0 — do tuong phan AA)
 
-Trong v1.1.7, cac token primary va secondary da duoc lam dam hon de dat
+Trong v2.0.0, cac token primary va secondary da duoc lam dam hon de dat
 **WCAG 4,5:1** do tuong phan voi chu trang ngay tu dau.
 
 <div class="row margin-top-3">

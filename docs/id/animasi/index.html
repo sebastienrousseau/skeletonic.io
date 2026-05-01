@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -219,7 +219,7 @@
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">/css/skeletonic-animations.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>Setiap kelas animasi dibungkus dalam blok <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> di v1.1.7, yang berarti pengguna yang telah mengatur &quot;kurangi gerakan&quot; di tingkat OS tidak akan melihat animasi sama sekali — tata letak tetap berfungsi, hanya gerakannya yang ditekan.</p>
+<p>Setiap kelas animasi dibungkus dalam blok <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> di v2.0.0, yang berarti pengguna yang telah mengatur &quot;kurangi gerakan&quot; di tingkat OS tidak akan melihat animasi sama sekali — tata letak tetap berfungsi, hanya gerakannya yang ditekan.</p>
 <style>
   /*
    * Style demo lokal halaman. Kelas animasi yang disertakan dalam
@@ -275,7 +275,7 @@
 <h2>Demo</h2>
 <p>Tekan <strong>Putar</strong> pada kartu mana pun untuk memutar ulang animasi pada kotak. Kelas animasi itu sendiri persis seperti yang disertakan dalam <code>skeletonic-animations.min.css</code> — hanya <code>animation-name</code> yang diatur oleh pustaka, sehingga blok <code>&lt;style&gt;</code> di atas menambahkan properti <code>animation-duration</code> / <code>animation-iteration-count</code> / <code>animation-fill-mode</code> yang hilang agar keyframe terlihat.</p>
 <p class="anim-note-rm">
-  Kurangi Gerakan diaktifkan di OS Anda, sehingga target di bawah akan tetap diam — itulah perilaku aksesibilitas v1.1.7 yang bekerja dengan benar.
+  Kurangi Gerakan diaktifkan di OS Anda, sehingga target di bawah akan tetap diam — itulah perilaku aksesibilitas v2.0.0 yang bekerja dengan benar.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -392,7 +392,7 @@
   </div>
 </div>
 <script>
-  // Kelas animasi yang disertakan di v1.1.7 mengatur animation-name di
+  // Kelas animasi yang disertakan di v2.0.0 mengatur animation-name di
   // selector itu sendiri. Untuk memutar ulang keyframe kita harus menghapus
   // kelas, memaksa layout flush, lalu menambahkan kelas kembali.
   function replayAnim(btn, name){
@@ -489,8 +489,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>Catatan — peringatan v1.1.7 yang diketahui</h2>
-<p>Kelas animasi di v1.1.7 hanya mengatur <code>animation-name</code>. Untuk memutarnya, saat ini Anda harus menyediakan sendiri <code>animation-duration</code>, <code>animation-iteration-count</code>, <code>animation-fill-mode</code>, dan <code>animation-timing-function</code> — persis seperti yang ditunjukkan blok <code>&lt;style&gt;</code> di bagian atas halaman ini. Rilis mendatang akan menyertakan pengaturan dasar bawaan yang masuk akal sehingga <code>&lt;div class=&quot;bounce&quot;&gt;</code> berfungsi langsung.</p>
+<h2>Catatan — peringatan v2.0.0 yang diketahui</h2>
+<p>Kelas animasi di v2.0.0 hanya mengatur <code>animation-name</code>. Untuk memutarnya, saat ini Anda harus menyediakan sendiri <code>animation-duration</code>, <code>animation-iteration-count</code>, <code>animation-fill-mode</code>, dan <code>animation-timing-function</code> — persis seperti yang ditunjukkan blok <code>&lt;style&gt;</code> di bagian atas halaman ini. Rilis mendatang akan menyertakan pengaturan dasar bawaan yang masuk akal sehingga <code>&lt;div class=&quot;bounce&quot;&gt;</code> berfungsi langsung.</p>
 <p><a href="/id/aksesibilitas/">Lihat catatan aksesibilitas →</a></p>
 
 

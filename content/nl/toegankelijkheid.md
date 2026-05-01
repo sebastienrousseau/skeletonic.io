@@ -1,7 +1,7 @@
 ---
-title: "Toegankelijkheid — WCAG 2.2 in v1.1.7"
+title: "Toegankelijkheid — WCAG 2.2 in v2.0.0"
 name: "Skeletonic Stylus"
-description: "Wat v1.1.7 standaard levert voor WCAG 2.2-conformiteit — focusringen, contrast, skip-links, beweging en donkere modus."
+description: "Wat v2.0.0 standaard levert voor WCAG 2.2-conformiteit — focusringen, contrast, skip-links, beweging en donkere modus."
 layout: page
 permalink: https://skeletonic.io/nl/toegankelijkheid/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, toegankelijkheid, focus visible, skip link, prefers reduced motion, contrast"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 levert WCAG 2.2-conformiteit als standaard
+> **Skeletonic Stylus v2.0.0 levert WCAG 2.2-conformiteit als standaard
 > gedrag, niet als een optioneel thema.** Deze pagina documenteert wat er
 > ingebouwd is en welke mixins je kunt activeren voor meer controle.
 
@@ -24,7 +24,7 @@ keywords: "wcag 2.2, toegankelijkheid, focus visible, skip link, prefers reduced
 
 ## Wat je standaard krijgt
 
-| WCAG 2.2 SC | Wat v1.1.7 doet | Hoe te verifiëren |
+| WCAG 2.2 SC | Wat v2.0.0 doet | Hoe te verifiëren |
 |---|---|---|
 | **1.4.3 Contrast (Minimum) — AA** | `--cl-primary` en `--cl-secondary` donkerder gemaakt tot ≥ 4.5:1 tegen wit | DevTools → contrastcontrole |
 | **1.4.11 Niet-tekstcontrast — AA** | Formulierranden, knoppen, badges allemaal ≥ 3:1 | Idem |
@@ -91,5 +91,5 @@ node scripts/a11y-test.mjs https://example.com
 CI voert dit script uit tegen de `dist/index.html` showcasepagina bij
 elke push.
 
-[Lees over de v1.1.7-release →](/nl/wijzigingslogboek/) ·
+[Lees over de v2.0.0-release →](/nl/wijzigingslogboek/) ·
 [Bekijk de beveiligingspagina →](/nl/beveiliging/)

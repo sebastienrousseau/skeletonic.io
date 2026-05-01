@@ -1,7 +1,7 @@
 ---
 title: "Aabo &amp; ẹwọn ipese"
 name: "Skeletonic Stylus"
-description: "Bawo ni Skeletonic Stylus v1.1.7 ṣe ni aabo fun opo ikọ rẹ, fọwọsi awọn itusilẹ, ati fi SBOM ranṣẹ."
+description: "Bawo ni Skeletonic Stylus v2.0.0 ṣe ni aabo fun opo ikọ rẹ, fọwọsi awọn itusilẹ, ati fi SBOM ranṣẹ."
 language: yo
 layout: page
 permalink: https://skeletonic.io/yo/aabo/
@@ -13,7 +13,7 @@ keywords: "aabo css, sbom, cyclonedx, npm provenance, openssf scorecard, ẹwọ
 
 ## Iṣẹ-ṣiṣe
 
-- **45.7&nbsp;KB minified · 8.3&nbsp;KB gzipped · 6.9&nbsp;KB brotli** fun iwe-aṣa ipilẹ ni kikun.
+- **45.0&nbsp;KB minified · 8.6&nbsp;KB gzipped · 7.2&nbsp;KB brotli** fun iwe-aṣa ipilẹ ni kikun.
 - **JavaScript kankan** — Stylus mimọ → CSS mimọ, ko si iye owo iṣiṣẹ.
 - **Ti a fi cascade-layer ṣe** — awọn atunṣe bori laisi `!important`.
 - **Isuna `size-limit` ti a fi ipa mu** ninu CI lori adehun kọọkan.
@@ -23,7 +23,7 @@ kan ti o dinku lati ṣe ayẹwo, fọwọsi, ati ṣe idaniloju.
 
 ## Ẹwọn ipese ni ṣoki
 
-| Iṣakoso | Ipo v1.1.7 |
+| Iṣakoso | Ipo v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Ti a ṣẹda lori itusilẹ kọọkan, ti a fi sinu `dist/sbom.json` |
 | **Ẹri npm** | Ti a mu ṣiṣẹ (`--provenance --access public`) |
@@ -42,10 +42,10 @@ Gbogbo tarball ti a tẹ jade pẹlu CycloneDX SBOM ni `dist/sbom.json`.
 O le ṣayẹwo package ti a fi sori ẹrọ tuntun pẹlu:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM ni a ṣẹda pẹlu `cyclonedx-npm` lakoko opo iṣẹ tẹ jade.
@@ -60,7 +60,7 @@ Ohun elo ti a tẹ jade ni a fọwọsi nipa lilo
 O le ṣe idaniloju rẹ lẹhin ifisori ẹrọ pẹlu:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -73,7 +73,7 @@ npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
 
 | CVE | Biba | Ipo |
 |---|---|---|
-| **CVE-2023-44270** (postcss line return parsing) | Alabọde | **Ti a ṣe atunṣe** ninu v1.1.7 nipasẹ `pnpm.overrides` ti o mu `postcss` ga si ≥ 8.4.31 |
+| **CVE-2023-44270** (postcss line return parsing) | Alabọde | **Ti a ṣe atunṣe** ninu v2.0.0 nipasẹ `pnpm.overrides` ti o mu `postcss` ga si ≥ 8.4.31 |
 
 Ibi-ipamọ data imọran Snyk ati atokọ Awọn Imọran Aabo GitHub ni a ṣe
 abojuto nigbagbogbo; awọn atunṣe aabo ni a fi ranṣẹ bi **awọn itusilẹ ipele-atunṣe**.

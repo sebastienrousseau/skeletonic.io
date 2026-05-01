@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -221,7 +221,7 @@
 </span></pre>
 </code></pre>
 <p>كل فئة حركة مغلّفة في كتلة
-<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> في الإصدار 1.1.7،
+<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> في الإصدار 2.0.0،
 مما يعني أن المستخدم الذي ضبط &quot;تقليل الحركة&quot; على مستوى نظام التشغيل
 لن يرى أي حركة — التخطيط يبقى يعمل، الحركة فقط تُكتم.</p>
 <style>
@@ -284,7 +284,7 @@
 الإطارات المفتاحية مرئية.</p>
 <p class="anim-note-rm">
   تقليل الحركة مُفعّل في نظام التشغيل الخاص بك، لذا ستبقى الأهداف
-  أدناه ثابتة — هذا هو سلوك إمكانية الوصول في الإصدار 1.1.7 يعمل بشكل صحيح.
+  أدناه ثابتة — هذا هو سلوك إمكانية الوصول في الإصدار 2.0.0 يعمل بشكل صحيح.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -401,7 +401,7 @@
   </div>
 </div>
 <script>
-  // فئات الحركة المُشحونة في الإصدار 1.1.7 تضبط animation-name في
+  // فئات الحركة المُشحونة في الإصدار 2.0.0 تضبط animation-name في
   // المحدّد نفسه. لإعادة تشغيل الإطار المفتاحي يجب إزالة الفئة،
   // وإجبار إعادة حساب التخطيط، ثم إضافة الفئة مجددًا.
   function replayAnim(btn, name){
@@ -498,8 +498,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>تنبيه — تحفّظ معروف في الإصدار 1.1.7</h2>
-<p>فئات الحركة في الإصدار 1.1.7 تضبط <code>animation-name</code> فقط. لتشغيلها
+<h2>تنبيه — تحفّظ معروف في الإصدار 2.0.0</h2>
+<p>فئات الحركة في الإصدار 2.0.0 تضبط <code>animation-name</code> فقط. لتشغيلها
 يجب حاليًا توفير <code>animation-duration</code> و<code>animation-iteration-count</code>
 و<code>animation-fill-mode</code> و<code>animation-timing-function</code> بنفسك — تمامًا
 كما توضّح كتلة <code>&lt;style&gt;</code> في أعلى هذه الصفحة. إصدار مستقبلي سيضمّن

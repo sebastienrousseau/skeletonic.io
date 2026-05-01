@@ -1,7 +1,7 @@
 ---
 title: "色板"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 隨附的 Material、Tachyons 與 Web 安全色板。"
+description: "Skeletonic Stylus v2.0.0 隨附的 Material、Tachyons 與 Web 安全色板。"
 language: zh-hant
 layout: page
 permalink: https://skeletonic.io/zh-hant/se-ban/
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css 色板, material, tachyons, websafe, 設計 token"
 ---
 
-Skeletonic Stylus v1.1.7 隨附**三套可選色板**，每套均以獨立的壓縮樣式表形式發佈，讓您只需為所用的部分付出代價。
+Skeletonic Stylus v2.0.0 隨附**三套可選色板**，每套均以獨立的壓縮樣式表形式發佈，讓您只需為所用的部分付出代價。
 
 | 色板 | 檔案 | 大小（min） |
 |---|---|---|
@@ -59,9 +59,9 @@ Skeletonic Stylus v1.1.7 隨附**三套可選色板**，每套均以獨立的壓
 
 <hr class="hr-text" data-content="品牌色">
 
-## 品牌色彩（v1.1.7 — AA 對比度）
+## 品牌色彩（v2.0.0 — AA 對比度）
 
-在 v1.1.7 中，主色與次色 token 加深處理，以在白色文字背景下開箱即達 **WCAG 4.5:1** 對比度。
+在 v2.0.0 中，主色與次色 token 加深處理，以在白色文字背景下開箱即達 **WCAG 4.5:1** 對比度。
 
 <div class="row margin-top-3">
   <div class="flex-4 padding-3 text-center" style="background-color: hsl(210, 100%, 42%); color: #fff;">

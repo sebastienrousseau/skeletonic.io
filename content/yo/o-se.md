@@ -18,4 +18,4 @@ Nibayi, ti o ko ba ti ṣe tẹlẹ:
 
 - [Fi irawọ si iṣẹ-akanṣe naa lori GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Ṣawari package npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Ka iwe iyipada v1.1.7](/yo/iwe-iyipada/)
+- [Ka iwe iyipada v2.0.0](/yo/iwe-iyipada/)

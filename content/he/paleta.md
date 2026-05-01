@@ -1,7 +1,7 @@
 ---
 title: "פלטות"
 name: "Skeletonic Stylus"
-description: "פלטות צבעים של Material, Tachyons ו-web-safe הנשלחות עם Skeletonic Stylus v1.1.7."
+description: "פלטות צבעים של Material, Tachyons ו-web-safe הנשלחות עם Skeletonic Stylus v2.0.0."
 layout: page
 permalink: https://skeletonic.io/he/paleta/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "פלטת css, material, tachyons, websafe, טוקני עיצוב"
 ---
 
-Skeletonic Stylus v1.1.7 מגיעה עם **שלוש פלטות צבעים אופציונליות**,
+Skeletonic Stylus v2.0.0 מגיעה עם **שלוש פלטות צבעים אופציונליות**,
 כל אחת מופצת כגיליון סגנונות ממוזער נפרד כך שאתם משלמים רק על מה
 שאתם משתמשים.
 
@@ -63,9 +63,9 @@ Skeletonic Stylus v1.1.7 מגיעה עם **שלוש פלטות צבעים אופ
 
 <hr class="hr-text" data-content="מותג">
 
-## צבעי מותג (v1.1.7 — ניגודיות AA)
+## צבעי מותג (v2.0.0 — ניגודיות AA)
 
-ב-v1.1.7 טוקני הראשי והמשני הוכהו כדי לעמוד ביחס ניגודיות
+ב-v2.0.0 טוקני הראשי והמשני הוכהו כדי לעמוד ביחס ניגודיות
 **WCAG 4.5:1** מול טקסט לבן ישירות מהקופסה.
 
 <div class="row margin-top-3">

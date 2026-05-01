@@ -1,7 +1,7 @@
 ---
 title: "Sakerhet &amp; leveranskedja"
 name: "Skeletonic Stylus"
-description: "Hur Skeletonic Stylus v1.1.7 sakrar sin byggpipeline, signerar releaser och levererar en SBOM."
+description: "Hur Skeletonic Stylus v2.0.0 sakrar sin byggpipeline, signerar releaser och levererar en SBOM."
 layout: page
 permalink: https://skeletonic.io/sv/sakerhet/
 date: 2026-04-08
@@ -23,7 +23,7 @@ byte att granska, signera och verifiera.
 
 ## Leveranskedja i korthet
 
-| Kontroll | v1.1.7-status |
+| Kontroll | v2.0.0-status |
 |---|---|
 | **CycloneDX SBOM** | Genereras vid varje release, sparas under `dist/sbom.json` |
 | **npm-proveniens** | Aktiverad (`--provenance --access public`) |
@@ -42,10 +42,10 @@ Varje publicerad tarball inkluderar en CycloneDX SBOM pa `dist/sbom.json`.
 Du kan verifiera ett nyinstallerat paket med:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM:en genereras med `cyclonedx-npm` under publiceringsarbetsfloden.
@@ -60,7 +60,7 @@ Den publicerade artefakten ar signerad med
 Du kan verifiera den efter installation med:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -73,7 +73,7 @@ GitHub Actions-korningen som producerade den.
 
 | CVE | Allvarlighetsgrad | Status |
 |---|---|---|
-| **CVE-2023-44270** (postcss radreturtolkning) | Mattlig | **Patchad** i v1.1.7 via `pnpm.overrides` som uppgraderar `postcss` till ≥ 8.4.31 |
+| **CVE-2023-44270** (postcss radreturtolkning) | Mattlig | **Patchad** i v2.0.0 via `pnpm.overrides` som uppgraderar `postcss` till ≥ 8.4.31 |
 
 Snyks sakerhetsdatabas och GitHub Security Advisories-floden bevakas kontinuerligt;
 sakerhetspatchar levereras som **patchniva-releaser**.

@@ -1,11 +1,11 @@
 {
   "keywords": "privacy, gdpr, cookies, no tracking",
-  "permalink": "https://skeletonic.io/privacy/",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Privacy",
   "description": "What data skeletonic.io collects, why, and how to opt out.",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/privacy/",
   "layout": "page",
-  "name": "Skeletonic Stylus"
+  "author": "Sebastien Rousseau",
+  "title": "Privacy"
 }

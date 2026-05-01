@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic インストール, stylus セットアップ, css cdn, はじめに"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## はじめに
 
-Skeletonic Stylus を初めて使いますか？ **v1.1.7** では、必要な機能だけを選ぶのがこれまで以上に簡単になりました。コアスタイルシートのフットプリントが非常に小さい（gzip圧縮で約8.3&nbsp;KB）ため、どの Web アプリにも素早く統合できます。JavaScript フレームワーク不要、CDN を使えばビルドステップも不要です。
+Skeletonic Stylus を初めて使いますか？ **v2.0.0** では、必要な機能だけを選ぶのがこれまで以上に簡単になりました。コアスタイルシートのフットプリントが非常に小さい（gzip圧縮で約8.6&nbsp;KB）ため、どの Web アプリにも素早く統合できます。JavaScript フレームワーク不要、CDN を使えばビルドステップも不要です。
 
 以下にすべての方法を網羅しています。必要なものを選んでください。
 
@@ -30,13 +30,13 @@ Skeletonic Stylus は **pnpm**、**npm**、**yarn** でインストールする�
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### CDN から
@@ -47,24 +47,24 @@ yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-最大限の整合性を確保するには、v1.1.7 リリースノートから **SRI ハッシュ** をコピーし、`integrity="sha384-…"` 属性を追加してください。
+最大限の整合性を確保するには、v2.0.0 リリースノートから **SRI ハッシュ** をコピーし、`integrity="sha384-…"` 属性を追加してください。
 
 ### 代替 CDN ロケーション
 
 | CDN | URL | HTTPS | コンボ |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | 対応 | 対応 |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | 対応 | 非対応 |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | 対応 | 対応 |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | 対応 | 非対応 |
 
 ### GitHub リリースをダウンロード
 
@@ -89,7 +89,7 @@ pnpm run build
 
 | ファイル | 用途 | サイズ (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | リセット + トークン + レイアウト + 要素 + コンポーネント + ユーティリティ | 45.7 KB / 8.3 KB |
+| `core/skeletonic.min.css` | リセット + トークン + レイアウト + 要素 + コンポーネント + ユーティリティ | 45.0 KB / 8.6 KB |
 | `animations/skeletonic-animations.min.css` | オプションのアニメーションモジュール | 約18 KB / 約4 KB |
 | `palettes/material/skeletonic-material.min.css` | Material カラーパレット | 約8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons ユーティリティパレット | 7.3 KB |
@@ -139,7 +139,7 @@ Skeletonic はデザイントークンを **CSS カスタムプロパティ** �
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>動作しています。</h1>
@@ -155,7 +155,7 @@ Skeletonic はデザイントークンを **CSS カスタムプロパティ** �
 パッケージの中には、すべてのソースファイル、コンパイルおよびミニファイ済み CSS バンドル、ソースマップ、そしてカテゴリ別に整理された完全な Stylus ツリーが含まれています：
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -193,16 +193,16 @@ Skeletonic はデザイントークンを **CSS カスタムプロパティ** �
 ## よくある質問
 
 **Skeletonic Stylus はどのようにインストールしますか？**
-`pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7` を実行してください。または、コンパイル済み CSS を CDN から直接読み込めます — ビルドステップは不要です。
+`pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0` を実行してください。または、コンパイル済み CSS を CDN から直接読み込めます — ビルドステップは不要です。
 
 **JavaScript は必要ですか？**
 いいえ。コアスタイルシートは純粋な CSS であり、ランタイムコストはゼロです。コンポーネントは JavaScript なしで動作します。
 
 **WCAG 2.2 に対応していますか？**
-はい。v1.1.7 では、AA 準拠のコントラスト、focus-visible リング、スキップリンクヘルパー、モーション軽減対応、ダークモードがデフォルトで提供されます。
+はい。v2.0.0 では、AA 準拠のコントラスト、focus-visible リング、スキップリンクヘルパー、モーション軽減対応、ダークモードがデフォルトで提供されます。
 
 **gzip圧縮後のサイズは？**
-ミニファイ済みで45.7&nbsp;KB、**gzip圧縮で約8.3&nbsp;KB**、brotli で約6.9&nbsp;KB（フルコアスタイルシート）。8&nbsp;KB の上限は CI で強制されています。
+ミニファイ済みで45.0&nbsp;KB、**gzip圧縮で約8.6&nbsp;KB**、brotli で約7.2&nbsp;KB（フルコアスタイルシート）。8&nbsp;KB の上限は CI で強制されています。
 
 **どのライセンスを使用していますか？**
 MIT と Apache 2.0 のデュアルライセンスです — プロジェクトに合う方をお選びください。商用・個人利用ともに無料です。
@@ -217,7 +217,7 @@ MIT と Apache 2.0 のデュアルライセンスです — プロジェクト�
       "name": "Skeletonic Stylus はどのようにインストールしますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7 を実行してください。または、コンパイル済み CSS を CDN から直接読み込めます — ビルドステップは不要です。"
+        "text": "pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0 を実行してください。または、コンパイル済み CSS を CDN から直接読み込めます — ビルドステップは不要です。"
       }
     },
     {
@@ -233,7 +233,7 @@ MIT と Apache 2.0 のデュアルライセンスです — プロジェクト�
       "name": "Skeletonic Stylus は WCAG 2.2 に対応していますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "はい。v1.1.7 では、AA 準拠のコントラスト、focus-visible リング、スキップリンクヘルパー、モーション軽減対応、ダークモードがデフォルトで提供されます。"
+        "text": "はい。v2.0.0 では、AA 準拠のコントラスト、focus-visible リング、スキップリンクヘルパー、モーション軽減対応、ダークモードがデフォルトで提供されます。"
       }
     },
     {
@@ -241,7 +241,7 @@ MIT と Apache 2.0 のデュアルライセンスです — プロジェクト�
       "name": "Skeletonic Stylus の gzip 圧縮後のサイズは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ミニファイ済みで 45.7 KB、gzip 圧縮で約 8.3 KB、brotli で約 6.9 KB（フルコアスタイルシート）。8 KB の上限はすべてのコミットで CI により強制されています。"
+        "text": "ミニファイ済みで 45.0 KB、gzip 圧縮で約 8.6 KB、brotli で約 7.2 KB（フルコアスタイルシート）。8 KB の上限はすべてのコミットで CI により強制されています。"
       }
     },
     {

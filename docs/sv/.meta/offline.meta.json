@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
   "date": "2026-04-08",
   "author": "Sebastien Rousseau",
-  "description": "skeletonic.io kunde inte na natverket. Sidan du begarde har inte cachelagrats annu.",
   "title": "Du ar offline",
+  "description": "skeletonic.io kunde inte na natverket. Sidan du begarde har inte cachelagrats annu.",
+  "keywords": "offline, service worker, pwa",
   "permalink": "https://skeletonic.io/sv/offline/",
+  "name": "Skeletonic Stylus",
   "language": "sv",
-  "keywords": "offline, service worker, pwa"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page"
 }

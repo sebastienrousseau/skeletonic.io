@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "layout": "page",
   "keywords": "bidra, oppen kallkod, pull request, arende, konventioner",
-  "language": "sv",
-  "title": "Bidra",
-  "description": "Hur du rapporterar arenden, foreslar andringar och skickar pull requests till Skeletonic Stylus.",
-  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/sv/bidra/"
+  "permalink": "https://skeletonic.io/sv/bidra/",
+  "title": "Bidra",
+  "name": "Skeletonic Stylus",
+  "description": "Hur du rapporterar arenden, foreslar andringar och skickar pull requests till Skeletonic Stylus.",
+  "language": "sv",
+  "layout": "page"
 }

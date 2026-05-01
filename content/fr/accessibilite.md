@@ -1,7 +1,7 @@
 ---
-title: "Accessibilité — WCAG 2.2 dans la v1.1.7"
+title: "Accessibilité — WCAG 2.2 dans la v2.0.0"
 name: "Skeletonic Stylus"
-description: "Ce que la v1.1.7 propose nativement pour la conformité WCAG 2.2 — anneaux de focus, contraste, liens d'évitement, mouvement et mode sombre."
+description: "Ce que la v2.0.0 propose nativement pour la conformité WCAG 2.2 — anneaux de focus, contraste, liens d'évitement, mouvement et mode sombre."
 layout: page
 permalink: https://skeletonic.io/fr/accessibilite/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, accessibilité, focus visible, lien d'évitement, prefers reduced motion, contraste"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 livre la conformité WCAG 2.2 comme
+> **Skeletonic Stylus v2.0.0 livre la conformité WCAG 2.2 comme
 > comportement par défaut, pas en tant que thème optionnel.** Cette page
 > documente ce qui est intégré et les mixins auxquels vous pouvez
 > souscrire pour un contrôle plus fin.
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, accessibilité, focus visible, lien d'évitement, prefers r
 
 ## Ce que vous obtenez gratuitement
 
-| SC WCAG 2.2 | Ce que fait la v1.1.7 | Comment vérifier |
+| SC WCAG 2.2 | Ce que fait la v2.0.0 | Comment vérifier |
 |---|---|---|
 | **1.4.3 Contraste (Minimum) — AA** | `--cl-primary` et `--cl-secondary` assombris à ≥ 4,5:1 contre le blanc | DevTools → vérificateur de contraste |
 | **1.4.11 Contraste non textuel — AA** | Bordures de formulaires, boutons, badges tous ≥ 3:1 | Idem |
@@ -93,5 +93,5 @@ node scripts/a11y-test.mjs https://example.com
 La CI exécute ce script sur la page vitrine `dist/index.html` à
 chaque push.
 
-[Lire les notes de version v1.1.7 →](/fr/journal/) ·
+[Lire les notes de version v2.0.0 →](/fr/journal/) ·
 [Voir la page Sécurité →](/fr/securite/)

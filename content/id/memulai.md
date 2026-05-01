@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instal skeletonic, setup stylus, css cdn, memulai"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Pendahuluan
 
-Baru mengenal Skeletonic Stylus? Di **v1.1.7** lebih mudah dari sebelumnya untuk memilih fitur yang Anda butuhkan. Berkat jejak yang kecil (8,3&nbsp;KB gzipped untuk stylesheet inti), ia terintegrasi dengan cepat ke dalam aplikasi web apa pun — tidak perlu framework JavaScript, tidak perlu langkah build jika Anda menggunakan CDN.
+Baru mengenal Skeletonic Stylus? Di **v2.0.0** lebih mudah dari sebelumnya untuk memilih fitur yang Anda butuhkan. Berkat jejak yang kecil (8,3&nbsp;KB gzipped untuk stylesheet inti), ia terintegrasi dengan cepat ke dalam aplikasi web apa pun — tidak perlu framework JavaScript, tidak perlu langkah build jika Anda menggunakan CDN.
 
 Setiap jalur dibahas di bawah — pilih yang sesuai.
 
@@ -30,13 +30,13 @@ Anda dapat menginstal Skeletonic Stylus melalui **pnpm**, **npm**, atau **yarn**
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Dari CDN
@@ -47,24 +47,24 @@ Jika Anda hanya membutuhkan CSS yang sudah dikompilasi, masukkan salah satu ini 
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-Untuk integritas maksimum, salin **hash SRI** dari catatan rilis v1.1.7 dan tambahkan atribut `integrity="sha384-..."`.
+Untuk integritas maksimum, salin **hash SRI** dari catatan rilis v2.0.0 dan tambahkan atribut `integrity="sha384-..."`.
 
 ### Lokasi CDN alternatif
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Ya | Ya |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Ya | Tidak |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ya | Ya |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ya | Tidak |
 
 ### Unduh rilis GitHub
 
@@ -93,7 +93,7 @@ Pustaka ini menyediakan beberapa bundle yang sudah dibuat sebelumnya di bawah `d
 | File | Tujuan | Ukuran (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token + layout + elemen + komponen + utilitas | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modul animasi opsional | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Modul animasi opsional | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Palet warna Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Palet utilitas Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Palet web-safe | ≈3.5 KB |
@@ -142,7 +142,7 @@ Pemeriksaan minimal "apakah berhasil?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Berhasil.</h1>
@@ -158,7 +158,7 @@ Jika heading berukuran fleksibel dan tombol berbentuk pil biru, Anda sudah seles
 Di dalam paket Anda akan menemukan setiap file sumber, bundle CSS yang dikompilasi dan diminifikasi, source map, dan pohon Stylus lengkap yang diatur berdasarkan kategori:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -196,13 +196,13 @@ Setiap modul berdiri sendiri — ambil hanya bundle yang Anda butuhkan untuk men
 ## Pertanyaan yang sering diajukan
 
 **Bagaimana cara menginstal Skeletonic Stylus?**
-Jalankan `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Atau muat CSS yang sudah dikompilasi langsung dari CDN — tidak perlu langkah build.
+Jalankan `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Atau muat CSS yang sudah dikompilasi langsung dari CDN — tidak perlu langkah build.
 
 **Apakah memerlukan JavaScript?**
 Tidak. Stylesheet inti adalah CSS murni, tanpa biaya runtime. Komponen bekerja tanpa satu baris pun JS.
 
 **Apakah siap WCAG 2.2?**
-Ya. v1.1.7 menyertakan kontras sesuai AA, cincin focus-visible, pembantu skip-link, dukungan reduced-motion, dan mode gelap secara bawaan.
+Ya. v2.0.0 menyertakan kontras sesuai AA, cincin focus-visible, pembantu skip-link, dukungan reduced-motion, dan mode gelap secara bawaan.
 
 **Berapa ukuran gzipped-nya?**
 45,7&nbsp;KB diminifikasi, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli untuk stylesheet inti lengkap. Batas 8&nbsp;KB ditegakkan di CI.
@@ -220,7 +220,7 @@ Berlisensi ganda di bawah MIT dan Apache 2.0 — pilih yang sesuai kebutuhan pro
       "name": "Bagaimana cara menginstal Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jalankan pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Atau muat CSS yang sudah dikompilasi langsung dari CDN — tidak perlu langkah build."
+        "text": "Jalankan pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Atau muat CSS yang sudah dikompilasi langsung dari CDN — tidak perlu langkah build."
       }
     },
     {
@@ -236,7 +236,7 @@ Berlisensi ganda di bawah MIT dan Apache 2.0 — pilih yang sesuai kebutuhan pro
       "name": "Apakah Skeletonic Stylus siap WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ya. v1.1.7 menyertakan kontras sesuai AA, cincin focus-visible, pembantu skip-link, dukungan reduced-motion, dan mode gelap secara bawaan."
+        "text": "Ya. v2.0.0 menyertakan kontras sesuai AA, cincin focus-visible, pembantu skip-link, dukungan reduced-motion, dan mode gelap secara bawaan."
       }
     },
     {

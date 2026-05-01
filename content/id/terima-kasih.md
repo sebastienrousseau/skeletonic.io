@@ -17,4 +17,4 @@ Sementara itu, jika Anda belum melakukannya:
 
 - [Beri bintang proyek di GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Jelajahi paket npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Baca catatan perubahan v1.1.7](/id/catatan-perubahan/)
+- [Baca catatan perubahan v2.0.0](/id/catatan-perubahan/)

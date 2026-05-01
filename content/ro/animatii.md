@@ -1,7 +1,7 @@
 ---
 title: "Animații"
 name: "Skeletonic Stylus"
-description: "Modulul opțional de animații livrat cu Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake și altele, toate condiționate de prefers-reduced-motion."
+description: "Modulul opțional de animații livrat cu Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake și altele, toate condiționate de prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/ro/animatii/
 date: 2026-04-08
@@ -22,7 +22,7 @@ load_animations: true
 ```
 
 Fiecare clasă de animație este înfășurată într-un bloc
-**`@media (prefers-reduced-motion: no-preference)`** în v1.1.7, ceea ce
+**`@media (prefers-reduced-motion: no-preference)`** în v2.0.0, ceea ce
 înseamnă că un utilizator care a setat „reducere mișcare" la nivel de
 sistem de operare nu va vedea nicio animație — layout-ul funcționează în
 continuare, mișcarea este doar suprimată.
@@ -65,7 +65,7 @@ continuare, mișcarea este doar suprimată.
     height:64px;
     border-radius:50%;
     background:hsl(210,100%,42%);
-    /* proprietățile lipsă sunt aici pentru ca clasele de animație din v1.1.7
+    /* proprietățile lipsă sunt aici pentru ca clasele de animație din v2.0.0
        să ruleze efectiv când sunt adăugate pe țintă */
     animation-duration:1.2s;
     animation-iteration-count:1;
@@ -96,7 +96,7 @@ pentru a face keyframe-urile vizibile.
 <p class="anim-note-rm">
   Opțiunea Reducere mișcare este activată în sistemul tău de operare,
   astfel încât țintele de mai jos vor rămâne nemișcate — acesta este
-  comportamentul de accesibilitate din v1.1.7 care funcționează corect.
+  comportamentul de accesibilitate din v2.0.0 care funcționează corect.
 </p>
 
 <div class="anim-grid">
@@ -232,7 +232,7 @@ pentru a face keyframe-urile vizibile.
 </div>
 
 <script>
-  // Clasele de animație livrate în v1.1.7 setează animation-name în
+  // Clasele de animație livrate în v2.0.0 setează animation-name în
   // selectorul propriu. Pentru a rula din nou keyframe-ul, trebuie să
   // eliminăm clasa, să forțăm un layout flush, apoi să adăugăm din
   // nou clasa.
@@ -279,9 +279,9 @@ pentru a face keyframe-urile vizibile.
 | `.vanishIn` / `.vanishOut` | Apariție în stil Material |
 | `.chameleonbackground` / `.chameleontext` | Ciclare nuanță |
 
-## Avertisment — limitare cunoscută v1.1.7
+## Avertisment — limitare cunoscută v2.0.0
 
-Clasele de animație din v1.1.7 setează doar `animation-name`. Pentru a le
+Clasele de animație din v2.0.0 setează doar `animation-name`. Pentru a le
 rula, trebuie să furnizezi propriile `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` și
 `animation-timing-function` — exact ca în blocul `<style>` de la

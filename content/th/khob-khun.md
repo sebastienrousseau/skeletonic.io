@@ -18,4 +18,4 @@ keywords: "ขอบคุณ"
 
 - [ให้ดาวโปรเจกต์บน GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [ดูแพ็กเกจ npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [อ่านบันทึกการเปลี่ยนแปลง v1.1.7](/th/banthuek-kan-plian/)
+- [อ่านบันทึกการเปลี่ยนแปลง v2.0.0](/th/banthuek-kan-plian/)

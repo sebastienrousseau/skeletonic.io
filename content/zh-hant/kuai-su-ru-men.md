@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "安裝 skeletonic, stylus 設定, css cdn, 快速入門"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## 簡介
 
-剛接觸 Skeletonic Stylus？在 **v1.1.7** 中，按需選用功能比以往更加簡單。得益於極小的體積（核心樣式表 gzip 後約 8.3&nbsp;KB），它可以快速整合至任何 Web 應用程式——無需 JavaScript 框架，如果使用 CDN 則連建置步驟也不需要。
+剛接觸 Skeletonic Stylus？在 **v2.0.0** 中，按需選用功能比以往更加簡單。得益於極小的體積（核心樣式表 gzip 後約 8.6&nbsp;KB），它可以快速整合至任何 Web 應用程式——無需 JavaScript 框架，如果使用 CDN 則連建置步驟也不需要。
 
 準備好安裝了嗎？所有路徑均在下方說明——選擇適合的即可。
 
@@ -30,13 +30,13 @@ keywords: "安裝 skeletonic, stylus 設定, css cdn, 快速入門"
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### 透過 CDN
@@ -47,24 +47,24 @@ yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-為了最大完整性，請從 v1.1.7 發行說明中複製 **SRI 雜湊值**，並添加 `integrity="sha384-…"` 屬性。
+為了最大完整性，請從 v2.0.0 發行說明中複製 **SRI 雜湊值**，並添加 `integrity="sha384-…"` 屬性。
 
 ### 備選 CDN 位址
 
 | CDN | 網址 | HTTPS | 合併 |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | 是 | 是 |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | 是 | 否 |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | 是 | 是 |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | 是 | 否 |
 
 ### 下載 GitHub 版本
 
@@ -90,7 +90,7 @@ pnpm run build
 
 | 檔案 | 用途 | 大小（min/gz） |
 |---|---|---|
-| `core/skeletonic.min.css` | 重設 + token + 版面 + 元素 + 組件 + 工具類別 | 45.7 KB / 8.3 KB |
+| `core/skeletonic.min.css` | 重設 + token + 版面 + 元素 + 組件 + 工具類別 | 45.0 KB / 8.6 KB |
 | `animations/skeletonic-animations.min.css` | 可選動畫模組 | 約 18 KB / 約 4 KB |
 | `palettes/material/skeletonic-material.min.css` | Material 色板 | 約 8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons 工具色板 | 7.3 KB |
@@ -140,7 +140,7 @@ Skeletonic 將設計 token 以 **CSS 自訂屬性**形式公開，因此您無�
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>成功了。</h1>
@@ -156,7 +156,7 @@ Skeletonic 將設計 token 以 **CSS 自訂屬性**形式公開，因此您無�
 套件內包含所有原始檔案、編譯與壓縮後的 CSS 套件、source maps，以及依類別組織的完整 Stylus 目錄樹：
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -194,16 +194,16 @@ Skeletonic 將設計 token 以 **CSS 自訂屬性**形式公開，因此您無�
 ## 常見問題
 
 **如何安裝 Skeletonic Stylus？**
-執行 `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`。或直接從 CDN 載入編譯後的 CSS——無需建置步驟。
+執行 `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`。或直接從 CDN 載入編譯後的 CSS——無需建置步驟。
 
 **需要 JavaScript 嗎？**
 不需要。核心樣式表是純 CSS，零執行時間成本。組件無需任何一行 JS 即可運作。
 
 **是否符合 WCAG 2.2？**
-是的。v1.1.7 內建符合 AA 標準的對比度、focus-visible 焦點環、跳轉連結輔助、減弱動效支援以及預設深色模式。
+是的。v2.0.0 內建符合 AA 標準的對比度、focus-visible 焦點環、跳轉連結輔助、減弱動效支援以及預設深色模式。
 
 **gzip 後的大小是多少？**
-壓縮後 45.7&nbsp;KB，**gzip 後約 8.3&nbsp;KB**，brotli 後約 6.9&nbsp;KB（完整核心樣式表）。8&nbsp;KB 上限在 CI 中強制執行。
+壓縮後 45.0&nbsp;KB，**gzip 後約 8.6&nbsp;KB**，brotli 後約 7.2&nbsp;KB（完整核心樣式表）。8&nbsp;KB 上限在 CI 中強制執行。
 
 **使用什麼授權條款？**
 採用 MIT 和 Apache 2.0 雙授權——選擇適合您專案的即可。免費用於商業和個人用途。
@@ -218,7 +218,7 @@ Skeletonic 將設計 token 以 **CSS 自訂屬性**形式公開，因此您無�
       "name": "如何安裝 Skeletonic Stylus？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "執行 pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7。或直接從 CDN 載入編譯後的 CSS——無需建置步驟。"
+        "text": "執行 pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0。或直接從 CDN 載入編譯後的 CSS——無需建置步驟。"
       }
     },
     {
@@ -234,7 +234,7 @@ Skeletonic 將設計 token 以 **CSS 自訂屬性**形式公開，因此您無�
       "name": "Skeletonic Stylus 是否符合 WCAG 2.2？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "是的。v1.1.7 內建符合 AA 標準的對比度、focus-visible 焦點環、跳轉連結輔助、減弱動效支援以及預設深色模式。"
+        "text": "是的。v2.0.0 內建符合 AA 標準的對比度、focus-visible 焦點環、跳轉連結輔助、減弱動效支援以及預設深色模式。"
       }
     },
     {
@@ -242,7 +242,7 @@ Skeletonic 將設計 token 以 **CSS 自訂屬性**形式公開，因此您無�
       "name": "Skeletonic Stylus gzip 後的大小是多少？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "壓縮後 45.7 KB，gzip 後約 8.3 KB，brotli 後約 6.9 KB（完整核心樣式表）。8 KB 上限在 CI 每次提交時強制執行。"
+        "text": "壓縮後 45.0 KB，gzip 後約 8.6 KB，brotli 後約 7.2 KB（完整核心樣式表）。8 KB 上限在 CI 每次提交時強制執行。"
       }
     },
     {

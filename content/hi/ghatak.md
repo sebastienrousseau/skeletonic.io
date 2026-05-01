@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म, अलर्ट, बैज, हेडर, navbar, css only hamburger"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -111,7 +111,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
 
 <h3 id="alerts">अलर्ट</h3>
 
-सिमैंटिक इंटेंट वाले स्टेटस संदेश। **v1.1.7 में हर वेरिएंट स्पष्ट
+सिमैंटिक इंटेंट वाले स्टेटस संदेश। **v2.0.0 में हर वेरिएंट स्पष्ट
 रूप से** `.alert-{primary,secondary,info,success,warning,error}` के
 तहत नेमस्पेस्ड है ताकि वेरिएंट क्लास पेज पर कहीं और स्टेट क्लास से
 न टकराए।
@@ -170,7 +170,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">हल्की</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped।</p>
+      <p>45.0 KB minified, 8.6 KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -192,7 +192,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">हल्की</h3>
-      <p>45.7&nbsp;KB minified, 8.3&nbsp;KB gzipped।</p>
+      <p>45.0&nbsp;KB minified, 8.6&nbsp;KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -383,7 +383,7 @@ collapse, expand और focus trap करता है।
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus घटक",
-  "description": "Skeletonic Stylus v1.1.7 में शिप होने वाला हर घटक।",
+  "description": "Skeletonic Stylus v2.0.0 में शिप होने वाला हर घटक।",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

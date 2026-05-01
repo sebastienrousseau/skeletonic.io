@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "description": "skeletonic.io nie moze nawiazac polaczenia z siecia. Strona, ktorej szukasz, nie zostala jeszcze zapisana w pamieci podrecznej.",
-  "keywords": "offline, service worker, pwa",
-  "title": "Jestes offline",
   "permalink": "https://skeletonic.io/pl/offline/",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "title": "Jestes offline",
   "author": "Sebastien Rousseau",
+  "description": "skeletonic.io nie moze nawiazac polaczenia z siecia. Strona, ktorej szukasz, nie zostala jeszcze zapisana w pamieci podrecznej.",
   "language": "pl",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "keywords": "offline, service worker, pwa"
 }

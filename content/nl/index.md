@@ -15,7 +15,7 @@ Toegankelijke CSS in **minder dan 8&nbsp;KB gzipped**. WCAG&nbsp;2.2 klaar.
 Cascade-layered. Geen JavaScript. Direct in elke pagina te gebruiken.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## De anatomie van Skeletonic

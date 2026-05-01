@@ -18,4 +18,4 @@ keywords: "धन्यवाद"
 
 - [GitHub पर प्रोजेक्ट को स्टार करें](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [npm पैकेज देखें](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [v1.1.7 परिवर्तन लॉग पढ़ें](/hi/parivartan-log/)
+- [v2.0.0 परिवर्तन लॉग पढ़ें](/hi/parivartan-log/)

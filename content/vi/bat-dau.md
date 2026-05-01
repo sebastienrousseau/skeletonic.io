@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "cai dat skeletonic, thiet lap stylus, css cdn, bat dau"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Gioi thieu
 
-Moi lam quen voi Skeletonic Stylus? Trong **v1.1.7** viec chon dung
+Moi lam quen voi Skeletonic Stylus? Trong **v2.0.0** viec chon dung
 nhung tinh nang ban can de dang hon bao gio het. Nho dung luong nho
 (8,3&nbsp;KB gzip cho stylesheet chinh), no tich hop nhanh chong vao
 bat ky ung dung web nao — khong can JavaScript framework, khong can
@@ -36,13 +36,13 @@ neu muon.
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Tu CDN
@@ -53,25 +53,25 @@ Neu ban chi can CSS da bien dich, them mot trong nhung dong nay vao `<head>`:
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
 De dam bao toan ven toi da, sao chep **ma bam SRI** tu ghi chu phat hanh
-v1.1.7 va them thuoc tinh `integrity="sha384-…"`.
+v2.0.0 va them thuoc tinh `integrity="sha384-…"`.
 
 ### Cac vi tri CDN thay the
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Co | Co |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Co | Khong |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Co | Co |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Co | Khong |
 
 ### Tai tu ban phat hanh GitHub
 
@@ -102,7 +102,7 @@ Thu vien cung cap mot so goi CSS tien tao trong
 | Tap | Muc dich | Kich thuoc (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token + layout + phan tu + thanh phan + tien ich | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Mo-dun hieu ung dong tuy chon | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Mo-dun hieu ung dong tuy chon | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Bang mau Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Bang mau tien ich Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Bang mau web-safe | ≈3.5 KB |
@@ -153,7 +153,7 @@ Kiem tra nhanh "da hoat dong chua?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Da hoat dong.</h1>
@@ -171,7 +171,7 @@ Ben trong goi ban se tim thay moi tap nguon, cac goi CSS da bien dich
 va nen, source map, va mot cay Stylus day du duoc to chuc theo danh muc:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -210,7 +210,7 @@ nho nhat co the.
 ## Cau hoi thuong gap
 
 **Lam the nao de cai dat Skeletonic Stylus?**
-Chay `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Hoac tai
+Chay `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Hoac tai
 CSS da bien dich truc tiep tu CDN — khong can buoc build.
 
 **No co yeu cau JavaScript khong?**
@@ -218,7 +218,7 @@ Khong. Stylesheet chinh la CSS thuan, khong ton chi phi thoi gian chay.
 Cac thanh phan hoat dong ma khong can mot dong JS nao.
 
 **No da san sang cho WCAG 2.2 chua?**
-Co. v1.1.7 cung cap do tuong phan tuan thu AA, vong focus-visible,
+Co. v2.0.0 cung cap do tuong phan tuan thu AA, vong focus-visible,
 tro giup skip-link, ho tro giam chuyen dong va che do toi mac dinh.
 
 **Kich thuoc gzip la bao nhieu?**
@@ -239,7 +239,7 @@ cua ban. Mien phi cho ca muc dich thuong mai va ca nhan.
       "name": "Lam the nao de cai dat Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chay pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Hoac tai CSS da bien dich truc tiep tu CDN — khong can buoc build."
+        "text": "Chay pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Hoac tai CSS da bien dich truc tiep tu CDN — khong can buoc build."
       }
     },
     {
@@ -255,7 +255,7 @@ cua ban. Mien phi cho ca muc dich thuong mai va ca nhan.
       "name": "Skeletonic Stylus da san sang cho WCAG 2.2 chua?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Co. v1.1.7 cung cap do tuong phan tuan thu AA, vong focus-visible, tro giup skip-link, ho tro giam chuyen dong va che do toi mac dinh."
+        "text": "Co. v2.0.0 cung cap do tuong phan tuan thu AA, vong focus-visible, tro giup skip-link, ho tro giam chuyen dong va che do toi mac dinh."
       }
     },
     {

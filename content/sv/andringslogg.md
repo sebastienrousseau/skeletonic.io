@@ -1,21 +1,21 @@
 ---
 title: "Andringslogg"
 name: "Skeletonic Stylus"
-description: "Releaseanteckningar for Skeletonic Stylus, med v1.1.7 i sin helhet."
+description: "Releaseanteckningar for Skeletonic Stylus, med v2.0.0 i sin helhet."
 layout: page
 permalink: https://skeletonic.io/sv/andringslogg/
 author: Sebastien Rousseau
 language: sv
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic andringslogg, releaseanteckningar, v1.1.7, semver"
+keywords: "skeletonic andringslogg, releaseanteckningar, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (aktuell)
+## v2.0.0 — 2026-04 (aktuell)
 
 Passet for "releaseredskap": a11y, leveranskedja, repohydien.
 
@@ -44,7 +44,7 @@ Passet for "releaseredskap": a11y, leveranskedja, repohydien.
 ### Repohydien &amp; konsumentpaket
 - Arvd `package/`-katalog borttagen; `dist/` ar nu den enda sanningkallan
   for konsumenter.
-- README omskriven for att aterspegia v1.1.7-installationsvagar.
+- README omskriven for att aterspegia v2.0.0-installationsvagar.
 - `dist/` ar committad; `debug/` genereras och gitignoreras.
 - Ny `.github/workflows/npm-publish.yml` ar taggdriven.
 
@@ -56,7 +56,7 @@ Passet for "releaseredskap": a11y, leveranskedja, repohydien.
 - **`.alert-*` namnrymdsandring** — `.alert.success` → `.alert.alert-success`
   for att undvika kollisioner med tillstandsklasser.
 
-[Fullstandiga v1.1.7-releaseanteckningar pa GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Fullstandiga v2.0.0-releaseanteckningar pa GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historik">
 

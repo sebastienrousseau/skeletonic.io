@@ -25,7 +25,7 @@ seconds — please verify them yourself before quoting any number here.
 
 | Framework | Version | Raw | gzip −9 | brotli −q 11 |
 |---|---|---:|---:|---:|
-| **Skeletonic Stylus** | 1.1.7 | **45,660** | **8,346** | **6,880** |
+| **Skeletonic Stylus** | 2.0.0 | **44,961** | **8,642** | **7,177** |
 | Pico CSS | 2.1.1 | 83,319 | 11,651 | 10,098 |
 | Bootstrap | 5.3.8 | 232,111 | 30,887 | 22,970 |
 | Bulma | 1.0.4 | 677,931 | 64,854 | 36,338 |
@@ -43,7 +43,7 @@ HTTPS in 2026 — that's the line that matters for real-world transfer.
 
 | Key | URL |
 |---|---|
-| Skeletonic | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` |
+| Skeletonic | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` |
 | Pico CSS | `https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css` |
 | Bootstrap | `https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css` |
 | Bulma | `https://cdn.jsdelivr.net/npm/bulma@1/css/bulma.min.css` |
@@ -85,7 +85,7 @@ HTTPS in 2026 — that's the line that matters for real-world transfer.
   Skeletonic is class-based; different ergonomic trade-off, similar
   weight.
 
-- **Skeletonic 1.1.7** absorbs the v1.1.7 RTL refactor (95
+- **Skeletonic 2.0.0** absorbs the v2.0.0 RTL refactor (95
   logical-property declarations, 19 `[dir="rtl"]` overrides). The
   pre-RTL bundle was ≈ 7.5 KB gzip — that's the historical number you
   may see in older docs.
@@ -97,7 +97,7 @@ HTTPS in 2026 — that's the line that matters for real-world transfer.
 ```bash
 mkdir -p /tmp/skel-bench && cd /tmp/skel-bench
 
-curl -sL "https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css" -o skeletonic.css
+curl -sL "https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css" -o skeletonic.css
 curl -sL "https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css"                                   -o bootstrap.css
 curl -sL "https://cdn.jsdelivr.net/npm/bulma@1/css/bulma.min.css"                                                  -o bulma.css
 curl -sL "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"                                           -o pico.css

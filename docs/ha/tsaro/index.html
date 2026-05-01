@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -113,8 +113,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
-<meta name="description" content="Aiki 45.7 KB da aka ƙaranta · 8.3 KB gzipped · 6.9 KB brotli don dukan stylesheet na tushe. Babu JavaScript — Stylus tsantsa → CSS tsantsa, babu kuɗin">
-<meta property="og:description" content="Aiki 45.7 KB da aka ƙaranta · 8.3 KB gzipped · 6.9 KB brotli don dukan stylesheet na tushe. Babu JavaScript — Stylus tsantsa → CSS tsantsa, babu kuɗin">
+<meta name="description" content="Aiki 45.0 KB da aka ƙaranta · 8.6 KB gzipped · 7.2 KB brotli don dukan stylesheet na tushe. Babu JavaScript — Stylus tsantsa → CSS tsantsa, babu kuɗin">
+<meta property="og:description" content="Aiki 45.0 KB da aka ƙaranta · 8.6 KB gzipped · 7.2 KB brotli don dukan stylesheet na tushe. Babu JavaScript — Stylus tsantsa → CSS tsantsa, babu kuɗin">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -214,7 +214,7 @@
         
 <h2>Aiki</h2>
 <ul>
-<li><strong>45.7 KB da aka ƙaranta · 8.3 KB gzipped · 6.9 KB brotli</strong> don dukan stylesheet na tushe.</li>
+<li><strong>45.0 KB da aka ƙaranta · 8.6 KB gzipped · 7.2 KB brotli</strong> don dukan stylesheet na tushe.</li>
 <li><strong>Babu JavaScript</strong> — Stylus tsantsa → CSS tsantsa, babu kuɗin lokacin aiki.</li>
 <li><strong>Cascade-layered</strong> — soke suna cin nasara ba tare da <code>!important</code> ba.</li>
 <li><strong>An tilasta kasafin <code>size-limit</code></strong> a CI a kan kowanne commit.</li>
@@ -225,7 +225,7 @@
 <thead>
 <tr>
 <th>Iko</th>
-<th>Matsayin v1.1.7</th>
+<th>Matsayin v2.0.0</th>
 </tr>
 </thead>
 <tbody>
@@ -267,10 +267,10 @@
 <h2>CycloneDX SBOM</h2>
 <p>Kowanne tarball da aka buga ya haɗa da CycloneDX SBOM a <code>dist/sbom.json</code>. Kuna iya tabbatar da fakiti da aka sabo shigar da:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.metadata.component.version</span><span style="color:#c0c5ce;">&#39; \
 </span><span style="color:#c0c5ce;">  node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-</span><span style="color:#65737e;"># → &quot;1.1.7&quot;
+</span><span style="color:#65737e;"># → &quot;2.0.0&quot;
 </span></pre>
 </code></pre>
 <p>Ana ƙirƙira SBOM da <code>cyclonedx-npm</code> yayin aikin buga.</p>
@@ -279,7 +279,7 @@
 <p>An sanya hannu a kan kayan da aka buga ta amfani da <a href="https://docs.npmjs.com/generating-provenance-statements">tabbacin fakitin npm</a>.</p>
 <p>Kuna iya tabbatar da shi bayan shigarwa da:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@1.1.7</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
+<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@2.0.0</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
 </span><span style="color:#c0c5ce;">  </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.dist.&quot;npm-signature&quot;</span><span style="color:#c0c5ce;">&#39;
 </span></pre>
 </code></pre>
@@ -298,7 +298,7 @@
 <tr>
 <td class="text-left"><strong>CVE-2023-44270</strong> (matsalar sakin layi ta postcss)</td>
 <td class="text-left">Matsakaici</td>
-<td class="text-left"><strong>An gyara</strong> a v1.1.7 ta hanyar <code>pnpm.overrides</code> da ke sabunta <code>postcss</code> zuwa ≥ 8.4.31</td>
+<td class="text-left"><strong>An gyara</strong> a v2.0.0 ta hanyar <code>pnpm.overrides</code> da ke sabunta <code>postcss</code> zuwa ≥ 8.4.31</td>
 </tr>
 </tbody>
 </table>

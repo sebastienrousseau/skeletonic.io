@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — CSS ที่เข้าถึงได้ ขนาด 8.3 KB gzipped"
+title: "Skeletonic Stylus — CSS ที่เข้าถึงได้ ขนาด 8.6 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus เป็นไลบรารี Stylus CSS ที่เบาและเป็นโมดูล — รองรับ WCAG 2.2, ใช้ Cascade Layers, ขนาด 8.3 KB gzipped — ออกแบบมาเพื่อการพัฒนา UI เว็บสมัยใหม่"
+description: "Skeletonic Stylus เป็นไลบรารี Stylus CSS ที่เบาและเป็นโมดูล — รองรับ WCAG 2.2, ใช้ Cascade Layers, ขนาด 8.6 KB gzipped — ออกแบบมาเพื่อการพัฒนา UI เว็บสมัยใหม่"
 layout: index
 permalink: https://skeletonic.io/th/
 date: 2026-04-08
@@ -15,7 +15,7 @@ CSS ที่เข้าถึงได้ใน **ขนาดไม่ถึ�
 Cascade-layered ไม่มี JavaScript ใส่ในหน้าเว็บใดก็ได้
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## โครงสร้างของ Skeletonic

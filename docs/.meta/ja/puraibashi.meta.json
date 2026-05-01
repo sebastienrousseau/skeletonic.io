@@ -1,12 +1,12 @@
 {
-  "language": "ja",
-  "title": "プライバシー",
-  "author": "Sebastien Rousseau",
-  "description": "skeletonic.io が収集するデータ、その理由、およびオプトアウトの方法。",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "keywords": "プライバシー, gdpr, cookie, トラッキングなし",
   "date": "2026-04-08",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ja/puraibashi/"
+  "language": "ja",
+  "description": "skeletonic.io が収集するデータ、その理由、およびオプトアウトの方法。",
+  "author": "Sebastien Rousseau",
+  "title": "プライバシー",
+  "keywords": "プライバシー, gdpr, cookie, トラッキングなし",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/ja/puraibashi/",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

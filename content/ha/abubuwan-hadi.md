@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "abubuwan hadi na skeletonic, maballin, katunan, sifofi, faɗakarwa, alamomi, kanun shafi, navbar, css only hamburger"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -99,7 +99,7 @@ Saman da ke gaya wa mai ziyara cewa wani abu ya faru — ko kuma yana shirin far
 
 <h3 id="alerts">Faɗakarwa</h3>
 
-Saƙonnin matsayi da niyyar ma'ana. **A cikin v1.1.7 an sanya kowane nau'i a ƙarƙashin sunan yanki** a ƙarƙashin `.alert-{primary,secondary,info,success,warning,error}` don haka ajin nau'i ba zai yi karo da azuzuwan yanayi a wani wuri a shafin ba.
+Saƙonnin matsayi da niyyar ma'ana. **A cikin v2.0.0 an sanya kowane nau'i a ƙarƙashin sunan yanki** a ƙarƙashin `.alert-{primary,secondary,info,success,warning,error}` don haka ajin nau'i ba zai yi karo da azuzuwan yanayi a wani wuri a shafin ba.
 
 ```html
 <div class="alert alert-primary" role="alert">
@@ -151,7 +151,7 @@ Kwantenan da ke da iyaka da padding don raka'a guda mai jituwa. Haɗa shi da gri
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Mai saukin nauyi</h3>
-      <p>45.7 KB da aka ƙaranta, 8.3 KB gzipped.</p>
+      <p>45.0 KB da aka ƙaranta, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ Kwantenan da ke da iyaka da padding don raka'a guda mai jituwa. Haɗa shi da gri
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Mai saukin nauyi</h3>
-      <p>45.7&nbsp;KB da aka ƙaranta, 8.3&nbsp;KB gzipped.</p>
+      <p>45.0&nbsp;KB da aka ƙaranta, 8.6&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -346,7 +346,7 @@ Cikakken kanun shafi na CSS kawai tare da hamburger toggle mai amsa. **Babu Java
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Abubuwan hadi na Skeletonic Stylus",
-  "description": "Kowane abun hadi da Skeletonic Stylus v1.1.7 ke aikawa.",
+  "description": "Kowane abun hadi da Skeletonic Stylus v2.0.0 ke aikawa.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

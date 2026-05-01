@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, 소개, stylus, css 프레임워크, 철학"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, 소개, stylus, css 프레임워크, 철학"
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="월간 다운로드" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="npm 버전" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="번들 크기" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="번들 크기" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="라이선스" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -43,7 +43,7 @@ keywords: "skeletonic, 소개, stylus, css 프레임워크, 철학"
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="깃털" width="64" height="64" loading="lazy" decoding="async">
     <h3>경량</h3>
-    <p>약 8.3&nbsp;KB gzipped. 페이지가 더 빠르게 로드됩니다. 모든 필수 구성 요소가 포함되어 있습니다.</p>
+    <p>약 8.6&nbsp;KB gzipped. 페이지가 더 빠르게 로드됩니다. 모든 필수 구성 요소가 포함되어 있습니다.</p>
   </article>
 
   <article class="feature-card">
@@ -77,7 +77,7 @@ keywords: "skeletonic, 소개, stylus, css 프레임워크, 철학"
 
 | 기능 | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Gzipped 크기 | **약 8.3&nbsp;KB** | 약 30&nbsp;KB | 약 10&nbsp;KB (varies) | 약 30&nbsp;KB |
+| Gzipped 크기 | **약 8.6&nbsp;KB** | 약 30&nbsp;KB | 약 10&nbsp;KB (varies) | 약 30&nbsp;KB |
 | WCAG 2.2 준수 | **기본 내장** | 부분적 | 수동 | 부분적 |
 | 캐스케이드 레이어 | **지원 (`@layer`)** | 미지원 | 미지원 | 미지원 |
 | 다크 모드 | **`prefers-color-scheme`** | 선택적 | 클래스 기반 | 선택적 |
@@ -104,7 +104,7 @@ Skeletonic Stylus는 [Semantic Versioning 2.0](https://semver.org)을 따릅니�
 |---|---|---|
 | **Major** | 공개 클래스, 믹스인 또는 토큰의 제거 또는 이름 변경 | 1.x → 2.0 |
 | **Minor** | 새로운 구성 요소, 믹스인 또는 토큰 추가 | 1.1 → 1.2 |
-| **Patch** | 버그 수정, 접근성 개선, 성능, 보안 | 1.1.6 → 1.1.7 |
+| **Patch** | 버그 수정, 접근성 개선, 성능, 보안 | 1.1.6 → 2.0.0 |
 
 모든 공개 클래스 이름, 모든 CSS 커스텀 속성 및 모든 내보내진 Stylus 믹스인은 공개 API의 일부입니다. 호환성을 깨는 변경 사항은 메이저 버전 업데이트와 마이그레이션 가이드를 동반합니다.
 

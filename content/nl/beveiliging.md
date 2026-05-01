@@ -1,7 +1,7 @@
 ---
 title: "Beveiliging &amp; toeleveringsketen"
 name: "Skeletonic Stylus"
-description: "Hoe Skeletonic Stylus v1.1.7 zijn buildpipeline beveiligt, releases ondertekent en een SBOM levert."
+description: "Hoe Skeletonic Stylus v2.0.0 zijn buildpipeline beveiligt, releases ondertekent en een SBOM levert."
 layout: page
 permalink: https://skeletonic.io/nl/beveiliging/
 date: 2026-04-08
@@ -23,7 +23,7 @@ is een byte minder om te auditen, ondertekenen en verifiëren.
 
 ## Toeleveringsketen samenvatting
 
-| Maatregel | v1.1.7-status |
+| Maatregel | v2.0.0-status |
 |---|---|
 | **CycloneDX SBOM** | Gegenereerd bij elke release, opgenomen onder `dist/sbom.json` |
 | **npm-herkomst** | Ingeschakeld (`--provenance --access public`) |
@@ -42,10 +42,10 @@ Elk gepubliceerd tarball bevat een CycloneDX SBOM op `dist/sbom.json`.
 Je kunt een vers geïnstalleerd pakket verifiëren met:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 De SBOM wordt gegenereerd met `cyclonedx-npm` tijdens de publicatieworkflow.
@@ -60,7 +60,7 @@ Het gepubliceerde artefact wordt ondertekend met behulp van
 Je kunt het na installatie verifiëren met:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -73,7 +73,7 @@ Actions-run die het heeft geproduceerd.
 
 | CVE | Ernst | Status |
 |---|---|---|
-| **CVE-2023-44270** (postcss regelterugloop-parsing) | Gemiddeld | **Gepatcht** in v1.1.7 via `pnpm.overrides` die `postcss` upgradet naar ≥ 8.4.31 |
+| **CVE-2023-44270** (postcss regelterugloop-parsing) | Gemiddeld | **Gepatcht** in v2.0.0 via `pnpm.overrides` die `postcss` upgradet naar ≥ 8.4.31 |
 
 De Snyk-adviesdatabase en de GitHub Security Advisories-feed worden continu gemonitord;
 beveiligingspatches worden geleverd als **patch-level releases**.

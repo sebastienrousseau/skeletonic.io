@@ -1,7 +1,7 @@
 ---
 title: "팔레트"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7에 포함된 Material, Tachyons 및 웹 안전 색상 팔레트입니다."
+description: "Skeletonic Stylus v2.0.0에 포함된 Material, Tachyons 및 웹 안전 색상 팔레트입니다."
 layout: page
 permalink: https://skeletonic.io/ko/palleteu/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css 팔레트, material, tachyons, 웹 안전, 디자인 토큰"
 ---
 
-Skeletonic Stylus v1.1.7은 **3가지 선택적 색상 팔레트**를 제공하며, 각각 독립된 최소화 스타일시트로 배포되므로 사용하는 것만 로드하면 됩니다.
+Skeletonic Stylus v2.0.0은 **3가지 선택적 색상 팔레트**를 제공하며, 각각 독립된 최소화 스타일시트로 배포되므로 사용하는 것만 로드하면 됩니다.
 
 | 팔레트 | 파일 | 크기 (min) |
 |---|---|---|
@@ -59,9 +59,9 @@ Skeletonic Stylus v1.1.7은 **3가지 선택적 색상 팔레트**를 제공하�
 
 <hr class="hr-text" data-content="브랜드">
 
-## 브랜드 색상 (v1.1.7 — AA 대비)
+## 브랜드 색상 (v2.0.0 — AA 대비)
 
-v1.1.7에서 주 색상과 보조 색상 토큰이 흰색 텍스트에 대해 **WCAG 4.5:1** 대비를 기본으로 충족하도록 어둡게 조정되었습니다.
+v2.0.0에서 주 색상과 보조 색상 토큰이 흰색 텍스트에 대해 **WCAG 4.5:1** 대비를 기본으로 충족하도록 어둡게 조정되었습니다.
 
 <div class="row margin-top-3">
   <div class="flex-4 padding-3 text-center" style="background-color: hsl(210, 100%, 42%); color: #fff;">

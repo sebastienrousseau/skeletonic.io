@@ -1,7 +1,7 @@
 ---
 title: "Paletter"
 name: "Skeletonic Stylus"
-description: "Material-, Tachyons- och webbsakra fargpaletter som levereras med Skeletonic Stylus v1.1.7."
+description: "Material-, Tachyons- och webbsakra fargpaletter som levereras med Skeletonic Stylus v2.0.0."
 layout: page
 permalink: https://skeletonic.io/sv/paletter/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "css palett, material, tachyons, webbsaker, design tokens"
 ---
 
-Skeletonic Stylus v1.1.7 levererar **tre valfria fargpaletter**, var och en
+Skeletonic Stylus v2.0.0 levererar **tre valfria fargpaletter**, var och en
 distribuerad som sitt eget minifierade stylesheet sa att du bara betalar for
 det du anvander.
 
@@ -63,9 +63,9 @@ Karn-stylesheetet levererar en tillganglig 11-stegs graskala exponerad som
 
 <hr class="hr-text" data-content="Markesfarger">
 
-## Markesfarger (v1.1.7 — AA-kontrast)
+## Markesfarger (v2.0.0 — AA-kontrast)
 
-I v1.1.7 morkades de primara och sekundara token for att uppna
+I v2.0.0 morkades de primara och sekundara token for att uppna
 **WCAG 4.5:1**-kontrast mot vit text direkt.
 
 <div class="row margin-top-3">

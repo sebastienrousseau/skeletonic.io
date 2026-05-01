@@ -1,7 +1,7 @@
 ---
-title: "Samun Dama — WCAG 2.2 a v1.1.7"
+title: "Samun Dama — WCAG 2.2 a v2.0.0"
 name: "Skeletonic Stylus"
-description: "Abin da v1.1.7 ke aikawa daga cikin akwatin don daidaiton WCAG 2.2 — zoben mayar da hankali, bambanci, hanyoyin tsallake, motsi, da yanayin dare."
+description: "Abin da v2.0.0 ke aikawa daga cikin akwatin don daidaiton WCAG 2.2 — zoben mayar da hankali, bambanci, hanyoyin tsallake, motsi, da yanayin dare."
 layout: page
 permalink: https://skeletonic.io/ha/samun-dama/
 date: 2026-04-08
@@ -11,18 +11,18 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, samun dama, focus visible, skip link, prefers reduced motion, bambanci"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 yana aika daidaiton WCAG 2.2 a matsayin halayen tsoho, ba a matsayin jigo na zaɓi ba.** Wannan shafin yana rubuta abin da aka gina a ciki da mixins ɗin da za ku iya zaɓa don ƙarin sarrafawa.
+> **Skeletonic Stylus v2.0.0 yana aika daidaiton WCAG 2.2 a matsayin halayen tsoho, ba a matsayin jigo na zaɓi ba.** Wannan shafin yana rubuta abin da aka gina a ciki da mixins ɗin da za ku iya zaɓa don ƙarin sarrafawa.
 
 <hr class="hr-text" data-content="Daga cikin akwatin">
 
 ## Abin da kuke samu kyauta
 
-| WCAG 2.2 SC | Abin da v1.1.7 ke yi | Yadda ake tabbatarwa |
+| WCAG 2.2 SC | Abin da v2.0.0 ke yi | Yadda ake tabbatarwa |
 |---|---|---|
 | **1.4.3 Bambanci (Mafi ƙaranci) — AA** | An duhunta `--cl-primary` da `--cl-secondary` zuwa ≥ 4.5:1 akan fari | DevTools → mai binciken bambanci |
 | **1.4.11 Bambancin da ba rubutu ba — AA** | Iyakokin sifofi, maballin, alamomi duk ≥ 3:1 | Iri ɗaya |
@@ -82,5 +82,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI yana gudanar da wannan rubutun akan shafin nunin `dist/index.html` a kowane turawa.
 
-[Karanta game da sakin v1.1.7 →](/ha/tarihin-canje-canje/) ·
+[Karanta game da sakin v2.0.0 →](/ha/tarihin-canje-canje/) ·
 [Duba shafin tsaro →](/ha/tsaro/)

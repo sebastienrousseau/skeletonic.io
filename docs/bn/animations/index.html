@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -220,7 +220,7 @@
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">/css/skeletonic-animations.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>v1.1.7-এ প্রতিটি অ্যানিমেশন ক্লাস একটি
+<p>v2.0.0-এ প্রতিটি অ্যানিমেশন ক্লাস একটি
 <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> ব্লকে মোড়ানো,
 অর্থাৎ যে ব্যবহারকারী OS স্তরে &quot;reduce motion&quot; সেট করেছেন তিনি
 কোনো অ্যানিমেশনই দেখবেন না — লেআউট এখনও কাজ করে, শুধু মোশন দমন করা হয়।</p>
@@ -283,7 +283,7 @@
 <code>animation-iteration-count</code> / <code>animation-fill-mode</code> প্রপার্টি যোগ করে।</p>
 <p class="anim-note-rm">
   আপনার OS-এ Reduce Motion সক্রিয়, তাই নিচের টার্গেট স্থির থাকবে
-  — এটি v1.1.7-এর প্রবেশাধিকার আচরণ সঠিকভাবে কাজ করছে।
+  — এটি v2.0.0-এর প্রবেশাধিকার আচরণ সঠিকভাবে কাজ করছে।
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -400,7 +400,7 @@
   </div>
 </div>
 <script>
-  // v1.1.7-এ শিপ করা অ্যানিমেশন ক্লাস সিলেক্টরে animation-name সেট করে।
+  // v2.0.0-এ শিপ করা অ্যানিমেশন ক্লাস সিলেক্টরে animation-name সেট করে।
   // keyframe রিপ্লে করতে ক্লাস মুছে, লেআউট ফ্লাশ জোর করে, তারপর ক্লাস ফেরত যোগ করতে হয়।
   function replayAnim(btn, name){
     var target = btn.closest('.anim-card').querySelector('.anim-target');
@@ -496,8 +496,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>মাথায় রাখুন — পরিচিত v1.1.7 সীমাবদ্ধতা</h2>
-<p>v1.1.7-এ অ্যানিমেশন ক্লাস শুধু <code>animation-name</code> সেট করে। সেগুলো
+<h2>মাথায় রাখুন — পরিচিত v2.0.0 সীমাবদ্ধতা</h2>
+<p>v2.0.0-এ অ্যানিমেশন ক্লাস শুধু <code>animation-name</code> সেট করে। সেগুলো
 চালাতে আপনাকে বর্তমানে নিজের <code>animation-duration</code>,
 <code>animation-iteration-count</code>, <code>animation-fill-mode</code> ও
 <code>animation-timing-function</code> দিতে হবে — ঠিক যেমন এই পেজের শীর্ষে

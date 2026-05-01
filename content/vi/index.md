@@ -15,7 +15,7 @@ CSS tro nang trong **duoi 8&nbsp;KB gzip**. San sang WCAG&nbsp;2.2.
 Phan tang cascade. Khong JavaScript. Them vao bat ky trang nao.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Giai phau Skeletonic

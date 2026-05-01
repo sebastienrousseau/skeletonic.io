@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instalar skeletonic, configurar stylus, css cdn, primeiros passos"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Introducao
 
-Novo no Skeletonic Stylus? Na **v1.1.7** ficou mais facil do que nunca
+Novo no Skeletonic Stylus? Na **v2.0.0** ficou mais facil do que nunca
 escolher apenas os recursos que voce precisa. Gracas ao seu tamanho
 minimo (8,3&nbsp;KB gzipped para a folha de estilos principal), ele se
 integra rapidamente a qualquer aplicacao web — sem necessidade de
@@ -36,13 +36,13 @@ arquivos de distribuicao localmente, se preferir.
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Via CDN
@@ -53,25 +53,25 @@ Se voce precisa apenas do CSS compilado, adicione uma destas linhas ao seu `<hea
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
 Para maxima integridade, copie o **hash SRI** das notas de lancamento da
-v1.1.7 e adicione um atributo `integrity="sha384-…"`.
+v2.0.0 e adicione um atributo `integrity="sha384-…"`.
 
 ### Fontes CDN alternativas
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Sim | Sim |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Sim | Nao |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Sim | Sim |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Sim | Nao |
 
 ### Baixar o release do GitHub
 
@@ -103,7 +103,7 @@ a instalacao:
 | Arquivo | Finalidade | Tamanho (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elementos + componentes + utilitarios | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modulo de animacoes opcional | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Modulo de animacoes opcional | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de cores Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta utilitaria Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Paleta web-safe | ≈3.5 KB |
@@ -154,7 +154,7 @@ Um teste minimo de "funcionou?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Funcionou.</h1>
@@ -173,7 +173,7 @@ compilados e minificados, source maps e uma arvore Stylus completa
 organizada por categoria:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -212,7 +212,7 @@ manter seu payload CSS o menor possivel.
 ## Perguntas frequentes
 
 **Como instalo o Skeletonic Stylus?**
-Execute `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Ou carregue
+Execute `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Ou carregue
 o CSS compilado diretamente de um CDN — sem necessidade de etapa de build.
 
 **Ele requer JavaScript?**
@@ -220,7 +220,7 @@ Nao. A folha de estilos principal e CSS puro, sem custo de execucao.
 Os componentes funcionam sem uma unica linha de JS.
 
 **E compativel com WCAG 2.2?**
-Sim. A v1.1.7 inclui contraste em conformidade com AA, aneis
+Sim. A v2.0.0 inclui contraste em conformidade com AA, aneis
 focus-visible, helpers de skip-link, suporte a movimento reduzido e
 modo escuro por padrao.
 
@@ -243,7 +243,7 @@ seu projeto. Gratuito para uso comercial e pessoal.
       "name": "Como instalo o Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Execute pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Ou carregue o CSS compilado diretamente de um CDN — sem necessidade de etapa de build."
+        "text": "Execute pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Ou carregue o CSS compilado diretamente de um CDN — sem necessidade de etapa de build."
       }
     },
     {
@@ -259,7 +259,7 @@ seu projeto. Gratuito para uso comercial e pessoal.
       "name": "O Skeletonic Stylus e compativel com WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sim. A v1.1.7 inclui contraste em conformidade com AA, aneis focus-visible, helpers de skip-link, suporte a movimento reduzido e modo escuro por padrao."
+        "text": "Sim. A v2.0.0 inclui contraste em conformidade com AA, aneis focus-visible, helpers de skip-link, suporte a movimento reduzido e modo escuro por padrao."
       }
     },
     {

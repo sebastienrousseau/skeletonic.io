@@ -15,7 +15,7 @@ Tillganglig CSS pa **under 8&nbsp;KB gzippat**. WCAG&nbsp;2.2-klart.
 Cascade-layered. Noll JavaScript. Lagg till pa vilken sida som helst.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Skeletonics uppbyggnad

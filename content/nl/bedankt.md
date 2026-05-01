@@ -18,4 +18,4 @@ In de tussentijd, als je dat nog niet hebt gedaan:
 
 - [Geef het project een ster op GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Bekijk het npm-pakket](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Lees het v1.1.7-wijzigingslogboek](/nl/wijzigingslogboek/)
+- [Lees het v2.0.0-wijzigingslogboek](/nl/wijzigingslogboek/)

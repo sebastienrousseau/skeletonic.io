@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "installer skeletonic, configuration stylus, css cdn, premiers pas"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Introduction
 
-Nouveau sur Skeletonic Stylus ? Avec la **v1.1.7**, choisir les
+Nouveau sur Skeletonic Stylus ? Avec la **v2.0.0**, choisir les
 fonctionnalités nécessaires n'a jamais été aussi simple. Grâce à son
 empreinte minuscule (8,3 Ko gzippé pour la feuille de style
 principale), il s'intègre rapidement dans n'importe quelle application
@@ -37,13 +37,13 @@ fichiers de distribution localement.
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Depuis un CDN
@@ -55,25 +55,25 @@ dans votre `<head>` :
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
 Pour une intégrité maximale, copiez le **hash SRI** depuis les notes de
-version v1.1.7 et ajoutez un attribut `integrity="sha384-…"`.
+version v2.0.0 et ajoutez un attribut `integrity="sha384-…"`.
 
 ### CDN alternatifs
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Oui | Oui |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Oui | Non |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Oui | Oui |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Oui | Non |
 
 ### Télécharger la release GitHub
 
@@ -158,7 +158,7 @@ Un test minimal « est-ce que ça marche ? » :
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Ça fonctionne.</h1>
@@ -177,7 +177,7 @@ bundles CSS compilés et minifiés, les source maps et une arborescence
 Stylus organisée par catégorie :
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -216,7 +216,7 @@ pour garder votre charge CSS aussi légère que possible.
 ## Foire aux questions
 
 **Comment installer Skeletonic Stylus ?**
-Exécutez `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Ou
+Exécutez `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Ou
 chargez le CSS compilé directement depuis un CDN — aucune étape de build
 requise.
 
@@ -225,7 +225,7 @@ Non. La feuille de style principale est du CSS pur, sans aucun coût à
 l'exécution. Les composants fonctionnent sans une seule ligne de JS.
 
 **Est-il conforme WCAG 2.2 ?**
-Oui. La v1.1.7 livre un contraste conforme AA, des anneaux
+Oui. La v2.0.0 livre un contraste conforme AA, des anneaux
 focus-visible, des liens d'évitement, le support du mouvement réduit et
 le mode sombre par défaut.
 
@@ -247,7 +247,7 @@ projet. Gratuit pour un usage commercial et personnel.
       "name": "Comment installer Skeletonic Stylus ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Exécutez pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Ou chargez le CSS compilé directement depuis un CDN — aucune étape de build requise."
+        "text": "Exécutez pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Ou chargez le CSS compilé directement depuis un CDN — aucune étape de build requise."
       }
     },
     {
@@ -263,7 +263,7 @@ projet. Gratuit pour un usage commercial et personnel.
       "name": "Skeletonic Stylus est-il conforme WCAG 2.2 ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui. La v1.1.7 livre un contraste conforme AA, des anneaux focus-visible, des liens d'évitement, le support du mouvement réduit et le mode sombre par défaut."
+        "text": "Oui. La v2.0.0 livre un contraste conforme AA, des anneaux focus-visible, des liens d'évitement, le support du mouvement réduit et le mode sombre par défaut."
       }
     },
     {

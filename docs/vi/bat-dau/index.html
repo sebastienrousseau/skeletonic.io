@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -113,8 +113,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
-<meta name="description" content="Translation note (2026-04-30). v1.1.7 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta property="og:description" content="Translation note (2026-04-30). v1.1.7 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -213,13 +213,13 @@
       <div class="text-start">
         
 <blockquote>
-<p><strong>Translation note (2026-04-30).</strong> v1.1.7 adds RTL support and a refreshed
+<p><strong>Translation note (2026-04-30).</strong> v2.0.0 adds RTL support and a refreshed
 2026 framework comparison. The English source is the canonical reference
 while these translations catch up. See <a href="https://skeletonic.io/about/">https://skeletonic.io/about/</a> ·
 <a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
 </blockquote>
 <h2>Gioi thieu</h2>
-<p>Moi lam quen voi Skeletonic Stylus? Trong <strong>v1.1.7</strong> viec chon dung
+<p>Moi lam quen voi Skeletonic Stylus? Trong <strong>v2.0.0</strong> viec chon dung
 nhung tinh nang ban can de dang hon bao gio het. Nho dung luong nho
 (8,3 KB gzip cho stylesheet chinh), no tich hop nhanh chong vao
 bat ky ung dung web nao — khong can JavaScript framework, khong can
@@ -232,13 +232,13 @@ neu muon.</p>
 <h3>Tu trinh quan ly goi (khuyen nghi)</h3>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
 <span style="color:#65737e;"># pnpm
-</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;"># npm
-</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;"># yarn
-</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span></pre>
 </code></pre>
 <h3>Tu CDN</h3>
@@ -247,18 +247,18 @@ neu muon.</p>
 <span style="color:#65737e;">&lt;!-- jsDelivr --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;">&lt;!-- unpkg --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
 <p>De dam bao toan ven toi da, sao chep <strong>ma bam SRI</strong> tu ghi chu phat hanh
-v1.1.7 va them thuoc tinh <code>integrity=&quot;sha384-…&quot;</code>.</p>
+v2.0.0 va them thuoc tinh <code>integrity=&quot;sha384-…&quot;</code>.</p>
 <h3>Cac vi tri CDN thay the</h3>
 <div class="table-responsive"><table class="table">
 <thead>
@@ -272,13 +272,13 @@ v1.1.7 va them thuoc tinh <code>integrity=&quot;sha384-…&quot;</code>.</p>
 <tbody>
 <tr>
 <td class="text-left"><strong>jsDelivr</strong></td>
-<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
 <td class="text-left">Co</td>
 <td class="text-left">Co</td>
 </tr>
 <tr>
 <td class="text-left"><strong>unpkg</strong></td>
-<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
 <td class="text-left">Co</td>
 <td class="text-left">Khong</td>
 </tr>
@@ -322,7 +322,7 @@ cau hinh git toan cuc).</p>
 <tr>
 <td class="text-left"><code>animations/skeletonic-animations.min.css</code></td>
 <td class="text-left">Mo-dun hieu ung dong tuy chon</td>
-<td class="text-left">≈213 KB / ≈6.9 KB</td>
+<td class="text-left">≈213 KB / ≈7.2 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>palettes/material/skeletonic-material.min.css</code></td>
@@ -378,7 +378,7 @@ de ban co the tuy chinh giao dien ma khong can bien dich lai Stylus:</p>
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">charset</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">utf-8</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">link </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">body </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">container padding-3</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;Da hoat dong.&lt;/</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;
@@ -393,7 +393,7 @@ nang xanh, ban da hoan tat.</p>
 <p>Ben trong goi ban se tim thay moi tap nguon, cac goi CSS da bien dich
 va nen, source map, va mot cay Stylus day du duoc to chuc theo danh muc:</p>
 <pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">├── CHANGELOG.md
 </span><span style="color:#c0c5ce;">├── LICENSE-APACHE
 </span><span style="color:#c0c5ce;">├── LICENSE-MIT
@@ -430,13 +430,13 @@ va nen, source map, va mot cay Stylus day du duoc to chuc theo danh muc:</p>
 nho nhat co the.</p>
 <h2>Cau hoi thuong gap</h2>
 <p><strong>Lam the nao de cai dat Skeletonic Stylus?</strong>
-Chay <code>pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7</code>. Hoac tai
+Chay <code>pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0</code>. Hoac tai
 CSS da bien dich truc tiep tu CDN — khong can buoc build.</p>
 <p><strong>No co yeu cau JavaScript khong?</strong>
 Khong. Stylesheet chinh la CSS thuan, khong ton chi phi thoi gian chay.
 Cac thanh phan hoat dong ma khong can mot dong JS nao.</p>
 <p><strong>No da san sang cho WCAG 2.2 chua?</strong>
-Co. v1.1.7 cung cap do tuong phan tuan thu AA, vong focus-visible,
+Co. v2.0.0 cung cap do tuong phan tuan thu AA, vong focus-visible,
 tro giup skip-link, ho tro giam chuyen dong va che do toi mac dinh.</p>
 <p><strong>Kich thuoc gzip la bao nhieu?</strong>
 45,7 KB nen, <strong>8,3 KB gzip</strong>, 6,9 KB brotli cho
@@ -454,7 +454,7 @@ cua ban. Mien phi cho ca muc dich thuong mai va ca nhan.</p>
       "name": "Lam the nao de cai dat Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chay pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Hoac tai CSS da bien dich truc tiep tu CDN — khong can buoc build."
+        "text": "Chay pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Hoac tai CSS da bien dich truc tiep tu CDN — khong can buoc build."
       }
     },
     {
@@ -470,7 +470,7 @@ cua ban. Mien phi cho ca muc dich thuong mai va ca nhan.</p>
       "name": "Skeletonic Stylus da san sang cho WCAG 2.2 chua?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Co. v1.1.7 cung cap do tuong phan tuan thu AA, vong focus-visible, tro giup skip-link, ho tro giam chuyen dong va che do toi mac dinh."
+        "text": "Co. v2.0.0 cung cap do tuong phan tuan thu AA, vong focus-visible, tro giup skip-link, ho tro giam chuyen dong va che do toi mac dinh."
       }
     },
     {

@@ -1,7 +1,7 @@
 ---
 title: "Keamanan &amp; rantai pasokan"
 name: "Skeletonic Stylus"
-description: "Bagaimana Skeletonic Stylus v1.1.7 mengamankan pipeline build-nya, menandatangani rilis, dan menyertakan SBOM."
+description: "Bagaimana Skeletonic Stylus v2.0.0 mengamankan pipeline build-nya, menandatangani rilis, dan menyertakan SBOM."
 layout: page
 permalink: https://skeletonic.io/id/keamanan/
 date: 2026-04-08
@@ -22,7 +22,7 @@ Performa adalah kontrol keamanan. Setiap byte yang tidak dikirimkan adalah satu 
 
 ## Ringkasan rantai pasokan
 
-| Kontrol | Status v1.1.7 |
+| Kontrol | Status v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Dibuat pada setiap rilis, disimpan di `dist/sbom.json` |
 | **Provenance npm** | Diaktifkan (`--provenance --access public`) |
@@ -40,10 +40,10 @@ Performa adalah kontrol keamanan. Setiap byte yang tidak dikirimkan adalah satu 
 Setiap tarball yang dipublikasikan menyertakan CycloneDX SBOM di `dist/sbom.json`. Anda dapat memverifikasi paket yang baru diinstal dengan:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM dibuat dengan `cyclonedx-npm` selama alur kerja publikasi.
@@ -58,7 +58,7 @@ Artefak yang dipublikasikan ditandatangani menggunakan
 Anda dapat memverifikasinya setelah instalasi dengan:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -70,7 +70,7 @@ Attestation yang ditandatangani menghubungkan tarball kembali ke run GitHub Acti
 
 | CVE | Keparahan | Status |
 |---|---|---|
-| **CVE-2023-44270** (parsing line return postcss) | Sedang | **Dipatch** di v1.1.7 melalui `pnpm.overrides` yang memperbarui `postcss` ke >= 8.4.31 |
+| **CVE-2023-44270** (parsing line return postcss) | Sedang | **Dipatch** di v2.0.0 melalui `pnpm.overrides` yang memperbarui `postcss` ke >= 8.4.31 |
 
 Basis data advisory Snyk dan feed GitHub Security Advisories dipantau secara berkelanjutan; patch keamanan dikirimkan sebagai **rilis level patch**.
 

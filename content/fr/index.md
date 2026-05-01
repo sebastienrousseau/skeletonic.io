@@ -16,7 +16,7 @@ Organisé en couches de cascade. Zéro JavaScript. À intégrer dans
 n'importe quelle page.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## L'anatomie de Skeletonic

@@ -1,7 +1,7 @@
 ---
 title: "الحركات"
 name: "Skeletonic Stylus"
-description: "وحدة الحركات الاختيارية المُشحونة مع Skeletonic Stylus الإصدار 1.1.7 — ارتداد، نبض، تلاشٍ، تكبير، اهتزاز وغيرها، جميعها خلف prefers-reduced-motion."
+description: "وحدة الحركات الاختيارية المُشحونة مع Skeletonic Stylus الإصدار 2.0.0 — ارتداد، نبض، تلاشٍ، تكبير، اهتزاز وغيرها، جميعها خلف prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/ar/al-harakaat/
 date: 2026-04-08
@@ -22,7 +22,7 @@ load_animations: true
 ```
 
 كل فئة حركة مغلّفة في كتلة
-**`@media (prefers-reduced-motion: no-preference)`** في الإصدار 1.1.7،
+**`@media (prefers-reduced-motion: no-preference)`** في الإصدار 2.0.0،
 مما يعني أن المستخدم الذي ضبط "تقليل الحركة" على مستوى نظام التشغيل
 لن يرى أي حركة — التخطيط يبقى يعمل، الحركة فقط تُكتم.
 
@@ -90,7 +90,7 @@ load_animations: true
 
 <p class="anim-note-rm">
   تقليل الحركة مُفعّل في نظام التشغيل الخاص بك، لذا ستبقى الأهداف
-  أدناه ثابتة — هذا هو سلوك إمكانية الوصول في الإصدار 1.1.7 يعمل بشكل صحيح.
+  أدناه ثابتة — هذا هو سلوك إمكانية الوصول في الإصدار 2.0.0 يعمل بشكل صحيح.
 </p>
 
 <div class="anim-grid">
@@ -226,7 +226,7 @@ load_animations: true
 </div>
 
 <script>
-  // فئات الحركة المُشحونة في الإصدار 1.1.7 تضبط animation-name في
+  // فئات الحركة المُشحونة في الإصدار 2.0.0 تضبط animation-name في
   // المحدّد نفسه. لإعادة تشغيل الإطار المفتاحي يجب إزالة الفئة،
   // وإجبار إعادة حساب التخطيط، ثم إضافة الفئة مجددًا.
   function replayAnim(btn, name){
@@ -271,9 +271,9 @@ load_animations: true
 | `.vanishIn` / `.vanishOut` | ظهور بنمط Material |
 | `.chameleonbackground` / `.chameleontext` | دورة تدرّج اللون |
 
-## تنبيه — تحفّظ معروف في الإصدار 1.1.7
+## تنبيه — تحفّظ معروف في الإصدار 2.0.0
 
-فئات الحركة في الإصدار 1.1.7 تضبط `animation-name` فقط. لتشغيلها
+فئات الحركة في الإصدار 2.0.0 تضبط `animation-name` فقط. لتشغيلها
 يجب حاليًا توفير `animation-duration` و`animation-iteration-count`
 و`animation-fill-mode` و`animation-timing-function` بنفسك — تمامًا
 كما توضّح كتلة `<style>` في أعلى هذه الصفحة. إصدار مستقبلي سيضمّن

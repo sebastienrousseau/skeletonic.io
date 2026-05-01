@@ -11,7 +11,7 @@ language: de
 keywords: "skeletonic komponenten, schaltflaechen, karten, formulare, hinweise, badges, kopfzeile, navigation, css hamburger menue"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -113,7 +113,7 @@ bald geschehen wird.
 
 <h3 id="alerts">Hinweise</h3>
 
-Statusmeldungen mit semantischer Bedeutung. **In v1.1.7 ist jede Variante
+Statusmeldungen mit semantischer Bedeutung. **In v2.0.0 ist jede Variante
 explizit unter `.alert-{primary,secondary,info,success,warning,error}`
 benannt**, damit die Variantenklasse nicht mit Zustandsklassen anderswo
 auf der Seite kollidiert.
@@ -173,7 +173,7 @@ responsive Kartenwände.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -389,7 +389,7 @@ Menue klappt sich korrekt ein, aus und haelt den Fokus selbststaendig.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic-Stylus-Komponenten",
-  "description": "Alle Komponenten aus Skeletonic Stylus v1.1.7.",
+  "description": "Alle Komponenten aus Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

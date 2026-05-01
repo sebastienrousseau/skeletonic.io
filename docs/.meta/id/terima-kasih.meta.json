@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "id",
-  "layout": "thanks",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/id/terima-kasih/",
   "date": "2026-04-08",
-  "keywords": "terima kasih",
+  "language": "id",
+  "description": "Pesan Anda berhasil terkirim.",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "layout": "thanks",
   "title": "Terima kasih!",
-  "description": "Pesan Anda berhasil terkirim."
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "terima kasih",
+  "permalink": "https://skeletonic.io/id/terima-kasih/"
 }

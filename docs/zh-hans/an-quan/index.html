@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -113,8 +113,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
-<meta name="description" content="性能 45.7 KB 压缩后 · 8.3 KB gzip · 6.9 KB brotli （完整核心样式表）。 零 JavaScript — 纯 Stylus 到纯 CSS，无运行时开销。">
-<meta property="og:description" content="性能 45.7 KB 压缩后 · 8.3 KB gzip · 6.9 KB brotli （完整核心样式表）。 零 JavaScript — 纯 Stylus 到纯 CSS，无运行时开销。">
+<meta name="description" content="性能 45.0 KB 压缩后 · 8.6 KB gzip · 7.2 KB brotli （完整核心样式表）。 零 JavaScript — 纯 Stylus 到纯 CSS，无运行时开销。">
+<meta property="og:description" content="性能 45.0 KB 压缩后 · 8.6 KB gzip · 7.2 KB brotli （完整核心样式表）。 零 JavaScript — 纯 Stylus 到纯 CSS，无运行时开销。">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -214,7 +214,7 @@
         
 <h2>性能</h2>
 <ul>
-<li><strong>45.7 KB 压缩后 · 8.3 KB gzip · 6.9 KB brotli</strong>（完整核心样式表）。</li>
+<li><strong>45.0 KB 压缩后 · 8.6 KB gzip · 7.2 KB brotli</strong>（完整核心样式表）。</li>
 <li><strong>零 JavaScript</strong> — 纯 Stylus 到纯 CSS，无运行时开销。</li>
 <li><strong>级联层</strong> — 覆盖样式无需 <code>!important</code>。</li>
 <li><strong><code>size-limit</code> 预算</strong> 在 CI 的每次提交中强制执行。</li>
@@ -225,7 +225,7 @@
 <thead>
 <tr>
 <th>控制措施</th>
-<th>v1.1.7 状态</th>
+<th>v2.0.0 状态</th>
 </tr>
 </thead>
 <tbody>
@@ -267,10 +267,10 @@
 <h2>CycloneDX SBOM</h2>
 <p>每个发布的压缩包都在 <code>dist/sbom.json</code> 包含 CycloneDX SBOM。你可以使用以下命令验证新安装的包：</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.metadata.component.version</span><span style="color:#c0c5ce;">&#39; \
 </span><span style="color:#c0c5ce;">  node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-</span><span style="color:#65737e;"># → &quot;1.1.7&quot;
+</span><span style="color:#65737e;"># → &quot;2.0.0&quot;
 </span></pre>
 </code></pre>
 <p>SBOM 由发布工作流中的 <code>cyclonedx-npm</code> 生成。</p>
@@ -279,7 +279,7 @@
 <p>发布产物使用 <a href="https://docs.npmjs.com/generating-provenance-statements">npm 包来源验证</a> 进行签名。</p>
 <p>安装后你可以使用以下命令验证：</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@1.1.7</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
+<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@2.0.0</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
 </span><span style="color:#c0c5ce;">  </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.dist.&quot;npm-signature&quot;</span><span style="color:#c0c5ce;">&#39;
 </span></pre>
 </code></pre>
@@ -298,7 +298,7 @@
 <tr>
 <td class="text-left"><strong>CVE-2023-44270</strong>（postcss 换行解析）</td>
 <td class="text-left">中等</td>
-<td class="text-left"><strong>已修补</strong>：v1.1.7 通过 <code>pnpm.overrides</code> 将 <code>postcss</code> 升级到 ≥ 8.4.31</td>
+<td class="text-left"><strong>已修补</strong>：v2.0.0 通过 <code>pnpm.overrides</code> 将 <code>postcss</code> 升级到 ≥ 8.4.31</td>
 </tr>
 </tbody>
 </table>

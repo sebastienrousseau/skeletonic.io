@@ -1,7 +1,7 @@
 ---
 title: "Seguridad y cadena de suministro"
 name: "Skeletonic Stylus"
-description: "Como Skeletonic Stylus v1.1.7 asegura su pipeline de compilacion, firma las releases y distribuye un SBOM."
+description: "Como Skeletonic Stylus v2.0.0 asegura su pipeline de compilacion, firma las releases y distribuye un SBOM."
 layout: page
 permalink: https://skeletonic.io/es/seguridad/
 date: 2026-04-08
@@ -23,7 +23,7 @@ un byte menos que auditar, firmar y verificar.
 
 ## Resumen de cadena de suministro
 
-| Control | Estado en v1.1.7 |
+| Control | Estado en v2.0.0 |
 |---|---|
 | **SBOM CycloneDX** | Generado en cada release, incluido en `dist/sbom.json` |
 | **Procedencia npm** | Activada (`--provenance --access public`) |
@@ -42,10 +42,10 @@ Cada tarball publicado incluye un SBOM CycloneDX en `dist/sbom.json`.
 Puedes verificar un paquete recien instalado con:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 El SBOM se genera con `cyclonedx-npm` durante el workflow de publicacion.
@@ -60,7 +60,7 @@ El artefacto publicado esta firmado usando
 Puedes verificarlo tras la instalacion con:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -73,7 +73,7 @@ GitHub Actions que lo produjo.
 
 | CVE | Severidad | Estado |
 |---|---|---|
-| **CVE-2023-44270** (analisis de retorno de linea en postcss) | Moderada | **Parcheado** en v1.1.7 via `pnpm.overrides` actualizando `postcss` a ≥ 8.4.31 |
+| **CVE-2023-44270** (analisis de retorno de linea en postcss) | Moderada | **Parcheado** en v2.0.0 via `pnpm.overrides` actualizando `postcss` a ≥ 8.4.31 |
 
 La base de datos de avisos de Snyk y el feed de GitHub Security
 Advisories se monitorizan de forma continua; los parches de seguridad

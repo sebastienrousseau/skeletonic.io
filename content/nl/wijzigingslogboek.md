@@ -1,21 +1,21 @@
 ---
 title: "Wijzigingslogboek"
 name: "Skeletonic Stylus"
-description: "Releasenotities voor Skeletonic Stylus, met v1.1.7 volledig uitgewerkt."
+description: "Releasenotities voor Skeletonic Stylus, met v2.0.0 volledig uitgewerkt."
 layout: page
 permalink: https://skeletonic.io/nl/wijzigingslogboek/
 author: Sebastien Rousseau
 language: nl
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic wijzigingslogboek, releasenotities, v1.1.7, semver"
+keywords: "skeletonic wijzigingslogboek, releasenotities, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (huidig)
+## v2.0.0 — 2026-04 (huidig)
 
 De "release-gereedheid"-controle: a11y, toeleveringsketen, repositoryhygiëne.
 
@@ -44,7 +44,7 @@ De "release-gereedheid"-controle: a11y, toeleveringsketen, repositoryhygiëne.
 ### Repositoryhygiëne &amp; consumentenpakket
 - Verouderde `package/`-map verwijderd; `dist/` is nu de enige bron
   van waarheid voor gebruikers.
-- README herschreven om v1.1.7-installatiepaden te reflecteren.
+- README herschreven om v2.0.0-installatiepaden te reflecteren.
 - `dist/` wordt gecommit; `debug/` wordt gegenereerd en gitignored.
 - Nieuwe `.github/workflows/npm-publish.yml` is tag-gestuurd.
 
@@ -56,7 +56,7 @@ De "release-gereedheid"-controle: a11y, toeleveringsketen, repositoryhygiëne.
 - **`.alert-*`-naamgeving** — `.alert.success` → `.alert.alert-success`
   om botsingen met statusklassen te voorkomen.
 
-[Volledige v1.1.7-releasenotities op GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Volledige v2.0.0-releasenotities op GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Geschiedenis">
 

@@ -17,4 +17,4 @@ W miedzyczasie, jesli jeszcze tego nie zrobiles:
 
 - [Daj gwiazdke projektowi na GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Przegladaj paczke npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Przeczytaj dziennik zmian v1.1.7](/pl/dziennik-zmian/)
+- [Przeczytaj dziennik zmian v2.0.0](/pl/dziennik-zmian/)

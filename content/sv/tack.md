@@ -18,4 +18,4 @@ Under tiden, om du inte redan har:
 
 - [Stjarnmark projektet pa GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Utforska npm-paketet](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Las v1.1.7-andringsloggen](/sv/andringslogg/)
+- [Las v2.0.0-andringsloggen](/sv/andringslogg/)

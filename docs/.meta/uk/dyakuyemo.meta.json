@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "layout": "thanks",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/uk/dyakuyemo/",
   "date": "2026-04-08",
-  "title": "Дякуємо!",
-  "description": "Ваше повідомлення успішно надіслано.",
+  "author": "Sebastien Rousseau",
   "keywords": "дякуємо",
+  "description": "Ваше повідомлення успішно надіслано.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Дякуємо!",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/uk/dyakuyemo/",
   "language": "uk",
-  "name": "Skeletonic Stylus"
+  "layout": "thanks"
 }

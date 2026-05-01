@@ -1,7 +1,7 @@
 ---
 title: "Sicurezza &amp; supply chain"
 name: "Skeletonic Stylus"
-description: "Come Skeletonic Stylus v1.1.7 protegge la pipeline di build, firma i rilasci e distribuisce un SBOM."
+description: "Come Skeletonic Stylus v2.0.0 protegge la pipeline di build, firma i rilasci e distribuisce un SBOM."
 layout: page
 permalink: https://skeletonic.io/it/sicurezza/
 date: 2026-04-08
@@ -22,7 +22,7 @@ Le prestazioni sono un controllo di sicurezza. Ogni byte non distribuito e un by
 
 ## Supply chain in sintesi
 
-| Controllo | Stato v1.1.7 |
+| Controllo | Stato v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Generato ad ogni rilascio, committato sotto `dist/sbom.json` |
 | **Provenienza npm** | Abilitata (`--provenance --access public`) |
@@ -40,10 +40,10 @@ Le prestazioni sono un controllo di sicurezza. Ogni byte non distribuito e un by
 Ogni archivio pubblicato include un SBOM CycloneDX in `dist/sbom.json`. Puoi verificare un pacchetto appena installato con:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 Il SBOM viene generato con `cyclonedx-npm` durante il workflow di pubblicazione.
@@ -57,7 +57,7 @@ L'artefatto pubblicato e firmato utilizzando la [provenienza dei pacchetti npm](
 Puoi verificarlo dopo l'installazione con:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -69,7 +69,7 @@ L'attestazione firmata collega l'archivio all'esatta esecuzione di GitHub Action
 
 | CVE | Gravita | Stato |
 |---|---|---|
-| **CVE-2023-44270** (parsing line return di postcss) | Moderata | **Corretta** nella v1.1.7 tramite `pnpm.overrides` che aggiorna `postcss` a ≥ 8.4.31 |
+| **CVE-2023-44270** (parsing line return di postcss) | Moderata | **Corretta** nella v2.0.0 tramite `pnpm.overrides` che aggiorna `postcss` a ≥ 8.4.31 |
 
 Il database di advisory Snyk e il feed GitHub Security Advisories vengono monitorati costantemente; le patch di sicurezza vengono distribuite come **rilasci patch**.
 

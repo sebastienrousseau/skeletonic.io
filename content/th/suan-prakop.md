@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "ส่วนประกอบ skeletonic, ปุ่ม, การ์ด, ฟอร์ม, แจ้งเตือน, ป้ายกำกับ, ส่วนหัว, แฮมเบอร์เกอร์เมนู css"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -109,7 +109,7 @@ outline มีสีแบรนด์ให้เลือกหกสี
 
 <h3 id="alerts">แจ้งเตือน</h3>
 
-ข้อความสถานะที่มีเจตนาเชิงความหมาย **ใน v1.1.7 ทุกตัวแปรถูก
+ข้อความสถานะที่มีเจตนาเชิงความหมาย **ใน v2.0.0 ทุกตัวแปรถูก
 ตั้งชื่อ namespace อย่างชัดเจน** ภายใต้ `.alert-{primary,secondary,info,success,warning,error}`
 เพื่อให้คลาสตัวแปรไม่ชนกับคลาสสถานะอื่นในหน้า
 
@@ -167,7 +167,7 @@ outline มีสีแบรนด์ให้เลือกหกสี
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">เบา</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped</p>
+      <p>45.0 KB minified, 8.6 KB gzipped</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -189,7 +189,7 @@ outline มีสีแบรนด์ให้เลือกหกสี
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">เบา</h3>
-      <p>45.7&nbsp;KB minified, 8.3&nbsp;KB gzipped</p>
+      <p>45.0&nbsp;KB minified, 8.6&nbsp;KB gzipped</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -378,7 +378,7 @@ parent `.row` จัดช่องว่างและ wrap อัตโนม
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "ส่วนประกอบ Skeletonic Stylus",
-  "description": "ทุกส่วนประกอบที่มาพร้อมกับ Skeletonic Stylus v1.1.7",
+  "description": "ทุกส่วนประกอบที่มาพร้อมกับ Skeletonic Stylus v2.0.0",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

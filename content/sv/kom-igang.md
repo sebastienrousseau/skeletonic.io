@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "installera skeletonic, stylus installation, css cdn, kom igang"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Introduktion
 
-Ny med Skeletonic Stylus? I **v1.1.7** ar det enklare an nagonsin att valja
+Ny med Skeletonic Stylus? I **v2.0.0** ar det enklare an nagonsin att valja
 just de funktioner du behover. Tack vare det lilla fotavtrycket (8,3&nbsp;KB
 gzippat for karn-stylesheetet) integreras det snabbt i vilken webbapp som
 helst — inget JavaScript-ramverk kravs, inget byggsteg behov om du
@@ -36,13 +36,13 @@ lokalt om du foredrar det.
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### Fran ett CDN
@@ -53,25 +53,25 @@ Om du bara behover den kompilerade CSS:en, lagg till en av dessa i din `<head>`:
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-For maximal integritet, kopiera **SRI-hashen** fran v1.1.7-releasenoterna
+For maximal integritet, kopiera **SRI-hashen** fran v2.0.0-releasenoterna
 och lagg till ett `integrity="sha384-…"`-attribut.
 
 ### Alternativa CDN-platser
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Ja | Ja |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Ja | Nej |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ja | Ja |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ja | Nej |
 
 ### Ladda ner GitHub-releasen
 
@@ -102,7 +102,7 @@ Biblioteket levererar flera forbyggda paket under
 | Fil | Syfte | Storlek (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + element + komponenter + utilities | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Valfri animationsmodul | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Valfri animationsmodul | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Material-fargpalett | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility-palett | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Webbsaker palett | ≈3.5 KB |
@@ -153,7 +153,7 @@ En minimal "fungerar det?"-kontroll:
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Det fungerar.</h1>
@@ -172,7 +172,7 @@ minifierade CSS-paketen, source maps och ett komplett Stylus-trad
 organiserat efter kategori:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -211,7 +211,7 @@ halla din CSS-payload sa liten som mojligt.
 ## Vanliga fragor
 
 **Hur installerar jag Skeletonic Stylus?**
-Kor `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Eller ladda den
+Kor `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Eller ladda den
 kompilerade CSS:en direkt fran ett CDN — inget byggsteg kravs.
 
 **Kraver det JavaScript?**
@@ -219,7 +219,7 @@ Nej. Karn-stylesheetet ar ren CSS, utan nagra runtimekostnader. Komponenter
 fungerar utan en enda rad JS.
 
 **Ar det WCAG 2.2-klart?**
-Ja. v1.1.7 levererar AA-uppfyllande kontrast, focus-visible-ringar,
+Ja. v2.0.0 levererar AA-uppfyllande kontrast, focus-visible-ringar,
 skip-link-hjalp, stod for reducerad rorelse och morkt lage som standard.
 
 **Vad ar den gzippade storleken?**
@@ -240,7 +240,7 @@ projekt. Gratis for kommersiellt och personligt bruk.
       "name": "Hur installerar jag Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kor pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Eller ladda den kompilerade CSS:en direkt fran ett CDN — inget byggsteg kravs."
+        "text": "Kor pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Eller ladda den kompilerade CSS:en direkt fran ett CDN — inget byggsteg kravs."
       }
     },
     {
@@ -256,7 +256,7 @@ projekt. Gratis for kommersiellt och personligt bruk.
       "name": "Ar Skeletonic Stylus WCAG 2.2-klart?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. v1.1.7 levererar AA-uppfyllande kontrast, focus-visible-ringar, skip-link-hjalp, stod for reducerad rorelse och morkt lage som standard."
+        "text": "Ja. v2.0.0 levererar AA-uppfyllande kontrast, focus-visible-ringar, skip-link-hjalp, stod for reducerad rorelse och morkt lage som standard."
       }
     },
     {

@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -222,7 +222,7 @@ de 8 KB gzipped.</p>
 </span></pre>
 </code></pre>
 <p>Cada clase de animacion esta envuelta en un bloque
-<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> en v1.1.7, lo que
+<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> en v2.0.0, lo que
 significa que un usuario que haya activado &quot;reducir movimiento&quot; a nivel
 del sistema operativo no vera ninguna animacion — el layout sigue
 funcionando, el movimiento simplemente se suprime.</p>
@@ -287,7 +287,7 @@ faltantes <code>animation-duration</code> / <code>animation-iteration-count</cod
 <p class="anim-note-rm">
   La opcion Reducir Movimiento esta activada en tu sistema operativo, por lo
   que los objetivos a continuacion permaneceran estaticos — ese es el
-  comportamiento de accesibilidad de v1.1.7 funcionando correctamente.
+  comportamiento de accesibilidad de v2.0.0 funcionando correctamente.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -404,7 +404,7 @@ faltantes <code>animation-duration</code> / <code>animation-iteration-count</cod
   </div>
 </div>
 <script>
-  // Las clases de animacion incluidas en v1.1.7 establecen animation-name
+  // Las clases de animacion incluidas en v2.0.0 establecen animation-name
   // en el selector. Para repetir el keyframe hay que eliminar la clase,
   // forzar un reflujo del layout, y volver a anadir la clase.
   function replayAnim(btn, name){
@@ -502,8 +502,8 @@ faltantes <code>animation-duration</code> / <code>animation-iteration-count</cod
 </tr>
 </tbody>
 </table></div>
-<h2>Aviso — limitacion conocida en v1.1.7</h2>
-<p>Las clases de animacion en v1.1.7 solo establecen <code>animation-name</code>. Para
+<h2>Aviso — limitacion conocida en v2.0.0</h2>
+<p>Las clases de animacion en v2.0.0 solo establecen <code>animation-name</code>. Para
 reproducirlas actualmente debes proporcionar tus propias propiedades
 <code>animation-duration</code>, <code>animation-iteration-count</code>, <code>animation-fill-mode</code> y
 <code>animation-timing-function</code> — exactamente como demuestra el bloque <code>&lt;style&gt;</code>

@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "componenti skeletonic, pulsanti, card, form, alert, badge, header, navbar, hamburger solo css"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -105,7 +105,7 @@ Superfici che informano il visitatore che qualcosa e successo — o sta per succ
 
 <h3 id="alerts">Alert</h3>
 
-Messaggi di stato con intento semantico. **Nella v1.1.7 ogni variante e esplicitamente sotto namespace** `.alert-{primary,secondary,info,success,warning,error}` cosi la classe della variante non puo collidere con classi di stato altrove nella pagina.
+Messaggi di stato con intento semantico. **Nella v2.0.0 ogni variante e esplicitamente sotto namespace** `.alert-{primary,secondary,info,success,warning,error}` cosi la classe della variante non puo collidere con classi di stato altrove nella pagina.
 
 ```html
 <div class="alert alert-primary" role="alert">
@@ -369,7 +369,7 @@ Un header completo solo CSS con toggle hamburger responsive. **Zero JavaScript.*
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Componenti Skeletonic Stylus",
-  "description": "Ogni componente incluso in Skeletonic Stylus v1.1.7.",
+  "description": "Ogni componente incluso in Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

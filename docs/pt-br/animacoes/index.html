@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -222,7 +222,7 @@ gzipped.</p>
 </span></pre>
 </code></pre>
 <p>Cada classe de animacao esta envolvida em um bloco
-<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> na v1.1.7, o que
+<strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> na v2.0.0, o que
 significa que um usuario que definiu &quot;reduzir movimento&quot; no nivel do SO
 nao vera nenhuma animacao — o layout continua funcionando, o movimento e
 apenas suprimido.</p>
@@ -289,7 +289,7 @@ faltantes <code>animation-duration</code> / <code>animation-iteration-count</cod
 <p class="anim-note-rm">
   O Reduzir Movimento esta ativado no seu SO, entao os alvos abaixo
   permanecerao parados — esse e o comportamento de acessibilidade da
-  v1.1.7 funcionando corretamente.
+  v2.0.0 funcionando corretamente.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -406,7 +406,7 @@ faltantes <code>animation-duration</code> / <code>animation-iteration-count</cod
   </div>
 </div>
 <script>
-  // As classes de animacao incluidas na v1.1.7 definem animation-name no
+  // As classes de animacao incluidas na v2.0.0 definem animation-name no
   // proprio seletor. Para reproduzir o keyframe, precisamos remover a
   // classe, forcar um layout flush e entao adicionar a classe novamente.
   function replayAnim(btn, name){
@@ -504,8 +504,8 @@ faltantes <code>animation-duration</code> / <code>animation-iteration-count</cod
 </tr>
 </tbody>
 </table></div>
-<h2>Atencao — ressalva conhecida da v1.1.7</h2>
-<p>As classes de animacao na v1.1.7 definem apenas <code>animation-name</code>. Para
+<h2>Atencao — ressalva conhecida da v2.0.0</h2>
+<p>As classes de animacao na v2.0.0 definem apenas <code>animation-name</code>. Para
 reproduzi-las, voce precisa fornecer seus proprios <code>animation-duration</code>,
 <code>animation-iteration-count</code>, <code>animation-fill-mode</code> e
 <code>animation-timing-function</code> — exatamente como o bloco <code>&lt;style&gt;</code> no

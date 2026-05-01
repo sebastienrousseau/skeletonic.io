@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, nipa, stylus, ilana css, imọran"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, nipa, stylus, ilana css, imọran"
   <img alt="Awọn irawọ GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Awọn igbasilẹ oṣooṣu" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="Ẹya npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Iwọn Bundle" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Iwọn Bundle" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Iwe-aṣẹ" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -46,7 +46,7 @@ o kere** laisi fifun awọn ọna iṣẹ ti ile-ikawe paati gidi silẹ. Lẹhi
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Iyẹ ẹyẹ" width="64" height="64" loading="lazy" decoding="async">
     <h3>Fẹẹrẹfẹ</h3>
-    <p>8.3&nbsp;KB gzipped. Awọn oju-iwe gba ni iyara ju. Gbogbo bulọọki ikọle pataki wa ninu.</p>
+    <p>8.6&nbsp;KB gzipped. Awọn oju-iwe gba ni iyara ju. Gbogbo bulọọki ikọle pataki wa ninu.</p>
   </article>
 
   <article class="feature-card">
@@ -83,7 +83,7 @@ igbarale ẹlẹgbẹ lori Bootstrap, Tailwind tabi Bulma.
 
 | Ẹya | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Iwọn gzipped | **8.3&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| Iwọn gzipped | **8.6&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | Ibamu WCAG 2.2 | **Ti a kọ sinu** | Apakan | Afọwọṣe | Apakan |
 | Awọn ipele cascade | **Bẹẹni (`@layer`)** | Rara | Rara | Rara |
 | Ipo dudu | **`prefers-color-scheme`** | Yiyan wọle | Ipilẹ kilasi | Yiyan wọle |
@@ -120,7 +120,7 @@ Skeletonic Stylus tẹle [Semantic Versioning 2.0](https://semver.org).
 |---|---|---|
 | **Pataki** | Yiyọ tabi tunlorukọ kilasi gbogbo eniyan, adalu, tabi ami | 1.x → 2.0 |
 | **Kekere** | Fifikun paati tuntun, adalu, tabi ami | 1.1 → 1.2 |
-| **Atunṣe** | Awọn atunṣe aṣiṣe, imudara a11y, iṣẹ-ṣiṣe, aabo | 1.1.6 → 1.1.7 |
+| **Atunṣe** | Awọn atunṣe aṣiṣe, imudara a11y, iṣẹ-ṣiṣe, aabo | 1.1.6 → 2.0.0 |
 
 Gbogbo orukọ kilasi gbogbo eniyan, gbogbo awọn ohun-ini aṣa CSS, ati
 gbogbo awọn adalu Stylus ti a kojade jẹ apakan ti API gbogbo eniyan.

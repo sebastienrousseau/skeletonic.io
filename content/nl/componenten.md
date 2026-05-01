@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic componenten, knoppen, kaarten, formulieren, meldingen, badges, header, navbar, css only hamburger"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -111,7 +111,7 @@ gebeuren.
 
 <h3 id="alerts">Meldingen</h3>
 
-Statusberichten met semantische intentie. **In v1.1.7 is elke variant
+Statusberichten met semantische intentie. **In v2.0.0 is elke variant
 expliciet genaamd** onder `.alert-{primary,secondary,info,success,warning,error}`
 zodat de variantklasse niet kan botsen met statusklassen elders op
 de pagina.
@@ -383,7 +383,7 @@ en vangt focus correct op uit zichzelf.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus-componenten",
-  "description": "Elke component die wordt geleverd in Skeletonic Stylus v1.1.7.",
+  "description": "Elke component die wordt geleverd in Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

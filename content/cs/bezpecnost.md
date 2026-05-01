@@ -1,7 +1,7 @@
 ---
 title: "Bezpecnost a dodavatelsky retezec"
 name: "Skeletonic Stylus"
-description: "Jak Skeletonic Stylus v1.1.7 zabezpecuje svou build pipeline, podepisuje vydani a dodava SBOM."
+description: "Jak Skeletonic Stylus v2.0.0 zabezpecuje svou build pipeline, podepisuje vydani a dodava SBOM."
 layout: page
 permalink: https://skeletonic.io/cs/bezpecnost/
 date: 2026-04-08
@@ -23,7 +23,7 @@ k auditu, podpisu a overeni.
 
 ## Dodavatelsky retezec ve zkratce
 
-| Opatreni | Stav v1.1.7 |
+| Opatreni | Stav v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Generovano pri kazdem vydani, ulozeno v `dist/sbom.json` |
 | **npm provenance** | Povoleno (`--provenance --access public`) |
@@ -42,10 +42,10 @@ Kazdy publikovany tarball obsahuje CycloneDX SBOM v `dist/sbom.json`.
 Cerstve nainstalovan balicek muzete overit pomoci:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM je generovan nastrojem `cyclonedx-npm` behem publikacniho workflow.
@@ -60,7 +60,7 @@ Publikovany artefakt je podepsan pomoci
 Po instalaci jej muzete overit pomoci:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -73,7 +73,7 @@ ktery jej vytvoril.
 
 | CVE | Zavaznost | Stav |
 |---|---|---|
-| **CVE-2023-44270** (postcss parsovani konce radku) | Stredni | **Opraveno** ve v1.1.7 pres `pnpm.overrides` aktualizaci `postcss` na ≥ 8.4.31 |
+| **CVE-2023-44270** (postcss parsovani konce radku) | Stredni | **Opraveno** ve v2.0.0 pres `pnpm.overrides` aktualizaci `postcss` na ≥ 8.4.31 |
 
 Databaze Snyk a feed GitHub Security Advisories jsou prubezne
 sledovany; bezpecnostni opravy jsou dodavany jako **patch vydani**.

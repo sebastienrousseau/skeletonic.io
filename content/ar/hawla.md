@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, حول, stylus, إطار عمل css, فلسفة"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -115,7 +115,7 @@ keywords: "skeletonic, حول, stylus, إطار عمل css, فلسفة"
 |---|---|---|
 | **رئيسي** | إزالة أو إعادة تسمية فئة أو خلطة أو رمز عام | 1.x ← 2.0 |
 | **ثانوي** | إضافة مكوّن أو خلطة أو رمز جديد | 1.1 ← 1.2 |
-| **ترقيعي** | إصلاحات أخطاء، تحسينات إمكانية الوصول، الأداء، الأمان | 1.1.6 ← 1.1.7 |
+| **ترقيعي** | إصلاحات أخطاء، تحسينات إمكانية الوصول، الأداء، الأمان | 1.1.6 ← 2.0.0 |
 
 جميع أسماء الفئات العامة وجميع خصائص CSS المخصصة وجميع خلطات
 Stylus المُصدّرة هي جزء من واجهة البرمجة العامة. التغيير المُعطّل يستحق

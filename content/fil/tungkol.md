@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, tungkol, stylus, css framework, pilosopiya"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, tungkol, stylus, css framework, pilosopiya"
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Buwanang Download" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="npm Version" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Laki ng Bundle" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Laki ng Bundle" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Lisensya" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -44,7 +44,7 @@ Isinilang noong 2018 bilang isang personal na eksperimento sa **pagpapadala ng m
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Balahibo" width="64" height="64" loading="lazy" decoding="async">
     <h3>Magaan</h3>
-    <p>8.3&nbsp;KB gzipped. Mas mabilis mag-load ang mga pahina. Bawat pangunahing building block ay nandoon pa rin.</p>
+    <p>8.6&nbsp;KB gzipped. Mas mabilis mag-load ang mga pahina. Bawat pangunahing building block ay nandoon pa rin.</p>
   </article>
 
   <article class="feature-card">
@@ -78,7 +78,7 @@ Isang self-hosted na stylesheet ang sumasaklaw sa typography, button, form, card
 
 | Tampok | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Laki (gzipped) | **8.3&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| Laki (gzipped) | **8.6&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | WCAG 2.2 conformance | **Kasama na** | Bahagya | Manual | Bahagya |
 | Cascade layer | **Oo (`@layer`)** | Hindi | Hindi | Hindi |
 | Dark mode | **`prefers-color-scheme`** | Opt-in | Class-based | Opt-in |
@@ -105,7 +105,7 @@ Ang Skeletonic Stylus ay sumusunod sa [Semantic Versioning 2.0](https://semver.o
 |---|---|---|
 | **Major** | Pag-alis o pag-rename ng isang public class, mixin, o token | 1.x → 2.0 |
 | **Minor** | Pagdagdag ng bagong component, mixin, o token | 1.1 → 1.2 |
-| **Patch** | Pag-aayos ng bug, a11y polish, performance, seguridad | 1.1.6 → 1.1.7 |
+| **Patch** | Pag-aayos ng bug, a11y polish, performance, seguridad | 1.1.6 → 2.0.0 |
 
 Lahat ng public class name, lahat ng CSS custom property, at lahat ng exported Stylus mixin ay bahagi ng public API. Ang isang breaking change ay nakakakuha ng major bump at migration guide.
 

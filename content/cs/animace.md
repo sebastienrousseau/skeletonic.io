@@ -1,7 +1,7 @@
 ---
 title: "Animace — Skeletonic Stylus"
 name: "Skeletonic Stylus"
-description: "Volitelny modul animaci dodavany se Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake a dalsi, vse za prefers-reduced-motion."
+description: "Volitelny modul animaci dodavany se Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake a dalsi, vse za prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/cs/animace/
 date: 2026-04-08
@@ -21,7 +21,7 @@ zakladni stylesheet zustal pod 8&nbsp;KB gzipped.
   href="/css/skeletonic-animations.min.css">
 ```
 
-Kazda animacni trida je ve v1.1.7 obalena blokem
+Kazda animacni trida je ve v2.0.0 obalena blokem
 **`@media (prefers-reduced-motion: no-preference)`**, coz znamena, ze
 uzivatel, ktery si v operacnim systemu nastavil „omezit pohyb", neuvidi
 zadnou animaci — rozvrzeni stale funguje, pohyb je pouze potlacen.
@@ -91,7 +91,7 @@ vlastnosti, aby byly keyframes viditelne.
 
 <p class="anim-note-rm">
   Ve vasem OS je povoleno Omezeni pohybu, takze cile nize zustanou
-  nehybne — to je spravne chovani pristupnosti ve v1.1.7.
+  nehybne — to je spravne chovani pristupnosti ve v2.0.0.
 </p>
 
 <div class="anim-grid">
@@ -227,7 +227,7 @@ vlastnosti, aby byly keyframes viditelne.
 </div>
 
 <script>
-  // Animacni tridy dodavane ve v1.1.7 nastavuji animation-name v samotnem
+  // Animacni tridy dodavane ve v2.0.0 nastavuji animation-name v samotnem
   // selektoru. Pro prehrání keyframu musime trídu odebrat, vynutit
   // prekresleni a pak trídu pridat zpet.
   function replayAnim(btn, name){
@@ -272,9 +272,9 @@ vlastnosti, aby byly keyframes viditelne.
 | `.vanishIn` / `.vanishOut` | Zobrazeni ve stylu Material |
 | `.chameleonbackground` / `.chameleontext` | Cyklus odtinu |
 
-## Upozorneni — znamy limit v1.1.7
+## Upozorneni — znamy limit v2.0.0
 
-Animacni tridy ve v1.1.7 nastavuji pouze `animation-name`. Pro jejich
+Animacni tridy ve v2.0.0 nastavuji pouze `animation-name`. Pro jejich
 spusteni musíte aktualne zadat vlastni `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` a
 `animation-timing-function` — presne jako blok `<style>` v horni casti

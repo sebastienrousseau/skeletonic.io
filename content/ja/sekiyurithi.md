@@ -1,7 +1,7 @@
 ---
 title: "セキュリティとサプライチェーン"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 がビルドパイプラインをどのように保護し、リリースに署名し、SBOM を提供するかについて。"
+description: "Skeletonic Stylus v2.0.0 がビルドパイプラインをどのように保護し、リリースに署名し、SBOM を提供するかについて。"
 layout: page
 permalink: https://skeletonic.io/ja/sekiyurithi/
 date: 2026-04-08
@@ -13,7 +13,7 @@ keywords: "css セキュリティ, sbom, cyclonedx, npm プロベナンス, open
 
 ## パフォーマンス
 
-- フルコアスタイルシートで **ミニファイ済み 45.7&nbsp;KB · gzip圧縮 8.3&nbsp;KB · brotli 6.9&nbsp;KB**。
+- フルコアスタイルシートで **ミニファイ済み 45.0&nbsp;KB · gzip圧縮 8.6&nbsp;KB · brotli 7.2&nbsp;KB**。
 - **JavaScript ゼロ** — 純粋な Stylus → 純粋な CSS、ランタイムコストなし。
 - **カスケードレイヤー採用** — `!important` なしでオーバーライドが優先されます。
 - **`size-limit` バジェット** がすべてのコミットで CI により強制されます。
@@ -22,7 +22,7 @@ keywords: "css セキュリティ, sbom, cyclonedx, npm プロベナンス, open
 
 ## サプライチェーンの要約
 
-| 対策 | v1.1.7 のステータス |
+| 対策 | v2.0.0 のステータス |
 |---|---|
 | **CycloneDX SBOM** | リリースごとに生成、`dist/sbom.json` にコミット |
 | **npm プロベナンス** | 有効 (`--provenance --access public`) |
@@ -40,10 +40,10 @@ keywords: "css セキュリティ, sbom, cyclonedx, npm プロベナンス, open
 公開されるすべての tarball には `dist/sbom.json` に CycloneDX SBOM が含まれています。新しくインストールしたパッケージを以下のコマンドで確認できます：
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM は公開ワークフロー中に `cyclonedx-npm` で生成されます。
@@ -57,7 +57,7 @@ SBOM は公開ワークフロー中に `cyclonedx-npm` で生成されます。
 インストール後、以下のコマンドで確認できます：
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -69,7 +69,7 @@ npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
 
 | CVE | 深刻度 | ステータス |
 |---|---|---|
-| **CVE-2023-44270** (postcss 改行パーシング) | 中 | `pnpm.overrides` で `postcss` を 8.4.31 以上にアップグレードして v1.1.7 で **パッチ済み** |
+| **CVE-2023-44270** (postcss 改行パーシング) | 中 | `pnpm.overrides` で `postcss` を 8.4.31 以上にアップグレードして v2.0.0 で **パッチ済み** |
 
 Snyk アドバイザリデータベースと GitHub Security Advisories フィードが継続的に監視されています。セキュリティパッチは **パッチレベルリリース** として配信されます。
 

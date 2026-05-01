@@ -1,21 +1,21 @@
 ---
 title: "Talaan ng Pagbabago"
 name: "Skeletonic Stylus"
-description: "Mga release note para sa Skeletonic Stylus, kasama ang buong v1.1.7."
+description: "Mga release note para sa Skeletonic Stylus, kasama ang buong v2.0.0."
 layout: page
 permalink: https://skeletonic.io/fil/talaan-ng-pagbabago/
 author: Sebastien Rousseau
 language: fil
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic changelog, release note, v1.1.7, semver"
+keywords: "skeletonic changelog, release note, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (kasalukuyan)
+## v2.0.0 — 2026-04 (kasalukuyan)
 
 Ang "release-readiness" pass: a11y, supply chain, repo hygiene.
 
@@ -44,7 +44,7 @@ Ang "release-readiness" pass: a11y, supply chain, repo hygiene.
 ### Repo hygiene &amp; consumer package
 - Inalis ang legacy na `package/` directory; ang `dist/` na ngayon ang tanging source
   of truth para sa mga consumer.
-- Naisulat muli ang README upang ipakita ang v1.1.7 na mga install path.
+- Naisulat muli ang README upang ipakita ang v2.0.0 na mga install path.
 - Ang `dist/` ay kinokompromiso; ang `debug/` ay ginagawa at naka-gitignore.
 - Bagong `.github/workflows/npm-publish.yml` na tag-driven.
 
@@ -56,7 +56,7 @@ Ang "release-readiness" pass: a11y, supply chain, repo hygiene.
 - **`.alert-*` namespacing** — `.alert.success` → `.alert.alert-success`
   upang maiwasan ang mga collision sa mga state class.
 
-[Buong v1.1.7 release note sa GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Buong v2.0.0 release note sa GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Kasaysayan">
 

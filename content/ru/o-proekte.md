@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic, о проекте, stylus, css фреймворк, философия"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -20,7 +20,7 @@ keywords: "skeletonic, о проекте, stylus, css фреймворк, фил
   <img alt="Звёзды на GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Загрузки в месяц" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="Версия npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Размер бандла" src="https://img.shields.io/badge/gzip-8.3%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Размер бандла" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Лицензия" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -104,7 +104,7 @@ Skeletonic Stylus следует [Semantic Versioning 2.0](https://semver.org).
 |---|---|---|
 | **Major** | Удаление или переименование публичного класса, миксина или токена | 1.x → 2.0 |
 | **Minor** | Добавление нового компонента, миксина или токена | 1.1 → 1.2 |
-| **Patch** | Исправление ошибок, доработка a11y, производительность, безопасность | 1.1.6 → 1.1.7 |
+| **Patch** | Исправление ошибок, доработка a11y, производительность, безопасность | 1.1.6 → 2.0.0 |
 
 Все публичные имена классов, все CSS Custom Properties и все экспортируемые Stylus-миксины являются частью публичного API. Ломающее изменение получает major-версию и руководство по миграции.
 

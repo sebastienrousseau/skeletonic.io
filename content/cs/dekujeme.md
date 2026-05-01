@@ -18,4 +18,4 @@ Mezitim, pokud jste to jeste neudelali:
 
 - [Dejte projektu hvezdu na GitHubu](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Prohlednete si npm balicek](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Prectete si seznam zmen v1.1.7](/cs/zmeny/)
+- [Prectete si seznam zmen v2.0.0](/cs/zmeny/)

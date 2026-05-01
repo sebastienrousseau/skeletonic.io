@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর্ম, অ্যালার্ট, ব্যাজ, হেডার, navbar, css only hamburger"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -111,7 +111,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
 
 <h3 id="alerts">অ্যালার্ট</h3>
 
-সেমান্টিক অভিপ্রায় সহ স্ট্যাটাস বার্তা। **v1.1.7-এ প্রতিটি
+সেমান্টিক অভিপ্রায় সহ স্ট্যাটাস বার্তা। **v2.0.0-এ প্রতিটি
 ভেরিয়েন্ট স্পষ্টভাবে নেমস্পেসড**
 `.alert-{primary,secondary,info,success,warning,error}`-এর অধীনে
 যাতে ভেরিয়েন্ট ক্লাস পেজের অন্যত্র স্টেট ক্লাসের সাথে সংঘর্ষ না করে।
@@ -170,7 +170,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">হালকা</h3>
-      <p>45.7 KB মিনিফাইড, 8.3 KB gzipped।</p>
+      <p>45.0 KB মিনিফাইড, 8.6 KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -192,7 +192,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">হালকা</h3>
-      <p>45.7&nbsp;KB মিনিফাইড, 8.3&nbsp;KB gzipped।</p>
+      <p>45.0&nbsp;KB মিনিফাইড, 8.6&nbsp;KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -383,7 +383,7 @@ collapse, expand এবং ফোকাস ট্র্যাপ করবে।
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Skeletonic Stylus উপাদান",
-  "description": "Skeletonic Stylus v1.1.7-এ শিপ করা প্রতিটি উপাদান।",
+  "description": "Skeletonic Stylus v2.0.0-এ শিপ করা প্রতিটি উপাদান।",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

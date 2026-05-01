@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -217,72 +217,79 @@
 subtree at runtime — <strong>no Stylus recompile, no rebuild step</strong>.</p>
 <pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#2b303b;">
 <span style="color:#8fa1b3;">.</span><span style="color:#d08770;">my-section </span><span style="color:#c0c5ce;">{
-</span><span style="color:#c0c5ce;">  --cl-primary: </span><span style="color:#96b5b4;">hsl</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">280</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">80%</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">45%</span><span style="color:#c0c5ce;">);
+</span><span style="color:#c0c5ce;">  --cl-primary: oklch(</span><span style="color:#d08770;">0.55 0.20 280</span><span style="color:#c0c5ce;">);   </span><span style="color:#65737e;">/* purple */
 </span><span style="color:#c0c5ce;">  --gr-h1: </span><span style="color:#d08770;">3.6rem</span><span style="color:#c0c5ce;">;
 </span><span style="color:#c0c5ce;">}
 </span></pre>
 </code></pre>
 <p>Every component that resolves these tokens through the cascade picks
 up the override automatically.</p>
+<blockquote>
+<p><strong>OKLCH since v2.0.</strong> Every brand, status, and grey token is
+defined in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch">oklch()</a> —
+perceptually uniform contrast, native wide-gamut (P3) support, and
+a single colour space that behaves the same way under
+<code>prefers-color-scheme: dark</code>.</p>
+</blockquote>
 <hr class="hr-text" data-content="Brand">
 <h2>Brand and status colours</h2>
 <div class="table-responsive"><table class="table">
 <thead>
 <tr>
 <th>Token</th>
-<th>Light default</th>
+<th>Light default (OKLCH)</th>
 <th>Where it's used</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="text-left"><code>--cl-primary</code></td>
-<td class="text-left"><code>hsl(210, 100%, 42%)</code></td>
+<td class="text-left"><code>oklch(0.55 0.20 250)</code></td>
 <td class="text-left">Primary buttons, badges, links</td>
 </tr>
 <tr>
 <td class="text-left"><code>--cl-secondary</code></td>
-<td class="text-left"><code>hsl(195, 100%, 33%)</code></td>
+<td class="text-left"><code>oklch(0.45 0.15 200)</code></td>
 <td class="text-left">Secondary buttons, secondary code accent</td>
 </tr>
 <tr>
 <td class="text-left"><code>--cl-tertiary</code></td>
-<td class="text-left">grey</td>
+<td class="text-left"><code>oklch(0.60 0.02 250)</code></td>
 <td class="text-left">Tertiary surfaces</td>
 </tr>
 <tr>
 <td class="text-left"><code>--cl-disable</code></td>
-<td class="text-left">grey-200</td>
+<td class="text-left"><code>oklch(0.80 0.01 250)</code></td>
 <td class="text-left">Disabled states</td>
 </tr>
 <tr>
 <td class="text-left"><code>--cl-info</code></td>
-<td class="text-left">blue</td>
+<td class="text-left"><code>oklch(0.85 0.15 100)</code></td>
 <td class="text-left">Info alert, <code>.alert-info</code>, <code>code.info</code></td>
 </tr>
 <tr>
 <td class="text-left"><code>--cl-success</code></td>
-<td class="text-left">green</td>
+<td class="text-left"><code>oklch(0.70 0.20 140)</code></td>
 <td class="text-left">Success alert, <code>code.success</code></td>
 </tr>
 <tr>
 <td class="text-left"><code>--cl-warning</code></td>
-<td class="text-left">amber</td>
+<td class="text-left"><code>oklch(0.80 0.15 80)</code></td>
 <td class="text-left">Warning alert, <code>code.warning</code></td>
 </tr>
 <tr>
 <td class="text-left"><code>--cl-danger</code></td>
-<td class="text-left">red</td>
+<td class="text-left"><code>oklch(0.60 0.25 20)</code></td>
 <td class="text-left">Error alert, <code>code.error</code>, <code>.input-error</code></td>
 </tr>
 <tr>
 <td class="text-left"><code>--cl-link</code></td>
-<td class="text-left"><code>var(--cl-primary)</code></td>
+<td class="text-left"><code>oklch(0.60 0.25 250)</code></td>
 <td class="text-left">Inline <code>&lt;a&gt;</code> colour</td>
 </tr>
 <tr>
 <td class="text-left"><code>--cl-inverse</code></td>
-<td class="text-left">white</td>
+<td class="text-left"><code>oklch(1 0 0)</code></td>
 <td class="text-left">Foreground on dark surfaces</td>
 </tr>
 </tbody>
@@ -393,7 +400,7 @@ shadows, neutral backgrounds.</p>
 </tbody>
 </table>
 <h2>Heading scale (consumed by <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code>)</h2>
-<p>These are the tokens that actually drive heading sizes in v1.1.7 — set
+<p>These are the tokens that actually drive heading sizes in v2.0.0 — set
 them on any ancestor to retheme typography.</p>
 <table>
 <thead>

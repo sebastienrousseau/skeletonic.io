@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -226,7 +226,7 @@ a menos para auditar, assinar e verificar.</p>
 <thead>
 <tr>
 <th>Controle</th>
-<th>Status na v1.1.7</th>
+<th>Status na v2.0.0</th>
 </tr>
 </thead>
 <tbody>
@@ -269,10 +269,10 @@ a menos para auditar, assinar e verificar.</p>
 <p>Cada tarball publicado inclui um CycloneDX SBOM em <code>dist/sbom.json</code>.
 Voce pode verificar um pacote recem-instalado com:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.metadata.component.version</span><span style="color:#c0c5ce;">&#39; \
 </span><span style="color:#c0c5ce;">  node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-</span><span style="color:#65737e;"># → &quot;1.1.7&quot;
+</span><span style="color:#65737e;"># → &quot;2.0.0&quot;
 </span></pre>
 </code></pre>
 <p>O SBOM e gerado com <code>cyclonedx-npm</code> durante o workflow de publicacao.</p>
@@ -282,7 +282,7 @@ Voce pode verificar um pacote recem-instalado com:</p>
 <a href="https://docs.npmjs.com/generating-provenance-statements">procedencia de pacotes npm</a>.</p>
 <p>Voce pode verifica-lo apos a instalacao com:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@1.1.7</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
+<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@2.0.0</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
 </span><span style="color:#c0c5ce;">  </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.dist.&quot;npm-signature&quot;</span><span style="color:#c0c5ce;">&#39;
 </span></pre>
 </code></pre>
@@ -302,7 +302,7 @@ que o produziu.</p>
 <tr>
 <td class="text-left"><strong>CVE-2023-44270</strong> (parsing de retorno de linha do postcss)</td>
 <td class="text-left">Moderada</td>
-<td class="text-left"><strong>Corrigido</strong> na v1.1.7 via <code>pnpm.overrides</code> atualizando <code>postcss</code> para ≥ 8.4.31</td>
+<td class="text-left"><strong>Corrigido</strong> na v2.0.0 via <code>pnpm.overrides</code> atualizando <code>postcss</code> para ≥ 8.4.31</td>
 </tr>
 </tbody>
 </table>

@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -113,8 +113,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
-<meta name="description" content="Translation note (2026-04-30). v1.1.7 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta property="og:description" content="Translation note (2026-04-30). v1.1.7 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -213,14 +213,14 @@
       <div class="text-start">
         
 <blockquote>
-<p><strong>Translation note (2026-04-30).</strong> v1.1.7 adds RTL support and a refreshed
+<p><strong>Translation note (2026-04-30).</strong> v2.0.0 adds RTL support and a refreshed
 2026 framework comparison. The English source is the canonical reference
 while these translations catch up. See <a href="https://skeletonic.io/about/">https://skeletonic.io/about/</a> ·
 <a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
 </blockquote>
 <h2>บทนำ</h2>
-<p>ใหม่กับ Skeletonic Stylus? ใน <strong>v1.1.7</strong> การเลือกเฉพาะฟีเจอร์ที่ต้องการนั้น
-ง่ายกว่าที่เคย ด้วยขนาดที่เล็กมาก (8.3 KB gzipped สำหรับ
+<p>ใหม่กับ Skeletonic Stylus? ใน <strong>v2.0.0</strong> การเลือกเฉพาะฟีเจอร์ที่ต้องการนั้น
+ง่ายกว่าที่เคย ด้วยขนาดที่เล็กมาก (8.6 KB gzipped สำหรับ
 สไตล์ชีตหลัก) จึงรวมเข้ากับเว็บแอปใดก็ได้อย่างรวดเร็ว — ไม่ต้องใช้
 JavaScript framework ไม่ต้อง build step หากใช้ CDN</p>
 <p>พร้อมติดตั้งหรือยัง? ทุกเส้นทางอธิบายไว้ด้านล่าง — เลือกแบบที่เหมาะกับคุณ</p>
@@ -231,13 +231,13 @@ JavaScript framework ไม่ต้อง build step หากใช้ CDN</p>
 <h3>จากตัวจัดการแพ็กเกจ (แนะนำ)</h3>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
 <span style="color:#65737e;"># pnpm
-</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;"># npm
-</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;"># yarn
-</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span></pre>
 </code></pre>
 <h3>จาก CDN</h3>
@@ -247,17 +247,17 @@ JavaScript framework ไม่ต้อง build step หากใช้ CDN</p>
 <span style="color:#65737e;">&lt;!-- jsDelivr --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;">&lt;!-- unpkg --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>เพื่อความปลอดภัยสูงสุด ให้คัดลอก <strong>SRI hash</strong> จากบันทึกการเผยแพร่ v1.1.7
+<p>เพื่อความปลอดภัยสูงสุด ให้คัดลอก <strong>SRI hash</strong> จากบันทึกการเผยแพร่ v2.0.0
 และเพิ่มแอตทริบิวต์ <code>integrity=&quot;sha384-…&quot;</code></p>
 <h3>แหล่ง CDN อื่น ๆ</h3>
 <div class="table-responsive"><table class="table">
@@ -272,13 +272,13 @@ JavaScript framework ไม่ต้อง build step หากใช้ CDN</p>
 <tbody>
 <tr>
 <td class="text-left"><strong>jsDelivr</strong></td>
-<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
 <td class="text-left">ใช่</td>
 <td class="text-left">ใช่</td>
 </tr>
 <tr>
 <td class="text-left"><strong>unpkg</strong></td>
-<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
 <td class="text-left">ใช่</td>
 <td class="text-left">ไม่</td>
 </tr>
@@ -317,12 +317,12 @@ JavaScript framework ไม่ต้อง build step หากใช้ CDN</p>
 <tr>
 <td class="text-left"><code>core/skeletonic.min.css</code></td>
 <td class="text-left">Reset + tokens + layout + elements + components + utilities</td>
-<td class="text-left">45.7 KB / 8.3 KB</td>
+<td class="text-left">45.0 KB / 8.6 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>animations/skeletonic-animations.min.css</code></td>
 <td class="text-left">โมดูลแอนิเมชันเสริม</td>
-<td class="text-left">≈213 KB / ≈6.9 KB</td>
+<td class="text-left">≈213 KB / ≈7.2 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>palettes/material/skeletonic-material.min.css</code></td>
@@ -378,7 +378,7 @@ JavaScript framework ไม่ต้อง build step หากใช้ CDN</p>
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">charset</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">utf-8</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">link </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">body </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">container padding-3</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;ใช้งานได้แล้ว&lt;/</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;
@@ -392,7 +392,7 @@ JavaScript framework ไม่ต้อง build step หากใช้ CDN</p>
 <p>ภายในแพ็กเกจคุณจะพบไฟล์ซอร์สทั้งหมด บันเดิล CSS ที่คอมไพล์และ
 minify แล้ว source maps และโครงสร้าง Stylus ที่จัดหมวดหมู่ตามประเภท:</p>
 <pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">├── CHANGELOG.md
 </span><span style="color:#c0c5ce;">├── LICENSE-APACHE
 </span><span style="color:#c0c5ce;">├── LICENSE-MIT
@@ -429,16 +429,16 @@ minify แล้ว source maps และโครงสร้าง Stylus ท�
 มีขนาดเล็กที่สุด</p>
 <h2>คำถามที่พบบ่อย</h2>
 <p><strong>จะติดตั้ง Skeletonic Stylus ได้อย่างไร?</strong>
-รัน <code>pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7</code> หรือโหลด
+รัน <code>pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0</code> หรือโหลด
 CSS ที่คอมไพล์แล้วจาก CDN ได้เลย — ไม่ต้อง build step</p>
 <p><strong>ต้องใช้ JavaScript หรือไม่?</strong>
 ไม่ สไตล์ชีตหลักเป็น CSS บริสุทธิ์ ไม่มีต้นทุน runtime ส่วนประกอบ
 ทำงานได้โดยไม่ต้องเขียน JS แม้แต่บรรทัดเดียว</p>
 <p><strong>รองรับ WCAG 2.2 หรือไม่?</strong>
-ใช่ v1.1.7 มาพร้อมคอนทราสต์ระดับ AA วงแหวน focus-visible ตัวช่วย
+ใช่ v2.0.0 มาพร้อมคอนทราสต์ระดับ AA วงแหวน focus-visible ตัวช่วย
 ลิงก์ข้าม รองรับการลดการเคลื่อนไหว และโหมดมืดเป็นค่าเริ่มต้น</p>
 <p><strong>ขนาด gzipped เท่าไร?</strong>
-45.7 KB minified, <strong>8.3 KB gzipped</strong>, 6.9 KB brotli สำหรับ
+45.0 KB minified, <strong>8.6 KB gzipped</strong>, 7.2 KB brotli สำหรับ
 สไตล์ชีตหลักทั้งหมด เพดาน 8 KB ถูกบังคับใน CI ทุกคอมมิต</p>
 <p><strong>ใช้สัญญาอนุญาตอะไร?</strong>
 สัญญาอนุญาตคู่ภายใต้ MIT และ Apache 2.0 — เลือกตัวที่เหมาะกับ
@@ -453,7 +453,7 @@ CSS ที่คอมไพล์แล้วจาก CDN ได้เลย �
       "name": "จะติดตั้ง Skeletonic Stylus ได้อย่างไร?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "รัน pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7 หรือโหลด CSS ที่คอมไพล์แล้วจาก CDN ได้เลย — ไม่ต้อง build step"
+        "text": "รัน pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0 หรือโหลด CSS ที่คอมไพล์แล้วจาก CDN ได้เลย — ไม่ต้อง build step"
       }
     },
     {
@@ -469,7 +469,7 @@ CSS ที่คอมไพล์แล้วจาก CDN ได้เลย �
       "name": "Skeletonic Stylus รองรับ WCAG 2.2 หรือไม่?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ใช่ v1.1.7 มาพร้อมคอนทราสต์ระดับ AA วงแหวน focus-visible ตัวช่วยลิงก์ข้าม รองรับการลดการเคลื่อนไหว และโหมดมืดเป็นค่าเริ่มต้น"
+        "text": "ใช่ v2.0.0 มาพร้อมคอนทราสต์ระดับ AA วงแหวน focus-visible ตัวช่วยลิงก์ข้าม รองรับการลดการเคลื่อนไหว และโหมดมืดเป็นค่าเริ่มต้น"
       }
     },
     {
@@ -477,7 +477,7 @@ CSS ที่คอมไพล์แล้วจาก CDN ได้เลย �
       "name": "ขนาด gzipped ของ Skeletonic Stylus เท่าไร?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.7 KB minified, 8.3 KB gzipped, 6.9 KB brotli สำหรับสไตล์ชีตหลักทั้งหมด เพดาน 8 KB ถูกบังคับใน CI ทุกคอมมิต"
+        "text": "45.0 KB minified, 8.6 KB gzipped, 7.2 KB brotli สำหรับสไตล์ชีตหลักทั้งหมด เพดาน 8 KB ถูกบังคับใน CI ทุกคอมมิต"
       }
     },
     {

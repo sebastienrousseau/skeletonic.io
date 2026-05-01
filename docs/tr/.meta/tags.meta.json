@@ -1,12 +1,12 @@
 {
-  "language": "tr",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Skeletonic Stylus dokumantasyonunu etikete gore gezin.",
   "layout": "page",
-  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Etiketler",
+  "name": "Skeletonic Stylus",
+  "language": "tr",
   "keywords": "skeletonic, etiketler, dizin, taksonomi",
-  "permalink": "https://skeletonic.io/tr/tags/",
-  "author": "Sebastien Rousseau"
+  "description": "Skeletonic Stylus dokumantasyonunu etikete gore gezin.",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/tr/tags/"
 }

@@ -1,7 +1,7 @@
 ---
 title: "安全与供应链"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 如何保护其构建管线、签署发布包，以及提供 SBOM。"
+description: "Skeletonic Stylus v2.0.0 如何保护其构建管线、签署发布包，以及提供 SBOM。"
 language: zh-hans
 layout: page
 permalink: https://skeletonic.io/zh-hans/an-quan/
@@ -13,7 +13,7 @@ keywords: "css 安全, sbom, cyclonedx, npm 来源验证, openssf 评分, 供应
 
 ## 性能
 
-- **45.7&nbsp;KB 压缩后 · 8.3&nbsp;KB gzip · 6.9&nbsp;KB brotli**（完整核心样式表）。
+- **45.0&nbsp;KB 压缩后 · 8.6&nbsp;KB gzip · 7.2&nbsp;KB brotli**（完整核心样式表）。
 - **零 JavaScript** — 纯 Stylus 到纯 CSS，无运行时开销。
 - **级联层** — 覆盖样式无需 `!important`。
 - **`size-limit` 预算** 在 CI 的每次提交中强制执行。
@@ -22,7 +22,7 @@ keywords: "css 安全, sbom, cyclonedx, npm 来源验证, openssf 评分, 供应
 
 ## 供应链概要
 
-| 控制措施 | v1.1.7 状态 |
+| 控制措施 | v2.0.0 状态 |
 |---|---|
 | **CycloneDX SBOM** | 每次发布时生成，提交到 `dist/sbom.json` |
 | **npm 来源验证** | 已启用（`--provenance --access public`） |
@@ -40,10 +40,10 @@ keywords: "css 安全, sbom, cyclonedx, npm 来源验证, openssf 评分, 供应
 每个发布的压缩包都在 `dist/sbom.json` 包含 CycloneDX SBOM。你可以使用以下命令验证新安装的包：
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM 由发布工作流中的 `cyclonedx-npm` 生成。
@@ -57,7 +57,7 @@ SBOM 由发布工作流中的 `cyclonedx-npm` 生成。
 安装后你可以使用以下命令验证：
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -69,7 +69,7 @@ npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
 
 | CVE | 严重程度 | 状态 |
 |---|---|---|
-| **CVE-2023-44270**（postcss 换行解析） | 中等 | **已修补**：v1.1.7 通过 `pnpm.overrides` 将 `postcss` 升级到 ≥ 8.4.31 |
+| **CVE-2023-44270**（postcss 换行解析） | 中等 | **已修补**：v2.0.0 通过 `pnpm.overrides` 将 `postcss` 升级到 ≥ 8.4.31 |
 
 Snyk 安全通告数据库和 GitHub Security Advisories 源受到持续监控；安全补丁以**补丁版本**发布。
 

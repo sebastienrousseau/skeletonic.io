@@ -1,7 +1,7 @@
 ---
-title: "Dostepnosc — WCAG 2.2 w v1.1.7"
+title: "Dostepnosc — WCAG 2.2 w v2.0.0"
 name: "Skeletonic Stylus"
-description: "Co v1.1.7 dostarcza od razu dla zgodnosci z WCAG 2.2 — pierscienie fokusu, kontrast, skip links, ruch i tryb ciemny."
+description: "Co v2.0.0 dostarcza od razu dla zgodnosci z WCAG 2.2 — pierscienie fokusu, kontrast, skip links, ruch i tryb ciemny."
 layout: page
 permalink: https://skeletonic.io/pl/dostepnosc/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, dostepnosc, focus visible, skip link, prefers reduced motion, kontrast"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 dostarcza zgodnosc z WCAG 2.2 jako domyslne
+> **Skeletonic Stylus v2.0.0 dostarcza zgodnosc z WCAG 2.2 jako domyslne
 > zachowanie, a nie jako opcjonalny motyw.** Ta strona dokumentuje, co jest
 > wbudowane i jakie mixiny mozna dodatkowo wlaczyc dla precyzyjniejszej kontroli.
 
@@ -24,7 +24,7 @@ keywords: "wcag 2.2, dostepnosc, focus visible, skip link, prefers reduced motio
 
 ## Co otrzymujesz za darmo
 
-| WCAG 2.2 SC | Co robi v1.1.7 | Jak zweryfikowac |
+| WCAG 2.2 SC | Co robi v2.0.0 | Jak zweryfikowac |
 |---|---|---|
 | **1.4.3 Kontrast (Minimum) — AA** | `--cl-primary` i `--cl-secondary` przyciemnione do >= 4,5:1 na bialym tle | DevTools → sprawdzanie kontrastu |
 | **1.4.11 Kontrast nietekstowy — AA** | Obramowania formularzy, przyciski, odznaki — wszystko >= 3:1 | Tak samo |
@@ -85,5 +85,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI uruchamia ten skrypt na stronie showcasowej `dist/index.html` przy kazdym uaktualnieniu.
 
-[Przeczytaj o wydaniu v1.1.7 →](/pl/dziennik-zmian/) ·
+[Przeczytaj o wydaniu v2.0.0 →](/pl/dziennik-zmian/) ·
 [Zobacz strone bezpieczenstwa →](/pl/bezpieczenstwo/)

@@ -1,7 +1,7 @@
 ---
 title: "Анимации"
 name: "Skeletonic Stylus"
-description: "Опциональный модуль анимаций, поставляемый с Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake и другие, все под защитой prefers-reduced-motion."
+description: "Опциональный модуль анимаций, поставляемый с Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake и другие, все под защитой prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/ru/animatsii/
 date: 2026-04-08
@@ -20,7 +20,7 @@ load_animations: true
   href="/css/skeletonic-animations.min.css">
 ```
 
-Каждый класс анимации в v1.1.7 обёрнут в блок
+Каждый класс анимации в v2.0.0 обёрнут в блок
 **`@media (prefers-reduced-motion: no-preference)`**, что означает: если пользователь включил «уменьшить движение» на уровне ОС, анимация не будет воспроизводиться вовсе — макет продолжит работать, движение просто подавляется.
 
 <style>
@@ -84,7 +84,7 @@ load_animations: true
 
 <p class="anim-note-rm">
   На вашей ОС включён режим уменьшенного движения, поэтому объекты ниже
-  останутся неподвижными — так работает поведение доступности v1.1.7.
+  останутся неподвижными — так работает поведение доступности v2.0.0.
 </p>
 
 <div class="anim-grid">
@@ -220,7 +220,7 @@ load_animations: true
 </div>
 
 <script>
-  // Классы анимаций v1.1.7 задают animation-name в самом селекторе.
+  // Классы анимаций v2.0.0 задают animation-name в самом селекторе.
   // Для повторного воспроизведения нужно удалить класс, принудительно
   // выполнить перерисовку, а затем добавить класс снова.
   function replayAnim(btn, name){
@@ -265,8 +265,8 @@ load_animations: true
 | `.vanishIn` / `.vanishOut` | Появление в стиле Material |
 | `.chameleonbackground` / `.chameleontext` | Циклическая смена оттенка |
 
-## Известная особенность v1.1.7
+## Известная особенность v2.0.0
 
-Классы анимаций в v1.1.7 задают только `animation-name`. Для их воспроизведения вам потребуется самостоятельно указать `animation-duration`, `animation-iteration-count`, `animation-fill-mode` и `animation-timing-function` — как это демонстрирует блок `<style>` в начале этой страницы. В будущих релизах базовые настройки будут встроены, чтобы `<div class="bounce">` работал сразу из коробки.
+Классы анимаций в v2.0.0 задают только `animation-name`. Для их воспроизведения вам потребуется самостоятельно указать `animation-duration`, `animation-iteration-count`, `animation-fill-mode` и `animation-timing-function` — как это демонстрирует блок `<style>` в начале этой страницы. В будущих релизах базовые настройки будут встроены, чтобы `<div class="bounce">` работал сразу из коробки.
 
 [Заметки о доступности →](/ru/dostupnost/)

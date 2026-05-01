@@ -1,7 +1,7 @@
 ---
 title: "アニメーション"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7 に付属するオプションのアニメーションモジュール — バウンス、パルス、フェード、ズーム、シェイクなど、すべて prefers-reduced-motion で制御。"
+description: "Skeletonic Stylus v2.0.0 に付属するオプションのアニメーションモジュール — バウンス、パルス、フェード、ズーム、シェイクなど、すべて prefers-reduced-motion で制御。"
 layout: page
 permalink: https://skeletonic.io/ja/animeshon/
 date: 2026-04-08
@@ -20,7 +20,7 @@ load_animations: true
   href="/css/skeletonic-animations.min.css">
 ```
 
-v1.1.7 では、すべてのアニメーションクラスが **`@media (prefers-reduced-motion: no-preference)`** ブロックで囲まれています。これは、OS レベルで「モーションの軽減」を設定しているユーザーにはアニメーションがまったく表示されないことを意味します — レイアウトは正常に動作し、モーションのみが抑制されます。
+v2.0.0 では、すべてのアニメーションクラスが **`@media (prefers-reduced-motion: no-preference)`** ブロックで囲まれています。これは、OS レベルで「モーションの軽減」を設定しているユーザーにはアニメーションがまったく表示されないことを意味します — レイアウトは正常に動作し、モーションのみが抑制されます。
 
 <style>
   /*
@@ -82,7 +82,7 @@ v1.1.7 では、すべてのアニメーションクラスが **`@media (prefers
 任意のカードの **再生** を押すと、その四角でアニメーションが再生されます。アニメーションクラス自体は `skeletonic-animations.min.css` に含まれるそのものです — ライブラリは `animation-name` のみを設定するため、上の `<style>` ブロックがキーフレームを表示するために不足している `animation-duration` / `animation-iteration-count` / `animation-fill-mode` プロパティを追加しています。
 
 <p class="anim-note-rm">
-  お使いの OS でモーション軽減が有効になっているため、以下のターゲットは静止したままです — これは v1.1.7 のアクセシビリティ動作が正しく機能していることを示しています。
+  お使いの OS でモーション軽減が有効になっているため、以下のターゲットは静止したままです — これは v2.0.0 のアクセシビリティ動作が正しく機能していることを示しています。
 </p>
 
 <div class="anim-grid">
@@ -258,8 +258,8 @@ v1.1.7 では、すべてのアニメーションクラスが **`@media (prefers
 | `.vanishIn` / `.vanishOut` | Material スタイルの出現 |
 | `.chameleonbackground` / `.chameleontext` | 色相サイクル |
 
-## 注意事項 — v1.1.7 の既知の制約
+## 注意事項 — v2.0.0 の既知の制約
 
-v1.1.7 のアニメーションクラスは `animation-name` のみを設定します。再生するには、現在のところ `animation-duration`、`animation-iteration-count`、`animation-fill-mode`、`animation-timing-function` を自分で指定する必要があります — このページの上部にある `<style>` ブロックがまさにそのデモです。将来のリリースでは、`<div class="bounce">` がそのまま動作するよう、適切なデフォルトベース設定をインライン化する予定です。
+v2.0.0 のアニメーションクラスは `animation-name` のみを設定します。再生するには、現在のところ `animation-duration`、`animation-iteration-count`、`animation-fill-mode`、`animation-timing-function` を自分で指定する必要があります — このページの上部にある `<style>` ブロックがまさにそのデモです。将来のリリースでは、`<div class="bounce">` がそのまま動作するよう、適切なデフォルトベース設定をインライン化する予定です。
 
 [アクセシビリティの注記を見る →](/ja/akseshibirithi/)

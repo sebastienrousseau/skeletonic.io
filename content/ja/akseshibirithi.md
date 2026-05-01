@@ -1,7 +1,7 @@
 ---
-title: "アクセシビリティ — v1.1.7 における WCAG 2.2"
+title: "アクセシビリティ — v2.0.0 における WCAG 2.2"
 name: "Skeletonic Stylus"
-description: "v1.1.7 が WCAG 2.2 準拠のために標準で提供するもの — フォーカスリング、コントラスト、スキップリンク、モーション、ダークモード。"
+description: "v2.0.0 が WCAG 2.2 準拠のために標準で提供するもの — フォーカスリング、コントラスト、スキップリンク、モーション、ダークモード。"
 layout: page
 permalink: https://skeletonic.io/ja/akseshibirithi/
 date: 2026-04-08
@@ -11,18 +11,18 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, アクセシビリティ, focus visible, スキップリンク, prefers reduced motion, コントラスト"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 は、WCAG 2.2 準拠をオプションテーマとしてではなく、デフォルトの動作として提供します。** このページでは、組み込み済みの機能と、より細かい制御のためにオプトインできるミックスインについて説明します。
+> **Skeletonic Stylus v2.0.0 は、WCAG 2.2 準拠をオプションテーマとしてではなく、デフォルトの動作として提供します。** このページでは、組み込み済みの機能と、より細かい制御のためにオプトインできるミックスインについて説明します。
 
 <hr class="hr-text" data-content="標準装備">
 
 ## 標準で得られるもの
 
-| WCAG 2.2 SC | v1.1.7 の対応内容 | 確認方法 |
+| WCAG 2.2 SC | v2.0.0 の対応内容 | 確認方法 |
 |---|---|---|
 | **1.4.3 コントラスト (最低限) — AA** | `--cl-primary` と `--cl-secondary` を白いテキストに対して 4.5:1 以上に調整 | DevTools → コントラストチェッカー |
 | **1.4.11 非テキストコントラスト — AA** | フォームボーダー、ボタン、バッジすべて 3:1 以上 | 同上 |
@@ -82,5 +82,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI はこのスクリプトを毎プッシュ時に `dist/index.html` ショーケースページに対して実行します。
 
-[v1.1.7 リリースについて読む →](/ja/henkou-rireki/) ·
+[v2.0.0 リリースについて読む →](/ja/henkou-rireki/) ·
 [セキュリティページを見る →](/ja/sekiyurithi/)

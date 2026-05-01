@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "instalare skeletonic, configurare stylus, css cdn, primii pași"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## Introducere
 
-Nou cu Skeletonic Stylus? În **v1.1.7** este mai ușor ca niciodată să
+Nou cu Skeletonic Stylus? În **v2.0.0** este mai ușor ca niciodată să
 alegi doar funcționalitățile de care ai nevoie. Datorită amprentei
 minuscule (8,3&nbsp;KB gzipped pentru stylesheet-ul principal), se
 integrează rapid în orice aplicație web — fără framework JavaScript,
@@ -36,13 +36,13 @@ fișierele de distribuție.
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### De pe un CDN
@@ -53,24 +53,24 @@ Dacă ai nevoie doar de CSS-ul compilat, adaugă una din aceste linii în `<head
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-Pentru integritate maximă, copiază **hash-ul SRI** din notele de lansare v1.1.7 și adaugă un atribut `integrity="sha384-…"`.
+Pentru integritate maximă, copiază **hash-ul SRI** din notele de lansare v2.0.0 și adaugă un atribut `integrity="sha384-…"`.
 
 ### Locații CDN alternative
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Da | Da |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | Da | Nu |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Da | Da |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Da | Nu |
 
 ### Descarcă versiunea de pe GitHub
 
@@ -101,7 +101,7 @@ Biblioteca furnizează mai multe bundle-uri pre-compilate sub
 | Fișier | Scop | Dimensiune (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elemente + componente + utilitare | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modul opțional de animații | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Modul opțional de animații | ≈213 KB / ≈7.2 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de culori Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta utilitară Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Paleta web-safe | ≈3.5 KB |
@@ -150,7 +150,7 @@ O verificare minimă „a funcționat?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Funcționează.</h1>
@@ -166,7 +166,7 @@ Dacă titlul este dimensionat fluid și butonul are o formă albastră de pastil
 În interiorul pachetului vei găsi toate fișierele sursă, bundle-urile CSS compilate și minificate, source maps și un arbore Stylus complet organizat pe categorii:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -204,13 +204,13 @@ Fiecare modul este independent — include doar bundle-urile de care ai nevoie p
 ## Întrebări frecvente
 
 **Cum instalez Skeletonic Stylus?**
-Rulează `pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`. Sau încarcă CSS-ul compilat direct de pe un CDN — fără pas de build necesar.
+Rulează `pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`. Sau încarcă CSS-ul compilat direct de pe un CDN — fără pas de build necesar.
 
 **Necesită JavaScript?**
 Nu. Stylesheet-ul principal este CSS pur, cu zero costuri la runtime. Componentele funcționează fără o singură linie de JS.
 
 **Este compatibil WCAG 2.2?**
-Da. v1.1.7 include contrast AA conform, inele focus-visible, helpere skip-link, suport pentru mișcare redusă și mod întunecat implicit.
+Da. v2.0.0 include contrast AA conform, inele focus-visible, helpere skip-link, suport pentru mișcare redusă și mod întunecat implicit.
 
 **Care este dimensiunea gzipped?**
 45,7&nbsp;KB minificat, **8,3&nbsp;KB gzipped**, 6,9&nbsp;KB brotli pentru stylesheet-ul principal complet. Limita de 8&nbsp;KB este impusă în CI.
@@ -228,7 +228,7 @@ Licență duală sub MIT și Apache 2.0 — alege pe cea potrivită proiectului 
       "name": "Cum instalez Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rulează pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. Sau încarcă CSS-ul compilat direct de pe un CDN — fără pas de build necesar."
+        "text": "Rulează pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. Sau încarcă CSS-ul compilat direct de pe un CDN — fără pas de build necesar."
       }
     },
     {
@@ -244,7 +244,7 @@ Licență duală sub MIT și Apache 2.0 — alege pe cea potrivită proiectului 
       "name": "Este Skeletonic Stylus compatibil WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Da. v1.1.7 include contrast AA conform, inele focus-visible, helpere skip-link, suport pentru mișcare redusă și mod întunecat implicit."
+        "text": "Da. v2.0.0 include contrast AA conform, inele focus-visible, helpere skip-link, suport pentru mișcare redusă și mod întunecat implicit."
       }
     },
     {

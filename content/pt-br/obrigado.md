@@ -18,4 +18,4 @@ Enquanto isso, se voce ainda nao fez:
 
 - [Deixe uma estrela no projeto no GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [Explore o pacote npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [Leia o registro de alteracoes da v1.1.7](/pt-br/registro-de-alteracoes/)
+- [Leia o registro de alteracoes da v2.0.0](/pt-br/registro-de-alteracoes/)

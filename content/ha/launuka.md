@@ -1,7 +1,7 @@
 ---
 title: "Launuka"
 name: "Skeletonic Stylus"
-description: "Tsarin launuka na Material, Tachyons da web-safe da Skeletonic Stylus v1.1.7 ke aikawa."
+description: "Tsarin launuka na Material, Tachyons da web-safe da Skeletonic Stylus v2.0.0 ke aikawa."
 layout: page
 permalink: https://skeletonic.io/ha/launuka/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "tsarin launuka na css, material, tachyons, websafe, alamomin ƙira"
 ---
 
-Skeletonic Stylus v1.1.7 yana aika **tsarin launuka guda uku na zaɓi**, kowanne an rarraba shi azaman stylesheet ɗin sa da aka ƙaranta don haka kuna biyan abin da kuke amfani da shi kawai.
+Skeletonic Stylus v2.0.0 yana aika **tsarin launuka guda uku na zaɓi**, kowanne an rarraba shi azaman stylesheet ɗin sa da aka ƙaranta don haka kuna biyan abin da kuke amfani da shi kawai.
 
 | Launuka | Fayil | Girma (min) |
 |---|---|---|
@@ -59,9 +59,9 @@ Stylesheet na tushe yana zuwa da matakan toka 11 masu saukin amfani da aka bayya
 
 <hr class="hr-text" data-content="Alama">
 
-## Launukan alama (v1.1.7 — bambancin AA)
+## Launukan alama (v2.0.0 — bambancin AA)
 
-A cikin v1.1.7 an duhunta alamomin farko da na biyu don cika **bambancin WCAG 4.5:1** akan farin rubutu daga cikin akwatin.
+A cikin v2.0.0 an duhunta alamomin farko da na biyu don cika **bambancin WCAG 4.5:1** akan farin rubutu daga cikin akwatin.
 
 <div class="row margin-top-3">
   <div class="flex-4 padding-3 text-center" style="background-color: hsl(210, 100%, 42%); color: #fff;">

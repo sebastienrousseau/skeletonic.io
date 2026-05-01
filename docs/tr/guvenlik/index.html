@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -226,7 +226,7 @@ imzalanmasi ve dogrulanmasi gereken bir bayt azdir.</p>
 <thead>
 <tr>
 <th>Kontrol</th>
-<th>v1.1.7 durumu</th>
+<th>v2.0.0 durumu</th>
 </tr>
 </thead>
 <tbody>
@@ -269,10 +269,10 @@ imzalanmasi ve dogrulanmasi gereken bir bayt azdir.</p>
 <p>Yayinlanan her tarball, <code>dist/sbom.json</code> konumunda bir CycloneDX SBOM
 icerir. Yeni kurulan bir paketi soyle dogrulayabilirsiniz:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.metadata.component.version</span><span style="color:#c0c5ce;">&#39; \
 </span><span style="color:#c0c5ce;">  node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-</span><span style="color:#65737e;"># → &quot;1.1.7&quot;
+</span><span style="color:#65737e;"># → &quot;2.0.0&quot;
 </span></pre>
 </code></pre>
 <p>SBOM, yayinlama is akisi sirasinda <code>cyclonedx-npm</code> ile olusturulur.</p>
@@ -283,7 +283,7 @@ icerir. Yeni kurulan bir paketi soyle dogrulayabilirsiniz:</p>
 kullanilarak imzalanir.</p>
 <p>Kurulumdan sonra soyle dogrulayabilirsiniz:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@1.1.7</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
+<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@2.0.0</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
 </span><span style="color:#c0c5ce;">  </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.dist.&quot;npm-signature&quot;</span><span style="color:#c0c5ce;">&#39;
 </span></pre>
 </code></pre>
@@ -303,7 +303,7 @@ baglar.</p>
 <tr>
 <td class="text-left"><strong>CVE-2023-44270</strong> (postcss satir donus ayrisitrma)</td>
 <td class="text-left">Orta</td>
-<td class="text-left"><strong>Yamali</strong> — v1.1.7'de <code>pnpm.overrides</code> ile <code>postcss</code> ≥ 8.4.31'e yukseltildi</td>
+<td class="text-left"><strong>Yamali</strong> — v2.0.0'de <code>pnpm.overrides</code> ile <code>postcss</code> ≥ 8.4.31'e yukseltildi</td>
 </tr>
 </tbody>
 </table>

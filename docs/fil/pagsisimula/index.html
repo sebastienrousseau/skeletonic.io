@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -113,8 +113,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
-<meta name="description" content="Translation note (2026-04-30). v1.1.7 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta property="og:description" content="Translation note (2026-04-30). v1.1.7 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -213,26 +213,26 @@
       <div class="text-start">
         
 <blockquote>
-<p><strong>Translation note (2026-04-30).</strong> v1.1.7 adds RTL support and a refreshed
+<p><strong>Translation note (2026-04-30).</strong> v2.0.0 adds RTL support and a refreshed
 2026 framework comparison. The English source is the canonical reference
 while these translations catch up. See <a href="https://skeletonic.io/about/">https://skeletonic.io/about/</a> ·
 <a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
 </blockquote>
 <h2>Panimula</h2>
-<p>Bago ka sa Skeletonic Stylus? Sa <strong>v1.1.7</strong> mas madali na kaysa dati ang pumili ng mga tampok na kailangan mo lamang. Dahil sa maliit na footprint nito (8.3 KB gzipped para sa core stylesheet), mabilis itong nag-integrate sa anumang web app — hindi kailangan ng JavaScript framework, hindi kailangan ng build step kung gagamitin mo ang CDN.</p>
+<p>Bago ka sa Skeletonic Stylus? Sa <strong>v2.0.0</strong> mas madali na kaysa dati ang pumili ng mga tampok na kailangan mo lamang. Dahil sa maliit na footprint nito (8.6 KB gzipped para sa core stylesheet), mabilis itong nag-integrate sa anumang web app — hindi kailangan ng JavaScript framework, hindi kailangan ng build step kung gagamitin mo ang CDN.</p>
 <p>Bawat paraan ay nakadokumento sa ibaba — piliin ang naaangkop sa iyo.</p>
 <h2>1. I-download at i-install</h2>
 <p>Maaari mong i-install ang Skeletonic Stylus sa pamamagitan ng <strong>pnpm</strong>, <strong>npm</strong> o <strong>yarn</strong>, o i-load ito nang diretso mula sa isang CDN. Maaari mo ring i-self-host ang mga distribution file nang lokal kung gusto mo.</p>
 <h3>Mula sa isang package manager (inirerekomenda)</h3>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
 <span style="color:#65737e;"># pnpm
-</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;"># npm
-</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;"># yarn
-</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span></pre>
 </code></pre>
 <h3>Mula sa isang CDN</h3>
@@ -241,17 +241,17 @@ while these translations catch up. See <a href="https://skeletonic.io/about/">ht
 <span style="color:#65737e;">&lt;!-- jsDelivr --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;">&lt;!-- unpkg --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>Para sa pinakamataas na integridad, kopyahin ang <strong>SRI hash</strong> mula sa v1.1.7 release notes at idagdag ang isang <code>integrity=&quot;sha384-…&quot;</code> na attribute.</p>
+<p>Para sa pinakamataas na integridad, kopyahin ang <strong>SRI hash</strong> mula sa v2.0.0 release notes at idagdag ang isang <code>integrity=&quot;sha384-…&quot;</code> na attribute.</p>
 <h3>Alternatibong CDN na lokasyon</h3>
 <div class="table-responsive"><table class="table">
 <thead>
@@ -265,13 +265,13 @@ while these translations catch up. See <a href="https://skeletonic.io/about/">ht
 <tbody>
 <tr>
 <td class="text-left"><strong>jsDelivr</strong></td>
-<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
 <td class="text-left">Oo</td>
 <td class="text-left">Oo</td>
 </tr>
 <tr>
 <td class="text-left"><strong>unpkg</strong></td>
-<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
 <td class="text-left">Oo</td>
 <td class="text-left">Hindi</td>
 </tr>
@@ -310,12 +310,12 @@ global git config).</p>
 <tr>
 <td class="text-left"><code>core/skeletonic.min.css</code></td>
 <td class="text-left">Reset + token + layout + element + component + utility</td>
-<td class="text-left">45.7 KB / 8.3 KB</td>
+<td class="text-left">45.0 KB / 8.6 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>animations/skeletonic-animations.min.css</code></td>
 <td class="text-left">Opsyonal na module ng animasyon</td>
-<td class="text-left">≈213 KB / ≈6.9 KB</td>
+<td class="text-left">≈213 KB / ≈7.2 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>palettes/material/skeletonic-material.min.css</code></td>
@@ -369,7 +369,7 @@ global git config).</p>
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">charset</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">utf-8</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">link </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">body </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">container padding-3</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;Gumagana na.&lt;/</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;
@@ -382,7 +382,7 @@ global git config).</p>
 <h2>6. Ano ang kasama</h2>
 <p>Sa loob ng package ay makikita mo ang bawat source file, ang compiled at minified na CSS bundle, source map, at isang buong Stylus tree na nakaayos ayon sa kategorya:</p>
 <pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">├── CHANGELOG.md
 </span><span style="color:#c0c5ce;">├── LICENSE-APACHE
 </span><span style="color:#c0c5ce;">├── LICENSE-MIT
@@ -418,13 +418,13 @@ global git config).</p>
 <p>Independiyente ang bawat module — i-pull in lang ang mga bundle na kailangan mo upang mapanatiling maliit ang iyong CSS payload.</p>
 <h2>Mga madalas itanong</h2>
 <p><strong>Paano ko i-install ang Skeletonic Stylus?</strong>
-Patakbuhin ang <code>pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7</code>. O i-load ang compiled CSS nang diretso mula sa isang CDN — hindi kailangan ng build step.</p>
+Patakbuhin ang <code>pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0</code>. O i-load ang compiled CSS nang diretso mula sa isang CDN — hindi kailangan ng build step.</p>
 <p><strong>Kailangan ba nito ang JavaScript?</strong>
 Hindi. Ang core stylesheet ay purong CSS, na walang runtime cost. Gumagana ang mga component nang walang kahit isang linya ng JS.</p>
 <p><strong>Handa ba ito sa WCAG 2.2?</strong>
-Oo. Nagpapadala ang v1.1.7 ng AA-conformant na contrast, focus-visible ring, skip-link helper, reduced-motion support at dark mode bilang default.</p>
+Oo. Nagpapadala ang v2.0.0 ng AA-conformant na contrast, focus-visible ring, skip-link helper, reduced-motion support at dark mode bilang default.</p>
 <p><strong>Ano ang laki nito kapag gzipped?</strong>
-45.7 KB minified, <strong>8.3 KB gzipped</strong>, 6.9 KB brotli para sa buong core stylesheet. Ang 8 KB na limitasyon ay ipinatutupad sa CI.</p>
+45.0 KB minified, <strong>8.6 KB gzipped</strong>, 7.2 KB brotli para sa buong core stylesheet. Ang 8 KB na limitasyon ay ipinatutupad sa CI.</p>
 <p><strong>Anong lisensya ang ginagamit nito?</strong>
 Dual-licensed sa ilalim ng MIT at Apache 2.0 — piliin ang kailangan ng iyong proyekto. Libre para sa komersyal at personal na paggamit.</p>
 <script type="application/ld+json">
@@ -437,7 +437,7 @@ Dual-licensed sa ilalim ng MIT at Apache 2.0 — piliin ang kailangan ng iyong p
       "name": "Paano ko i-install ang Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Patakbuhin ang pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7. O i-load ang compiled CSS nang diretso mula sa isang CDN — hindi kailangan ng build step."
+        "text": "Patakbuhin ang pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0. O i-load ang compiled CSS nang diretso mula sa isang CDN — hindi kailangan ng build step."
       }
     },
     {
@@ -453,7 +453,7 @@ Dual-licensed sa ilalim ng MIT at Apache 2.0 — piliin ang kailangan ng iyong p
       "name": "Handa ba ang Skeletonic Stylus sa WCAG 2.2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oo. Nagpapadala ang v1.1.7 ng AA-conformant na contrast, focus-visible ring, skip-link helper, reduced-motion support at dark mode bilang default."
+        "text": "Oo. Nagpapadala ang v2.0.0 ng AA-conformant na contrast, focus-visible ring, skip-link helper, reduced-motion support at dark mode bilang default."
       }
     },
     {
@@ -461,7 +461,7 @@ Dual-licensed sa ilalim ng MIT at Apache 2.0 — piliin ang kailangan ng iyong p
       "name": "Ano ang laki ng Skeletonic Stylus kapag gzipped?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.7 KB minified, 8.3 KB gzipped, 6.9 KB brotli para sa buong core stylesheet. Ang 8 KB na limitasyon ay ipinatutupad sa CI sa bawat commit."
+        "text": "45.0 KB minified, 8.6 KB gzipped, 7.2 KB brotli para sa buong core stylesheet. Ang 8 KB na limitasyon ay ipinatutupad sa CI sa bawat commit."
       }
     },
     {

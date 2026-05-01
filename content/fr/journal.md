@@ -1,21 +1,21 @@
 ---
 title: "Journal des modifications"
 name: "Skeletonic Stylus"
-description: "Notes de version pour Skeletonic Stylus, avec la v1.1.7 détaillée."
+description: "Notes de version pour Skeletonic Stylus, avec la v2.0.0 détaillée."
 layout: page
 permalink: https://skeletonic.io/fr/journal/
 author: Sebastien Rousseau
 language: fr
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic changelog, notes de version, v1.1.7, semver"
+keywords: "skeletonic changelog, notes de version, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (actuelle)
+## v2.0.0 — 2026-04 (actuelle)
 
 La passe de « préparation au déploiement » : a11y, chaîne d'approvisionnement, hygiène du dépôt.
 
@@ -44,7 +44,7 @@ La passe de « préparation au déploiement » : a11y, chaîne d'approvisionneme
 ### Hygiène du dépôt et paquet consommateur
 - Suppression de l'ancien répertoire `package/` ; `dist/` est désormais
   la source unique de vérité pour les consommateurs.
-- README réécrit pour refléter les chemins d'installation v1.1.7.
+- README réécrit pour refléter les chemins d'installation v2.0.0.
 - `dist/` est commité ; `debug/` est généré et gitignored.
 - Nouveau `.github/workflows/npm-publish.yml` déclenché par tag.
 
@@ -56,7 +56,7 @@ La passe de « préparation au déploiement » : a11y, chaîne d'approvisionneme
 - **Nommage `.alert-*`** — `.alert.success` → `.alert.alert-success`
   pour éviter les collisions avec les classes d'état.
 
-[Notes de version complètes v1.1.7 sur GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Notes de version complètes v2.0.0 sur GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historique">
 

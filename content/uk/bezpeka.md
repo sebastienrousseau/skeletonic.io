@@ -1,7 +1,7 @@
 ---
 title: "Безпека та ланцюг постачання"
 name: "Skeletonic Stylus"
-description: "Як Skeletonic Stylus v1.1.7 захищає свій конвеєр збірки, підписує релізи та постачає SBOM."
+description: "Як Skeletonic Stylus v2.0.0 захищає свій конвеєр збірки, підписує релізи та постачає SBOM."
 layout: page
 language: uk
 permalink: https://skeletonic.io/uk/bezpeka/
@@ -23,7 +23,7 @@ keywords: "css безпека, sbom, cyclonedx, npm provenance, openssf scorecar
 
 ## Ланцюг постачання: коротко
 
-| Контроль | Статус у v1.1.7 |
+| Контроль | Статус у v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Генерується при кожному релізі, фіксується у `dist/sbom.json` |
 | **npm provenance** | Увімкнено (`--provenance --access public`) |
@@ -42,10 +42,10 @@ keywords: "css безпека, sbom, cyclonedx, npm provenance, openssf scorecar
 Ви можете перевірити щойно встановлений пакет за допомогою:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 SBOM генерується за допомогою `cyclonedx-npm` під час робочого процесу
@@ -61,7 +61,7 @@ SBOM генерується за допомогою `cyclonedx-npm` під ча�
 Ви можете перевірити це після встановлення:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -74,7 +74,7 @@ npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
 
 | CVE | Серйозність | Статус |
 |---|---|---|
-| **CVE-2023-44270** (postcss — парсинг переносу рядка) | Помірна | **Виправлено** у v1.1.7 через `pnpm.overrides`, що оновлює `postcss` до ≥ 8.4.31 |
+| **CVE-2023-44270** (postcss — парсинг переносу рядка) | Помірна | **Виправлено** у v2.0.0 через `pnpm.overrides`, що оновлює `postcss` до ≥ 8.4.31 |
 
 База рекомендацій Snyk та стрічка GitHub Security Advisories
 моніторяться безперервно; виправлення безпеки виходять як **патч-релізи**.

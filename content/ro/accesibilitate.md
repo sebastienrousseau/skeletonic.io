@@ -1,7 +1,7 @@
 ---
-title: "Accesibilitate — WCAG 2.2 în v1.1.7"
+title: "Accesibilitate — WCAG 2.2 în v2.0.0"
 name: "Skeletonic Stylus"
-description: "Ce livrează v1.1.7 implicit pentru conformitatea WCAG 2.2 — inele de focus, contrast, skip links, mișcare și mod întunecat."
+description: "Ce livrează v2.0.0 implicit pentru conformitatea WCAG 2.2 — inele de focus, contrast, skip links, mișcare și mod întunecat."
 layout: page
 permalink: https://skeletonic.io/ro/accesibilitate/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, accesibilitate, focus visible, skip link, prefers reduced motion, contrast"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 livrează conformitatea WCAG 2.2 ca
+> **Skeletonic Stylus v2.0.0 livrează conformitatea WCAG 2.2 ca
 > comportament implicit, nu ca temă opțională.** Această pagină
 > documentează ce este integrat și ce mixin-uri poți activa opțional
 > pentru un control mai fin.
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, accesibilitate, focus visible, skip link, prefers reduced m
 
 ## Ce primești gratuit
 
-| WCAG 2.2 SC | Ce face v1.1.7 | Cum verifici |
+| WCAG 2.2 SC | Ce face v2.0.0 | Cum verifici |
 |---|---|---|
 | **1.4.3 Contrast (Minim) — AA** | `--cl-primary` și `--cl-secondary` întunecate la ≥ 4,5:1 pe text alb în butoane / badge-uri / linkuri | DevTools → verificator de contrast |
 | **1.4.11 Contrast non-text — AA** | Borduri formulare, butoane, badge-uri, toate ≥ 3:1 | La fel |
@@ -93,5 +93,5 @@ node scripts/a11y-test.mjs https://example.com
 CI rulează acest script pe pagina showcase `dist/index.html` la fiecare
 push.
 
-[Citește despre lansarea v1.1.7 →](/ro/jurnal-modificari/) ·
+[Citește despre lansarea v2.0.0 →](/ro/jurnal-modificari/) ·
 [Vezi pagina de securitate →](/ro/securitate/)

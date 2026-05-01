@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "componente skeletonic, butoane, carduri, formulare, alerte, badge-uri, header, navbar, hamburger css"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -107,7 +107,7 @@ Suprafețe care informează vizitatorul că ceva s-a întâmplat — sau urmeaz�
 
 <h3 id="alerts">Alerte</h3>
 
-Mesaje de status cu intenție semantică. **În v1.1.7 fiecare variantă este
+Mesaje de status cu intenție semantică. **În v2.0.0 fiecare variantă este
 explicit prefixată** sub `.alert-{primary,secondary,info,success,warning,error}`,
 astfel încât clasa de variantă nu poate intra în conflict cu clasele de stare de pe pagină.
 
@@ -378,7 +378,7 @@ JavaScript.** Copiază fragmentul de mai jos într-o pagină HTML nouă care
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Componente Skeletonic Stylus",
-  "description": "Fiecare componentă livrată în Skeletonic Stylus v1.1.7.",
+  "description": "Fiecare componentă livrată în Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

@@ -1,7 +1,7 @@
 ---
 title: "Sicherheit & Lieferkette"
 name: "Skeletonic Stylus"
-description: "So sichert Skeletonic Stylus v1.1.7 seine Build-Pipeline, signiert Releases und liefert ein SBOM."
+description: "So sichert Skeletonic Stylus v2.0.0 seine Build-Pipeline, signiert Releases und liefert ein SBOM."
 layout: page
 language: de
 permalink: https://skeletonic.io/de/sicherheit/
@@ -22,7 +22,7 @@ Leistung ist eine Sicherheitskontrolle. Jedes nicht ausgelieferte Byte ist ein B
 
 ## Lieferkette im Ueberblick
 
-| Kontrolle | Status in v1.1.7 |
+| Kontrolle | Status in v2.0.0 |
 |---|---|
 | **CycloneDX SBOM** | Bei jedem Release generiert, committet unter `dist/sbom.json` |
 | **npm provenance** | Aktiviert (`--provenance --access public`) |
@@ -41,10 +41,10 @@ Jeder veroeffentlichte Tarball enthaelt ein CycloneDX SBOM unter `dist/sbom.json
 Ein frisch installiertes Paket laesst sich wie folgt verifizieren:
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 jq '.metadata.component.version' \
   node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-# → "1.1.7"
+# → "2.0.0"
 ```
 
 Das SBOM wird mit `cyclonedx-npm` waehrend des Publish-Workflows generiert.
@@ -59,7 +59,7 @@ Das veroeffentlichte Artefakt wird mittels
 Nach der Installation laesst es sich wie folgt verifizieren:
 
 ```bash
-npm view @sebastienrousseau/skeletonic-stylus@1.1.7 --json | \
+npm view @sebastienrousseau/skeletonic-stylus@2.0.0 --json | \
   jq '.dist."npm-signature"'
 ```
 
@@ -71,7 +71,7 @@ Die signierte Attestierung verknuepft den Tarball mit dem exakten GitHub-Actions
 
 | CVE | Schweregrad | Status |
 |---|---|---|
-| **CVE-2023-44270** (postcss line return parsing) | Mittel | **Behoben** in v1.1.7 via `pnpm.overrides` durch Upgrade von `postcss` auf >= 8.4.31 |
+| **CVE-2023-44270** (postcss line return parsing) | Mittel | **Behoben** in v2.0.0 via `pnpm.overrides` durch Upgrade von `postcss` auf >= 8.4.31 |
 
 Die Snyk-Advisory-Datenbank und der GitHub-Security-Advisories-Feed werden kontinuierlich ueberwacht; Sicherheitspatches erscheinen als **Patch-Level-Releases**.
 

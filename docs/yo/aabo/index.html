@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -113,8 +113,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
-<meta name="description" content="Iṣẹ-ṣiṣe 45.7 KB minified · 8.3 KB gzipped · 6.9 KB brotli fun iwe-aṣa ipilẹ ni kikun. JavaScript kankan — Stylus mimọ → CSS mimọ, ko si">
-<meta property="og:description" content="Iṣẹ-ṣiṣe 45.7 KB minified · 8.3 KB gzipped · 6.9 KB brotli fun iwe-aṣa ipilẹ ni kikun. JavaScript kankan — Stylus mimọ → CSS mimọ, ko si">
+<meta name="description" content="Iṣẹ-ṣiṣe 45.0 KB minified · 8.6 KB gzipped · 7.2 KB brotli fun iwe-aṣa ipilẹ ni kikun. JavaScript kankan — Stylus mimọ → CSS mimọ, ko si">
+<meta property="og:description" content="Iṣẹ-ṣiṣe 45.0 KB minified · 8.6 KB gzipped · 7.2 KB brotli fun iwe-aṣa ipilẹ ni kikun. JavaScript kankan — Stylus mimọ → CSS mimọ, ko si">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -214,7 +214,7 @@
         
 <h2>Iṣẹ-ṣiṣe</h2>
 <ul>
-<li><strong>45.7 KB minified · 8.3 KB gzipped · 6.9 KB brotli</strong> fun iwe-aṣa ipilẹ ni kikun.</li>
+<li><strong>45.0 KB minified · 8.6 KB gzipped · 7.2 KB brotli</strong> fun iwe-aṣa ipilẹ ni kikun.</li>
 <li><strong>JavaScript kankan</strong> — Stylus mimọ → CSS mimọ, ko si iye owo iṣiṣẹ.</li>
 <li><strong>Ti a fi cascade-layer ṣe</strong> — awọn atunṣe bori laisi <code>!important</code>.</li>
 <li><strong>Isuna <code>size-limit</code> ti a fi ipa mu</strong> ninu CI lori adehun kọọkan.</li>
@@ -226,7 +226,7 @@ kan ti o dinku lati ṣe ayẹwo, fọwọsi, ati ṣe idaniloju.</p>
 <thead>
 <tr>
 <th>Iṣakoso</th>
-<th>Ipo v1.1.7</th>
+<th>Ipo v2.0.0</th>
 </tr>
 </thead>
 <tbody>
@@ -269,10 +269,10 @@ kan ti o dinku lati ṣe ayẹwo, fọwọsi, ati ṣe idaniloju.</p>
 <p>Gbogbo tarball ti a tẹ jade pẹlu CycloneDX SBOM ni <code>dist/sbom.json</code>.
 O le ṣayẹwo package ti a fi sori ẹrọ tuntun pẹlu:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.metadata.component.version</span><span style="color:#c0c5ce;">&#39; \
 </span><span style="color:#c0c5ce;">  node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-</span><span style="color:#65737e;"># → &quot;1.1.7&quot;
+</span><span style="color:#65737e;"># → &quot;2.0.0&quot;
 </span></pre>
 </code></pre>
 <p>SBOM ni a ṣẹda pẹlu <code>cyclonedx-npm</code> lakoko opo iṣẹ tẹ jade.</p>
@@ -282,7 +282,7 @@ O le ṣayẹwo package ti a fi sori ẹrọ tuntun pẹlu:</p>
 <a href="https://docs.npmjs.com/generating-provenance-statements">ẹri package npm</a>.</p>
 <p>O le ṣe idaniloju rẹ lẹhin ifisori ẹrọ pẹlu:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@1.1.7</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
+<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@2.0.0</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
 </span><span style="color:#c0c5ce;">  </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.dist.&quot;npm-signature&quot;</span><span style="color:#c0c5ce;">&#39;
 </span></pre>
 </code></pre>
@@ -302,7 +302,7 @@ O le ṣayẹwo package ti a fi sori ẹrọ tuntun pẹlu:</p>
 <tr>
 <td class="text-left"><strong>CVE-2023-44270</strong> (postcss line return parsing)</td>
 <td class="text-left">Alabọde</td>
-<td class="text-left"><strong>Ti a ṣe atunṣe</strong> ninu v1.1.7 nipasẹ <code>pnpm.overrides</code> ti o mu <code>postcss</code> ga si ≥ 8.4.31</td>
+<td class="text-left"><strong>Ti a ṣe atunṣe</strong> ninu v2.0.0 nipasẹ <code>pnpm.overrides</code> ti o mu <code>postcss</code> ga si ≥ 8.4.31</td>
 </tr>
 </tbody>
 </table>

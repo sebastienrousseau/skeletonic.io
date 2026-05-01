@@ -1,7 +1,7 @@
 ---
 title: "ชุดสี"
 name: "Skeletonic Stylus"
-description: "ชุดสี Material, Tachyons และ Web-safe ที่มาพร้อมกับ Skeletonic Stylus v1.1.7"
+description: "ชุดสี Material, Tachyons และ Web-safe ที่มาพร้อมกับ Skeletonic Stylus v2.0.0"
 layout: page
 permalink: https://skeletonic.io/th/chan-si/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "ชุดสี css, material, tachyons, websafe, design tokens"
 ---
 
-Skeletonic Stylus v1.1.7 มาพร้อม **ชุดสีเสริมสามชุด** แต่ละชุด
+Skeletonic Stylus v2.0.0 มาพร้อม **ชุดสีเสริมสามชุด** แต่ละชุด
 จัดจำหน่ายเป็นสไตล์ชีตที่ minify แยกต่างหาก จึงจ่ายเฉพาะที่ใช้
 
 | ชุดสี | ไฟล์ | ขนาด (min) |
@@ -62,9 +62,9 @@ Skeletonic Stylus v1.1.7 มาพร้อม **ชุดสีเสริม�
 
 <hr class="hr-text" data-content="แบรนด์">
 
-## สีแบรนด์ (v1.1.7 — คอนทราสต์ AA)
+## สีแบรนด์ (v2.0.0 — คอนทราสต์ AA)
 
-ใน v1.1.7 โทเค็น primary และ secondary ถูกทำให้เข้มขึ้นเพื่อให้ได้
+ใน v2.0.0 โทเค็น primary และ secondary ถูกทำให้เข้มขึ้นเพื่อให้ได้
 **คอนทราสต์ WCAG 4.5:1** กับข้อความสีขาวทันทีที่ใช้งาน
 
 <div class="row margin-top-3">

@@ -15,7 +15,7 @@ Pristupne CSS na **mene nez 8&nbsp;KB gzipped**. Pripraveno na WCAG&nbsp;2.2.
 Kaskadove vrstvy. Zadny JavaScript. Staci vlozit do libovolne stranky.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Anatomie Skeletonic

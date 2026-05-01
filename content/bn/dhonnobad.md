@@ -18,4 +18,4 @@ keywords: "ধন্যবাদ"
 
 - [GitHub-এ প্রজেক্টে স্টার দিন](https://github.com/sebastienrousseau/skeletonic-stylus)
 - [npm প্যাকেজ দেখুন](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- [v1.1.7 পরিবর্তন তালিকা পড়ুন](/bn/poriborton-talika/)
+- [v2.0.0 পরিবর্তন তালিকা পড়ুন](/bn/poriborton-talika/)

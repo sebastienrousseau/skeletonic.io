@@ -1,21 +1,21 @@
 ---
 title: "Registro de alteracoes"
 name: "Skeletonic Stylus"
-description: "Notas de release do Skeletonic Stylus, com a v1.1.7 completa."
+description: "Notas de release do Skeletonic Stylus, com a v2.0.0 completa."
 layout: page
 permalink: https://skeletonic.io/pt-br/registro-de-alteracoes/
 author: Sebastien Rousseau
 language: pt-br
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic changelog, notas de release, v1.1.7, semver"
+keywords: "skeletonic changelog, notas de release, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (atual)
+## v2.0.0 — 2026-04 (atual)
 
 A revisao de "prontidao para release": a11y, cadeia de suprimentos,
 higiene do repositorio.
@@ -47,7 +47,7 @@ higiene do repositorio.
 ### Higiene do repositorio &amp; pacote para consumidores
 - Diretorio legado `package/` removido; `dist/` e agora a unica fonte
   de verdade para consumidores.
-- README reescrito para refletir os caminhos de instalacao da v1.1.7.
+- README reescrito para refletir os caminhos de instalacao da v2.0.0.
 - `dist/` e commitado; `debug/` e gerado e incluido no gitignore.
 - Novo `.github/workflows/npm-publish.yml` acionado por tags.
 
@@ -59,7 +59,7 @@ higiene do repositorio.
 - **Namespacing `.alert-*`** — `.alert.success` → `.alert.alert-success`
   para evitar colisoes com classes de estado.
 
-[Notas completas do release v1.1.7 no GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Notas completas do release v2.0.0 no GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Historico">
 

@@ -15,7 +15,7 @@ keywords: "css, stylus, css фреймворк, доступный css, wcag 2.2
 Каскадные слои. Без JavaScript. Подключите к любой странице.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ## Анатомия Skeletonic

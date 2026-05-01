@@ -1,7 +1,7 @@
 ---
 title: "แอนิเมชัน"
 name: "Skeletonic Stylus"
-description: "โมดูลแอนิเมชันเสริมที่มาพร้อมกับ Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake และอื่น ๆ ทั้งหมดอยู่หลัง prefers-reduced-motion"
+description: "โมดูลแอนิเมชันเสริมที่มาพร้อมกับ Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake และอื่น ๆ ทั้งหมดอยู่หลัง prefers-reduced-motion"
 layout: page
 permalink: https://skeletonic.io/th/aeni-mechan/
 date: 2026-04-08
@@ -22,7 +22,7 @@ load_animations: true
 ```
 
 ทุกคลาสแอนิเมชันถูกครอบด้วย
-**`@media (prefers-reduced-motion: no-preference)`** ใน v1.1.7
+**`@media (prefers-reduced-motion: no-preference)`** ใน v2.0.0
 ซึ่งหมายความว่าผู้ใช้ที่ตั้งค่า "ลดการเคลื่อนไหว" ในระดับ OS จะไม่เห็น
 แอนิเมชันใด ๆ — เลย์เอาต์ยังคงทำงาน เพียงแค่การเคลื่อนไหวถูกระงับ
 
@@ -91,7 +91,7 @@ load_animations: true
 
 <p class="anim-note-rm">
   ระบบของคุณเปิดใช้การลดการเคลื่อนไหว ดังนั้นเป้าหมายด้านล่าง
-  จะอยู่นิ่ง — นั่นคือพฤติกรรมการเข้าถึงของ v1.1.7 ที่ทำงานถูกต้อง
+  จะอยู่นิ่ง — นั่นคือพฤติกรรมการเข้าถึงของ v2.0.0 ที่ทำงานถูกต้อง
 </p>
 
 <div class="anim-grid">
@@ -267,9 +267,9 @@ load_animations: true
 | `.vanishIn` / `.vanishOut` | ปรากฏแบบ Material |
 | `.chameleonbackground` / `.chameleontext` | วนรอบ hue |
 
-## ข้อควรทราบ — ข้อจำกัดที่ทราบใน v1.1.7
+## ข้อควรทราบ — ข้อจำกัดที่ทราบใน v2.0.0
 
-คลาสแอนิเมชันใน v1.1.7 ตั้งค่าเฉพาะ `animation-name` เท่านั้น ในการเล่น
+คลาสแอนิเมชันใน v2.0.0 ตั้งค่าเฉพาะ `animation-name` เท่านั้น ในการเล่น
 จำเป็นต้องระบุ `animation-duration`, `animation-iteration-count`,
 `animation-fill-mode` และ `animation-timing-function` เอง — เหมือนกับที่
 บล็อก `<style>` ด้านบนของหน้านี้สาธิต รุ่นถัดไปจะรวมค่าเริ่มต้น

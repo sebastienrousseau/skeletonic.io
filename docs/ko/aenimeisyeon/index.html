@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -219,7 +219,7 @@
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">/css/skeletonic-animations.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>v1.1.7에서 모든 애니메이션 클래스는 <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> 블록으로 감싸져 있어, OS 수준에서 &quot;모션 줄이기&quot;를 설정한 사용자에게는 애니메이션이 전혀 표시되지 않습니다. 레이아웃은 그대로 작동하며, 모션만 억제됩니다.</p>
+<p>v2.0.0에서 모든 애니메이션 클래스는 <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> 블록으로 감싸져 있어, OS 수준에서 &quot;모션 줄이기&quot;를 설정한 사용자에게는 애니메이션이 전혀 표시되지 않습니다. 레이아웃은 그대로 작동하며, 모션만 억제됩니다.</p>
 <style>
   /*
    * 페이지 로컬 데모 스타일. skeletonic-animations.min.css에 포함된
@@ -276,7 +276,7 @@
 <p>카드의 <strong>재생</strong> 버튼을 누르면 사각형에서 애니메이션이 다시 재생됩니다. 애니메이션 클래스 자체는 <code>skeletonic-animations.min.css</code>에 포함된 것과 정확히 동일하며, 라이브러리는 <code>animation-name</code>만 설정하므로 위의 <code>&lt;style&gt;</code> 블록에서 누락된 <code>animation-duration</code> / <code>animation-iteration-count</code> / <code>animation-fill-mode</code> 속성을 추가하여 키프레임이 표시됩니다.</p>
 <p class="anim-note-rm">
   OS에서 모션 줄이기가 활성화되어 있으므로 아래 대상은 정지해 있습니다.
-  이것은 v1.1.7 접근성 동작이 올바르게 작동하는 것입니다.
+  이것은 v2.0.0 접근성 동작이 올바르게 작동하는 것입니다.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -393,7 +393,7 @@
   </div>
 </div>
 <script>
-  // v1.1.7에 포함된 애니메이션 클래스는 선택자 자체에서 animation-name을
+  // v2.0.0에 포함된 애니메이션 클래스는 선택자 자체에서 animation-name을
   // 설정합니다. 키프레임을 다시 재생하려면 클래스를 제거하고, 레이아웃
   // 플러시를 강제한 후, 클래스를 다시 추가해야 합니다.
   function replayAnim(btn, name){
@@ -490,8 +490,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>참고 — 알려진 v1.1.7 제한 사항</h2>
-<p>v1.1.7의 애니메이션 클래스는 <code>animation-name</code>만 설정합니다. 이를 재생하려면 현재 <code>animation-duration</code>, <code>animation-iteration-count</code>, <code>animation-fill-mode</code> 및 <code>animation-timing-function</code>을 직접 제공해야 합니다. 이 페이지 상단의 <code>&lt;style&gt;</code> 블록이 바로 그 방법을 보여줍니다. 향후 릴리스에서는 합리적인 기본 설정을 인라인으로 포함하여 <code>&lt;div class=&quot;bounce&quot;&gt;</code>가 즉시 작동하도록 할 예정입니다.</p>
+<h2>참고 — 알려진 v2.0.0 제한 사항</h2>
+<p>v2.0.0의 애니메이션 클래스는 <code>animation-name</code>만 설정합니다. 이를 재생하려면 현재 <code>animation-duration</code>, <code>animation-iteration-count</code>, <code>animation-fill-mode</code> 및 <code>animation-timing-function</code>을 직접 제공해야 합니다. 이 페이지 상단의 <code>&lt;style&gt;</code> 블록이 바로 그 방법을 보여줍니다. 향후 릴리스에서는 합리적인 기본 설정을 인라인으로 포함하여 <code>&lt;div class=&quot;bounce&quot;&gt;</code>가 즉시 작동하도록 할 예정입니다.</p>
 <p><a href="/ko/jeobgeun-seong/">접근성 참고 보기 →</a></p>
 
 

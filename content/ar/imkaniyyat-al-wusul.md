@@ -1,7 +1,7 @@
 ---
-title: "إمكانية الوصول — WCAG 2.2 في الإصدار 1.1.7"
+title: "إمكانية الوصول — WCAG 2.2 في الإصدار 2.0.0"
 name: "Skeletonic Stylus"
-description: "ما يشحنه الإصدار 1.1.7 مباشرة للتوافق مع WCAG 2.2 — حلقات التركيز، التباين، روابط التخطي، الحركة، والوضع الداكن."
+description: "ما يشحنه الإصدار 2.0.0 مباشرة للتوافق مع WCAG 2.2 — حلقات التركيز، التباين، روابط التخطي، الحركة، والوضع الداكن."
 layout: page
 permalink: https://skeletonic.io/ar/imkaniyyat-al-wusul/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, إمكانية الوصول, focus visible, رابط التخطي, prefers reduced motion, تباين"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **يشحن Skeletonic Stylus الإصدار 1.1.7 التوافق مع WCAG 2.2 كسلوك
+> **يشحن Skeletonic Stylus الإصدار 2.0.0 التوافق مع WCAG 2.2 كسلوك
 > افتراضي، وليس كمظهر اختياري.** هذه الصفحة توثّق ما هو مدمج
 > وما هي الخلطات التي يمكنك اختيارها لتحكّم أدق.
 
@@ -24,7 +24,7 @@ keywords: "wcag 2.2, إمكانية الوصول, focus visible, رابط الت
 
 ## ما تحصل عليه مجانًا
 
-| معيار WCAG 2.2 | ما يفعله الإصدار 1.1.7 | كيفية التحقق |
+| معيار WCAG 2.2 | ما يفعله الإصدار 2.0.0 | كيفية التحقق |
 |---|---|---|
 | **1.4.3 التباين (الحد الأدنى) — AA** | تم تغميق `--cl-primary` و`--cl-secondary` إلى ≥ 4.5:1 مقابل الأبيض | أدوات المطور ← فاحص التباين |
 | **1.4.11 تباين غير النص — AA** | حدود النماذج والأزرار والشارات جميعها ≥ 3:1 | نفسه |
@@ -89,5 +89,5 @@ node scripts/a11y-test.mjs https://example.com
 
 يشغّل CI هذا النص على صفحة العرض `dist/index.html` مع كل دفع.
 
-[اقرأ عن إصدار v1.1.7 →](/ar/sijil-al-taghyirat/) ·
+[اقرأ عن إصدار v2.0.0 →](/ar/sijil-al-taghyirat/) ·
 [انظر صفحة الأمان →](/ar/al-aman/)

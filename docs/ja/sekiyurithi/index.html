@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -113,8 +113,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
-<meta name="description" content="パフォーマンス フルコアスタイルシートで ミニファイ済み 45.7 KB · gzip圧縮 8.3 KB · brotli 6.9 KB 。 JavaScript ゼロ —">
-<meta property="og:description" content="パフォーマンス フルコアスタイルシートで ミニファイ済み 45.7 KB · gzip圧縮 8.3 KB · brotli 6.9 KB 。 JavaScript ゼロ —">
+<meta name="description" content="パフォーマンス フルコアスタイルシートで ミニファイ済み 45.0 KB · gzip圧縮 8.6 KB · brotli 7.2 KB 。 JavaScript ゼロ —">
+<meta property="og:description" content="パフォーマンス フルコアスタイルシートで ミニファイ済み 45.0 KB · gzip圧縮 8.6 KB · brotli 7.2 KB 。 JavaScript ゼロ —">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -214,7 +214,7 @@
         
 <h2>パフォーマンス</h2>
 <ul>
-<li>フルコアスタイルシートで <strong>ミニファイ済み 45.7 KB · gzip圧縮 8.3 KB · brotli 6.9 KB</strong>。</li>
+<li>フルコアスタイルシートで <strong>ミニファイ済み 45.0 KB · gzip圧縮 8.6 KB · brotli 7.2 KB</strong>。</li>
 <li><strong>JavaScript ゼロ</strong> — 純粋な Stylus → 純粋な CSS、ランタイムコストなし。</li>
 <li><strong>カスケードレイヤー採用</strong> — <code>!important</code> なしでオーバーライドが優先されます。</li>
 <li><strong><code>size-limit</code> バジェット</strong> がすべてのコミットで CI により強制されます。</li>
@@ -225,7 +225,7 @@
 <thead>
 <tr>
 <th>対策</th>
-<th>v1.1.7 のステータス</th>
+<th>v2.0.0 のステータス</th>
 </tr>
 </thead>
 <tbody>
@@ -267,10 +267,10 @@
 <h2>CycloneDX SBOM</h2>
 <p>公開されるすべての tarball には <code>dist/sbom.json</code> に CycloneDX SBOM が含まれています。新しくインストールしたパッケージを以下のコマンドで確認できます：</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@1.1.7
+<span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.metadata.component.version</span><span style="color:#c0c5ce;">&#39; \
 </span><span style="color:#c0c5ce;">  node_modules/@sebastienrousseau/skeletonic-stylus/dist/sbom.json
-</span><span style="color:#65737e;"># → &quot;1.1.7&quot;
+</span><span style="color:#65737e;"># → &quot;2.0.0&quot;
 </span></pre>
 </code></pre>
 <p>SBOM は公開ワークフロー中に <code>cyclonedx-npm</code> で生成されます。</p>
@@ -279,7 +279,7 @@
 <p>公開されたアーティファクトは <a href="https://docs.npmjs.com/generating-provenance-statements">npm パッケージプロベナンス</a> を使用して署名されています。</p>
 <p>インストール後、以下のコマンドで確認できます：</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
-<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@1.1.7</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
+<span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> view @sebastienrousseau/skeletonic-stylus@2.0.0</span><span style="color:#bf616a;"> --json </span><span style="color:#c0c5ce;">| \
 </span><span style="color:#c0c5ce;">  </span><span style="color:#8fa1b3;">jq </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">.dist.&quot;npm-signature&quot;</span><span style="color:#c0c5ce;">&#39;
 </span></pre>
 </code></pre>
@@ -298,7 +298,7 @@
 <tr>
 <td class="text-left"><strong>CVE-2023-44270</strong> (postcss 改行パーシング)</td>
 <td class="text-left">中</td>
-<td class="text-left"><code>pnpm.overrides</code> で <code>postcss</code> を 8.4.31 以上にアップグレードして v1.1.7 で <strong>パッチ済み</strong></td>
+<td class="text-left"><code>pnpm.overrides</code> で <code>postcss</code> を 8.4.31 以上にアップグレードして v2.0.0 で <strong>パッチ済み</strong></td>
 </tr>
 </tbody>
 </table>

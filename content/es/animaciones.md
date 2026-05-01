@@ -1,7 +1,7 @@
 ---
 title: "Animaciones"
 name: "Skeletonic Stylus"
-description: "Modulo de animaciones opcional incluido en Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake y mas, todo protegido tras prefers-reduced-motion."
+description: "Modulo de animaciones opcional incluido en Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake y mas, todo protegido tras prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/es/animaciones/
 date: 2026-04-08
@@ -23,7 +23,7 @@ de 8&nbsp;KB gzipped.
 ```
 
 Cada clase de animacion esta envuelta en un bloque
-**`@media (prefers-reduced-motion: no-preference)`** en v1.1.7, lo que
+**`@media (prefers-reduced-motion: no-preference)`** en v2.0.0, lo que
 significa que un usuario que haya activado "reducir movimiento" a nivel
 del sistema operativo no vera ninguna animacion — el layout sigue
 funcionando, el movimiento simplemente se suprime.
@@ -93,7 +93,7 @@ faltantes `animation-duration` / `animation-iteration-count` /
 <p class="anim-note-rm">
   La opcion Reducir Movimiento esta activada en tu sistema operativo, por lo
   que los objetivos a continuacion permaneceran estaticos — ese es el
-  comportamiento de accesibilidad de v1.1.7 funcionando correctamente.
+  comportamiento de accesibilidad de v2.0.0 funcionando correctamente.
 </p>
 
 <div class="anim-grid">
@@ -229,7 +229,7 @@ faltantes `animation-duration` / `animation-iteration-count` /
 </div>
 
 <script>
-  // Las clases de animacion incluidas en v1.1.7 establecen animation-name
+  // Las clases de animacion incluidas en v2.0.0 establecen animation-name
   // en el selector. Para repetir el keyframe hay que eliminar la clase,
   // forzar un reflujo del layout, y volver a anadir la clase.
   function replayAnim(btn, name){
@@ -275,9 +275,9 @@ faltantes `animation-duration` / `animation-iteration-count` /
 | `.vanishIn` / `.vanishOut` | Aparicion estilo Material |
 | `.chameleonbackground` / `.chameleontext` | Ciclo de tono |
 
-## Aviso — limitacion conocida en v1.1.7
+## Aviso — limitacion conocida en v2.0.0
 
-Las clases de animacion en v1.1.7 solo establecen `animation-name`. Para
+Las clases de animacion en v2.0.0 solo establecen `animation-name`. Para
 reproducirlas actualmente debes proporcionar tus propias propiedades
 `animation-duration`, `animation-iteration-count`, `animation-fill-mode` y
 `animation-timing-function` — exactamente como demuestra el bloque `<style>`

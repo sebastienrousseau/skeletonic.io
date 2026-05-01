@@ -1,7 +1,7 @@
 ---
-title: "Barrierefreiheit — WCAG 2.2 in v1.1.7"
+title: "Barrierefreiheit — WCAG 2.2 in v2.0.0"
 name: "Skeletonic Stylus"
-description: "Was v1.1.7 standardmäßig für WCAG-2.2-Konformität mitbringt — Fokusringe, Kontrast, Skip-Links, Bewegung und Dunkelmodus."
+description: "Was v2.0.0 standardmäßig für WCAG-2.2-Konformität mitbringt — Fokusringe, Kontrast, Skip-Links, Bewegung und Dunkelmodus."
 layout: page
 language: de
 permalink: https://skeletonic.io/de/barrierefreiheit/
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, accessibility, focus visible, skip link, prefers reduced motion, contrast"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 liefert WCAG-2.2-Konformität als
+> **Skeletonic Stylus v2.0.0 liefert WCAG-2.2-Konformität als
 > Standardverhalten — nicht als optionales Theme.** Diese Seite
 > dokumentiert, was bereits integriert ist und welche Mixins Sie für
 > eine feinere Steuerung aktivieren können.
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, accessibility, focus visible, skip link, prefers reduced mo
 
 ## Was Sie ohne Zusatzaufwand erhalten
 
-| WCAG 2.2 SC | Was v1.1.7 bietet | So prüfen Sie es |
+| WCAG 2.2 SC | Was v2.0.0 bietet | So prüfen Sie es |
 |---|---|---|
 | **1.4.3 Contrast (Minimum) — AA** | `--cl-primary` und `--cl-secondary` auf ≥ 4,5:1 gegenüber Weiß abgedunkelt | DevTools → Kontrastprüfung |
 | **1.4.11 Non-text Contrast — AA** | Formularrahmen, Buttons und Badges durchgehend ≥ 3:1 | Ebenso |
@@ -93,5 +93,5 @@ node scripts/a11y-test.mjs https://example.com
 Die CI-Pipeline führt dieses Skript bei jedem Push gegen die
 `dist/index.html`-Showcase-Seite aus.
 
-[Mehr zum v1.1.7-Release erfahren →](/de/aenderungsprotokoll/) ·
+[Mehr zum v2.0.0-Release erfahren →](/de/aenderungsprotokoll/) ·
 [Zur Sicherheitsseite →](/de/sicherheit/)

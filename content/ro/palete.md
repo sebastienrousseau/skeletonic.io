@@ -1,7 +1,7 @@
 ---
 title: "Palete"
 name: "Skeletonic Stylus"
-description: "Paletele de culori Material, Tachyons și web-safe livrate cu Skeletonic Stylus v1.1.7."
+description: "Paletele de culori Material, Tachyons și web-safe livrate cu Skeletonic Stylus v2.0.0."
 layout: page
 permalink: https://skeletonic.io/ro/palete/
 date: 2026-04-08
@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "paletă css, material, tachyons, websafe, token-uri de design"
 ---
 
-Skeletonic Stylus v1.1.7 livrează **trei palete de culori opționale**,
+Skeletonic Stylus v2.0.0 livrează **trei palete de culori opționale**,
 fiecare distribuită ca propriul stylesheet minificat, astfel încât plătești
 doar pentru ceea ce folosești.
 
@@ -63,9 +63,9 @@ expusă ca `--cl-grey-100` … `--cl-grey-1000`.
 
 <hr class="hr-text" data-content="Brand">
 
-## Culorile de brand (v1.1.7 — contrast AA)
+## Culorile de brand (v2.0.0 — contrast AA)
 
-În v1.1.7 token-urile primary și secondary au fost întunecate pentru a
+În v2.0.0 token-urile primary și secondary au fost întunecate pentru a
 atinge un **contrast WCAG de 4,5:1** pe text alb, din start.
 
 <div class="row margin-top-3">

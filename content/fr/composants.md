@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "composants skeletonic, boutons, cartes, formulaires, alertes, badges, en-tête, navbar, hamburger css"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -114,7 +114,7 @@ sur le point de se produire.
 
 <h3 id="alerts">Alertes</h3>
 
-Messages de statut à intention sémantique. **Dans la v1.1.7, chaque
+Messages de statut à intention sémantique. **Dans la v2.0.0, chaque
 variante est explicitement préfixée** sous
 `.alert-{primary,secondary,info,success,warning,error}` afin que la
 classe de variante ne puisse pas entrer en collision avec les classes
@@ -175,7 +175,7 @@ responsifs.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -393,7 +393,7 @@ réduit, s'ouvre et gère le focus correctement tout seul.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Composants Skeletonic Stylus",
-  "description": "Chaque composant livré dans Skeletonic Stylus v1.1.7.",
+  "description": "Chaque composant livré dans Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

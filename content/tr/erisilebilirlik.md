@@ -1,7 +1,7 @@
 ---
-title: "Erisilebilirlik — v1.1.7'de WCAG 2.2"
+title: "Erisilebilirlik — v2.0.0'de WCAG 2.2"
 name: "Skeletonic Stylus"
-description: "v1.1.7'nin WCAG 2.2 uyumlulugu icin kutudan ne gonderdigini — odak halkalari, kontrast, atlama baglantilari, hareket ve karanlik mod."
+description: "v2.0.0'nin WCAG 2.2 uyumlulugu icin kutudan ne gonderdigini — odak halkalari, kontrast, atlama baglantilari, hareket ve karanlik mod."
 layout: page
 permalink: https://skeletonic.io/tr/erisilebilirlik/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, erisilebilirlik, focus visible, atlama baglantisi, prefers reduced motion, kontrast"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7, WCAG 2.2 uyumlulugunu istege bagli bir
+> **Skeletonic Stylus v2.0.0, WCAG 2.2 uyumlulugunu istege bagli bir
 > tema olarak degil, varsayilan davranis olarak sunar.** Bu sayfa neyin
 > yerlesik oldugunu ve daha ince kontrol icin hangi mixin'leri
 > kullanabileceginizi belgeler.
@@ -25,7 +25,7 @@ keywords: "wcag 2.2, erisilebilirlik, focus visible, atlama baglantisi, prefers 
 
 ## Ucretsiz olarak ne elde edersiniz
 
-| WCAG 2.2 SC | v1.1.7 ne yapar | Nasil dogrulanir |
+| WCAG 2.2 SC | v2.0.0 ne yapar | Nasil dogrulanir |
 |---|---|---|
 | **1.4.3 Kontrast (Minimum) — AA** | `--cl-primary` ve `--cl-secondary` beyaza karsi ≥ 4,5:1 icin karartildi | DevTools → kontrast denetleyicisi |
 | **1.4.11 Metin-Disi Kontrast — AA** | Form kenarliklari, butonlar, rozetlerin tamami ≥ 3:1 | Ayni |
@@ -91,5 +91,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI bu betigi her push'ta `dist/index.html` vitrin sayfasinda calistirir.
 
-[v1.1.7 surumu hakkinda bilgi edinin →](/tr/degisiklik-gunlugu/) ·
+[v2.0.0 surumu hakkinda bilgi edinin →](/tr/degisiklik-gunlugu/) ·
 [Guvenlik sayfasini gorun →](/tr/guvenlik/)

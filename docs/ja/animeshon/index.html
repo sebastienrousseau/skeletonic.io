@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -219,7 +219,7 @@
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">/css/skeletonic-animations.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>v1.1.7 では、すべてのアニメーションクラスが <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> ブロックで囲まれています。これは、OS レベルで「モーションの軽減」を設定しているユーザーにはアニメーションがまったく表示されないことを意味します — レイアウトは正常に動作し、モーションのみが抑制されます。</p>
+<p>v2.0.0 では、すべてのアニメーションクラスが <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> ブロックで囲まれています。これは、OS レベルで「モーションの軽減」を設定しているユーザーにはアニメーションがまったく表示されないことを意味します — レイアウトは正常に動作し、モーションのみが抑制されます。</p>
 <style>
   /*
    * ページローカルのデモスタイル。skeletonic-animations.min.css に
@@ -276,7 +276,7 @@
 <h2>デモ</h2>
 <p>任意のカードの <strong>再生</strong> を押すと、その四角でアニメーションが再生されます。アニメーションクラス自体は <code>skeletonic-animations.min.css</code> に含まれるそのものです — ライブラリは <code>animation-name</code> のみを設定するため、上の <code>&lt;style&gt;</code> ブロックがキーフレームを表示するために不足している <code>animation-duration</code> / <code>animation-iteration-count</code> / <code>animation-fill-mode</code> プロパティを追加しています。</p>
 <p class="anim-note-rm">
-  お使いの OS でモーション軽減が有効になっているため、以下のターゲットは静止したままです — これは v1.1.7 のアクセシビリティ動作が正しく機能していることを示しています。
+  お使いの OS でモーション軽減が有効になっているため、以下のターゲットは静止したままです — これは v2.0.0 のアクセシビリティ動作が正しく機能していることを示しています。
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -485,8 +485,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>注意事項 — v1.1.7 の既知の制約</h2>
-<p>v1.1.7 のアニメーションクラスは <code>animation-name</code> のみを設定します。再生するには、現在のところ <code>animation-duration</code>、<code>animation-iteration-count</code>、<code>animation-fill-mode</code>、<code>animation-timing-function</code> を自分で指定する必要があります — このページの上部にある <code>&lt;style&gt;</code> ブロックがまさにそのデモです。将来のリリースでは、<code>&lt;div class=&quot;bounce&quot;&gt;</code> がそのまま動作するよう、適切なデフォルトベース設定をインライン化する予定です。</p>
+<h2>注意事項 — v2.0.0 の既知の制約</h2>
+<p>v2.0.0 のアニメーションクラスは <code>animation-name</code> のみを設定します。再生するには、現在のところ <code>animation-duration</code>、<code>animation-iteration-count</code>、<code>animation-fill-mode</code>、<code>animation-timing-function</code> を自分で指定する必要があります — このページの上部にある <code>&lt;style&gt;</code> ブロックがまさにそのデモです。将来のリリースでは、<code>&lt;div class=&quot;bounce&quot;&gt;</code> がそのまま動作するよう、適切なデフォルトベース設定をインライン化する予定です。</p>
 <p><a href="/ja/akseshibirithi/">アクセシビリティの注記を見る →</a></p>
 
 

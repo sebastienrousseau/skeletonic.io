@@ -1,21 +1,21 @@
 ---
 title: "更新日志"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus 发布说明，包含 v1.1.7 完整详情。"
+description: "Skeletonic Stylus 发布说明，包含 v2.0.0 完整详情。"
 language: zh-hans
 layout: page
 permalink: https://skeletonic.io/zh-hans/geng-xin-ri-zhi/
 author: Sebastien Rousseau
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic 更新日志, 发布说明, v1.1.7, semver"
+keywords: "skeletonic 更新日志, 发布说明, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04（当前版本）
+## v2.0.0 — 2026-04（当前版本）
 
 "发布就绪"审查：无障碍、供应链、仓库整理。
 
@@ -38,7 +38,7 @@ keywords: "skeletonic 更新日志, 发布说明, v1.1.7, semver"
 
 ### 仓库整理与消费者包
 - 移除遗留 `package/` 目录；`dist/` 现在是消费者的唯一来源。
-- README 重写以反映 v1.1.7 安装路径。
+- README 重写以反映 v2.0.0 安装路径。
 - `dist/` 已提交；`debug/` 按需生成并 gitignore。
 - 新的 `.github/workflows/npm-publish.yml` 基于标签驱动。
 
@@ -47,7 +47,7 @@ keywords: "skeletonic 更新日志, 发布说明, v1.1.7, semver"
 - **`.alternate`** 错误地应用了 `animation-direction: reverse` 而非 `alternate`。
 - **`.alert-*` 命名空间** — `.alert.success` → `.alert.alert-success`，避免与状态类冲突。
 
-[GitHub 上的完整 v1.1.7 发布说明 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[GitHub 上的完整 v2.0.0 发布说明 ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="历史版本">
 

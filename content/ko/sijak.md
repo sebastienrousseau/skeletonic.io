@@ -11,14 +11,14 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic 설치, stylus 설정, css cdn, 시작하기"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
 ## 소개
 
-Skeletonic Stylus를 처음 사용하시나요? **v1.1.7**에서는 필요한 기능만 선택하는 것이 그 어느 때보다 쉬워졌습니다. 작은 크기(코어 스타일시트 약 8.3&nbsp;KB gzipped) 덕분에 어떤 웹 앱에든 빠르게 통합할 수 있습니다. JavaScript 프레임워크 불필요, CDN 사용 시 빌드 단계도 불필요합니다.
+Skeletonic Stylus를 처음 사용하시나요? **v2.0.0**에서는 필요한 기능만 선택하는 것이 그 어느 때보다 쉬워졌습니다. 작은 크기(코어 스타일시트 약 8.6&nbsp;KB gzipped) 덕분에 어떤 웹 앱에든 빠르게 통합할 수 있습니다. JavaScript 프레임워크 불필요, CDN 사용 시 빌드 단계도 불필요합니다.
 
 아래에 모든 경로가 설명되어 있습니다. 필요한 것을 선택하십시오.
 
@@ -30,13 +30,13 @@ Skeletonic Stylus를 처음 사용하시나요? **v1.1.7**에서는 필요한 �
 
 ```bash
 # pnpm
-pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7
+pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # npm
-npm install @sebastienrousseau/skeletonic-stylus@1.1.7
+npm install @sebastienrousseau/skeletonic-stylus@2.0.0
 
 # yarn
-yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
+yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 ```
 
 ### CDN을 통한 설치
@@ -47,24 +47,24 @@ yarn add @sebastienrousseau/skeletonic-stylus@1.1.7
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
-최대한의 무결성을 위해 v1.1.7 릴리스 노트에서 **SRI 해시**를 복사하여 `integrity="sha384-…"` 속성을 추가하십시오.
+최대한의 무결성을 위해 v2.0.0 릴리스 노트에서 **SRI 해시**를 복사하여 `integrity="sha384-…"` 속성을 추가하십시오.
 
 ### 대체 CDN 경로
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | 예 | 예 |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css` | 예 | 아니오 |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | 예 | 예 |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | 예 | 아니오 |
 
 ### GitHub 릴리스 다운로드
 
@@ -90,7 +90,7 @@ pnpm run build
 
 | 파일 | 용도 | 크기 (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | 리셋 + 토큰 + 레이아웃 + 요소 + 구성 요소 + 유틸리티 | 45.7 KB / 8.3 KB |
+| `core/skeletonic.min.css` | 리셋 + 토큰 + 레이아웃 + 요소 + 구성 요소 + 유틸리티 | 45.0 KB / 8.6 KB |
 | `animations/skeletonic-animations.min.css` | 선택적 애니메이션 모듈 | 약 18 KB / 약 4 KB |
 | `palettes/material/skeletonic-material.min.css` | Material 색상 팔레트 | 약 8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons 유틸리티 팔레트 | 7.3 KB |
@@ -140,7 +140,7 @@ Skeletonic은 디자인 토큰을 **CSS 커스텀 속성**으로 노출하므로
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@1.1.7/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>작동합니다.</h1>
@@ -156,7 +156,7 @@ Skeletonic은 디자인 토큰을 **CSS 커스텀 속성**으로 노출하므로
 패키지에는 모든 소스 파일, 컴파일 및 최소화된 CSS 번들, 소스 맵, 카테고리별로 구성된 전체 Stylus 트리가 포함되어 있습니다:
 
 ```text
-@sebastienrousseau/skeletonic-stylus@1.1.7
+@sebastienrousseau/skeletonic-stylus@2.0.0
 ├── CHANGELOG.md
 ├── LICENSE-APACHE
 ├── LICENSE-MIT
@@ -194,16 +194,16 @@ Skeletonic은 디자인 토큰을 **CSS 커스텀 속성**으로 노출하므로
 ## 자주 묻는 질문
 
 **Skeletonic Stylus는 어떻게 설치합니까?**
-`pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7`을 실행하십시오. 또는 컴파일된 CSS를 CDN에서 직접 로드할 수 있습니다. 빌드 단계가 필요하지 않습니다.
+`pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0`을 실행하십시오. 또는 컴파일된 CSS를 CDN에서 직접 로드할 수 있습니다. 빌드 단계가 필요하지 않습니다.
 
 **JavaScript가 필요합니까?**
 아닙니다. 코어 스타일시트는 순수 CSS이며 런타임 비용이 없습니다. 모든 구성 요소가 JavaScript 한 줄 없이 작동합니다.
 
 **WCAG 2.2을 준수합니까?**
-예. v1.1.7은 AA 준수 대비, focus-visible 링, 스킵 링크 도우미, 모션 감소 지원 및 다크 모드를 기본으로 제공합니다.
+예. v2.0.0은 AA 준수 대비, focus-visible 링, 스킵 링크 도우미, 모션 감소 지원 및 다크 모드를 기본으로 제공합니다.
 
 **gzipped 크기는 얼마입니까?**
-45.7&nbsp;KB 최소화, **약 8.3&nbsp;KB gzipped**, 약 6.9&nbsp;KB brotli (전체 코어 스타일시트 기준). 8&nbsp;KB 상한선이 CI에서 매 커밋마다 적용됩니다.
+45.0&nbsp;KB 최소화, **약 8.6&nbsp;KB gzipped**, 약 7.2&nbsp;KB brotli (전체 코어 스타일시트 기준). 8&nbsp;KB 상한선이 CI에서 매 커밋마다 적용됩니다.
 
 **어떤 라이선스를 사용합니까?**
 MIT와 Apache 2.0 이중 라이선스입니다. 프로젝트에 적합한 라이선스를 선택하십시오. 상업적 및 개인적 용도 모두 무료입니다.
@@ -218,7 +218,7 @@ MIT와 Apache 2.0 이중 라이선스입니다. 프로젝트에 적합한 라이
       "name": "Skeletonic Stylus는 어떻게 설치합니까?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "pnpm add @sebastienrousseau/skeletonic-stylus@1.1.7을 실행하십시오. 또는 컴파일된 CSS를 CDN에서 직접 로드할 수 있습니다. 빌드 단계가 필요하지 않습니다."
+        "text": "pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0을 실행하십시오. 또는 컴파일된 CSS를 CDN에서 직접 로드할 수 있습니다. 빌드 단계가 필요하지 않습니다."
       }
     },
     {
@@ -234,7 +234,7 @@ MIT와 Apache 2.0 이중 라이선스입니다. 프로젝트에 적합한 라이
       "name": "Skeletonic Stylus는 WCAG 2.2을 준수합니까?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "예. v1.1.7은 AA 준수 대비, focus-visible 링, 스킵 링크 도우미, 모션 감소 지원 및 다크 모드를 기본으로 제공합니다."
+        "text": "예. v2.0.0은 AA 준수 대비, focus-visible 링, 스킵 링크 도우미, 모션 감소 지원 및 다크 모드를 기본으로 제공합니다."
       }
     },
     {
@@ -242,7 +242,7 @@ MIT와 Apache 2.0 이중 라이선스입니다. 프로젝트에 적합한 라이
       "name": "Skeletonic Stylus의 gzipped 크기는 얼마입니까?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.7 KB 최소화, 약 8.3 KB gzipped, 약 6.9 KB brotli (전체 코어 스타일시트 기준). 8 KB 상한선이 CI에서 매 커밋마다 적용됩니다."
+        "text": "45.0 KB 최소화, 약 8.6 KB gzipped, 약 7.2 KB brotli (전체 코어 스타일시트 기준). 8 KB 상한선이 CI에서 매 커밋마다 적용됩니다."
       }
     },
     {

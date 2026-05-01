@@ -1,21 +1,21 @@
 ---
 title: "পরিবর্তন তালিকা"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus-এর রিলিজ নোট, v1.1.7 সম্পূর্ণ বিবরণ সহ।"
+description: "Skeletonic Stylus-এর রিলিজ নোট, v2.0.0 সম্পূর্ণ বিবরণ সহ।"
 layout: page
 permalink: https://skeletonic.io/bn/poriborton-talika/
 author: Sebastien Rousseau
 language: bn
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "skeletonic পরিবর্তন তালিকা, রিলিজ নোট, v1.1.7, semver"
+keywords: "skeletonic পরিবর্তন তালিকা, রিলিজ নোট, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (বর্তমান)
+## v2.0.0 — 2026-04 (বর্তমান)
 
 "রিলিজ-রেডিনেস" পাস: a11y, সাপ্লাই চেইন, রিপো হাইজিন।
 
@@ -42,7 +42,7 @@ keywords: "skeletonic পরিবর্তন তালিকা, রিলি�
 ### রিপো হাইজিন ও কনজিউমার প্যাকেজ
 - লেগ্যাসি `package/` ডিরেক্টরি অপসারিত; কনজিউমারদের জন্য `dist/` এখন
   একমাত্র সত্যের উৎস।
-- v1.1.7 ইনস্টল পাথ প্রতিফলিত করতে README পুনর্লিখিত।
+- v2.0.0 ইনস্টল পাথ প্রতিফলিত করতে README পুনর্লিখিত।
 - `dist/` কমিটেড; `debug/` তৈরি হয় ও gitignored।
 - নতুন `.github/workflows/npm-publish.yml` ট্যাগ-চালিত।
 
@@ -54,7 +54,7 @@ keywords: "skeletonic পরিবর্তন তালিকা, রিলি�
 - **`.alert-*` নেমস্পেসিং** — স্টেট ক্লাসের সাথে সংঘর্ষ এড়াতে
   `.alert.success` → `.alert.alert-success`।
 
-[সম্পূর্ণ v1.1.7 রিলিজ নোট GitHub-এ ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[সম্পূর্ণ v2.0.0 রিলিজ নোট GitHub-এ ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="ইতিহাস">
 

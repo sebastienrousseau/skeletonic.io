@@ -18,4 +18,4 @@ En attendant, si ce n'est pas déjà fait :
 
 - ⭐ [Mettre une étoile au projet sur GitHub](https://github.com/sebastienrousseau/skeletonic-stylus)
 - 📦 [Parcourir le paquet npm](https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus)
-- 📖 [Lire le journal des modifications v1.1.7](/fr/journal/)
+- 📖 [Lire le journal des modifications v2.0.0](/fr/journal/)

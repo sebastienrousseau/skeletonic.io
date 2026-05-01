@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "komponenty skeletonic, przyciski, karty, formularze, alerty, odznaki, naglowek, nawigacja, hamburger css"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -105,7 +105,7 @@ Powierzchnie informujace odwiedzajacego, ze cos sie wydarzylo — lub ma sie wyd
 
 <h3 id="alerts">Alerty</h3>
 
-Wiadomosci statusowe z semantycznym przeznaczeniem. **W v1.1.7 kazdy wariant jest jawnie zamkniety w przestrzeni nazw** `.alert-{primary,secondary,info,success,warning,error}`, dzieki czemu klasa wariantu nie koliduje z klasami stanu w innych czesciach strony.
+Wiadomosci statusowe z semantycznym przeznaczeniem. **W v2.0.0 kazdy wariant jest jawnie zamkniety w przestrzeni nazw** `.alert-{primary,secondary,info,success,warning,error}`, dzieki czemu klasa wariantu nie koliduje z klasami stanu w innych czesciach strony.
 
 ```html
 <div class="alert alert-primary" role="alert">
@@ -367,7 +367,7 @@ Kompletny naglowek oparty wylacznie na CSS z responsywnym przyciskiem hamburger.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Komponenty Skeletonic Stylus",
-  "description": "Kazdy komponent dostarczany w Skeletonic Stylus v1.1.7.",
+  "description": "Kazdy komponent dostarczany w Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

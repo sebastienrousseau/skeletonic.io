@@ -1,21 +1,21 @@
 ---
 title: "Nhat ky thay doi"
 name: "Skeletonic Stylus"
-description: "Ghi chu phat hanh cho Skeletonic Stylus, voi v1.1.7 day du."
+description: "Ghi chu phat hanh cho Skeletonic Stylus, voi v2.0.0 day du."
 layout: page
 language: vi
 permalink: https://skeletonic.io/vi/nhat-ky-thay-doi/
 author: Sebastien Rousseau
 theme_color: "hsl(210, 100%, 42%)"
-keywords: "nhat ky thay doi skeletonic, ghi chu phat hanh, v1.1.7, semver"
+keywords: "nhat ky thay doi skeletonic, ghi chu phat hanh, v2.0.0, semver"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-## v1.1.7 — 2026-04 (hien tai)
+## v2.0.0 — 2026-04 (hien tai)
 
 Dot ra soat "san sang phat hanh": tro nang, chuoi cung ung, ve sinh kho.
 
@@ -44,7 +44,7 @@ Dot ra soat "san sang phat hanh": tro nang, chuoi cung ung, ve sinh kho.
 ### Ve sinh kho &amp; goi nguoi dung
 - Thu muc `package/` cu da bi xoa; `dist/` hien la nguon duy nhat
   cho nguoi dung.
-- README duoc viet lai phan anh duong cai dat v1.1.7.
+- README duoc viet lai phan anh duong cai dat v2.0.0.
 - `dist/` duoc commit; `debug/` duoc tao va gitignore.
 - `.github/workflows/npm-publish.yml` moi chay theo tag.
 
@@ -56,7 +56,7 @@ Dot ra soat "san sang phat hanh": tro nang, chuoi cung ung, ve sinh kho.
 - **Dat ten `.alert-*`** — `.alert.success` → `.alert.alert-success`
   de tranh xung dot voi cac lop trang thai.
 
-[Ghi chu phat hanh v1.1.7 day du tren GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
+[Ghi chu phat hanh v2.0.0 day du tren GitHub ↗](https://github.com/sebastienrousseau/skeletonic-stylus/releases)
 
 <hr class="hr-text" data-content="Lich su">
 

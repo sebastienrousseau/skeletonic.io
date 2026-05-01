@@ -1,7 +1,7 @@
 ---
 title: "애니메이션"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus v1.1.7에 포함된 선택적 애니메이션 모듈 — bounce, pulse, fade, zoom, shake 등, 모두 prefers-reduced-motion 기반으로 제어됩니다."
+description: "Skeletonic Stylus v2.0.0에 포함된 선택적 애니메이션 모듈 — bounce, pulse, fade, zoom, shake 등, 모두 prefers-reduced-motion 기반으로 제어됩니다."
 layout: page
 permalink: https://skeletonic.io/ko/aenimeisyeon/
 date: 2026-04-08
@@ -20,7 +20,7 @@ load_animations: true
   href="/css/skeletonic-animations.min.css">
 ```
 
-v1.1.7에서 모든 애니메이션 클래스는 **`@media (prefers-reduced-motion: no-preference)`** 블록으로 감싸져 있어, OS 수준에서 "모션 줄이기"를 설정한 사용자에게는 애니메이션이 전혀 표시되지 않습니다. 레이아웃은 그대로 작동하며, 모션만 억제됩니다.
+v2.0.0에서 모든 애니메이션 클래스는 **`@media (prefers-reduced-motion: no-preference)`** 블록으로 감싸져 있어, OS 수준에서 "모션 줄이기"를 설정한 사용자에게는 애니메이션이 전혀 표시되지 않습니다. 레이아웃은 그대로 작동하며, 모션만 억제됩니다.
 
 <style>
   /*
@@ -82,7 +82,7 @@ v1.1.7에서 모든 애니메이션 클래스는 **`@media (prefers-reduced-moti
 
 <p class="anim-note-rm">
   OS에서 모션 줄이기가 활성화되어 있으므로 아래 대상은 정지해 있습니다.
-  이것은 v1.1.7 접근성 동작이 올바르게 작동하는 것입니다.
+  이것은 v2.0.0 접근성 동작이 올바르게 작동하는 것입니다.
 </p>
 
 <div class="anim-grid">
@@ -218,7 +218,7 @@ v1.1.7에서 모든 애니메이션 클래스는 **`@media (prefers-reduced-moti
 </div>
 
 <script>
-  // v1.1.7에 포함된 애니메이션 클래스는 선택자 자체에서 animation-name을
+  // v2.0.0에 포함된 애니메이션 클래스는 선택자 자체에서 animation-name을
   // 설정합니다. 키프레임을 다시 재생하려면 클래스를 제거하고, 레이아웃
   // 플러시를 강제한 후, 클래스를 다시 추가해야 합니다.
   function replayAnim(btn, name){
@@ -263,8 +263,8 @@ v1.1.7에서 모든 애니메이션 클래스는 **`@media (prefers-reduced-moti
 | `.vanishIn` / `.vanishOut` | Material 스타일 등장 |
 | `.chameleonbackground` / `.chameleontext` | 색조 순환 |
 
-## 참고 — 알려진 v1.1.7 제한 사항
+## 참고 — 알려진 v2.0.0 제한 사항
 
-v1.1.7의 애니메이션 클래스는 `animation-name`만 설정합니다. 이를 재생하려면 현재 `animation-duration`, `animation-iteration-count`, `animation-fill-mode` 및 `animation-timing-function`을 직접 제공해야 합니다. 이 페이지 상단의 `<style>` 블록이 바로 그 방법을 보여줍니다. 향후 릴리스에서는 합리적인 기본 설정을 인라인으로 포함하여 `<div class="bounce">`가 즉시 작동하도록 할 예정입니다.
+v2.0.0의 애니메이션 클래스는 `animation-name`만 설정합니다. 이를 재생하려면 현재 `animation-duration`, `animation-iteration-count`, `animation-fill-mode` 및 `animation-timing-function`을 직접 제공해야 합니다. 이 페이지 상단의 `<style>` 블록이 바로 그 방법을 보여줍니다. 향후 릴리스에서는 합리적인 기본 설정을 인라인으로 포함하여 `<div class="bounce">`가 즉시 작동하도록 할 예정입니다.
 
 [접근성 참고 보기 →](/ko/jeobgeun-seong/)

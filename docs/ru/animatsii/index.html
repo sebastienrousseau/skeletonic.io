@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -219,7 +219,7 @@
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">/css/skeletonic-animations.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>Каждый класс анимации в v1.1.7 обёрнут в блок
+<p>Каждый класс анимации в v2.0.0 обёрнут в блок
 <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong>, что означает: если пользователь включил «уменьшить движение» на уровне ОС, анимация не будет воспроизводиться вовсе — макет продолжит работать, движение просто подавляется.</p>
 <style>
   /*
@@ -278,7 +278,7 @@
 <code>skeletonic-animations.min.css</code> — только <code>animation-name</code> задан библиотекой, поэтому блок <code>&lt;style&gt;</code> выше добавляет недостающие свойства <code>animation-duration</code> / <code>animation-iteration-count</code> / <code>animation-fill-mode</code>, чтобы ключевые кадры были видимы.</p>
 <p class="anim-note-rm">
   На вашей ОС включён режим уменьшенного движения, поэтому объекты ниже
-  останутся неподвижными — так работает поведение доступности v1.1.7.
+  останутся неподвижными — так работает поведение доступности v2.0.0.
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -395,7 +395,7 @@
   </div>
 </div>
 <script>
-  // Классы анимаций v1.1.7 задают animation-name в самом селекторе.
+  // Классы анимаций v2.0.0 задают animation-name в самом селекторе.
   // Для повторного воспроизведения нужно удалить класс, принудительно
   // выполнить перерисовку, а затем добавить класс снова.
   function replayAnim(btn, name){
@@ -492,8 +492,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>Известная особенность v1.1.7</h2>
-<p>Классы анимаций в v1.1.7 задают только <code>animation-name</code>. Для их воспроизведения вам потребуется самостоятельно указать <code>animation-duration</code>, <code>animation-iteration-count</code>, <code>animation-fill-mode</code> и <code>animation-timing-function</code> — как это демонстрирует блок <code>&lt;style&gt;</code> в начале этой страницы. В будущих релизах базовые настройки будут встроены, чтобы <code>&lt;div class=&quot;bounce&quot;&gt;</code> работал сразу из коробки.</p>
+<h2>Известная особенность v2.0.0</h2>
+<p>Классы анимаций в v2.0.0 задают только <code>animation-name</code>. Для их воспроизведения вам потребуется самостоятельно указать <code>animation-duration</code>, <code>animation-iteration-count</code>, <code>animation-fill-mode</code> и <code>animation-timing-function</code> — как это демонстрирует блок <code>&lt;style&gt;</code> в начале этой страницы. В будущих релизах базовые настройки будут встроены, чтобы <code>&lt;div class=&quot;bounce&quot;&gt;</code> работал сразу из коробки.</p>
 <p><a href="/ru/dostupnost/">Заметки о доступности →</a></p>
 
 

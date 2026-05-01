@@ -1,7 +1,7 @@
 ---
-title: "Aksesibilitas — WCAG 2.2 di v1.1.7"
+title: "Aksesibilitas — WCAG 2.2 di v2.0.0"
 name: "Skeletonic Stylus"
-description: "Apa yang disertakan v1.1.7 secara bawaan untuk kesesuaian WCAG 2.2 — cincin fokus, kontras, skip link, gerakan, dan mode gelap."
+description: "Apa yang disertakan v2.0.0 secara bawaan untuk kesesuaian WCAG 2.2 — cincin fokus, kontras, skip link, gerakan, dan mode gelap."
 layout: page
 permalink: https://skeletonic.io/id/aksesibilitas/
 date: 2026-04-08
@@ -11,18 +11,18 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, aksesibilitas, focus visible, skip link, prefers reduced motion, kontras"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 menyertakan kesesuaian WCAG 2.2 sebagai perilaku bawaan, bukan sebagai tema opsional.** Halaman ini mendokumentasikan apa yang sudah bawaan dan mixin apa yang dapat Anda pilih untuk kontrol lebih halus.
+> **Skeletonic Stylus v2.0.0 menyertakan kesesuaian WCAG 2.2 sebagai perilaku bawaan, bukan sebagai tema opsional.** Halaman ini mendokumentasikan apa yang sudah bawaan dan mixin apa yang dapat Anda pilih untuk kontrol lebih halus.
 
 <hr class="hr-text" data-content="Bawaan">
 
 ## Yang Anda dapatkan secara gratis
 
-| WCAG 2.2 SC | Apa yang dilakukan v1.1.7 | Cara memverifikasi |
+| WCAG 2.2 SC | Apa yang dilakukan v2.0.0 | Cara memverifikasi |
 |---|---|---|
 | **1.4.3 Kontras (Minimum) — AA** | `--cl-primary` dan `--cl-secondary` digelapkan ke >= 4,5:1 terhadap putih | DevTools → pemeriksa kontras |
 | **1.4.11 Kontras Non-teks — AA** | Batas formulir, tombol, badge semua >= 3:1 | Sama |
@@ -82,5 +82,5 @@ node scripts/a11y-test.mjs https://example.com
 
 CI menjalankan skrip ini terhadap halaman showcase `dist/index.html` pada setiap push.
 
-[Baca tentang rilis v1.1.7 →](/id/catatan-perubahan/) ·
+[Baca tentang rilis v2.0.0 →](/id/catatan-perubahan/) ·
 [Lihat halaman keamanan →](/id/keamanan/)

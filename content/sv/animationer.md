@@ -1,7 +1,7 @@
 ---
 title: "Animationer"
 name: "Skeletonic Stylus"
-description: "Valfri animationsmodul som levereras med Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake och fler, alla bakom prefers-reduced-motion."
+description: "Valfri animationsmodul som levereras med Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake och fler, alla bakom prefers-reduced-motion."
 layout: page
 permalink: https://skeletonic.io/sv/animationer/
 date: 2026-04-08
@@ -22,7 +22,7 @@ karn-stylesheetet hallar sig under 8&nbsp;KB gzippat.
 ```
 
 Varje animationsklass ar inlindad i ett
-**`@media (prefers-reduced-motion: no-preference)`**-block i v1.1.7,
+**`@media (prefers-reduced-motion: no-preference)`**-block i v2.0.0,
 vilket innebar att en anvandare som har stallt in "reducera rorelse" pa
 OS-niva inte ser nagon animation alls — layouten fungerar fortfarande,
 rorelsen undertrycks bara.
@@ -90,7 +90,7 @@ biblioteket, sa det omgivande `<style>`-blocket ovan lagger till de saknade
 
 <p class="anim-note-rm">
   Reducerad rorelse ar aktiverat i ditt OS, sa malen nedan stannar
-  stilla — det ar v1.1.7:s tillganglighetsbeteende som fungerar korrekt.
+  stilla — det ar v2.0.0:s tillganglighetsbeteende som fungerar korrekt.
 </p>
 
 <div class="anim-grid">
@@ -266,9 +266,9 @@ biblioteket, sa det omgivande `<style>`-blocket ovan lagger till de saknade
 | `.vanishIn` / `.vanishOut` | Material-stil upptradan |
 | `.chameleonbackground` / `.chameleontext` | Nytonscykling |
 
-## Observera — kant v1.1.7-forvaring
+## Observera — kant v2.0.0-forvaring
 
-Animationsklasserna i v1.1.7 sattar bara `animation-name`. For att spela
+Animationsklasserna i v2.0.0 sattar bara `animation-name`. For att spela
 dem maste du for narvarande tillhandahalla egna varden for `animation-duration`,
 `animation-iteration-count`, `animation-fill-mode` och
 `animation-timing-function` — precis som `<style>`-blocket hogst upp pa

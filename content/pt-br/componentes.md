@@ -11,7 +11,7 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "componentes skeletonic, botoes, cards, formularios, alertas, badges, header, navbar, hamburger css"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
@@ -111,7 +111,7 @@ prestes a acontecer.
 
 <h3 id="alerts">Alertas</h3>
 
-Mensagens de status com intencao semantica. **Na v1.1.7, cada variante
+Mensagens de status com intencao semantica. **Na v2.0.0, cada variante
 tem namespace explicito** sob `.alert-{primary,secondary,info,success,warning,error}`
 para que a classe de variante nao colida com classes de estado em outro
 lugar da pagina.
@@ -170,7 +170,7 @@ Combine com o grid `flex-N` para paredes de cards responsivas.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.7 KB minified, 8.3 KB gzipped.</p>
+      <p>45.0 KB minified, 8.6 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -384,7 +384,7 @@ foco corretamente por conta propria.
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Componentes do Skeletonic Stylus",
-  "description": "Cada componente incluido no Skeletonic Stylus v1.1.7.",
+  "description": "Cada componente incluido no Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "numberOfItems": 7,
   "itemListElement": [

@@ -78,7 +78,7 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
          Same-origin, served from this site's own docs/ tree, so SRI is dropped:
          the file changes every bundle bump and updating the hash here on every
          release added friction for no real security benefit (the threat model
@@ -219,7 +219,7 @@
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">/css/skeletonic-animations.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
-<p>在 v1.1.7 中，每個動畫類別都包裹在 <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> 區塊中，這意味著在作業系統層級設定了「減少動態效果」的使用者將看不到任何動畫——版面依然正常運作，只是動效被抑制。</p>
+<p>在 v2.0.0 中，每個動畫類別都包裹在 <strong><code>@media (prefers-reduced-motion: no-preference)</code></strong> 區塊中，這意味著在作業系統層級設定了「減少動態效果」的使用者將看不到任何動畫——版面依然正常運作，只是動效被抑制。</p>
 <style>
   /*
    * 頁面內示範樣式。skeletonic-animations.min.css 中的動畫類別
@@ -275,7 +275,7 @@
 <h2>示範</h2>
 <p>按下任一卡片上的<strong>播放</strong>按鈕即可重播該動畫。動畫類別本身與 <code>skeletonic-animations.min.css</code> 中隨附的完全一致——函式庫僅設定 <code>animation-name</code>，因此上方的 <code>&lt;style&gt;</code> 區塊添加了缺失的 <code>animation-duration</code> / <code>animation-iteration-count</code> / <code>animation-fill-mode</code> 屬性，使 keyframes 得以可見。</p>
 <p class="anim-note-rm">
-  您的作業系統已啟用「減少動態效果」，因此下方的目標將保持靜止——這正是 v1.1.7 無障礙行為的正確表現。
+  您的作業系統已啟用「減少動態效果」，因此下方的目標將保持靜止——這正是 v2.0.0 無障礙行為的正確表現。
 </p>
 <div class="anim-grid">
   <div class="anim-card">
@@ -392,7 +392,7 @@
   </div>
 </div>
 <script>
-  // v1.1.7 中的動畫類別在選擇器中設定 animation-name。
+  // v2.0.0 中的動畫類別在選擇器中設定 animation-name。
   // 要重播 keyframe，我們需要移除類別、強制佈局重排，
   // 然後重新添加類別。
   function replayAnim(btn, name){
@@ -489,8 +489,8 @@
 </tr>
 </tbody>
 </table></div>
-<h2>注意——v1.1.7 已知限制</h2>
-<p>v1.1.7 中的動畫類別僅設定 <code>animation-name</code>。要播放動畫，您目前需要自行提供 <code>animation-duration</code>、<code>animation-iteration-count</code>、<code>animation-fill-mode</code> 和 <code>animation-timing-function</code>——正如本頁頂部的 <code>&lt;style&gt;</code> 區塊所示範的那樣。未來版本將內建合理的預設基礎設定，讓 <code>&lt;div class=&quot;bounce&quot;&gt;</code> 開箱即用。</p>
+<h2>注意——v2.0.0 已知限制</h2>
+<p>v2.0.0 中的動畫類別僅設定 <code>animation-name</code>。要播放動畫，您目前需要自行提供 <code>animation-duration</code>、<code>animation-iteration-count</code>、<code>animation-fill-mode</code> 和 <code>animation-timing-function</code>——正如本頁頂部的 <code>&lt;style&gt;</code> 區塊所示範的那樣。未來版本將內建合理的預設基礎設定，讓 <code>&lt;div class=&quot;bounce&quot;&gt;</code> 開箱即用。</p>
 <p><a href="/zh-hant/wu-zhang-ai/">查看無障礙說明 →</a></p>
 
 

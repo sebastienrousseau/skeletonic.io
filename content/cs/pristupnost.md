@@ -1,7 +1,7 @@
 ---
-title: "Pristupnost — WCAG 2.2 ve v1.1.7"
+title: "Pristupnost — WCAG 2.2 ve v2.0.0"
 name: "Skeletonic Stylus"
-description: "Co v1.1.7 dodava hned po instalaci pro soulad s WCAG 2.2 — ohraniceni fokusu, kontrast, skip linky, pohyb a tmavy rezim."
+description: "Co v2.0.0 dodava hned po instalaci pro soulad s WCAG 2.2 — ohraniceni fokusu, kontrast, skip linky, pohyb a tmavy rezim."
 layout: page
 permalink: https://skeletonic.io/cs/pristupnost/
 date: 2026-04-08
@@ -11,12 +11,12 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "wcag 2.2, pristupnost, focus visible, skip link, prefers reduced motion, kontrast"
 ---
 
-> **Translation note (2026-04-30).** v1.1.7 adds RTL support and a refreshed
+> **Translation note (2026-04-30).** v2.0.0 adds RTL support and a refreshed
 > 2026 framework comparison. The English source is the canonical reference
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-> **Skeletonic Stylus v1.1.7 dodava soulad s WCAG 2.2 jako vychozi
+> **Skeletonic Stylus v2.0.0 dodava soulad s WCAG 2.2 jako vychozi
 > chovani, ne jako volitelne tema.** Tato stranka dokumentuje, co je
 > integrovano a jake mixiny muzete volitelne pouzit pro jemnejsi kontrolu.
 
@@ -24,7 +24,7 @@ keywords: "wcag 2.2, pristupnost, focus visible, skip link, prefers reduced moti
 
 ## Co dostanete zdarma
 
-| WCAG 2.2 SC | Co v1.1.7 dela | Jak overit |
+| WCAG 2.2 SC | Co v2.0.0 dela | Jak overit |
 |---|---|---|
 | **1.4.3 Kontrast (Minimum) — AA** | `--cl-primary` a `--cl-secondary` ztmaveny na ≥ 4,5:1 vuci bile | DevTools → kontrola kontrastu |
 | **1.4.11 Kontrast netextovych prvku — AA** | Okraje formularu, tlacitka, stitky vse ≥ 3:1 | Totez |
@@ -91,5 +91,5 @@ node scripts/a11y-test.mjs https://example.com
 CI spousti tento skript na ukazkove strance `dist/index.html` pri
 kazdem pushi.
 
-[Prectete si o vydani v1.1.7 →](/cs/zmeny/) ·
+[Prectete si o vydani v2.0.0 →](/cs/zmeny/) ·
 [Stranka bezpecnosti →](/cs/bezpecnost/)
