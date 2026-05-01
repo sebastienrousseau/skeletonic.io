@@ -1,12 +1,12 @@
 {
-  "keywords": "wcag 2.2, tillganglighet, focus visible, skip-lank, prefers reduced motion, kontrast",
   "permalink": "https://skeletonic.io/sv/tillganglighet/",
-  "date": "2026-04-08",
-  "language": "sv",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Vad v1.1.7 levererar direkt for WCAG 2.2-uppfyllnad — fokusringar, kontrast, skip-lankar, rorelse och morkt lage.",
+  "keywords": "wcag 2.2, tillganglighet, focus visible, skip-lank, prefers reduced motion, kontrast",
+  "layout": "page",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "language": "sv",
   "title": "Tillganglighet — WCAG 2.2 i v1.1.7",
-  "author": "Sebastien Rousseau"
+  "description": "Vad v1.1.7 levererar direkt for WCAG 2.2-uppfyllnad — fokusringar, kontrast, skip-lankar, rorelse och morkt lage."
 }

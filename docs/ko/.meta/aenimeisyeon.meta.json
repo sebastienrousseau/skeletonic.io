@@ -1,13 +1,13 @@
 {
+  "keywords": "css 애니메이션, keyframes, prefers-reduced-motion, bounce, pulse, fade",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
   "author": "Sebastien Rousseau",
   "title": "애니메이션",
-  "date": "2026-04-08",
-  "language": "ko",
-  "layout": "page",
-  "load_animations": true,
   "description": "Skeletonic Stylus v1.1.7에 포함된 선택적 애니메이션 모듈 — bounce, pulse, fade, zoom, shake 등, 모두 prefers-reduced-motion 기반으로 제어됩니다.",
-  "keywords": "css 애니메이션, keyframes, prefers-reduced-motion, bounce, pulse, fade",
+  "name": "Skeletonic Stylus",
+  "load_animations": true,
+  "language": "ko",
   "permalink": "https://skeletonic.io/ko/aenimeisyeon/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus"
+  "date": "2026-04-08"
 }

@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "description": "Naviga la documentazione di Skeletonic Stylus per tag.",
-  "permalink": "https://skeletonic.io/it/tags/",
-  "language": "it",
-  "title": "Tag",
   "date": "2026-04-08",
-  "layout": "page",
   "author": "Sebastien Rousseau",
+  "language": "it",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Tag",
+  "description": "Naviga la documentazione di Skeletonic Stylus per tag.",
   "keywords": "skeletonic, tag, indice, tassonomia",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "permalink": "https://skeletonic.io/it/tags/"
 }

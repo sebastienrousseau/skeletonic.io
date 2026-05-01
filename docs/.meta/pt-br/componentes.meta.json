@@ -1,12 +1,12 @@
 {
-  "description": "Exemplos HTML ao vivo de cada componente do Skeletonic Stylus, agrupados, ancorados e renderizados com a propria folha de estilos demonstrada.",
-  "title": "Componentes",
   "keywords": "componentes skeletonic, botoes, cards, formularios, alertas, badges, header, navbar, hamburger css",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
   "date": "2026-04-08",
-  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "title": "Componentes",
   "language": "pt-br",
-  "permalink": "https://skeletonic.io/pt-br/componentes/"
+  "permalink": "https://skeletonic.io/pt-br/componentes/",
+  "author": "Sebastien Rousseau",
+  "description": "Exemplos HTML ao vivo de cada componente do Skeletonic Stylus, agrupados, ancorados e renderizados com a propria folha de estilos demonstrada.",
+  "name": "Skeletonic Stylus"
 }

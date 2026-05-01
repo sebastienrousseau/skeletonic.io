@@ -1,12 +1,12 @@
 {
+  "language": "de",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "title": "Farbpaletten",
   "description": "Material-, Tachyons- und websichere Farbpaletten in Skeletonic Stylus v1.1.7.",
   "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/de/paletten/",
   "layout": "page",
-  "language": "de",
-  "title": "Farbpaletten",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "keywords": "css palette, material, tachyons, websafe, design tokens",
-  "permalink": "https://skeletonic.io/de/paletten/"
+  "keywords": "css palette, material, tachyons, websafe, design tokens"
 }

@@ -1,11 +1,11 @@
 {
+  "language": "ko",
   "description": "요청하신 페이지가 skeletonic.io에 존재하지 않습니다.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
   "permalink": "https://skeletonic.io/ko/404/",
   "keywords": "404, 찾을 수 없음",
-  "language": "ko",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
   "title": "페이지를 찾을 수 없습니다"
 }

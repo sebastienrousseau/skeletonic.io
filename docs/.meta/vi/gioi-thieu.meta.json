@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
   "layout": "page",
+  "permalink": "https://skeletonic.io/vi/gioi-thieu/",
+  "date": "2026-04-08",
   "title": "Gioi thieu Skeletonic Stylus",
+  "name": "Skeletonic Stylus",
+  "description": "Skeletonic Stylus la thu vien CSS Stylus ma nguon mo, danh cho viec tao kieu giao dien tro nang, nhanh va mo-dun.",
+  "author": "Sebastien Rousseau",
   "keywords": "skeletonic, gioi thieu, stylus, css framework, triet ly",
   "language": "vi",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/vi/gioi-thieu/",
-  "description": "Skeletonic Stylus la thu vien CSS Stylus ma nguon mo, danh cho viec tao kieu giao dien tro nang, nhanh va mo-dun.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

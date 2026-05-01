@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "date": "2026-04-08",
-  "description": "لوحات ألوان Material وTachyons والألوان الآمنة للويب المُشحونة مع Skeletonic Stylus الإصدار 1.1.7.",
-  "language": "ar",
   "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/ar/al-alwan/",
+  "language": "ar",
   "title": "لوحات الألوان",
-  "keywords": "لوحة ألوان css, material, tachyons, websafe, رموز التصميم",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "keywords": "لوحة ألوان css, material, tachyons, websafe, رموز التصميم",
+  "description": "لوحات ألوان Material وTachyons والألوان الآمنة للويب المُشحونة مع Skeletonic Stylus الإصدار 1.1.7."
 }

@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "language": "yo",
   "keywords": "kan si wa, atilẹyin, esi, skeletonic",
+  "date": "2026-04-08",
+  "layout": "contact",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
   "title": "Kan si Wa",
   "description": "Kan si wa nipa Skeletonic Stylus — awọn ijabọ aṣiṣe, awọn ero ẹya, awọn ajọṣepọ, tabi esi gbogbogbo.",
   "permalink": "https://skeletonic.io/yo/kan-si-wa/",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "layout": "contact",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "language": "yo"
 }

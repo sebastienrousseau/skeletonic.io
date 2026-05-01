@@ -1,11 +1,11 @@
 {
-  "title": "הדף לא נמצא",
-  "permalink": "https://skeletonic.io/he/404/",
-  "description": "הדף שביקשתם אינו קיים ב-skeletonic.io.",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
   "language": "he",
+  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/he/404/",
   "keywords": "404, לא נמצא",
-  "name": "Skeletonic Stylus"
+  "layout": "page",
+  "description": "הדף שביקשתם אינו קיים ב-skeletonic.io.",
+  "title": "הדף לא נמצא"
 }

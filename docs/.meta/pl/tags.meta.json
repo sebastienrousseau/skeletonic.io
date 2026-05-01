@@ -1,12 +1,12 @@
 {
-  "keywords": "skeletonic, tagi, indeks, taksonomia",
-  "layout": "page",
-  "title": "Tagi",
-  "date": "2026-04-08",
-  "description": "Przegladaj dokumentacje Skeletonic Stylus wedlug tagow.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/pl/tags/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Tagi",
+  "keywords": "skeletonic, tagi, indeks, taksonomia",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "language": "pl",
   "author": "Sebastien Rousseau",
-  "language": "pl"
+  "date": "2026-04-08",
+  "description": "Przegladaj dokumentacje Skeletonic Stylus wedlug tagow."
 }

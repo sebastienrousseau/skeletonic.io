@@ -149,6 +149,16 @@ if [ "$BUILD_EN" -eq 1 ]; then
   for f in CNAME robots.txt manifest.webmanifest; do
     [ -f "static/$f" ] && cp "static/$f" "docs/$f"
   done
+
+  # Strip Shokunin v0.0.34's bogus integrity attributes from <link>
+  # tags in rendered HTML. The SSG's `assets::sha256_hex` is actually
+  # FNV-1a hex, not a real SHA-256, so the emitted
+  # `integrity="sha256-<32 hex chars>"` is rejected by every modern
+  # browser and the resource is blocked. Until we move to an SSG
+  # version that emits valid SRI, we strip the attribute (and the
+  # paired crossorigin) so the same-origin assets load.
+  find docs -type f -name '*.html' -print0 \
+    | xargs -0 perl -i -pe 's/ integrity="sha256-[0-9a-f]{32}"//g; s/ crossorigin="anonymous"(?=>)//g'
 fi
 
 # ─── Phase 2: every requested non-English locale ─────────────────────

@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "zh-hans",
-  "permalink": "https://skeletonic.io/zh-hans/zu-jian/",
-  "keywords": "skeletonic 组件, 按钮, 卡片, 表单, 提示框, 徽章, 页头, 导航栏, 纯 css 汉堡菜单",
-  "title": "组件",
   "date": "2026-04-08",
+  "title": "组件",
   "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/zh-hans/zu-jian/",
   "description": "Skeletonic Stylus 所有组件的实时 HTML 示例，按类别分组、锚点定位，使用被演示的样式表本身渲染。",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "skeletonic 组件, 按钮, 卡片, 表单, 提示框, 徽章, 页头, 导航栏, 纯 css 汉堡菜单",
+  "layout": "page",
   "name": "Skeletonic Stylus",
-  "layout": "page"
+  "language": "zh-hans"
 }

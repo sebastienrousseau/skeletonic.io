@@ -1,12 +1,12 @@
 {
-  "title": "Bijdragen",
-  "date": "2026-04-08",
-  "language": "nl",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/nl/bijdragen/",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
   "description": "Hoe je issues kunt indienen, wijzigingen kunt voorstellen en pull requests kunt insturen voor Skeletonic Stylus.",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "title": "Bijdragen",
+  "language": "nl",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "bijdragen, open source, pull request, issue, conventies"
+  "permalink": "https://skeletonic.io/nl/bijdragen/",
+  "date": "2026-04-08",
+  "keywords": "bijdragen, open source, pull request, issue, conventies",
+  "author": "Sebastien Rousseau"
 }

@@ -2455,19 +2455,15 @@
     {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">{% endif %}
     <meta name="twitter:image" content="{{ site.base_url }}/images/banner.svg">
 
-    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads. -->
-    <link
-      rel="stylesheet"
-      href="/css/skeletonic.min.css"
-      integrity="sha384-lgGIyC9rKvJSzFr72UJV4fPuBMLD8OO0opzd5qQBBtNVvszBGY/fsIBt35USjeJe"
-      crossorigin="anonymous">
+    <!-- Skeletonic Stylus v1.1.7 — self-hosted, the only CSS framework the site loads.
+         Same-origin, served from this site's own docs/ tree, so SRI is dropped:
+         the file changes every bundle bump and updating the hash here on every
+         release added friction for no real security benefit (the threat model
+         SRI defends against — a CDN serving tampered bytes — does not apply). -->
+    <link rel="stylesheet" href="/css/skeletonic.min.css">
     {% if page.load_animations %}
     <!-- Optional animations module — only loaded on pages that opt in via load_animations: true. -->
-    <link
-      rel="stylesheet"
-      href="/css/skeletonic-animations.min.css"
-      integrity="sha384-NliIiYTcQ8ai20j+1/oTQPAoLWde0qOGFqjR5x0CQGxIanLvskZKWWWZEx4OI9y4"
-      crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/skeletonic-animations.min.css">
     {% endif %}
     {% block extra_css %}{% endblock %}
 

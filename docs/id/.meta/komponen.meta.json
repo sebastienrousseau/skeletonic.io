@@ -1,12 +1,12 @@
 {
-  "language": "id",
   "keywords": "komponen skeletonic, tombol, kartu, formulir, peringatan, badge, header, navbar, hamburger css",
-  "layout": "page",
-  "description": "Contoh HTML langsung dari setiap komponen Skeletonic Stylus, dikelompokkan, diberi jangkar, dan dirender dengan stylesheet yang sama yang sedang didemonstrasikan.",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
   "title": "Komponen",
+  "permalink": "https://skeletonic.io/id/komponen/",
+  "language": "id",
+  "layout": "page",
+  "date": "2026-04-08",
+  "description": "Contoh HTML langsung dari setiap komponen Skeletonic Stylus, dikelompokkan, diberi jangkar, dan dirender dengan stylesheet yang sama yang sedang didemonstrasikan.",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/id/komponen/"
+  "name": "Skeletonic Stylus"
 }

@@ -1,12 +1,12 @@
 {
   "language": "sv",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "title": "Integritet",
   "date": "2026-04-08",
   "description": "Vilka data skeletonic.io samlar in, varfor, och hur du valjer bort det.",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "integritet, gdpr, kakor, ingen sparning",
+  "name": "Skeletonic Stylus",
+  "title": "Integritet",
   "layout": "page",
-  "permalink": "https://skeletonic.io/sv/integritet/",
-  "author": "Sebastien Rousseau"
+  "permalink": "https://skeletonic.io/sv/integritet/"
 }

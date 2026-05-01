@@ -1,11 +1,11 @@
 {
-  "title": "Contribute",
-  "description": "How to file issues, propose changes, and submit pull requests to Skeletonic Stylus.",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
   "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/contribute/",
   "keywords": "contribute, open source, pull request, issue, conventions",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "description": "How to file issues, propose changes, and submit pull requests to Skeletonic Stylus.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/contribute/",
+  "name": "Skeletonic Stylus",
+  "title": "Contribute"
 }

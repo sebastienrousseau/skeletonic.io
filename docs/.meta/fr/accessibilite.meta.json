@@ -1,12 +1,12 @@
 {
-  "title": "Accessibilité — WCAG 2.2 dans la v1.1.7",
-  "permalink": "https://skeletonic.io/fr/accessibilite/",
-  "layout": "page",
   "author": "Sebastien Rousseau",
+  "title": "Accessibilité — WCAG 2.2 dans la v1.1.7",
   "keywords": "wcag 2.2, accessibilité, focus visible, lien d'évitement, prefers reduced motion, contraste",
   "language": "fr",
-  "description": "Ce que la v1.1.7 propose nativement pour la conformité WCAG 2.2 — anneaux de focus, contraste, liens d'évitement, mouvement et mode sombre.",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/fr/accessibilite/",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "description": "Ce que la v1.1.7 propose nativement pour la conformité WCAG 2.2 — anneaux de focus, contraste, liens d'évitement, mouvement et mode sombre."
 }

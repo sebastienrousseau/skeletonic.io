@@ -1,12 +1,12 @@
 {
-  "language": "cs",
-  "keywords": "wcag 2.2, pristupnost, focus visible, skip link, prefers reduced motion, kontrast",
   "layout": "page",
-  "description": "Co v1.1.7 dodava hned po instalaci pro soulad s WCAG 2.2 — ohraniceni fokusu, kontrast, skip linky, pohyb a tmavy rezim.",
-  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/cs/pristupnost/",
   "name": "Skeletonic Stylus",
+  "language": "cs",
+  "author": "Sebastien Rousseau",
   "title": "Pristupnost — WCAG 2.2 ve v1.1.7",
+  "keywords": "wcag 2.2, pristupnost, focus visible, skip link, prefers reduced motion, kontrast",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau"
+  "description": "Co v1.1.7 dodava hned po instalaci pro soulad s WCAG 2.2 — ohraniceni fokusu, kontrast, skip linky, pohyb a tmavy rezim.",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

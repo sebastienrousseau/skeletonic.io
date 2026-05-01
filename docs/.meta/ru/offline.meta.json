@@ -1,12 +1,12 @@
 {
+  "layout": "page",
   "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "layout": "page",
-  "keywords": "офлайн, service worker, pwa",
-  "language": "ru",
-  "permalink": "https://skeletonic.io/ru/offline/",
+  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/ru/offline/",
   "description": "skeletonic.io не может подключиться к сети. Запрошенная страница ещё не была закеширована.",
+  "language": "ru",
   "title": "Вы не в сети",
-  "date": "2026-04-08"
+  "keywords": "офлайн, service worker, pwa"
 }

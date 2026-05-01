@@ -1,12 +1,12 @@
 {
   "keywords": "contact, assistance, retours, skeletonic",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/fr/contact/",
-  "name": "Skeletonic Stylus",
-  "description": "Prendre contact au sujet de Skeletonic Stylus — signalement de bogues, propositions de fonctionnalités, partenariats ou retours.",
   "layout": "contact",
-  "title": "Contact",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "language": "fr",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "fr"
+  "title": "Contact",
+  "description": "Prendre contact au sujet de Skeletonic Stylus — signalement de bogues, propositions de fonctionnalités, partenariats ou retours.",
+  "permalink": "https://skeletonic.io/fr/contact/",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

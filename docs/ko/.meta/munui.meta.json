@@ -1,12 +1,12 @@
 {
+  "name": "Skeletonic Stylus",
+  "title": "문의",
   "language": "ko",
   "description": "Skeletonic Stylus에 관한 버그 보고, 기능 제안, 파트너십 또는 일반 피드백을 위해 연락하십시오.",
-  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "keywords": "문의, 지원, 피드백, skeletonic",
-  "title": "문의",
   "layout": "contact",
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ko/munui/"
+  "permalink": "https://skeletonic.io/ko/munui/",
+  "keywords": "문의, 지원, 피드백, skeletonic",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau"
 }

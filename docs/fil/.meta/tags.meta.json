@@ -1,12 +1,12 @@
 {
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "fil",
   "date": "2026-04-08",
-  "keywords": "skeletonic, mga tag, index, taxonomy",
-  "description": "I-browse ang dokumentasyon ng Skeletonic Stylus ayon sa tag.",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/fil/tags/",
+  "layout": "page",
+  "description": "I-browse ang dokumentasyon ng Skeletonic Stylus ayon sa tag.",
+  "keywords": "skeletonic, mga tag, index, taxonomy",
+  "language": "fil",
   "title": "Mga Tag",
-  "layout": "page"
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus"
 }

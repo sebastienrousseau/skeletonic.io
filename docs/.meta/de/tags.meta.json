@@ -1,12 +1,12 @@
 {
   "layout": "page",
   "description": "Skeletonic-Stylus-Dokumentation nach Schlagwort durchsuchen.",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/de/tags/",
-  "title": "Schlagwörter",
-  "date": "2026-04-08",
-  "language": "de",
+  "name": "Skeletonic Stylus",
   "keywords": "skeletonic, schlagwörter, index, taxonomie",
-  "name": "Skeletonic Stylus"
+  "permalink": "https://skeletonic.io/de/tags/",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "language": "de",
+  "title": "Schlagwörter"
 }
