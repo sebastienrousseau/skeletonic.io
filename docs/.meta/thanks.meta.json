@@ -1,11 +1,11 @@
 {
+  "author": "Sebastien Rousseau",
+  "keywords": "thanks",
   "name": "Skeletonic Stylus",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "description": "Your message was sent successfully.",
   "title": "Thanks!",
-  "keywords": "thanks",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Your message was sent successfully.",
   "layout": "thanks",
-  "permalink": "https://skeletonic.io/thanks/"
+  "permalink": "https://skeletonic.io/thanks/",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

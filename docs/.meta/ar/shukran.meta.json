@@ -1,12 +1,12 @@
 {
-  "title": "شكرًا!",
-  "keywords": "شكرًا",
-  "author": "Sebastien Rousseau",
+  "language": "ar",
   "permalink": "https://skeletonic.io/ar/shukran/",
+  "author": "Sebastien Rousseau",
+  "title": "شكرًا!",
+  "description": "تم إرسال رسالتك بنجاح.",
   "layout": "thanks",
   "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "شكرًا",
   "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "language": "ar",
-  "description": "تم إرسال رسالتك بنجاح."
+  "date": "2026-04-08"
 }

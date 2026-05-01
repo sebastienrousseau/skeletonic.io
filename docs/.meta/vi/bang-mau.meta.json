@@ -1,12 +1,12 @@
 {
-  "language": "vi",
-  "title": "Bang mau",
-  "keywords": "bang mau css, material, tachyons, websafe, design token",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/vi/bang-mau/",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "bang mau css, material, tachyons, websafe, design token",
+  "language": "vi",
   "description": "Bang mau Material, Tachyons va web-safe duoc tich hop trong Skeletonic Stylus v1.1.7.",
-  "name": "Skeletonic Stylus"
+  "permalink": "https://skeletonic.io/vi/bang-mau/",
+  "name": "Skeletonic Stylus",
+  "title": "Bang mau",
+  "layout": "page",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau"
 }

@@ -1,12 +1,12 @@
 {
-  "layout": "contact",
-  "keywords": "iletisim, destek, geri bildirim, skeletonic",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/tr/iletisim/",
   "description": "Skeletonic Stylus hakkinda iletisime gecin — hata raporlari, ozellik fikirleri, is birlikleri veya genel geri bildirim.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "iletisim, destek, geri bildirim, skeletonic",
+  "layout": "contact",
+  "language": "tr",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
   "title": "Iletisim",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "tr",
-  "author": "Sebastien Rousseau"
+  "permalink": "https://skeletonic.io/tr/iletisim/"
 }

@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "description": "Skeletonic Stylus'a sorun bildirme, degisiklik onerme ve pull request gonderme rehberi.",
-  "permalink": "https://skeletonic.io/tr/katki/",
-  "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "keywords": "katki, acik kaynak, pull request, sorun, kurallar",
-  "title": "Katki Saglama",
   "language": "tr",
-  "name": "Skeletonic Stylus"
+  "keywords": "katki, acik kaynak, pull request, sorun, kurallar",
+  "description": "Skeletonic Stylus'a sorun bildirme, degisiklik onerme ve pull request gonderme rehberi.",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Katki Saglama",
+  "permalink": "https://skeletonic.io/tr/katki/"
 }

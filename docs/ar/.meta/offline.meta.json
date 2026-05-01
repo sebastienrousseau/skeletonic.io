@@ -1,12 +1,12 @@
 {
   "description": "لم يتمكن skeletonic.io من الوصول إلى الشبكة. الصفحة التي طلبتها لم يتم تخزينها مؤقتًا بعد.",
-  "author": "Sebastien Rousseau",
-  "language": "ar",
-  "keywords": "غير متصل, service worker, pwa",
-  "name": "Skeletonic Stylus",
   "title": "أنت غير متصل",
+  "language": "ar",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
+  "keywords": "غير متصل, service worker, pwa",
   "permalink": "https://skeletonic.io/ar/offline/",
-  "date": "2026-04-08"
+  "layout": "page",
+  "author": "Sebastien Rousseau"
 }

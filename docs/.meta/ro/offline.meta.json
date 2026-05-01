@@ -1,12 +1,12 @@
 {
+  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
   "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ro",
   "layout": "page",
-  "description": "skeletonic.io nu poate accesa rețeaua. Pagina solicitată nu a fost încă memorată în cache.",
-  "keywords": "offline, service worker, pwa",
+  "language": "ro",
   "title": "Ești offline",
-  "permalink": "https://skeletonic.io/ro/offline/"
+  "permalink": "https://skeletonic.io/ro/offline/",
+  "description": "skeletonic.io nu poate accesa rețeaua. Pagina solicitată nu a fost încă memorată în cache.",
+  "keywords": "offline, service worker, pwa"
 }

@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "skeletonic, وسوم, فهرس, تصنيف",
+  "title": "الوسوم",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/ar/tags/",
+  "description": "تصفّح توثيق Skeletonic Stylus حسب الوسم.",
+  "layout": "page",
   "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ar/tags/",
-  "title": "الوسوم",
-  "description": "تصفّح توثيق Skeletonic Stylus حسب الوسم.",
-  "keywords": "skeletonic, وسوم, فهرس, تصنيف",
-  "layout": "page",
   "language": "ar",
-  "date": "2026-04-08"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

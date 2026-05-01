@@ -1,13 +1,13 @@
 {
-  "name": "Skeletonic Stylus",
-  "description": "Modulu ere idasọnu yan ti a fi ranṣẹ pẹlu Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake, ati awọn ọrẹ, gbogbo lẹhin prefers-reduced-motion.",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Ere Idasọnu",
-  "load_animations": true,
-  "permalink": "https://skeletonic.io/yo/ere-idasonu/",
-  "keywords": "awọn ere idasọnu css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
   "language": "yo",
-  "layout": "page"
+  "keywords": "awọn ere idasọnu css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/yo/ere-idasonu/",
+  "layout": "page",
+  "load_animations": true,
+  "description": "Modulu ere idasọnu yan ti a fi ranṣẹ pẹlu Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake, ati awọn ọrẹ, gbogbo lẹhin prefers-reduced-motion.",
+  "name": "Skeletonic Stylus",
+  "title": "Ere Idasọnu",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau"
 }

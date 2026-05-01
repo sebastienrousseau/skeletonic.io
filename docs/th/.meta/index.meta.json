@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/th/",
-  "layout": "index",
-  "title": "Skeletonic Stylus — CSS ที่เข้าถึงได้ ขนาด 8.3 KB gzipped",
-  "language": "th",
-  "description": "Skeletonic Stylus เป็นไลบรารี Stylus CSS ที่เบาและเป็นโมดูล — รองรับ WCAG 2.2, ใช้ Cascade Layers, ขนาด 8.3 KB gzipped — ออกแบบมาเพื่อการพัฒนา UI เว็บสมัยใหม่",
-  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Skeletonic Stylus — CSS ที่เข้าถึงได้ ขนาด 8.3 KB gzipped",
+  "layout": "index",
+  "author": "Sebastien Rousseau",
+  "description": "Skeletonic Stylus เป็นไลบรารี Stylus CSS ที่เบาและเป็นโมดูล — รองรับ WCAG 2.2, ใช้ Cascade Layers, ขนาด 8.3 KB gzipped — ออกแบบมาเพื่อการพัฒนา UI เว็บสมัยใหม่",
+  "keywords": "css, stylus, css framework, css ที่เข้าถึงได้, wcag 2.2, css เบา, cascade layers, ระบบออกแบบ",
   "date": "2026-04-08",
-  "keywords": "css, stylus, css framework, css ที่เข้าถึงได้, wcag 2.2, css เบา, cascade layers, ระบบออกแบบ"
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/th/",
+  "language": "th"
 }

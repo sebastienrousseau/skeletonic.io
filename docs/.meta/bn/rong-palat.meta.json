@@ -1,12 +1,12 @@
 {
-  "language": "bn",
-  "description": "Skeletonic Stylus v1.1.7-এর সাথে শিপ করা Material, Tachyons এবং web-safe রঙ প্যালেট।",
-  "name": "Skeletonic Stylus",
-  "keywords": "css palette, material, tachyons, websafe, design tokens",
-  "date": "2026-04-08",
-  "layout": "page",
-  "title": "রঙ প্যালেট",
   "permalink": "https://skeletonic.io/bn/rong-palat/",
+  "language": "bn",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "name": "Skeletonic Stylus",
+  "title": "রঙ প্যালেট",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "date": "2026-04-08",
+  "description": "Skeletonic Stylus v1.1.7-এর সাথে শিপ করা Material, Tachyons এবং web-safe রঙ প্যালেট।",
+  "keywords": "css palette, material, tachyons, websafe, design tokens"
 }

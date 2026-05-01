@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Termini di utilizzo",
-  "keywords": "termini di utilizzo, licenza, mit, apache 2",
-  "name": "Skeletonic Stylus",
-  "layout": "page",
-  "language": "it",
+  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/it/termini/",
-  "description": "Termini che regolano l'utilizzo di skeletonic.io e della libreria Skeletonic Stylus."
+  "description": "Termini che regolano l'utilizzo di skeletonic.io e della libreria Skeletonic Stylus.",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "language": "it",
+  "keywords": "termini di utilizzo, licenza, mit, apache 2",
+  "layout": "page"
 }

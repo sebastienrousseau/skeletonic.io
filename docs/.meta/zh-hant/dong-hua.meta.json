@@ -1,13 +1,13 @@
 {
-  "keywords": "css 動畫, keyframes, prefers-reduced-motion, 彈跳, 脈衝, 淡入",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "description": "Skeletonic Stylus v1.1.7 隨附的可選動畫模組——彈跳、脈衝、淡入、縮放、抖動等，全部受 prefers-reduced-motion 控制。",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "zh-hant",
   "title": "動畫",
+  "theme_color": "hsl(210, 100%, 42%)",
   "load_animations": true,
-  "permalink": "https://skeletonic.io/zh-hant/dong-hua/"
+  "layout": "page",
+  "permalink": "https://skeletonic.io/zh-hant/dong-hua/",
+  "date": "2026-04-08",
+  "keywords": "css 動畫, keyframes, prefers-reduced-motion, 彈跳, 脈衝, 淡入",
+  "language": "zh-hant",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "description": "Skeletonic Stylus v1.1.7 隨附的可選動畫模組——彈跳、脈衝、淡入、縮放、抖動等，全部受 prefers-reduced-motion 控制。"
 }

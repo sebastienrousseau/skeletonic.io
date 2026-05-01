@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/zh-hant/se-ban/",
   "title": "色板",
-  "description": "Skeletonic Stylus v1.1.7 隨附的 Material、Tachyons 與 Web 安全色板。",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
   "language": "zh-hant",
-  "name": "Skeletonic Stylus",
+  "layout": "page",
   "date": "2026-04-08",
   "keywords": "css 色板, material, tachyons, websafe, 設計 token",
-  "author": "Sebastien Rousseau"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/zh-hant/se-ban/",
+  "description": "Skeletonic Stylus v1.1.7 隨附的 Material、Tachyons 與 Web 安全色板。",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus"
 }

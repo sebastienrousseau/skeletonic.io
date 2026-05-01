@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
   "title": "Komponenter",
-  "permalink": "https://skeletonic.io/sv/komponenter/",
-  "author": "Sebastien Rousseau",
-  "language": "sv",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
+  "date": "2026-04-08",
   "keywords": "skeletonic komponenter, knappar, kort, formular, notiser, marken, header, navbar, css-only hamburgare",
   "description": "Levande HTML-exempel pa varje komponent i Skeletonic Stylus, grupperade, ankrade och renderade med samma stylesheet som demonstreras.",
-  "name": "Skeletonic Stylus"
+  "language": "sv",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/sv/komponenter/",
+  "layout": "page"
 }

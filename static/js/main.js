@@ -738,7 +738,14 @@
     document.body.removeChild(ta);
   };
 
+  // Shokunin's syntect highlight emits nested <pre>:
+  //   <pre class="highlight"><code><pre style="…">code</pre></code></pre>
+  // Without filtering, both pres get a copy button and they stack
+  // visibly on hover. Skip any <pre> that has a positioned <pre>
+  // ancestor — keep only the outermost block-level container.
   document.querySelectorAll("pre").forEach((pre) => {
+    if (pre.closest("pre pre") === pre) { return; }
+    if (pre.parentElement && pre.parentElement.closest("pre")) { return; }
     if (pre.querySelector(".copy-btn")) { return; }
     const btn = document.createElement("button");
     btn.className = "copy-btn";

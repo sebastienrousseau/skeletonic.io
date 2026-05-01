@@ -1,12 +1,12 @@
 {
-  "layout": "index",
-  "description": "Skeletonic Stylus wata dakin karatu ne na CSS na Stylus mai saukin nauyi kuma mai tsari — shirye-shiryen WCAG 2.2, tsari na cascade-layered, 8.3 KB gzipped — wanda aka tsara don sauƙaƙa ci gaban fasahar gina yanar gizo na zamani.",
-  "language": "ha",
-  "permalink": "https://skeletonic.io/ha/",
-  "keywords": "css, stylus, css framework, css mai sauki, wcag 2.2, css mai saukin nauyi, cascade layers, tsarin ƙira",
-  "name": "Skeletonic Stylus",
   "title": "Skeletonic Stylus — CSS Mai Sauki, 8.3 KB gzipped",
-  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau"
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/ha/",
+  "layout": "index",
+  "keywords": "css, stylus, css framework, css mai sauki, wcag 2.2, css mai saukin nauyi, cascade layers, tsarin ƙira",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "ha",
+  "author": "Sebastien Rousseau",
+  "description": "Skeletonic Stylus wata dakin karatu ne na CSS na Stylus mai saukin nauyi kuma mai tsari — shirye-shiryen WCAG 2.2, tsari na cascade-layered, 8.3 KB gzipped — wanda aka tsara don sauƙaƙa ci gaban fasahar gina yanar gizo na zamani."
 }

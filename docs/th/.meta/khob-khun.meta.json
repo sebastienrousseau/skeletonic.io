@@ -1,12 +1,12 @@
 {
-  "keywords": "ขอบคุณ",
-  "layout": "thanks",
-  "description": "ข้อความของคุณถูกส่งสำเร็จแล้ว",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/th/khob-khun/",
   "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "thanks",
+  "keywords": "ขอบคุณ",
+  "description": "ข้อความของคุณถูกส่งสำเร็จแล้ว",
+  "language": "th",
   "title": "ขอบคุณ!",
-  "language": "th"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus"
 }

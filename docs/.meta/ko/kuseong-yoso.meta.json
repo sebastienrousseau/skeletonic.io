@@ -1,12 +1,12 @@
 {
-  "keywords": "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더, 네비게이션 바, css 전용 햄버거",
-  "date": "2026-04-08",
-  "language": "ko",
-  "title": "구성 요소",
-  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/ko/kuseong-yoso/",
   "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
+  "keywords": "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더, 네비게이션 바, css 전용 햄버거",
+  "date": "2026-04-08",
+  "title": "구성 요소",
   "author": "Sebastien Rousseau",
-  "description": "Skeletonic Stylus의 모든 구성 요소에 대한 라이브 HTML 예제. 그룹화, 앵커 처리되어 있으며 데모 대상 스타일시트로 직접 렌더링됩니다."
+  "description": "Skeletonic Stylus의 모든 구성 요소에 대한 라이브 HTML 예제. 그룹화, 앵커 처리되어 있으며 데모 대상 스타일시트로 직접 렌더링됩니다.",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "language": "ko"
 }

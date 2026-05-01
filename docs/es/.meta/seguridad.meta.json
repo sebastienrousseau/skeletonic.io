@@ -1,12 +1,12 @@
 {
   "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
+  "description": "Como Skeletonic Stylus v1.1.7 asegura su pipeline de compilacion, firma las releases y distribuye un SBOM.",
   "layout": "page",
+  "date": "2026-04-08",
+  "language": "es",
+  "name": "Skeletonic Stylus",
+  "title": "Seguridad y cadena de suministro",
   "permalink": "https://skeletonic.io/es/seguridad/",
   "author": "Sebastien Rousseau",
-  "keywords": "seguridad css, sbom, cyclonedx, procedencia npm, openssf scorecard, cadena de suministro",
-  "title": "Seguridad y cadena de suministro",
-  "language": "es",
-  "description": "Como Skeletonic Stylus v1.1.7 asegura su pipeline de compilacion, firma las releases y distribuye un SBOM.",
-  "name": "Skeletonic Stylus"
+  "keywords": "seguridad css, sbom, cyclonedx, procedencia npm, openssf scorecard, cadena de suministro"
 }
