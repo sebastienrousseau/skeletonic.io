@@ -1,12 +1,12 @@
 {
   "layout": "page",
-  "description": "ข้อมูลที่ skeletonic.io เก็บรวบรวม เหตุผล และวิธียกเลิก",
+  "keywords": "ความเป็นส่วนตัว, gdpr, คุกกี้, ไม่มีการติดตาม",
+  "title": "ความเป็นส่วนตัว",
   "permalink": "https://skeletonic.io/th/khwam-pen-suan-tua/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "ข้อมูลที่ skeletonic.io เก็บรวบรวม เหตุผล และวิธียกเลิก",
   "author": "Sebastien Rousseau",
   "language": "th",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "ความเป็นส่วนตัว",
-  "keywords": "ความเป็นส่วนตัว, gdpr, คุกกี้, ไม่มีการติดตาม"
+  "name": "Skeletonic Stylus"
 }

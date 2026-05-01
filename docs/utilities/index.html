@@ -282,7 +282,7 @@
         
 <p>Skeletonic ships a small, opinionated set of utility classes — and
 <strong>every one of them has an equivalent HTML attribute form</strong>.</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">center flex justify-center</span><span style="color:#c0c5ce;">&quot;&gt;…&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">center flex justify-center</span><span style="color:#c0c5ce;">&gt;…&lt;/</span><span style="color:#bf616a;">div</span><span style="color:#c0c5ce;">&gt;
 </span></pre>
@@ -527,7 +527,7 @@ markup, where extra <code>class=&quot; &quot;</code> quotes add visual noise.</p
 See <a href="/spacing/">the spacing ladder</a> for the actual values and visual
 output. Both physical (<code>-left</code>, <code>-right</code>) and logical (<code>-start</code>, <code>-end</code>)
 forms are emitted; logical forms auto-flip in <code>&lt;html dir=&quot;rtl&quot;&gt;</code>.</p>
-<pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#2b303b;">
+<pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">.margin-N            .margin-top-N         .padding-N
 </span><span style="color:#c0c5ce;">.margin-bottom-N     .margin-start-N       .padding-top-N
 </span><span style="color:#c0c5ce;">.margin-end-N        .margin-left-N        .padding-bottom-N
@@ -730,41 +730,6 @@ if(e.key==='Enter'){e.preventDefault();var items=results.querySelectorAll('.ssg-
 </script>
 </div>
 
-<!-- SSG Live-Reload -->
-<script data-ssg-livereload>
-(function(){
-  var url='ws://localhost:35729',delay=1000,maxDelay=10000,indicator=null;
-  function showIndicator(){
-    if(indicator)return;
-    indicator=document.createElement('div');
-    indicator.id='ssg-livereload';
-    indicator.textContent='Connecting\u2026';
-    indicator.style.cssText='position:fixed;bottom:8px;right:8px;z-index:99999;'
-      +'background:rgba(0,0,0,0.75);color:#fff;padding:6px 12px;border-radius:6px;'
-      +'font:13px/1 -apple-system,system-ui,sans-serif;pointer-events:none';
-    document.body.appendChild(indicator);
-  }
-  function hideIndicator(){
-    if(indicator){indicator.remove();indicator=null;}
-  }
-  function connect(){
-    var ws=new WebSocket(url);
-    ws.onopen=function(){delay=1000;hideIndicator();};
-    ws.onmessage=function(e){if(e.data==='reload')location.reload();};
-    ws.onclose=function(){
-      showIndicator();
-      var d=delay;
-      delay=Math.min(delay*2,maxDelay);
-      setTimeout(connect,d);
-    };
-    ws.onerror=function(){ws.close();};
-  }
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',connect);
-  }else{
-    connect();
-  }
-})();
-</script>
+
 </body>
 </html>

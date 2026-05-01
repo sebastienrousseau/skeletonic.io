@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/sv/kontakt/",
-  "author": "Sebastien Rousseau",
-  "description": "Kom i kontakt angaende Skeletonic Stylus — felrapporter, funktionsforslag, partnerskap eller allman aterkoppling.",
-  "keywords": "kontakt, support, aterkoppling, skeletonic",
-  "title": "Kontakt",
-  "language": "sv",
-  "layout": "contact",
   "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "layout": "contact",
+  "description": "Kom i kontakt angaende Skeletonic Stylus — felrapporter, funktionsforslag, partnerskap eller allman aterkoppling.",
+  "language": "sv",
+  "title": "Kontakt",
+  "keywords": "kontakt, support, aterkoppling, skeletonic",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/sv/kontakt/",
+  "author": "Sebastien Rousseau"
 }

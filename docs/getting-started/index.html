@@ -293,7 +293,7 @@ you load it from a CDN.</p>
 load it straight from a CDN. You can also self-host the distribution
 files locally if you prefer.</p>
 <h3>From a package manager (recommended)</h3>
-<pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
+<pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#0d1117;">
 <span style="color:#65737e;"># pnpm
 </span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">
@@ -306,7 +306,7 @@ files locally if you prefer.</p>
 </code></pre>
 <h3>From a CDN</h3>
 <p>If you only need the compiled CSS, drop one of these into your <code>&lt;head&gt;</code>:</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#0d1117;">
 <span style="color:#65737e;">&lt;!-- jsDelivr --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
@@ -354,7 +354,7 @@ and drop the contents of <code>dist/</code> straight into your project.</p>
 <h3>Clone the GitHub repository</h3>
 <p>Clone the main repository to get all source files including the build
 scripts:</p>
-<pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#2b303b;">
+<pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#0d1117;">
 <span style="color:#8fa1b3;">git</span><span style="color:#c0c5ce;"> clone https://github.com/sebastienrousseau/skeletonic-stylus.git
 </span><span style="color:#96b5b4;">cd</span><span style="color:#c0c5ce;"> skeletonic-stylus
 </span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> install
@@ -409,13 +409,13 @@ global git config).</p>
 <h2>3. Use it from Stylus</h2>
 <p>If you have a Stylus pipeline already, you can import the source
 modules and let your bundler tree-shake unused parts:</p>
-<pre class="highlight language-stylus"><code class="language-stylus" data-lang="stylus"><pre style="background-color:#2b303b;">
+<pre class="highlight language-stylus"><code class="language-stylus" data-lang="stylus"><pre style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">// styles/main.styl
 </span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/skeletonic&#39;
 </span></pre>
 </code></pre>
 <p>Or import only the bits you need:</p>
-<pre class="highlight language-stylus"><code class="language-stylus" data-lang="stylus"><pre style="background-color:#2b303b;">
+<pre class="highlight language-stylus"><code class="language-stylus" data-lang="stylus"><pre style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/utilities/variables&#39;
 </span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/utilities/mixins&#39;
 </span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/elements/buttons&#39;
@@ -425,7 +425,7 @@ modules and let your bundler tree-shake unused parts:</p>
 <h2>4. Override the brand colour</h2>
 <p>Skeletonic exposes its design tokens as <strong>CSS custom properties</strong> so you
 can theme it without recompiling Stylus:</p>
-<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#2b303b;">
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#0d1117;">
 <span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">root </span><span style="color:#c0c5ce;">{
 </span><span style="color:#c0c5ce;">  --cl-primary:   </span><span style="color:#96b5b4;">hsl</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">210</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">100%</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">42%</span><span style="color:#c0c5ce;">);
 </span><span style="color:#c0c5ce;">  --cl-secondary: </span><span style="color:#96b5b4;">hsl</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">195</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">100%</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">33%</span><span style="color:#c0c5ce;">);
@@ -436,7 +436,7 @@ can theme it without recompiling Stylus:</p>
 <p>That's it — every component that uses the primary colour will follow.</p>
 <h2>5. Verify the install</h2>
 <p>A minimal &quot;did it work?&quot; check:</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">&lt;!</span><span style="color:#bf616a;">doctype</span><span style="color:#c0c5ce;"> html&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">html </span><span style="color:#d08770;">lang</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">en</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
@@ -457,7 +457,7 @@ you're done.</p>
 <p>Inside the package you'll find every source file, the compiled and
 minified CSS bundles, source maps, and a full Stylus tree organised by
 category:</p>
-<pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#2b303b;">
+<pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@2.0.0
 </span><span style="color:#c0c5ce;">├── CHANGELOG.md
 </span><span style="color:#c0c5ce;">├── LICENSE-APACHE
@@ -718,41 +718,6 @@ if(e.key==='Enter'){e.preventDefault();var items=results.querySelectorAll('.ssg-
 </script>
 </div>
 
-<!-- SSG Live-Reload -->
-<script data-ssg-livereload>
-(function(){
-  var url='ws://localhost:35729',delay=1000,maxDelay=10000,indicator=null;
-  function showIndicator(){
-    if(indicator)return;
-    indicator=document.createElement('div');
-    indicator.id='ssg-livereload';
-    indicator.textContent='Connecting\u2026';
-    indicator.style.cssText='position:fixed;bottom:8px;right:8px;z-index:99999;'
-      +'background:rgba(0,0,0,0.75);color:#fff;padding:6px 12px;border-radius:6px;'
-      +'font:13px/1 -apple-system,system-ui,sans-serif;pointer-events:none';
-    document.body.appendChild(indicator);
-  }
-  function hideIndicator(){
-    if(indicator){indicator.remove();indicator=null;}
-  }
-  function connect(){
-    var ws=new WebSocket(url);
-    ws.onopen=function(){delay=1000;hideIndicator();};
-    ws.onmessage=function(e){if(e.data==='reload')location.reload();};
-    ws.onclose=function(){
-      showIndicator();
-      var d=delay;
-      delay=Math.min(delay*2,maxDelay);
-      setTimeout(connect,d);
-    };
-    ws.onerror=function(){ws.close();};
-  }
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',connect);
-  }else{
-    connect();
-  }
-})();
-</script>
+
 </body>
 </html>

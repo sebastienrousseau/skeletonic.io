@@ -1,13 +1,13 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "load_animations": true,
-  "name": "Skeletonic Stylus",
-  "title": "एनिमेशन",
-  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/hi/animations/",
   "description": "Skeletonic Stylus v2.0.0 के साथ शिप वैकल्पिक एनिमेशन मॉड्यूल — bounce, pulse, fade, zoom, shake, और अन्य, सब prefers-reduced-motion के पीछे।",
+  "load_animations": true,
   "date": "2026-04-08",
   "language": "hi",
-  "permalink": "https://skeletonic.io/hi/animations/",
-  "keywords": "css एनिमेशन, keyframes, prefers-reduced-motion, bounce, pulse, fade"
+  "keywords": "css एनिमेशन, keyframes, prefers-reduced-motion, bounce, pulse, fade",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "एनिमेशन",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau"
 }

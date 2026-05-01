@@ -1,12 +1,12 @@
 {
-  "layout": "thanks",
-  "keywords": "bedankt",
-  "date": "2026-04-08",
-  "language": "nl",
-  "description": "Je bericht is succesvol verzonden.",
-  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/nl/bedankt/",
   "author": "Sebastien Rousseau",
   "title": "Bedankt!",
+  "date": "2026-04-08",
+  "description": "Je bericht is succesvol verzonden.",
+  "keywords": "bedankt",
+  "language": "nl",
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/nl/bedankt/"
+  "layout": "thanks"
 }

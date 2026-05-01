@@ -283,7 +283,7 @@
 <p>Skeletonic exposes its design system as CSS custom properties on
 <code>:root</code>. Override any of them on any ancestor element to retheme that
 subtree at runtime — <strong>no Stylus recompile, no rebuild step</strong>.</p>
-<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#2b303b;">
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#0d1117;">
 <span style="color:#8fa1b3;">.</span><span style="color:#d08770;">my-section </span><span style="color:#c0c5ce;">{
 </span><span style="color:#c0c5ce;">  --cl-primary: oklch(</span><span style="color:#d08770;">0.55 0.20 280</span><span style="color:#c0c5ce;">);   </span><span style="color:#65737e;">/* purple */
 </span><span style="color:#c0c5ce;">  --gr-h1: </span><span style="color:#d08770;">3.6rem</span><span style="color:#c0c5ce;">;
@@ -705,41 +705,6 @@ if(e.key==='Enter'){e.preventDefault();var items=results.querySelectorAll('.ssg-
 </script>
 </div>
 
-<!-- SSG Live-Reload -->
-<script data-ssg-livereload>
-(function(){
-  var url='ws://localhost:35729',delay=1000,maxDelay=10000,indicator=null;
-  function showIndicator(){
-    if(indicator)return;
-    indicator=document.createElement('div');
-    indicator.id='ssg-livereload';
-    indicator.textContent='Connecting\u2026';
-    indicator.style.cssText='position:fixed;bottom:8px;right:8px;z-index:99999;'
-      +'background:rgba(0,0,0,0.75);color:#fff;padding:6px 12px;border-radius:6px;'
-      +'font:13px/1 -apple-system,system-ui,sans-serif;pointer-events:none';
-    document.body.appendChild(indicator);
-  }
-  function hideIndicator(){
-    if(indicator){indicator.remove();indicator=null;}
-  }
-  function connect(){
-    var ws=new WebSocket(url);
-    ws.onopen=function(){delay=1000;hideIndicator();};
-    ws.onmessage=function(e){if(e.data==='reload')location.reload();};
-    ws.onclose=function(){
-      showIndicator();
-      var d=delay;
-      delay=Math.min(delay*2,maxDelay);
-      setTimeout(connect,d);
-    };
-    ws.onerror=function(){ws.close();};
-  }
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',connect);
-  }else{
-    connect();
-  }
-})();
-</script>
+
 </body>
 </html>

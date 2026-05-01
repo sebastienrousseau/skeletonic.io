@@ -1,13 +1,13 @@
 {
-  "keywords": "css animaties, keyframes, prefers-reduced-motion, bounce, pulse, fade",
-  "description": "Optionele animatiemodule geleverd met Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake en meer, allemaal achter prefers-reduced-motion.",
   "title": "Animaties",
+  "name": "Skeletonic Stylus",
+  "load_animations": true,
+  "permalink": "https://skeletonic.io/nl/animaties/",
   "language": "nl",
   "author": "Sebastien Rousseau",
+  "description": "Optionele animatiemodule geleverd met Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake en meer, allemaal achter prefers-reduced-motion.",
   "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/nl/animaties/",
-  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "load_animations": true
+  "layout": "page",
+  "keywords": "css animaties, keyframes, prefers-reduced-motion, bounce, pulse, fade"
 }

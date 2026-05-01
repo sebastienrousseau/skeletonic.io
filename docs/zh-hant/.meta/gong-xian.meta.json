@@ -1,12 +1,12 @@
 {
-  "description": "如何提交問題、提議變更以及向 Skeletonic Stylus 提交拉取請求。",
-  "title": "貢獻",
   "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/zh-hant/gong-xian/",
-  "language": "zh-hant",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "貢獻",
+  "name": "Skeletonic Stylus",
   "keywords": "貢獻, 開源, 拉取請求, issue, 慣例",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "layout": "page"
+  "layout": "page",
+  "description": "如何提交問題、提議變更以及向 Skeletonic Stylus 提交拉取請求。",
+  "language": "zh-hant",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/zh-hant/gong-xian/"
 }

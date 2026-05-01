@@ -448,41 +448,6 @@ if(e.key==='Enter'){e.preventDefault();var items=results.querySelectorAll('.ssg-
 </script>
 </div>
 
-<!-- SSG Live-Reload -->
-<script data-ssg-livereload>
-(function(){
-  var url='ws://localhost:35729',delay=1000,maxDelay=10000,indicator=null;
-  function showIndicator(){
-    if(indicator)return;
-    indicator=document.createElement('div');
-    indicator.id='ssg-livereload';
-    indicator.textContent='Connecting\u2026';
-    indicator.style.cssText='position:fixed;bottom:8px;right:8px;z-index:99999;'
-      +'background:rgba(0,0,0,0.75);color:#fff;padding:6px 12px;border-radius:6px;'
-      +'font:13px/1 -apple-system,system-ui,sans-serif;pointer-events:none';
-    document.body.appendChild(indicator);
-  }
-  function hideIndicator(){
-    if(indicator){indicator.remove();indicator=null;}
-  }
-  function connect(){
-    var ws=new WebSocket(url);
-    ws.onopen=function(){delay=1000;hideIndicator();};
-    ws.onmessage=function(e){if(e.data==='reload')location.reload();};
-    ws.onclose=function(){
-      showIndicator();
-      var d=delay;
-      delay=Math.min(delay*2,maxDelay);
-      setTimeout(connect,d);
-    };
-    ws.onerror=function(){ws.close();};
-  }
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',connect);
-  }else{
-    connect();
-  }
-})();
-</script>
+
 </body>
 </html>

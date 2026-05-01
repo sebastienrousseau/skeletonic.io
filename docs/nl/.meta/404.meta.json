@@ -1,11 +1,11 @@
 {
-  "description": "De pagina die je hebt opgevraagd bestaat niet op skeletonic.io.",
-  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
+  "layout": "page",
   "title": "Pagina niet gevonden",
+  "author": "Sebastien Rousseau",
+  "description": "De pagina die je hebt opgevraagd bestaat niet op skeletonic.io.",
+  "language": "nl",
   "permalink": "https://skeletonic.io/nl/404/",
-  "keywords": "404, niet gevonden",
-  "language": "nl"
+  "name": "Skeletonic Stylus",
+  "keywords": "404, niet gevonden"
 }

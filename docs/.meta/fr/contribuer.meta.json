@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "language": "fr",
-  "description": "Comment signaler un problème, proposer des modifications et soumettre des demandes de fusion pour Skeletonic Stylus.",
-  "permalink": "https://skeletonic.io/fr/contribuer/",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "contribuer, open source, pull request, ticket, conventions",
   "layout": "page",
-  "title": "Contribuer"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Comment signaler un problème, proposer des modifications et soumettre des demandes de fusion pour Skeletonic Stylus.",
+  "author": "Sebastien Rousseau",
+  "title": "Contribuer",
+  "name": "Skeletonic Stylus",
+  "language": "fr",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/fr/contribuer/"
 }

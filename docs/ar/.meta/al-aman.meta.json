@@ -1,12 +1,12 @@
 {
+  "author": "Sebastien Rousseau",
+  "keywords": "أمان css, sbom, cyclonedx, مصدر npm, openssf scorecard, سلسلة التوريد",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/ar/al-aman/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "layout": "page",
   "language": "ar",
   "description": "كيف يؤمّن Skeletonic Stylus الإصدار 2.0.0 خط أنابيب البناء، ويوقّع الإصدارات، ويشحن قائمة مواد البرمجيات.",
-  "keywords": "أمان css, sbom, cyclonedx, مصدر npm, openssf scorecard, سلسلة التوريد",
-  "permalink": "https://skeletonic.io/ar/al-aman/",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
-  "title": "الأمان وسلسلة التوريد",
-  "layout": "page",
-  "date": "2026-04-08"
+  "title": "الأمان وسلسلة التوريد"
 }

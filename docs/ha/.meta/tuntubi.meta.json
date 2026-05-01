@@ -1,12 +1,12 @@
 {
+  "language": "ha",
   "description": "Tuntuɓe mu game da Skeletonic Stylus — rahotannin kurakurai, ra'ayoyin fasaloli, haɗin gwiwa, ko ra'ayoyin gaba ɗaya.",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ha",
+  "layout": "contact",
   "date": "2026-04-08",
   "keywords": "tuntubi, tallafi, ra'ayoyi, skeletonic",
-  "layout": "contact",
+  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Tuntubi",
-  "permalink": "https://skeletonic.io/ha/tuntubi/"
+  "permalink": "https://skeletonic.io/ha/tuntubi/",
+  "name": "Skeletonic Stylus"
 }

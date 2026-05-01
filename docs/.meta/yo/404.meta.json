@@ -1,11 +1,11 @@
 {
-  "keywords": "404, a ko ri",
-  "layout": "page",
+  "permalink": "https://skeletonic.io/yo/404/",
   "theme_color": "hsl(210, 100%, 42%)",
   "title": "A ko ri oju-iwe",
-  "description": "Oju-iwe ti o beere ko si lori skeletonic.io.",
-  "permalink": "https://skeletonic.io/yo/404/",
-  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
   "language": "yo",
-  "name": "Skeletonic Stylus"
+  "author": "Sebastien Rousseau",
+  "description": "Oju-iwe ti o beere ko si lori skeletonic.io.",
+  "keywords": "404, a ko ri"
 }

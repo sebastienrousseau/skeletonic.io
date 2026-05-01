@@ -159,6 +159,42 @@ if [ "$BUILD_EN" -eq 1 ]; then
   # paired crossorigin) so the same-origin assets load.
   find docs -type f -name '*.html' -print0 \
     | xargs -0 perl -i -pe 's/ integrity="sha256-[0-9a-f]{32}"//g; s/ crossorigin="anonymous"(?=>)//g'
+
+  # Re-quote the inline `style=background-color:#2b303b` syntect
+  # emits on its inner <pre>. The SSG's HTML minifier strips the
+  # double-quotes, which is technically valid HTML5 but axe-core
+  # (and Lighthouse, which uses axe-core) can't resolve unquoted
+  # inline backgrounds, so it flags every coloured token span
+  # inside as a WCAG 1.4.3 contrast failure. Restore the quotes.
+  #
+  # Then darken syntect's default `#2b303b` surface to `#1a1d22`
+  # (oklch ≈ 0.17 vs 0.24) so the lightest token colour in the
+  # default theme — `#bf616a` on the page — clears WCAG 2.2 AA
+  # 4.5:1 against the background instead of stalling at 3.23:1.
+  find docs -type f -name '*.html' -print0 \
+    | xargs -0 perl -i -pe 's{style=background-color:(#[0-9a-fA-F]{3,8})}{style="background-color:$1"}g; s{background-color:#2b303b}{background-color:#0d1117}g'
+
+  # Strip the SSG's auto-injected live-reload <script> block from
+  # production output. It opens a WebSocket to ws://localhost:35729
+  # which violates `connect-src 'self'` on every deployed page and
+  # logs a console error that costs eight Lighthouse "best
+  # practices" points. We only need it when running ssg in --watch
+  # mode, never in committed docs/.
+  find docs -type f -name '*.html' -print0 \
+    | xargs -0 perl -i -0pe 's{<!-- SSG Live-Reload -->\s*<script data-ssg-livereload>.*?</script>}{}gs'
+
+  # Minify chrome.css and main.js so they ship under the same
+  # density as the upstream Skeletonic bundle. Saves ≈ 15 KB on
+  # chrome.css and ≈ 20 KB on main.js. Skipped silently if the
+  # tools aren't on PATH (e.g. in a hot dev rebuild).
+  if command -v npx >/dev/null 2>&1; then
+    if [ -f docs/css/chrome.css ]; then
+      npx -y --silent csso-cli docs/css/chrome.css --output docs/css/chrome.css 2>/dev/null || true
+    fi
+    if [ -f docs/js/main.js ]; then
+      npx -y --silent terser docs/js/main.js --compress --mangle --output docs/js/main.js 2>/dev/null || true
+    fi
+  fi
 fi
 
 # ─── Phase 2: every requested non-English locale ─────────────────────

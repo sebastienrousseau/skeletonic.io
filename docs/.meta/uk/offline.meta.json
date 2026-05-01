@@ -1,12 +1,12 @@
 {
   "keywords": "офлайн, service worker, pwa",
-  "title": "Ви офлайн",
-  "language": "uk",
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/uk/offline/",
-  "date": "2026-04-08",
   "description": "skeletonic.io не може з'єднатися з мережею. Запитана сторінка ще не була закешована.",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/uk/offline/",
+  "name": "Skeletonic Stylus",
+  "language": "uk",
+  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
-  "layout": "page"
+  "title": "Ви офлайн",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

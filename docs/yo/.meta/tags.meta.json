@@ -1,12 +1,12 @@
 {
-  "language": "yo",
+  "theme_color": "hsl(210, 100%, 42%)",
   "description": "Ṣawari iwe-ẹkọ Skeletonic Stylus nipasẹ ami.",
-  "date": "2026-04-08",
-  "keywords": "skeletonic, awọn ami, atokọ, ipin",
   "permalink": "https://skeletonic.io/yo/tags/",
+  "date": "2026-04-08",
   "layout": "page",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "keywords": "skeletonic, awọn ami, atokọ, ipin",
   "title": "Awọn Ami",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "language": "yo"
 }

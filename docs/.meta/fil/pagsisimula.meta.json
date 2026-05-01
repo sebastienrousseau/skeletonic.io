@@ -1,12 +1,12 @@
 {
+  "language": "fil",
   "date": "2026-04-08",
   "description": "I-install ang Skeletonic Stylus mula sa npm o CDN, i-import ito sa iyong Stylus build, at i-override ang mga variable sa ilang segundo.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Pagsisimula sa Skeletonic Stylus",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/fil/pagsisimula/",
   "name": "Skeletonic Stylus",
   "keywords": "install skeletonic, stylus setup, css cdn, pagsisimula",
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/fil/pagsisimula/",
-  "title": "Pagsisimula sa Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "language": "fil"
+  "author": "Sebastien Rousseau"
 }

@@ -1,12 +1,12 @@
 {
-  "description": "Bayanan da skeletonic.io ke tattarawa, dalilin da yasa, da yadda ake ficewa.",
   "author": "Sebastien Rousseau",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "title": "Sirri",
-  "permalink": "https://skeletonic.io/ha/sirri/",
-  "keywords": "sirri, gdpr, cookies, babu bin diddigi",
-  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ha"
+  "layout": "page",
+  "language": "ha",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "keywords": "sirri, gdpr, cookies, babu bin diddigi",
+  "permalink": "https://skeletonic.io/ha/sirri/",
+  "title": "Sirri",
+  "description": "Bayanan da skeletonic.io ke tattarawa, dalilin da yasa, da yadda ake ficewa."
 }

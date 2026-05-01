@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/ko/palleteu/",
-  "title": "팔레트",
   "description": "Skeletonic Stylus v2.0.0에 포함된 Material, Tachyons 및 웹 안전 색상 팔레트입니다.",
-  "layout": "page",
+  "title": "팔레트",
+  "language": "ko",
   "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/ko/palleteu/",
   "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "css 팔레트, material, tachyons, 웹 안전, 디자인 토큰",
   "date": "2026-04-08",
-  "language": "ko",
-  "name": "Skeletonic Stylus"
+  "layout": "page"
 }

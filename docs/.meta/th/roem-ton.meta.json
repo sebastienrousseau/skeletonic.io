@@ -1,12 +1,12 @@
 {
+  "description": "ติดตั้ง Skeletonic Stylus จาก npm หรือ CDN นำเข้าสู่ Stylus build และแก้ไขตัวแปรได้ในไม่กี่วินาที",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
   "title": "เริ่มต้นใช้งาน Skeletonic Stylus",
   "permalink": "https://skeletonic.io/th/roem-ton/",
+  "keywords": "ติดตั้ง skeletonic, ตั้งค่า stylus, css cdn, เริ่มต้นใช้งาน",
+  "name": "Skeletonic Stylus",
   "language": "th",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "ติดตั้ง skeletonic, ตั้งค่า stylus, css cdn, เริ่มต้นใช้งาน",
-  "layout": "page",
-  "description": "ติดตั้ง Skeletonic Stylus จาก npm หรือ CDN นำเข้าสู่ Stylus build และแก้ไขตัวแปรได้ในไม่กี่วินาที",
-  "name": "Skeletonic Stylus"
+  "layout": "page"
 }

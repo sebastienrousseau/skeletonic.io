@@ -1,12 +1,12 @@
 {
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "css beveiliging, sbom, cyclonedx, npm herkomst, openssf scorecard, toeleveringsketen",
+  "language": "nl",
   "title": "Beveiliging &amp; toeleveringsketen",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/nl/beveiliging/",
   "layout": "page",
-  "author": "Sebastien Rousseau",
-  "language": "nl",
   "description": "Hoe Skeletonic Stylus v2.0.0 zijn buildpipeline beveiligt, releases ondertekent en een SBOM levert.",
-  "permalink": "https://skeletonic.io/nl/beveiliging/"
+  "keywords": "css beveiliging, sbom, cyclonedx, npm herkomst, openssf scorecard, toeleveringsketen",
+  "author": "Sebastien Rousseau"
 }

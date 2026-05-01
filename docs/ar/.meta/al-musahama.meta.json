@@ -1,12 +1,12 @@
 {
   "keywords": "المساهمة, مفتوح المصدر, طلب سحب, مشكلة, اتفاقيات",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "المساهمة",
   "date": "2026-04-08",
+  "description": "كيفية تقديم المشكلات واقتراح التغييرات وإرسال طلبات السحب إلى Skeletonic Stylus.",
   "language": "ar",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/ar/al-musahama/",
-  "name": "Skeletonic Stylus",
   "layout": "page",
-  "title": "المساهمة",
-  "description": "كيفية تقديم المشكلات واقتراح التغييرات وإرسال طلبات السحب إلى Skeletonic Stylus."
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/ar/al-musahama/"
 }

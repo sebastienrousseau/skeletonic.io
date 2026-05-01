@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Skeletonic Stylus la thu vien CSS Stylus ma nguon mo, danh cho viec tao kieu giao dien tro nang, nhanh va mo-dun.",
-  "author": "Sebastien Rousseau",
-  "title": "Gioi thieu Skeletonic Stylus",
-  "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/vi/gioi-thieu/",
   "language": "vi",
+  "date": "2026-04-08",
+  "title": "Gioi thieu Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/vi/gioi-thieu/",
+  "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "keywords": "skeletonic, gioi thieu, stylus, css framework, triet ly"
+  "description": "Skeletonic Stylus la thu vien CSS Stylus ma nguon mo, danh cho viec tao kieu giao dien tro nang, nhanh va mo-dun.",
+  "name": "Skeletonic Stylus",
+  "keywords": "skeletonic, gioi thieu, stylus, css framework, triet ly",
+  "author": "Sebastien Rousseau"
 }

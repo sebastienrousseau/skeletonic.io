@@ -1,13 +1,13 @@
 {
-  "date": "2026-04-08",
-  "description": "מודול אנימציות אופציונלי הנשלח עם Skeletonic Stylus v2.0.0 — קפיצה, פעימה, דעיכה, זום, רעידה ועוד, הכול מאחורי prefers-reduced-motion.",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/he/animatsyot/",
-  "keywords": "אנימציות css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
-  "name": "Skeletonic Stylus",
-  "language": "he",
   "load_animations": true,
-  "title": "אנימציות",
   "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "title": "אנימציות",
+  "description": "מודול אנימציות אופציונלי הנשלח עם Skeletonic Stylus v2.0.0 — קפיצה, פעימה, דעיכה, זום, רעידה ועוד, הכול מאחורי prefers-reduced-motion.",
+  "keywords": "אנימציות css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
+  "date": "2026-04-08",
+  "language": "he",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/he/animatsyot/"
 }

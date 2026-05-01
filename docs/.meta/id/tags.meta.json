@@ -1,12 +1,12 @@
 {
+  "author": "Sebastien Rousseau",
+  "keywords": "skeletonic, tag, indeks, taksonomi",
   "permalink": "https://skeletonic.io/id/tags/",
   "name": "Skeletonic Stylus",
-  "keywords": "skeletonic, tag, indeks, taksonomi",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
+  "title": "Tag",
   "language": "id",
-  "description": "Jelajahi dokumentasi Skeletonic Stylus berdasarkan tag.",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "title": "Tag"
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Jelajahi dokumentasi Skeletonic Stylus berdasarkan tag."
 }
