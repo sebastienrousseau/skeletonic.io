@@ -13,7 +13,19 @@
     <meta name="color-scheme" content="light dark">
     <meta name="format-detection" content="telephone=no">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'">
+    <!-- frame-ancestors is intentionally absent: it's ignored when
+         delivered via <meta>, must come from a real HTTP header. The
+         GitHub Pages deployment can't set custom headers, so we lean
+         on the X-Frame-Options equivalent that the platform ships
+         and on the meta-supported directives below.
+
+         The two `'sha256-…'` entries pin the SSG-injected inline
+         scripts that bootstrap the search widget and the on-page
+         live-reload watchdog. They're emitted verbatim by shokunin
+         v0.0.34 and don't change between builds — if the SSG ever
+         changes them we'll see the CSP error in the browser console
+         and update the hashes. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
 
     <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">

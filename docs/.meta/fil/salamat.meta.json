@@ -1,12 +1,12 @@
 {
-  "layout": "thanks",
-  "language": "fil",
   "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/fil/salamat/",
+  "language": "fil",
   "title": "Salamat!",
-  "keywords": "salamat",
+  "permalink": "https://skeletonic.io/fil/salamat/",
   "description": "Matagumpay na naipadala ang iyong mensahe.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "salamat",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus"
+  "name": "Skeletonic Stylus",
+  "layout": "thanks"
 }

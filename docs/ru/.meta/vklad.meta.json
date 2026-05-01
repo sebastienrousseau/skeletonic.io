@@ -1,12 +1,12 @@
 {
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
   "language": "ru",
+  "title": "Участие в разработке",
+  "layout": "page",
   "description": "Как создавать issue, предлагать изменения и отправлять pull request в Skeletonic Stylus.",
   "keywords": "участие, open source, pull request, issue, соглашения",
-  "date": "2026-04-08",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ru/vklad/",
-  "title": "Участие в разработке",
-  "author": "Sebastien Rousseau"
+  "permalink": "https://skeletonic.io/ru/vklad/"
 }

@@ -1,12 +1,12 @@
 {
   "title": "การเข้าถึง — WCAG 2.2 ใน v1.1.7",
-  "keywords": "wcag 2.2, การเข้าถึง, focus visible, ลิงก์ข้าม, prefers reduced motion, คอนทราสต์",
-  "permalink": "https://skeletonic.io/th/kan-khao-thueng/",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "description": "สิ่งที่ v1.1.7 มาพร้อมสำหรับการรองรับ WCAG 2.2 — วงแหวนโฟกัส คอนทราสต์ ลิงก์ข้าม การเคลื่อนไหว และโหมดมืด",
   "theme_color": "hsl(210, 100%, 42%)",
   "language": "th",
-  "layout": "page"
+  "author": "Sebastien Rousseau",
+  "description": "สิ่งที่ v1.1.7 มาพร้อมสำหรับการรองรับ WCAG 2.2 — วงแหวนโฟกัส คอนทราสต์ ลิงก์ข้าม การเคลื่อนไหว และโหมดมืด",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "keywords": "wcag 2.2, การเข้าถึง, focus visible, ลิงก์ข้าม, prefers reduced motion, คอนทราสต์",
+  "permalink": "https://skeletonic.io/th/kan-khao-thueng/",
+  "date": "2026-04-08"
 }

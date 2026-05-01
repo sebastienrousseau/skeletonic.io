@@ -1,11 +1,11 @@
 {
-  "name": "Skeletonic Stylus",
-  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Skeletonic Stylus-এর রিলিজ নোট, v1.1.7 সম্পূর্ণ বিবরণ সহ।",
-  "title": "পরিবর্তন তালিকা",
   "language": "bn",
-  "author": "Sebastien Rousseau",
+  "description": "Skeletonic Stylus-এর রিলিজ নোট, v1.1.7 সম্পূর্ণ বিবরণ সহ।",
+  "layout": "page",
+  "keywords": "skeletonic পরিবর্তন তালিকা, রিলিজ নোট, v1.1.7, semver",
+  "title": "পরিবর্তন তালিকা",
   "permalink": "https://skeletonic.io/bn/poriborton-talika/",
-  "keywords": "skeletonic পরিবর্তন তালিকা, রিলিজ নোট, v1.1.7, semver"
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau"
 }

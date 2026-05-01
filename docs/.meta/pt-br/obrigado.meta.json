@@ -1,12 +1,12 @@
 {
-  "layout": "thanks",
-  "keywords": "obrigado",
-  "language": "pt-br",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Obrigado!",
-  "permalink": "https://skeletonic.io/pt-br/obrigado/",
+  "keywords": "obrigado",
   "description": "Sua mensagem foi enviada com sucesso.",
+  "name": "Skeletonic Stylus",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus"
+  "language": "pt-br",
+  "title": "Obrigado!",
+  "layout": "thanks",
+  "permalink": "https://skeletonic.io/pt-br/obrigado/",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

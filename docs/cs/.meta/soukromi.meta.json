@@ -1,12 +1,12 @@
 {
-  "description": "Jake udaje skeletonic.io shromazduje, proc a jak se odhlasit.",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "soukromi, gdpr, cookies, bez sledovani",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/cs/soukromi/",
-  "language": "cs",
-  "title": "Ochrana soukromi — Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus"
+  "name": "Skeletonic Stylus",
+  "keywords": "soukromi, gdpr, cookies, bez sledovani",
+  "language": "cs",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/cs/soukromi/",
+  "description": "Jake udaje skeletonic.io shromazduje, proc a jak se odhlasit.",
+  "layout": "page",
+  "title": "Ochrana soukromi — Skeletonic Stylus",
+  "date": "2026-04-08"
 }

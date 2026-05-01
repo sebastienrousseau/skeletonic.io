@@ -1,11 +1,11 @@
 {
-  "keywords": "skeletonic changelog, notes de version, v1.1.7, semver",
-  "title": "Journal des modifications",
-  "name": "Skeletonic Stylus",
-  "description": "Notes de version pour Skeletonic Stylus, avec la v1.1.7 détaillée.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
   "permalink": "https://skeletonic.io/fr/journal/",
+  "author": "Sebastien Rousseau",
+  "keywords": "skeletonic changelog, notes de version, v1.1.7, semver",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Journal des modifications",
+  "description": "Notes de version pour Skeletonic Stylus, avec la v1.1.7 détaillée.",
+  "name": "Skeletonic Stylus",
   "language": "fr",
-  "author": "Sebastien Rousseau"
+  "layout": "page"
 }

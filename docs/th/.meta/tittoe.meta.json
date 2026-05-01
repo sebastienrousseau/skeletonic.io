@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "contact",
   "title": "ติดต่อ",
-  "permalink": "https://skeletonic.io/th/tittoe/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
-  "language": "th",
-  "keywords": "ติดต่อ, สนับสนุน, ข้อเสนอแนะ, skeletonic",
   "date": "2026-04-08",
+  "layout": "contact",
+  "keywords": "ติดต่อ, สนับสนุน, ข้อเสนอแนะ, skeletonic",
+  "permalink": "https://skeletonic.io/th/tittoe/",
   "description": "ติดต่อเกี่ยวกับ Skeletonic Stylus — รายงานบั๊ก แนวคิดฟีเจอร์ ความร่วมมือ หรือข้อเสนอแนะทั่วไป",
-  "author": "Sebastien Rousseau"
+  "language": "th"
 }

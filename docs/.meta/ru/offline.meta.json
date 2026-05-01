@@ -1,12 +1,12 @@
 {
-  "description": "skeletonic.io не может подключиться к сети. Запрошенная страница ещё не была закеширована.",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
   "name": "Skeletonic Stylus",
-  "language": "ru",
   "keywords": "офлайн, service worker, pwa",
+  "permalink": "https://skeletonic.io/ru/offline/",
+  "language": "ru",
+  "date": "2026-04-08",
   "title": "Вы не в сети",
+  "layout": "page",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/ru/offline/"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "skeletonic.io не может подключиться к сети. Запрошенная страница ещё не была закеширована."
 }

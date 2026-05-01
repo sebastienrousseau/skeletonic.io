@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/nl/privacy/",
-  "layout": "page",
   "keywords": "privacy, avg, cookies, geen tracking",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
   "language": "nl",
-  "title": "Privacy",
   "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Privacy",
   "date": "2026-04-08",
-  "description": "Welke gegevens skeletonic.io verzamelt, waarom, en hoe je je kunt afmelden."
+  "description": "Welke gegevens skeletonic.io verzamelt, waarom, en hoe je je kunt afmelden.",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/nl/privacy/",
+  "name": "Skeletonic Stylus"
 }

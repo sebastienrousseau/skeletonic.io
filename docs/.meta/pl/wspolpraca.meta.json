@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "title": "Wspolpraca",
-  "permalink": "https://skeletonic.io/pl/wspolpraca/",
+  "author": "Sebastien Rousseau",
   "language": "pl",
   "description": "Jak zglaszac problemy, proponowac zmiany i przesylac pull requesty do Skeletonic Stylus.",
-  "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
+  "layout": "page",
+  "title": "Wspolpraca",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/pl/wspolpraca/",
   "keywords": "wspolpraca, open source, pull request, zgloszenie, konwencje",
   "date": "2026-04-08"
 }

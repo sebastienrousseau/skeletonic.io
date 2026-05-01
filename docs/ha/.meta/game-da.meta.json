@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
-  "keywords": "skeletonic, game da, stylus, css framework, falsafa",
   "description": "Skeletonic Stylus dakin karatu ne na CSS na Stylus mai buɗewa don tsarin bayyanar yanar gizo mai saukin amfani, sauri, da tsari.",
-  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
   "language": "ha",
   "permalink": "https://skeletonic.io/ha/game-da/",
-  "title": "Game da Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "name": "Skeletonic Stylus"
+  "author": "Sebastien Rousseau",
+  "title": "Game da Skeletonic Stylus",
+  "keywords": "skeletonic, game da, stylus, css framework, falsafa"
 }

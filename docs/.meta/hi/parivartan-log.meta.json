@@ -1,11 +1,11 @@
 {
-  "title": "परिवर्तन लॉग",
-  "language": "hi",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "skeletonic परिवर्तन लॉग, रिलीज़ नोट्स, v1.1.7, semver",
-  "permalink": "https://skeletonic.io/hi/parivartan-log/",
-  "description": "Skeletonic Stylus की रिलीज़ नोट्स, v1.1.7 का पूर्ण विवरण।",
   "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/hi/parivartan-log/",
+  "keywords": "skeletonic परिवर्तन लॉग, रिलीज़ नोट्स, v1.1.7, semver",
+  "description": "Skeletonic Stylus की रिलीज़ नोट्स, v1.1.7 का पूर्ण विवरण।",
+  "layout": "page",
+  "language": "hi",
   "author": "Sebastien Rousseau",
-  "layout": "page"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "परिवर्तन लॉग"
 }

@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "language": "nl",
   "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Je bent offline",
+  "language": "nl",
   "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/nl/offline/",
+  "title": "Je bent offline",
   "keywords": "offline, service worker, pwa",
   "author": "Sebastien Rousseau",
-  "description": "skeletonic.io kon het netwerk niet bereiken. De pagina die je hebt opgevraagd is nog niet gecached."
+  "name": "Skeletonic Stylus",
+  "description": "skeletonic.io kon het netwerk niet bereiken. De pagina die je hebt opgevraagd is nog niet gecached.",
+  "permalink": "https://skeletonic.io/nl/offline/"
 }

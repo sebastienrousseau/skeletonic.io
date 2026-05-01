@@ -1,11 +1,11 @@
 {
-  "description": "ملاحظات الإصدار لـ Skeletonic Stylus، مع الإصدار 1.1.7 بالكامل.",
-  "language": "ar",
   "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/ar/sijil-al-taghyirat/",
-  "title": "سجل التغييرات",
+  "keywords": "سجل تغييرات skeletonic, ملاحظات الإصدار, v1.1.7, semver",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "ar",
+  "title": "سجل التغييرات",
+  "description": "ملاحظات الإصدار لـ Skeletonic Stylus، مع الإصدار 1.1.7 بالكامل.",
   "layout": "page",
-  "keywords": "سجل تغييرات skeletonic, ملاحظات الإصدار, v1.1.7, semver"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

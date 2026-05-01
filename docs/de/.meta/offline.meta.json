@@ -1,12 +1,12 @@
 {
-  "title": "Keine Internetverbindung",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "description": "skeletonic.io konnte das Netzwerk nicht erreichen. Die angeforderte Seite wurde noch nicht zwischengespeichert.",
-  "language": "de",
   "keywords": "offline, service worker, pwa",
+  "language": "de",
   "name": "Skeletonic Stylus",
-  "layout": "page",
+  "title": "Keine Internetverbindung",
   "permalink": "https://skeletonic.io/de/offline/",
-  "author": "Sebastien Rousseau"
+  "description": "skeletonic.io konnte das Netzwerk nicht erreichen. Die angeforderte Seite wurde noch nicht zwischengespeichert.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "layout": "page"
 }

@@ -1,12 +1,12 @@
 {
-  "keywords": "গোপনীয়তা, gdpr, কুকি, ট্র্যাকিং নেই",
-  "name": "Skeletonic Stylus",
-  "layout": "page",
   "author": "Sebastien Rousseau",
   "date": "2026-04-08",
-  "title": "গোপনীয়তা",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
   "language": "bn",
+  "title": "গোপনীয়তা",
+  "permalink": "https://skeletonic.io/bn/goponioyota/",
   "description": "skeletonic.io কী ডেটা সংগ্রহ করে, কেন এবং কীভাবে অপ্ট আউট করবেন।",
-  "permalink": "https://skeletonic.io/bn/goponioyota/"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "keywords": "গোপনীয়তা, gdpr, কুকি, ট্র্যাকিং নেই"
 }

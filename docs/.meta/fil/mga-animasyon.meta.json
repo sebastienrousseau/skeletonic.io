@@ -1,13 +1,13 @@
 {
-  "keywords": "css animation, keyframe, prefers-reduced-motion, bounce, pulse, fade",
-  "permalink": "https://skeletonic.io/fil/mga-animasyon/",
-  "language": "fil",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
   "load_animations": true,
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "css animation, keyframe, prefers-reduced-motion, bounce, pulse, fade",
   "layout": "page",
   "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/fil/mga-animasyon/",
+  "author": "Sebastien Rousseau",
+  "language": "fil",
   "description": "Opsyonal na module ng animasyon na kasama sa Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake, at iba pa, lahat sa likod ng prefers-reduced-motion.",
   "title": "Mga Animasyon"
 }
