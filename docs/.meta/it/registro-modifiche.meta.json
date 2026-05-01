@@ -1,11 +1,11 @@
 {
-  "permalink": "https://skeletonic.io/it/registro-modifiche/",
   "language": "it",
-  "layout": "page",
+  "keywords": "registro modifiche skeletonic, note di rilascio, v2.0.0, semver",
+  "permalink": "https://skeletonic.io/it/registro-modifiche/",
   "theme_color": "hsl(210, 100%, 42%)",
   "description": "Note di rilascio per Skeletonic Stylus, con la v2.0.0 completa.",
+  "name": "Skeletonic Stylus",
   "title": "Registro modifiche",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "keywords": "registro modifiche skeletonic, note di rilascio, v2.0.0, semver"
+  "layout": "page"
 }

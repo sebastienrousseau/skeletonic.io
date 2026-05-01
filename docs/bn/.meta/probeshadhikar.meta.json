@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
   "keywords": "wcag 2.2, প্রবেশাধিকার, focus visible, skip link, prefers reduced motion, কনট্রাস্ট",
-  "language": "bn",
   "description": "WCAG 2.2 সামঞ্জস্যের জন্য v2.0.0 বাক্সের বাইরে কী শিপ করে — ফোকাস রিং, কনট্রাস্ট, স্কিপ লিংক, মোশন এবং ডার্ক মোড।",
-  "name": "Skeletonic Stylus",
   "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "language": "bn",
   "permalink": "https://skeletonic.io/bn/probeshadhikar/",
-  "title": "প্রবেশাধিকার — v2.0.0-এ WCAG 2.2",
-  "author": "Sebastien Rousseau"
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "প্রবেশাধিকার — v2.0.0-এ WCAG 2.2"
 }

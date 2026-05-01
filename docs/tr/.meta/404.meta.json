@@ -1,11 +1,11 @@
 {
-  "name": "Skeletonic Stylus",
   "title": "Sayfa bulunamadi",
   "layout": "page",
-  "description": "Istediginiz sayfa skeletonic.io uzerinde mevcut degil.",
-  "permalink": "https://skeletonic.io/tr/404/",
   "keywords": "404, bulunamadi",
   "author": "Sebastien Rousseau",
-  "language": "tr",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "permalink": "https://skeletonic.io/tr/404/",
+  "description": "Istediginiz sayfa skeletonic.io uzerinde mevcut degil.",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "tr"
 }

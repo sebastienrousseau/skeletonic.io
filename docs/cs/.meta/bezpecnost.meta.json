@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
   "keywords": "css bezpecnost, sbom, cyclonedx, npm provenance, openssf scorecard, dodavatelsky retezec",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/cs/bezpecnost/",
-  "title": "Bezpecnost a dodavatelsky retezec",
-  "language": "cs",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "description": "Jak Skeletonic Stylus v2.0.0 zabezpecuje svou build pipeline, podepisuje vydani a dodava SBOM."
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Bezpecnost a dodavatelsky retezec",
+  "permalink": "https://skeletonic.io/cs/bezpecnost/",
+  "description": "Jak Skeletonic Stylus v2.0.0 zabezpecuje svou build pipeline, podepisuje vydani a dodava SBOM.",
+  "language": "cs",
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus"
 }

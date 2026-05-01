@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
+  "layout": "index",
+  "description": "Skeletonic Stylus একটি হালকা, মডুলার Stylus CSS লাইব্রেরি — WCAG 2.2 সমর্থিত, cascade-layered, ~৭.৫ KB gzipped — আধুনিক ওয়েব UI ডেভেলপমেন্টকে সহজতর করতে ডিজাইন করা হয়েছে।",
+  "date": "2026-04-08",
   "permalink": "https://skeletonic.io/bn/",
+  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "layout": "index",
-  "language": "bn",
-  "keywords": "css, stylus, css framework, accessible css, wcag 2.2, lightweight css, cascade layers, design system",
-  "date": "2026-04-08",
   "title": "Skeletonic Stylus — অ্যাক্সেসিবল CSS, ~৭.৫ KB gzipped",
-  "description": "Skeletonic Stylus একটি হালকা, মডুলার Stylus CSS লাইব্রেরি — WCAG 2.2 সমর্থিত, cascade-layered, ~৭.৫ KB gzipped — আধুনিক ওয়েব UI ডেভেলপমেন্টকে সহজতর করতে ডিজাইন করা হয়েছে।"
+  "keywords": "css, stylus, css framework, accessible css, wcag 2.2, lightweight css, cascade layers, design system",
+  "language": "bn"
 }

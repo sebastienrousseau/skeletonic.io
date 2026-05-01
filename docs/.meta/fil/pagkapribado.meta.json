@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
+  "language": "fil",
+  "date": "2026-04-08",
+  "title": "Pagkapribado",
   "permalink": "https://skeletonic.io/fil/pagkapribado/",
   "layout": "page",
-  "description": "Anong data ang kinokolekta ng skeletonic.io, bakit, at paano mag-opt out.",
+  "keywords": "pagkapribado, gdpr, cookie, walang tracking",
   "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "language": "fil",
-  "title": "Pagkapribado",
-  "keywords": "pagkapribado, gdpr, cookie, walang tracking"
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "description": "Anong data ang kinokolekta ng skeletonic.io, bakit, at paano mag-opt out."
 }

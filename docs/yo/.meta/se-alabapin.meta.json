@@ -1,12 +1,12 @@
 {
-  "language": "yo",
-  "description": "Bawo ni o ṣe le fi awọn ọran silẹ, dabaa awọn iyipada, ati fi awọn ibeere fa silẹ si Skeletonic Stylus.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "ṣe alabapin, orisun-ṣiṣi, ibeere fa, ọran, awọn apejọ",
   "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/yo/se-alabapin/",
   "title": "Ṣe Alabapin",
-  "layout": "page",
+  "description": "Bawo ni o ṣe le fi awọn ọran silẹ, dabaa awọn iyipada, ati fi awọn ibeere fa silẹ si Skeletonic Stylus.",
+  "permalink": "https://skeletonic.io/yo/se-alabapin/",
   "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau"
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "yo",
+  "layout": "page",
+  "keywords": "ṣe alabapin, orisun-ṣiṣi, ibeere fa, ọran, awọn apejọ"
 }

@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "layout": "contact",
-  "keywords": "联系, 支持, 反馈, skeletonic",
   "language": "zh-hans",
   "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "title": "联系我们",
+  "layout": "contact",
+  "permalink": "https://skeletonic.io/zh-hans/lian-xi/",
+  "keywords": "联系, 支持, 反馈, skeletonic",
   "description": "就 Skeletonic Stylus 的 Bug 报告、功能建议、合作或一般反馈与我们取得联系。",
   "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/zh-hans/lian-xi/"
+  "title": "联系我们",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau"
 }

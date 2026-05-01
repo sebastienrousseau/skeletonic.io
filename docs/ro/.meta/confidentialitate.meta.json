@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "keywords": "confidențialitate, gdpr, cookies, fără urmărire",
-  "permalink": "https://skeletonic.io/ro/confidentialitate/",
-  "language": "ro",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Confidențialitate",
-  "description": "Ce date colectează skeletonic.io, de ce și cum poți renunța.",
   "layout": "page",
+  "keywords": "confidențialitate, gdpr, cookies, fără urmărire",
+  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "date": "2026-04-08"
+  "permalink": "https://skeletonic.io/ro/confidentialitate/",
+  "date": "2026-04-08",
+  "title": "Confidențialitate",
+  "language": "ro",
+  "author": "Sebastien Rousseau",
+  "description": "Ce date colectează skeletonic.io, de ce și cum poți renunța."
 }

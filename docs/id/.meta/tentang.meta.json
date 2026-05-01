@@ -1,12 +1,12 @@
 {
   "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "permalink": "https://skeletonic.io/id/tentang/",
-  "keywords": "skeletonic, tentang, stylus, css framework, filosofi",
   "language": "id",
-  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/id/tentang/",
   "description": "Skeletonic Stylus adalah pustaka CSS Stylus sumber terbuka untuk penataan UI yang aksesibel, cepat, dan modular.",
-  "name": "Skeletonic Stylus",
-  "title": "Tentang Skeletonic Stylus"
+  "title": "Tentang Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "skeletonic, tentang, stylus, css framework, filosofi",
+  "name": "Skeletonic Stylus"
 }

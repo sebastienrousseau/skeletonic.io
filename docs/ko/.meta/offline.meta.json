@@ -1,12 +1,12 @@
 {
-  "language": "ko",
-  "layout": "page",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "오프라인, 서비스 워커, pwa",
-  "name": "Skeletonic Stylus",
-  "title": "오프라인 상태입니다",
   "permalink": "https://skeletonic.io/ko/offline/",
+  "layout": "page",
+  "language": "ko",
   "author": "Sebastien Rousseau",
-  "description": "skeletonic.io가 네트워크에 접근할 수 없습니다. 요청하신 페이지가 아직 캐시되지 않았습니다."
+  "description": "skeletonic.io가 네트워크에 접근할 수 없습니다. 요청하신 페이지가 아직 캐시되지 않았습니다.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "title": "오프라인 상태입니다"
 }

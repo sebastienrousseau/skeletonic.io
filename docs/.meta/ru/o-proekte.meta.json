@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "author": "Sebastien Rousseau",
-  "keywords": "skeletonic, о проекте, stylus, css фреймворк, философия",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ru/o-proekte/",
+  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ru",
   "description": "Skeletonic Stylus — это CSS-библиотека с открытым исходным кодом на Stylus, созданная для простой, быстрой и модульной стилизации интерфейсов с поддержкой доступности.",
+  "language": "ru",
+  "keywords": "skeletonic, о проекте, stylus, css фреймворк, философия",
+  "permalink": "https://skeletonic.io/ru/o-proekte/",
   "title": "О проекте Skeletonic Stylus",
+  "layout": "page",
   "date": "2026-04-08"
 }

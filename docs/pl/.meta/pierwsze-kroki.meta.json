@@ -1,12 +1,12 @@
 {
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
   "title": "Pierwsze kroki z Skeletonic Stylus",
-  "language": "pl",
   "keywords": "instalacja skeletonic, konfiguracja stylus, css cdn, pierwsze kroki",
-  "description": "Zainstaluj Skeletonic Stylus z npm lub CDN, zaimportuj do swojego buildu Stylus i nadpisz zmienne w kilka sekund.",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/pl/pierwsze-kroki/",
   "layout": "page",
-  "permalink": "https://skeletonic.io/pl/pierwsze-kroki/"
+  "language": "pl",
+  "description": "Zainstaluj Skeletonic Stylus z npm lub CDN, zaimportuj do swojego buildu Stylus i nadpisz zmienne w kilka sekund.",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

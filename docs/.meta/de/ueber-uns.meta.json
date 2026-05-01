@@ -1,12 +1,12 @@
 {
-  "language": "de",
-  "date": "2026-04-08",
-  "keywords": "skeletonic, über uns, stylus, css framework, philosophie",
-  "title": "Über Skeletonic Stylus",
-  "layout": "page",
   "description": "Skeletonic Stylus ist eine Open-Source-Stylus-CSS-Bibliothek für barrierefreies, schnelles und modulares UI-Styling.",
   "theme_color": "hsl(210, 100%, 42%)",
+  "language": "de",
+  "title": "Über Skeletonic Stylus",
+  "date": "2026-04-08",
+  "keywords": "skeletonic, über uns, stylus, css framework, philosophie",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/de/ueber-uns/"
+  "layout": "page",
+  "permalink": "https://skeletonic.io/de/ueber-uns/",
+  "name": "Skeletonic Stylus"
 }

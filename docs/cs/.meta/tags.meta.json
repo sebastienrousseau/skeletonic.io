@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "title": "Stitky — Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/cs/tags/",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
   "keywords": "skeletonic, stitky, rejstrik, taxonomie",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
+  "title": "Stitky — Skeletonic Stylus",
+  "description": "Prochazejte dokumentaci Skeletonic Stylus podle stitku.",
+  "date": "2026-04-08",
   "language": "cs",
-  "description": "Prochazejte dokumentaci Skeletonic Stylus podle stitku."
+  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/cs/tags/",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

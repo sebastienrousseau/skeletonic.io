@@ -1,11 +1,11 @@
 {
-  "description": "Skeletonic Stylus의 릴리스 노트, v2.0.0 전체 내용 포함.",
+  "language": "ko",
+  "author": "Sebastien Rousseau",
   "title": "변경 이력",
   "keywords": "skeletonic 변경 이력, 릴리스 노트, v2.0.0, 시맨틱 버전",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/ko/byeongyeong-ilji/",
-  "language": "ko",
-  "name": "Skeletonic Stylus"
+  "description": "Skeletonic Stylus의 릴리스 노트, v2.0.0 전체 내용 포함.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "layout": "page"
 }

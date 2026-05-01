@@ -1,11 +1,11 @@
 {
-  "language": "ro",
-  "keywords": "404, negăsit",
-  "layout": "page",
+  "permalink": "https://skeletonic.io/ro/404/",
   "title": "Pagina nu a fost găsită",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Pagina solicitată nu există pe skeletonic.io.",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/ro/404/"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "description": "Pagina solicitată nu există pe skeletonic.io.",
+  "keywords": "404, negăsit",
+  "language": "ro"
 }

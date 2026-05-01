@@ -1,12 +1,12 @@
 {
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/ru/usloviya/",
+  "description": "Условия, регулирующие использование skeletonic.io и библиотеки Skeletonic Stylus.",
+  "author": "Sebastien Rousseau",
   "language": "ru",
   "title": "Условия использования",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Условия, регулирующие использование skeletonic.io и библиотеки Skeletonic Stylus.",
-  "keywords": "условия использования, лицензия, mit, apache 2",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ru/usloviya/",
-  "layout": "page"
+  "date": "2026-04-08",
+  "layout": "page",
+  "keywords": "условия использования, лицензия, mit, apache 2"
 }

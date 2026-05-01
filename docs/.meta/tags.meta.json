@@ -1,11 +1,11 @@
 {
-  "description": "Browse Skeletonic Stylus documentation by tag.",
-  "title": "Tags",
-  "date": "2026-04-08",
-  "keywords": "skeletonic, tags, index, taxonomy",
-  "permalink": "https://skeletonic.io/tags/",
   "layout": "page",
-  "name": "Skeletonic Stylus",
+  "keywords": "skeletonic, tags, index, taxonomy",
+  "description": "Browse Skeletonic Stylus documentation by tag.",
   "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau"
+  "permalink": "https://skeletonic.io/tags/",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "title": "Tags",
+  "name": "Skeletonic Stylus"
 }

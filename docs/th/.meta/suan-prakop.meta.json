@@ -1,12 +1,12 @@
 {
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "ส่วนประกอบ",
   "permalink": "https://skeletonic.io/th/suan-prakop/",
   "language": "th",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "title": "ส่วนประกอบ",
+  "layout": "page",
   "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
   "keywords": "ส่วนประกอบ skeletonic, ปุ่ม, การ์ด, ฟอร์ม, แจ้งเตือน, ป้ายกำกับ, ส่วนหัว, แฮมเบอร์เกอร์เมนู css",
-  "description": "ตัวอย่าง HTML แบบสดของทุกส่วนประกอบ Skeletonic Stylus จัดกลุ่ม เชื่อมลิงก์แท็ก และเรนเดอร์ด้วยสไตล์ชีตเดียวกันที่กำลังสาธิต",
-  "layout": "page"
+  "description": "ตัวอย่าง HTML แบบสดของทุกส่วนประกอบ Skeletonic Stylus จัดกลุ่ม เชื่อมลิงก์แท็ก และเรนเดอร์ด้วยสไตล์ชีตเดียวกันที่กำลังสาธิต"
 }

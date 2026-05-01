@@ -29,6 +29,37 @@
       *{font-weight:400;box-sizing:border-box;margin:0}
 
       /* ============================================================
+       * View Transitions API — opt-in for same-origin navigations.
+       * Pairs with <meta name="view-transition" content="same-origin">.
+       * Pages cross-fade by default; persistent header / hero /
+       * main / footer get explicit names so they morph instead of
+       * fading — "Apple-quality" SPA feel without a JS framework.
+       * ============================================================ */
+      @media (prefers-reduced-motion: no-preference) {
+        @view-transition { navigation: auto; }
+      }
+      .site-nav    { view-transition-name: site-nav; }
+      .site-hero   { view-transition-name: site-hero; }
+      .site-main   { view-transition-name: site-main; }
+      .site-footer { view-transition-name: site-footer; }
+      ::view-transition-old(root),
+      ::view-transition-new(root) {
+        animation-duration: 320ms;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      /* Smooth the colour-scheme handover when the OS toggles
+         dark/light so the surface fades instead of flashing.
+         Skipped under reduced-motion. */
+      @media (prefers-reduced-motion: no-preference) {
+        html, body, .site-nav, .site-footer, .site-main {
+          transition: background-color 240ms ease-out,
+                      color 240ms ease-out,
+                      border-color 240ms ease-out;
+        }
+      }
+
+      /* ============================================================
        * Skeletonic-stylus neutralizer
        * ------------------------------------------------------------
        * Skeletonic v1.1.7 styles bare elements (button, input,

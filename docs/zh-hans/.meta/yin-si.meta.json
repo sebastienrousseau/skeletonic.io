@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
-  "title": "隐私政策",
-  "keywords": "隐私, gdpr, cookies, 无追踪",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/zh-hans/yin-si/",
   "layout": "page",
+  "permalink": "https://skeletonic.io/zh-hans/yin-si/",
+  "date": "2026-04-08",
   "description": "skeletonic.io 收集哪些数据、原因以及如何退出。",
-  "language": "zh-hans"
+  "title": "隐私政策",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "隐私, gdpr, cookies, 无追踪",
+  "language": "zh-hans",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau"
 }

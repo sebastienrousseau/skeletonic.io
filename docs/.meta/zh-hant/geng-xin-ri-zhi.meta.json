@@ -1,11 +1,11 @@
 {
   "language": "zh-hant",
-  "permalink": "https://skeletonic.io/zh-hant/geng-xin-ri-zhi/",
-  "layout": "page",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "title": "更新日誌",
+  "description": "Skeletonic Stylus 發行說明，包含 v2.0.0 完整內容。",
   "keywords": "skeletonic 更新日誌, 發行說明, v2.0.0, 語意化版本",
+  "title": "更新日誌",
   "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Skeletonic Stylus 發行說明，包含 v2.0.0 完整內容。"
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/zh-hant/geng-xin-ri-zhi/"
 }

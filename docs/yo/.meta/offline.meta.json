@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "permalink": "https://skeletonic.io/yo/offline/",
-  "language": "yo",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "keywords": "alaisiasopọ, service worker, pwa",
-  "description": "skeletonic.io ko le de nẹtiwọọki. Oju-iwe ti o beere ko ti wa ni kaṣi sibẹsibẹ.",
-  "date": "2026-04-08",
   "title": "O wa ni alaisiasopọ",
-  "author": "Sebastien Rousseau"
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/yo/offline/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "description": "skeletonic.io ko le de nẹtiwọọki. Oju-iwe ti o beere ko ti wa ni kaṣi sibẹsibẹ.",
+  "keywords": "alaisiasopọ, service worker, pwa",
+  "language": "yo",
+  "date": "2026-04-08"
 }

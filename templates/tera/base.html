@@ -2390,10 +2390,16 @@
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     {% if page.author %}<meta name="author" content="{{ page.author }}">{% endif %}
     <meta name="generator" content="Shokunin (ssg) v0.0.34">
-    <meta name="theme-color" content="{{ page.theme_color | default(value='hsl(210, 100%, 42%)') }}">
+    <meta name="theme-color" content="{{ page.theme_color | default(value='hsl(210, 100%, 42%)') }}" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <meta name="color-scheme" content="light dark">
     <meta name="format-detection" content="telephone=no">
     <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- View Transitions API opt-in: same-origin navigations get a
+         native cross-document transition. The matching CSS rule
+         (@view-transition { navigation: auto }) lives in chrome.css
+         and is automatically gated by prefers-reduced-motion. -->
+    <meta name="view-transition" content="same-origin">
     <!-- frame-ancestors is intentionally absent: it's ignored when
          delivered via <meta>, must come from a real HTTP header. The
          GitHub Pages deployment can't set custom headers, so we lean
@@ -2410,6 +2416,8 @@
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
 
     <link rel="canonical" href="{{ site.base_url }}{{ lang_prefix }}{{ page_path }}">
+    <link rel="preload" href="/css/skeletonic.min.css" as="style">
+    <link rel="preload" href="/css/chrome.css" as="style">
     <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
     <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
     <link rel="manifest" href="/manifest.webmanifest">
@@ -2457,7 +2465,16 @@
     {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% endif %}
     <meta property="og:url" content="{{ site.base_url }}{{ lang_prefix }}{{ page_path }}">
     <meta property="og:image" content="{{ site.base_url }}/images/banner.svg">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Skeletonic Stylus — accessible, modular CSS library">
     <meta property="og:locale" content="{{ lang | replace(from='-', to='_') }}">
+    {%- for alt_lang in ["ar", "bn", "cs", "de", "es", "fil", "fr", "ha", "he", "hi", "id", "it", "ja", "ko", "nl", "pl", "pt-br", "ro", "ru", "sv", "th", "tr", "uk", "vi", "yo", "zh-hans", "zh-hant", "en"] %}
+    {%- if alt_lang != lang %}
+    <meta property="og:locale:alternate" content="{{ alt_lang | replace(from='-', to='_') }}">
+    {%- endif %}
+    {%- endfor %}
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -2509,6 +2526,48 @@
     }
     </script>
 
+    {% if page_path == "/" %}
+    <!-- WebSite JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Skeletonic Stylus",
+      "url": "https://skeletonic.io"
+    }
+    </script>
+    {% endif %}
+
+    {% if page.layout | default(value="") == "page" %}
+    <!-- Article JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ page.title | default(value='Skeletonic') }}",
+      "author": {
+        "@type": "Person",
+        "name": "Sebastien Rousseau"
+      }
+    }
+    </script>
+    {% endif %}
+
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Skeletonic CSS",
+      "url": "https://skeletonic.io",
+      "logo": "https://skeletonic.io/images/logo.svg",
+      "sameAs": [
+        "https://github.com/sebastienrousseau/skeletonic-stylus",
+        "https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus"
+      ]
+    }
+    </script>
+
     {% block extra_head %}{% endblock %}
   </head>
   <body class="{% block body_class %}page-default{% endblock %}" itemscope itemtype="https://schema.org/WebPage">
@@ -2544,16 +2603,16 @@
             <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
               <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
             </svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light" style="display:none">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light">
               <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
             </svg>
             <span class="theme-label">{{ t_nav_theme_dark }}</span>
           </button>
-          <div style="position:relative;display:inline-block" class="lang-switcher">
-            <button type="button" aria-label="{{ lang | upper }}, {{ t_nav_lang_aria }}" aria-expanded="false" style="color:var(--c-nav-muted);font-size:12px;font-weight:400;padding:.375rem .625rem;border:1px solid var(--c-border);border-radius:6rem;background:transparent;cursor:pointer;display:inline-flex;align-items:center;gap:.25rem;outline:none">
-              <span style="font-size:14px">🌐</span> {{ lang | upper }}
+          <div class="lang-switcher">
+            <button type="button" aria-label="{{ lang | upper }}, {{ t_nav_lang_aria }}" aria-expanded="false">
+              <span>🌐</span> {{ lang | upper }}
             </button>
-            <div class="lang-menu" style="display:none;max-height:80vh;overflow-y:auto">
+            <div class="lang-menu">
               <div class="lang-menu-grid">
               <a{% if lang == "en" %} class="active"{% endif %} href="{{ en_page_path }}">🇬🇧 English</a>
               <a{% if lang == "fr" %} class="active"{% endif %} href="/fr{{ fr_page_path }}">🇫🇷 Français</a>

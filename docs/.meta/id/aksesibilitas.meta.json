@@ -1,12 +1,12 @@
 {
-  "keywords": "wcag 2.2, aksesibilitas, focus visible, skip link, prefers reduced motion, kontras",
-  "name": "Skeletonic Stylus",
-  "language": "id",
-  "permalink": "https://skeletonic.io/id/aksesibilitas/",
-  "theme_color": "hsl(210, 100%, 42%)",
   "description": "Apa yang disertakan v2.0.0 secara bawaan untuk kesesuaian WCAG 2.2 — cincin fokus, kontras, skip link, gerakan, dan mode gelap.",
-  "date": "2026-04-08",
-  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "wcag 2.2, aksesibilitas, focus visible, skip link, prefers reduced motion, kontras",
+  "language": "id",
+  "name": "Skeletonic Stylus",
   "title": "Aksesibilitas — WCAG 2.2 di v2.0.0",
-  "author": "Sebastien Rousseau"
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/id/aksesibilitas/",
+  "author": "Sebastien Rousseau",
+  "layout": "page"
 }
