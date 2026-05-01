@@ -71,7 +71,7 @@ has at least one matching step.
 
 If you need to inspect the exact ladder, it's generated from a single
 `for` loop in
-[`src/stylus/layout/media-queries.styl`](https://github.com/sebastienrousseau/skeletonic-stylus/blob/feat/v2.0.0/src/stylus/layout/media-queries.styl).
+[`src/stylus/layout/media-queries.styl`](https://github.com/sebastienrousseau/skeletonic-stylus/blob/feat/v1.1.7/src/stylus/layout/media-queries.styl).
 
 [Container queries primer (MDN) ↗](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries) ·
 [Cascade layers →](/cascade-layers/) ·

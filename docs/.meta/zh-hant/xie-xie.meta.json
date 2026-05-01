@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "description": "您的訊息已成功發送。",
-  "permalink": "https://skeletonic.io/zh-hant/xie-xie/",
-  "title": "感謝！",
   "language": "zh-hant",
-  "keywords": "感謝",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "您的訊息已成功發送。",
   "layout": "thanks",
-  "date": "2026-04-08"
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "keywords": "感謝",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/zh-hant/xie-xie/",
+  "title": "感謝！"
 }

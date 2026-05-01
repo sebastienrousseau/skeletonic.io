@@ -1,12 +1,12 @@
 {
-  "description": "管轄您使用 skeletonic.io 和 Skeletonic Stylus 函式庫的條款。",
-  "permalink": "https://skeletonic.io/zh-hant/tiao-kuan/",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
   "layout": "page",
-  "title": "使用條款",
+  "name": "Skeletonic Stylus",
   "date": "2026-04-08",
   "keywords": "使用條款, 授權, mit, apache 2",
-  "language": "zh-hant"
+  "language": "zh-hant",
+  "title": "使用條款",
+  "permalink": "https://skeletonic.io/zh-hant/tiao-kuan/",
+  "description": "管轄您使用 skeletonic.io 和 Skeletonic Stylus 函式庫的條款。",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau"
 }

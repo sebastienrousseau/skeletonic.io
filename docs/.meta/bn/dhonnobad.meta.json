@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
   "description": "আপনার বার্তা সফলভাবে পাঠানো হয়েছে।",
-  "title": "ধন্যবাদ!",
+  "language": "bn",
+  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "ধন্যবাদ",
   "permalink": "https://skeletonic.io/bn/dhonnobad/",
-  "language": "bn",
-  "name": "Skeletonic Stylus",
+  "title": "ধন্যবাদ!",
   "date": "2026-04-08",
-  "layout": "thanks"
+  "layout": "thanks",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau"
 }

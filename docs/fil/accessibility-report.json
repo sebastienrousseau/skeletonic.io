@@ -1,5 +1,176 @@
 {
   "pages_scanned": 17,
-  "total_issues": 0,
-  "pages": []
+  "total_issues": 17,
+  "pages": [
+    {
+      "path": "404/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "aksesibilidad/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "mag-ambag/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "makipag-ugnayan/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "mga-animasyon/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "mga-bahagi/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "mga-paleta/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "mga-tuntunin/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "offline/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "pagkapribado/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "pagsisimula/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "salamat/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "seguridad/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "tags/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "talaan-ng-pagbabago/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "tungkol/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    }
+  ]
 }

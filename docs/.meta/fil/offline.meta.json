@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
   "layout": "page",
-  "description": "Hindi maabot ng skeletonic.io ang network. Ang pahina na hiniling mo ay hindi pa naka-cache.",
-  "keywords": "offline, service worker, pwa",
-  "name": "Skeletonic Stylus",
-  "language": "fil",
-  "title": "Ikaw ay offline",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/fil/offline/",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Hindi maabot ng skeletonic.io ang network. Ang pahina na hiniling mo ay hindi pa naka-cache.",
+  "author": "Sebastien Rousseau",
+  "title": "Ikaw ay offline",
+  "keywords": "offline, service worker, pwa",
+  "language": "fil",
+  "name": "Skeletonic Stylus"
 }

@@ -1,11 +1,11 @@
 {
   "language": "tr",
-  "title": "Degisiklik Gunlugu",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/tr/degisiklik-gunlugu/",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "keywords": "skeletonic degisiklik gunlugu, surum notlari, v2.0.0, semver",
   "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Skeletonic Stylus surum notlari, v2.0.0 tamamiyla dahil.",
-  "keywords": "skeletonic degisiklik gunlugu, surum notlari, v2.0.0, semver"
+  "title": "Degisiklik Gunlugu",
+  "description": "Skeletonic Stylus surum notlari, v2.0.0 tamamiyla dahil."
 }

@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "skeletonic.io aga ulasamadi. Istediginiz sayfa henuz onbellege alinmamis.",
-  "title": "Cevrimdisiniz",
-  "keywords": "cevrimdisi, service worker, pwa",
   "author": "Sebastien Rousseau",
+  "layout": "page",
+  "title": "Cevrimdisiniz",
+  "date": "2026-04-08",
+  "language": "tr",
   "permalink": "https://skeletonic.io/tr/offline/",
   "name": "Skeletonic Stylus",
-  "language": "tr",
-  "layout": "page"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "cevrimdisi, service worker, pwa",
+  "description": "skeletonic.io aga ulasamadi. Istediginiz sayfa henuz onbellege alinmamis."
 }

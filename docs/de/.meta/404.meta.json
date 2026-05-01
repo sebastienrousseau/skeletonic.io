@@ -1,11 +1,11 @@
 {
-  "layout": "page",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/de/404/",
-  "keywords": "404, nicht gefunden",
-  "title": "Seite nicht gefunden",
-  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Seite nicht gefunden",
+  "keywords": "404, nicht gefunden",
+  "language": "de",
+  "permalink": "https://skeletonic.io/de/404/",
+  "author": "Sebastien Rousseau",
   "description": "Die angeforderte Seite existiert auf skeletonic.io nicht.",
-  "language": "de"
+  "layout": "page"
 }

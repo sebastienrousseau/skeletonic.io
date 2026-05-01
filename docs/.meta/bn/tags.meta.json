@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "ট্যাগ",
-  "permalink": "https://skeletonic.io/bn/tags/",
-  "layout": "page",
+  "description": "ট্যাগ অনুসারে Skeletonic Stylus ডকুমেন্টেশন ব্রাউজ করুন।",
+  "keywords": "skeletonic, ট্যাগ, ইনডেক্স, ট্যাক্সোনমি",
   "name": "Skeletonic Stylus",
   "language": "bn",
-  "keywords": "skeletonic, ট্যাগ, ইনডেক্স, ট্যাক্সোনমি",
+  "date": "2026-04-08",
+  "layout": "page",
   "author": "Sebastien Rousseau",
-  "description": "ট্যাগ অনুসারে Skeletonic Stylus ডকুমেন্টেশন ব্রাউজ করুন।",
-  "date": "2026-04-08"
+  "title": "ট্যাগ",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/bn/tags/"
 }

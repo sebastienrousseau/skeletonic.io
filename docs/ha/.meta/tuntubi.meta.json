@@ -1,12 +1,12 @@
 {
-  "language": "ha",
-  "keywords": "tuntubi, tallafi, ra'ayoyi, skeletonic",
-  "name": "Skeletonic Stylus",
-  "title": "Tuntubi",
-  "description": "Tuntuɓe mu game da Skeletonic Stylus — rahotannin kurakurai, ra'ayoyin fasaloli, haɗin gwiwa, ko ra'ayoyin gaba ɗaya.",
   "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
+  "keywords": "tuntubi, tallafi, ra'ayoyi, skeletonic",
   "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "layout": "contact",
+  "description": "Tuntuɓe mu game da Skeletonic Stylus — rahotannin kurakurai, ra'ayoyin fasaloli, haɗin gwiwa, ko ra'ayoyin gaba ɗaya.",
+  "title": "Tuntubi",
   "permalink": "https://skeletonic.io/ha/tuntubi/",
-  "layout": "contact"
+  "language": "ha",
+  "name": "Skeletonic Stylus"
 }

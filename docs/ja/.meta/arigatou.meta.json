@@ -1,12 +1,12 @@
 {
-  "title": "ありがとうございます！",
+  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
-  "layout": "thanks",
-  "description": "メッセージが正常に送信されました。",
   "permalink": "https://skeletonic.io/ja/arigatou/",
-  "name": "Skeletonic Stylus",
-  "keywords": "ありがとう",
-  "author": "Sebastien Rousseau",
+  "description": "メッセージが正常に送信されました。",
+  "title": "ありがとうございます！",
   "language": "ja",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "keywords": "ありがとう",
+  "layout": "thanks"
 }

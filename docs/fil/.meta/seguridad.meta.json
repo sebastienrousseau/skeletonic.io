@@ -1,12 +1,12 @@
 {
-  "title": "Seguridad &amp; supply chain",
-  "date": "2026-04-08",
-  "language": "fil",
-  "description": "Paano sinisiguro ng Skeletonic Stylus v2.0.0 ang build pipeline nito, nilalagdaan ang mga release, at nagpapadala ng SBOM.",
-  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "keywords": "css security, sbom, cyclonedx, npm provenance, openssf scorecard, supply chain",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/fil/seguridad/",
-  "layout": "page"
+  "language": "fil",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "css security, sbom, cyclonedx, npm provenance, openssf scorecard, supply chain",
+  "description": "Paano sinisiguro ng Skeletonic Stylus v2.0.0 ang build pipeline nito, nilalagdaan ang mga release, at nagpapadala ng SBOM.",
+  "layout": "page",
+  "date": "2026-04-08",
+  "title": "Seguridad &amp; supply chain",
+  "permalink": "https://skeletonic.io/fil/seguridad/"
 }

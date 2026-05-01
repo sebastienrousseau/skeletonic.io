@@ -1,11 +1,11 @@
 {
   "permalink": "https://skeletonic.io/uk/404/",
-  "description": "Запитана сторінка не існує на skeletonic.io.",
-  "language": "uk",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "keywords": "404, не знайдено",
   "title": "Сторінку не знайдено",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "404, не знайдено",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "language": "uk",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus"
+  "description": "Запитана сторінка не існує на skeletonic.io."
 }

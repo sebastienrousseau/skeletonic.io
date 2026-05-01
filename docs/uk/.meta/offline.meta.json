@@ -1,12 +1,12 @@
 {
-  "description": "skeletonic.io не може з'єднатися з мережею. Запитана сторінка ще не була закешована.",
-  "date": "2026-04-08",
-  "keywords": "офлайн, service worker, pwa",
-  "name": "Skeletonic Stylus",
-  "layout": "page",
+  "author": "Sebastien Rousseau",
   "title": "Ви офлайн",
   "language": "uk",
   "permalink": "https://skeletonic.io/uk/offline/",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "keywords": "офлайн, service worker, pwa",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "description": "skeletonic.io не може з'єднатися з мережею. Запитана сторінка ще не була закешована.",
+  "name": "Skeletonic Stylus"
 }

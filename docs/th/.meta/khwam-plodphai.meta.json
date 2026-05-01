@@ -1,12 +1,12 @@
 {
-  "title": "ความปลอดภัยและ supply chain",
-  "permalink": "https://skeletonic.io/th/khwam-plodphai/",
-  "layout": "page",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/th/khwam-plodphai/",
+  "date": "2026-04-08",
+  "language": "th",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
   "description": "วิธีที่ Skeletonic Stylus v2.0.0 รักษาความปลอดภัย build pipeline ลงนามรีลีส และจัดส่ง SBOM",
   "keywords": "ความปลอดภัย css, sbom, cyclonedx, npm provenance, openssf scorecard, supply chain",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "th"
+  "title": "ความปลอดภัยและ supply chain"
 }

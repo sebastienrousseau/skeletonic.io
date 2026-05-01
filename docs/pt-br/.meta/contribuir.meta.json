@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "language": "pt-br",
   "title": "Contribuir",
   "permalink": "https://skeletonic.io/pt-br/contribuir/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
+  "language": "pt-br",
   "keywords": "contribuir, codigo aberto, pull request, issue, convencoes",
-  "date": "2026-04-08",
-  "description": "Como registrar issues, propor mudancas e enviar pull requests para o Skeletonic Stylus."
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "description": "Como registrar issues, propor mudancas e enviar pull requests para o Skeletonic Stylus.",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08"
 }

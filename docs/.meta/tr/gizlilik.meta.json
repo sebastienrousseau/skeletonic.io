@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "date": "2026-04-08",
-  "language": "tr",
   "author": "Sebastien Rousseau",
+  "keywords": "gizlilik, gdpr, cerezler, izleme yok",
+  "title": "Gizlilik",
   "description": "skeletonic.io'nun hangi verileri topladigi, neden topladigi ve nasil vazgecebileceginiz.",
   "permalink": "https://skeletonic.io/tr/gizlilik/",
-  "keywords": "gizlilik, gdpr, cerezler, izleme yok",
+  "language": "tr",
   "name": "Skeletonic Stylus",
-  "title": "Gizlilik"
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

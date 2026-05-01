@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/ja/hajimeni/",
-  "name": "Skeletonic Stylus",
   "description": "Skeletonic Stylus を npm または CDN からインストールし、Stylus ビルドにインポートして、数秒で変数をオーバーライドする方法を解説します。",
-  "language": "ja",
-  "theme_color": "hsl(210, 100%, 42%)",
   "author": "Sebastien Rousseau",
+  "language": "ja",
   "title": "Skeletonic Stylus をはじめる",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
   "keywords": "skeletonic インストール, stylus セットアップ, css cdn, はじめに",
+  "permalink": "https://skeletonic.io/ja/hajimeni/",
   "layout": "page",
-  "date": "2026-04-08"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

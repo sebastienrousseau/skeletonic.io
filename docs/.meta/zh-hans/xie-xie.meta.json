@@ -1,12 +1,12 @@
 {
-  "description": "你的消息已成功发送。",
-  "layout": "thanks",
-  "name": "Skeletonic Stylus",
+  "keywords": "感谢",
   "date": "2026-04-08",
-  "title": "感谢！",
+  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/zh-hans/xie-xie/",
-  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
   "language": "zh-hans",
-  "keywords": "感谢"
+  "author": "Sebastien Rousseau",
+  "layout": "thanks",
+  "title": "感谢！",
+  "description": "你的消息已成功发送。"
 }

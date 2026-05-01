@@ -1,12 +1,12 @@
 {
+  "title": "Kullanim kosullari",
+  "layout": "page",
   "permalink": "https://skeletonic.io/tr/kosullar/",
   "name": "Skeletonic Stylus",
-  "language": "tr",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "date": "2026-04-08",
   "keywords": "kullanim kosullari, lisans, mit, apache 2",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "tr",
   "author": "Sebastien Rousseau",
-  "title": "Kullanim kosullari",
-  "description": "skeletonic.io ve Skeletonic Stylus kutuphanesini kullaniminizi duzenleyen kosullar."
+  "description": "skeletonic.io ve Skeletonic Stylus kutuphanesini kullaniminizi duzenleyen kosullar.",
+  "date": "2026-04-08"
 }

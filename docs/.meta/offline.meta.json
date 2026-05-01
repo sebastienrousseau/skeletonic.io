@@ -1,11 +1,11 @@
 {
-  "layout": "page",
-  "permalink": "https://skeletonic.io/offline/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "skeletonic.io could not reach the network. The page you requested has not been cached yet.",
-  "date": "2026-04-08",
-  "keywords": "offline, service worker, pwa",
-  "author": "Sebastien Rousseau",
   "title": "You're offline",
-  "name": "Skeletonic Stylus"
+  "permalink": "https://skeletonic.io/offline/",
+  "description": "skeletonic.io could not reach the network. The page you requested has not been cached yet.",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "keywords": "offline, service worker, pwa",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08"
 }

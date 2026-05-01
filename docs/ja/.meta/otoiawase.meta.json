@@ -1,12 +1,12 @@
 {
-  "description": "Skeletonic Stylus に関するお問い合わせ — バグ報告、機能のアイデア、パートナーシップ、一般的なフィードバック。",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/ja/otoiawase/",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "keywords": "お問い合わせ, サポート, フィードバック, skeletonic",
-  "title": "お問い合わせ",
-  "language": "ja",
   "name": "Skeletonic Stylus",
-  "layout": "contact"
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "keywords": "お問い合わせ, サポート, フィードバック, skeletonic",
+  "permalink": "https://skeletonic.io/ja/otoiawase/",
+  "title": "お問い合わせ",
+  "layout": "contact",
+  "description": "Skeletonic Stylus に関するお問い合わせ — バグ報告、機能のアイデア、パートナーシップ、一般的なフィードバック。",
+  "language": "ja"
 }

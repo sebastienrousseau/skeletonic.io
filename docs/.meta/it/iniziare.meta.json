@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "title": "Iniziare con Skeletonic Stylus",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/it/iniziare/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
   "language": "it",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
   "keywords": "installare skeletonic, configurazione stylus, css cdn, iniziare",
+  "title": "Iniziare con Skeletonic Stylus",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/it/iniziare/",
+  "date": "2026-04-08",
   "description": "Installa Skeletonic Stylus da npm o da un CDN, importalo nella tua build Stylus e sovrascrivi le variabili in pochi secondi.",
-  "layout": "page"
+  "author": "Sebastien Rousseau"
 }

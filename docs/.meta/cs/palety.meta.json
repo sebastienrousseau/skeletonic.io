@@ -1,12 +1,12 @@
 {
+  "language": "cs",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "keywords": "css paleta, material, tachyons, websafe, navrhove tokeny",
+  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
   "title": "Palety — Skeletonic Stylus",
-  "language": "cs",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/cs/palety/",
-  "name": "Skeletonic Stylus",
-  "keywords": "css paleta, material, tachyons, websafe, navrhove tokeny",
   "layout": "page",
+  "permalink": "https://skeletonic.io/cs/palety/",
   "description": "Barevne palety Material, Tachyons a web-safe dodavane ve Skeletonic Stylus v2.0.0."
 }

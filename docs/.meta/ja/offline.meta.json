@@ -1,12 +1,12 @@
 {
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "title": "オフラインです",
-  "language": "ja",
-  "permalink": "https://skeletonic.io/ja/offline/",
   "layout": "page",
-  "keywords": "オフライン, サービスワーカー, pwa",
-  "description": "skeletonic.io はネットワークに接続できませんでした。リクエストされたページはまだキャッシュされていません。",
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08"
+  "description": "skeletonic.io はネットワークに接続できませんでした。リクエストされたページはまだキャッシュされていません。",
+  "title": "オフラインです",
+  "date": "2026-04-08",
+  "keywords": "オフライン, サービスワーカー, pwa",
+  "language": "ja",
+  "permalink": "https://skeletonic.io/ja/offline/"
 }
