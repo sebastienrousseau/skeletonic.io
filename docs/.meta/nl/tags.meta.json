@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "description": "Blader door Skeletonic Stylus-documentatie op tag.",
-  "language": "nl",
-  "keywords": "skeletonic, tags, index, taxonomie",
-  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
-  "title": "Tags",
+  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/nl/tags/"
+  "description": "Blader door Skeletonic Stylus-documentatie op tag.",
+  "title": "Tags",
+  "permalink": "https://skeletonic.io/nl/tags/",
+  "keywords": "skeletonic, tags, index, taxonomie",
+  "layout": "page",
+  "language": "nl"
 }

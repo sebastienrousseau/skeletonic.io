@@ -1,11 +1,11 @@
 {
-  "description": "আপনি যে পেজটি অনুরোধ করেছেন সেটি skeletonic.io-তে বিদ্যমান নেই।",
-  "author": "Sebastien Rousseau",
-  "title": "পেজ পাওয়া যায়নি",
-  "language": "bn",
-  "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "keywords": "404, পাওয়া যায়নি, ত্রুটি",
+  "title": "পেজ পাওয়া যায়নি",
+  "description": "আপনি যে পেজটি অনুরোধ করেছেন সেটি skeletonic.io-তে বিদ্যমান নেই।",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/bn/404/"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "404, পাওয়া যায়নি, ত্রুটি",
+  "permalink": "https://skeletonic.io/bn/404/",
+  "author": "Sebastien Rousseau",
+  "language": "bn"
 }

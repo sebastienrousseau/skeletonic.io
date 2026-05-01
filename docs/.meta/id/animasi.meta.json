@@ -1,13 +1,13 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/id/animasi/",
-  "date": "2026-04-08",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
-  "title": "Animasi",
   "name": "Skeletonic Stylus",
-  "keywords": "animasi css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
-  "load_animations": true,
+  "title": "Animasi",
+  "language": "id",
+  "permalink": "https://skeletonic.io/id/animasi/",
+  "author": "Sebastien Rousseau",
   "description": "Modul animasi opsional yang disertakan dengan Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake, dan lainnya, semuanya di belakang prefers-reduced-motion.",
-  "language": "id"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "load_animations": true,
+  "keywords": "animasi css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
+  "date": "2026-04-08",
+  "layout": "page"
 }

@@ -1,12 +1,12 @@
 {
-  "language": "ja",
-  "layout": "page",
-  "title": "パレット",
-  "date": "2026-04-08",
-  "keywords": "css パレット, material, tachyons, ウェブセーフ, デザイントークン",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
   "description": "Skeletonic Stylus v1.1.7 に付属する Material、Tachyons、ウェブセーフのカラーパレット。",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "keywords": "css パレット, material, tachyons, ウェブセーフ, デザイントークン",
+  "language": "ja",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
   "permalink": "https://skeletonic.io/ja/paretto/",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "title": "パレット"
 }

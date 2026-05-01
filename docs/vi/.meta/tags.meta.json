@@ -1,12 +1,12 @@
 {
-  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "vi",
   "date": "2026-04-08",
-  "keywords": "skeletonic, the gan, muc luc, phan loai",
+  "author": "Sebastien Rousseau",
   "title": "The gan",
   "permalink": "https://skeletonic.io/vi/tags/",
-  "author": "Sebastien Rousseau",
+  "keywords": "skeletonic, the gan, muc luc, phan loai",
+  "description": "Duyet tai lieu Skeletonic Stylus theo the gan.",
+  "layout": "page",
   "name": "Skeletonic Stylus",
-  "description": "Duyet tai lieu Skeletonic Stylus theo the gan."
+  "language": "vi"
 }

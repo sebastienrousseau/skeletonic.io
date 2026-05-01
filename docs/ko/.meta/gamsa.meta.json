@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "메시지가 성공적으로 전송되었습니다.",
-  "language": "ko",
+  "title": "감사합니다!",
   "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/ko/gamsa/",
-  "layout": "thanks",
+  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "감사",
-  "title": "감사합니다!"
+  "layout": "thanks",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/ko/gamsa/",
+  "language": "ko",
+  "description": "메시지가 성공적으로 전송되었습니다."
 }

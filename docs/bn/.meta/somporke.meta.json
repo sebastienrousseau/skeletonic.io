@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "language": "bn",
-  "description": "Skeletonic Stylus একটি ওপেন-সোর্স Stylus CSS লাইব্রেরি, অ্যাক্সেসিবল, দ্রুত ও মডুলার UI স্টাইলিংয়ের জন্য।",
-  "permalink": "https://skeletonic.io/bn/somporke/",
-  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "skeletonic, সম্পর্কে, stylus, css framework, দর্শন",
-  "title": "Skeletonic Stylus সম্পর্কে",
+  "description": "Skeletonic Stylus একটি ওপেন-সোর্স Stylus CSS লাইব্রেরি, অ্যাক্সেসিবল, দ্রুত ও মডুলার UI স্টাইলিংয়ের জন্য।",
   "author": "Sebastien Rousseau",
+  "language": "bn",
+  "layout": "page",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "layout": "page"
+  "title": "Skeletonic Stylus সম্পর্কে",
+  "permalink": "https://skeletonic.io/bn/somporke/"
 }

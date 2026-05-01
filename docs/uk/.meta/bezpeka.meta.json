@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
+  "description": "Як Skeletonic Stylus v1.1.7 захищає свій конвеєр збірки, підписує релізи та постачає SBOM.",
   "language": "uk",
   "title": "Безпека та ланцюг постачання",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/uk/bezpeka/",
   "name": "Skeletonic Stylus",
   "keywords": "css безпека, sbom, cyclonedx, npm provenance, openssf scorecard, ланцюг постачання",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/uk/bezpeka/",
-  "layout": "page",
-  "description": "Як Skeletonic Stylus v1.1.7 захищає свій конвеєр збірки, підписує релізи та постачає SBOM.",
-  "date": "2026-04-08"
+  "layout": "page"
 }

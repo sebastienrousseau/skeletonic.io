@@ -1,11 +1,11 @@
 {
-  "name": "Skeletonic Stylus",
-  "title": "Hindi natagpuan ang pahina",
+  "language": "fil",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/fil/404/",
-  "description": "Ang pahina na hiniling mo ay hindi umiiral sa skeletonic.io.",
   "layout": "page",
-  "keywords": "404, hindi natagpuan",
+  "title": "Hindi natagpuan ang pahina",
+  "permalink": "https://skeletonic.io/fil/404/",
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "fil"
+  "description": "Ang pahina na hiniling mo ay hindi umiiral sa skeletonic.io.",
+  "keywords": "404, hindi natagpuan"
 }

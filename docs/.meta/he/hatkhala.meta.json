@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "description": "התקינו את Skeletonic Stylus מ-npm או CDN, ייבאו אותה לצינור Stylus שלכם, ודרסו משתנים תוך שניות.",
-  "language": "he",
-  "title": "התחלת עבודה עם Skeletonic Stylus",
+  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/he/hatkhala/",
-  "keywords": "התקנת skeletonic, הגדרת stylus, css cdn, התחלה",
+  "language": "he",
+  "author": "Sebastien Rousseau",
+  "description": "התקינו את Skeletonic Stylus מ-npm או CDN, ייבאו אותה לצינור Stylus שלכם, ודרסו משתנים תוך שניות.",
+  "title": "התחלת עבודה עם Skeletonic Stylus",
   "date": "2026-04-08",
-  "layout": "page",
-  "author": "Sebastien Rousseau"
+  "keywords": "התקנת skeletonic, הגדרת stylus, css cdn, התחלה",
+  "layout": "page"
 }

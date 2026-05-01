@@ -1,11 +1,11 @@
 {
-  "keywords": "404, ページが見つかりません",
-  "title": "ページが見つかりません",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/ja/404/",
+  "name": "Skeletonic Stylus",
   "layout": "page",
   "description": "リクエストされたページは skeletonic.io に存在しません。",
+  "language": "ja",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/ja/404/",
   "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "language": "ja"
+  "title": "ページが見つかりません",
+  "keywords": "404, ページが見つかりません"
 }

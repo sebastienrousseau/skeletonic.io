@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/ru/",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "css, stylus, css фреймворк, доступный css, wcag 2.2, легковесный css, каскадные слои, дизайн-система",
   "title": "Skeletonic Stylus — Доступный CSS, 8,3 КБ в gzip",
   "description": "Skeletonic Stylus — это легковесная модульная CSS-библиотека на Stylus. Соответствует WCAG 2.2, использует каскадные слои, 8,3 КБ в gzip — создана для современной веб-разработки.",
-  "language": "ru",
+  "author": "Sebastien Rousseau",
   "layout": "index",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "css, stylus, css фреймворк, доступный css, wcag 2.2, легковесный css, каскадные слои, дизайн-система",
+  "date": "2026-04-08",
+  "language": "ru",
+  "permalink": "https://skeletonic.io/ru/",
+  "name": "Skeletonic Stylus"
 }

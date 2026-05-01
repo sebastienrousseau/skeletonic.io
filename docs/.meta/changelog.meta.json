@@ -1,10 +1,10 @@
 {
-  "keywords": "skeletonic changelog, release notes, v1.1.7, semver",
+  "description": "Release notes for Skeletonic Stylus, with v1.1.7 in full.",
+  "author": "Sebastien Rousseau",
   "title": "Changelog",
   "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Release notes for Skeletonic Stylus, with v1.1.7 in full.",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/changelog/",
+  "keywords": "skeletonic changelog, release notes, v1.1.7, semver",
   "layout": "page",
-  "permalink": "https://skeletonic.io/changelog/"
+  "name": "Skeletonic Stylus"
 }

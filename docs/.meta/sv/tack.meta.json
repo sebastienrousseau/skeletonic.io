@@ -1,12 +1,12 @@
 {
   "title": "Tack!",
+  "permalink": "https://skeletonic.io/sv/tack/",
   "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Ditt meddelande har skickats.",
-  "date": "2026-04-08",
-  "keywords": "tack",
   "language": "sv",
-  "permalink": "https://skeletonic.io/sv/tack/",
-  "layout": "thanks"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "tack",
+  "layout": "thanks",
+  "description": "Ditt meddelande har skickats.",
+  "date": "2026-04-08"
 }

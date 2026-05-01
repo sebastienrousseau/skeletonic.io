@@ -1,11 +1,11 @@
 {
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "What v1.1.7 ships out of the box for WCAG 2.2 conformance — focus rings, contrast, skip links, motion, and dark mode.",
   "title": "Accessibility — WCAG 2.2 in v1.1.7",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/accessibility/",
-  "keywords": "wcag 2.2, accessibility, focus visible, skip link, prefers reduced motion, contrast",
   "layout": "page",
-  "date": "2026-04-08"
+  "author": "Sebastien Rousseau",
+  "keywords": "wcag 2.2, accessibility, focus visible, skip link, prefers reduced motion, contrast",
+  "description": "What v1.1.7 ships out of the box for WCAG 2.2 conformance — focus rings, contrast, skip links, motion, and dark mode."
 }

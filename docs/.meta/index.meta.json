@@ -1,11 +1,11 @@
 {
-  "permalink": "https://skeletonic.io/",
+  "layout": "index",
+  "keywords": "css, stylus, css framework, accessible css, wcag 2.2, rtl, logical properties, cascade layers, design system, no javascript, htmx",
   "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/",
   "description": "Skeletonic Stylus is a class-based, JS-free, RTL-ready Stylus CSS library — WCAG 2.2 AA, cascade-layered, 8.3 KB gzipped / 6.9 KB brotli — for the post-bundler hypermedia web.",
   "date": "2026-04-30",
-  "layout": "index",
-  "author": "Sebastien Rousseau",
   "title": "Skeletonic Stylus — Accessible, RTL-ready CSS, 8.3 KB gzip",
-  "keywords": "css, stylus, css framework, accessible css, wcag 2.2, rtl, logical properties, cascade layers, design system, no javascript, htmx",
   "theme_color": "hsl(210, 100%, 42%)"
 }

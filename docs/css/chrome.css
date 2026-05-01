@@ -320,7 +320,11 @@
          layered defaults could leave bold text near-invisible on dark
          backgrounds (e.g. inside table cells). */
       strong,b{font-weight:600;color:var(--c-heading)}
-      code{
+      /* Inline <code> with no status class. We exclude any element
+         that already carries a Skeletonic status modifier so the
+         coloured-stripe variants (`code.primary`, `code.success`, etc.)
+         render with their own background / inline-start accent. */
+      code:not(.primary):not(.secondary):not(.tertiary):not(.success):not(.info):not(.warning):not(.error){
         background:var(--c-surface);
         color:var(--c-code);
         border:0;
@@ -335,6 +339,16 @@
         display:inline;
         overflow-wrap:break-word;
         word-break:break-word;
+      }
+      /* Status-coloured block code (Skeletonic <code class="primary"> et al.)
+         keeps its tinted background and accent stripe but inherits the
+         site's monospace font + readable size + sensible margin. */
+      code.primary,code.secondary,code.tertiary,code.success,code.info,code.warning,code.error{
+        font-family:"SF Mono",SFMono-Regular,Consolas,monospace;
+        font-size:.875rem;
+        line-height:1.6;
+        margin:1rem 0;
+        padding:.875rem 1rem;
       }
       pre{
         background:var(--c-surface);

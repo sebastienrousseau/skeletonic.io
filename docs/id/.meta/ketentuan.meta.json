@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "title": "Ketentuan penggunaan",
-  "date": "2026-04-08",
-  "keywords": "ketentuan penggunaan, lisensi, mit, apache 2",
   "permalink": "https://skeletonic.io/id/ketentuan/",
-  "language": "id",
+  "keywords": "ketentuan penggunaan, lisensi, mit, apache 2",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
   "author": "Sebastien Rousseau",
+  "language": "id",
   "description": "Ketentuan yang mengatur penggunaan Anda atas skeletonic.io dan pustaka Skeletonic Stylus.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus"
+  "date": "2026-04-08",
+  "title": "Ketentuan penggunaan",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

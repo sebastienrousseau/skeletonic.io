@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "title": "Sobre o Skeletonic Stylus",
-  "keywords": "skeletonic, sobre, stylus, css framework, filosofia",
   "permalink": "https://skeletonic.io/pt-br/sobre/",
-  "description": "Skeletonic Stylus e uma biblioteca CSS Stylus de codigo aberto para estilizacao de interfaces acessiveis, rapidas e modulares.",
   "language": "pt-br",
+  "keywords": "skeletonic, sobre, stylus, css framework, filosofia",
+  "description": "Skeletonic Stylus e uma biblioteca CSS Stylus de codigo aberto para estilizacao de interfaces acessiveis, rapidas e modulares.",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
   "layout": "page",
+  "title": "Sobre o Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "name": "Skeletonic Stylus"
+  "date": "2026-04-08"
 }

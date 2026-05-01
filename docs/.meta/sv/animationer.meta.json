@@ -1,13 +1,13 @@
 {
-  "name": "Skeletonic Stylus",
-  "load_animations": true,
   "keywords": "css animationer, keyframes, prefers-reduced-motion, bounce, pulse, fade",
-  "layout": "page",
-  "description": "Valfri animationsmodul som levereras med Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake och fler, alla bakom prefers-reduced-motion.",
-  "permalink": "https://skeletonic.io/sv/animationer/",
-  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/sv/animationer/",
   "date": "2026-04-08",
   "language": "sv",
-  "title": "Animationer"
+  "load_animations": true,
+  "title": "Animationer",
+  "author": "Sebastien Rousseau",
+  "description": "Valfri animationsmodul som levereras med Skeletonic Stylus v1.1.7 — bounce, pulse, fade, zoom, shake och fler, alla bakom prefers-reduced-motion.",
+  "layout": "page"
 }

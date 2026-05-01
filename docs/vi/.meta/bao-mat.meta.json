@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "language": "vi",
-  "description": "Cach Skeletonic Stylus v1.1.7 bao mat pipeline build, ky ban phat hanh va cung cap SBOM.",
-  "keywords": "bao mat css, sbom, cyclonedx, npm provenance, openssf scorecard, chuoi cung ung",
   "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "title": "Bao mat &amp; chuoi cung ung",
+  "keywords": "bao mat css, sbom, cyclonedx, npm provenance, openssf scorecard, chuoi cung ung",
   "permalink": "https://skeletonic.io/vi/bao-mat/",
+  "date": "2026-04-08",
+  "description": "Cach Skeletonic Stylus v1.1.7 bao mat pipeline build, ky ban phat hanh va cung cap SBOM.",
+  "author": "Sebastien Rousseau",
   "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "language": "vi",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Bao mat &amp; chuoi cung ung"
 }
