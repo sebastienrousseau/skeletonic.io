@@ -1,12 +1,12 @@
 {
-  "title": "アクセシビリティ — v2.0.0 における WCAG 2.2",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "ja",
+  "author": "Sebastien Rousseau",
   "description": "v2.0.0 が WCAG 2.2 準拠のために標準で提供するもの — フォーカスリング、コントラスト、スキップリンク、モーション、ダークモード。",
   "layout": "page",
-  "permalink": "https://skeletonic.io/ja/akseshibirithi/",
-  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "アクセシビリティ — v2.0.0 における WCAG 2.2",
   "date": "2026-04-08",
-  "language": "ja",
   "keywords": "wcag 2.2, アクセシビリティ, focus visible, スキップリンク, prefers reduced motion, コントラスト",
-  "author": "Sebastien Rousseau"
+  "permalink": "https://skeletonic.io/ja/akseshibirithi/",
+  "name": "Skeletonic Stylus"
 }

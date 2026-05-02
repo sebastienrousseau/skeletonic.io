@@ -19,7 +19,7 @@
   --c-border: #d2d2d7;
   --c-nav-bg: rgba(255, 255, 255, 0.8);
   --c-nav-text: #1d1d1f;
-  --c-nav-muted: #86868b;
+  --c-nav-muted: #57575b;
   --c-hero-grad-1: #f5f5f7;
   --c-hero-grad-2: #fff;
   --c-hero-grad-3: #fafafa;
@@ -102,6 +102,24 @@ body {
   background: linear-gradient(180deg, var(--c-hero-grad-1), var(--c-hero-grad-2) 50%, var(--c-hero-grad-3));
 }
 .site-hero h1 { font-size: var(--fs-h1); font-weight: 700; letter-spacing: -0.04em; color: var(--c-heading); line-height: 1.1; }
+/* Phark image replacement: hide the h1 text off-screen and paint
+   the brand logo as a background image. With CSS off (or the
+   stylesheet failing), the text shows verbatim. With CSS on, the
+   SVG logo replaces the text visually; the text remains in the DOM
+   for screen readers. Forced-colors mode in chrome.css restores
+   the text since background-images are stripped in HCM. */
+.site-hero .hero-title{
+  margin: 0 auto 0.75rem;
+  display: block;
+  width: clamp(120px, 20vw, 208px);
+  aspect-ratio: 1 / 1;
+  background: url("https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg") center / contain no-repeat;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0;
+  color: transparent;
+}
 .site-hero p { font-size: var(--fs-base); line-height: 1.5; color: var(--c-secondary); margin-top: 0.75rem; max-width: 40rem; margin-inline: auto; }
 .hero-logo { width: 4.5rem; height: auto; margin: 0 auto 1rem; }
 .hero-cta {

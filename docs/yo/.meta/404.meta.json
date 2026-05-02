@@ -1,11 +1,11 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/yo/404/",
   "language": "yo",
-  "name": "Skeletonic Stylus",
-  "keywords": "404, a ko ri",
   "layout": "page",
+  "keywords": "404, a ko ri",
   "title": "A ko ri oju-iwe",
   "author": "Sebastien Rousseau",
-  "description": "Oju-iwe ti o beere ko si lori skeletonic.io."
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Oju-iwe ti o beere ko si lori skeletonic.io.",
+  "name": "Skeletonic Stylus"
 }

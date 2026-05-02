@@ -1,12 +1,12 @@
 {
-  "language": "zh-hans",
-  "keywords": "离线, service worker, pwa",
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/zh-hans/offline/",
-  "title": "你当前处于离线状态",
-  "author": "Sebastien Rousseau",
   "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "skeletonic.io 无法连接到网络。你请求的页面尚未被缓存。",
+  "name": "Skeletonic Stylus",
   "date": "2026-04-08",
-  "description": "skeletonic.io 无法连接到网络。你请求的页面尚未被缓存。"
+  "author": "Sebastien Rousseau",
+  "title": "你当前处于离线状态",
+  "language": "zh-hans",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "离线, service worker, pwa",
+  "permalink": "https://skeletonic.io/zh-hans/offline/"
 }

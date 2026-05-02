@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "language": "pl",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/pl/dziekujemy/",
   "keywords": "dziekujemy",
-  "title": "Dziekujemy!",
-  "description": "Twoja wiadomosc zostala wyslana pomyslnie.",
+  "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
+  "title": "Dziekujemy!",
   "layout": "thanks",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "date": "2026-04-08",
+  "description": "Twoja wiadomosc zostala wyslana pomyslnie.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "pl"
 }

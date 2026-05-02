@@ -241,7 +241,7 @@ in grootte met de rest van het ontwerpsysteem.
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Naam</label>
   <input id="demo-name" type="text">
 
@@ -252,7 +252,7 @@ in grootte met de rest van het ontwerpsysteem.
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Versturen (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Toegankelijkheidsnoot.** Elk invoerveld moet een programmatisch

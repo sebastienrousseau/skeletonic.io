@@ -53,13 +53,13 @@ Om du bara behover den kompilerade CSS:en, lagg till en av dessa i din `<head>`:
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -70,8 +70,8 @@ och lagg till ett `integrity="sha384-…"`-attribut.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ja | Ja |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ja | Nej |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Ja | Ja |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Ja | Nej |
 
 ### Ladda ner GitHub-releasen
 
@@ -102,7 +102,7 @@ Biblioteket levererar flera forbyggda paket under
 | Fil | Syfte | Storlek (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + element + komponenter + utilities | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Valfri animationsmodul | ≈213 KB / ≈6.7 KB |
+| `animations/skeletonic-animations.min.css` | Valfri animationsmodul | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Material-fargpalett | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility-palett | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Webbsaker palett | ≈3.5 KB |
@@ -153,7 +153,7 @@ En minimal "fungerar det?"-kontroll:
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Det fungerar.</h1>

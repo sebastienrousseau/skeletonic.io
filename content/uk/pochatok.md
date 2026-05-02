@@ -53,13 +53,13 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -70,8 +70,8 @@ v2.0.0 та додайте атрибут `integrity="sha384-…"`.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Так | Так |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Так | Ні |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Так | Так |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Так | Ні |
 
 ### Завантаження з релізів GitHub
 
@@ -155,7 +155,7 @@ Skeletonic надає свої дизайн-токени як **CSS-змінні
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Це працює.</h1>

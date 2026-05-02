@@ -173,7 +173,7 @@ responsive Kartenwände.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped.</p>
+      <p>42.3 KB minified, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -244,7 +244,7 @@ einheitlich zum restlichen Designsystem dimensioniert.
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Name</label>
   <input id="demo-name" type="text">
 
@@ -255,7 +255,7 @@ einheitlich zum restlichen Designsystem dimensioniert.
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Senden (Demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Hinweis zur Barrierefreiheit.** Jedes Eingabefeld muss ein

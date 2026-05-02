@@ -16,14 +16,13 @@ keywords: "skeletonic, 소개, stylus, css 프레임워크, 철학"
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-<p class="badges">
-  <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
-  <img alt="월간 다운로드" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
-  <img alt="npm 버전" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="번들 크기" src="https://img.shields.io/badge/gzip-7.8%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
-  <img alt="라이선스" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
-  <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
-</p>
+<dl class="stat-strip" aria-label="Project facts">
+  <div><dt>Version</dt><dd>2.0.0</dd></div>
+  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
+  <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
+</dl>
 
 ## 요약
 
@@ -43,7 +42,7 @@ keywords: "skeletonic, 소개, stylus, css 프레임워크, 철학"
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="깃털" width="64" height="64" loading="lazy" decoding="async">
     <h3>경량</h3>
-    <p>약 7.8&nbsp;KB gzipped. 페이지가 더 빠르게 로드됩니다. 모든 필수 구성 요소가 포함되어 있습니다.</p>
+    <p>약 7.9&nbsp;KB gzipped. 페이지가 더 빠르게 로드됩니다. 모든 필수 구성 요소가 포함되어 있습니다.</p>
   </article>
 
   <article class="feature-card">
@@ -77,7 +76,7 @@ keywords: "skeletonic, 소개, stylus, css 프레임워크, 철학"
 
 | 기능 | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Gzipped 크기 | **약 7.8&nbsp;KB** | 약 30&nbsp;KB | 약 10&nbsp;KB (varies) | 약 30&nbsp;KB |
+| Gzipped 크기 | **약 7.9&nbsp;KB** | 약 30&nbsp;KB | 약 10&nbsp;KB (varies) | 약 30&nbsp;KB |
 | WCAG 2.2 준수 | **기본 내장** | 부분적 | 수동 | 부분적 |
 | 캐스케이드 레이어 | **지원 (`@layer`)** | 미지원 | 미지원 | 미지원 |
 | 다크 모드 | **`prefers-color-scheme`** | 선택적 | 클래스 기반 | 선택적 |

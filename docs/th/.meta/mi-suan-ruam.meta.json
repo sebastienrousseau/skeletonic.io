@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/th/mi-suan-ruam/",
-  "keywords": "มีส่วนร่วม, โอเพนซอร์ส, pull request, issue, แบบแผน",
-  "name": "Skeletonic Stylus",
   "title": "มีส่วนร่วม",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
   "language": "th",
+  "permalink": "https://skeletonic.io/th/mi-suan-ruam/",
+  "layout": "page",
+  "keywords": "มีส่วนร่วม, โอเพนซอร์ส, pull request, issue, แบบแผน",
   "description": "วิธีแจ้งปัญหา เสนอการเปลี่ยนแปลง และส่ง pull request ไปยัง Skeletonic Stylus",
-  "layout": "page"
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau"
 }

@@ -171,7 +171,7 @@ s mrizkou `flex-N` pro responzivni steny karet.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped.</p>
+      <p>42.3 KB minified, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -242,7 +242,7 @@ dimenzovane konzistentne se zbytkem navrhoveho systemu.
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Jmeno</label>
   <input id="demo-name" type="text">
 
@@ -253,7 +253,7 @@ dimenzovane konzistentne se zbytkem navrhoveho systemu.
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Odeslat (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Poznamka k pristupnosti.** Kazdy vstup musi mit programove

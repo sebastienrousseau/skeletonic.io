@@ -167,7 +167,7 @@ keywords: "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تن
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped.</p>
+      <p>42.3 KB minified, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -238,7 +238,7 @@ keywords: "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تن
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">الاسم</label>
   <input id="demo-name" type="text">
 
@@ -249,7 +249,7 @@ keywords: "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تن
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">إرسال (تجريبي)</button></p>
-</form>
+</div>
 </section>
 
 > **ملاحظة إمكانية الوصول.** يجب أن يكون لكل مدخل `<label for="…">`

@@ -43,7 +43,7 @@ HTTPS in 2026 — that's the line that matters for real-world transfer.
 
 | Key | URL |
 |---|---|
-| Skeletonic | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` |
+| Skeletonic | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` |
 | Pico CSS | `https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css` |
 | Bootstrap | `https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css` |
 | Bulma | `https://cdn.jsdelivr.net/npm/bulma@1/css/bulma.min.css` |
@@ -97,7 +97,7 @@ HTTPS in 2026 — that's the line that matters for real-world transfer.
 ```bash
 mkdir -p /tmp/skel-bench && cd /tmp/skel-bench
 
-curl -sL "https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css" -o skeletonic.css
+curl -sL "https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css" -o skeletonic.css
 curl -sL "https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css"                                   -o bootstrap.css
 curl -sL "https://cdn.jsdelivr.net/npm/bulma@1/css/bulma.min.css"                                                  -o bulma.css
 curl -sL "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"                                           -o pico.css

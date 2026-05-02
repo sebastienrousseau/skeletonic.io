@@ -31,13 +31,12 @@
          v0.0.34 and don't change between builds — if the SSG ever
          changes them we'll see the CSP error in the browser console
          and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
 
     <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
     <link rel="preload" href="/css/skeletonic.min.css" as="style">
-    <link rel="preload" href="/css/chrome.css" as="style">
-    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="preload" href="/css/chrome.css" as="style"><link rel="icon" type="image/svg+xml" href="/images/logo.svg">
     <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
     <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
     <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
@@ -124,13 +123,14 @@
          chrome + skeletonic bundles. -->
     <!-- @@CRITICAL_CSS@@ -->
 
-    <!-- Skeletonic Stylus v2.0.0 + chrome — render-blocking, but
+    <!-- Skeletonic Stylus v2.1.0 + chrome — render-blocking, but
          the inline critical CSS above already painted above-the-fold,
-         so first paint isn't waiting for these. The `media="print"
-         onload=…" defer trick was tempting but ships an inline event
-         handler that the page CSP correctly blocks (hashes don't
-         apply to event handlers). Standard <link rel="stylesheet">
-         keeps the page CSP-clean. -->
+         so first paint isn't waiting on these. Async loading via
+         media="print"+onload regressed mobile perf because the
+         critical CSS doesn't cover every above-the-fold element on
+         every page (cards, code blocks); when the full sheet arrives
+         the layout shifts. Keep it render-blocking and rely on the
+         critical-CSS head budget for sub-1s FCP. -->
     <link rel="stylesheet" href="/css/skeletonic.min.css">
     
     
@@ -191,7 +191,7 @@
 <meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-</head>
+<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
     <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -279,7 +279,7 @@
 
     
 <header class="site-hero">
-  <h1>Skeletonic Stylus</h1>
+  <h1 class="hero-title">Skeletonic Stylus</h1>
   
 </header>
 
@@ -294,7 +294,7 @@ while these translations catch up. See <a href="https://skeletonic.io/about/">ht
 <a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
 </blockquote>
 <h2>소개</h2>
-<p>Skeletonic Stylus를 처음 사용하시나요? <strong>v2.0.0</strong>에서는 필요한 기능만 선택하는 것이 그 어느 때보다 쉬워졌습니다. 작은 크기(코어 스타일시트 약 7.8 KB gzipped) 덕분에 어떤 웹 앱에든 빠르게 통합할 수 있습니다. JavaScript 프레임워크 불필요, CDN 사용 시 빌드 단계도 불필요합니다.</p>
+<p>Skeletonic Stylus를 처음 사용하시나요? <strong>v2.0.0</strong>에서는 필요한 기능만 선택하는 것이 그 어느 때보다 쉬워졌습니다. 작은 크기(코어 스타일시트 약 7.9 KB gzipped) 덕분에 어떤 웹 앱에든 빠르게 통합할 수 있습니다. JavaScript 프레임워크 불필요, CDN 사용 시 빌드 단계도 불필요합니다.</p>
 <p>아래에 모든 경로가 설명되어 있습니다. 필요한 것을 선택하십시오.</p>
 <h2>1. 다운로드 및 설치</h2>
 <p><strong>pnpm</strong>, <strong>npm</strong> 또는 <strong>yarn</strong>을 통해 Skeletonic Stylus를 설치하거나 CDN에서 직접 로드할 수 있습니다. 원하시면 배포 파일을 로컬에 직접 호스팅할 수도 있습니다.</p>
@@ -316,13 +316,13 @@ while these translations catch up. See <a href="https://skeletonic.io/about/">ht
 <span style="color:#65737e;">&lt;!-- jsDelivr --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;">&lt;!-- unpkg --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
@@ -340,13 +340,13 @@ while these translations catch up. See <a href="https://skeletonic.io/about/">ht
 <tbody>
 <tr>
 <td class="text-left"><strong>jsDelivr</strong></td>
-<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</code></td>
 <td class="text-left">예</td>
 <td class="text-left">예</td>
 </tr>
 <tr>
 <td class="text-left"><strong>unpkg</strong></td>
-<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</code></td>
 <td class="text-left">예</td>
 <td class="text-left">아니오</td>
 </tr>
@@ -381,7 +381,7 @@ while these translations catch up. See <a href="https://skeletonic.io/about/">ht
 <tr>
 <td class="text-left"><code>core/skeletonic.min.css</code></td>
 <td class="text-left">리셋 + 토큰 + 레이아웃 + 요소 + 구성 요소 + 유틸리티</td>
-<td class="text-left">39.1 KB / 7.8 KB</td>
+<td class="text-left">42.3 KB / 7.9 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>animations/skeletonic-animations.min.css</code></td>
@@ -440,7 +440,7 @@ while these translations catch up. See <a href="https://skeletonic.io/about/">ht
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">charset</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">utf-8</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">link </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">body </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">container padding-3</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;작동합니다.&lt;/</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;
@@ -495,7 +495,7 @@ while these translations catch up. See <a href="https://skeletonic.io/about/">ht
 <p><strong>WCAG 2.2을 준수합니까?</strong>
 예. v2.0.0은 AA 준수 대비, focus-visible 링, 스킵 링크 도우미, 모션 감소 지원 및 다크 모드를 기본으로 제공합니다.</p>
 <p><strong>gzipped 크기는 얼마입니까?</strong>
-39.1 KB 최소화, <strong>약 7.8 KB gzipped</strong>, 약 6.7 KB brotli (전체 코어 스타일시트 기준). 8 KB 상한선이 CI에서 매 커밋마다 적용됩니다.</p>
+42.3 KB 최소화, <strong>약 7.9 KB gzipped</strong>, 약 6.8 KB brotli (전체 코어 스타일시트 기준). 8 KB 상한선이 CI에서 매 커밋마다 적용됩니다.</p>
 <p><strong>어떤 라이선스를 사용합니까?</strong>
 MIT와 Apache 2.0 이중 라이선스입니다. 프로젝트에 적합한 라이선스를 선택하십시오. 상업적 및 개인적 용도 모두 무료입니다.</p>
 <script type="application/ld+json">
@@ -532,7 +532,7 @@ MIT와 Apache 2.0 이중 라이선스입니다. 프로젝트에 적합한 라이
       "name": "Skeletonic Stylus의 gzipped 크기는 얼마입니까?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.1 KB 최소화, 약 7.8 KB gzipped, 약 6.7 KB brotli (전체 코어 스타일시트 기준). 8 KB 상한선이 CI에서 매 커밋마다 적용됩니다."
+        "text": "42.3 KB 최소화, 약 7.9 KB gzipped, 약 6.8 KB brotli (전체 코어 스타일시트 기준). 8 KB 상한선이 CI에서 매 커밋마다 적용됩니다."
       }
     },
     {

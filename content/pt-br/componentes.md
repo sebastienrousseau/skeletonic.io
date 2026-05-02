@@ -170,7 +170,7 @@ Combine com o grid `flex-N` para paredes de cards responsivas.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped.</p>
+      <p>42.3 KB minified, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -241,7 +241,7 @@ dimensionados de forma consistente com o restante do design system.
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Nome</label>
   <input id="demo-name" type="text">
 
@@ -252,7 +252,7 @@ dimensionados de forma consistente com o restante do design system.
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Enviar (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Nota de acessibilidade.** Cada input deve ter um `<label for="…">`

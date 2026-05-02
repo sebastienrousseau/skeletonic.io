@@ -31,13 +31,12 @@
          v0.0.34 and don't change between builds — if the SSG ever
          changes them we'll see the CSP error in the browser console
          and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
 
     <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
     <link rel="preload" href="/css/skeletonic.min.css" as="style">
-    <link rel="preload" href="/css/chrome.css" as="style">
-    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="preload" href="/css/chrome.css" as="style"><link rel="icon" type="image/svg+xml" href="/images/logo.svg">
     <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
     <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
     <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
@@ -122,15 +121,16 @@
          of static/css/critical.css so above-the-fold paints in the
          same frame as the HTML, without waiting for the full
          chrome + skeletonic bundles. -->
-    <style>:root{color-scheme:light dark;--c-bg:#fff;--c-text:#1d1d1f;--c-heading:#000;--c-secondary:#6e6e73;--c-accent:#0066cc;--c-border:#d2d2d7;--c-nav-bg:rgba(255, 255, 255, 0.8);--c-nav-text:#1d1d1f;--c-nav-muted:#86868b;--c-hero-grad-1:#f5f5f7;--c-hero-grad-2:#fff;--c-hero-grad-3:#fafafa;--fs-base:clamp(1rem, 0.95rem + 0.25vw, 1.125rem);--fs-h1:clamp(2.5rem, 1.5rem + 5vw, 4.5rem);--fs-h2:clamp(2rem, 1.25rem + 3.75vw, 3.5rem);--fs-h3:clamp(1.5rem, 1.125rem + 1.875vw, 2.25rem)}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--c-bg:#000;--c-text:#f5f5f7;--c-heading:#fff;--c-secondary:#a1a1aa;--c-accent:#2997ff;--c-border:#424245;--c-nav-bg:rgba(0, 0, 0, 0.8);--c-nav-text:#f5f5f7;--c-nav-muted:#a1a1aa;--c-hero-grad-1:#1d1d1f;--c-hero-grad-2:#000;--c-hero-grad-3:#0a0a0a}}*{box-sizing:border-box;margin:0}html{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}body{background:var(--c-bg);color:var(--c-text);font-size:var(--fs-base);line-height:1.47;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.skip-link{position:absolute;inset-inline-start:.5rem;top:-3rem;padding:.6rem 1rem;background:var(--c-accent);color:#fff;text-decoration:none;border-radius:0 0 .25rem .25rem;z-index:1100}.skip-link:focus{top:0}.site-nav{background:var(--c-nav-bg);border-bottom:1px solid var(--c-border);position:sticky;top:0;z-index:1000;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:4rem;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-weight:600;font-size:1.25rem;color:var(--c-heading);letter-spacing:-.02em;text-decoration:none}.nav-center{display:flex;gap:1.5rem;list-style:none;padding:0;margin:0}.nav-center a{color:var(--c-nav-muted);font-size:.875rem;font-weight:500;text-decoration:none}.nav-right{display:flex;align-items:center;gap:1rem}.site-hero{text-align:center;padding:5rem 1.5rem 3rem;background:linear-gradient(180deg,var(--c-hero-grad-1),var(--c-hero-grad-2) 50%,var(--c-hero-grad-3))}.site-hero h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em;color:var(--c-heading);line-height:1.1}.site-hero p{margin-top:.75rem;max-width:40rem;margin-inline:auto}.hero-logo{width:4.5rem;height:auto;margin:0 auto 1rem}.hero-cta{display:inline-block;padding:.75rem 1.5rem;margin-top:1.5rem;background:var(--c-accent);color:#fff;font-weight:600;border-radius:9999px;text-decoration:none}.site-main{max-width:70rem;margin:0 auto;padding:3rem 1.5rem 5rem}.site-main h1,.site-main h2,.site-main h3,.site-main h4{font-family:inherit;line-height:1.1;color:var(--c-heading);margin:0}.site-main h4{letter-spacing:-.022em}.site-main h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em}.site-main h2,.site-main h3{font-size:var(--fs-h2);font-weight:600;letter-spacing:-.03em}.site-main h3{font-size:var(--fs-h3);letter-spacing:-.02em}.site-hero p,.site-main p{font-size:var(--fs-base);line-height:1.5;color:var(--c-secondary)}.site-main a:not([class*=button]):not([class*=btn]):not(.badge):not([class*=link-]){color:var(--c-accent);text-decoration:underline;text-underline-offset:.15em}</style>
+    <style>:root{color-scheme:light dark;--c-bg:#fff;--c-text:#1d1d1f;--c-heading:#000;--c-secondary:#6e6e73;--c-accent:#0066cc;--c-border:#d2d2d7;--c-nav-bg:rgba(255, 255, 255, 0.8);--c-nav-text:#1d1d1f;--c-nav-muted:#57575b;--c-hero-grad-1:#f5f5f7;--c-hero-grad-2:#fff;--c-hero-grad-3:#fafafa;--fs-base:clamp(1rem, 0.95rem + 0.25vw, 1.125rem);--fs-h1:clamp(2.5rem, 1.5rem + 5vw, 4.5rem);--fs-h2:clamp(2rem, 1.25rem + 3.75vw, 3.5rem);--fs-h3:clamp(1.5rem, 1.125rem + 1.875vw, 2.25rem)}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--c-bg:#000;--c-text:#f5f5f7;--c-heading:#fff;--c-secondary:#a1a1aa;--c-accent:#2997ff;--c-border:#424245;--c-nav-bg:rgba(0, 0, 0, 0.8);--c-nav-text:#f5f5f7;--c-nav-muted:#a1a1aa;--c-hero-grad-1:#1d1d1f;--c-hero-grad-2:#000;--c-hero-grad-3:#0a0a0a}}*{box-sizing:border-box;margin:0}html{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}body{background:var(--c-bg);color:var(--c-text);font-size:var(--fs-base);line-height:1.47;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.skip-link{position:absolute;inset-inline-start:.5rem;top:-3rem;padding:.6rem 1rem;background:var(--c-accent);color:#fff;text-decoration:none;border-radius:0 0 .25rem .25rem;z-index:1100}.skip-link:focus{top:0}.site-nav{background:var(--c-nav-bg);border-bottom:1px solid var(--c-border);position:sticky;top:0;z-index:1000;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:4rem;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-weight:600;font-size:1.25rem;color:var(--c-heading);letter-spacing:-.02em;text-decoration:none}.nav-center{display:flex;gap:1.5rem;list-style:none;padding:0;margin:0}.nav-center a{color:var(--c-nav-muted);font-size:.875rem;font-weight:500;text-decoration:none}.nav-right{display:flex;align-items:center;gap:1rem}.site-hero{text-align:center;padding:5rem 1.5rem 3rem;background:linear-gradient(180deg,var(--c-hero-grad-1),var(--c-hero-grad-2) 50%,var(--c-hero-grad-3))}.site-hero h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em;color:var(--c-heading);line-height:1.1}.site-hero .hero-title{margin:0 auto .75rem;display:block;width:clamp(120px,20vw,208px);aspect-ratio:1/1;background:url(https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg)center/contain no-repeat;text-indent:-9999px;white-space:nowrap;overflow:hidden;font-size:0;color:transparent}.site-hero p{margin-top:.75rem;max-width:40rem;margin-inline:auto}.hero-logo{width:4.5rem;height:auto;margin:0 auto 1rem}.hero-cta{display:inline-block;padding:.75rem 1.5rem;margin-top:1.5rem;background:var(--c-accent);color:#fff;font-weight:600;border-radius:9999px;text-decoration:none}.site-main{max-width:70rem;margin:0 auto;padding:3rem 1.5rem 5rem}.site-main h1,.site-main h2,.site-main h3,.site-main h4{font-family:inherit;line-height:1.1;color:var(--c-heading);margin:0}.site-main h4{letter-spacing:-.022em}.site-main h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em}.site-main h2,.site-main h3{font-size:var(--fs-h2);font-weight:600;letter-spacing:-.03em}.site-main h3{font-size:var(--fs-h3);letter-spacing:-.02em}.site-hero p,.site-main p{font-size:var(--fs-base);line-height:1.5;color:var(--c-secondary)}.site-main a:not([class*=button]):not([class*=btn]):not(.badge):not([class*=link-]){color:var(--c-accent);text-decoration:underline;text-underline-offset:.15em}</style>
 
-    <!-- Skeletonic Stylus v2.0.0 + chrome — render-blocking, but
+    <!-- Skeletonic Stylus v2.1.0 + chrome — render-blocking, but
          the inline critical CSS above already painted above-the-fold,
-         so first paint isn't waiting for these. The `media="print"
-         onload=…" defer trick was tempting but ships an inline event
-         handler that the page CSP correctly blocks (hashes don't
-         apply to event handlers). Standard <link rel="stylesheet">
-         keeps the page CSP-clean. -->
+         so first paint isn't waiting on these. Async loading via
+         media="print"+onload regressed mobile perf because the
+         critical CSS doesn't cover every above-the-fold element on
+         every page (cards, code blocks); when the full sheet arrives
+         the layout shifts. Keep it render-blocking and rely on the
+         critical-CSS head budget for sub-1s FCP. -->
     <link rel="stylesheet" href="/css/skeletonic.min.css">
     
     
@@ -191,7 +191,7 @@
 <meta name="description" content="Every rule shipped by Skeletonic is wrapped in a single CSS cascade layer . The compiled skeletonic.min.css starts with this declaration: @ layer skeletonic .">
 <meta property="og:description" content="Every rule shipped by Skeletonic is wrapped in a single CSS cascade layer . The compiled skeletonic.min.css starts with this declaration: @ layer skeletonic .">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-</head>
+<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
     <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -279,7 +279,7 @@
 
     
 <header class="site-hero">
-  <h1>Skeletonic Stylus</h1>
+  <h1 class="hero-title">Skeletonic Stylus</h1>
   
 </header>
 

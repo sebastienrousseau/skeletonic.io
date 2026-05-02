@@ -170,7 +170,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">हल्की</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped।</p>
+      <p>42.3 KB minified, 7.9 KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -192,7 +192,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">हल्की</h3>
-      <p>39.1&nbsp;KB minified, 7.8&nbsp;KB gzipped।</p>
+      <p>42.3&nbsp;KB minified, 7.9&nbsp;KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -241,7 +241,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">नाम</label>
   <input id="demo-name" type="text">
 
@@ -252,7 +252,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">भेजें (डेमो)</button></p>
-</form>
+</div>
 </section>
 
 > **सुलभता नोट।** हर इनपुट के साथ प्रोग्रामेटिक रूप से जुड़ा

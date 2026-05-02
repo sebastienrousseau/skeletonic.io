@@ -53,13 +53,13 @@ Als je alleen de gecompileerde CSS nodig hebt, voeg een van deze toe aan je `<he
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -70,8 +70,8 @@ en voeg je een `integrity="sha384-…"` attribuut toe.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ja | Ja |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ja | Nee |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Ja | Ja |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Ja | Nee |
 
 ### Download de GitHub-release
 
@@ -103,7 +103,7 @@ De bibliotheek levert meerdere voorgebouwde bundels onder
 | Bestand | Doel | Grootte (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elementen + componenten + utilities | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Optionele animatiemodule | ≈213 KB / ≈6.7 KB |
+| `animations/skeletonic-animations.min.css` | Optionele animatiemodule | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Material-kleurenpalet | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility-palet | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Webveilig palet | ≈3.5 KB |
@@ -154,7 +154,7 @@ Een minimale "werkt het?"-controle:
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Het werkt.</h1>

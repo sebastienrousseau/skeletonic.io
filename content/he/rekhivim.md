@@ -168,7 +168,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped.</p>
+      <p>42.3 KB minified, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -190,7 +190,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">קל משקל</h3>
-      <p>39.1&nbsp;KB ממוזער, 7.8&nbsp;KB בדחיסת gzip.</p>
+      <p>42.3&nbsp;KB ממוזער, 7.9&nbsp;KB בדחיסת gzip.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -239,7 +239,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">שם</label>
   <input id="demo-name" type="text">
 
@@ -250,7 +250,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">שלח (הדגמה)</button></p>
-</form>
+</div>
 </section>
 
 > **הערת נגישות.** לכל קלט חייבת להיות `<label for="…">`

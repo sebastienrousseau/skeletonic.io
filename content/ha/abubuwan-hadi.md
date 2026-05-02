@@ -151,7 +151,7 @@ Kwantenan da ke da iyaka da padding don raka'a guda mai jituwa. Haɗa shi da gri
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Mai saukin nauyi</h3>
-      <p>39.1 KB da aka ƙaranta, 7.8 KB gzipped.</p>
+      <p>42.3 KB da aka ƙaranta, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ Kwantenan da ke da iyaka da padding don raka'a guda mai jituwa. Haɗa shi da gri
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Mai saukin nauyi</h3>
-      <p>39.1&nbsp;KB da aka ƙaranta, 7.8&nbsp;KB gzipped.</p>
+      <p>42.3&nbsp;KB da aka ƙaranta, 7.9&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -218,7 +218,7 @@ Lakabai, shigarwa na rubutu, textareas, fieldsets da legends — duk an daidaita
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Suna</label>
   <input id="demo-name" type="text">
 
@@ -229,7 +229,7 @@ Lakabai, shigarwa na rubutu, textareas, fieldsets da legends — duk an daidaita
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Aika (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Bayanan samun dama.** Kowane shigarwa dole ne ya kasance da `<label for="…">` da aka danganta. Tara abubuwan sarrafa masu alaƙa a cikin `<fieldset>` tare da `<legend>`. Yi alamar filayen da ake buƙata da `required` (da tauraron da ake gani a cikin rubutun lakabi).

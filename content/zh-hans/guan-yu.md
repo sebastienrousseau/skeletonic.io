@@ -16,14 +16,13 @@ keywords: "skeletonic, 关于, stylus, css 框架, 设计理念"
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-<p class="badges">
-  <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
-  <img alt="月下载量" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
-  <img alt="npm 版本" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="压缩体积" src="https://img.shields.io/badge/gzip-7.8%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
-  <img alt="许可证" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
-  <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
-</p>
+<dl class="stat-strip" aria-label="Project facts">
+  <div><dt>Version</dt><dd>2.0.0</dd></div>
+  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
+  <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
+</dl>
 
 ## 简短介绍
 
@@ -44,7 +43,7 @@ CSS 库，用于无障碍、高性能、模块化的 UI 样式开发。
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="羽毛" width="64" height="64" loading="lazy" decoding="async">
     <h3>轻量小巧</h3>
-    <p>gzip 后约 7.8&nbsp;KB。页面加载更快，核心构建块一个不少。</p>
+    <p>gzip 后约 7.9&nbsp;KB。页面加载更快，核心构建块一个不少。</p>
   </article>
 
   <article class="feature-card">
@@ -78,7 +77,7 @@ CSS 库，用于无障碍、高性能、模块化的 UI 样式开发。
 
 | 特性 | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Gzip 体积 | **约 7.8&nbsp;KB** | 约 30&nbsp;KB | 约 10&nbsp;KB (varies) | 约 30&nbsp;KB |
+| Gzip 体积 | **约 7.9&nbsp;KB** | 约 30&nbsp;KB | 约 10&nbsp;KB (varies) | 约 30&nbsp;KB |
 | WCAG 2.2 合规 | **内置** | 部分 | 手动 | 部分 |
 | 级联层 | **支持 (`@layer`)** | 不支持 | 不支持 | 不支持 |
 | 深色模式 | **`prefers-color-scheme`** | 可选启用 | 基于类名 | 可选启用 |

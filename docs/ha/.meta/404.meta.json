@@ -1,11 +1,11 @@
 {
-  "name": "Skeletonic Stylus",
+  "layout": "page",
   "language": "ha",
-  "description": "Shafin da kuka nema bai wanzu a skeletonic.io ba.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Ba a sami shafin ba",
   "keywords": "404, ba a samu ba",
-  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/ha/404/",
-  "layout": "page"
+  "title": "Ba a sami shafin ba",
+  "author": "Sebastien Rousseau",
+  "description": "Shafin da kuka nema bai wanzu a skeletonic.io ba.",
+  "name": "Skeletonic Stylus"
 }

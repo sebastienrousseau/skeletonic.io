@@ -1,12 +1,12 @@
 {
-  "description": "タグで Skeletonic Stylus ドキュメントを閲覧できます。",
+  "title": "タグ",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/ja/tags/",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "keywords": "skeletonic, タグ, インデックス, タクソノミー",
+  "language": "ja",
   "name": "Skeletonic Stylus",
   "layout": "page",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/ja/tags/",
-  "keywords": "skeletonic, タグ, インデックス, タクソノミー",
-  "title": "タグ",
-  "language": "ja",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau"
+  "description": "タグで Skeletonic Stylus ドキュメントを閲覧できます。"
 }

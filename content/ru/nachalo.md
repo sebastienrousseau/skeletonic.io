@@ -47,13 +47,13 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -63,8 +63,8 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Да | Да |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Да | Нет |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Да | Да |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Да | Нет |
 
 ### Загрузка релиза с GitHub
 
@@ -143,7 +143,7 @@ Skeletonic предоставляет свои дизайн-токены как 
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Работает.</h1>

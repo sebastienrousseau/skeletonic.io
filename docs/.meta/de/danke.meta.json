@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "language": "de",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "danke",
-  "description": "Die Nachricht wurde erfolgreich gesendet.",
   "layout": "thanks",
-  "permalink": "https://skeletonic.io/de/danke/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Die Nachricht wurde erfolgreich gesendet.",
+  "date": "2026-04-08",
   "name": "Skeletonic Stylus",
-  "title": "Vielen Dank!"
+  "title": "Vielen Dank!",
+  "keywords": "danke",
+  "permalink": "https://skeletonic.io/de/danke/",
+  "author": "Sebastien Rousseau",
+  "language": "de"
 }

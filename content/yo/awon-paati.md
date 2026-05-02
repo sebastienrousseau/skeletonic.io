@@ -169,7 +169,7 @@ mọ grid `flex-N` fun awọn odi kaadi ti o dahun.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped.</p>
+      <p>42.3 KB minified, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -191,7 +191,7 @@ mọ grid `flex-N` fun awọn odi kaadi ti o dahun.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Fẹẹrẹfẹ</h3>
-      <p>39.1&nbsp;KB minified, 7.8&nbsp;KB gzipped.</p>
+      <p>42.3&nbsp;KB minified, 7.9&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -240,7 +240,7 @@ awọn akọle — gbogbo wọn ni iwọn kanna pẹlu iyoku eto apẹrẹ naa.
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Orukọ</label>
   <input id="demo-name" type="text">
 
@@ -251,7 +251,7 @@ awọn akọle — gbogbo wọn ni iwọn kanna pẹlu iyoku eto apẹrẹ naa.
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Firanṣẹ (afihan)</button></p>
-</form>
+</div>
 </section>
 
 > **Akiyesi irayẹ-si.** Gbogbo igbewọle gbọdọ ni `<label for="…">`

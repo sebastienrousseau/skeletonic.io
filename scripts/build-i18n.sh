@@ -183,6 +183,16 @@ if [ "$BUILD_EN" -eq 1 ]; then
   find docs -type f -name '*.html' -print0 \
     | xargs -0 perl -i -pe 's{<pre(?![^>]*tabindex)(\s+style="background-color:#[0-9a-fA-F]{3,8};?")}{<pre tabindex="0"$1}g'
 
+  # Strip `align="…"` and unquoted `align=…` attributes from <th>
+  # and <td> tags emitted by the markdown renderer for column
+  # alignment. WCAG 2.0 H49 forbids the `align` attribute as
+  # presentational; HTML_CodeSniffer (the engine WAVE uses) flags
+  # every occurrence as an error. The cells already carry semantic
+  # `class="text-left|right|center"` so the visual alignment is
+  # preserved without the deprecated attribute.
+  find docs -type f -name '*.html' -print0 \
+    | xargs -0 perl -i -pe 's{(<t[hd])\s+align="[^"]*"}{$1}g; s{(<t[hd])\s+align=[a-zA-Z]+}{$1}g'
+
   # The SSG ships its own /highlight.<hash>.css with a LIGHT GitHub
   # theme (background: #f6f8fa) and that <link> sits AFTER our
   # chrome.css in the rendered <head>, so it wins the cascade and
@@ -286,6 +296,50 @@ rewrite_fingerprints() {
 }
 
 rewrite_fingerprints
+
+# Progressive-enhanced brand logo on every page. Tera's
+# `page.permalink` is unreliable on this SSG, so we patch the
+# rendered HTML after every locale has built. Adds
+# `class="hero-title"` to each page's hero <h1> so chrome.css can
+# swap the heading text for the CDN-served SVG brand logo via
+# background-image; the text stays in the DOM (off-screen via
+# text-indent) so screen readers, search engines, reader-mode
+# clients, and CSS-disabled visitors still get the page title.
+# A preconnect + image-preload to cloudcdn.pro is injected into
+# every page's <head> so the logo lands in the same paint as
+# first contentful.
+PYTHONIOENCODING=utf-8 python3 - <<'PY'
+import pathlib, re
+preload = (
+    # preconnect KEEPS `crossorigin` — that opens an anonymous-CORS-capable
+    # TLS connection so the actual fetch (whatever its mode) can reuse it.
+    '<link rel="preconnect" href="https://cloudcdn.pro" crossorigin>'
+    # preload DROPS `crossorigin` — the actual user is the
+    # `background-image: url(...)` in chrome.css, which CSS issues as a
+    # no-cors request. With `crossorigin` here the preload would request
+    # CORS, the cache keys wouldn't match, and the browser would warn
+    # "preloaded but not used within a few seconds".
+    '<link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" '
+    'as="image" type="image/svg+xml">'
+)
+patched = 0
+for p in pathlib.Path('docs').rglob('*.html'):
+    text = p.read_text(encoding='utf-8')
+    # Only the FIRST hero <h1> is patched — that's the page title.
+    # Anchor on the unique `<header class="site-hero">` wrapper so
+    # body <h1>s (rare) don't get touched.
+    text2, n = re.subn(
+        r'(<header class="site-hero">[^<]*?<h1)>',
+        r'\1 class="hero-title">',
+        text, count=1,
+    )
+    if n and 'rel="preconnect" href="https://cloudcdn.pro"' not in text2:
+        text2 = text2.replace('</head>', preload + '</head>', 1)
+    if text2 != text:
+        p.write_text(text2, encoding='utf-8')
+        patched += 1
+print(f">>> Logo hero patched on {patched} page(s).")
+PY
 
 echo
 echo ">>> i18n build complete."

@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "keywords": "skeletonic, תגיות, אינדקס, טקסונומיה",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "תגיות",
   "description": "עיינו בתיעוד Skeletonic Stylus לפי תגית.",
+  "date": "2026-04-08",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/he/tags/",
+  "keywords": "skeletonic, תגיות, אינדקס, טקסונומיה",
+  "language": "he",
+  "title": "תגיות",
   "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "language": "he",
-  "permalink": "https://skeletonic.io/he/tags/"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

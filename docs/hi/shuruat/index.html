@@ -31,13 +31,12 @@
          v0.0.34 and don't change between builds — if the SSG ever
          changes them we'll see the CSP error in the browser console
          and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
 
     <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
     <link rel="preload" href="/css/skeletonic.min.css" as="style">
-    <link rel="preload" href="/css/chrome.css" as="style">
-    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="preload" href="/css/chrome.css" as="style"><link rel="icon" type="image/svg+xml" href="/images/logo.svg">
     <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
     <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
     <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
@@ -124,13 +123,14 @@
          chrome + skeletonic bundles. -->
     <!-- @@CRITICAL_CSS@@ -->
 
-    <!-- Skeletonic Stylus v2.0.0 + chrome — render-blocking, but
+    <!-- Skeletonic Stylus v2.1.0 + chrome — render-blocking, but
          the inline critical CSS above already painted above-the-fold,
-         so first paint isn't waiting for these. The `media="print"
-         onload=…" defer trick was tempting but ships an inline event
-         handler that the page CSP correctly blocks (hashes don't
-         apply to event handlers). Standard <link rel="stylesheet">
-         keeps the page CSP-clean. -->
+         so first paint isn't waiting on these. Async loading via
+         media="print"+onload regressed mobile perf because the
+         critical CSS doesn't cover every above-the-fold element on
+         every page (cards, code blocks); when the full sheet arrives
+         the layout shifts. Keep it render-blocking and rely on the
+         critical-CSS head budget for sub-1s FCP. -->
     <link rel="stylesheet" href="/css/skeletonic.min.css">
     
     
@@ -191,7 +191,7 @@
 <meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-</head>
+<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
     <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -279,7 +279,7 @@
 
     
 <header class="site-hero">
-  <h1>Skeletonic Stylus</h1>
+  <h1 class="hero-title">Skeletonic Stylus</h1>
   
 </header>
 
@@ -295,7 +295,7 @@ while these translations catch up. See <a href="https://skeletonic.io/about/">ht
 </blockquote>
 <h2>परिचय</h2>
 <p>Skeletonic Stylus में नए हैं? <strong>v2.0.0</strong> में अपनी ज़रूरत की सुविधाएँ
-चुनना पहले से कहीं आसान है। अपने छोटे फ़ुटप्रिंट (7.8 KB
+चुनना पहले से कहीं आसान है। अपने छोटे फ़ुटप्रिंट (7.9 KB
 gzipped कोर स्टाइलशीट) के कारण, यह किसी भी वेब ऐप में तेज़ी से
 इंटीग्रेट होती है — कोई JavaScript फ़्रेमवर्क ज़रूरी नहीं, CDN
 इस्तेमाल करें तो कोई बिल्ड स्टेप भी नहीं।</p>
@@ -322,13 +322,13 @@ gzipped कोर स्टाइलशीट) के कारण, यह क�
 <span style="color:#65737e;">&lt;!-- jsDelivr --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">
 </span><span style="color:#65737e;">&lt;!-- unpkg --&gt;
 </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
 </span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
 </span></pre>
 </code></pre>
@@ -347,13 +347,13 @@ gzipped कोर स्टाइलशीट) के कारण, यह क�
 <tbody>
 <tr>
 <td class="text-left"><strong>jsDelivr</strong></td>
-<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</code></td>
 <td class="text-left">हाँ</td>
 <td class="text-left">हाँ</td>
 </tr>
 <tr>
 <td class="text-left"><strong>unpkg</strong></td>
-<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</code></td>
+<td class="text-left"><code>https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</code></td>
 <td class="text-left">हाँ</td>
 <td class="text-left">नहीं</td>
 </tr>
@@ -394,12 +394,12 @@ git config में <code>commit.gpgsign = true</code> सेट करें)�
 <tr>
 <td class="text-left"><code>core/skeletonic.min.css</code></td>
 <td class="text-left">Reset + tokens + layout + elements + components + utilities</td>
-<td class="text-left">39.1 KB / 7.8 KB</td>
+<td class="text-left">42.3 KB / 7.9 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>animations/skeletonic-animations.min.css</code></td>
 <td class="text-left">वैकल्पिक एनिमेशन मॉड्यूल</td>
-<td class="text-left">≈213 KB / ≈6.7 KB</td>
+<td class="text-left">≈213 KB / ≈6.8 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>palettes/material/skeletonic-material.min.css</code></td>
@@ -456,7 +456,7 @@ git config में <code>commit.gpgsign = true</code> सेट करें)�
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">charset</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">utf-8</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">link </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
+</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">body </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">container padding-3</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;यह काम कर रहा है।&lt;/</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;
@@ -519,7 +519,7 @@ CSS सीधे CDN से लोड करें — कोई बिल्ड
 हेल्पर, reduced-motion सपोर्ट और डार्क मोड डिफ़ॉल्ट रूप से शिप
 करता है।</p>
 <p><strong>Gzipped आकार कितना है?</strong>
-39.1 KB minified, <strong>7.8 KB gzipped</strong>, 6.7 KB brotli
+42.3 KB minified, <strong>7.9 KB gzipped</strong>, 6.8 KB brotli
 पूर्ण कोर स्टाइलशीट के लिए। 8 KB की सीमा CI में लागू है।</p>
 <p><strong>कौन सा लाइसेंस है?</strong>
 MIT और Apache 2.0 के तहत दोहरा लाइसेंस — जो भी आपके प्रोजेक्ट को
@@ -558,7 +558,7 @@ MIT और Apache 2.0 के तहत दोहरा लाइसेंस —
       "name": "Skeletonic Stylus का gzipped आकार कितना है?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.1 KB minified, 7.8 KB gzipped, 6.7 KB brotli पूर्ण कोर स्टाइलशीट के लिए। 8 KB की सीमा हर कमिट पर CI में लागू है।"
+        "text": "42.3 KB minified, 7.9 KB gzipped, 6.8 KB brotli पूर्ण कोर स्टाइलशीट के लिए। 8 KB की सीमा हर कमिट पर CI में लागू है।"
       }
     },
     {

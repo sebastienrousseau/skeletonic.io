@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
   "permalink": "https://skeletonic.io/ar/ittisal/",
-  "description": "تواصل معنا بشأن Skeletonic Stylus — تقارير الأخطاء، أفكار الميزات، الشراكات، أو الملاحظات العامة.",
-  "keywords": "اتصال, دعم, ملاحظات, skeletonic",
+  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
   "language": "ar",
+  "description": "تواصل معنا بشأن Skeletonic Stylus — تقارير الأخطاء، أفكار الميزات، الشراكات، أو الملاحظات العامة.",
   "title": "اتصل بنا",
+  "layout": "contact",
+  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "contact"
+  "keywords": "اتصال, دعم, ملاحظات, skeletonic"
 }

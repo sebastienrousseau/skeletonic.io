@@ -239,7 +239,7 @@ thuoc nhat quan voi phan con lai cua he thong thiet ke.
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Ho ten</label>
   <input id="demo-name" type="text">
 
@@ -250,7 +250,7 @@ thuoc nhat quan voi phan con lai cua he thong thiet ke.
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Gui (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Luu y tro nang.** Moi o nhap phai co `<label for="…">` duoc lien

@@ -53,13 +53,13 @@ Neu ban chi can CSS da bien dich, them mot trong nhung dong nay vao `<head>`:
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -70,8 +70,8 @@ v2.0.0 va them thuoc tinh `integrity="sha384-…"`.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Co | Co |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Co | Khong |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Co | Co |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Co | Khong |
 
 ### Tai tu ban phat hanh GitHub
 
@@ -102,7 +102,7 @@ Thu vien cung cap mot so goi CSS tien tao trong
 | Tap | Muc dich | Kich thuoc (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token + layout + phan tu + thanh phan + tien ich | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Mo-dun hieu ung dong tuy chon | ≈213 KB / ≈6.7 KB |
+| `animations/skeletonic-animations.min.css` | Mo-dun hieu ung dong tuy chon | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Bang mau Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Bang mau tien ich Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Bang mau web-safe | ≈3.5 KB |
@@ -153,7 +153,7 @@ Kiem tra nhanh "da hoat dong chua?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Da hoat dong.</h1>

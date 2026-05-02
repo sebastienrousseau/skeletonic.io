@@ -47,13 +47,13 @@ Jika Anda hanya membutuhkan CSS yang sudah dikompilasi, masukkan salah satu ini 
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -63,8 +63,8 @@ Untuk integritas maksimum, salin **hash SRI** dari catatan rilis v2.0.0 dan tamb
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ya | Ya |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Ya | Tidak |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Ya | Ya |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Ya | Tidak |
 
 ### Unduh rilis GitHub
 
@@ -93,7 +93,7 @@ Pustaka ini menyediakan beberapa bundle yang sudah dibuat sebelumnya di bawah `d
 | File | Tujuan | Ukuran (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token + layout + elemen + komponen + utilitas | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modul animasi opsional | ≈213 KB / ≈6.7 KB |
+| `animations/skeletonic-animations.min.css` | Modul animasi opsional | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Palet warna Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Palet utilitas Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Palet web-safe | ≈3.5 KB |
@@ -142,7 +142,7 @@ Pemeriksaan minimal "apakah berhasil?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Berhasil.</h1>

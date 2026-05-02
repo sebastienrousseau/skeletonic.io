@@ -31,13 +31,12 @@
          v0.0.34 and don't change between builds — if the SSG ever
          changes them we'll see the CSP error in the browser console
          and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
 
     <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
     <link rel="preload" href="/css/skeletonic.min.css" as="style">
-    <link rel="preload" href="/css/chrome.css" as="style">
-    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="preload" href="/css/chrome.css" as="style"><link rel="icon" type="image/svg+xml" href="/images/logo.svg">
     <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
     <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
     <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
@@ -124,13 +123,14 @@
          chrome + skeletonic bundles. -->
     <!-- @@CRITICAL_CSS@@ -->
 
-    <!-- Skeletonic Stylus v2.0.0 + chrome — render-blocking, but
+    <!-- Skeletonic Stylus v2.1.0 + chrome — render-blocking, but
          the inline critical CSS above already painted above-the-fold,
-         so first paint isn't waiting for these. The `media="print"
-         onload=…" defer trick was tempting but ships an inline event
-         handler that the page CSP correctly blocks (hashes don't
-         apply to event handlers). Standard <link rel="stylesheet">
-         keeps the page CSP-clean. -->
+         so first paint isn't waiting on these. Async loading via
+         media="print"+onload regressed mobile perf because the
+         critical CSS doesn't cover every above-the-fold element on
+         every page (cards, code blocks); when the full sheet arrives
+         the layout shifts. Keep it render-blocking and rely on the
+         critical-CSS head budget for sub-1s FCP. -->
     <link rel="stylesheet" href="/css/skeletonic.min.css">
     
     
@@ -190,7 +190,7 @@
   <meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-</head>
+<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
     <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -278,7 +278,7 @@
 
     
 <header class="site-hero">
-  <h1>Skeletonic Stylus</h1>
+  <h1 class="hero-title">Skeletonic Stylus</h1>
   
 </header>
 
@@ -292,14 +292,13 @@
 while these translations catch up. See <a href="https://skeletonic.io/about/">https://skeletonic.io/about/</a> ·
 <a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
 </blockquote>
-<p class="badges">
-  <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
-  <img alt="Mesicni stahovani" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
-  <img alt="npm verze" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Velikost balicku" src="https://img.shields.io/badge/gzip-7.8%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
-  <img alt="Licence" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
-  <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
-</p>
+<dl class="stat-strip" aria-label="Project facts">
+  <div><dt>Version</dt><dd>2.0.0</dd></div>
+  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
+  <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
+</dl>
 <h2>Ve zkratce</h2>
 <p><strong>Skeletonic Stylus</strong> je open-source knihovna
 <a href="https://stylus-lang.com">Stylus</a> CSS vytvorena pro pristupne, rychle

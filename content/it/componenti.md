@@ -230,7 +230,7 @@ Label, input di testo, textarea, fieldset e legend — tutti dimensionati in mod
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Nome</label>
   <input id="demo-name" type="text">
 
@@ -241,7 +241,7 @@ Label, input di testo, textarea, fieldset e legend — tutti dimensionati in mod
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Invia (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Nota sull'accessibilita.** Ogni input deve avere un

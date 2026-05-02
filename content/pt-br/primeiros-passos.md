@@ -53,13 +53,13 @@ Se voce precisa apenas do CSS compilado, adicione uma destas linhas ao seu `<hea
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -70,8 +70,8 @@ v2.0.0 e adicione um atributo `integrity="sha384-…"`.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Sim | Sim |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Sim | Nao |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Sim | Sim |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Sim | Nao |
 
 ### Baixar o release do GitHub
 
@@ -103,7 +103,7 @@ a instalacao:
 | Arquivo | Finalidade | Tamanho (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elementos + componentes + utilitarios | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modulo de animacoes opcional | ≈213 KB / ≈6.7 KB |
+| `animations/skeletonic-animations.min.css` | Modulo de animacoes opcional | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de cores Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta utilitaria Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Paleta web-safe | ≈3.5 KB |
@@ -154,7 +154,7 @@ Um teste minimo de "funcionou?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Funcionou.</h1>

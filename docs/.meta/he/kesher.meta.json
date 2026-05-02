@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "title": "יצירת קשר",
   "permalink": "https://skeletonic.io/he/kesher/",
+  "language": "he",
+  "description": "צרו קשר לגבי Skeletonic Stylus — דיווחי באגים, רעיונות לתכונות, שיתופי פעולה או משוב כללי.",
   "keywords": "יצירת קשר, תמיכה, משוב, skeletonic",
   "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "language": "he",
-  "title": "יצירת קשר",
-  "layout": "contact",
-  "description": "צרו קשר לגבי Skeletonic Stylus — דיווחי באגים, רעיונות לתכונות, שיתופי פעולה או משוב כללי."
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "contact"
 }

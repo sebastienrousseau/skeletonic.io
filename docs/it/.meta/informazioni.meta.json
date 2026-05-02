@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/it/informazioni/",
-  "title": "Informazioni su Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "it",
-  "date": "2026-04-08",
   "keywords": "skeletonic, informazioni, stylus, framework css, filosofia",
-  "description": "Skeletonic Stylus e una libreria CSS Stylus open source per uno styling UI accessibile, veloce e modulare."
+  "title": "Informazioni su Skeletonic Stylus",
+  "description": "Skeletonic Stylus e una libreria CSS Stylus open source per uno styling UI accessibile, veloce e modulare.",
+  "layout": "page",
+  "language": "it",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/it/informazioni/",
+  "name": "Skeletonic Stylus"
 }

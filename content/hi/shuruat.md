@@ -19,7 +19,7 @@ keywords: "skeletonic इंस्टॉल, stylus सेटअप, css cdn, �
 ## परिचय
 
 Skeletonic Stylus में नए हैं? **v2.0.0** में अपनी ज़रूरत की सुविधाएँ
-चुनना पहले से कहीं आसान है। अपने छोटे फ़ुटप्रिंट (7.8&nbsp;KB
+चुनना पहले से कहीं आसान है। अपने छोटे फ़ुटप्रिंट (7.9&nbsp;KB
 gzipped कोर स्टाइलशीट) के कारण, यह किसी भी वेब ऐप में तेज़ी से
 इंटीग्रेट होती है — कोई JavaScript फ़्रेमवर्क ज़रूरी नहीं, CDN
 इस्तेमाल करें तो कोई बिल्ड स्टेप भी नहीं।
@@ -53,13 +53,13 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -70,8 +70,8 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | हाँ | हाँ |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | हाँ | नहीं |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | हाँ | हाँ |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | हाँ | नहीं |
 
 ### GitHub रिलीज़ डाउनलोड करें
 
@@ -103,8 +103,8 @@ pnpm run build
 
 | फ़ाइल | उद्देश्य | आकार (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 39.1 KB / 7.8 KB |
-| `animations/skeletonic-animations.min.css` | वैकल्पिक एनिमेशन मॉड्यूल | ≈213 KB / ≈6.7 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 42.3 KB / 7.9 KB |
+| `animations/skeletonic-animations.min.css` | वैकल्पिक एनिमेशन मॉड्यूल | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Material रंग पैलेट | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons यूटिलिटी पैलेट | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Web-safe पैलेट | ≈3.5 KB |
@@ -156,7 +156,7 @@ Skeletonic अपने डिज़ाइन टोकन **CSS कस्टम
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>यह काम कर रहा है।</h1>
@@ -227,7 +227,7 @@ CSS सीधे CDN से लोड करें — कोई बिल्ड
 करता है।
 
 **Gzipped आकार कितना है?**
-39.1&nbsp;KB minified, **7.8&nbsp;KB gzipped**, 6.7&nbsp;KB brotli
+42.3&nbsp;KB minified, **7.9&nbsp;KB gzipped**, 6.8&nbsp;KB brotli
 पूर्ण कोर स्टाइलशीट के लिए। 8&nbsp;KB की सीमा CI में लागू है।
 
 **कौन सा लाइसेंस है?**
@@ -268,7 +268,7 @@ MIT और Apache 2.0 के तहत दोहरा लाइसेंस —
       "name": "Skeletonic Stylus का gzipped आकार कितना है?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.1 KB minified, 7.8 KB gzipped, 6.7 KB brotli पूर्ण कोर स्टाइलशीट के लिए। 8 KB की सीमा हर कमिट पर CI में लागू है।"
+        "text": "42.3 KB minified, 7.9 KB gzipped, 6.8 KB brotli पूर्ण कोर स्टाइलशीट के लिए। 8 KB की सीमा हर कमिट पर CI में लागू है।"
       }
     },
     {

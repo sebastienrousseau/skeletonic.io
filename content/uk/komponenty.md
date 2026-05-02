@@ -171,7 +171,7 @@ keywords: "компоненти skeletonic, кнопки, картки, форм
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped.</p>
+      <p>42.3 KB minified, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -242,7 +242,7 @@ keywords: "компоненти skeletonic, кнопки, картки, форм
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Ім'я</label>
   <input id="demo-name" type="text">
 
@@ -253,7 +253,7 @@ keywords: "компоненти skeletonic, кнопки, картки, форм
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Надіслати (демо)</button></p>
-</form>
+</div>
 </section>
 
 > **Примітка щодо доступності.** Кожне поле введення повинно мати

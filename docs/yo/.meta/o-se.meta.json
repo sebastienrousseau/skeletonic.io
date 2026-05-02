@@ -1,12 +1,12 @@
 {
-  "layout": "thanks",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
   "title": "O ṣe!",
+  "layout": "thanks",
+  "description": "Ifiranṣẹ rẹ ti dé ni aṣeyọri.",
+  "language": "yo",
   "keywords": "o ṣe",
   "permalink": "https://skeletonic.io/yo/o-se/",
-  "author": "Sebastien Rousseau",
   "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Ifiranṣẹ rẹ ti dé ni aṣeyọri.",
-  "name": "Skeletonic Stylus",
-  "language": "yo"
+  "name": "Skeletonic Stylus"
 }

@@ -230,7 +230,7 @@ Etykiety, pola tekstowe, textareas, fieldsety i legendy — wszystko spatne rozm
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Imie</label>
   <input id="demo-name" type="text">
 
@@ -241,7 +241,7 @@ Etykiety, pola tekstowe, textareas, fieldsety i legendy — wszystko spatne rozm
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Wyslij (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Uwaga dot. dostepnosci.** Kazde pole musi miec programowo powiazana

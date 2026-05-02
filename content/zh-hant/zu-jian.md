@@ -151,7 +151,7 @@ keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped.</p>
+      <p>42.3 KB minified, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">輕量級</h3>
-      <p>壓縮後 39.1&nbsp;KB，gzip 後 7.8&nbsp;KB。</p>
+      <p>壓縮後 42.3&nbsp;KB，gzip 後 7.9&nbsp;KB。</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -218,7 +218,7 @@ keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首,
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">姓名</label>
   <input id="demo-name" type="text">
 
@@ -229,7 +229,7 @@ keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首,
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">發送（示範）</button></p>
-</form>
+</div>
 </section>
 
 > **無障礙提示。** 每個輸入框必須有程式化關聯的 `<label for="…">`。將相關控制項放入 `<fieldset>` 並附上 `<legend>`。使用 `required` 標記必填欄位（並在標籤文字中加上可見的星號）。

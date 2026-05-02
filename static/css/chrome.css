@@ -416,10 +416,37 @@
         background: radial-gradient(circle at center, var(--c-hero-grad-1) 0%, var(--c-hero-grad-2) 50%, var(--c-hero-grad-3) 100%);
         border-bottom: 1px solid var(--c-border);
       }
-      .hero-logo {
+      /* Hero title — replaces the inline-text <h1> with the CDN-served
+         SVG brand logo when CSS is loaded. Without CSS, the h1 text
+         shows verbatim. Sized to feel airy on desktop, never larger
+         than 60vw on mobile. */
+      .site-hero .hero-title{
+        margin: 0 auto 0.75rem;
+        display: block;
         width: clamp(120px, 20vw, 208px);
-        height: auto;
+        aspect-ratio: 1 / 1;
+        background: url("https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg") center / contain no-repeat;
+        text-indent: -9999px;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 0;
+        color: transparent;
         animation: hero-float 6s ease-in-out infinite;
+      }
+      @media (prefers-reduced-motion: reduce){
+        .site-hero .hero-title{ animation: none; }
+      }
+      /* Forced-colors / Windows High Contrast Mode strips background
+         images. Restore the h1 text so the brand still reads. */
+      @media (forced-colors: active){
+        .site-hero .hero-title{
+          background: none;
+          text-indent: 0;
+          font-size: var(--fs-h1);
+          color: CanvasText;
+          width: auto;
+          aspect-ratio: auto;
+        }
       }
       @keyframes hero-float {
         0%, 100% { transform: translateY(0); }
@@ -970,13 +997,6 @@
         background:linear-gradient(180deg,var(--c-hero-grad-1) 0%,var(--c-hero-grad-2) 30%,var(--c-hero-grad-3) 60%,var(--c-bg) 100%);
         padding:5rem 1.5rem 3rem;
       }
-      .site-hero .hero-logo{
-        display:block;
-        width:13rem;
-        max-width:31%;
-        height:auto;
-        margin:0 auto 1.5rem;
-      }
       .site-hero h1{
         color:#1a1a1a;
         letter-spacing:-.015em;
@@ -1055,7 +1075,38 @@
       .site-main tbody tr:hover { background: rgba(0,0,0,0.02); }
       [data-theme="dark"] .site-main tbody tr:hover { background: rgba(255,255,255,0.02); }
       .site-main img{max-width:100%;height:auto;}
-      .site-main .badges img{margin:0 .25rem .5rem 0;height:28px;}
+      .site-main .stat-strip{
+        display:flex;
+        flex-wrap:wrap;
+        gap:.5rem;
+        margin:0 0 1.5rem;
+        padding:0;
+        list-style:none;
+      }
+      .site-main .stat-strip > div{
+        display:inline-flex;
+        align-items:center;
+        gap:.5rem;
+        background:var(--c-surface);
+        border:1px solid var(--c-border);
+        border-radius:9999px;
+        padding:.375rem .875rem;
+        font-size:.8125rem;
+        line-height:1.4;
+      }
+      .site-main .stat-strip dt{
+        margin:0;
+        color:var(--c-secondary);
+        font-weight:500;
+        text-transform:uppercase;
+        letter-spacing:.04em;
+        font-size:.6875rem;
+      }
+      .site-main .stat-strip dd{
+        margin:0;
+        color:var(--c-heading);
+        font-weight:600;
+      }
 
       /* Footer */
       .site-footer{

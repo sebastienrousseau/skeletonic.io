@@ -1,12 +1,12 @@
 {
-  "layout": "index",
-  "keywords": "css, stylus, framework css, css accesibil, wcag 2.2, css ușor, cascade layers, sistem de design",
-  "title": "Skeletonic Stylus — CSS accesibil, 8,3 KB gzipped",
   "language": "ro",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/ro/",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
   "description": "Skeletonic Stylus este o bibliotecă CSS Stylus ușoară și modulară — compatibilă WCAG 2.2, cu cascade layers, 8,3 KB gzipped — concepută pentru dezvoltarea modernă a interfețelor web.",
+  "name": "Skeletonic Stylus",
+  "layout": "index",
+  "title": "Skeletonic Stylus — CSS accesibil, 8,3 KB gzipped",
+  "author": "Sebastien Rousseau",
+  "keywords": "css, stylus, framework css, css accesibil, wcag 2.2, css ușor, cascade layers, sistem de design",
+  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)"
 }

@@ -1,11 +1,11 @@
 {
-  "layout": "page",
-  "title": "Components",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Live HTML examples of every Skeletonic Stylus component, grouped, anchored, and rendered with the very stylesheet being demoed.",
   "author": "Sebastien Rousseau",
+  "keywords": "skeletonic components, buttons, cards, forms, alerts, badges, header, navbar, css only hamburger",
+  "layout": "page",
   "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "title": "Components",
   "permalink": "https://skeletonic.io/components/",
-  "keywords": "skeletonic components, buttons, cards, forms, alerts, badges, header, navbar, css only hamburger"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Live HTML examples of every Skeletonic Stylus component, grouped, anchored, and rendered with the very stylesheet being demoed."
 }

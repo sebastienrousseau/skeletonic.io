@@ -53,13 +53,13 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -70,8 +70,8 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | হ্যাঁ | হ্যাঁ |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | হ্যাঁ | না |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | হ্যাঁ | হ্যাঁ |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | হ্যাঁ | না |
 
 ### GitHub রিলিজ ডাউনলোড
 
@@ -101,8 +101,8 @@ pnpm run build
 
 | ফাইল | উদ্দেশ্য | আকার (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 39.1 KB / 7.8 KB |
-| `animations/skeletonic-animations.min.css` | ঐচ্ছিক অ্যানিমেশন মডিউল | ≈213 KB / ≈6.7 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 42.3 KB / 7.9 KB |
+| `animations/skeletonic-animations.min.css` | ঐচ্ছিক অ্যানিমেশন মডিউল | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Material রঙ প্যালেট | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons ইউটিলিটি প্যালেট | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Web-safe প্যালেট | ≈3.5 KB |
@@ -154,7 +154,7 @@ Skeletonic তার ডিজাইন টোকেনগুলো **CSS কা
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>কাজ করছে।</h1>
@@ -224,7 +224,7 @@ Stylus ট্রি পাবেন:
 skip-link সহায়ক, reduced-motion সমর্থন এবং ডিফল্টরূপে ডার্ক মোড শিপ করে।
 
 **gzipped আকার কত?**
-39.1&nbsp;KB মিনিফাইড, **~৭.৫&nbsp;KB gzipped**, ~৬.৩&nbsp;KB brotli
+42.3&nbsp;KB মিনিফাইড, **~৭.৫&nbsp;KB gzipped**, ~৬.৩&nbsp;KB brotli
 সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮&nbsp;KB সীমা CI-তে বাধ্যতামূলক।
 
 **কোন লাইসেন্স ব্যবহার করা হয়?**
@@ -266,7 +266,7 @@ MIT এবং Apache 2.0 দ্বৈত লাইসেন্সপ্রাপ
       "name": "Skeletonic Stylus-এর gzipped আকার কত?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.1 KB মিনিফাইড, ~৭.৫ KB gzipped, ~৬.৩ KB brotli সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮ KB সীমা প্রতিটি কমিটে CI-তে বাধ্যতামূলক।"
+        "text": "42.3 KB মিনিফাইড, ~৭.৫ KB gzipped, ~৬.৩ KB brotli সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮ KB সীমা প্রতিটি কমিটে CI-তে বাধ্যতামূলক।"
       }
     },
     {

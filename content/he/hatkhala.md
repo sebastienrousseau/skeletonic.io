@@ -19,7 +19,7 @@ keywords: "התקנת skeletonic, הגדרת stylus, css cdn, התחלה"
 ## מבוא
 
 חדשים ב-Skeletonic Stylus? ב-**v2.0.0** קל מתמיד לבחור רק את
-התכונות שאתם צריכים. הודות לטביעת רגל זעירה (כ-7.8&nbsp;KB בדחיסת
+התכונות שאתם צריכים. הודות לטביעת רגל זעירה (כ-7.9&nbsp;KB בדחיסת
 gzip עבור גיליון הסגנונות הליבתי), היא משתלבת במהירות בכל יישום
 אינטרנט — ללא צורך ב-framework של JavaScript, ללא שלב בנייה אם
 אתם משתמשים ב-CDN.
@@ -53,13 +53,13 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -70,8 +70,8 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | כן | כן |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | כן | לא |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | כן | כן |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | כן | לא |
 
 ### הורדת שחרור GitHub
 
@@ -102,7 +102,7 @@ pnpm run build
 
 | קובץ | מטרה | גודל (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + טוקנים + פריסה + אלמנטים + רכיבים + שירות | 39.1 KB / 7.8 KB |
+| `core/skeletonic.min.css` | Reset + טוקנים + פריסה + אלמנטים + רכיבים + שירות | 42.3 KB / 7.9 KB |
 | `animations/skeletonic-animations.min.css` | מודול אנימציות אופציונלי | כ-18 KB / כ-4 KB |
 | `palettes/material/skeletonic-material.min.css` | פלטת צבעים Material | כ-8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | פלטת שירות Tachyons | 7.3 KB |
@@ -154,7 +154,7 @@ Skeletonic חושפת את טוקני העיצוב שלה כ-**משתני CSS** 
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>זה עובד.</h1>
@@ -222,7 +222,7 @@ Skeletonic חושפת את טוקני העיצוב שלה כ-**משתני CSS** 
 דילוג, תמיכה בתנועה מופחתת ומצב כהה כברירת מחדל.
 
 **מה הגודל בדחיסת gzip?**
-39.1&nbsp;KB ממוזער, **כ-7.8&nbsp;KB בדחיסת gzip**, כ-6.7&nbsp;KB
+42.3&nbsp;KB ממוזער, **כ-7.9&nbsp;KB בדחיסת gzip**, כ-6.8&nbsp;KB
 brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8&nbsp;KB נאכפת ב-CI.
 
 **באיזה רישיון היא משתמשת?**
@@ -263,7 +263,7 @@ brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8&
       "name": "מה הגודל בדחיסת gzip של Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.1 KB ממוזער, כ-7.8 KB בדחיסת gzip, כ-6.7 KB brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8 KB נאכפת ב-CI בכל commit."
+        "text": "42.3 KB ממוזער, כ-7.9 KB בדחיסת gzip, כ-6.8 KB brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8 KB נאכפת ב-CI בכל commit."
       }
     },
     {

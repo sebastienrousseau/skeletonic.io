@@ -53,13 +53,13 @@ Yalnizca derlenmmis CSS'e ihtiyaciniz varsa, bunlardan birini `<head>` icerisine
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -70,8 +70,8 @@ kopyalayin ve bir `integrity="sha384-..."` ozeligi ekleyin.
 
 | CDN | URL | HTTPS | Kombo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Evet | Evet |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Evet | Hayir |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Evet | Evet |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Evet | Hayir |
 
 ### GitHub surumunu indirin
 
@@ -104,7 +104,7 @@ derlenmis paket sunar:
 | Dosya | Amac | Boyut (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token'lar + duzen + ogeler + bilesenler + yardimcilar | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Istege bagli animasyonlar modulu | ≈213 KB / ≈6.7 KB |
+| `animations/skeletonic-animations.min.css` | Istege bagli animasyonlar modulu | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Material renk paleti | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons yardimci paleti | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Web-safe paleti | ≈3.5 KB |
@@ -155,7 +155,7 @@ Minimal bir "calisiyor mu?" kontrolu:
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Calisiyor.</h1>

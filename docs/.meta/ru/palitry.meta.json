@@ -1,12 +1,12 @@
 {
+  "name": "Skeletonic Stylus",
   "language": "ru",
-  "keywords": "css палитра, material, tachyons, websafe, дизайн-токены",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "title": "Палитры",
+  "layout": "page",
   "description": "Цветовые палитры Material, Tachyons и Web-safe, входящие в Skeletonic Stylus v2.0.0.",
   "permalink": "https://skeletonic.io/ru/palitry/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Палитры",
-  "name": "Skeletonic Stylus",
-  "layout": "page",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau"
+  "keywords": "css палитра, material, tachyons, websafe, дизайн-токены",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

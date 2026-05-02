@@ -218,7 +218,7 @@ Label, input teks, textarea, fieldset, dan legend — semua berukuran konsisten 
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Nama</label>
   <input id="demo-name" type="text">
 
@@ -229,7 +229,7 @@ Label, input teks, textarea, fieldset, dan legend — semua berukuran konsisten 
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Kirim (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Catatan aksesibilitas.** Setiap input harus memiliki `<label for="...">` yang terhubung secara programatik. Kelompokkan kontrol terkait di dalam `<fieldset>` dengan `<legend>`. Tandai kolom wajib dengan `required` (dan tanda bintang yang terlihat di teks label).

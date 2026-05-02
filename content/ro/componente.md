@@ -235,7 +235,7 @@ Etichete, câmpuri text, textarea-uri, fieldset-uri și legend-uri — toate dim
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Nume</label>
   <input id="demo-name" type="text">
 
@@ -246,7 +246,7 @@ Etichete, câmpuri text, textarea-uri, fieldset-uri și legend-uri — toate dim
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Trimite (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Notă de accesibilitate.** Fiecare intrare trebuie să aibă un

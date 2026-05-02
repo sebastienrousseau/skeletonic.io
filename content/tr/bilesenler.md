@@ -171,7 +171,7 @@ kart duvarlari icin `flex-N` izgarasiyla birlestirebilirsiniz.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped.</p>
+      <p>42.3 KB minified, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -245,7 +245,7 @@ boyutlandirilmistir.
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Ad</label>
   <input id="demo-name" type="text">
 
@@ -256,7 +256,7 @@ boyutlandirilmistir.
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Gonder (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Erisilebilirlik notu.** Her giris alaninin programatik olarak

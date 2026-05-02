@@ -1,13 +1,13 @@
 {
-  "layout": "page",
-  "language": "ro",
-  "date": "2026-04-08",
   "keywords": "animații css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
-  "author": "Sebastien Rousseau",
+  "layout": "page",
   "title": "Animații",
-  "load_animations": true,
+  "author": "Sebastien Rousseau",
+  "language": "ro",
   "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/ro/animatii/",
   "name": "Skeletonic Stylus",
-  "description": "Modulul opțional de animații livrat cu Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake și altele, toate condiționate de prefers-reduced-motion."
+  "description": "Modulul opțional de animații livrat cu Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake și altele, toate condiționate de prefers-reduced-motion.",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/ro/animatii/",
+  "load_animations": true
 }

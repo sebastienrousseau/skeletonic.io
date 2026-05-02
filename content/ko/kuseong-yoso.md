@@ -151,7 +151,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>39.1 KB minified, 7.8 KB gzipped.</p>
+      <p>42.3 KB minified, 7.9 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">경량</h3>
-      <p>39.1&nbsp;KB 최소화, 7.8&nbsp;KB gzipped.</p>
+      <p>42.3&nbsp;KB 최소화, 7.9&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -218,7 +218,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">이름</label>
   <input id="demo-name" type="text">
 
@@ -229,7 +229,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">보내기 (데모)</button></p>
-</form>
+</div>
 </section>
 
 > **접근성 참고.** 모든 입력에는 프로그래밍적으로 연결된 `<label for="…">`이 있어야 합니다. 관련 컨트롤을 `<fieldset>` 안에 `<legend>`와 함께 그룹화하십시오. 필수 필드는 `required`(및 라벨 텍스트에 보이는 별표)로 표시하십시오.

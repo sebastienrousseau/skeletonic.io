@@ -53,13 +53,13 @@ Dacă ai nevoie doar de CSS-ul compilat, adaugă una din aceste linii în `<head
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -69,8 +69,8 @@ Pentru integritate maximă, copiază **hash-ul SRI** din notele de lansare v2.0.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Da | Da |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Da | Nu |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Da | Da |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Da | Nu |
 
 ### Descarcă versiunea de pe GitHub
 
@@ -101,7 +101,7 @@ Biblioteca furnizează mai multe bundle-uri pre-compilate sub
 | Fișier | Scop | Dimensiune (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elemente + componente + utilitare | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modul opțional de animații | ≈213 KB / ≈6.7 KB |
+| `animations/skeletonic-animations.min.css` | Modul opțional de animații | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de culori Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta utilitară Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Paleta web-safe | ≈3.5 KB |
@@ -150,7 +150,7 @@ O verificare minimă „a funcționat?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Funcționează.</h1>

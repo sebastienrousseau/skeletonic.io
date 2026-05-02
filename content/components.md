@@ -319,7 +319,7 @@ Plain `<table>` elements get bordered cells and a contrast-flipped
     <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
   </thead>
   <tbody>
-    <tr><td>Skeletonic</td><td>6.7 KB</td><td>Yes</td></tr>
+    <tr><td>Skeletonic</td><td>6.8 KB</td><td>Yes</td></tr>
     <tr><td>Pico CSS</td><td>10.1 KB</td><td>Yes</td></tr>
     <tr><td>Bootstrap</td><td>23.0 KB</td><td>No (Popper)</td></tr>
   </tbody>
@@ -332,7 +332,7 @@ Plain `<table>` elements get bordered cells and a contrast-flipped
     <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
   </thead>
   <tbody>
-    <tr><td>Skeletonic</td><td>6.7 KB</td><td>Yes</td></tr>
+    <tr><td>Skeletonic</td><td>6.8 KB</td><td>Yes</td></tr>
     <tr><td>Pico CSS</td><td>10.1 KB</td><td>Yes</td></tr>
     <tr><td>Bootstrap</td><td>23.0 KB</td><td>No (Popper)</td></tr>
   </tbody>
@@ -371,7 +371,7 @@ consistently with the rest of the design system.
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">Name</label>
   <input id="demo-name" type="text">
 
@@ -382,7 +382,7 @@ consistently with the rest of the design system.
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">Send (demo)</button></p>
-</form>
+</div>
 </section>
 
 > **Accessibility note.** Every input must have a programmatically
@@ -405,13 +405,13 @@ that already has element styling.
 ```
 
 <section aria-labelledby="status-inputs">
-<form>
+<div role="group" aria-label="Status inputs demo">
   <p><input type="text" class="input-primary" placeholder="Primary" aria-label="primary status example"></p>
   <p><input type="text" class="input-success" placeholder="Saved" aria-label="success status example"></p>
   <p><input type="text" class="input-warning" placeholder="Check this" aria-label="warning status example"></p>
   <p><input type="email" class="input-error" value="not-an-email" aria-label="error status example"></p>
   <p><input type="text" class="input-info" placeholder="FYI" aria-label="info status example"></p>
-</form>
+</div>
 </section>
 
 > **Accessibility note.** Colour alone never carries meaning. Pair

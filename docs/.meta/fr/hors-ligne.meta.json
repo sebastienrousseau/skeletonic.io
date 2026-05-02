@@ -1,12 +1,12 @@
 {
-  "title": "Hors ligne",
-  "description": "skeletonic.io n'a pas pu se connecter au réseau. La page demandée n'a pas encore été mise en cache.",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/fr/hors-ligne/",
   "language": "fr",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
+  "description": "skeletonic.io n'a pas pu se connecter au réseau. La page demandée n'a pas encore été mise en cache.",
   "keywords": "hors ligne, service worker, pwa",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "title": "Hors ligne",
+  "permalink": "https://skeletonic.io/fr/hors-ligne/",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08"
 }

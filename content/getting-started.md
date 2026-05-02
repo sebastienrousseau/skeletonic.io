@@ -13,7 +13,7 @@ keywords: "install skeletonic, stylus setup, css cdn, getting started"
 ## Intro
 
 New to Skeletonic Stylus? In **v2.0.0** the core stylesheet is
-**7.8&nbsp;KB gzip / 6.7&nbsp;KB brotli** for the full RTL-ready,
+**7.9&nbsp;KB gzip / 6.8&nbsp;KB brotli** for the full RTL-ready,
 WCAG&nbsp;2.2&nbsp;AA bundle — measured against the canonical CDN file,
 not approximated. It integrates into any web app from a single
 `<link>` — no JavaScript framework required, no build step needed if
@@ -48,13 +48,13 @@ If you only need the compiled CSS, drop one of these into your `<head>`:
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -65,8 +65,8 @@ notes and add an `integrity="sha384-…"` attribute.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Yes | Yes |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Yes | No |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Yes | Yes |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Yes | No |
 
 ### Download the GitHub release
 
@@ -97,8 +97,8 @@ The library ships several pre-built bundles under
 
 | File | Purpose | Min raw / gzip / brotli |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities, RTL-ready | 39.1 KB / 7.8 KB / 6.7 KB |
-| `animations/skeletonic-animations.min.css` | 56 keyframes, gated behind `prefers-reduced-motion` | 217.8 KB / 6.7 KB / — |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities, RTL-ready | 42.3 KB / 7.9 KB / 6.8 KB |
+| `animations/skeletonic-animations.min.css` | 56 keyframes, gated behind `prefers-reduced-motion` | 217.9 KB / 6.8 KB / — |
 | `palettes/material/skeletonic-material.min.css` | Material 19×14 hue/shade utilities | ≈17.9 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility palette | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | ~140 CSS named-color utilities | ≈3.5 KB |
@@ -149,7 +149,7 @@ A minimal "did it work?" check:
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>It works.</h1>
@@ -219,7 +219,7 @@ Yes. v2.0.0 ships AA-conformant contrast, focus-visible rings,
 skip-link helpers, reduced-motion support and dark mode by default.
 
 **What's the gzipped size?**
-39.1&nbsp;KB minified, **7.8&nbsp;KB gzip**, **6.7&nbsp;KB brotli** for
+42.3&nbsp;KB minified, **7.9&nbsp;KB gzip**, **6.8&nbsp;KB brotli** for
 the full RTL-ready core stylesheet. Compressed budgets (10&nbsp;KB gzip,
 8&nbsp;KB brotli) are enforced in CI on every commit. See
 [the framework benchmark](/benchmarks/) for side-by-side numbers
@@ -263,7 +263,7 @@ needs. Free for commercial and personal use.
       "name": "What's the gzipped size of Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.1 KB minified, 7.8 KB gzip, 6.7 KB brotli for the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip, 8 KB brotli) are enforced in CI on every commit."
+        "text": "42.3 KB minified, 7.9 KB gzip, 6.8 KB brotli for the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip, 8 KB brotli) are enforced in CI on every commit."
       }
     },
     {

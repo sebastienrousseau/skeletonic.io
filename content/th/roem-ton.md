@@ -19,7 +19,7 @@ keywords: "ติดตั้ง skeletonic, ตั้งค่า stylus, css c
 ## บทนำ
 
 ใหม่กับ Skeletonic Stylus? ใน **v2.0.0** การเลือกเฉพาะฟีเจอร์ที่ต้องการนั้น
-ง่ายกว่าที่เคย ด้วยขนาดที่เล็กมาก (7.8&nbsp;KB gzipped สำหรับ
+ง่ายกว่าที่เคย ด้วยขนาดที่เล็กมาก (7.9&nbsp;KB gzipped สำหรับ
 สไตล์ชีตหลัก) จึงรวมเข้ากับเว็บแอปใดก็ได้อย่างรวดเร็ว — ไม่ต้องใช้
 JavaScript framework ไม่ต้อง build step หากใช้ CDN
 
@@ -53,13 +53,13 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -70,8 +70,8 @@ yarn add @sebastienrousseau/skeletonic-stylus@2.0.0
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | ใช่ | ใช่ |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | ใช่ | ไม่ |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | ใช่ | ใช่ |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | ใช่ | ไม่ |
 
 ### ดาวน์โหลด GitHub release
 
@@ -101,8 +101,8 @@ pnpm run build
 
 | ไฟล์ | วัตถุประสงค์ | ขนาด (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 39.1 KB / 7.8 KB |
-| `animations/skeletonic-animations.min.css` | โมดูลแอนิเมชันเสริม | ≈213 KB / ≈6.7 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 42.3 KB / 7.9 KB |
+| `animations/skeletonic-animations.min.css` | โมดูลแอนิเมชันเสริม | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | ชุดสี Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | ชุดสีอรรถประโยชน์ Tachyons | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | ชุดสี Web-safe | ≈3.5 KB |
@@ -153,7 +153,7 @@ Skeletonic เปิดเผย design tokens เป็น **CSS custom propert
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>ใช้งานได้แล้ว</h1>
@@ -221,7 +221,7 @@ CSS ที่คอมไพล์แล้วจาก CDN ได้เลย �
 ลิงก์ข้าม รองรับการลดการเคลื่อนไหว และโหมดมืดเป็นค่าเริ่มต้น
 
 **ขนาด gzipped เท่าไร?**
-39.1&nbsp;KB minified, **7.8&nbsp;KB gzipped**, 6.7&nbsp;KB brotli สำหรับ
+42.3&nbsp;KB minified, **7.9&nbsp;KB gzipped**, 6.8&nbsp;KB brotli สำหรับ
 สไตล์ชีตหลักทั้งหมด เพดาน 8&nbsp;KB ถูกบังคับใน CI ทุกคอมมิต
 
 **ใช้สัญญาอนุญาตอะไร?**
@@ -262,7 +262,7 @@ CSS ที่คอมไพล์แล้วจาก CDN ได้เลย �
       "name": "ขนาด gzipped ของ Skeletonic Stylus เท่าไร?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.1 KB minified, 7.8 KB gzipped, 6.7 KB brotli สำหรับสไตล์ชีตหลักทั้งหมด เพดาน 8 KB ถูกบังคับใน CI ทุกคอมมิต"
+        "text": "42.3 KB minified, 7.9 KB gzipped, 6.8 KB brotli สำหรับสไตล์ชีตหลักทั้งหมด เพดาน 8 KB ถูกบังคับใน CI ทุกคอมมิต"
       }
     },
     {

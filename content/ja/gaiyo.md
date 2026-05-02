@@ -16,14 +16,13 @@ keywords: "skeletonic, 概要, stylus, css フレームワーク, 理念"
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-<p class="badges">
-  <img alt="GitHub スター数" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
-  <img alt="月間ダウンロード数" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
-  <img alt="npm バージョン" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="バンドルサイズ" src="https://img.shields.io/badge/gzip-7.8%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
-  <img alt="ライセンス" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
-  <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
-</p>
+<dl class="stat-strip" aria-label="Project facts">
+  <div><dt>Version</dt><dd>2.0.0</dd></div>
+  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
+  <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
+</dl>
 
 ## 概要
 
@@ -43,7 +42,7 @@ keywords: "skeletonic, 概要, stylus, css フレームワーク, 理念"
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="羽" width="64" height="64" loading="lazy" decoding="async">
     <h3>軽量</h3>
-    <p>gzip圧縮で約7.8&nbsp;KB。ページの読み込みが速くなります。必要なビルディングブロックはすべて含まれています。</p>
+    <p>gzip圧縮で約7.9&nbsp;KB。ページの読み込みが速くなります。必要なビルディングブロックはすべて含まれています。</p>
   </article>
 
   <article class="feature-card">
@@ -77,7 +76,7 @@ keywords: "skeletonic, 概要, stylus, css フレームワーク, 理念"
 
 | 機能 | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| gzip圧縮サイズ | **約7.8&nbsp;KB** | 約30&nbsp;KB | 約10&nbsp;KB (varies) | 約30&nbsp;KB |
+| gzip圧縮サイズ | **約7.9&nbsp;KB** | 約30&nbsp;KB | 約10&nbsp;KB (varies) | 約30&nbsp;KB |
 | WCAG 2.2 準拠 | **組み込み済み** | 部分的 | 手動 | 部分的 |
 | カスケードレイヤー | **対応 (`@layer`)** | 非対応 | 非対応 | 非対応 |
 | ダークモード | **`prefers-color-scheme`** | オプトイン | クラスベース | オプトイン |

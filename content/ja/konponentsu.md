@@ -151,7 +151,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">軽量</h3>
-      <p>ミニファイ済み 39.1 KB、gzip圧縮 7.8 KB。</p>
+      <p>ミニファイ済み 42.3 KB、gzip圧縮 7.9 KB。</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">軽量</h3>
-      <p>ミニファイ済み 39.1&nbsp;KB、gzip圧縮 7.8&nbsp;KB。</p>
+      <p>ミニファイ済み 42.3&nbsp;KB、gzip圧縮 7.9&nbsp;KB。</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -218,7 +218,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">お名前</label>
   <input id="demo-name" type="text">
 
@@ -229,7 +229,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">送信（デモ）</button></p>
-</form>
+</div>
 </section>
 
 > **アクセシビリティに関する注記。** すべての入力にはプログラム的に関連付けられた `<label for="…">` が必要です。関連するコントロールは `<fieldset>` と `<legend>` でグループ化してください。必須フィールドは `required` 属性（およびラベルテキスト内の目に見えるアスタリスク）で示してください。

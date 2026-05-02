@@ -1,12 +1,12 @@
 {
-  "language": "ha",
-  "permalink": "https://skeletonic.io/ha/sharudda/",
   "layout": "page",
   "keywords": "sharuɗɗan amfani, lasisi, mit, apache 2",
-  "author": "Sebastien Rousseau",
-  "title": "Sharuɗɗan amfani",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/ha/sharudda/",
+  "theme_color": "hsl(210, 100%, 42%)",
   "description": "Sharuɗɗan da ke sarrafa amfanin ku da skeletonic.io da dakin karatu na Skeletonic Stylus.",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "title": "Sharuɗɗan amfani",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "language": "ha"
 }

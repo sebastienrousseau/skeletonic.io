@@ -1,12 +1,12 @@
 {
-  "language": "he",
-  "description": "Skeletonic Stylus היא ספריית CSS קלת משקל ומודולרית מבוססת Stylus — תואמת WCAG 2.2, מאורגנת בשכבות קסקייד, כ-7.8 KB בדחיסת gzip — שתוכננה לייעל פיתוח ממשקי משתמש מודרניים.",
-  "keywords": "css, stylus, css framework, css נגיש, wcag 2.2, css קל משקל, שכבות קסקייד, מערכת עיצוב",
-  "permalink": "https://skeletonic.io/he/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Skeletonic Stylus — CSS נגיש, כ-7.8 KB בדחיסת gzip",
-  "date": "2026-04-08",
-  "layout": "index",
   "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau"
+  "layout": "index",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/he/",
+  "date": "2026-04-08",
+  "language": "he",
+  "author": "Sebastien Rousseau",
+  "title": "Skeletonic Stylus — CSS נגיש, כ-7.9 KB בדחיסת gzip",
+  "keywords": "css, stylus, css framework, css נגיש, wcag 2.2, css קל משקל, שכבות קסקייד, מערכת עיצוב",
+  "description": "Skeletonic Stylus היא ספריית CSS קלת משקל ומודולרית מבוססת Stylus — תואמת WCAG 2.2, מאורגנת בשכבות קסקייד, כ-7.9 KB בדחיסת gzip — שתוכננה לייעל פיתוח ממשקי משתמש מודרניים."
 }

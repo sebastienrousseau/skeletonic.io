@@ -16,14 +16,13 @@ keywords: "skeletonic, gioi thieu, stylus, css framework, triet ly"
 > while these translations catch up. See <https://skeletonic.io/about/> ·
 > <https://skeletonic.io/components/> · <https://skeletonic.io/benchmarks/>.
 
-<p class="badges">
-  <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
-  <img alt="Luot tai hang thang" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
-  <img alt="Phien ban npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Kich thuoc goi" src="https://img.shields.io/badge/gzip-7.8%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
-  <img alt="Giay phep" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
-  <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
-</p>
+<dl class="stat-strip" aria-label="Project facts">
+  <div><dt>Version</dt><dd>2.0.0</dd></div>
+  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
+  <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
+</dl>
 
 ## Tom tat ngan gon
 

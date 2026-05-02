@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/he/truma/",
-  "title": "תרומה",
   "keywords": "תרומה, קוד פתוח, pull request, issue, מוסכמות",
-  "language": "he",
+  "permalink": "https://skeletonic.io/he/truma/",
+  "name": "Skeletonic Stylus",
   "layout": "page",
-  "description": "כיצד לדווח על בעיות, להציע שינויים ולהגיש Pull Requests ל-Skeletonic Stylus.",
-  "name": "Skeletonic Stylus"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "he",
+  "date": "2026-04-08",
+  "title": "תרומה",
+  "description": "כיצד לדווח על בעיות, להציע שינויים ולהגיש Pull Requests ל-Skeletonic Stylus."
 }

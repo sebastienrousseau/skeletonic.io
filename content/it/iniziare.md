@@ -47,13 +47,13 @@ Se ti serve solo il CSS compilato, inserisci uno di questi nel tuo `<head>`:
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -63,8 +63,8 @@ Per la massima integrita, copia l'**hash SRI** dalle note di rilascio v2.0.0 e a
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Si | Si |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Si | No |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Si | Si |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Si | No |
 
 ### Scarica il rilascio da GitHub
 
@@ -95,7 +95,7 @@ La libreria distribuisce diversi bundle precompilati sotto
 | File | Scopo | Dimensione (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token + layout + elementi + componenti + utility | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modulo animazioni opzionale | ≈213 KB / ≈6.7 KB |
+| `animations/skeletonic-animations.min.css` | Modulo animazioni opzionale | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Palette colori Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Palette utility Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Palette web-safe | ≈3.5 KB |
@@ -144,7 +144,7 @@ Un controllo minimo "ha funzionato?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Funziona.</h1>

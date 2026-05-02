@@ -1,13 +1,13 @@
 {
-  "layout": "page",
-  "author": "Sebastien Rousseau",
-  "description": "Skeletonic Stylus v2.0.0 ile gelen istege bagli animasyonlar modulu — bounce, pulse, fade, zoom, shake ve digerleri, tamami prefers-reduced-motion arkasinda.",
-  "language": "tr",
-  "permalink": "https://skeletonic.io/tr/animasyonlar/",
-  "load_animations": true,
   "keywords": "css animasyonlari, keyframes, prefers-reduced-motion, bounce, pulse, fade",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "load_animations": true,
+  "permalink": "https://skeletonic.io/tr/animasyonlar/",
   "title": "Animasyonlar — Skeletonic Stylus",
-  "name": "Skeletonic Stylus"
+  "description": "Skeletonic Stylus v2.0.0 ile gelen istege bagli animasyonlar modulu — bounce, pulse, fade, zoom, shake ve digerleri, tamami prefers-reduced-motion arkasinda.",
+  "layout": "page",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "tr"
 }

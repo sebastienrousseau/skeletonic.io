@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/id/keamanan/",
-  "author": "Sebastien Rousseau",
-  "description": "Bagaimana Skeletonic Stylus v2.0.0 mengamankan pipeline build-nya, menandatangani rilis, dan menyertakan SBOM.",
-  "title": "Keamanan &amp; rantai pasokan",
-  "date": "2026-04-08",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
   "keywords": "keamanan css, sbom, cyclonedx, provenance npm, openssf scorecard, rantai pasokan",
+  "layout": "page",
+  "date": "2026-04-08",
+  "title": "Keamanan &amp; rantai pasokan",
+  "name": "Skeletonic Stylus",
+  "description": "Bagaimana Skeletonic Stylus v2.0.0 mengamankan pipeline build-nya, menandatangani rilis, dan menyertakan SBOM.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
   "language": "id",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "permalink": "https://skeletonic.io/id/keamanan/"
 }

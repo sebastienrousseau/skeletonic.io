@@ -1,13 +1,13 @@
 {
-  "permalink": "https://skeletonic.io/ja/animeshon/",
-  "date": "2026-04-08",
-  "title": "アニメーション",
   "load_animations": true,
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
-  "description": "Skeletonic Stylus v2.0.0 に付属するオプションのアニメーションモジュール — バウンス、パルス、フェード、ズーム、シェイクなど、すべて prefers-reduced-motion で制御。",
-  "name": "Skeletonic Stylus",
+  "keywords": "css アニメーション, キーフレーム, prefers-reduced-motion, バウンス, パルス, フェード",
   "language": "ja",
-  "keywords": "css アニメーション, キーフレーム, prefers-reduced-motion, バウンス, パルス, フェード"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "アニメーション",
+  "permalink": "https://skeletonic.io/ja/animeshon/",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "layout": "page",
+  "description": "Skeletonic Stylus v2.0.0 に付属するオプションのアニメーションモジュール — バウンス、パルス、フェード、ズーム、シェイクなど、すべて prefers-reduced-motion で制御。"
 }

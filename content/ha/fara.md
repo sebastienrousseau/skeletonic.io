@@ -18,7 +18,7 @@ keywords: "shigar da skeletonic, saita stylus, css cdn, fara"
 
 ## Gabatarwa
 
-Sabon zuwa Skeletonic Stylus? A cikin **v2.0.0** ya fi sauƙi fiye da kowane lokaci don zaɓar abubuwan da kuke buƙata kawai. Godiya ga ƙaramin sawun sa (7.8&nbsp;KB gzipped don stylesheet na tushe), yana haɗuwa da sauri cikin kowace manhajan yanar gizo — babu buƙatar tsarin JavaScript, babu buƙatar matakin gini idan kuna amfani da CDN.
+Sabon zuwa Skeletonic Stylus? A cikin **v2.0.0** ya fi sauƙi fiye da kowane lokaci don zaɓar abubuwan da kuke buƙata kawai. Godiya ga ƙaramin sawun sa (7.9&nbsp;KB gzipped don stylesheet na tushe), yana haɗuwa da sauri cikin kowace manhajan yanar gizo — babu buƙatar tsarin JavaScript, babu buƙatar matakin gini idan kuna amfani da CDN.
 
 Kowace hanya an bayyana ta a ƙasa — zaɓi wadda ta dace da ku.
 
@@ -47,13 +47,13 @@ Idan kuna buƙatar CSS da aka tattara kawai, saka ɗaya daga cikin waɗannan a c
 <!-- jsDelivr -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 
 <!-- unpkg -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css"
+  href="https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css"
   crossorigin="anonymous">
 ```
 
@@ -63,8 +63,8 @@ Don mafi girman amincin kai, kwafa **SRI hash** daga bayanan sakin v2.0.0 kuma �
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Eh | Eh |
-| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css` | Eh | A'a |
+| **jsDelivr** | `https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Eh | Eh |
+| **unpkg** | `https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css` | Eh | A'a |
 
 ### Zazzage sakin GitHub
 
@@ -92,8 +92,8 @@ Dakin karatu yana aika fakiti da yawa da aka riga aka gina a ƙarƙashin `dist/c
 
 | Fayil | Amfani | Girma (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 39.1 KB / 7.8 KB |
-| `animations/skeletonic-animations.min.css` | Ƙarin module na motsin rai | ≈213 KB / ≈6.7 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 42.3 KB / 7.9 KB |
+| `animations/skeletonic-animations.min.css` | Ƙarin module na motsin rai | ≈213 KB / ≈6.8 KB |
 | `palettes/material/skeletonic-material.min.css` | Launukan Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Launukan Tachyons | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Launukan Web-safe | ≈3.5 KB |
@@ -142,7 +142,7 @@ Mafi ƙarancin binciken "shin ya yi aiki?":
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/dist/css/core/skeletonic.min.css">
+          href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
   </head>
   <body class="container padding-3">
     <h1>Ya yi aiki.</h1>
@@ -205,7 +205,7 @@ A'a. Stylesheet na tushe CSS ce tsantsa, babu kuɗin lokacin aiki. Abubuwan hadi
 Eh. v2.0.0 yana aika bambancin AA, zoben focus-visible, taimakon skip-link, tallafin rage motsi da yanayin dare ta tsoho.
 
 **Mene ne girman gzipped?**
-39.1&nbsp;KB da aka ƙaranta, **7.8&nbsp;KB gzipped**, 6.7&nbsp;KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8&nbsp;KB a CI.
+42.3&nbsp;KB da aka ƙaranta, **7.9&nbsp;KB gzipped**, 6.8&nbsp;KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8&nbsp;KB a CI.
 
 **Wane lasisi yake amfani da shi?**
 An ba da lasisin biyu a ƙarƙashin MIT da Apache 2.0 — zaɓi wanda aikin ku ke buƙata. Kyauta don amfanin kasuwanci da na sirri.
@@ -244,7 +244,7 @@ An ba da lasisin biyu a ƙarƙashin MIT da Apache 2.0 — zaɓi wanda aikin ku k
       "name": "Mene ne girman gzipped na Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "39.1 KB da aka ƙaranta, 7.8 KB gzipped, 6.7 KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8 KB a CI a kan kowanne commit."
+        "text": "42.3 KB da aka ƙaranta, 7.9 KB gzipped, 6.8 KB brotli don dukan stylesheet na tushe. An tilasta iyakar 8 KB a CI a kan kowanne commit."
       }
     },
     {

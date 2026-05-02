@@ -170,7 +170,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">হালকা</h3>
-      <p>39.1 KB মিনিফাইড, 7.8 KB gzipped।</p>
+      <p>42.3 KB মিনিফাইড, 7.9 KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -192,7 +192,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">হালকা</h3>
-      <p>39.1&nbsp;KB মিনিফাইড, 7.8&nbsp;KB gzipped।</p>
+      <p>42.3&nbsp;KB মিনিফাইড, 7.9&nbsp;KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -241,7 +241,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
 ```
 
 <section aria-labelledby="form-fields">
-<form>
+<div role="group" aria-label="Form fields demo">
   <label for="demo-name">নাম</label>
   <input id="demo-name" type="text">
 
@@ -252,7 +252,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
   <textarea id="demo-msg" rows="4"></textarea>
 
   <p><button type="button" class="button primary">পাঠান (ডেমো)</button></p>
-</form>
+</div>
 </section>
 
 > **প্রবেশাধিকার নোট।** প্রতিটি ইনপুটে একটি প্রোগ্রাম্যাটিকভাবে
