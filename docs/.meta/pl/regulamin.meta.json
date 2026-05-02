@@ -1,12 +1,12 @@
 {
-  "description": "Warunki korzystania ze strony skeletonic.io i biblioteki Skeletonic Stylus.",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
+  "language": "pl",
   "date": "2026-04-08",
   "keywords": "regulamin, licencja, mit, apache 2",
   "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
   "title": "Regulamin",
-  "language": "pl",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Warunki korzystania ze strony skeletonic.io i biblioteki Skeletonic Stylus.",
   "permalink": "https://skeletonic.io/pl/regulamin/"
 }

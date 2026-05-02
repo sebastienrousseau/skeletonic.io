@@ -1,10 +1,10 @@
 {
-  "name": "Skeletonic Stylus",
-  "description": "The page you requested does not exist on skeletonic.io.",
-  "author": "Sebastien Rousseau",
-  "title": "Page not found",
   "layout": "page",
+  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/404/",
+  "keywords": "404, not found",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "404, not found"
+  "description": "The page you requested does not exist on skeletonic.io.",
+  "title": "Page not found",
+  "author": "Sebastien Rousseau"
 }

@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
+  "keywords": "instalace skeletonic, nastaveni stylus, css cdn, jak zacit",
   "author": "Sebastien Rousseau",
-  "language": "cs",
-  "permalink": "https://skeletonic.io/cs/zacatek/",
+  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "keywords": "instalace skeletonic, nastaveni stylus, css cdn, jak zacit",
+  "language": "cs",
   "title": "Jak zacit se Skeletonic Stylus",
-  "description": "Nainstalujte Skeletonic Stylus z npm nebo CDN, importujte do sve Stylus pipeline a prepiste promenne behem par sekund.",
-  "name": "Skeletonic Stylus"
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/cs/zacatek/",
+  "description": "Nainstalujte Skeletonic Stylus z npm nebo CDN, importujte do sve Stylus pipeline a prepiste promenne behem par sekund."
 }

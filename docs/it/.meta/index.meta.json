@@ -1,12 +1,12 @@
 {
-  "layout": "index",
-  "language": "it",
   "theme_color": "hsl(210, 100%, 42%)",
   "title": "Skeletonic Stylus — CSS accessibile, 8,3 KB gzipped",
+  "language": "it",
+  "permalink": "https://skeletonic.io/it/",
+  "keywords": "css, stylus, framework css, css accessibile, wcag 2.2, css leggero, cascade layers, design system",
+  "name": "Skeletonic Stylus",
+  "layout": "index",
   "date": "2026-04-08",
   "author": "Sebastien Rousseau",
-  "description": "Skeletonic Stylus e una libreria CSS Stylus leggera e modulare — conforme a WCAG 2.2, con cascade layers, 8,3 KB gzipped — progettata per semplificare lo sviluppo di interfacce web moderne.",
-  "permalink": "https://skeletonic.io/it/",
-  "name": "Skeletonic Stylus",
-  "keywords": "css, stylus, framework css, css accessibile, wcag 2.2, css leggero, cascade layers, design system"
+  "description": "Skeletonic Stylus e una libreria CSS Stylus leggera e modulare — conforme a WCAG 2.2, con cascade layers, 8,3 KB gzipped — progettata per semplificare lo sviluppo di interfacce web moderne."
 }

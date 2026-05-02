@@ -3,8 +3,8 @@
 {% block body_class %}page-doc{% endblock %}
 
 {% block hero %}
-<header class="site-hero" style="padding:4.5rem 1.5rem 2.5rem;">
-  <h1 style="font-size:clamp(2rem,4vw,2.75rem);">{{ page.title | default(value=site.title) }}</h1>
+<header class="site-hero">
+  <h1>{{ page.title | default(value=site.title) }}</h1>
   {% if page.description %}
     <p>{{ page.description }}</p>
   {% endif %}

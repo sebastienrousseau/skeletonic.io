@@ -638,13 +638,27 @@
         font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
         line-height:1.08;
       }
-      a{color:var(--c-accent);text-underline-offset:.15em;text-decoration:underline}
-      a:hover{color:var(--c-accent-hover);text-decoration:underline}
+      /* Body links — exclude Skeletonic component classes whose own
+         colour modifiers should win (button.primary, btn-round, etc.).
+         Without these :not() guards chrome's a-colour rule poisons the
+         contrast on every coloured button in the demo. */
+      a:not([class*="button"]):not([class*="btn"]):not(.badge){color:var(--c-accent);text-underline-offset:.15em;text-decoration:underline}
+      a:not([class*="button"]):not([class*="btn"]):not(.badge):hover{color:var(--c-accent-hover);text-decoration:underline}
       /* Use the heading colour token so <strong> is highest-contrast in
          both light and dark modes. Without an explicit colour, Skeletonic's
          layered defaults could leave bold text near-invisible on dark
          backgrounds (e.g. inside table cells). */
+      /* `<strong>` defaults to the page heading colour for high
+         contrast on body text, but explicitly inherits inside any
+         tinted callout (.alert, status code blocks) so the alert's
+         own colour scheme controls the headline emphasis instead
+         of forcing white-on-pale-tint that fails WCAG. */
       strong,b{font-weight:600;color:var(--c-heading)}
+      .alert strong,.alert b,
+      code.primary strong,code.secondary strong,code.tertiary strong,
+      code.success strong,code.info strong,code.warning strong,code.error strong{
+        color:inherit;
+      }
       /* Inline <code> with no status class. We exclude any element
          that already carries a Skeletonic status modifier so the
          coloured-stripe variants (`code.primary`, `code.success`, etc.)

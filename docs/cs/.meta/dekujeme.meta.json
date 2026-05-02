@@ -1,12 +1,12 @@
 {
   "layout": "thanks",
-  "title": "Dekujeme!",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/cs/dekujeme/",
-  "description": "Vase zprava byla uspesne odeslana.",
-  "language": "cs",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "language": "cs",
   "keywords": "dekujeme",
-  "name": "Skeletonic Stylus"
+  "title": "Dekujeme!",
+  "description": "Vase zprava byla uspesne odeslana.",
+  "permalink": "https://skeletonic.io/cs/dekujeme/",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

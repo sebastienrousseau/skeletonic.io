@@ -1,12 +1,12 @@
 {
   "language": "zh-hans",
-  "permalink": "https://skeletonic.io/zh-hans/kuai-su-ru-men/",
-  "layout": "page",
   "description": "通过 npm 或 CDN 安装 Skeletonic Stylus，将其导入到你的 Stylus 构建中，秒级覆盖变量。",
-  "date": "2026-04-08",
+  "title": "Skeletonic Stylus 快速入门",
   "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/zh-hans/kuai-su-ru-men/",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "安装 skeletonic, stylus 配置, css cdn, 快速入门",
-  "title": "Skeletonic Stylus 快速入门"
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "keywords": "安装 skeletonic, stylus 配置, css cdn, 快速入门"
 }

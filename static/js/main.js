@@ -41,8 +41,8 @@
 
   const applyTheme = (theme) => {
     root.setAttribute("data-theme", theme);
+    root.style.colorScheme = theme;
     try { localStorage.setItem(STORAGE_KEY, theme); } catch (_e) { /* storage unavailable */ }
-    setIconVisibility(theme);
     updateToggleButtons(theme);
   };
 

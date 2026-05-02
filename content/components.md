@@ -618,19 +618,19 @@ gap; `.grid-cols-N` (1–12) generates the column tracks; `.col-span-N`
 
 <section aria-labelledby="grid">
 <div class="grid grid-cols-2" style="margin-bottom:.5rem;">
-  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Half</div>
-  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Half</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Half</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);color:#1a1a1a;border-radius:.25rem;text-align:center;">Half</div>
 </div>
 
 <div class="grid grid-cols-3" style="margin-bottom:.5rem;">
-  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Third</div>
-  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Third</div>
-  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
 </div>
 
 <div class="grid grid-cols-3">
-  <div class="col-span-2" style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Two thirds (col-span-2)</div>
-  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Third</div>
+  <div class="col-span-2" style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Two thirds (col-span-2)</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
 </div>
 </section>
 
@@ -654,7 +654,7 @@ and traps focus correctly on its own.
 ```html
 <style>
   .sk-header{position:relative;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem;border:1px solid #e4e4e7;border-radius:.5rem;background:#fff;}
-  .sk-header .sk-brand{font-weight:600;color:#0a0a0a;text-decoration:none;}
+  .sk-header .sk-brand{font-weight:600;color:#0a0a0a !important;text-decoration:none;}
   .sk-header .sk-toggle{position:absolute;left:-9999px;}
   .sk-header .sk-burger{display:none;margin-left:auto;cursor:pointer;padding:.625rem .75rem;border:1px solid #e4e4e7;border-radius:.375rem;font-size:1.125rem;line-height:1;min-width:2.75rem;min-height:2.75rem;}
   .sk-header .sk-burger:focus-within,.sk-header .sk-toggle:focus-visible+.sk-burger{outline:2px solid hsl(210,100%,42%);outline-offset:2px;}
@@ -685,7 +685,7 @@ and traps focus correctly on its own.
 <section aria-labelledby="header">
 <style>
   .sk-header{position:relative;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem;border:1px solid #e4e4e7;border-radius:.5rem;background:#fff;}
-  .sk-header .sk-brand{font-weight:600;color:#0a0a0a;text-decoration:none;}
+  .sk-header .sk-brand{font-weight:600;color:#0a0a0a !important;text-decoration:none;}
   .sk-header .sk-toggle{position:absolute;left:-9999px;}
   .sk-header .sk-burger{display:none;margin-left:auto;cursor:pointer;padding:.625rem .75rem;border:1px solid #e4e4e7;border-radius:.375rem;font-size:1.125rem;line-height:1;min-width:2.75rem;min-height:2.75rem;}
   .sk-header .sk-burger:focus-within,.sk-header .sk-toggle:focus-visible+.sk-burger{outline:2px solid hsl(210,100%,42%);outline-offset:2px;}

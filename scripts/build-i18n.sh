@@ -172,7 +172,7 @@ if [ "$BUILD_EN" -eq 1 ]; then
   # default theme — `#bf616a` on the page — clears WCAG 2.2 AA
   # 4.5:1 against the background instead of stalling at 3.23:1.
   find docs -type f -name '*.html' -print0 \
-    | xargs -0 perl -i -pe 's{style=background-color:(#[0-9a-fA-F]{3,8})}{style="background-color:$1"}g; s{background-color:#2b303b}{background-color:#0d1117}g'
+    | xargs -0 perl -i -pe 's{style=background-color:(#[0-9a-fA-F]{3,8})}{style="background-color:$1"}g; s{background-color:#2b303b}{background-color:#0d1117}g; s{color:#65737e}{color:#7d8a96}g'
 
   # Strip the SSG's auto-injected live-reload <script> block from
   # production output. It opens a WebSocket to ws://localhost:35729
@@ -182,6 +182,36 @@ if [ "$BUILD_EN" -eq 1 ]; then
   # mode, never in committed docs/.
   find docs -type f -name '*.html' -print0 \
     | xargs -0 perl -i -0pe 's{<!-- SSG Live-Reload -->\s*<script data-ssg-livereload>.*?</script>}{}gs'
+
+  # Inline static/css/critical.css into every <head> so above-the-fold
+  # renders in the same paint as the HTML. The async-load pattern in
+  # base.html (media="print" onload="this.media='all'") then fetches
+  # the full chrome + skeletonic bundles without blocking first paint.
+  if [ -f static/css/critical.css ]; then
+    # Minify the critical block on the fly so we don't ship 4 KB of
+    # whitespace × 459 pages.
+    if command -v npx >/dev/null 2>&1; then
+      npx -y --silent csso-cli static/css/critical.css --output /tmp/critical.min.css 2>/dev/null || cp static/css/critical.css /tmp/critical.min.css
+    else
+      cp static/css/critical.css /tmp/critical.min.css
+    fi
+    CRITICAL_CSS=$(cat /tmp/critical.min.css)
+    # Drop a literal `<!-- @@CRITICAL_CSS@@ -->` placeholder in
+    # base.html with `<style>…</style>` containing the file's bytes.
+    # Use python so the substitution is robust against shell quoting
+    # and special characters inside the CSS.
+    PYTHONIOENCODING=utf-8 python3 - <<'PY'
+import os, glob, pathlib
+critical = pathlib.Path('/tmp/critical.min.css').read_text(encoding='utf-8').strip()
+inline = f'<style>{critical}</style>'
+needle = '<!-- @@CRITICAL_CSS@@ -->'
+for path in glob.glob('docs/**/*.html', recursive=True):
+    p = pathlib.Path(path)
+    text = p.read_text(encoding='utf-8')
+    if needle in text:
+        p.write_text(text.replace(needle, inline), encoding='utf-8')
+PY
+  fi
 
   # Minify chrome.css and main.js so they ship under the same
   # density as the upstream Skeletonic bundle. Saves ≈ 15 KB on

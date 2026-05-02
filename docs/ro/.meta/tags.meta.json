@@ -1,12 +1,12 @@
 {
   "description": "Navighează documentația Skeletonic Stylus după etichetă.",
-  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Etichete",
   "author": "Sebastien Rousseau",
   "date": "2026-04-08",
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/ro/tags/",
+  "name": "Skeletonic Stylus",
   "language": "ro",
   "keywords": "skeletonic, etichete, index, taxonomie",
-  "title": "Etichete"
+  "layout": "page",
+  "permalink": "https://skeletonic.io/ro/tags/"
 }

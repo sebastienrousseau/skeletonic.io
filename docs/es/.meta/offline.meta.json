@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "keywords": "offline, service worker, pwa",
   "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/es/offline/",
   "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
   "description": "skeletonic.io no pudo conectarse a la red. La pagina que solicitaste aun no ha sido almacenada en cache.",
   "language": "es",
-  "layout": "page",
   "title": "Sin conexion",
-  "permalink": "https://skeletonic.io/es/offline/",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "keywords": "offline, service worker, pwa",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page"
 }

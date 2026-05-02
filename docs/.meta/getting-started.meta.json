@@ -1,11 +1,11 @@
 {
-  "name": "Skeletonic Stylus",
   "description": "Install Skeletonic Stylus from npm or a CDN, import it into your Stylus build, and override variables in seconds.",
+  "permalink": "https://skeletonic.io/getting-started/",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "title": "Getting started with Skeletonic Stylus",
   "keywords": "install skeletonic, stylus setup, css cdn, getting started",
   "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/getting-started/",
-  "title": "Getting started with Skeletonic Stylus",
-  "date": "2026-04-08",
   "layout": "page",
-  "author": "Sebastien Rousseau"
+  "name": "Skeletonic Stylus"
 }

@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "title": "기여하기",
-  "date": "2026-04-08",
-  "language": "ko",
-  "permalink": "https://skeletonic.io/ko/giyeo/",
-  "layout": "page",
   "description": "Skeletonic Stylus에 이슈를 제출하고, 변경을 제안하며, 풀 리퀘스트를 제출하는 방법입니다.",
-  "keywords": "기여, 오픈소스, 풀 리퀘스트, 이슈, 규칙"
+  "permalink": "https://skeletonic.io/ko/giyeo/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "기여, 오픈소스, 풀 리퀘스트, 이슈, 규칙",
+  "name": "Skeletonic Stylus",
+  "language": "ko",
+  "date": "2026-04-08",
+  "layout": "page",
+  "title": "기여하기"
 }

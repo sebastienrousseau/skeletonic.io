@@ -1,12 +1,12 @@
 {
   "permalink": "https://skeletonic.io/ha/launuka/",
   "title": "Launuka",
-  "name": "Skeletonic Stylus",
-  "keywords": "tsarin launuka na css, material, tachyons, websafe, alamomin ƙira",
-  "layout": "page",
-  "language": "ha",
-  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
   "description": "Tsarin launuka na Material, Tachyons da web-safe da Skeletonic Stylus v2.0.0 ke aikawa.",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "language": "ha",
+  "keywords": "tsarin launuka na css, material, tachyons, websafe, alamomin ƙira",
+  "author": "Sebastien Rousseau"
 }

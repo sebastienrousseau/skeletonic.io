@@ -1,11 +1,11 @@
 {
-  "keywords": "404, hittades inte",
-  "author": "Sebastien Rousseau",
   "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Sidan hittades inte",
-  "description": "Sidan du begarde finns inte pa skeletonic.io.",
   "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "title": "Sidan hittades inte",
+  "theme_color": "hsl(210, 100%, 42%)",
   "language": "sv",
-  "permalink": "https://skeletonic.io/sv/404/"
+  "permalink": "https://skeletonic.io/sv/404/",
+  "keywords": "404, hittades inte",
+  "description": "Sidan du begarde finns inte pa skeletonic.io."
 }

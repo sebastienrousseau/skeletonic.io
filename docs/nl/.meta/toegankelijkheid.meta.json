@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "description": "Wat v2.0.0 standaard levert voor WCAG 2.2-conformiteit — focusringen, contrast, skip-links, beweging en donkere modus.",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/nl/toegankelijkheid/",
   "title": "Toegankelijkheid — WCAG 2.2 in v2.0.0",
   "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
-  "keywords": "wcag 2.2, toegankelijkheid, focus visible, skip link, prefers reduced motion, contrast",
+  "layout": "page",
+  "description": "Wat v2.0.0 standaard levert voor WCAG 2.2-conformiteit — focusringen, contrast, skip-links, beweging en donkere modus.",
   "name": "Skeletonic Stylus",
-  "language": "nl"
+  "language": "nl",
+  "keywords": "wcag 2.2, toegankelijkheid, focus visible, skip link, prefers reduced motion, contrast",
+  "permalink": "https://skeletonic.io/nl/toegankelijkheid/",
+  "author": "Sebastien Rousseau"
 }

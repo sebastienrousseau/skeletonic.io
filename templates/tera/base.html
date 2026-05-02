@@ -2484,20 +2484,26 @@
     {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">{% endif %}
     <meta name="twitter:image" content="{{ site.base_url }}/images/banner.svg">
 
-    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
-         Same-origin, served from this site's own docs/ tree, so SRI is dropped:
-         the file changes every bundle bump and updating the hash here on every
-         release added friction for no real security benefit (the threat model
-         SRI defends against — a CDN serving tampered bytes — does not apply). -->
+    <!-- Critical CSS — inlined by scripts/build-i18n.sh post-build.
+         The build script swaps the placeholder below for the contents
+         of static/css/critical.css so above-the-fold paints in the
+         same frame as the HTML, without waiting for the full
+         chrome + skeletonic bundles. -->
+    <!-- @@CRITICAL_CSS@@ -->
+
+    <!-- Skeletonic Stylus v2.0.0 + chrome — render-blocking, but
+         the inline critical CSS above already painted above-the-fold,
+         so first paint isn't waiting for these. The `media="print"
+         onload=…" defer trick was tempting but ships an inline event
+         handler that the page CSP correctly blocks (hashes don't
+         apply to event handlers). Standard <link rel="stylesheet">
+         keeps the page CSP-clean. -->
     <link rel="stylesheet" href="/css/skeletonic.min.css">
     {% if page.load_animations %}
-    <!-- Optional animations module — only loaded on pages that opt in via load_animations: true. -->
     <link rel="stylesheet" href="/css/skeletonic-animations.min.css">
     {% endif %}
     {% block extra_css %}{% endblock %}
-
-    <!-- Chrome styles — layout, nav, hero, footer, search overlay, theme toggle. -->
-    <link rel="stylesheet" href="/css/chrome.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/chrome.css">
 
     <!-- REMOVED: inline <style> moved to static/css/chrome.css -->
     <!-- Original :root block preserved for reference:

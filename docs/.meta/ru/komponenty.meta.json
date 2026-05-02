@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "title": "Компоненты",
-  "permalink": "https://skeletonic.io/ru/komponenty/",
+  "language": "ru",
   "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "keywords": "компоненты skeletonic, кнопки, карточки, формы, уведомления, бейджи, заголовок, навигация, css-only гамбургер",
   "description": "Живые HTML-примеры каждого компонента Skeletonic Stylus — сгруппированные, с якорями, отрисованные тем же файлом стилей, который демонстрируется.",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/ru/komponenty/",
+  "name": "Skeletonic Stylus",
   "layout": "page",
-  "language": "ru"
+  "keywords": "компоненты skeletonic, кнопки, карточки, формы, уведомления, бейджи, заголовок, навигация, css-only гамбургер",
+  "title": "Компоненты",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08"
 }

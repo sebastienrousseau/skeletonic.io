@@ -1,12 +1,12 @@
 {
-  "title": "घटक",
-  "permalink": "https://skeletonic.io/hi/ghatak/",
-  "description": "Skeletonic Stylus के हर घटक के लाइव HTML उदाहरण, समूहीकृत, एंकर्ड, और उसी स्टाइलशीट से रेंडर जिसका डेमो दिया जा रहा है।",
-  "language": "hi",
-  "name": "Skeletonic Stylus",
-  "keywords": "skeletonic घटक, बटन, कार्ड, फ़ॉर्म, अलर्ट, बैज, हेडर, navbar, css only hamburger",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "date": "2026-04-08"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "description": "Skeletonic Stylus के हर घटक के लाइव HTML उदाहरण, समूहीकृत, एंकर्ड, और उसी स्टाइलशीट से रेंडर जिसका डेमो दिया जा रहा है।",
+  "title": "घटक",
+  "keywords": "skeletonic घटक, बटन, कार्ड, फ़ॉर्म, अलर्ट, बैज, हेडर, navbar, css only hamburger",
+  "permalink": "https://skeletonic.io/hi/ghatak/",
+  "name": "Skeletonic Stylus",
+  "language": "hi"
 }

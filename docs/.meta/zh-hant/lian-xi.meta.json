@@ -1,12 +1,12 @@
 {
-  "keywords": "聯繫, 支援, 回饋, skeletonic",
   "date": "2026-04-08",
-  "title": "聯繫",
-  "permalink": "https://skeletonic.io/zh-hant/lian-xi/",
-  "layout": "contact",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "就 Skeletonic Stylus 與我們聯繫——錯誤報告、功能建議、合作或一般回饋。",
   "author": "Sebastien Rousseau",
+  "keywords": "聯繫, 支援, 回饋, skeletonic",
+  "name": "Skeletonic Stylus",
   "language": "zh-hant",
-  "name": "Skeletonic Stylus"
+  "layout": "contact",
+  "description": "就 Skeletonic Stylus 與我們聯繫——錯誤報告、功能建議、合作或一般回饋。",
+  "title": "聯繫",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/zh-hant/lian-xi/"
 }

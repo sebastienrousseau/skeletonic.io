@@ -1,12 +1,12 @@
 {
+  "description": "Mga live HTML na halimbawa ng bawat Skeletonic Stylus component, nakagrupong, naka-anchor, at nire-render gamit ang mismong stylesheet na dine-demo.",
   "name": "Skeletonic Stylus",
-  "language": "fil",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/fil/mga-bahagi/",
   "author": "Sebastien Rousseau",
   "title": "Mga Bahagi",
+  "language": "fil",
   "layout": "page",
-  "description": "Mga live HTML na halimbawa ng bawat Skeletonic Stylus component, nakagrupong, naka-anchor, at nire-render gamit ang mismong stylesheet na dine-demo.",
-  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "skeletonic component, button, card, form, alert, badge, header, navbar, css only hamburger",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/fil/mga-bahagi/"
+  "date": "2026-04-08"
 }

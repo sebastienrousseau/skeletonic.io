@@ -1,12 +1,12 @@
 {
+  "description": "Nhung gi v2.0.0 cung cap san cho tuan thu WCAG 2.2 — vong focus, do tuong phan, lien ket bo qua, chuyen dong va che do toi.",
+  "date": "2026-04-08",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "wcag 2.2, tro nang, focus visible, skip link, prefers reduced motion, do tuong phan",
+  "language": "vi",
   "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
   "title": "Tro nang — WCAG 2.2 trong v2.0.0",
-  "language": "vi",
-  "keywords": "wcag 2.2, tro nang, focus visible, skip link, prefers reduced motion, do tuong phan",
-  "permalink": "https://skeletonic.io/vi/tro-nang/",
-  "description": "Nhung gi v2.0.0 cung cap san cho tuan thu WCAG 2.2 — vong focus, do tuong phan, lien ket bo qua, chuyen dong va che do toi.",
-  "layout": "page"
+  "permalink": "https://skeletonic.io/vi/tro-nang/"
 }

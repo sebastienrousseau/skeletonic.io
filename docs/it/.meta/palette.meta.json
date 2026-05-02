@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
   "keywords": "palette css, material, tachyons, websafe, design token",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/it/palette/",
-  "language": "it",
-  "title": "Palette",
   "author": "Sebastien Rousseau",
+  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Palette di colori Material, Tachyons e web-safe incluse in Skeletonic Stylus v2.0.0."
+  "description": "Palette di colori Material, Tachyons e web-safe incluse in Skeletonic Stylus v2.0.0.",
+  "language": "it",
+  "permalink": "https://skeletonic.io/it/palette/",
+  "title": "Palette",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08"
 }

@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
   "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
   "description": "Skeletonic Stylus; hafif, moduler bir Stylus CSS kutuphanesidir — WCAG 2.2 uyumlu, cascade-layered, 8,3 KB gzipped — modern web arayuz gelistirme icin tasarlanmistir.",
-  "permalink": "https://skeletonic.io/tr/",
+  "keywords": "css, stylus, css framework, erisilebilir css, wcag 2.2, hafif css, cascade layers, tasarim sistemi",
   "author": "Sebastien Rousseau",
   "language": "tr",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "css, stylus, css framework, erisilebilir css, wcag 2.2, hafif css, cascade layers, tasarim sistemi",
+  "title": "Skeletonic Stylus — Erisilebilir CSS, 8,3 KB gzipped",
+  "date": "2026-04-08",
   "layout": "index",
-  "title": "Skeletonic Stylus — Erisilebilir CSS, 8,3 KB gzipped"
+  "permalink": "https://skeletonic.io/tr/"
 }

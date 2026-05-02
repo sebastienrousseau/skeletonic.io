@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Контакты",
-  "keywords": "контакты, поддержка, обратная связь, skeletonic",
-  "permalink": "https://skeletonic.io/ru/kontakt/",
+  "name": "Skeletonic Stylus",
   "description": "Свяжитесь с нами по вопросам Skeletonic Stylus — отчёты об ошибках, идеи функций, партнёрство или общие отзывы.",
   "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
   "language": "ru",
-  "name": "Skeletonic Stylus",
+  "keywords": "контакты, поддержка, обратная связь, skeletonic",
   "layout": "contact",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "permalink": "https://skeletonic.io/ru/kontakt/"
 }

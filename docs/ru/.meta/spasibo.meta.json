@@ -1,12 +1,12 @@
 {
-  "title": "Спасибо!",
+  "keywords": "спасибо",
+  "layout": "thanks",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "language": "ru",
-  "layout": "thanks",
-  "permalink": "https://skeletonic.io/ru/spasibo/",
-  "keywords": "спасибо",
   "description": "Ваше сообщение успешно отправлено.",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau"
+  "title": "Спасибо!",
+  "permalink": "https://skeletonic.io/ru/spasibo/",
+  "language": "ru"
 }

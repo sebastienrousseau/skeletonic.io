@@ -117,16 +117,23 @@
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
-    <!-- Skeletonic Stylus v2.0.0 — self-hosted, the only CSS framework the site loads.
-         Same-origin, served from this site's own docs/ tree, so SRI is dropped:
-         the file changes every bundle bump and updating the hash here on every
-         release added friction for no real security benefit (the threat model
-         SRI defends against — a CDN serving tampered bytes — does not apply). -->
+    <!-- Critical CSS — inlined by scripts/build-i18n.sh post-build.
+         The build script swaps the placeholder below for the contents
+         of static/css/critical.css so above-the-fold paints in the
+         same frame as the HTML, without waiting for the full
+         chrome + skeletonic bundles. -->
+    <style>:root{color-scheme:light dark;--c-bg:#fff;--c-text:#1d1d1f;--c-heading:#000;--c-secondary:#6e6e73;--c-accent:#0066cc;--c-border:#d2d2d7;--c-nav-bg:rgba(255, 255, 255, 0.8);--c-nav-text:#1d1d1f;--c-nav-muted:#86868b;--c-hero-grad-1:#f5f5f7;--c-hero-grad-2:#fff;--c-hero-grad-3:#fafafa;--fs-base:clamp(1rem, 0.95rem + 0.25vw, 1.125rem);--fs-h1:clamp(2.5rem, 1.5rem + 5vw, 4.5rem);--fs-h2:clamp(2rem, 1.25rem + 3.75vw, 3.5rem);--fs-h3:clamp(1.5rem, 1.125rem + 1.875vw, 2.25rem)}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--c-bg:#000;--c-text:#f5f5f7;--c-heading:#fff;--c-secondary:#a1a1aa;--c-accent:#2997ff;--c-border:#424245;--c-nav-bg:rgba(0, 0, 0, 0.8);--c-nav-text:#f5f5f7;--c-nav-muted:#a1a1aa;--c-hero-grad-1:#1d1d1f;--c-hero-grad-2:#000;--c-hero-grad-3:#0a0a0a}}*{box-sizing:border-box;margin:0}html{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}body{background:var(--c-bg);color:var(--c-text);font-size:var(--fs-base);line-height:1.47;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.skip-link{position:absolute;inset-inline-start:.5rem;top:-3rem;padding:.6rem 1rem;background:var(--c-accent);color:#fff;text-decoration:none;border-radius:0 0 .25rem .25rem;z-index:1100}.skip-link:focus{top:0}.site-nav{background:var(--c-nav-bg);border-bottom:1px solid var(--c-border);position:sticky;top:0;z-index:1000;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:4rem;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-weight:600;font-size:1.25rem;color:var(--c-heading);letter-spacing:-.02em;text-decoration:none}.nav-center{display:flex;gap:1.5rem;list-style:none;padding:0;margin:0}.nav-center a{color:var(--c-nav-muted);font-size:.875rem;font-weight:500;text-decoration:none}.nav-right{display:flex;align-items:center;gap:1rem}.site-hero{text-align:center;padding:5rem 1.5rem 3rem;background:linear-gradient(180deg,var(--c-hero-grad-1),var(--c-hero-grad-2) 50%,var(--c-hero-grad-3))}.site-hero h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em;color:var(--c-heading);line-height:1.1}.site-hero p{margin-top:.75rem;max-width:40rem;margin-inline:auto}.hero-logo{width:4.5rem;height:auto;margin:0 auto 1rem}.hero-cta{display:inline-block;padding:.75rem 1.5rem;margin-top:1.5rem;background:var(--c-accent);color:#fff;font-weight:600;border-radius:9999px;text-decoration:none}.site-main{max-width:70rem;margin:0 auto;padding:3rem 1.5rem 5rem}.site-main h1,.site-main h2,.site-main h3,.site-main h4{font-family:inherit;line-height:1.1;color:var(--c-heading);margin:0}.site-main h4{letter-spacing:-.022em}.site-main h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em}.site-main h2,.site-main h3{font-size:var(--fs-h2);font-weight:600;letter-spacing:-.03em}.site-main h3{font-size:var(--fs-h3);letter-spacing:-.02em}.site-hero p,.site-main p{font-size:var(--fs-base);line-height:1.5;color:var(--c-secondary)}.site-main a:not([class*=button]):not([class*=btn]):not(.badge){color:var(--c-accent);text-decoration:underline;text-underline-offset:.15em}</style>
+
+    <!-- Skeletonic Stylus v2.0.0 + chrome — render-blocking, but
+         the inline critical CSS above already painted above-the-fold,
+         so first paint isn't waiting for these. The `media="print"
+         onload=…" defer trick was tempting but ships an inline event
+         handler that the page CSP correctly blocks (hashes don't
+         apply to event handlers). Standard <link rel="stylesheet">
+         keeps the page CSP-clean. -->
     <link rel="stylesheet" href="/css/skeletonic.min.css">
     
     
-
-    <!-- Chrome styles — layout, nav, hero, footer, search overlay, theme toggle. -->
     <link rel="stylesheet" href="/css/chrome.css">
 
     <!-- REMOVED: inline <style> moved to static/css/chrome.css -->
@@ -823,17 +830,17 @@ gap; <code>.grid-cols-N</code> (1–12) generates the column tracks; <code>.col-
 </code></pre>
 <section aria-labelledby="grid">
 <div class="grid grid-cols-2" style="margin-bottom:.5rem;">
-  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Half</div>
-  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Half</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Half</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);color:#1a1a1a;border-radius:.25rem;text-align:center;">Half</div>
 </div>
 <div class="grid grid-cols-3" style="margin-bottom:.5rem;">
-  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Third</div>
-  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Third</div>
-  <div style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
 </div>
 <div class="grid grid-cols-3">
-  <div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: col-span-2" style="padding:.75rem;background:var(--cl-grey-100);border-radius:.25rem;text-align:center;</div>
-  <div style="padding:.75rem;background:var(--cl-grey-200);border-radius:.25rem;text-align:center;">Third</div>
+  <div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: col-span-2" style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
 </div>
 </section>
 <blockquote>
@@ -856,7 +863,7 @@ and traps focus correctly on its own.</p>
 <pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">style</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header</span><span style="color:#c0c5ce;">{position:relative;display:flex;align-items:center;gap:</span><span style="color:#d08770;">1rem</span><span style="color:#c0c5ce;">;padding:</span><span style="color:#d08770;">.75rem 1rem</span><span style="color:#c0c5ce;">;border:</span><span style="color:#d08770;">1px </span><span style="color:#c0c5ce;">solid </span><span style="color:#96b5b4;">#e4e4e7</span><span style="color:#c0c5ce;">;border-radius:</span><span style="color:#d08770;">.5rem</span><span style="color:#c0c5ce;">;background:</span><span style="color:#96b5b4;">#fff</span><span style="color:#c0c5ce;">;}
-</span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-brand</span><span style="color:#c0c5ce;">{font-weight:</span><span style="color:#d08770;">600</span><span style="color:#c0c5ce;">;color:</span><span style="color:#96b5b4;">#0a0a0a</span><span style="color:#c0c5ce;">;text-decoration:none;}
+</span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-brand</span><span style="color:#c0c5ce;">{font-weight:</span><span style="color:#d08770;">600</span><span style="color:#c0c5ce;">;color:</span><span style="color:#96b5b4;">#0a0a0a </span><span style="color:#b48ead;">!important</span><span style="color:#c0c5ce;">;text-decoration:none;}
 </span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-toggle</span><span style="color:#c0c5ce;">{position:absolute;left:</span><span style="color:#d08770;">-9999px</span><span style="color:#c0c5ce;">;}
 </span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-burger</span><span style="color:#c0c5ce;">{display:none;margin-left:auto;cursor:pointer;padding:</span><span style="color:#d08770;">.625rem .75rem</span><span style="color:#c0c5ce;">;border:</span><span style="color:#d08770;">1px </span><span style="color:#c0c5ce;">solid </span><span style="color:#96b5b4;">#e4e4e7</span><span style="color:#c0c5ce;">;border-radius:</span><span style="color:#d08770;">.375rem</span><span style="color:#c0c5ce;">;font-size:</span><span style="color:#d08770;">1.125rem</span><span style="color:#c0c5ce;">;line-height:</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">;min-width:</span><span style="color:#d08770;">2.75rem</span><span style="color:#c0c5ce;">;min-height:</span><span style="color:#d08770;">2.75rem</span><span style="color:#c0c5ce;">;}
 </span><span style="color:#b48ead;">  </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-burger</span><span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">focus-within,</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-header </span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-toggle</span><span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">focus-visible+</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">sk-burger</span><span style="color:#c0c5ce;">{outline:</span><span style="color:#d08770;">2px </span><span style="color:#c0c5ce;">solid </span><span style="color:#96b5b4;">hsl</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">210</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">100%</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">42%</span><span style="color:#c0c5ce;">);outline-offset:</span><span style="color:#d08770;">2px</span><span style="color:#c0c5ce;">;}
@@ -887,7 +894,7 @@ and traps focus correctly on its own.</p>
 <section aria-labelledby="header">
 <style>
   .sk-header{position:relative;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem;border:1px solid #e4e4e7;border-radius:.5rem;background:#fff;}
-  .sk-header .sk-brand{font-weight:600;color:#0a0a0a;text-decoration:none;}
+  .sk-header .sk-brand{font-weight:600;color:#0a0a0a !important;text-decoration:none;}
   .sk-header .sk-toggle{position:absolute;left:-9999px;}
   .sk-header .sk-burger{display:none;margin-left:auto;cursor:pointer;padding:.625rem .75rem;border:1px solid #e4e4e7;border-radius:.375rem;font-size:1.125rem;line-height:1;min-width:2.75rem;min-height:2.75rem;}
   .sk-header .sk-burger:focus-within,.sk-header .sk-toggle:focus-visible+.sk-burger{outline:2px solid hsl(210,100%,42%);outline-offset:2px;}

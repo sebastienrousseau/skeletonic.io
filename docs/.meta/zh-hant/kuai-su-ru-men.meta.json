@@ -1,12 +1,12 @@
 {
-  "title": "Skeletonic Stylus 快速入門",
-  "permalink": "https://skeletonic.io/zh-hant/kuai-su-ru-men/",
   "layout": "page",
+  "permalink": "https://skeletonic.io/zh-hant/kuai-su-ru-men/",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "zh-hant",
+  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
   "description": "透過 npm 或 CDN 安裝 Skeletonic Stylus，將其匯入 Stylus 建置管線，並在數秒內覆寫變數。",
-  "language": "zh-hant",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "安裝 skeletonic, stylus 設定, css cdn, 快速入門",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08"
+  "title": "Skeletonic Stylus 快速入門",
+  "keywords": "安裝 skeletonic, stylus 設定, css cdn, 快速入門"
 }
