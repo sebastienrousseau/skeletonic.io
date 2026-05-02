@@ -93,22 +93,24 @@ All values use the golden-ratio constant (`var(--gr) ≈ 1.62rem`).
 
 ## Spacing — physical and logical
 
-The spacing utilities follow a 12-step golden-ratio percentage scale.
-See [the spacing ladder](/spacing/) for the actual values and visual
-output. Both physical (`-left`, `-right`) and logical (`-start`, `-end`)
-forms are emitted; logical forms auto-flip in `<html dir="rtl">`.
+The spacing utilities follow a five-step golden-ratio scale
+(`xs`, `sm`, `md`, `lg`, `xl`). See [the spacing ladder](/spacing/) for
+each step's resolved value. Logical (`-start`, `-end`) forms auto-flip
+in `<html dir="rtl">`.
 
 ```text
-.margin-N            .margin-top-N         .padding-N
-.margin-bottom-N     .margin-start-N       .padding-top-N
-.margin-end-N        .margin-left-N        .padding-bottom-N
-.margin-right-N      .margin-auto          .padding-start-N
-.padding-end-N       .padding-left-N       .padding-right-N
+.padding-{size}            .margin-{size}
+.padding-top-{size}        .margin-top-{size}
+.padding-bottom-{size}     .margin-bottom-{size}
+
+.padding-start-{size}      .margin-start-{size}     ← logical (RTL-aware)
+.padding-end-{size}        .margin-end-{size}       ← logical (RTL-aware)
+                           .margin-auto             ← centring helper
 ```
 
-`N` is `0`–`11`. So `.padding-start-3` produces
-`padding-inline-start: 2.13%` — and flips to `padding-inline-end` when
-the container's writing direction is RTL.
+Where `{size}` is `xs` / `sm` / `md` / `lg` / `xl`. So `.padding-start-md`
+produces `padding-inline-start: 1.62rem` and auto-flips to
+`padding-inline-end` when the container's writing direction is RTL.
 
 ## Group / clearfix
 

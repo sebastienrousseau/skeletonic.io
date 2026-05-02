@@ -1,12 +1,12 @@
 {
+  "description": "Skeletonic Stylus per npm oder CDN installieren, in den Stylus-Build einbinden und Variablen in Sekunden überschreiben.",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
   "layout": "page",
   "language": "de",
-  "description": "Skeletonic Stylus per npm oder CDN installieren, in den Stylus-Build einbinden und Variablen in Sekunden überschreiben.",
   "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/de/erste-schritte/",
+  "keywords": "skeletonic installieren, stylus einrichten, css cdn, erste schritte",
   "title": "Erste Schritte mit Skeletonic Stylus",
   "name": "Skeletonic Stylus",
-  "keywords": "skeletonic installieren, stylus einrichten, css cdn, erste schritte"
+  "author": "Sebastien Rousseau"
 }

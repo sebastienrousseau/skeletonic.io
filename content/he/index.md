@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — CSS נגיש, כ-8.6 KB בדחיסת gzip"
+title: "Skeletonic Stylus — CSS נגיש, כ-8.0 KB בדחיסת gzip"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus היא ספריית CSS קלת משקל ומודולרית מבוססת Stylus — תואמת WCAG 2.2, מאורגנת בשכבות קסקייד, כ-8.6 KB בדחיסת gzip — שתוכננה לייעל פיתוח ממשקי משתמש מודרניים."
+description: "Skeletonic Stylus היא ספריית CSS קלת משקל ומודולרית מבוססת Stylus — תואמת WCAG 2.2, מאורגנת בשכבות קסקייד, כ-8.0 KB בדחיסת gzip — שתוכננה לייעל פיתוח ממשקי משתמש מודרניים."
 layout: index
 permalink: https://skeletonic.io/he/
 date: 2026-04-08

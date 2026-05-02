@@ -319,7 +319,7 @@ Plain `<table>` elements get bordered cells and a contrast-flipped
     <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
   </thead>
   <tbody>
-    <tr><td>Skeletonic</td><td>7.2 KB</td><td>Yes</td></tr>
+    <tr><td>Skeletonic</td><td>6.9 KB</td><td>Yes</td></tr>
     <tr><td>Pico CSS</td><td>10.1 KB</td><td>Yes</td></tr>
     <tr><td>Bootstrap</td><td>23.0 KB</td><td>No (Popper)</td></tr>
   </tbody>
@@ -332,7 +332,7 @@ Plain `<table>` elements get bordered cells and a contrast-flipped
     <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
   </thead>
   <tbody>
-    <tr><td>Skeletonic</td><td>7.2 KB</td><td>Yes</td></tr>
+    <tr><td>Skeletonic</td><td>6.9 KB</td><td>Yes</td></tr>
     <tr><td>Pico CSS</td><td>10.1 KB</td><td>Yes</td></tr>
     <tr><td>Bootstrap</td><td>23.0 KB</td><td>No (Popper)</td></tr>
   </tbody>

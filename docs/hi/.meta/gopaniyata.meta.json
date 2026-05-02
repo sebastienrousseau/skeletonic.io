@@ -1,12 +1,12 @@
 {
+  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/hi/gopaniyata/",
-  "author": "Sebastien Rousseau",
-  "title": "गोपनीयता",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "description": "skeletonic.io कौन सा डेटा एकत्र करती है, क्यों, और कैसे ऑप्ट आउट करें।",
   "language": "hi",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
   "layout": "page",
-  "keywords": "गोपनीयता, gdpr, कुकीज़, कोई ट्रैकिंग नहीं"
+  "keywords": "गोपनीयता, gdpr, कुकीज़, कोई ट्रैकिंग नहीं",
+  "title": "गोपनीयता",
+  "description": "skeletonic.io कौन सा डेटा एकत्र करती है, क्यों, और कैसे ऑप्ट आउट करें।"
 }

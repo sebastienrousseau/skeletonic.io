@@ -101,7 +101,7 @@ Biblioteca furnizează mai multe bundle-uri pre-compilate sub
 | Fișier | Scop | Dimensiune (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elemente + componente + utilitare | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modul opțional de animații | ≈213 KB / ≈7.2 KB |
+| `animations/skeletonic-animations.min.css` | Modul opțional de animații | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de culori Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta utilitară Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Paleta web-safe | ≈3.5 KB |

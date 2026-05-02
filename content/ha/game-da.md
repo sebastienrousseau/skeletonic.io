@@ -20,7 +20,7 @@ keywords: "skeletonic, game da, stylus, css framework, falsafa"
   <img alt="Taurarin GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="Zazzagewa na Wata-wata" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="Sigar npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="Girman Bundle" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="Girman Bundle" src="https://img.shields.io/badge/gzip-8.0%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="Lasisin" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -43,7 +43,7 @@ An haife shi a shekarar 2018 a matsayin gwaji na sirri kan **aika ƙaramin CSS**
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Gashin tsuntsu" width="64" height="64" loading="lazy" decoding="async">
     <h3>Mai saukin nauyi</h3>
-    <p>8.6&nbsp;KB gzipped. Shafukan suna lodi da sauri. Kowane ginshiƙi mai mahimmanci yana nan.</p>
+    <p>8.0&nbsp;KB gzipped. Shafukan suna lodi da sauri. Kowane ginshiƙi mai mahimmanci yana nan.</p>
   </article>
 
   <article class="feature-card">
@@ -77,7 +77,7 @@ Takarda ɗaya ta stylesheet da aka saukar ta rufe typography, maballin, sifofi, 
 
 | Fasali | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Girman gzipped | **8.6&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| Girman gzipped | **8.0&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | Daidaiton WCAG 2.2 | **An gina shi a ciki** | Wani ɓangare | Da hannu | Wani ɓangare |
 | Cascade layers | **Eh (`@layer`)** | A'a | A'a | A'a |
 | Yanayin dare | **`prefers-color-scheme`** | Zaɓi | Na aji | Zaɓi |

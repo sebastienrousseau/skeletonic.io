@@ -1,42 +1,36 @@
 ---
-title: "Spacing scale — 12 stops, golden-ratio progression"
+title: "Spacing scale — five t-shirt steps, golden-ratio rhythm"
 name: "Skeletonic Stylus"
-description: "Skeletonic's spacing scale uses 12 percentage stops derived from the golden ratio (Φ ≈ 1.62). Padding and margin utilities map to this single ladder."
+description: "Skeletonic's spacing scale uses five t-shirt-sized steps (xs / sm / md / lg / xl) derived from the golden ratio. Padding and margin utilities map to one ladder."
 layout: page
 permalink: https://skeletonic.io/spacing/
-date: 2026-04-30
+date: 2026-05-02
 author: Sebastien Rousseau
-theme_color: "hsl(210, 100%, 42%)"
+theme_color: "oklch(0.55 0.2 250)"
 keywords: "css spacing scale, golden ratio, padding utility, margin utility, layout system"
 ---
 
 The padding and margin utility classes in Skeletonic share a single
-**12-stop percentage scale** derived from the golden ratio. Each step
-is roughly Φ × the previous one, which gives the layout a visual
-rhythm without ever feeling mechanical.
+**five-step golden-ratio scale**. Each step is rooted at
+`--gr-fsb` (1.62 rem, the body font size) and scales up or down by
+factors of Φ. The result is layout that breathes consistently from
+inline buttons all the way to hero sections.
 
 <hr class="hr-text" data-content="Scale">
 
-## The 12 stops
+## The five steps
 
-| `N` | Value | `.padding-N` produces |
-|---:|---:|---|
-| 0 | 0% | `padding: 0` |
-| 1 | 0.81% | tight gap |
-| 2 | 1.32% | small gap |
-| 3 | 2.13% | comfortable gap |
-| 4 | 3.44% | section breathing room |
-| 5 | 5.57% | distinct section padding |
-| 6 | 9.02% | hero-card padding |
-| 7 | 14.59% | container inset |
-| 8 | 23.61% | wide column gutter |
-| 9 | 38.20% | half-page gutter |
-| 10 | 61.80% | three-column row spacer |
-| 11 | 100% | full-bleed |
+| Class | Value | Token | Use it for |
+|---|---:|---|---|
+| `xs` | ~0.38&nbsp;rem | `var(--gr-small)rem` | Pill icons, badge inset, very tight clusters |
+| `sm` | ~0.62&nbsp;rem | `var(--gr-large)rem` | Inline form gaps, button-group separators |
+| `md` | 1.62&nbsp;rem | `var(--gr-fsb)rem` | Default body / card padding |
+| `lg` | ~2.62&nbsp;rem | `calc(var(--gr-fsb) × Φ)` | Section breathing room |
+| `xl` | ~4.24&nbsp;rem | `calc(var(--gr-fsb) × Φ²)` | Hero / landmark separation |
 
-Percentage values mean the spacing scales naturally with the parent's
-inline size — `.padding-3` inside a 800-px container is bigger than
-the same class inside a 320-px sidebar.
+Values are emitted as **`rem` units** so they scale with the user's
+root font-size — perfect for accessibility and for matching the type
+scale exactly.
 
 <hr class="hr-text" data-content="Visual">
 
@@ -56,49 +50,44 @@ the same class inside a 320-px sidebar.
     text-align:right;
   }
   .spacing-bar{
-    background: hsl(210, 100%, 42%);
+    background: oklch(0.55 0.2 250);
     height: 1rem;
     border-radius: 2px;
   }
 </style>
 
-<div class="spacing-row"><code>.padding-0</code><div class="spacing-bar" style="width: 0.0%"></div></div>
-<div class="spacing-row"><code>.padding-1</code><div class="spacing-bar" style="width: 0.81%"></div></div>
-<div class="spacing-row"><code>.padding-2</code><div class="spacing-bar" style="width: 1.32%"></div></div>
-<div class="spacing-row"><code>.padding-3</code><div class="spacing-bar" style="width: 2.13%"></div></div>
-<div class="spacing-row"><code>.padding-4</code><div class="spacing-bar" style="width: 3.44%"></div></div>
-<div class="spacing-row"><code>.padding-5</code><div class="spacing-bar" style="width: 5.57%"></div></div>
-<div class="spacing-row"><code>.padding-6</code><div class="spacing-bar" style="width: 9.02%"></div></div>
-<div class="spacing-row"><code>.padding-7</code><div class="spacing-bar" style="width: 14.59%"></div></div>
-<div class="spacing-row"><code>.padding-8</code><div class="spacing-bar" style="width: 23.61%"></div></div>
-<div class="spacing-row"><code>.padding-9</code><div class="spacing-bar" style="width: 38.20%"></div></div>
-<div class="spacing-row"><code>.padding-10</code><div class="spacing-bar" style="width: 61.80%"></div></div>
-<div class="spacing-row"><code>.padding-11</code><div class="spacing-bar" style="width: 100%"></div></div>
+<div class="spacing-row"><code>.padding-xs</code><div class="spacing-bar" style="width: 0.38rem"></div></div>
+<div class="spacing-row"><code>.padding-sm</code><div class="spacing-bar" style="width: 0.62rem"></div></div>
+<div class="spacing-row"><code>.padding-md</code><div class="spacing-bar" style="width: 1.62rem"></div></div>
+<div class="spacing-row"><code>.padding-lg</code><div class="spacing-bar" style="width: 2.62rem"></div></div>
+<div class="spacing-row"><code>.padding-xl</code><div class="spacing-bar" style="width: 4.24rem"></div></div>
 
 <hr class="hr-text" data-content="Forms">
 
 ## Available class forms
 
-For every step `N` (0–11) the library emits these utility classes:
+For every step (`xs` / `sm` / `md` / `lg` / `xl`) the library emits:
 
 ```text
-.padding-N            .margin-N
-.padding-top-N        .margin-top-N
-.padding-bottom-N     .margin-bottom-N
+.padding-{size}            .margin-{size}
+.padding-top-{size}        .margin-top-{size}
+.padding-bottom-{size}     .margin-bottom-{size}
 
-.padding-start-N      .margin-start-N      ← logical, RTL-aware
-.padding-end-N        .margin-end-N        ← logical, RTL-aware
-.padding-left-N       .margin-left-N       ← physical
-.padding-right-N      .margin-right-N      ← physical
-                      .margin-auto         ← centring helper
+.padding-start-{size}      .margin-start-{size}     ← logical, RTL-aware
+.padding-end-{size}        .margin-end-{size}       ← logical, RTL-aware
+                           .margin-auto             ← centring helper
 ```
 
 The logical (`-start` / `-end`) forms compile to `padding-inline-start`
 / `padding-inline-end` (or `margin-inline-*`) so they auto-flip in
-`<html dir="rtl">`. The physical (`-left` / `-right`) forms always
-behave as their name suggests, regardless of writing direction — use
-them when you specifically need a physical-side outcome (e.g. icon
-positioning that should not flip).
+`<html dir="rtl">`. Pair them with the t-shirt size to get
+`padding-start-md`, `margin-end-lg`, etc.
+
+> **v1.x → v2.0 migration.** The numeric scale (`.padding-0` through
+> `.padding-11`, percentage-based) was replaced with this five-step
+> rem-based scale. The new system is shorter, more predictable, and
+> easier to reason about. See the [changelog](/changelog/) for the
+> full migration list.
 
 [Browse utility classes →](/utilities/) ·
 [Design tokens →](/tokens/)

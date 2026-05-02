@@ -25,7 +25,7 @@ seconds — please verify them yourself before quoting any number here.
 
 | Framework | Version | Raw | gzip −9 | brotli −q 11 |
 |---|---|---:|---:|---:|
-| **Skeletonic Stylus** | 2.0.0 | **44,961** | **8,642** | **7,177** |
+| **Skeletonic Stylus** | 2.0.0 | **40,567** | **7,981** | **6,916** |
 | Pico CSS | 2.1.1 | 83,319 | 11,651 | 10,098 |
 | Bootstrap | 5.3.8 | 232,111 | 30,887 | 22,970 |
 | Bulma | 1.0.4 | 677,931 | 64,854 | 36,338 |

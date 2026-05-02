@@ -188,8 +188,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css">
-<meta name="description" content="The padding and margin utility classes in Skeletonic share a single 12-stop percentage scale derived from the golden ratio. Each step is roughly Φ × the">
-<meta property="og:description" content="The padding and margin utility classes in Skeletonic share a single 12-stop percentage scale derived from the golden ratio. Each step is roughly Φ × the">
+<meta name="description" content="The padding and margin utility classes in Skeletonic share a single five-step golden-ratio scale . Each step is rooted at --gr-fsb (1.62 rem, the body font">
+<meta property="og:description" content="The padding and margin utility classes in Skeletonic share a single five-step golden-ratio scale . Each step is rooted at --gr-fsb (1.62 rem, the body font">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
@@ -288,85 +288,57 @@
       <div class="text-start">
         
 <p>The padding and margin utility classes in Skeletonic share a single
-<strong>12-stop percentage scale</strong> derived from the golden ratio. Each step
-is roughly Φ × the previous one, which gives the layout a visual
-rhythm without ever feeling mechanical.</p>
+<strong>five-step golden-ratio scale</strong>. Each step is rooted at
+<code>--gr-fsb</code> (1.62 rem, the body font size) and scales up or down by
+factors of Φ. The result is layout that breathes consistently from
+inline buttons all the way to hero sections.</p>
 <hr class="hr-text" data-content="Scale">
-<h2>The 12 stops</h2>
+<h2>The five steps</h2>
 <div class="table-responsive"><table class="table">
 <thead>
 <tr>
-<th align="right"><code>N</code></th>
+<th>Class</th>
 <th align="right">Value</th>
-<th><code>.padding-N</code> produces</th>
+<th>Token</th>
+<th>Use it for</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="right" class="text-right">0</td>
-<td align="right" class="text-right">0%</td>
-<td class="text-left"><code>padding: 0</code></td>
+<td class="text-left"><code>xs</code></td>
+<td align="right" class="text-right">~0.38 rem</td>
+<td class="text-left"><code>var(--gr-small)rem</code></td>
+<td class="text-left">Pill icons, badge inset, very tight clusters</td>
 </tr>
 <tr>
-<td align="right" class="text-right">1</td>
-<td align="right" class="text-right">0.81%</td>
-<td class="text-left">tight gap</td>
+<td class="text-left"><code>sm</code></td>
+<td align="right" class="text-right">~0.62 rem</td>
+<td class="text-left"><code>var(--gr-large)rem</code></td>
+<td class="text-left">Inline form gaps, button-group separators</td>
 </tr>
 <tr>
-<td align="right" class="text-right">2</td>
-<td align="right" class="text-right">1.32%</td>
-<td class="text-left">small gap</td>
+<td class="text-left"><code>md</code></td>
+<td align="right" class="text-right">1.62 rem</td>
+<td class="text-left"><code>var(--gr-fsb)rem</code></td>
+<td class="text-left">Default body / card padding</td>
 </tr>
 <tr>
-<td align="right" class="text-right">3</td>
-<td align="right" class="text-right">2.13%</td>
-<td class="text-left">comfortable gap</td>
+<td class="text-left"><code>lg</code></td>
+<td align="right" class="text-right">~2.62 rem</td>
+<td class="text-left"><code>calc(var(--gr-fsb) × Φ)</code></td>
+<td class="text-left">Section breathing room</td>
 </tr>
 <tr>
-<td align="right" class="text-right">4</td>
-<td align="right" class="text-right">3.44%</td>
-<td class="text-left">section breathing room</td>
-</tr>
-<tr>
-<td align="right" class="text-right">5</td>
-<td align="right" class="text-right">5.57%</td>
-<td class="text-left">distinct section padding</td>
-</tr>
-<tr>
-<td align="right" class="text-right">6</td>
-<td align="right" class="text-right">9.02%</td>
-<td class="text-left">hero-card padding</td>
-</tr>
-<tr>
-<td align="right" class="text-right">7</td>
-<td align="right" class="text-right">14.59%</td>
-<td class="text-left">container inset</td>
-</tr>
-<tr>
-<td align="right" class="text-right">8</td>
-<td align="right" class="text-right">23.61%</td>
-<td class="text-left">wide column gutter</td>
-</tr>
-<tr>
-<td align="right" class="text-right">9</td>
-<td align="right" class="text-right">38.20%</td>
-<td class="text-left">half-page gutter</td>
-</tr>
-<tr>
-<td align="right" class="text-right">10</td>
-<td align="right" class="text-right">61.80%</td>
-<td class="text-left">three-column row spacer</td>
-</tr>
-<tr>
-<td align="right" class="text-right">11</td>
-<td align="right" class="text-right">100%</td>
-<td class="text-left">full-bleed</td>
+<td class="text-left"><code>xl</code></td>
+<td align="right" class="text-right">~4.24 rem</td>
+<td class="text-left"><code>calc(var(--gr-fsb) × Φ²)</code></td>
+<td class="text-left">Hero / landmark separation</td>
 </tr>
 </tbody>
 </table></div>
-<p>Percentage values mean the spacing scales naturally with the parent's
-inline size — <code>.padding-3</code> inside a 800-px container is bigger than
-the same class inside a 320-px sidebar.</p>
+<p>Values are emitted as <strong><code>rem</code> units</strong> so they scale with the user's
+root font-size — perfect for accessibility and for matching the type
+scale exactly.</p>
 <hr class="hr-text" data-content="Visual">
 <h2>Visual ladder</h2>
 <style>
@@ -383,7 +355,7 @@ the same class inside a 320-px sidebar.</p>
     text-align:right;
   }
   .spacing-bar{
-    background: hsl(210, 100%, 42%);
+    background: oklch(0.55 0.2 250);
     height: 1rem;
     border-radius: 2px;
   }
@@ -393,34 +365,30 @@ the same class inside a 320-px sidebar.</p>
 <div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: spacing-row</div></div>
 <div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: spacing-row</div></div>
 <div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: spacing-row</div></div>
-<div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: spacing-row</div></div>
-<div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: spacing-row</div></div>
-<div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: spacing-row</div></div>
-<div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: spacing-row</div></div>
-<div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: spacing-row</div></div>
-<div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: spacing-row</div></div>
-<div class="alert alert-danger" role="alert"><strong>Error:</strong> Failed to process custom block: Unknown block type: spacing-row</div></div>
 <hr class="hr-text" data-content="Forms">
 <h2>Available class forms</h2>
-<p>For every step <code>N</code> (0–11) the library emits these utility classes:</p>
+<p>For every step (<code>xs</code> / <code>sm</code> / <code>md</code> / <code>lg</code> / <code>xl</code>) the library emits:</p>
 <pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#0d1117;">
-<span style="color:#c0c5ce;">.padding-N            .margin-N
-</span><span style="color:#c0c5ce;">.padding-top-N        .margin-top-N
-</span><span style="color:#c0c5ce;">.padding-bottom-N     .margin-bottom-N
+<span style="color:#c0c5ce;">.padding-{size}            .margin-{size}
+</span><span style="color:#c0c5ce;">.padding-top-{size}        .margin-top-{size}
+</span><span style="color:#c0c5ce;">.padding-bottom-{size}     .margin-bottom-{size}
 </span><span style="color:#c0c5ce;">
-</span><span style="color:#c0c5ce;">.padding-start-N      .margin-start-N      ← logical, RTL-aware
-</span><span style="color:#c0c5ce;">.padding-end-N        .margin-end-N        ← logical, RTL-aware
-</span><span style="color:#c0c5ce;">.padding-left-N       .margin-left-N       ← physical
-</span><span style="color:#c0c5ce;">.padding-right-N      .margin-right-N      ← physical
-</span><span style="color:#c0c5ce;">                      .margin-auto         ← centring helper
+</span><span style="color:#c0c5ce;">.padding-start-{size}      .margin-start-{size}     ← logical, RTL-aware
+</span><span style="color:#c0c5ce;">.padding-end-{size}        .margin-end-{size}       ← logical, RTL-aware
+</span><span style="color:#c0c5ce;">                           .margin-auto             ← centring helper
 </span></pre>
 </code></pre>
 <p>The logical (<code>-start</code> / <code>-end</code>) forms compile to <code>padding-inline-start</code>
 / <code>padding-inline-end</code> (or <code>margin-inline-*</code>) so they auto-flip in
-<code>&lt;html dir=&quot;rtl&quot;&gt;</code>. The physical (<code>-left</code> / <code>-right</code>) forms always
-behave as their name suggests, regardless of writing direction — use
-them when you specifically need a physical-side outcome (e.g. icon
-positioning that should not flip).</p>
+<code>&lt;html dir=&quot;rtl&quot;&gt;</code>. Pair them with the t-shirt size to get
+<code>padding-start-md</code>, <code>margin-end-lg</code>, etc.</p>
+<blockquote>
+<p><strong>v1.x → v2.0 migration.</strong> The numeric scale (<code>.padding-0</code> through
+<code>.padding-11</code>, percentage-based) was replaced with this five-step
+rem-based scale. The new system is shorter, more predictable, and
+easier to reason about. See the <a href="/changelog/">changelog</a> for the
+full migration list.</p>
+</blockquote>
 <p><a href="/utilities/">Browse utility classes →</a> ·
 <a href="/tokens/">Design tokens →</a></p>
 

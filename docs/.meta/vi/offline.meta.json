@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/vi/offline/",
-  "author": "Sebastien Rousseau",
-  "description": "skeletonic.io khong the ket noi mang. Trang ban yeu cau chua duoc luu trong bo nho cache.",
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
   "keywords": "offline, service worker, pwa",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "title": "Ban dang offline",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
   "language": "vi",
-  "title": "Ban dang offline"
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/vi/offline/",
+  "description": "skeletonic.io khong the ket noi mang. Trang ban yeu cau chua duoc luu trong bo nho cache."
 }

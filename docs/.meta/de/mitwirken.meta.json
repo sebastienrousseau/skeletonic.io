@@ -1,12 +1,12 @@
 {
-  "keywords": "mitwirken, open source, pull request, issue, konventionen",
   "date": "2026-04-08",
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Issues melden, Aenderungen vorschlagen und Pull Requests fuer Skeletonic Stylus einreichen.",
-  "name": "Skeletonic Stylus",
-  "language": "de",
   "author": "Sebastien Rousseau",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "mitwirken, open source, pull request, issue, konventionen",
+  "description": "Issues melden, Aenderungen vorschlagen und Pull Requests fuer Skeletonic Stylus einreichen.",
   "title": "Mitwirken",
-  "permalink": "https://skeletonic.io/de/mitwirken/"
+  "permalink": "https://skeletonic.io/de/mitwirken/",
+  "language": "de"
 }

@@ -20,7 +20,7 @@ keywords: "skeletonic, אודות, stylus, css framework, פילוסופיה"
   <img alt="כוכבים ב-GitHub" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="הורדות חודשיות" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="גרסת npm" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="גודל חבילה" src="https://img.shields.io/badge/gzip-8.6%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="גודל חבילה" src="https://img.shields.io/badge/gzip-8.0%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="רישיון" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -47,7 +47,7 @@ keywords: "skeletonic, אודות, stylus, css framework, פילוסופיה"
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="נוצה" width="64" height="64" loading="lazy" decoding="async">
     <h3>קלת משקל</h3>
-    <p>כ-8.6&nbsp;KB בדחיסת gzip. הדפים נטענים מהר יותר. כל אבן בניין חיונית נשארת.</p>
+    <p>כ-8.0&nbsp;KB בדחיסת gzip. הדפים נטענים מהר יותר. כל אבן בניין חיונית נשארת.</p>
   </article>
 
   <article class="feature-card">
@@ -83,7 +83,7 @@ keywords: "skeletonic, אודות, stylus, css framework, פילוסופיה"
 
 | תכונה | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| גודל gzip | **כ-8.6&nbsp;KB** | כ-30&nbsp;KB | כ-10&nbsp;KB (varies) | כ-30&nbsp;KB |
+| גודל gzip | **כ-8.0&nbsp;KB** | כ-30&nbsp;KB | כ-10&nbsp;KB (varies) | כ-30&nbsp;KB |
 | תאימות WCAG 2.2 | **מובנית** | חלקית | ידנית | חלקית |
 | שכבות קסקייד | **כן (`@layer`)** | לא | לא | לא |
 | מצב כהה | **`prefers-color-scheme`** | הצטרפות | מבוסס מחלקה | הצטרפות |

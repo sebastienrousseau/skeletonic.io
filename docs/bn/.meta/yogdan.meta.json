@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "bn",
   "title": "অবদান",
-  "keywords": "অবদান, ওপেন সোর্স, পুল রিকোয়েস্ট, ইস্যু, কনভেনশন",
   "layout": "page",
+  "keywords": "অবদান, ওপেন সোর্স, পুল রিকোয়েস্ট, ইস্যু, কনভেনশন",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "কীভাবে ইস্যু ফাইল করবেন, পরিবর্তন প্রস্তাব করবেন এবং Skeletonic Stylus-এ পুল রিকোয়েস্ট জমা দেবেন।",
   "permalink": "https://skeletonic.io/bn/yogdan/",
-  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "language": "bn",
   "name": "Skeletonic Stylus",
-  "description": "কীভাবে ইস্যু ফাইল করবেন, পরিবর্তন প্রস্তাব করবেন এবং Skeletonic Stylus-এ পুল রিকোয়েস্ট জমা দেবেন।"
+  "author": "Sebastien Rousseau"
 }

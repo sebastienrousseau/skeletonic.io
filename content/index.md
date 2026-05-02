@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus 2.0 — Modern CSS, 8.6 KB gzip"
+title: "Skeletonic Stylus 2.0 — Modern CSS, 8.0 KB gzip"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus 2.0 — OKLCH colours, native @layer, CSS Grid, container queries, view transitions. Class-based, JS-free, WCAG 2.2 AA, 8.6 KB gzip / 7.2 KB brotli."
+description: "Skeletonic Stylus 2.0 — OKLCH colours, native @layer, CSS Grid, container queries, view transitions. Class-based, JS-free, WCAG 2.2 AA, 8.0 KB gzip / 6.9 KB brotli."
 layout: index
 permalink: https://skeletonic.io/
 date: 2026-05-01
@@ -11,7 +11,7 @@ keywords: "css, stylus, css framework, oklch, css grid, container queries, view 
 ---
 
 **Skeletonic Stylus 2.0** — modern CSS for the post-bundler web.
-**8.6&nbsp;KB&nbsp;gzip · 7.2&nbsp;KB&nbsp;brotli**. OKLCH colours,
+**8.0&nbsp;KB&nbsp;gzip · 6.9&nbsp;KB&nbsp;brotli**. OKLCH colours,
 native `@layer`, CSS Grid, container queries, view transitions.
 WCAG&nbsp;2.2 AA. RTL-ready. Zero JavaScript. One `<link>` and
 you're done.
@@ -79,7 +79,7 @@ CDN-served, no purging, measured with `gzip -9` and `brotli -q 11` on
 
 | Framework | Version | Brotli | Gzip |
 |---|---|---:|---:|
-| **Skeletonic Stylus** | 2.0.0 | **7.2 KB** | **8.6 KB** |
+| **Skeletonic Stylus** | 2.0.0 | **6.9 KB** | **8.0 KB** |
 | Pico CSS | 2.1.1 | 10.1 KB | 11.6 KB |
 | Bootstrap | 5.3.8 | 23.0 KB | 30.9 KB |
 | Bulma | 1.0.4 | 36.3 KB | 64.9 KB |

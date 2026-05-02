@@ -103,7 +103,7 @@ Knihovna dodava nekolik predpripravenych svazku v
 | Soubor | Ucel | Velikost (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokeny + rozvrzeni + elementy + komponenty + utility | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Volitelny modul animaci | ≈213 KB / ≈7.2 KB |
+| `animations/skeletonic-animations.min.css` | Volitelny modul animaci | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Barevna paleta Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Utilitni paleta Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Web-safe paleta | ≈3.5 KB |

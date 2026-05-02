@@ -1,12 +1,12 @@
 {
-  "title": "Skeletonic Stylus — Toegankelijke CSS, 8,3 KB gzipped",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "keywords": "css, stylus, css framework, toegankelijke css, wcag 2.2, lichtgewicht css, cascade layers, ontwerpsysteem",
   "layout": "index",
+  "author": "Sebastien Rousseau",
+  "title": "Skeletonic Stylus — Toegankelijke CSS, 8,3 KB gzipped",
+  "date": "2026-04-08",
   "description": "Skeletonic Stylus is een lichtgewicht, modulaire Stylus CSS-bibliotheek — WCAG 2.2 klaar, met cascade-lagen, 8,3 KB gzipped — ontworpen om moderne web-UI-ontwikkeling te stroomlijnen.",
-  "language": "nl",
   "permalink": "https://skeletonic.io/nl/",
-  "name": "Skeletonic Stylus"
+  "language": "nl",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "keywords": "css, stylus, css framework, toegankelijke css, wcag 2.2, lichtgewicht css, cascade layers, ontwerpsysteem"
 }

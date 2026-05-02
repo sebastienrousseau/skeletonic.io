@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "author": "Sebastien Rousseau",
-  "language": "ro",
-  "permalink": "https://skeletonic.io/ro/contribuie/",
-  "description": "Cum să raportezi probleme, să propui modificări și să trimiți pull request-uri către Skeletonic Stylus.",
-  "title": "Contribuie",
   "keywords": "contribuie, open source, pull request, issue, convenții",
-  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "title": "Contribuie",
+  "permalink": "https://skeletonic.io/ro/contribuie/",
+  "language": "ro",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "layout": "page",
+  "description": "Cum să raportezi probleme, să propui modificări și să trimiți pull request-uri către Skeletonic Stylus."
 }

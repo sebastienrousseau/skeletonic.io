@@ -103,7 +103,7 @@ De bibliotheek levert meerdere voorgebouwde bundels onder
 | Bestand | Doel | Grootte (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elementen + componenten + utilities | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Optionele animatiemodule | ≈213 KB / ≈7.2 KB |
+| `animations/skeletonic-animations.min.css` | Optionele animatiemodule | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Material-kleurenpalet | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility-palet | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Webveilig palet | ≈3.5 KB |

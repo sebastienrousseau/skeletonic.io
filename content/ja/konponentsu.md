@@ -151,7 +151,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">軽量</h3>
-      <p>ミニファイ済み 45.0 KB、gzip圧縮 8.6 KB。</p>
+      <p>ミニファイ済み 40.6 KB、gzip圧縮 8.0 KB。</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ keywords: "skeletonic コンポーネント, ボタン, カード, フォーム,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">軽量</h3>
-      <p>ミニファイ済み 45.0&nbsp;KB、gzip圧縮 8.6&nbsp;KB。</p>
+      <p>ミニファイ済み 40.6&nbsp;KB、gzip圧縮 8.0&nbsp;KB。</p>
     </div>
   </article>
   <article class="card flex-1">

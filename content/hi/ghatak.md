@@ -170,7 +170,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">हल्की</h3>
-      <p>45.0 KB minified, 8.6 KB gzipped।</p>
+      <p>40.6 KB minified, 8.0 KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -192,7 +192,7 @@ keywords: "skeletonic घटक, बटन, कार्ड, फ़ॉर्म,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">हल्की</h3>
-      <p>45.0&nbsp;KB minified, 8.6&nbsp;KB gzipped।</p>
+      <p>40.6&nbsp;KB minified, 8.0&nbsp;KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">

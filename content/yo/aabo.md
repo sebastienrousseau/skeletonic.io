@@ -13,7 +13,7 @@ keywords: "aabo css, sbom, cyclonedx, npm provenance, openssf scorecard, ẹwọ
 
 ## Iṣẹ-ṣiṣe
 
-- **45.0&nbsp;KB minified · 8.6&nbsp;KB gzipped · 7.2&nbsp;KB brotli** fun iwe-aṣa ipilẹ ni kikun.
+- **40.6&nbsp;KB minified · 8.0&nbsp;KB gzipped · 6.9&nbsp;KB brotli** fun iwe-aṣa ipilẹ ni kikun.
 - **JavaScript kankan** — Stylus mimọ → CSS mimọ, ko si iye owo iṣiṣẹ.
 - **Ti a fi cascade-layer ṣe** — awọn atunṣe bori laisi `!important`.
 - **Isuna `size-limit` ti a fi ipa mu** ninu CI lori adehun kọọkan.

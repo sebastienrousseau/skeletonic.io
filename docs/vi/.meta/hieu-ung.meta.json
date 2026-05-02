@@ -1,13 +1,13 @@
 {
-  "load_animations": true,
-  "date": "2026-04-08",
-  "title": "Hieu ung dong",
   "description": "Mo-dun hieu ung dong tuy chon cua Skeletonic Stylus v2.0.0 — bounce, pulse, fade, zoom, shake va nhieu hon, tat ca deu nam sau prefers-reduced-motion.",
-  "name": "Skeletonic Stylus",
+  "load_animations": true,
   "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Hieu ung dong",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
   "language": "vi",
+  "permalink": "https://skeletonic.io/vi/hieu-ung/",
   "keywords": "hieu ung css, keyframes, prefers-reduced-motion, bounce, pulse, fade",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/vi/hieu-ung/"
+  "layout": "page"
 }

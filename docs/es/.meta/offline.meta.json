@@ -1,12 +1,12 @@
 {
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/es/offline/",
+  "name": "Skeletonic Stylus",
+  "language": "es",
+  "layout": "page",
+  "description": "skeletonic.io no pudo conectarse a la red. La pagina que solicitaste aun no ha sido almacenada en cache.",
   "date": "2026-04-08",
   "title": "Sin conexion",
-  "theme_color": "hsl(210, 100%, 42%)",
   "author": "Sebastien Rousseau",
-  "description": "skeletonic.io no pudo conectarse a la red. La pagina que solicitaste aun no ha sido almacenada en cache.",
-  "name": "Skeletonic Stylus",
-  "keywords": "offline, service worker, pwa",
-  "layout": "page",
-  "language": "es",
-  "permalink": "https://skeletonic.io/es/offline/"
+  "keywords": "offline, service worker, pwa"
 }

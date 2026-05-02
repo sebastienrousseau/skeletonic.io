@@ -103,7 +103,7 @@ a instalacao:
 | Arquivo | Finalidade | Tamanho (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elementos + componentes + utilitarios | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modulo de animacoes opcional | ≈213 KB / ≈7.2 KB |
+| `animations/skeletonic-animations.min.css` | Modulo de animacoes opcional | ≈213 KB / ≈6.9 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de cores Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta utilitaria Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Paleta web-safe | ≈3.5 KB |

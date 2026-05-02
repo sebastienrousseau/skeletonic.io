@@ -1,11 +1,11 @@
 {
-  "title": "Spacing scale — 12 stops, golden-ratio progression",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/spacing/",
-  "keywords": "css spacing scale, golden ratio, padding utility, margin utility, layout system",
+  "title": "Spacing scale — five t-shirt steps, golden-ratio rhythm",
+  "date": "2026-05-02",
+  "description": "Skeletonic's spacing scale uses five t-shirt-sized steps (xs / sm / md / lg / xl) derived from the golden ratio. Padding and margin utilities map to one ladder.",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/spacing/",
   "author": "Sebastien Rousseau",
-  "date": "2026-04-30",
-  "description": "Skeletonic's spacing scale uses 12 percentage stops derived from the golden ratio (Φ ≈ 1.62). Padding and margin utilities map to this single ladder."
+  "theme_color": "oklch(0.55 0.2 250)",
+  "layout": "page",
+  "keywords": "css spacing scale, golden ratio, padding utility, margin utility, layout system"
 }

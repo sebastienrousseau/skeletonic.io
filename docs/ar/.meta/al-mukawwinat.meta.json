@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
   "title": "المكوّنات",
-  "permalink": "https://skeletonic.io/ar/al-mukawwinat/",
-  "name": "Skeletonic Stylus",
   "description": "أمثلة HTML حية لكل مكوّن في Skeletonic Stylus، مجمّعة ومثبّتة ومعروضة بورقة الأنماط نفسها التي يتم عرضها.",
+  "permalink": "https://skeletonic.io/ar/al-mukawwinat/",
   "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "keywords": "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تنبيهات, شارات, ترويسة, قائمة تنقل, hamburger css فقط",
+  "name": "Skeletonic Stylus",
   "language": "ar",
-  "keywords": "مكوّنات skeletonic, أزرار, بطاقات, نماذج, تنبيهات, شارات, ترويسة, قائمة تنقل, hamburger css فقط"
+  "date": "2026-04-08"
 }

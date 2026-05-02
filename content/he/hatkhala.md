@@ -19,7 +19,7 @@ keywords: "התקנת skeletonic, הגדרת stylus, css cdn, התחלה"
 ## מבוא
 
 חדשים ב-Skeletonic Stylus? ב-**v2.0.0** קל מתמיד לבחור רק את
-התכונות שאתם צריכים. הודות לטביעת רגל זעירה (כ-8.6&nbsp;KB בדחיסת
+התכונות שאתם צריכים. הודות לטביעת רגל זעירה (כ-8.0&nbsp;KB בדחיסת
 gzip עבור גיליון הסגנונות הליבתי), היא משתלבת במהירות בכל יישום
 אינטרנט — ללא צורך ב-framework של JavaScript, ללא שלב בנייה אם
 אתם משתמשים ב-CDN.
@@ -102,7 +102,7 @@ pnpm run build
 
 | קובץ | מטרה | גודל (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + טוקנים + פריסה + אלמנטים + רכיבים + שירות | 45.0 KB / 8.6 KB |
+| `core/skeletonic.min.css` | Reset + טוקנים + פריסה + אלמנטים + רכיבים + שירות | 40.6 KB / 8.0 KB |
 | `animations/skeletonic-animations.min.css` | מודול אנימציות אופציונלי | כ-18 KB / כ-4 KB |
 | `palettes/material/skeletonic-material.min.css` | פלטת צבעים Material | כ-8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | פלטת שירות Tachyons | 7.3 KB |
@@ -222,7 +222,7 @@ Skeletonic חושפת את טוקני העיצוב שלה כ-**משתני CSS** 
 דילוג, תמיכה בתנועה מופחתת ומצב כהה כברירת מחדל.
 
 **מה הגודל בדחיסת gzip?**
-45.0&nbsp;KB ממוזער, **כ-8.6&nbsp;KB בדחיסת gzip**, כ-7.2&nbsp;KB
+40.6&nbsp;KB ממוזער, **כ-8.0&nbsp;KB בדחיסת gzip**, כ-6.9&nbsp;KB
 brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8&nbsp;KB נאכפת ב-CI.
 
 **באיזה רישיון היא משתמשת?**
@@ -263,7 +263,7 @@ brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8&
       "name": "מה הגודל בדחיסת gzip של Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "45.0 KB ממוזער, כ-8.6 KB בדחיסת gzip, כ-7.2 KB brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8 KB נאכפת ב-CI בכל commit."
+        "text": "40.6 KB ממוזער, כ-8.0 KB בדחיסת gzip, כ-6.9 KB brotli עבור גיליון הסגנונות הליבתי המלא. תקרת 8 KB נאכפת ב-CI בכל commit."
       }
     },
     {

@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "language": "zh-hans",
-  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "skeletonic, 关于, stylus, css 框架, 设计理念",
-  "permalink": "https://skeletonic.io/zh-hans/guan-yu/",
   "description": "Skeletonic Stylus 是一个开源 Stylus CSS 库，用于无障碍、高性能、模块化的 UI 样式开发。",
+  "name": "Skeletonic Stylus",
+  "keywords": "skeletonic, 关于, stylus, css 框架, 设计理念",
+  "layout": "page",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/zh-hans/guan-yu/",
+  "language": "zh-hans",
   "title": "关于 Skeletonic Stylus",
-  "date": "2026-04-08"
+  "author": "Sebastien Rousseau"
 }

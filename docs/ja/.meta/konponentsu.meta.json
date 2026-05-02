@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
   "title": "コンポーネント",
-  "name": "Skeletonic Stylus",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/ja/konponentsu/",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Skeletonic Stylus の全コンポーネントのライブ HTML サンプル。グループ化、アンカー付き、デモ対象のスタイルシートでレンダリングされています。",
   "language": "ja",
   "keywords": "skeletonic コンポーネント, ボタン, カード, フォーム, アラート, バッジ, ヘッダー, ナビバー, css ハンバーガー",
-  "description": "Skeletonic Stylus の全コンポーネントのライブ HTML サンプル。グループ化、アンカー付き、デモ対象のスタイルシートでレンダリングされています。",
-  "date": "2026-04-08"
+  "permalink": "https://skeletonic.io/ja/konponentsu/",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus"
 }

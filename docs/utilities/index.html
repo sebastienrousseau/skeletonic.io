@@ -530,21 +530,23 @@ markup, where extra <code>class=&quot; &quot;</code> quotes add visual noise.</p
 </tbody>
 </table>
 <h2>Spacing — physical and logical</h2>
-<p>The spacing utilities follow a 12-step golden-ratio percentage scale.
-See <a href="/spacing/">the spacing ladder</a> for the actual values and visual
-output. Both physical (<code>-left</code>, <code>-right</code>) and logical (<code>-start</code>, <code>-end</code>)
-forms are emitted; logical forms auto-flip in <code>&lt;html dir=&quot;rtl&quot;&gt;</code>.</p>
+<p>The spacing utilities follow a five-step golden-ratio scale
+(<code>xs</code>, <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>). See <a href="/spacing/">the spacing ladder</a> for
+each step's resolved value. Logical (<code>-start</code>, <code>-end</code>) forms auto-flip
+in <code>&lt;html dir=&quot;rtl&quot;&gt;</code>.</p>
 <pre class="highlight language-text"><code class="language-text" data-lang="text"><pre style="background-color:#0d1117;">
-<span style="color:#c0c5ce;">.margin-N            .margin-top-N         .padding-N
-</span><span style="color:#c0c5ce;">.margin-bottom-N     .margin-start-N       .padding-top-N
-</span><span style="color:#c0c5ce;">.margin-end-N        .margin-left-N        .padding-bottom-N
-</span><span style="color:#c0c5ce;">.margin-right-N      .margin-auto          .padding-start-N
-</span><span style="color:#c0c5ce;">.padding-end-N       .padding-left-N       .padding-right-N
+<span style="color:#c0c5ce;">.padding-{size}            .margin-{size}
+</span><span style="color:#c0c5ce;">.padding-top-{size}        .margin-top-{size}
+</span><span style="color:#c0c5ce;">.padding-bottom-{size}     .margin-bottom-{size}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">.padding-start-{size}      .margin-start-{size}     ← logical (RTL-aware)
+</span><span style="color:#c0c5ce;">.padding-end-{size}        .margin-end-{size}       ← logical (RTL-aware)
+</span><span style="color:#c0c5ce;">                           .margin-auto             ← centring helper
 </span></pre>
 </code></pre>
-<p><code>N</code> is <code>0</code>–<code>11</code>. So <code>.padding-start-3</code> produces
-<code>padding-inline-start: 2.13%</code> — and flips to <code>padding-inline-end</code> when
-the container's writing direction is RTL.</p>
+<p>Where <code>{size}</code> is <code>xs</code> / <code>sm</code> / <code>md</code> / <code>lg</code> / <code>xl</code>. So <code>.padding-start-md</code>
+produces <code>padding-inline-start: 1.62rem</code> and auto-flips to
+<code>padding-inline-end</code> when the container's writing direction is RTL.</p>
 <h2>Group / clearfix</h2>
 <table>
 <thead>

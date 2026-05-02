@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "title": "Om Skeletonic Stylus",
-  "keywords": "skeletonic, om oss, stylus, css ramverk, filosofi",
-  "description": "Skeletonic Stylus ar ett CSS-bibliotek med oppen kallkod byggt i Stylus for tillganglig, snabb och modular UI-styling.",
-  "language": "sv",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
   "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "sv",
   "permalink": "https://skeletonic.io/sv/om-oss/",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "date": "2026-04-08",
+  "keywords": "skeletonic, om oss, stylus, css ramverk, filosofi",
+  "title": "Om Skeletonic Stylus",
+  "description": "Skeletonic Stylus ar ett CSS-bibliotek med oppen kallkod byggt i Stylus for tillganglig, snabb och modular UI-styling.",
+  "layout": "page",
+  "author": "Sebastien Rousseau"
 }

@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/bn/goponioyota/",
-  "layout": "page",
-  "description": "skeletonic.io কী ডেটা সংগ্রহ করে, কেন এবং কীভাবে অপ্ট আউট করবেন।",
-  "author": "Sebastien Rousseau",
-  "keywords": "গোপনীয়তা, gdpr, কুকি, ট্র্যাকিং নেই",
-  "title": "গোপনীয়তা",
   "date": "2026-04-08",
-  "language": "bn",
+  "description": "skeletonic.io কী ডেটা সংগ্রহ করে, কেন এবং কীভাবে অপ্ট আউট করবেন।",
+  "title": "গোপনীয়তা",
+  "keywords": "গোপনীয়তা, gdpr, কুকি, ট্র্যাকিং নেই",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "language": "bn",
+  "permalink": "https://skeletonic.io/bn/goponioyota/"
 }

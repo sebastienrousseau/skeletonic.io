@@ -170,7 +170,7 @@ Combine com o grid `flex-N` para paredes de cards responsivas.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>45.0 KB minified, 8.6 KB gzipped.</p>
+      <p>40.6 KB minified, 8.0 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

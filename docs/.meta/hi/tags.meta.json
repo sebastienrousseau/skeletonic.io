@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/hi/tags/",
-  "title": "टैग",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
   "language": "hi",
+  "name": "Skeletonic Stylus",
+  "keywords": "skeletonic, टैग, सूची, वर्गीकरण",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/hi/tags/",
+  "date": "2026-04-08",
+  "layout": "page",
+  "title": "टैग",
   "description": "Skeletonic Stylus दस्तावेज़ों को टैग के अनुसार ब्राउज़ करें।",
-  "keywords": "skeletonic, टैग, सूची, वर्गीकरण"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

@@ -1,11 +1,11 @@
 {
   "keywords": "404, introuvable, erreur",
   "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/fr/404/",
-  "language": "fr",
-  "title": "Page introuvable",
-  "name": "Skeletonic Stylus",
-  "description": "La page demandée n'existe pas sur skeletonic.io.",
+  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page"
+  "title": "Page introuvable",
+  "language": "fr",
+  "description": "La page demandée n'existe pas sur skeletonic.io.",
+  "permalink": "https://skeletonic.io/fr/404/",
+  "name": "Skeletonic Stylus"
 }

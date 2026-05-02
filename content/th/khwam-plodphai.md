@@ -13,7 +13,7 @@ keywords: "ความปลอดภัย css, sbom, cyclonedx, npm provenanc
 
 ## ประสิทธิภาพ
 
-- **45.0&nbsp;KB minified · 8.6&nbsp;KB gzipped · 7.2&nbsp;KB brotli** สำหรับสไตล์ชีตหลักทั้งหมด
+- **40.6&nbsp;KB minified · 8.0&nbsp;KB gzipped · 6.9&nbsp;KB brotli** สำหรับสไตล์ชีตหลักทั้งหมด
 - **ไม่มี JavaScript** — Stylus บริสุทธิ์ → CSS บริสุทธิ์ ไม่มีต้นทุน runtime
 - **Cascade-layered** — override ชนะโดยไม่ต้อง `!important`
 - **งบประมาณ `size-limit`** ถูกบังคับใน CI ทุกคอมมิต

@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "title": "利用規約",
+  "description": "skeletonic.io および Skeletonic Stylus ライブラリの利用に関する規約。",
   "keywords": "利用規約, ライセンス, mit, apache 2",
-  "name": "Skeletonic Stylus",
   "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "利用規約",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
   "permalink": "https://skeletonic.io/ja/riyou-kiyaku/",
   "language": "ja",
-  "description": "skeletonic.io および Skeletonic Stylus ライブラリの利用に関する規約。",
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "name": "Skeletonic Stylus"
 }

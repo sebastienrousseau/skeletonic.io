@@ -151,7 +151,7 @@ Kwantenan da ke da iyaka da padding don raka'a guda mai jituwa. Haɗa shi da gri
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Mai saukin nauyi</h3>
-      <p>45.0 KB da aka ƙaranta, 8.6 KB gzipped.</p>
+      <p>40.6 KB da aka ƙaranta, 8.0 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ Kwantenan da ke da iyaka da padding don raka'a guda mai jituwa. Haɗa shi da gri
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Mai saukin nauyi</h3>
-      <p>45.0&nbsp;KB da aka ƙaranta, 8.6&nbsp;KB gzipped.</p>
+      <p>40.6&nbsp;KB da aka ƙaranta, 8.0&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

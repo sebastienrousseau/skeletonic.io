@@ -81,8 +81,8 @@ utilities are fundamentally new.
 
 ### Bundle &amp; quality gates
 
-- Compiled bundle: **44.96&nbsp;KB raw / 8.6&nbsp;KB gzip /
-  7.2&nbsp;KB brotli** — under the 48 / 10 / 8&nbsp;KB CI ceilings.
+- Compiled bundle: **40.6&nbsp;KB raw / 8.0&nbsp;KB gzip /
+  6.9&nbsp;KB brotli** — under the 48 / 10 / 8&nbsp;KB CI ceilings.
 - axe-core gate green: zero WCAG&nbsp;2.2 violations on the demo page.
 - CycloneDX SBOM updated; npm publish workflow signs and provenances
   the v2.0.0 tarball.
@@ -96,6 +96,14 @@ utilities are fundamentally new.
 - **Grid system.** `.flex-1`…`.flex-12` is removed. Replace with
   `<div class="grid grid-cols-{N}"><div class="col-span-{M}">…`.
   See [/components/#grid](/components/#grid) for the new syntax.
+- **Spacing utilities.** The 12-stop percentage scale
+  (`.padding-0`…`.padding-11`, `.margin-0`…`.margin-11`) is replaced
+  with a five-step rem-based t-shirt scale: `xs` / `sm` / `md` /
+  `lg` / `xl`. So `.padding-3` → `.padding-md` (1.62 rem),
+  `.margin-bottom-5` → `.margin-bottom-lg` (≈ 2.62 rem). Five steps
+  cover the same visual range with a clearer mental model and saves
+  about 4 KB of compiled CSS. See [/spacing/](/spacing/) for the
+  full ladder.
 - **Cascade layers.** If you had `!important` overrides to win
   against Skeletonic, you can almost certainly delete them.
 

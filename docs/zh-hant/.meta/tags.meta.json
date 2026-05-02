@@ -1,12 +1,12 @@
 {
   "layout": "page",
-  "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
-  "description": "依標籤瀏覽 Skeletonic Stylus 文件。",
-  "date": "2026-04-08",
-  "keywords": "skeletonic, 標籤, 索引, 分類",
-  "language": "zh-hant",
+  "author": "Sebastien Rousseau",
   "title": "標籤",
+  "permalink": "https://skeletonic.io/zh-hant/tags/",
+  "date": "2026-04-08",
+  "language": "zh-hant",
+  "description": "依標籤瀏覽 Skeletonic Stylus 文件。",
   "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/zh-hant/tags/"
+  "keywords": "skeletonic, 標籤, 索引, 分類"
 }
