@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/vi/dong-gop/",
+  "layout": "page",
   "title": "Dong gop",
   "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
   "language": "vi",
-  "keywords": "dong gop, ma nguon mo, pull request, issue, quy uoc",
   "description": "Cach bao cao van de, de xuat thay doi va gui pull request cho Skeletonic Stylus.",
-  "layout": "page",
-  "author": "Sebastien Rousseau"
+  "author": "Sebastien Rousseau",
+  "keywords": "dong gop, ma nguon mo, pull request, issue, quy uoc",
+  "permalink": "https://skeletonic.io/vi/dong-gop/"
 }

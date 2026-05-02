@@ -1,12 +1,12 @@
 {
+  "name": "Skeletonic Stylus",
+  "description": "Skeletonic Stylus को npm या CDN से इंस्टॉल करें, अपने Stylus बिल्ड में इम्पोर्ट करें, और सेकंडों में वेरिएबल ओवरराइड करें।",
+  "keywords": "skeletonic इंस्टॉल, stylus सेटअप, css cdn, शुरुआत",
+  "author": "Sebastien Rousseau",
+  "language": "hi",
   "title": "Skeletonic Stylus के साथ शुरुआत",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "skeletonic इंस्टॉल, stylus सेटअप, css cdn, शुरुआत",
   "date": "2026-04-08",
-  "language": "hi",
-  "description": "Skeletonic Stylus को npm या CDN से इंस्टॉल करें, अपने Stylus बिल्ड में इम्पोर्ट करें, और सेकंडों में वेरिएबल ओवरराइड करें।",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/hi/shuruat/"
+  "permalink": "https://skeletonic.io/hi/shuruat/",
+  "layout": "page"
 }

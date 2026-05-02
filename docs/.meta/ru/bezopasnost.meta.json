@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
   "language": "ru",
-  "permalink": "https://skeletonic.io/ru/bezopasnost/",
-  "keywords": "css безопасность, sbom, cyclonedx, npm провенанс, openssf scorecard, цепочка поставок",
-  "description": "Как Skeletonic Stylus v2.0.0 защищает конвейер сборки, подписывает релизы и поставляет SBOM.",
-  "date": "2026-04-08",
-  "title": "Безопасность и цепочка поставок",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "layout": "page"
+  "permalink": "https://skeletonic.io/ru/bezopasnost/",
+  "title": "Безопасность и цепочка поставок",
+  "description": "Как Skeletonic Stylus v2.0.0 защищает конвейер сборки, подписывает релизы и поставляет SBOM.",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "keywords": "css безопасность, sbom, cyclonedx, npm провенанс, openssf scorecard, цепочка поставок"
 }

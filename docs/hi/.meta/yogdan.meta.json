@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "layout": "page",
-  "title": "योगदान करें",
-  "permalink": "https://skeletonic.io/hi/yogdan/",
+  "description": "Skeletonic Stylus में मुद्दे दर्ज करने, बदलाव प्रस्तावित करने और पुल रिक्वेस्ट सबमिट करने का तरीक़ा।",
   "language": "hi",
   "date": "2026-04-08",
-  "description": "Skeletonic Stylus में मुद्दे दर्ज करने, बदलाव प्रस्तावित करने और पुल रिक्वेस्ट सबमिट करने का तरीक़ा।",
+  "layout": "page",
   "author": "Sebastien Rousseau",
+  "title": "योगदान करें",
+  "keywords": "योगदान, ओपन सोर्स, पुल रिक्वेस्ट, मुद्दा, परंपराएँ",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "योगदान, ओपन सोर्स, पुल रिक्वेस्ट, मुद्दा, परंपराएँ"
+  "permalink": "https://skeletonic.io/hi/yogdan/",
+  "name": "Skeletonic Stylus"
 }

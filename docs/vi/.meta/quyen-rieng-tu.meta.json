@@ -1,12 +1,12 @@
 {
-  "language": "vi",
-  "layout": "page",
-  "keywords": "quyen rieng tu, gdpr, cookie, khong theo doi",
-  "permalink": "https://skeletonic.io/vi/quyen-rieng-tu/",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "description": "Du lieu ma skeletonic.io thu thap, ly do va cach tu choi.",
-  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Quyen rieng tu",
-  "name": "Skeletonic Stylus"
+  "name": "Skeletonic Stylus",
+  "description": "Du lieu ma skeletonic.io thu thap, ly do va cach tu choi.",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "language": "vi",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/vi/quyen-rieng-tu/",
+  "keywords": "quyen rieng tu, gdpr, cookie, khong theo doi"
 }

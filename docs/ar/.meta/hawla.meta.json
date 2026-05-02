@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ar",
-  "author": "Sebastien Rousseau",
-  "keywords": "skeletonic, حول, stylus, إطار عمل css, فلسفة",
   "description": "Skeletonic Stylus هي مكتبة CSS مفتوحة المصدر مبنية بـ Stylus لتنسيق واجهات مستخدم يسهل الوصول إليها، سريعة ومعيارية.",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "language": "ar",
   "permalink": "https://skeletonic.io/ar/hawla/",
-  "title": "حول Skeletonic Stylus"
+  "layout": "page",
+  "keywords": "skeletonic, حول, stylus, إطار عمل css, فلسفة",
+  "title": "حول Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau"
 }

@@ -1,12 +1,12 @@
 {
   "title": "Skeletonic Stylus के बारे में",
-  "language": "hi",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/hi/parichay/",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
   "description": "Skeletonic Stylus एक ओपन-सोर्स Stylus CSS लाइब्रेरी है — सुलभ, तेज़ और मॉड्यूलर UI स्टाइलिंग के लिए।",
-  "keywords": "skeletonic, परिचय, stylus, css framework, दर्शन"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "language": "hi",
+  "keywords": "skeletonic, परिचय, stylus, css framework, दर्शन",
+  "permalink": "https://skeletonic.io/hi/parichay/",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau"
 }

@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "title": "联系我们",
   "permalink": "https://skeletonic.io/zh-hans/lian-xi/",
+  "name": "Skeletonic Stylus",
+  "title": "联系我们",
+  "language": "zh-hans",
   "description": "就 Skeletonic Stylus 的 Bug 报告、功能建议、合作或一般反馈与我们取得联系。",
   "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "联系, 支持, 反馈, skeletonic",
-  "name": "Skeletonic Stylus",
-  "language": "zh-hans",
+  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
   "layout": "contact"
 }

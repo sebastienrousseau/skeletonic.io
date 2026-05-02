@@ -1,12 +1,12 @@
 {
   "description": "Jak nahlasite problemy, navrhnout zmeny a odeslat pull requesty do Skeletonic Stylus.",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/cs/prispet/",
   "keywords": "prispet, open source, pull request, issue, konvence",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
   "language": "cs",
   "title": "Prispejte — Skeletonic Stylus",
-  "name": "Skeletonic Stylus"
+  "permalink": "https://skeletonic.io/cs/prispet/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "layout": "page"
 }

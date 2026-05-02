@@ -1,12 +1,12 @@
 {
-  "description": "Skeletonic Stylus'un tum bilesenlerinin canli HTML ornekleri — gruplanmis, baglantili ve gosterilen stil sayfasiyla render edilmis.",
-  "date": "2026-04-08",
-  "title": "Bilesenler — Skeletonic Stylus",
-  "language": "tr",
   "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
   "layout": "page",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "title": "Bilesenler — Skeletonic Stylus",
   "keywords": "skeletonic bilesenler, butonlar, kartlar, formlar, uyarilar, rozetler, baslik, navbar, css hamburger menu",
-  "permalink": "https://skeletonic.io/tr/bilesenler/"
+  "description": "Skeletonic Stylus'un tum bilesenlerinin canli HTML ornekleri — gruplanmis, baglantili ve gosterilen stil sayfasiyla render edilmis.",
+  "language": "tr",
+  "permalink": "https://skeletonic.io/tr/bilesenler/",
+  "name": "Skeletonic Stylus"
 }

@@ -1,11 +1,11 @@
 {
   "name": "Skeletonic Stylus",
   "language": "uk",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "skeletonic журнал змін, примітки до релізу, v2.0.0, semver",
-  "author": "Sebastien Rousseau",
   "description": "Примітки до релізів Skeletonic Stylus з повним описом v2.0.0.",
+  "author": "Sebastien Rousseau",
+  "keywords": "skeletonic журнал змін, примітки до релізу, v2.0.0, semver",
   "title": "Журнал змін",
+  "permalink": "https://skeletonic.io/uk/zhurnal-zmin/",
   "layout": "page",
-  "permalink": "https://skeletonic.io/uk/zhurnal-zmin/"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

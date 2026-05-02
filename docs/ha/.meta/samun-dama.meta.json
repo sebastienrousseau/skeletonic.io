@@ -1,12 +1,12 @@
 {
   "description": "Abin da v2.0.0 ke aikawa daga cikin akwatin don daidaiton WCAG 2.2 — zoben mayar da hankali, bambanci, hanyoyin tsallake, motsi, da yanayin dare.",
-  "keywords": "wcag 2.2, samun dama, focus visible, skip link, prefers reduced motion, bambanci",
-  "date": "2026-04-08",
+  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/ha/samun-dama/",
+  "date": "2026-04-08",
   "language": "ha",
-  "layout": "page",
   "title": "Samun Dama — WCAG 2.2 a v2.0.0",
+  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus"
+  "keywords": "wcag 2.2, samun dama, focus visible, skip link, prefers reduced motion, bambanci"
 }

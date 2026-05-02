@@ -1,12 +1,12 @@
 {
-  "language": "ha",
-  "description": "Skeletonic Stylus dakin karatu ne na CSS na Stylus mai buɗewa don tsarin bayyanar yanar gizo mai saukin amfani, sauri, da tsari.",
-  "keywords": "skeletonic, game da, stylus, css framework, falsafa",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Game da Skeletonic Stylus",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ha/game-da/",
+  "description": "Skeletonic Stylus dakin karatu ne na CSS na Stylus mai buɗewa don tsarin bayyanar yanar gizo mai saukin amfani, sauri, da tsari.",
+  "language": "ha",
+  "keywords": "skeletonic, game da, stylus, css framework, falsafa",
   "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/ha/game-da/",
   "author": "Sebastien Rousseau",
-  "layout": "page",
-  "title": "Game da Skeletonic Stylus"
+  "layout": "page"
 }

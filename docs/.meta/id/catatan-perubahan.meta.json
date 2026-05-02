@@ -1,11 +1,11 @@
 {
-  "language": "id",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "title": "Catatan Perubahan",
-  "layout": "page",
   "description": "Catatan rilis untuk Skeletonic Stylus, dengan v2.0.0 secara lengkap.",
-  "keywords": "catatan perubahan skeletonic, catatan rilis, v2.0.0, semver",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/id/catatan-perubahan/"
+  "title": "Catatan Perubahan",
+  "permalink": "https://skeletonic.io/id/catatan-perubahan/",
+  "name": "Skeletonic Stylus",
+  "keywords": "catatan perubahan skeletonic, catatan rilis, v2.0.0, semver",
+  "language": "id"
 }

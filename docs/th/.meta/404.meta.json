@@ -1,11 +1,11 @@
 {
-  "description": "หน้าที่คุณร้องขอไม่มีอยู่บน skeletonic.io",
+  "keywords": "404, ไม่พบ",
   "layout": "page",
-  "language": "th",
-  "title": "ไม่พบหน้า",
+  "name": "Skeletonic Stylus",
+  "description": "หน้าที่คุณร้องขอไม่มีอยู่บน skeletonic.io",
   "permalink": "https://skeletonic.io/th/404/",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "keywords": "404, ไม่พบ"
+  "language": "th",
+  "title": "ไม่พบหน้า",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

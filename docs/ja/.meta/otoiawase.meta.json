@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/ja/otoiawase/",
-  "name": "Skeletonic Stylus",
-  "layout": "contact",
   "title": "お問い合わせ",
   "description": "Skeletonic Stylus に関するお問い合わせ — バグ報告、機能のアイデア、パートナーシップ、一般的なフィードバック。",
-  "keywords": "お問い合わせ, サポート, フィードバック, skeletonic",
-  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
   "date": "2026-04-08",
-  "language": "ja"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "contact",
+  "language": "ja",
+  "keywords": "お問い合わせ, サポート, フィードバック, skeletonic"
 }

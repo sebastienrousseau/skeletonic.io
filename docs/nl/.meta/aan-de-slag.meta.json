@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "title": "Aan de slag met Skeletonic Stylus",
-  "description": "Installeer Skeletonic Stylus via npm of een CDN, importeer het in je Stylus-build en overschrijf variabelen in seconden.",
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "nl",
   "date": "2026-04-08",
+  "description": "Installeer Skeletonic Stylus via npm of een CDN, importeer het in je Stylus-build en overschrijf variabelen in seconden.",
+  "permalink": "https://skeletonic.io/nl/aan-de-slag/",
+  "author": "Sebastien Rousseau",
+  "language": "nl",
+  "title": "Aan de slag met Skeletonic Stylus",
+  "layout": "page",
   "keywords": "skeletonic installeren, stylus setup, css cdn, aan de slag",
-  "permalink": "https://skeletonic.io/nl/aan-de-slag/"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus"
 }

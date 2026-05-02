@@ -1,13 +1,13 @@
 {
+  "description": "وحدة الحركات الاختيارية المُشحونة مع Skeletonic Stylus الإصدار 2.0.0 — ارتداد، نبض، تلاشٍ، تكبير، اهتزاز وغيرها، جميعها خلف prefers-reduced-motion.",
+  "keywords": "حركات css, keyframes, prefers-reduced-motion, ارتداد, نبض, تلاشٍ",
+  "title": "الحركات",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/ar/al-harakaat/",
   "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "permalink": "https://skeletonic.io/ar/al-harakaat/",
-  "author": "Sebastien Rousseau",
-  "title": "الحركات",
-  "name": "Skeletonic Stylus",
-  "keywords": "حركات css, keyframes, prefers-reduced-motion, ارتداد, نبض, تلاشٍ",
   "date": "2026-04-08",
-  "load_animations": true,
+  "name": "Skeletonic Stylus",
   "language": "ar",
-  "description": "وحدة الحركات الاختيارية المُشحونة مع Skeletonic Stylus الإصدار 2.0.0 — ارتداد، نبض، تلاشٍ، تكبير، اهتزاز وغيرها، جميعها خلف prefers-reduced-motion."
+  "load_animations": true
 }

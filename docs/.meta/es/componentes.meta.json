@@ -1,12 +1,12 @@
 {
-  "layout": "page",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
   "keywords": "componentes skeletonic, botones, tarjetas, formularios, alertas, insignias, encabezado, navbar, hamburguesa css",
+  "layout": "page",
+  "language": "es",
   "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/es/componentes/",
   "author": "Sebastien Rousseau",
-  "description": "Ejemplos HTML en vivo de cada componente de Skeletonic Stylus, agrupados, anclados y renderizados con la misma hoja de estilos que se demuestra.",
-  "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "language": "es",
-  "title": "Componentes"
+  "title": "Componentes",
+  "description": "Ejemplos HTML en vivo de cada componente de Skeletonic Stylus, agrupados, anclados y renderizados con la misma hoja de estilos que se demuestra."
 }

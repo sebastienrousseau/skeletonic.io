@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/uk/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Skeletonic Stylus — це легка, модульна бібліотека CSS на базі Stylus. Відповідає WCAG 2.2, підтримує каскадні шари, 8,3 КБ gzip — створена для прискорення розробки сучасних веб-інтерфейсів.",
-  "keywords": "css, stylus, css фреймворк, доступний css, wcag 2.2, легкий css, каскадні шари, дизайн-система",
-  "name": "Skeletonic Stylus",
   "date": "2026-04-08",
-  "language": "uk",
-  "author": "Sebastien Rousseau",
+  "title": "Skeletonic Stylus — Доступний CSS, 8,3 КБ gzip",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/uk/",
   "layout": "index",
-  "title": "Skeletonic Stylus — Доступний CSS, 8,3 КБ gzip"
+  "author": "Sebastien Rousseau",
+  "language": "uk",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "css, stylus, css фреймворк, доступний css, wcag 2.2, легкий css, каскадні шари, дизайн-система",
+  "description": "Skeletonic Stylus — це легка, модульна бібліотека CSS на базі Stylus. Відповідає WCAG 2.2, підтримує каскадні шари, 8,3 КБ gzip — створена для прискорення розробки сучасних веб-інтерфейсів."
 }

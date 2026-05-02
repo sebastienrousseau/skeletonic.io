@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/pl/prywatnosc/",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "layout": "page",
-  "language": "pl",
   "keywords": "prywatnosc, rodo, ciasteczka, brak sledzenia",
-  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "pl",
   "title": "Prywatnosc",
   "description": "Jakie dane zbiera skeletonic.io, dlaczego i jak sie wypisac.",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/pl/prywatnosc/",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "name": "Skeletonic Stylus"
 }

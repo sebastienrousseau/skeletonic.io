@@ -1,12 +1,12 @@
 {
-  "description": "Как создавать issue, предлагать изменения и отправлять pull request в Skeletonic Stylus.",
-  "keywords": "участие, open source, pull request, issue, соглашения",
-  "title": "Участие в разработке",
-  "date": "2026-04-08",
-  "language": "ru",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ru/vklad/",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "участие, open source, pull request, issue, соглашения",
   "layout": "page",
-  "author": "Sebastien Rousseau"
+  "description": "Как создавать issue, предлагать изменения и отправлять pull request в Skeletonic Stylus.",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "title": "Участие в разработке",
+  "language": "ru",
+  "permalink": "https://skeletonic.io/ru/vklad/"
 }

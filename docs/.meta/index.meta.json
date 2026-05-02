@@ -1,11 +1,11 @@
 {
-  "permalink": "https://skeletonic.io/",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
   "keywords": "css, stylus, css framework, oklch, css grid, container queries, view transitions, css cascade layers, accessible css, wcag 2.2, rtl, no javascript, htmx",
-  "title": "Skeletonic Stylus 2.0 — Modern CSS, 8.6 KB gzip",
-  "description": "Skeletonic Stylus 2.0 — OKLCH colours, native @layer, CSS Grid, container queries, view transitions. Class-based, JS-free, WCAG 2.2 AA, 8.6 KB gzip / 7.2 KB brotli.",
+  "name": "Skeletonic Stylus",
   "date": "2026-05-01",
-  "layout": "index"
+  "title": "Skeletonic Stylus 2.0 — Modern CSS, 8.6 KB gzip",
+  "author": "Sebastien Rousseau",
+  "layout": "index",
+  "description": "Skeletonic Stylus 2.0 — OKLCH colours, native @layer, CSS Grid, container queries, view transitions. Class-based, JS-free, WCAG 2.2 AA, 8.6 KB gzip / 7.2 KB brotli.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/"
 }

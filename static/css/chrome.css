@@ -15,7 +15,9 @@
         --c-nav-text: #1d1d1f;
         --c-nav-muted: #86868b;
         --c-footer-bg: #f5f5f7;
-        --c-footer-text: #86868b;
+        /* #86868b on #f5f5f7 was 3.32 : 1 — fail. Darkened to
+           #57575b so the footer body and footer-bar clear AA 4.5 : 1. */
+        --c-footer-text: #57575b;
         --c-code: #3a3a4a;
         --c-hero-grad-1: #f5f5f7;
         --c-hero-grad-2: #ffffff;
@@ -1076,7 +1078,10 @@
         margin:0;
       }
       .site-footer .footer-col-title{
-        color:#fff;
+        /* Was hardcoded #fff which failed 1.08 : 1 against the light
+           footer surface (#f5f5f7). Use the theme-aware heading
+           token so the title clears WCAG 2.2 AA in both modes. */
+        color:var(--c-heading);
         font-size:.75rem;
         font-weight:600;
         text-transform:uppercase;
@@ -1101,15 +1106,15 @@
         padding:.375rem 0;
         transition:color .15s;
       }
-      .site-footer .footer-col a:hover{color:#fff;text-decoration:underline;}
+      .site-footer .footer-col a:hover{color:var(--c-heading);text-decoration:underline;}
       .site-footer .footer-bar{
-        border-top:1px solid #27272a;
+        border-top:1px solid var(--c-border);
         padding-top:1.5rem;
-        color:#a1a1aa;
+        color:var(--c-footer-text);
         font-size:.8125rem;
       }
       .site-footer a{color:var(--c-footer-text);text-decoration:none;transition:color .15s;}
-      .site-footer a:hover{color:#fff;text-decoration:none;}
+      .site-footer a:hover{color:var(--c-heading);text-decoration:none;}
 
       /* Search overlay */
       .search-overlay{
