@@ -1,12 +1,12 @@
 {
-  "title": "Ikaw ay offline",
-  "permalink": "https://skeletonic.io/fil/offline/",
   "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
   "description": "Hindi maabot ng skeletonic.io ang network. Ang pahina na hiniling mo ay hindi pa naka-cache.",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
+  "language": "fil",
+  "permalink": "https://skeletonic.io/fil/offline/",
+  "layout": "page",
   "keywords": "offline, service worker, pwa",
-  "language": "fil"
+  "title": "Ikaw ay offline"
 }

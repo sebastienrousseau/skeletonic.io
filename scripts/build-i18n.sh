@@ -174,6 +174,16 @@ if [ "$BUILD_EN" -eq 1 ]; then
   find docs -type f -name '*.html' -print0 \
     | xargs -0 perl -i -pe 's{style=background-color:(#[0-9a-fA-F]{3,8})}{style="background-color:$1"}g; s{background-color:#2b303b}{background-color:#0d1117}g; s{color:#65737e}{color:#7d8a96}g'
 
+  # The SSG ships its own /highlight.<hash>.css with a LIGHT GitHub
+  # theme (background: #f6f8fa) and that <link> sits AFTER our
+  # chrome.css in the rendered <head>, so it wins the cascade and
+  # the syntect dark token spans land on a light surface (failing
+  # contrast). Replace its background rules with our dark theme so
+  # `pre.highlight` matches the inner syntect `<pre style="…">`.
+  if ls docs/highlight.*.css >/dev/null 2>&1; then
+    perl -i -pe 's{background: ?#f6f8fa}{background: #0d1117}g; s{background: ?#161b22}{background: #0d1117}g; s{border:[^;]+#d0d7de}{border: 1px solid #30363d}g' docs/highlight.*.css
+  fi
+
   # Strip the SSG's auto-injected live-reload <script> block from
   # production output. It opens a WebSocket to ws://localhost:35729
   # which violates `connect-src 'self'` on every deployed page and

@@ -629,7 +629,9 @@ gap; `.grid-cols-N` (1–12) generates the column tracks; `.col-span-N`
 </div>
 
 <div class="grid grid-cols-3">
-  <div class="col-span-2" style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Two thirds (col-span-2)</div>
+  <div class="col-span-2" style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">
+  Two thirds (col-span-2)
+  </div>
   <div style="padding:.75rem;background:var(--cl-grey-200);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
 </div>
 </section>

@@ -1,12 +1,12 @@
 {
-  "keywords": "offline, service worker, pwa",
-  "layout": "page",
-  "language": "pl",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Jestes offline",
   "permalink": "https://skeletonic.io/pl/offline/",
+  "layout": "page",
   "description": "skeletonic.io nie moze nawiazac polaczenia z siecia. Strona, ktorej szukasz, nie zostala jeszcze zapisana w pamieci podrecznej.",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "offline, service worker, pwa",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus"
+  "language": "pl",
+  "author": "Sebastien Rousseau"
 }

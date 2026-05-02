@@ -1,12 +1,12 @@
 {
+  "description": "skeletonic.io 收集哪些資料、為何收集以及如何退出。",
+  "theme_color": "hsl(210, 100%, 42%)",
   "author": "Sebastien Rousseau",
   "date": "2026-04-08",
   "permalink": "https://skeletonic.io/zh-hant/yin-si/",
-  "name": "Skeletonic Stylus",
-  "description": "skeletonic.io 收集哪些資料、為何收集以及如何退出。",
   "language": "zh-hant",
+  "title": "隱私",
   "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "隱私, gdpr, cookies, 無追蹤",
-  "title": "隱私"
+  "name": "Skeletonic Stylus"
 }

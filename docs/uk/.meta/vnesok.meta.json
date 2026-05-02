@@ -1,12 +1,12 @@
 {
-  "language": "uk",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "layout": "page",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/uk/vnesok/",
   "title": "Внесок",
+  "permalink": "https://skeletonic.io/uk/vnesok/",
   "keywords": "внесок, відкритий код, pull request, issue, конвенції",
+  "date": "2026-04-08",
+  "description": "Як створювати issue, пропонувати зміни та надсилати pull request до Skeletonic Stylus.",
   "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Як створювати issue, пропонувати зміни та надсилати pull request до Skeletonic Stylus."
+  "layout": "page",
+  "language": "uk",
+  "name": "Skeletonic Stylus"
 }

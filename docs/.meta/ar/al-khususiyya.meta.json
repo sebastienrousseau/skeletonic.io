@@ -1,12 +1,12 @@
 {
-  "description": "ما البيانات التي يجمعها skeletonic.io، ولماذا، وكيفية إلغاء الاشتراك.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/ar/al-khususiyya/",
   "keywords": "الخصوصية, gdpr, ملفات تعريف الارتباط, بدون تتبع",
-  "layout": "page",
-  "language": "ar",
-  "title": "الخصوصية",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "date": "2026-04-08"
+  "title": "الخصوصية",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "description": "ما البيانات التي يجمعها skeletonic.io، ولماذا، وكيفية إلغاء الاشتراك.",
+  "permalink": "https://skeletonic.io/ar/al-khususiyya/",
+  "language": "ar"
 }

@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/nl/over-ons/",
-  "layout": "page",
-  "description": "Skeletonic Stylus is een open-source Stylus CSS-bibliotheek voor toegankelijke, snelle en modulaire UI-styling.",
-  "language": "nl",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "skeletonic, over ons, stylus, css framework, filosofie",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
+  "layout": "page",
   "title": "Over Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/nl/over-ons/",
+  "language": "nl",
+  "keywords": "skeletonic, over ons, stylus, css framework, filosofie",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "description": "Skeletonic Stylus is een open-source Stylus CSS-bibliotheek voor toegankelijke, snelle en modulaire UI-styling.",
   "date": "2026-04-08"
 }

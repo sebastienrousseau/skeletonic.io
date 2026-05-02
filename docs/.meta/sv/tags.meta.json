@@ -1,12 +1,12 @@
 {
   "language": "sv",
-  "keywords": "skeletonic, taggar, index, taxonomi",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
   "description": "Blagddra i Skeletonic Stylus-dokumentationen efter tagg.",
   "title": "Taggar",
+  "keywords": "skeletonic, taggar, index, taxonomi",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
   "permalink": "https://skeletonic.io/sv/tags/",
-  "author": "Sebastien Rousseau",
-  "layout": "page"
+  "author": "Sebastien Rousseau"
 }

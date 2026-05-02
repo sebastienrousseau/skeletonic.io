@@ -1,12 +1,12 @@
 {
-  "language": "bn",
-  "keywords": "ব্যবহারের শর্ত, লাইসেন্স, mit, apache 2",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "title": "ব্যবহারের শর্তাবলি",
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/bn/shartaboli/",
   "description": "skeletonic.io এবং Skeletonic Stylus লাইব্রেরির ব্যবহার নিয়ন্ত্রণকারী শর্তাবলি।",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/bn/shartaboli/",
+  "title": "ব্যবহারের শর্তাবলি",
+  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
-  "layout": "page"
+  "layout": "page",
+  "language": "bn",
+  "keywords": "ব্যবহারের শর্ত, লাইসেন্স, mit, apache 2"
 }

@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "keywords": "anvandningsvillkor, licens, mit, apache 2",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "sv",
-  "title": "Anvandningsvillkor",
-  "layout": "page",
   "date": "2026-04-08",
+  "title": "Anvandningsvillkor",
+  "author": "Sebastien Rousseau",
+  "language": "sv",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
   "permalink": "https://skeletonic.io/sv/villkor/",
-  "description": "Villkor som styr din anvandning av skeletonic.io och Skeletonic Stylus-biblioteket."
+  "keywords": "anvandningsvillkor, licens, mit, apache 2",
+  "description": "Villkor som styr din anvandning av skeletonic.io och Skeletonic Stylus-biblioteket.",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

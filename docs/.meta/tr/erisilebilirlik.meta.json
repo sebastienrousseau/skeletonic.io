@@ -1,12 +1,12 @@
 {
-  "language": "tr",
-  "permalink": "https://skeletonic.io/tr/erisilebilirlik/",
-  "date": "2026-04-08",
   "keywords": "wcag 2.2, erisilebilirlik, focus visible, atlama baglantisi, prefers reduced motion, kontrast",
   "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
   "description": "v2.0.0'nin WCAG 2.2 uyumlulugu icin kutudan ne gonderdigini — odak halkalari, kontrast, atlama baglantilari, hareket ve karanlik mod.",
   "title": "Erisilebilirlik — v2.0.0'de WCAG 2.2",
-  "layout": "page"
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/tr/erisilebilirlik/",
+  "language": "tr",
+  "layout": "page",
+  "author": "Sebastien Rousseau"
 }

@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
   "language": "id",
-  "author": "Sebastien Rousseau",
   "keywords": "palet css, material, tachyons, websafe, token desain",
-  "permalink": "https://skeletonic.io/id/palet/",
+  "author": "Sebastien Rousseau",
   "layout": "page",
+  "name": "Skeletonic Stylus",
   "description": "Palet warna Material, Tachyons, dan web-safe yang disertakan dalam Skeletonic Stylus v2.0.0.",
-  "title": "Palet"
+  "permalink": "https://skeletonic.io/id/palet/",
+  "title": "Palet",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

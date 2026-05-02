@@ -6,7 +6,7 @@ layout: page
 permalink: https://skeletonic.io/getting-started/
 date: 2026-04-08
 author: Sebastien Rousseau
-theme_color: "hsl(210, 100%, 42%)"
+theme_color: "oklch(0.55 0.2 250)"
 keywords: "install skeletonic, stylus setup, css cdn, getting started"
 ---
 
@@ -131,8 +131,8 @@ can theme it without recompiling Stylus:
 
 ```css
 :root {
-  --cl-primary:   hsl(210, 100%, 42%);
-  --cl-secondary: hsl(195, 100%, 33%);
+  --cl-primary:   oklch(0.55 0.2 250);
+  --cl-secondary: oklch(0.45 0.15 200);
   --cl-tertiary:  #757c8a;
 }
 ```

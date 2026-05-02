@@ -6,7 +6,7 @@ layout: index
 permalink: https://skeletonic.io/
 date: 2026-05-01
 author: Sebastien Rousseau
-theme_color: "hsl(210, 100%, 42%)"
+theme_color: "oklch(0.55 0.2 250)"
 keywords: "css, stylus, css framework, oklch, css grid, container queries, view transitions, css cascade layers, accessible css, wcag 2.2, rtl, no javascript, htmx"
 ---
 

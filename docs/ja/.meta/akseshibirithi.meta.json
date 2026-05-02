@@ -1,12 +1,12 @@
 {
-  "title": "アクセシビリティ — v2.0.0 における WCAG 2.2",
-  "permalink": "https://skeletonic.io/ja/akseshibirithi/",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "keywords": "wcag 2.2, アクセシビリティ, focus visible, スキップリンク, prefers reduced motion, コントラスト",
+  "description": "v2.0.0 が WCAG 2.2 準拠のために標準で提供するもの — フォーカスリング、コントラスト、スキップリンク、モーション、ダークモード。",
   "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ja",
-  "name": "Skeletonic Stylus",
-  "keywords": "wcag 2.2, アクセシビリティ, focus visible, スキップリンク, prefers reduced motion, コントラスト",
-  "layout": "page",
-  "description": "v2.0.0 が WCAG 2.2 準拠のために標準で提供するもの — フォーカスリング、コントラスト、スキップリンク、モーション、ダークモード。",
-  "date": "2026-04-08"
+  "title": "アクセシビリティ — v2.0.0 における WCAG 2.2",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/ja/akseshibirithi/",
+  "language": "ja"
 }

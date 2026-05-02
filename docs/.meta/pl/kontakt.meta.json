@@ -1,12 +1,12 @@
 {
-  "description": "Skontaktuj sie w sprawie Skeletonic Stylus — zgloszenia bledow, pomysly na funkcje, partnerstwo lub ogolne opinie.",
   "layout": "contact",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
   "language": "pl",
-  "title": "Kontakt",
-  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/pl/kontakt/",
-  "keywords": "kontakt, wsparcie, opinie, skeletonic"
+  "keywords": "kontakt, wsparcie, opinie, skeletonic",
+  "description": "Skontaktuj sie w sprawie Skeletonic Stylus — zgloszenia bledow, pomysly na funkcje, partnerstwo lub ogolne opinie.",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "title": "Kontakt"
 }

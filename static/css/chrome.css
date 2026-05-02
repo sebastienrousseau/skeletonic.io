@@ -644,8 +644,8 @@
          colour modifiers should win (button.primary, btn-round, etc.).
          Without these :not() guards chrome's a-colour rule poisons the
          contrast on every coloured button in the demo. */
-      a:not([class*="button"]):not([class*="btn"]):not(.badge){color:var(--c-accent);text-underline-offset:.15em;text-decoration:underline}
-      a:not([class*="button"]):not([class*="btn"]):not(.badge):hover{color:var(--c-accent-hover);text-decoration:underline}
+      a:not([class*="button"]):not([class*="btn"]):not(.badge):not([class*="link-"]){color:var(--c-accent);text-underline-offset:.15em;text-decoration:underline}
+      a:not([class*="button"]):not([class*="btn"]):not(.badge):not([class*="link-"]):hover{color:var(--c-accent-hover);text-decoration:underline}
       /* Use the heading colour token so <strong> is highest-contrast in
          both light and dark modes. Without an explicit colour, Skeletonic's
          layered defaults could leave bold text near-invisible on dark
@@ -708,23 +708,23 @@
       }
       pre code{font-size:inherit;color:inherit;background:0 0;padding:0;border:0;box-shadow:none;}
       /* shokunin's syntect highlight plugin emits nested <pre>: outer
-         <pre class="highlight language-…"><code …><pre style="background-color:#2b303b">
+         <pre class="highlight language-…"><code …><pre style="background-color:#0d1117">
          The inner <pre> carries the syntect colour theme; flatten the
          outer one so we don't get double padding / a doubled frame. */
       /* Match the inline background-color the syntect plugin sets on
-         the inner <pre style="background-color:#2b303b">, but in a
+         the inner <pre style="background-color:#0d1117">, but in a
          stylesheet rule so Lighthouse / axe-core can resolve the
          coloured token spans against a parent dark surface and stop
          flagging false-positive contrast failures. */
-      pre.highlight{padding:0;background:#2b303b;color:#c0c5ce;border-radius:.5rem;overflow:hidden;}
+      pre.highlight{padding:0;background:#0d1117;color:#c0c5ce;border-radius:.5rem;overflow:hidden;}
       pre.highlight>code{display:block;padding:0;}
-      /* Inner syntect <pre style="background-color:#2b303b"> — set the
+      /* Inner syntect <pre style="background-color:#0d1117"> — set the
          same bg via stylesheet rule so Lighthouse / axe-core can
          resolve coloured token spans (e.g. <span style="color:#bf616a">)
          against a parent dark surface and stop flagging false-positive
          WCAG contrast failures. */
       pre.highlight pre{
-        background:#2b303b;
+        background:#0d1117;
         color:#c0c5ce;
         margin:0;
         padding:1rem 1.25rem;

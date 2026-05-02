@@ -1,12 +1,12 @@
 {
-  "language": "ja",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/ja/sekiyurithi/",
-  "date": "2026-04-08",
-  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "css セキュリティ, sbom, cyclonedx, npm プロベナンス, openssf スコアカード, サプライチェーン",
+  "date": "2026-04-08",
+  "language": "ja",
   "description": "Skeletonic Stylus v2.0.0 がビルドパイプラインをどのように保護し、リリースに署名し、SBOM を提供するかについて。",
+  "permalink": "https://skeletonic.io/ja/sekiyurithi/",
+  "title": "セキュリティとサプライチェーン",
   "name": "Skeletonic Stylus",
-  "title": "セキュリティとサプライチェーン"
+  "layout": "page",
+  "author": "Sebastien Rousseau"
 }

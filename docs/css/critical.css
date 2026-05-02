@@ -134,4 +134,4 @@ body {
 .site-main p { font-size: var(--fs-base); line-height: 1.5; color: var(--c-secondary); }
 /* Body links — exclude Skeletonic component classes whose own colour
    modifiers should win (button.primary, btn-round, badge, etc.). */
-.site-main a:not([class*="button"]):not([class*="btn"]):not(.badge) { color: var(--c-accent); text-decoration: underline; text-underline-offset: 0.15em; }
+.site-main a:not([class*="button"]):not([class*="btn"]):not(.badge):not([class*="link-"]) { color: var(--c-accent); text-decoration: underline; text-underline-offset: 0.15em; }

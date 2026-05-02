@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
   "title": "פלטות",
-  "language": "he",
-  "keywords": "פלטת css, material, tachyons, websafe, טוקני עיצוב",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/he/paleta/",
   "description": "פלטות צבעים של Material, Tachyons ו-web-safe הנשלחות עם Skeletonic Stylus v2.0.0.",
-  "name": "Skeletonic Stylus",
-  "layout": "page"
+  "layout": "page",
+  "language": "he",
+  "author": "Sebastien Rousseau",
+  "keywords": "פלטת css, material, tachyons, websafe, טוקני עיצוב",
+  "name": "Skeletonic Stylus"
 }
