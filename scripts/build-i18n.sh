@@ -174,6 +174,15 @@ if [ "$BUILD_EN" -eq 1 ]; then
   find docs -type f -name '*.html' -print0 \
     | xargs -0 perl -i -pe 's{style=background-color:(#[0-9a-fA-F]{3,8})}{style="background-color:$1"}g; s{background-color:#2b303b}{background-color:#0d1117}g; s{color:#65737e}{color:#7d8a96}g'
 
+  # Syntect-emitted `<pre style="background-color:#0d1117">` blocks
+  # have horizontal overflow on long lines; axe-core flags these as
+  # `scrollable-region-focusable` (WCAG 2.2 — keyboard-only users
+  # cannot scroll the region). Add `tabindex="0"` so the pre itself
+  # is focusable and the arrow keys scroll it. Idempotent: skip when
+  # the attribute is already present.
+  find docs -type f -name '*.html' -print0 \
+    | xargs -0 perl -i -pe 's{<pre(?![^>]*tabindex)(\s+style="background-color:#[0-9a-fA-F]{3,8};?")}{<pre tabindex="0"$1}g'
+
   # The SSG ships its own /highlight.<hash>.css with a LIGHT GitHub
   # theme (background: #f6f8fa) and that <link> sits AFTER our
   # chrome.css in the rendered <head>, so it wins the cascade and

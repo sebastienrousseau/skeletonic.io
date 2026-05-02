@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
-  "keywords": "kontak, dukungan, umpan balik, skeletonic",
   "title": "Kontak",
-  "description": "Hubungi kami tentang Skeletonic Stylus — laporan bug, ide fitur, kemitraan, atau umpan balik umum.",
   "language": "id",
-  "name": "Skeletonic Stylus",
   "layout": "contact",
+  "keywords": "kontak, dukungan, umpan balik, skeletonic",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
   "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/id/kontak/",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "description": "Hubungi kami tentang Skeletonic Stylus — laporan bug, ide fitur, kemitraan, atau umpan balik umum.",
+  "permalink": "https://skeletonic.io/id/kontak/"
 }

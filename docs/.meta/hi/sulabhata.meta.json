@@ -1,12 +1,12 @@
 {
-  "title": "सुलभता — v2.0.0 में WCAG 2.2",
-  "description": "v2.0.0 WCAG 2.2 अनुरूपता के लिए बॉक्स से क्या शिप करती है — फ़ोकस रिंग, कंट्रास्ट, स्किप लिंक, मोशन और डार्क मोड।",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
-  "keywords": "wcag 2.2, सुलभता, focus visible, skip link, prefers reduced motion, कंट्रास्ट",
   "permalink": "https://skeletonic.io/hi/sulabhata/",
   "date": "2026-04-08",
-  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
   "language": "hi",
-  "name": "Skeletonic Stylus"
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "title": "सुलभता — v2.0.0 में WCAG 2.2",
+  "name": "Skeletonic Stylus",
+  "keywords": "wcag 2.2, सुलभता, focus visible, skip link, prefers reduced motion, कंट्रास्ट",
+  "description": "v2.0.0 WCAG 2.2 अनुरूपता के लिए बॉक्स से क्या शिप करती है — फ़ोकस रिंग, कंट्रास्ट, स्किप लिंक, मोशन और डार्क मोड।"
 }

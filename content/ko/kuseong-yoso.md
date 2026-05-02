@@ -151,7 +151,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>40.6 KB minified, 8.0 KB gzipped.</p>
+      <p>39.1 KB minified, 7.8 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ keywords: "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">경량</h3>
-      <p>40.6&nbsp;KB 최소화, 8.0&nbsp;KB gzipped.</p>
+      <p>39.1&nbsp;KB 최소화, 7.8&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

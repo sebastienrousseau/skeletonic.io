@@ -20,7 +20,7 @@ keywords: "skeletonic, 關於, stylus, css 框架, 設計理念"
   <img alt="GitHub 星標" src="https://img.shields.io/github/stars/sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Stars" height="28" loading="lazy">
   <img alt="每月下載量" src="https://img.shields.io/npm/dm/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=Downloads" height="28" loading="lazy">
   <img alt="npm 版本" src="https://img.shields.io/npm/v/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=npm" height="28" loading="lazy">
-  <img alt="套件大小" src="https://img.shields.io/badge/gzip-8.0%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
+  <img alt="套件大小" src="https://img.shields.io/badge/gzip-7.8%20KB-brightgreen?style=for-the-badge" height="28" loading="lazy">
   <img alt="授權條款" src="https://img.shields.io/npm/l/@sebastienrousseau/skeletonic-stylus?style=for-the-badge&label=License" height="28" loading="lazy">
   <img alt="WCAG" src="https://img.shields.io/badge/WCAG-2.2%20AA-2e7d32?style=for-the-badge" height="28" loading="lazy">
 </p>
@@ -43,7 +43,7 @@ keywords: "skeletonic, 關於, stylus, css 框架, 設計理念"
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="羽毛" width="64" height="64" loading="lazy" decoding="async">
     <h3>輕量級</h3>
-    <p>gzip 後約 8.0&nbsp;KB。頁面載入更快。每個必要的建構模組一應俱全。</p>
+    <p>gzip 後約 7.8&nbsp;KB。頁面載入更快。每個必要的建構模組一應俱全。</p>
   </article>
 
   <article class="feature-card">
@@ -77,7 +77,7 @@ keywords: "skeletonic, 關於, stylus, css 框架, 設計理念"
 
 | 功能 | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| gzip 大小 | **約 8.0&nbsp;KB** | 約 30&nbsp;KB | 約 10&nbsp;KB (varies) | 約 30&nbsp;KB |
+| gzip 大小 | **約 7.8&nbsp;KB** | 約 30&nbsp;KB | 約 10&nbsp;KB (varies) | 約 30&nbsp;KB |
 | WCAG 2.2 合規 | **內建** | 部分 | 手動 | 部分 |
 | 級聯層 | **支援（`@layer`）** | 不支援 | 不支援 | 不支援 |
 | 深色模式 | **`prefers-color-scheme`** | 選擇性啟用 | 基於類別 | 選擇性啟用 |

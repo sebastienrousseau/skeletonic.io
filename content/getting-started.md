@@ -13,7 +13,7 @@ keywords: "install skeletonic, stylus setup, css cdn, getting started"
 ## Intro
 
 New to Skeletonic Stylus? In **v2.0.0** the core stylesheet is
-**8.0&nbsp;KB gzip / 6.9&nbsp;KB brotli** for the full RTL-ready,
+**7.8&nbsp;KB gzip / 6.7&nbsp;KB brotli** for the full RTL-ready,
 WCAG&nbsp;2.2&nbsp;AA bundle — measured against the canonical CDN file,
 not approximated. It integrates into any web app from a single
 `<link>` — no JavaScript framework required, no build step needed if
@@ -97,7 +97,7 @@ The library ships several pre-built bundles under
 
 | File | Purpose | Min raw / gzip / brotli |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities, RTL-ready | 40.6 KB / 8.0 KB / 6.9 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities, RTL-ready | 39.1 KB / 7.8 KB / 6.7 KB |
 | `animations/skeletonic-animations.min.css` | 56 keyframes, gated behind `prefers-reduced-motion` | 217.8 KB / 6.7 KB / — |
 | `palettes/material/skeletonic-material.min.css` | Material 19×14 hue/shade utilities | ≈17.9 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility palette | 7.3 KB |
@@ -219,7 +219,7 @@ Yes. v2.0.0 ships AA-conformant contrast, focus-visible rings,
 skip-link helpers, reduced-motion support and dark mode by default.
 
 **What's the gzipped size?**
-40.6&nbsp;KB minified, **8.0&nbsp;KB gzip**, **6.9&nbsp;KB brotli** for
+39.1&nbsp;KB minified, **7.8&nbsp;KB gzip**, **6.7&nbsp;KB brotli** for
 the full RTL-ready core stylesheet. Compressed budgets (10&nbsp;KB gzip,
 8&nbsp;KB brotli) are enforced in CI on every commit. See
 [the framework benchmark](/benchmarks/) for side-by-side numbers
@@ -263,7 +263,7 @@ needs. Free for commercial and personal use.
       "name": "What's the gzipped size of Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "40.6 KB minified, 8.0 KB gzip, 6.9 KB brotli for the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip, 8 KB brotli) are enforced in CI on every commit."
+        "text": "39.1 KB minified, 7.8 KB gzip, 6.7 KB brotli for the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip, 8 KB brotli) are enforced in CI on every commit."
       }
     },
     {

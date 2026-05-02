@@ -1,11 +1,11 @@
 {
-  "author": "Sebastien Rousseau",
-  "title": "Stranka nenalezena",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "404, nenalezeno",
-  "layout": "page",
   "permalink": "https://skeletonic.io/cs/404/",
-  "name": "Skeletonic Stylus",
+  "title": "Stranka nenalezena",
+  "keywords": "404, nenalezeno",
   "description": "Stranka, kterou jste pozadovali, na skeletonic.io neexistuje.",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
   "language": "cs"
 }

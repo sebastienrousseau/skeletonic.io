@@ -13,7 +13,7 @@ keywords: "css 安全, sbom, cyclonedx, npm 来源验证, openssf 评分, 供应
 
 ## 性能
 
-- **40.6&nbsp;KB 压缩后 · 8.0&nbsp;KB gzip · 6.9&nbsp;KB brotli**（完整核心样式表）。
+- **39.1&nbsp;KB 压缩后 · 7.8&nbsp;KB gzip · 6.7&nbsp;KB brotli**（完整核心样式表）。
 - **零 JavaScript** — 纯 Stylus 到纯 CSS，无运行时开销。
 - **级联层** — 覆盖样式无需 `!important`。
 - **`size-limit` 预算** 在 CI 的每次提交中强制执行。

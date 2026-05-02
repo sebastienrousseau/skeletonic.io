@@ -18,7 +18,7 @@ keywords: "安裝 skeletonic, stylus 設定, css cdn, 快速入門"
 
 ## 簡介
 
-剛接觸 Skeletonic Stylus？在 **v2.0.0** 中，按需選用功能比以往更加簡單。得益於極小的體積（核心樣式表 gzip 後約 8.0&nbsp;KB），它可以快速整合至任何 Web 應用程式——無需 JavaScript 框架，如果使用 CDN 則連建置步驟也不需要。
+剛接觸 Skeletonic Stylus？在 **v2.0.0** 中，按需選用功能比以往更加簡單。得益於極小的體積（核心樣式表 gzip 後約 7.8&nbsp;KB），它可以快速整合至任何 Web 應用程式——無需 JavaScript 框架，如果使用 CDN 則連建置步驟也不需要。
 
 準備好安裝了嗎？所有路徑均在下方說明——選擇適合的即可。
 
@@ -90,7 +90,7 @@ pnpm run build
 
 | 檔案 | 用途 | 大小（min/gz） |
 |---|---|---|
-| `core/skeletonic.min.css` | 重設 + token + 版面 + 元素 + 組件 + 工具類別 | 40.6 KB / 8.0 KB |
+| `core/skeletonic.min.css` | 重設 + token + 版面 + 元素 + 組件 + 工具類別 | 39.1 KB / 7.8 KB |
 | `animations/skeletonic-animations.min.css` | 可選動畫模組 | 約 18 KB / 約 4 KB |
 | `palettes/material/skeletonic-material.min.css` | Material 色板 | 約 8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons 工具色板 | 7.3 KB |
@@ -203,7 +203,7 @@ Skeletonic 將設計 token 以 **CSS 自訂屬性**形式公開，因此您無�
 是的。v2.0.0 內建符合 AA 標準的對比度、focus-visible 焦點環、跳轉連結輔助、減弱動效支援以及預設深色模式。
 
 **gzip 後的大小是多少？**
-壓縮後 40.6&nbsp;KB，**gzip 後約 8.0&nbsp;KB**，brotli 後約 6.9&nbsp;KB（完整核心樣式表）。8&nbsp;KB 上限在 CI 中強制執行。
+壓縮後 39.1&nbsp;KB，**gzip 後約 7.8&nbsp;KB**，brotli 後約 6.7&nbsp;KB（完整核心樣式表）。8&nbsp;KB 上限在 CI 中強制執行。
 
 **使用什麼授權條款？**
 採用 MIT 和 Apache 2.0 雙授權——選擇適合您專案的即可。免費用於商業和個人用途。
@@ -242,7 +242,7 @@ Skeletonic 將設計 token 以 **CSS 自訂屬性**形式公開，因此您無�
       "name": "Skeletonic Stylus gzip 後的大小是多少？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "壓縮後 40.6 KB，gzip 後約 8.0 KB，brotli 後約 6.9 KB（完整核心樣式表）。8 KB 上限在 CI 每次提交時強制執行。"
+        "text": "壓縮後 39.1 KB，gzip 後約 7.8 KB，brotli 後約 6.7 KB（完整核心樣式表）。8 KB 上限在 CI 每次提交時強制執行。"
       }
     },
     {

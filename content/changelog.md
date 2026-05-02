@@ -81,8 +81,8 @@ utilities are fundamentally new.
 
 ### Bundle &amp; quality gates
 
-- Compiled bundle: **40.6&nbsp;KB raw / 8.0&nbsp;KB gzip /
-  6.9&nbsp;KB brotli** — under the 48 / 10 / 8&nbsp;KB CI ceilings.
+- Compiled bundle: **39.1&nbsp;KB raw / 7.8&nbsp;KB gzip /
+  6.7&nbsp;KB brotli** — under the 48 / 10 / 8&nbsp;KB CI ceilings.
 - axe-core gate green: zero WCAG&nbsp;2.2 violations on the demo page.
 - CycloneDX SBOM updated; npm publish workflow signs and provenances
   the v2.0.0 tarball.

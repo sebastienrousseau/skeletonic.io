@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "language": "cs",
-  "description": "Spojte se s nami ohledne Skeletonic Stylus — hlaseni chyb, napady na funkce, partnerstvi nebo obecna zpetna vazba.",
   "keywords": "kontakt, podpora, zpetna vazba, skeletonic",
   "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/cs/kontakt/",
+  "name": "Skeletonic Stylus",
   "title": "Kontakt — Skeletonic Stylus",
-  "layout": "contact"
+  "layout": "contact",
+  "permalink": "https://skeletonic.io/cs/kontakt/",
+  "language": "cs",
+  "author": "Sebastien Rousseau",
+  "description": "Spojte se s nami ohledne Skeletonic Stylus — hlaseni chyb, napady na funkce, partnerstvi nebo obecna zpetna vazba.",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

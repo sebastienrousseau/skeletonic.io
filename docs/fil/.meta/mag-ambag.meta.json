@@ -1,12 +1,12 @@
 {
-  "layout": "page",
   "language": "fil",
-  "description": "Paano mag-file ng mga isyu, magmungkahi ng mga pagbabago, at magsumite ng pull request sa Skeletonic Stylus.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "title": "Mag-ambag",
-  "permalink": "https://skeletonic.io/fil/mag-ambag/",
+  "author": "Sebastien Rousseau",
   "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "description": "Paano mag-file ng mga isyu, magmungkahi ng mga pagbabago, at magsumite ng pull request sa Skeletonic Stylus.",
   "keywords": "mag-ambag, open source, pull request, isyu, convention",
-  "author": "Sebastien Rousseau"
+  "title": "Mag-ambag",
+  "permalink": "https://skeletonic.io/fil/mag-ambag/"
 }

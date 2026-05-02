@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — 無障礙 CSS，gzip 後約 8.0 KB"
+title: "Skeletonic Stylus — 無障礙 CSS，gzip 後約 7.8 KB"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus 是一個輕量級、模組化的 Stylus CSS 函式庫——符合 WCAG 2.2 標準、採用級聯層架構、gzip 後約 8.0 KB——旨在簡化現代 Web UI 開發。"
+description: "Skeletonic Stylus 是一個輕量級、模組化的 Stylus CSS 函式庫——符合 WCAG 2.2 標準、採用級聯層架構、gzip 後約 7.8 KB——旨在簡化現代 Web UI 開發。"
 language: zh-hant
 layout: index
 permalink: https://skeletonic.io/zh-hant/

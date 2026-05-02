@@ -103,7 +103,7 @@ La biblioteca incluye varios bundles preconstruidos bajo
 | Archivo | Proposito | Tamano (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + tokens + layout + elementos + componentes + utilidades | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modulo de animaciones opcional | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Modulo de animaciones opcional | ≈213 KB / ≈6.7 KB |
 | `palettes/material/skeletonic-material.min.css` | Paleta de colores Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Paleta de utilidades Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Paleta web-safe | ≈3.5 KB |

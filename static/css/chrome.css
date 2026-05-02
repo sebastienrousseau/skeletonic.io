@@ -13,7 +13,7 @@
         --c-border: #d2d2d7;
         --c-nav-bg: rgba(255, 255, 255, 0.8);
         --c-nav-text: #1d1d1f;
-        --c-nav-muted: #86868b;
+        --c-nav-muted: #57575b;
         --c-footer-bg: #f5f5f7;
         /* #86868b on #f5f5f7 was 3.32 : 1 — fail. Darkened to
            #57575b so the footer body and footer-bar clear AA 4.5 : 1. */
@@ -876,7 +876,7 @@
       }
       .theme-toggle:hover{border-color:var(--c-secondary);color:var(--c-heading);}
       .theme-toggle svg{fill:currentColor;width:.875rem;height:.875rem;}
-      .search-shortcut{opacity:.8;font-size:.6875rem;}
+      .search-shortcut{font-size:.6875rem;color:var(--c-nav-text);}
       .nav-cta{
         background:#0a0a0a;
         border-radius:6rem;

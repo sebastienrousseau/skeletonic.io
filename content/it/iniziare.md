@@ -95,7 +95,7 @@ La libreria distribuisce diversi bundle precompilati sotto
 | File | Scopo | Dimensione (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token + layout + elementi + componenti + utility | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modulo animazioni opzionale | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Modulo animazioni opzionale | ≈213 KB / ≈6.7 KB |
 | `palettes/material/skeletonic-material.min.css` | Palette colori Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Palette utility Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Palette web-safe | ≈3.5 KB |

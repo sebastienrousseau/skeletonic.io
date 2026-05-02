@@ -399,7 +399,7 @@ baked in and what mixins you can opt into for finer control.</p>
 </tbody>
 </table>
 <p>Example:</p>
-<pre class="highlight language-stylus"><code class="language-stylus" data-lang="stylus"><pre style="background-color:#0d1117;">
+<pre class="highlight language-stylus"><code class="language-stylus" data-lang="stylus"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">// Apply a strong focus ring on a custom button
 </span><span style="color:#c0c5ce;">.my-button
 </span><span style="color:#c0c5ce;">    focus-ring()
@@ -409,7 +409,7 @@ baked in and what mixins you can opt into for finer control.</p>
 <hr class="hr-text" data-content="Skip link">
 <h2>The skip-link helper</h2>
 <p>Drop this <strong>first thing inside <code>&lt;body&gt;</code></strong>:</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#0d1117;">
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#main-content</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">skip-link</span><span style="color:#c0c5ce;">&quot;&gt;Skip to main content&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;
 </span></pre>
 </code></pre>
@@ -421,7 +421,7 @@ to see it appear in the top-left.</p>
 <h2>RTL out of the box</h2>
 <p>Set <code>dir=&quot;rtl&quot;</code> on <code>&lt;html&gt;</code> (or any subtree) and the inline axis flips
 without you adding a single line of CSS:</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#0d1117;">
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">html </span><span style="color:#d08770;">lang</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">ar</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">dir</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">rtl</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">  …
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">body</span><span style="color:#c0c5ce;">&gt;
@@ -444,7 +444,7 @@ left-to-right.</p>
 <p>v2.0.0 wires the <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code> rules to runtime CSS custom properties
 so you can retheme typography without recompiling Stylus. The defaults
 follow a 1.27 (minor third) ratio:</p>
-<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#0d1117;">
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">root </span><span style="color:#c0c5ce;">{
 </span><span style="color:#c0c5ce;">  --gr-h1: </span><span style="color:#d08770;">4.2rem</span><span style="color:#c0c5ce;">;
 </span><span style="color:#c0c5ce;">  --gr-h2: </span><span style="color:#d08770;">3.3rem</span><span style="color:#c0c5ce;">;
@@ -456,7 +456,7 @@ follow a 1.27 (minor third) ratio:</p>
 </span></pre>
 </code></pre>
 <p>Override on any ancestor:</p>
-<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#0d1117;">
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#8fa1b3;">.</span><span style="color:#d08770;">my-section </span><span style="color:#c0c5ce;">{
 </span><span style="color:#c0c5ce;">  --gr-h1: </span><span style="color:#d08770;">3.0rem</span><span style="color:#c0c5ce;">;  </span><span style="color:#7d8a96;">/* tighter for an in-page hero */
 </span><span style="color:#c0c5ce;">  --gr-h2: </span><span style="color:#d08770;">2.4rem</span><span style="color:#c0c5ce;">;
@@ -469,7 +469,7 @@ follow a 1.27 (minor third) ratio:</p>
 <p>The library ships an <code>a11y-test.mjs</code> script under <code>scripts/</code> that runs
 <a href="https://github.com/dequelabs/axe-core">axe-core</a> against every URL
 you give it.</p>
-<pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre style="background-color:#0d1117;">
+<pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#8fa1b3;">node</span><span style="color:#c0c5ce;"> scripts/a11y-test.mjs https://example.com
 </span></pre>
 </code></pre>

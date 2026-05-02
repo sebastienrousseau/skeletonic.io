@@ -1,12 +1,12 @@
 {
   "description": "Bawo ni Skeletonic Stylus v2.0.0 ṣe ni aabo fun opo ikọ rẹ, fọwọsi awọn itusilẹ, ati fi SBOM ranṣẹ.",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "keywords": "aabo css, sbom, cyclonedx, npm provenance, openssf scorecard, ẹwọn ipese",
+  "permalink": "https://skeletonic.io/yo/aabo/",
+  "language": "yo",
   "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
   "title": "Aabo &amp; ẹwọn ipese",
-  "language": "yo",
-  "permalink": "https://skeletonic.io/yo/aabo/"
+  "name": "Skeletonic Stylus",
+  "keywords": "aabo css, sbom, cyclonedx, npm provenance, openssf scorecard, ẹwọn ipese",
+  "layout": "page",
+  "author": "Sebastien Rousseau"
 }

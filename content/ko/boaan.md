@@ -13,7 +13,7 @@ keywords: "css 보안, sbom, cyclonedx, npm 출처 증명, openssf scorecard, �
 
 ## 성능
 
-- **40.6&nbsp;KB 최소화 · 8.0&nbsp;KB gzipped · 6.9&nbsp;KB brotli** (전체 코어 스타일시트 기준).
+- **39.1&nbsp;KB 최소화 · 7.8&nbsp;KB gzipped · 6.7&nbsp;KB brotli** (전체 코어 스타일시트 기준).
 - **JavaScript 없음** — 순수 Stylus → 순수 CSS, 런타임 비용 없음.
 - **캐스케이드 레이어** — `!important` 없이 오버라이드가 적용됩니다.
 - **`size-limit` 예산이 CI에서** 매 커밋마다 적용됩니다.

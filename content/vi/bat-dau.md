@@ -102,7 +102,7 @@ Thu vien cung cap mot so goi CSS tien tao trong
 | Tap | Muc dich | Kich thuoc (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token + layout + phan tu + thanh phan + tien ich | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Mo-dun hieu ung dong tuy chon | ≈213 KB / ≈6.9 KB |
+| `animations/skeletonic-animations.min.css` | Mo-dun hieu ung dong tuy chon | ≈213 KB / ≈6.7 KB |
 | `palettes/material/skeletonic-material.min.css` | Bang mau Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Bang mau tien ich Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Bang mau web-safe | ≈3.5 KB |

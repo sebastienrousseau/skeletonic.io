@@ -1,12 +1,12 @@
 {
-  "keywords": "skeletonic, אודות, stylus, css framework, פילוסופיה",
-  "permalink": "https://skeletonic.io/he/odot/",
-  "layout": "page",
-  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
   "description": "Skeletonic Stylus היא ספריית CSS קוד פתוח מבוססת Stylus לעיצוב ממשקים נגיש, מהיר ומודולרי.",
+  "title": "אודות Skeletonic Stylus",
+  "keywords": "skeletonic, אודות, stylus, css framework, פילוסופיה",
   "language": "he",
   "name": "Skeletonic Stylus",
-  "title": "אודות Skeletonic Stylus"
+  "date": "2026-04-08",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/he/odot/",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

@@ -1,11 +1,11 @@
 {
-  "language": "th",
-  "description": "บันทึกรีลีสของ Skeletonic Stylus พร้อมรายละเอียดฉบับเต็มของ v2.0.0",
-  "permalink": "https://skeletonic.io/th/banthuek-kan-plian/",
-  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
+  "name": "Skeletonic Stylus",
   "keywords": "บันทึกการเปลี่ยนแปลง skeletonic, บันทึกรีลีส, v2.0.0, semver",
+  "permalink": "https://skeletonic.io/th/banthuek-kan-plian/",
+  "language": "th",
   "author": "Sebastien Rousseau",
-  "title": "บันทึกการเปลี่ยนแปลง",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "description": "บันทึกรีลีสของ Skeletonic Stylus พร้อมรายละเอียดฉบับเต็มของ v2.0.0",
+  "title": "บันทึกการเปลี่ยนแปลง"
 }

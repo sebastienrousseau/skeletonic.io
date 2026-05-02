@@ -1,11 +1,11 @@
 {
-  "permalink": "https://skeletonic.io/vi/404/",
-  "description": "Trang ban yeu cau khong ton tai tren skeletonic.io.",
-  "title": "Khong tim thay trang",
   "language": "vi",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
-  "keywords": "404, khong tim thay",
+  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "description": "Trang ban yeu cau khong ton tai tren skeletonic.io.",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/vi/404/",
+  "title": "Khong tim thay trang",
+  "keywords": "404, khong tim thay"
 }

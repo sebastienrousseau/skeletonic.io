@@ -18,7 +18,7 @@ keywords: "skeletonic インストール, stylus セットアップ, css cdn, �
 
 ## はじめに
 
-Skeletonic Stylus を初めて使いますか？ **v2.0.0** では、必要な機能だけを選ぶのがこれまで以上に簡単になりました。コアスタイルシートのフットプリントが非常に小さい（gzip圧縮で約8.0&nbsp;KB）ため、どの Web アプリにも素早く統合できます。JavaScript フレームワーク不要、CDN を使えばビルドステップも不要です。
+Skeletonic Stylus を初めて使いますか？ **v2.0.0** では、必要な機能だけを選ぶのがこれまで以上に簡単になりました。コアスタイルシートのフットプリントが非常に小さい（gzip圧縮で約7.8&nbsp;KB）ため、どの Web アプリにも素早く統合できます。JavaScript フレームワーク不要、CDN を使えばビルドステップも不要です。
 
 以下にすべての方法を網羅しています。必要なものを選んでください。
 
@@ -89,7 +89,7 @@ pnpm run build
 
 | ファイル | 用途 | サイズ (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | リセット + トークン + レイアウト + 要素 + コンポーネント + ユーティリティ | 40.6 KB / 8.0 KB |
+| `core/skeletonic.min.css` | リセット + トークン + レイアウト + 要素 + コンポーネント + ユーティリティ | 39.1 KB / 7.8 KB |
 | `animations/skeletonic-animations.min.css` | オプションのアニメーションモジュール | 約18 KB / 約4 KB |
 | `palettes/material/skeletonic-material.min.css` | Material カラーパレット | 約8 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons ユーティリティパレット | 7.3 KB |
@@ -202,7 +202,7 @@ Skeletonic はデザイントークンを **CSS カスタムプロパティ** �
 はい。v2.0.0 では、AA 準拠のコントラスト、focus-visible リング、スキップリンクヘルパー、モーション軽減対応、ダークモードがデフォルトで提供されます。
 
 **gzip圧縮後のサイズは？**
-ミニファイ済みで40.6&nbsp;KB、**gzip圧縮で約8.0&nbsp;KB**、brotli で約6.9&nbsp;KB（フルコアスタイルシート）。8&nbsp;KB の上限は CI で強制されています。
+ミニファイ済みで39.1&nbsp;KB、**gzip圧縮で約7.8&nbsp;KB**、brotli で約6.7&nbsp;KB（フルコアスタイルシート）。8&nbsp;KB の上限は CI で強制されています。
 
 **どのライセンスを使用していますか？**
 MIT と Apache 2.0 のデュアルライセンスです — プロジェクトに合う方をお選びください。商用・個人利用ともに無料です。
@@ -241,7 +241,7 @@ MIT と Apache 2.0 のデュアルライセンスです — プロジェクト�
       "name": "Skeletonic Stylus の gzip 圧縮後のサイズは？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ミニファイ済みで 40.6 KB、gzip 圧縮で約 8.0 KB、brotli で約 6.9 KB（フルコアスタイルシート）。8 KB の上限はすべてのコミットで CI により強制されています。"
+        "text": "ミニファイ済みで 39.1 KB、gzip 圧縮で約 7.8 KB、brotli で約 6.7 KB（フルコアスタイルシート）。8 KB の上限はすべてのコミットで CI により強制されています。"
       }
     },
     {

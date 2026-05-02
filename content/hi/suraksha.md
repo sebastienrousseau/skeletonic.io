@@ -13,7 +13,7 @@ keywords: "css सुरक्षा, sbom, cyclonedx, npm provenance, openssf s
 
 ## प्रदर्शन
 
-- **40.6&nbsp;KB minified · 8.0&nbsp;KB gzipped · 6.9&nbsp;KB brotli** पूर्ण कोर स्टाइलशीट के लिए।
+- **39.1&nbsp;KB minified · 7.8&nbsp;KB gzipped · 6.7&nbsp;KB brotli** पूर्ण कोर स्टाइलशीट के लिए।
 - **शून्य JavaScript** — शुद्ध Stylus → शुद्ध CSS, कोई रनटाइम लागत नहीं।
 - **Cascade-layered** — ओवरराइड `!important` के बिना जीतते हैं।
 - **`size-limit` बजट** हर कमिट पर CI में लागू।

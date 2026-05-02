@@ -1,11 +1,11 @@
 {
+  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Privacy",
   "description": "What data skeletonic.io collects, why, and how to opt out.",
-  "permalink": "https://skeletonic.io/privacy/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/privacy/",
   "keywords": "privacy, gdpr, cookies, no tracking"
 }

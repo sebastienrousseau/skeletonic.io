@@ -307,7 +307,7 @@ no longer drifts in saturation between light and dark.</li>
 <ul>
 <li>
 <p><code>skeletonic.styl</code> now declares the layer order at the top:</p>
-<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#0d1117;">
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">@</span><span style="color:#b48ead;">layer skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">base</span><span style="color:#b48ead;">, skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">layout</span><span style="color:#b48ead;">,
 </span><span style="color:#b48ead;">       skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">elements</span><span style="color:#b48ead;">, skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">components</span><span style="color:#b48ead;">;
 </span></pre>
@@ -322,7 +322,7 @@ no specificity wars, no <code>!important</code>.</p>
 <li>
 <p>The legacy <code>.flex-1</code>…<code>.flex-12</code> flexbox grid is replaced with a
 modern CSS Grid system:</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#0d1117;">
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">section </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">grid grid-cols-3</span><span style="color:#c0c5ce;">&quot;&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">article </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card</span><span style="color:#c0c5ce;">&quot;&gt;…&lt;/</span><span style="color:#bf616a;">article</span><span style="color:#c0c5ce;">&gt;
 </span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">article </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">card</span><span style="color:#c0c5ce;">&quot;&gt;…&lt;/</span><span style="color:#bf616a;">article</span><span style="color:#c0c5ce;">&gt;
@@ -362,8 +362,8 @@ cross-fades or morphs the named element natively.</li>
 </ul>
 <h3>Bundle &amp; quality gates</h3>
 <ul>
-<li>Compiled bundle: <strong>40.6 KB raw / 8.0 KB gzip /
-6.9 KB brotli</strong> — under the 48 / 10 / 8 KB CI ceilings.</li>
+<li>Compiled bundle: <strong>39.1 KB raw / 7.8 KB gzip /
+6.7 KB brotli</strong> — under the 48 / 10 / 8 KB CI ceilings.</li>
 <li>axe-core gate green: zero WCAG 2.2 violations on the demo page.</li>
 <li>CycloneDX SBOM updated; npm publish workflow signs and provenances
 the v2.0.0 tarball.</li>

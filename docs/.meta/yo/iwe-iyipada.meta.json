@@ -1,11 +1,11 @@
 {
-  "permalink": "https://skeletonic.io/yo/iwe-iyipada/",
-  "description": "Awọn akiyesi itusilẹ fun Skeletonic Stylus, pẹlu v2.0.0 ni kikun.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "iwe iyipada skeletonic, awọn akiyesi itusilẹ, v2.0.0, semver",
-  "author": "Sebastien Rousseau",
   "language": "yo",
   "title": "Iwe Iyipada",
   "name": "Skeletonic Stylus",
-  "layout": "page"
+  "description": "Awọn akiyesi itusilẹ fun Skeletonic Stylus, pẹlu v2.0.0 ni kikun.",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/yo/iwe-iyipada/",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "iwe iyipada skeletonic, awọn akiyesi itusilẹ, v2.0.0, semver"
 }

@@ -1,12 +1,12 @@
 {
-  "title": "אבטחה ושרשרת אספקה",
-  "keywords": "אבטחת css, sbom, cyclonedx, מקוריות npm, openssf scorecard, שרשרת אספקה",
-  "permalink": "https://skeletonic.io/he/avtakha/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
   "name": "Skeletonic Stylus",
+  "language": "he",
+  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
   "description": "כיצד Skeletonic Stylus v2.0.0 מאבטחת את צינור הבנייה שלה, חותמת שחרורים ושולחת SBOM.",
-  "language": "he"
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/he/avtakha/",
+  "title": "אבטחה ושרשרת אספקה",
+  "layout": "page",
+  "keywords": "אבטחת css, sbom, cyclonedx, מקוריות npm, openssf scorecard, שרשרת אספקה"
 }

@@ -290,7 +290,7 @@
 <p>Every rule shipped by Skeletonic is wrapped in a single CSS
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer">cascade layer</a>.
 The compiled <code>skeletonic.min.css</code> starts with this declaration:</p>
-<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#0d1117;">
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">@</span><span style="color:#b48ead;">layer skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">reset</span><span style="color:#b48ead;">, skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">tokens</span><span style="color:#b48ead;">, skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">layout</span><span style="color:#b48ead;">,
 </span><span style="color:#b48ead;">       skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">elements</span><span style="color:#b48ead;">, skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">components</span><span style="color:#b48ead;">, skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">utilities</span><span style="color:#b48ead;">;
 </span><span style="color:#c0c5ce;">@</span><span style="color:#b48ead;">layer skeletonic </span><span style="color:#c0c5ce;">{ </span><span style="color:#7d8a96;">/* …everything else… */ </span><span style="color:#c0c5ce;">}
@@ -305,7 +305,7 @@ your component CSS, your dark-mode tweaks, your one-off page styles —
 they take effect without specificity tricks, without <code>!important</code>,
 without trying to out-specify the framework's selectors.</p>
 <p>Try it. Drop this into any page that already loads Skeletonic:</p>
-<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#0d1117;">
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#8fa1b3;">.</span><span style="color:#d08770;">button </span><span style="color:#c0c5ce;">{
 </span><span style="color:#c0c5ce;">  background: hot pink;
 </span><span style="color:#c0c5ce;">  border-radius: </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
@@ -320,7 +320,7 @@ because <strong>the unlayered cascade tier is always above any named layer</stro
 <p>Skeletonic's six sub-layers let you target the framework with surgical
 precision. To override only the spacing tokens but leave the components
 alone:</p>
-<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#0d1117;">
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">@</span><span style="color:#b48ead;">layer skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">tokens </span><span style="color:#c0c5ce;">{
 </span><span style="color:#c0c5ce;">  :root {
 </span><span style="color:#c0c5ce;">    --gr-h</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">: </span><span style="color:#d08770;">5rem</span><span style="color:#c0c5ce;">;
@@ -331,7 +331,7 @@ alone:</p>
 </code></pre>
 <p>Or to ship your own component layer that participates in the cascade
 <em>above</em> Skeletonic's components but <em>below</em> its utilities:</p>
-<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre style="background-color:#0d1117;">
+<pre class="highlight language-css"><code class="language-css" data-lang="css"><pre tabindex="0" style="background-color:#0d1117;">
 <span style="color:#c0c5ce;">@</span><span style="color:#b48ead;">layer skeletonic, </span><span style="color:#bf616a;">app-components</span><span style="color:#b48ead;">, skeletonic</span><span style="color:#8fa1b3;">.</span><span style="color:#d08770;">utilities</span><span style="color:#b48ead;">;
 </span><span style="color:#b48ead;">
 </span><span style="color:#c0c5ce;">@</span><span style="color:#b48ead;">layer </span><span style="color:#bf616a;">app-components </span><span style="color:#c0c5ce;">{

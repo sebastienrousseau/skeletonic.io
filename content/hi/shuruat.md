@@ -19,7 +19,7 @@ keywords: "skeletonic इंस्टॉल, stylus सेटअप, css cdn, �
 ## परिचय
 
 Skeletonic Stylus में नए हैं? **v2.0.0** में अपनी ज़रूरत की सुविधाएँ
-चुनना पहले से कहीं आसान है। अपने छोटे फ़ुटप्रिंट (8.0&nbsp;KB
+चुनना पहले से कहीं आसान है। अपने छोटे फ़ुटप्रिंट (7.8&nbsp;KB
 gzipped कोर स्टाइलशीट) के कारण, यह किसी भी वेब ऐप में तेज़ी से
 इंटीग्रेट होती है — कोई JavaScript फ़्रेमवर्क ज़रूरी नहीं, CDN
 इस्तेमाल करें तो कोई बिल्ड स्टेप भी नहीं।
@@ -103,8 +103,8 @@ pnpm run build
 
 | फ़ाइल | उद्देश्य | आकार (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 40.6 KB / 8.0 KB |
-| `animations/skeletonic-animations.min.css` | वैकल्पिक एनिमेशन मॉड्यूल | ≈213 KB / ≈6.9 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 39.1 KB / 7.8 KB |
+| `animations/skeletonic-animations.min.css` | वैकल्पिक एनिमेशन मॉड्यूल | ≈213 KB / ≈6.7 KB |
 | `palettes/material/skeletonic-material.min.css` | Material रंग पैलेट | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons यूटिलिटी पैलेट | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Web-safe पैलेट | ≈3.5 KB |
@@ -227,7 +227,7 @@ CSS सीधे CDN से लोड करें — कोई बिल्ड
 करता है।
 
 **Gzipped आकार कितना है?**
-40.6&nbsp;KB minified, **8.0&nbsp;KB gzipped**, 6.9&nbsp;KB brotli
+39.1&nbsp;KB minified, **7.8&nbsp;KB gzipped**, 6.7&nbsp;KB brotli
 पूर्ण कोर स्टाइलशीट के लिए। 8&nbsp;KB की सीमा CI में लागू है।
 
 **कौन सा लाइसेंस है?**
@@ -268,7 +268,7 @@ MIT और Apache 2.0 के तहत दोहरा लाइसेंस —
       "name": "Skeletonic Stylus का gzipped आकार कितना है?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "40.6 KB minified, 8.0 KB gzipped, 6.9 KB brotli पूर्ण कोर स्टाइलशीट के लिए। 8 KB की सीमा हर कमिट पर CI में लागू है।"
+        "text": "39.1 KB minified, 7.8 KB gzipped, 6.7 KB brotli पूर्ण कोर स्टाइलशीट के लिए। 8 KB की सीमा हर कमिट पर CI में लागू है।"
       }
     },
     {

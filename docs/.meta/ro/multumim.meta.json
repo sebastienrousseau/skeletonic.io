@@ -1,12 +1,12 @@
 {
+  "layout": "thanks",
   "keywords": "mulțumim",
   "title": "Mulțumim!",
-  "language": "ro",
-  "description": "Mesajul tău a fost trimis cu succes.",
-  "name": "Skeletonic Stylus",
-  "layout": "thanks",
+  "author": "Sebastien Rousseau",
   "date": "2026-04-08",
   "permalink": "https://skeletonic.io/ro/multumim/",
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau"
+  "language": "ro",
+  "description": "Mesajul tău a fost trimis cu succes."
 }

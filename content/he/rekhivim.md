@@ -168,7 +168,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>40.6 KB minified, 8.0 KB gzipped.</p>
+      <p>39.1 KB minified, 7.8 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -190,7 +190,7 @@ keywords: "רכיבי skeletonic, כפתורים, כרטיסים, טפסים, ה
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">קל משקל</h3>
-      <p>40.6&nbsp;KB ממוזער, 8.0&nbsp;KB בדחיסת gzip.</p>
+      <p>39.1&nbsp;KB ממוזער, 7.8&nbsp;KB בדחיסת gzip.</p>
     </div>
   </article>
   <article class="card flex-1">

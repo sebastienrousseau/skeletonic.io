@@ -1,12 +1,12 @@
 {
-  "description": "Що постачається із коробки у v2.0.0 для відповідності WCAG 2.2 — кільця фокусу, контраст, skip-посилання, рух та темний режим.",
   "language": "uk",
-  "layout": "page",
-  "keywords": "wcag 2.2, доступність, focus visible, skip link, prefers reduced motion, контраст",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Доступність — WCAG 2.2 у v2.0.0",
   "permalink": "https://skeletonic.io/uk/dostupnist/",
+  "keywords": "wcag 2.2, доступність, focus visible, skip link, prefers reduced motion, контраст",
+  "layout": "page",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau"
+  "author": "Sebastien Rousseau",
+  "description": "Що постачається із коробки у v2.0.0 для відповідності WCAG 2.2 — кільця фокусу, контраст, skip-посилання, рух та темний режим.",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

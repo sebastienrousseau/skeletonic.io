@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "author": "Sebastien Rousseau",
-  "description": "ข้อกำหนดที่กำกับการใช้งาน skeletonic.io และไลบรารี Skeletonic Stylus",
+  "keywords": "ข้อกำหนดการใช้งาน, สัญญาอนุญาต, mit, apache 2",
   "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/th/kho-kamnot/",
   "language": "th",
-  "keywords": "ข้อกำหนดการใช้งาน, สัญญาอนุญาต, mit, apache 2",
-  "title": "ข้อกำหนดการใช้งาน"
+  "title": "ข้อกำหนดการใช้งาน",
+  "name": "Skeletonic Stylus",
+  "description": "ข้อกำหนดที่กำกับการใช้งาน skeletonic.io และไลบรารี Skeletonic Stylus",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

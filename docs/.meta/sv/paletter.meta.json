@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
-  "keywords": "css palett, material, tachyons, webbsaker, design tokens",
-  "description": "Material-, Tachyons- och webbsakra fargpaletter som levereras med Skeletonic Stylus v2.0.0.",
   "permalink": "https://skeletonic.io/sv/paletter/",
-  "language": "sv",
   "title": "Paletter",
-  "name": "Skeletonic Stylus"
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
+  "keywords": "css palett, material, tachyons, webbsaker, design tokens",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Material-, Tachyons- och webbsakra fargpaletter som levereras med Skeletonic Stylus v2.0.0.",
+  "language": "sv"
 }

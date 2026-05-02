@@ -1,12 +1,12 @@
 {
-  "title": "Умови використання",
-  "language": "uk",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "keywords": "умови використання, ліцензія, mit, apache 2",
-  "permalink": "https://skeletonic.io/uk/umovy/",
-  "theme_color": "hsl(210, 100%, 42%)",
   "description": "Умови, що регулюють використання skeletonic.io та бібліотеки Skeletonic Stylus.",
-  "layout": "page"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "keywords": "умови використання, ліцензія, mit, apache 2",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/uk/umovy/",
+  "name": "Skeletonic Stylus",
+  "title": "Умови використання",
+  "language": "uk"
 }

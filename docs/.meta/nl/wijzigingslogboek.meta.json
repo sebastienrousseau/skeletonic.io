@@ -1,11 +1,11 @@
 {
-  "description": "Releasenotities voor Skeletonic Stylus, met v2.0.0 volledig uitgewerkt.",
   "permalink": "https://skeletonic.io/nl/wijzigingslogboek/",
   "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
-  "layout": "page",
-  "language": "nl",
   "title": "Wijzigingslogboek",
+  "layout": "page",
+  "description": "Releasenotities voor Skeletonic Stylus, met v2.0.0 volledig uitgewerkt.",
+  "language": "nl",
   "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "skeletonic wijzigingslogboek, releasenotities, v2.0.0, semver"
 }

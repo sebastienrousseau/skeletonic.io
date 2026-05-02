@@ -171,7 +171,7 @@ s mrizkou `flex-N` pro responzivni steny karet.
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>40.6 KB minified, 8.0 KB gzipped.</p>
+      <p>39.1 KB minified, 7.8 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

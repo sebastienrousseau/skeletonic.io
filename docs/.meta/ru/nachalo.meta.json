@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/ru/nachalo/",
-  "name": "Skeletonic Stylus",
   "title": "Начало работы с Skeletonic Stylus",
   "keywords": "установка skeletonic, настройка stylus, css cdn, начало работы",
+  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "description": "Установите Skeletonic Stylus из npm или CDN, подключите к вашей Stylus-сборке и переопределите переменные за секунды.",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "ru",
+  "permalink": "https://skeletonic.io/ru/nachalo/",
   "layout": "page",
+  "description": "Установите Skeletonic Stylus из npm или CDN, подключите к вашей Stylus-сборке и переопределите переменные за секунды.",
   "date": "2026-04-08",
-  "language": "ru"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

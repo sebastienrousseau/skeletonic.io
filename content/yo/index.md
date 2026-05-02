@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — CSS Ti A Le Wọle Si, 8.0 KB gzipped"
+title: "Skeletonic Stylus — CSS Ti A Le Wọle Si, 7.8 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus jẹ ile-ikawe CSS Stylus ti o fẹẹrẹfẹ, ti o ni awọn modulu — ti o setan fun WCAG 2.2, ti a fi cascade-layer ṣe, 8.0 KB gzipped — ti a ṣe lati mu idagbasoke UI wẹẹbu ode-oni rọrun."
+description: "Skeletonic Stylus jẹ ile-ikawe CSS Stylus ti o fẹẹrẹfẹ, ti o ni awọn modulu — ti o setan fun WCAG 2.2, ti a fi cascade-layer ṣe, 7.8 KB gzipped — ti a ṣe lati mu idagbasoke UI wẹẹbu ode-oni rọrun."
 language: yo
 layout: index
 permalink: https://skeletonic.io/yo/
