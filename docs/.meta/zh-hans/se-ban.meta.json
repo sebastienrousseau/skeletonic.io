@@ -1,12 +1,12 @@
 {
-  "description": "Skeletonic Stylus v2.0.0 内置的 Material、Tachyons 和 Web 安全配色方案。",
+  "layout": "page",
   "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
   "keywords": "css 色板, material, tachyons, websafe, 设计令牌",
   "language": "zh-hans",
-  "title": "色板",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
+  "description": "Skeletonic Stylus v2.0.0 内置的 Material、Tachyons 和 Web 安全配色方案。",
   "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/zh-hans/se-ban/"
+  "permalink": "https://skeletonic.io/zh-hans/se-ban/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "色板"
 }

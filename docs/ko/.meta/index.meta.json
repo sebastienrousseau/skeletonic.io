@@ -1,12 +1,12 @@
 {
-  "layout": "index",
-  "language": "ko",
-  "date": "2026-04-08",
-  "keywords": "css, stylus, css 프레임워크, 접근성 css, wcag 2.2, 경량 css, 캐스케이드 레이어, 디자인 시스템",
-  "description": "Skeletonic Stylus는 가볍고 모듈화된 Stylus CSS 라이브러리입니다. WCAG 2.2 준수, 캐스케이드 레이어 지원, 약 7.9 KB gzipped — 현대적인 웹 UI 개발을 간소화하도록 설계되었습니다.",
-  "title": "Skeletonic Stylus — 접근성 높은 CSS, 약 7.9 KB gzipped",
   "permalink": "https://skeletonic.io/ko/",
+  "layout": "index",
   "author": "Sebastien Rousseau",
+  "description": "Skeletonic Stylus는 가볍고 모듈화된 Stylus CSS 라이브러리입니다. WCAG 2.2 준수, 캐스케이드 레이어 지원, 약 7.7 KB gzipped — 현대적인 웹 UI 개발을 간소화하도록 설계되었습니다.",
+  "name": "Skeletonic Stylus",
+  "title": "Skeletonic Stylus — 접근성 높은 CSS, 약 7.7 KB gzipped",
+  "keywords": "css, stylus, css 프레임워크, 접근성 css, wcag 2.2, 경량 css, 캐스케이드 레이어, 디자인 시스템",
   "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus"
+  "language": "ko",
+  "date": "2026-04-08"
 }

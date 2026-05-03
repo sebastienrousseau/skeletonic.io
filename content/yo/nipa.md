@@ -18,8 +18,8 @@ keywords: "skeletonic, nipa, stylus, ilana css, imọran"
 
 <dl class="stat-strip" aria-label="Project facts">
   <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
   <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
   <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
 </dl>
@@ -45,7 +45,7 @@ o kere** laisi fifun awọn ọna iṣẹ ti ile-ikawe paati gidi silẹ. Lẹhi
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Iyẹ ẹyẹ" width="64" height="64" loading="lazy" decoding="async">
     <h3>Fẹẹrẹfẹ</h3>
-    <p>7.9&nbsp;KB gzipped. Awọn oju-iwe gba ni iyara ju. Gbogbo bulọọki ikọle pataki wa ninu.</p>
+    <p>7.7&nbsp;KB gzipped. Awọn oju-iwe gba ni iyara ju. Gbogbo bulọọki ikọle pataki wa ninu.</p>
   </article>
 
   <article class="feature-card">
@@ -82,7 +82,7 @@ igbarale ẹlẹgbẹ lori Bootstrap, Tailwind tabi Bulma.
 
 | Ẹya | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Iwọn gzipped | **7.9&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| Iwọn gzipped | **7.7&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | Ibamu WCAG 2.2 | **Ti a kọ sinu** | Apakan | Afọwọṣe | Apakan |
 | Awọn ipele cascade | **Bẹẹni (`@layer`)** | Rara | Rara | Rara |
 | Ipo dudu | **`prefers-color-scheme`** | Yiyan wọle | Ipilẹ kilasi | Yiyan wọle |

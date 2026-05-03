@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus 2.0 — Modern CSS, 7.9 KB gzip"
+title: "Skeletonic Stylus 2.0 — Modern CSS, 7.7 KB gzip"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus 2.0 — OKLCH colours, native @layer, CSS Grid, container queries, view transitions. Class-based, JS-free, WCAG 2.2 AA, 7.9 KB gzip / 6.8 KB brotli."
+description: "Skeletonic Stylus 2.0 — OKLCH colours, native @layer, CSS Grid, container queries, view transitions. Class-based, JS-free, WCAG 2.2 AA, 7.7 KB gzip / 6.7 KB brotli."
 layout: index
 permalink: https://skeletonic.io/
 date: 2026-05-01
@@ -11,13 +11,13 @@ keywords: "css, stylus, css framework, oklch, css grid, container queries, view 
 ---
 
 **Skeletonic Stylus 2.0** — modern CSS for the post-bundler web.
-**7.9&nbsp;KB&nbsp;gzip · 6.8&nbsp;KB&nbsp;brotli**. OKLCH colours,
+**7.7&nbsp;KB&nbsp;gzip · 6.7&nbsp;KB&nbsp;brotli**. OKLCH colours,
 native `@layer`, CSS Grid, container queries, view transitions.
 WCAG&nbsp;2.2 AA. RTL-ready. Zero JavaScript. One `<link>` and
 you're done.
 
 ```bash
-pnpm add @sebastienrousseau/skeletonic-stylus@2.0.0
+npx @sebastienrousseau/skeletonic-stylus init
 ```
 
 ## What's new in 2.0
@@ -39,7 +39,7 @@ Six 2026-baseline CSS features the library now ships natively.
 
 Six paths into the library. Pick what you need.
 
-<div class="anatomy-grid">
+<nav class="anatomy-grid" aria-label="Library areas">
   <a class="anatomy-card" href="/getting-started/">
     <img class="anatomy-icon" src="/images/icons/content.min.svg" alt="Get started" width="48" height="48" loading="lazy" decoding="async">
     <h3>Get started</h3>
@@ -70,7 +70,7 @@ Six paths into the library. Pick what you need.
     <h3>Security</h3>
     <p>CycloneDX SBOM. npm provenance. Pinned dependencies. CVE-patched.</p>
   </a>
-</div>
+</nav>
 
 ## Numbers, not promises
 
@@ -79,7 +79,7 @@ CDN-served, no purging, measured with `gzip -9` and `brotli -q 11` on
 
 | Framework | Version | Brotli | Gzip |
 |---|---|---:|---:|
-| **Skeletonic Stylus** | 2.0.0 | **6.8 KB** | **7.9 KB** |
+| **Skeletonic Stylus** | 2.0.0 | **6.7 KB** | **7.7 KB** |
 | Pico CSS | 2.1.1 | 10.1 KB | 11.6 KB |
 | Bootstrap | 5.3.8 | 23.0 KB | 30.9 KB |
 | Bulma | 1.0.4 | 36.3 KB | 64.9 KB |

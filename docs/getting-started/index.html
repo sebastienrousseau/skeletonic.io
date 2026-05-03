@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Skeletonic Stylus</title>
+    <title>Getting started with Skeletonic Stylus</title>
 
     
     
@@ -31,7 +31,7 @@
          v0.0.34 and don't change between builds — if the SSG ever
          changes them we'll see the CSP error in the browser console
          and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self' https://cdn.jsdelivr.net; form-action 'self' https://formspree.io https://codepen.io; base-uri 'self'">
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
 
     <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
@@ -71,7 +71,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Skeletonic Stylus">
-    <meta property="og:title" content="Skeletonic Stylus">
+    <meta property="og:title" content="Getting started with Skeletonic Stylus">
     
     <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
     <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
@@ -112,7 +112,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@wwdseb">
     <meta name="twitter:creator" content="@wwdseb">
-    <meta name="twitter:title" content="Skeletonic Stylus">
+    <meta name="twitter:title" content="Getting started with Skeletonic Stylus">
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
@@ -163,7 +163,7 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Skeletonic Stylus",
+      "name": "Getting started with Skeletonic Stylus",
       "url": "https://skeletonic.io"
     }
     </script>
@@ -188,10 +188,17 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css">
-<meta name="description" content="Intro New to Skeletonic Stylus? In v2.0.0 the core stylesheet is 7.9 KB gzip / 6.8 KB brotli for the full RTL-ready, WCAG 2.2 AA bundle — measured against">
-<meta property="og:description" content="Intro New to Skeletonic Stylus? In v2.0.0 the core stylesheet is 7.9 KB gzip / 6.8 KB brotli for the full RTL-ready, WCAG 2.2 AA bundle — measured against">
+<meta name="description" content="Intro New to Skeletonic Stylus? In v2.0.0 the core stylesheet is 7.7 KB gzip / 6.7 KB brotli for the full RTL-ready, WCAG 2.2 AA bundle — measured against">
+<meta property="og:description" content="Intro New to Skeletonic Stylus? In v2.0.0 the core stylesheet is 7.7 KB gzip / 6.7 KB brotli for the full RTL-ready, WCAG 2.2 AA bundle — measured against">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
+<style id="synt-palette">.synt-8fa1b3{color:#8fa1b3;background-color:#0d1117}
+.synt-c0c5ce{color:#c0c5ce;background-color:#0d1117}
+.synt-7d8a96{color:#7d8a96;background-color:#0d1117}
+.synt-bf616a{color:#bf616a;background-color:#0d1117}
+.synt-d08770{color:#d08770;background-color:#0d1117}
+.synt-a3be8c{color:#a3be8c;background-color:#0d1117}
+.synt-96b5b4{color:#96b5b4;background-color:#0d1117}
+.synt-b48ead{color:#b48ead;background-color:#0d1117}</style><link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
     <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -221,6 +228,29 @@
             </svg>
             <span class="search-shortcut" aria-hidden="true"></span>
           </button>
+          <div class="palette-switcher" id="paletteSwitcher">
+            <button type="button" class="theme-toggle" id="paletteToggle" aria-label="Choose colour palette" aria-expanded="false" aria-haspopup="true" aria-controls="paletteMenu">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 2 2 0 0 0 2-2 2 2 0 0 1 2-2h2a4 4 0 0 0 4-4A10 10 0 0 0 12 2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+            </button>
+            <div class="palette-menu" id="paletteMenu" role="menu" hidden>
+              <button type="button" class="palette-swatch is-active" role="menuitemradio" aria-checked="true" data-palette="default" style="--swatch:#0066cc">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Default</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="ember" style="--swatch:#ed6300">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Ember</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="iris" style="--swatch:#8668ff">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Iris</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="lagoon" style="--swatch:#00a1b3">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Lagoon</span>
+              </button>
+            </div>
+          </div>
           <button aria-label="Switch to dark mode" class="theme-toggle" id="themeToggle" type="button" data-label-dark="Dark" data-label-light="Light" data-aria-dark="Switch to dark mode" data-aria-light="Switch to light mode">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
               <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
@@ -289,48 +319,65 @@
         
 <h2>Intro</h2>
 <p>New to Skeletonic Stylus? In <strong>v2.0.0</strong> the core stylesheet is
-<strong>7.9 KB gzip / 6.8 KB brotli</strong> for the full RTL-ready,
+<strong>7.7 KB gzip / 6.7 KB brotli</strong> for the full RTL-ready,
 WCAG 2.2 AA bundle — measured against the canonical CDN file,
 not approximated. It integrates into any web app from a single
 <code>&lt;link&gt;</code> — no JavaScript framework required, no build step needed if
 you load it from a CDN.</p>
 <p>Ready to install? Every path covered below — pick one.</p>
+<h2>0. Zero-to-running in 30 seconds (<code>npx</code>)</h2>
+<p>The fastest path. No package install, no build step:</p>
+<pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre tabindex="0" style="background-color:#0d1117;">
+<span class="synt-8fa1b3">npx</span><span class="synt-c0c5ce"> @sebastienrousseau/skeletonic-stylus init
+</span></pre>
+</code></pre>
+<p>Scaffolds <code>styles/index.styl</code> + a working <code>index.html</code> in the current
+directory, both pointing at the CDN bundle. Open <code>index.html</code> and
+you're running.</p>
+<pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre tabindex="0" style="background-color:#0d1117;">
+<span class="synt-7d8a96"># Add a single component&#39;s source to your project tree:
+</span><span class="synt-8fa1b3">npx</span><span class="synt-c0c5ce"> @sebastienrousseau/skeletonic-stylus add card
+</span><span class="synt-c0c5ce">
+</span><span class="synt-7d8a96"># List everything available:
+</span><span class="synt-8fa1b3">npx</span><span class="synt-c0c5ce"> @sebastienrousseau/skeletonic-stylus list
+</span></pre>
+</code></pre>
 <h2>1. Download and install</h2>
 <p>You can install Skeletonic Stylus via <strong>pnpm</strong>, <strong>npm</strong> or <strong>yarn</strong>, or
 load it straight from a CDN. You can also self-host the distribution
 files locally if you prefer.</p>
 <h3>From a package manager (recommended)</h3>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre tabindex="0" style="background-color:#0d1117;">
-<span style="color:#7d8a96;"># pnpm
-</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#7d8a96;"># npm
-</span><span style="color:#8fa1b3;">npm</span><span style="color:#c0c5ce;"> install @sebastienrousseau/skeletonic-stylus@2.0.0
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#7d8a96;"># yarn
-</span><span style="color:#8fa1b3;">yarn</span><span style="color:#c0c5ce;"> add @sebastienrousseau/skeletonic-stylus@2.0.0
+<span class="synt-7d8a96"># pnpm
+</span><span class="synt-8fa1b3">pnpm</span><span class="synt-c0c5ce"> add @sebastienrousseau/skeletonic-stylus@2.0.0
+</span><span class="synt-c0c5ce">
+</span><span class="synt-7d8a96"># npm
+</span><span class="synt-8fa1b3">npm</span><span class="synt-c0c5ce"> install @sebastienrousseau/skeletonic-stylus@2.0.0
+</span><span class="synt-c0c5ce">
+</span><span class="synt-7d8a96"># yarn
+</span><span class="synt-8fa1b3">yarn</span><span class="synt-c0c5ce"> add @sebastienrousseau/skeletonic-stylus@2.0.0
 </span></pre>
 </code></pre>
 <h3>From a CDN</h3>
 <p>If you only need the compiled CSS, drop one of these into your <code>&lt;head&gt;</code>:</p>
 <pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span style="color:#7d8a96;">&lt;!-- jsDelivr --&gt;
-</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
-</span><span style="color:#c0c5ce;">
-</span><span style="color:#7d8a96;">&lt;!-- unpkg --&gt;
-</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">crossorigin</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">anonymous</span><span style="color:#c0c5ce;">&quot;&gt;
+<span class="synt-7d8a96">&lt;!-- jsDelivr --&gt;
+</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">link
+</span><span class="synt-c0c5ce">  </span><span class="synt-d08770">rel</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">stylesheet</span><span class="synt-c0c5ce">&quot;
+</span><span class="synt-c0c5ce">  </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span class="synt-c0c5ce">&quot;
+</span><span class="synt-c0c5ce">  </span><span class="synt-d08770">crossorigin</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">anonymous</span><span class="synt-c0c5ce">&quot;&gt;
+</span><span class="synt-c0c5ce">
+</span><span class="synt-7d8a96">&lt;!-- unpkg --&gt;
+</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">link
+</span><span class="synt-c0c5ce">  </span><span class="synt-d08770">rel</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">stylesheet</span><span class="synt-c0c5ce">&quot;
+</span><span class="synt-c0c5ce">  </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">https://unpkg.com/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span class="synt-c0c5ce">&quot;
+</span><span class="synt-c0c5ce">  </span><span class="synt-d08770">crossorigin</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">anonymous</span><span class="synt-c0c5ce">&quot;&gt;
 </span></pre>
 </code></pre>
 <p>For maximum integrity, copy the <strong>SRI hash</strong> from the v2.0.0 release
 notes and add an <code>integrity=&quot;sha384-…&quot;</code> attribute.</p>
 <h3>Alternate CDN locations</h3>
-<div class="table-responsive"><table class="table">
+<div class="table-responsive"><table class="table"><caption class="visually-hidden">Data table table</caption>
 <thead>
 <tr>
 <th>CDN</th>
@@ -362,10 +409,10 @@ and drop the contents of <code>dist/</code> straight into your project.</p>
 <p>Clone the main repository to get all source files including the build
 scripts:</p>
 <pre class="highlight language-bash"><code class="language-bash" data-lang="bash"><pre tabindex="0" style="background-color:#0d1117;">
-<span style="color:#8fa1b3;">git</span><span style="color:#c0c5ce;"> clone https://github.com/sebastienrousseau/skeletonic-stylus.git
-</span><span style="color:#96b5b4;">cd</span><span style="color:#c0c5ce;"> skeletonic-stylus
-</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> install
-</span><span style="color:#8fa1b3;">pnpm</span><span style="color:#c0c5ce;"> run build
+<span class="synt-8fa1b3">git</span><span class="synt-c0c5ce"> clone https://github.com/sebastienrousseau/skeletonic-stylus.git
+</span><span class="synt-96b5b4">cd</span><span class="synt-c0c5ce"> skeletonic-stylus
+</span><span class="synt-8fa1b3">pnpm</span><span class="synt-c0c5ce"> install
+</span><span class="synt-8fa1b3">pnpm</span><span class="synt-c0c5ce"> run build
 </span></pre>
 </code></pre>
 <blockquote>
@@ -376,7 +423,7 @@ global git config).</p>
 <h2>2. Use the compiled CSS</h2>
 <p>The library ships several pre-built bundles under
 <code>dist/css/</code> once installed:</p>
-<table>
+<table><caption class="visually-hidden">Data table table</caption>
 <thead>
 <tr>
 <th>File</th>
@@ -388,17 +435,17 @@ global git config).</p>
 <tr>
 <td class="text-left"><code>core/skeletonic.min.css</code></td>
 <td class="text-left">Reset + tokens + layout + elements + components + utilities, RTL-ready</td>
-<td class="text-left">42.3 KB / 7.9 KB / 6.8 KB</td>
+<td class="text-left">38.8 KB / 7.7 KB / 6.7 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>animations/skeletonic-animations.min.css</code></td>
 <td class="text-left">56 keyframes, gated behind <code>prefers-reduced-motion</code></td>
-<td class="text-left">217.9 KB / 6.8 KB / —</td>
+<td class="text-left">217.7 KB / 6.7 KB / —</td>
 </tr>
 <tr>
 <td class="text-left"><code>palettes/material/skeletonic-material.min.css</code></td>
 <td class="text-left">Material 19×14 hue/shade utilities</td>
-<td class="text-left">≈17.9 KB</td>
+<td class="text-left">≈17.7 KB</td>
 </tr>
 <tr>
 <td class="text-left"><code>palettes/tachyons/skeletonic-tachyons.min.css</code></td>
@@ -417,45 +464,45 @@ global git config).</p>
 <p>If you have a Stylus pipeline already, you can import the source
 modules and let your bundler tree-shake unused parts:</p>
 <pre class="highlight language-stylus"><code class="language-stylus" data-lang="stylus"><pre tabindex="0" style="background-color:#0d1117;">
-<span style="color:#c0c5ce;">// styles/main.styl
-</span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/skeletonic&#39;
+<span class="synt-c0c5ce">// styles/main.styl
+</span><span class="synt-c0c5ce">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/skeletonic&#39;
 </span></pre>
 </code></pre>
 <p>Or import only the bits you need:</p>
 <pre class="highlight language-stylus"><code class="language-stylus" data-lang="stylus"><pre tabindex="0" style="background-color:#0d1117;">
-<span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/utilities/variables&#39;
-</span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/utilities/mixins&#39;
-</span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/elements/buttons&#39;
-</span><span style="color:#c0c5ce;">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/components/card&#39;
+<span class="synt-c0c5ce">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/utilities/variables&#39;
+</span><span class="synt-c0c5ce">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/utilities/mixins&#39;
+</span><span class="synt-c0c5ce">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/elements/buttons&#39;
+</span><span class="synt-c0c5ce">@import &#39;~@sebastienrousseau/skeletonic-stylus/src/stylus/components/card&#39;
 </span></pre>
 </code></pre>
 <h2>4. Override the brand colour</h2>
 <p>Skeletonic exposes its design tokens as <strong>CSS custom properties</strong> so you
 can theme it without recompiling Stylus:</p>
 <pre class="highlight language-css"><code class="language-css" data-lang="css"><pre tabindex="0" style="background-color:#0d1117;">
-<span style="color:#8fa1b3;">:</span><span style="color:#b48ead;">root </span><span style="color:#c0c5ce;">{
-</span><span style="color:#c0c5ce;">  --cl-primary:   oklch(</span><span style="color:#d08770;">0.55 0.2 250</span><span style="color:#c0c5ce;">);
-</span><span style="color:#c0c5ce;">  --cl-secondary: oklch(</span><span style="color:#d08770;">0.45 0.15 200</span><span style="color:#c0c5ce;">);
-</span><span style="color:#c0c5ce;">  --cl-tertiary:  </span><span style="color:#96b5b4;">#757c8a</span><span style="color:#c0c5ce;">;
-</span><span style="color:#c0c5ce;">}
+<span class="synt-8fa1b3">:</span><span class="synt-b48ead">root </span><span class="synt-c0c5ce">{
+</span><span class="synt-c0c5ce">  --cl-primary:   oklch(</span><span class="synt-d08770">0.55 0.2 250</span><span class="synt-c0c5ce">);
+</span><span class="synt-c0c5ce">  --cl-secondary: oklch(</span><span class="synt-d08770">0.45 0.15 200</span><span class="synt-c0c5ce">);
+</span><span class="synt-c0c5ce">  --cl-tertiary:  </span><span class="synt-96b5b4">#757c8a</span><span class="synt-c0c5ce">;
+</span><span class="synt-c0c5ce">}
 </span></pre>
 </code></pre>
 <p>That's it — every component that uses the primary colour will follow.</p>
 <h2>5. Verify the install</h2>
 <p>A minimal &quot;did it work?&quot; check:</p>
 <pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span style="color:#c0c5ce;">&lt;!</span><span style="color:#bf616a;">doctype</span><span style="color:#c0c5ce;"> html&gt;
-</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">html </span><span style="color:#d08770;">lang</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">en</span><span style="color:#c0c5ce;">&quot;&gt;
-</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">meta </span><span style="color:#d08770;">charset</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">utf-8</span><span style="color:#c0c5ce;">&quot;&gt;
-</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">link </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">          </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
-</span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">head</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">  &lt;</span><span style="color:#bf616a;">body </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">container padding-3</span><span style="color:#c0c5ce;">&quot;&gt;
-</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;It works.&lt;/</span><span style="color:#bf616a;">h1</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">    &lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">#</span><span style="color:#c0c5ce;">&quot; </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">button primary</span><span style="color:#c0c5ce;">&quot;&gt;Hello, world&lt;/</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">  &lt;/</span><span style="color:#bf616a;">body</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">&lt;/</span><span style="color:#bf616a;">html</span><span style="color:#c0c5ce;">&gt;
+<span class="synt-c0c5ce">&lt;!</span><span class="synt-bf616a">doctype</span><span class="synt-c0c5ce"> html&gt;
+</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">html </span><span class="synt-d08770">lang</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">en</span><span class="synt-c0c5ce">&quot;&gt;
+</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">head</span><span class="synt-c0c5ce">&gt;
+</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">meta </span><span class="synt-d08770">charset</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">utf-8</span><span class="synt-c0c5ce">&quot;&gt;
+</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">link </span><span class="synt-d08770">rel</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">stylesheet</span><span class="synt-c0c5ce">&quot;
+</span><span class="synt-c0c5ce">          </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css</span><span class="synt-c0c5ce">&quot;&gt;
+</span><span class="synt-c0c5ce">  &lt;/</span><span class="synt-bf616a">head</span><span class="synt-c0c5ce">&gt;
+</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">body </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">container padding-3</span><span class="synt-c0c5ce">&quot;&gt;
+</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">h1</span><span class="synt-c0c5ce">&gt;It works.&lt;/</span><span class="synt-bf616a">h1</span><span class="synt-c0c5ce">&gt;
+</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">button primary</span><span class="synt-c0c5ce">&quot;&gt;Hello, world&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;
+</span><span class="synt-c0c5ce">  &lt;/</span><span class="synt-bf616a">body</span><span class="synt-c0c5ce">&gt;
+</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">html</span><span class="synt-c0c5ce">&gt;
 </span></pre>
 </code></pre>
 <p>If the heading is sized fluidly and the button has a blue pill shape,
@@ -465,37 +512,37 @@ you're done.</p>
 minified CSS bundles, source maps, and a full Stylus tree organised by
 category:</p>
 <pre class="highlight language-text"><code class="language-text" data-lang="text"><pre tabindex="0" style="background-color:#0d1117;">
-<span style="color:#c0c5ce;">@sebastienrousseau/skeletonic-stylus@2.0.0
-</span><span style="color:#c0c5ce;">├── CHANGELOG.md
-</span><span style="color:#c0c5ce;">├── LICENSE-APACHE
-</span><span style="color:#c0c5ce;">├── LICENSE-MIT
-</span><span style="color:#c0c5ce;">├── README.md
-</span><span style="color:#c0c5ce;">├── package.json
-</span><span style="color:#c0c5ce;">├── dist/
-</span><span style="color:#c0c5ce;">│   └── css/
-</span><span style="color:#c0c5ce;">│       ├── core/
-</span><span style="color:#c0c5ce;">│       │   ├── skeletonic.css
-</span><span style="color:#c0c5ce;">│       │   ├── skeletonic.css.map
-</span><span style="color:#c0c5ce;">│       │   └── skeletonic.min.css
-</span><span style="color:#c0c5ce;">│       ├── animations/
-</span><span style="color:#c0c5ce;">│       │   ├── skeletonic-animations.css
-</span><span style="color:#c0c5ce;">│       │   └── skeletonic-animations.min.css
-</span><span style="color:#c0c5ce;">│       └── palettes/
-</span><span style="color:#c0c5ce;">│           ├── material/skeletonic-material.min.css
-</span><span style="color:#c0c5ce;">│           ├── tachyons/skeletonic-tachyons.min.css
-</span><span style="color:#c0c5ce;">│           └── websafe/skeletonic-websafe.min.css
-</span><span style="color:#c0c5ce;">└── src/
-</span><span style="color:#c0c5ce;">    └── stylus/
-</span><span style="color:#c0c5ce;">        ├── animations/      bounce, fade, pulse, shake, vanish, zoom…
-</span><span style="color:#c0c5ce;">        ├── base/            reset, helpers
-</span><span style="color:#c0c5ce;">        ├── components/      card, header, navbar, alert
-</span><span style="color:#c0c5ce;">        ├── configurations/  colors, variables
-</span><span style="color:#c0c5ce;">        ├── elements/        button, form, table, link, list, code…
-</span><span style="color:#c0c5ce;">        ├── fonts/           font-face declarations
-</span><span style="color:#c0c5ce;">        ├── layout/          container, grid, media-queries
-</span><span style="color:#c0c5ce;">        ├── palettes/        material, tachyons, websafe
-</span><span style="color:#c0c5ce;">        ├── utilities/       mixins
-</span><span style="color:#c0c5ce;">        └── skeletonic.styl  ← single import that pulls everything
+<span class="synt-c0c5ce">@sebastienrousseau/skeletonic-stylus@2.0.0
+</span><span class="synt-c0c5ce">├── CHANGELOG.md
+</span><span class="synt-c0c5ce">├── LICENSE-APACHE
+</span><span class="synt-c0c5ce">├── LICENSE-MIT
+</span><span class="synt-c0c5ce">├── README.md
+</span><span class="synt-c0c5ce">├── package.json
+</span><span class="synt-c0c5ce">├── dist/
+</span><span class="synt-c0c5ce">│   └── css/
+</span><span class="synt-c0c5ce">│       ├── core/
+</span><span class="synt-c0c5ce">│       │   ├── skeletonic.css
+</span><span class="synt-c0c5ce">│       │   ├── skeletonic.css.map
+</span><span class="synt-c0c5ce">│       │   └── skeletonic.min.css
+</span><span class="synt-c0c5ce">│       ├── animations/
+</span><span class="synt-c0c5ce">│       │   ├── skeletonic-animations.css
+</span><span class="synt-c0c5ce">│       │   └── skeletonic-animations.min.css
+</span><span class="synt-c0c5ce">│       └── palettes/
+</span><span class="synt-c0c5ce">│           ├── material/skeletonic-material.min.css
+</span><span class="synt-c0c5ce">│           ├── tachyons/skeletonic-tachyons.min.css
+</span><span class="synt-c0c5ce">│           └── websafe/skeletonic-websafe.min.css
+</span><span class="synt-c0c5ce">└── src/
+</span><span class="synt-c0c5ce">    └── stylus/
+</span><span class="synt-c0c5ce">        ├── animations/      bounce, fade, pulse, shake, vanish, zoom…
+</span><span class="synt-c0c5ce">        ├── base/            reset, helpers
+</span><span class="synt-c0c5ce">        ├── components/      card, header, navbar, alert
+</span><span class="synt-c0c5ce">        ├── configurations/  colors, variables
+</span><span class="synt-c0c5ce">        ├── elements/        button, form, table, link, list, code…
+</span><span class="synt-c0c5ce">        ├── fonts/           font-face declarations
+</span><span class="synt-c0c5ce">        ├── layout/          container, grid, media-queries
+</span><span class="synt-c0c5ce">        ├── palettes/        material, tachyons, websafe
+</span><span class="synt-c0c5ce">        ├── utilities/       mixins
+</span><span class="synt-c0c5ce">        └── skeletonic.styl  ← single import that pulls everything
 </span></pre>
 </code></pre>
 <p>Every module is independent — pull in only the bundles you need to keep
@@ -511,7 +558,7 @@ work without a single line of JS.</p>
 Yes. v2.0.0 ships AA-conformant contrast, focus-visible rings,
 skip-link helpers, reduced-motion support and dark mode by default.</p>
 <p><strong>What's the gzipped size?</strong>
-42.3 KB minified, <strong>7.9 KB gzip</strong>, <strong>6.8 KB brotli</strong> for
+38.8 KB minified, <strong>7.7 KB gzip</strong>, <strong>6.7 KB brotli</strong> for
 the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip,
 8 KB brotli) are enforced in CI on every commit. See
 <a href="/benchmarks/">the framework benchmark</a> for side-by-side numbers
@@ -553,7 +600,7 @@ needs. Free for commercial and personal use.</p>
       "name": "What's the gzipped size of Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "42.3 KB minified, 7.9 KB gzip, 6.8 KB brotli for the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip, 8 KB brotli) are enforced in CI on every commit."
+        "text": "38.8 KB minified, 7.7 KB gzip, 6.7 KB brotli for the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip, 8 KB brotli) are enforced in CI on every commit."
       }
     },
     {
@@ -625,105 +672,7 @@ needs. Free for commercial and personal use.</p>
 
     <script src="/js/main.js" defer></script>
   
-<!-- SSG Search Widget -->
-<div id="ssg-search-widget">
-<style>
-/* ── Trigger button (always visible) ── */
-#ssg-search-btn{position:fixed;top:16px;right:16px;z-index:9998;display:flex;align-items:center;gap:8px;padding:8px 16px;background:#fff;border:1px solid #d1d5db;border-radius:8px;cursor:pointer;font-family:-apple-system,system-ui,sans-serif;font-size:14px;color:#6b7280;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:border-color .15s,box-shadow .15s}
-#ssg-search-btn:hover{border-color:#9ca3af;box-shadow:0 2px 6px rgba(0,0,0,.12)}
-#ssg-search-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-#ssg-search-btn kbd{font-family:inherit;font-size:11px;padding:2px 6px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:4px;color:#9ca3af;margin-left:4px}
-/* ── Modal overlay ── */
-#ssg-search-overlay{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.5);align-items:flex-start;justify-content:center;padding-top:12vh}
-#ssg-search-overlay.active{display:flex}
-#ssg-search-box{background:#fff;border-radius:12px;width:92%;max-width:640px;box-shadow:0 25px 60px rgba(0,0,0,.3);overflow:hidden;font-family:-apple-system,system-ui,sans-serif}
-#ssg-search-header{display:flex;align-items:center;padding:0 16px;border-bottom:1px solid #e5e7eb}
-#ssg-search-header svg{width:20px;height:20px;stroke:#9ca3af;fill:none;stroke-width:2;flex-shrink:0}
-#ssg-search-input{flex:1;padding:16px 12px;font-size:16px;border:none;outline:none;background:transparent}
-#ssg-search-results{max-height:50vh;overflow-y:auto}
-.ssg-result{display:block;padding:12px 20px;text-decoration:none;color:#111;border-bottom:1px solid #f3f4f6;transition:background .1s}
-.ssg-result:hover,.ssg-result.active{background:#eff6ff}
-.ssg-result-title{font-weight:600;font-size:15px;margin-bottom:3px}
-.ssg-result-snippet{font-size:13px;color:#6b7280;line-height:1.5}
-.ssg-result-snippet mark{background:#fef08a;color:inherit;border-radius:2px;padding:0 2px}
-.ssg-no-results{padding:32px 20px;text-align:center;color:#9ca3af;font-size:14px}
-.ssg-search-footer{display:flex;gap:16px;padding:10px 20px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb;justify-content:flex-end}
-.ssg-search-footer kbd{font-family:inherit;font-size:11px;padding:1px 5px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:3px}
-/* ── Dark mode (media query + data-theme attribute) ── */
-@media(prefers-color-scheme:dark){
-:root:not([data-theme="light"]) #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
-:root:not([data-theme="light"]) #ssg-search-btn:hover{border-color:#4b5563}
-:root:not([data-theme="light"]) #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
-:root:not([data-theme="light"]) #ssg-search-box{background:#1f2937;color:#f9fafb}
-:root:not([data-theme="light"]) #ssg-search-header{border-color:#374151}
-:root:not([data-theme="light"]) #ssg-search-input{color:#f9fafb}
-:root:not([data-theme="light"]) .ssg-result{color:#f9fafb;border-color:#374151}
-:root:not([data-theme="light"]) .ssg-result:hover,:root:not([data-theme="light"]) .ssg-result.active{background:#374151}
-:root:not([data-theme="light"]) .ssg-result-snippet{color:#9ca3af}
-:root:not([data-theme="light"]) .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
-:root:not([data-theme="light"]) .ssg-no-results{color:#6b7280}
-:root:not([data-theme="light"]) .ssg-search-footer{border-color:#374151;color:#6b7280}
-:root:not([data-theme="light"]) .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
-}
-[data-theme="dark"] #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
-[data-theme="dark"] #ssg-search-btn:hover{border-color:#4b5563}
-[data-theme="dark"] #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
-[data-theme="dark"] #ssg-search-box{background:#1f2937;color:#f9fafb}
-[data-theme="dark"] #ssg-search-header{border-color:#374151}
-[data-theme="dark"] #ssg-search-input{color:#f9fafb}
-[data-theme="dark"] .ssg-result{color:#f9fafb;border-color:#374151}
-[data-theme="dark"] .ssg-result:hover,[data-theme="dark"] .ssg-result.active{background:#374151}
-[data-theme="dark"] .ssg-result-snippet{color:#9ca3af}
-[data-theme="dark"] .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
-[data-theme="dark"] .ssg-no-results{color:#6b7280}
-[data-theme="dark"] .ssg-search-footer{border-color:#374151;color:#6b7280}
-[data-theme="dark"] .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
-</style>
-<!-- Search trigger button -->
-<button id="ssg-search-btn" type="button" aria-label="Search">
-<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-<span>Search</span>
-<kbd>K</kbd>
-</button>
-<!-- Search modal -->
-<div id="ssg-search-overlay" role="dialog" aria-label="Search">
-<div id="ssg-search-box">
-<div id="ssg-search-header">
-<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search query"/>
-</div>
-<div id="ssg-search-results"></div>
-<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
-</div>
-</div>
-<script>
-(function(){
-var idx=null,overlay=document.getElementById('ssg-search-overlay'),
-input=document.getElementById('ssg-search-input'),
-results=document.getElementById('ssg-search-results'),
-btn=document.getElementById('ssg-search-btn'),active=-1;
-function load(){if(idx)return Promise.resolve();return fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){idx=d.entries||[]}).catch(function(){idx=[]})}
-function open(){load().then(function(){overlay.classList.add('active');input.value='';results.innerHTML='';input.focus();active=-1})}
-function close(){overlay.classList.remove('active');active=-1}
-function highlight(text,q){if(!q)return esc(text);var re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');return esc(text).replace(re,'<mark>$1</mark>')}
-function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
-function snippet(content,q,len){len=len||150;if(!q)return esc(content.substring(0,len));var i=content.toLowerCase().indexOf(q.toLowerCase());if(i<0)return esc(content.substring(0,len));var s=Math.max(0,i-50),e=Math.min(content.length,i+len);var t=(s>0?'...':'')+content.substring(s,e)+(e<content.length?'...':'');return highlight(t,q)}
-function search(q){if(!idx||!q){results.innerHTML='';return}q=q.trim();if(!q){results.innerHTML='';return}var ql=q.toLowerCase(),hits=[];
-for(var i=0;i<idx.length&&hits.length<20;i++){var e=idx[i],s=0;if(e.title.toLowerCase().indexOf(ql)>=0)s+=10;if(e.content.toLowerCase().indexOf(ql)>=0)s+=5;for(var h=0;h<e.headings.length;h++){if(e.headings[h].toLowerCase().indexOf(ql)>=0){s+=3;break}}if(s>0)hits.push({entry:e,score:s})}
-hits.sort(function(a,b){return b.score-a.score});
-if(!hits.length){results.innerHTML='<div class="ssg-no-results">No results for &ldquo;'+esc(q)+'&rdquo;</div>';return}
-var html='';for(var j=0;j<hits.length;j++){var e=hits[j].entry;html+='<a class="ssg-result" href="'+esc(e.url)+'">'+'<div class="ssg-result-title">'+highlight(e.title,q)+'</div>'+'<div class="ssg-result-snippet">'+snippet(e.content,q)+'</div></a>'}
-results.innerHTML=html;active=-1}
-function nav(dir){var items=results.querySelectorAll('.ssg-result');if(!items.length)return;if(active>=0&&items[active])items[active].classList.remove('active');active+=dir;if(active<0)active=items.length-1;if(active>=items.length)active=0;items[active].classList.add('active');items[active].scrollIntoView({block:'nearest'})}
-btn.addEventListener('click',function(){open()});
-input.addEventListener('input',function(){search(this.value)});
-overlay.addEventListener('click',function(e){if(e.target===overlay)close()});
-document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();if(overlay.classList.contains('active'))close();else open()}
-if(!overlay.classList.contains('active'))return;if(e.key==='Escape')close();if(e.key==='ArrowDown'){e.preventDefault();nav(1)}if(e.key==='ArrowUp'){e.preventDefault();nav(-1)}
-if(e.key==='Enter'){e.preventDefault();var items=results.querySelectorAll('.ssg-result');if(active>=0&&items[active])window.location=items[active].href;else if(items[0])window.location=items[0].href}})
-})();
-</script>
-</div>
+
 
 
 </body>

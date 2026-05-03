@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "language": "es",
   "description": "Que datos recopila skeletonic.io, por que y como desactivarlo.",
   "title": "Privacidad",
-  "keywords": "privacidad, gdpr, cookies, sin rastreo",
-  "language": "es",
+  "layout": "page",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/es/privacidad/",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08"
+  "name": "Skeletonic Stylus",
+  "keywords": "privacidad, gdpr, cookies, sin rastreo"
 }

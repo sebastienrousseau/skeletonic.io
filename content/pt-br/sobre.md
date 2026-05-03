@@ -18,8 +18,8 @@ keywords: "skeletonic, sobre, stylus, css framework, filosofia"
 
 <dl class="stat-strip" aria-label="Project facts">
   <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
   <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
   <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
 </dl>

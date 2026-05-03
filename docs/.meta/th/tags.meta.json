@@ -1,12 +1,12 @@
 {
-  "keywords": "skeletonic, แท็ก, ดัชนี, อนุกรมวิธาน",
-  "description": "เรียกดูเอกสาร Skeletonic Stylus ตามแท็ก",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/th/tags/",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "language": "th",
   "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
-  "title": "แท็ก"
+  "permalink": "https://skeletonic.io/th/tags/",
+  "language": "th",
+  "title": "แท็ก",
+  "description": "เรียกดูเอกสาร Skeletonic Stylus ตามแท็ก",
+  "keywords": "skeletonic, แท็ก, ดัชนี, อนุกรมวิธาน",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "layout": "page"
 }

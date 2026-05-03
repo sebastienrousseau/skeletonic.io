@@ -13,13 +13,33 @@ keywords: "install skeletonic, stylus setup, css cdn, getting started"
 ## Intro
 
 New to Skeletonic Stylus? In **v2.0.0** the core stylesheet is
-**7.9&nbsp;KB gzip / 6.8&nbsp;KB brotli** for the full RTL-ready,
+**7.7&nbsp;KB gzip / 6.7&nbsp;KB brotli** for the full RTL-ready,
 WCAG&nbsp;2.2&nbsp;AA bundle — measured against the canonical CDN file,
 not approximated. It integrates into any web app from a single
 `<link>` — no JavaScript framework required, no build step needed if
 you load it from a CDN.
 
 Ready to install? Every path covered below — pick one.
+
+## 0. Zero-to-running in 30 seconds (`npx`)
+
+The fastest path. No package install, no build step:
+
+```bash
+npx @sebastienrousseau/skeletonic-stylus init
+```
+
+Scaffolds `styles/index.styl` + a working `index.html` in the current
+directory, both pointing at the CDN bundle. Open `index.html` and
+you're running.
+
+```bash
+# Add a single component's source to your project tree:
+npx @sebastienrousseau/skeletonic-stylus add card
+
+# List everything available:
+npx @sebastienrousseau/skeletonic-stylus list
+```
 
 ## 1. Download and install
 
@@ -97,9 +117,9 @@ The library ships several pre-built bundles under
 
 | File | Purpose | Min raw / gzip / brotli |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities, RTL-ready | 42.3 KB / 7.9 KB / 6.8 KB |
-| `animations/skeletonic-animations.min.css` | 56 keyframes, gated behind `prefers-reduced-motion` | 217.9 KB / 6.8 KB / — |
-| `palettes/material/skeletonic-material.min.css` | Material 19×14 hue/shade utilities | ≈17.9 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities, RTL-ready | 38.8 KB / 7.7 KB / 6.7 KB |
+| `animations/skeletonic-animations.min.css` | 56 keyframes, gated behind `prefers-reduced-motion` | 217.7 KB / 6.7 KB / — |
+| `palettes/material/skeletonic-material.min.css` | Material 19×14 hue/shade utilities | ≈17.7 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons utility palette | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | ~140 CSS named-color utilities | ≈3.5 KB |
 
@@ -219,7 +239,7 @@ Yes. v2.0.0 ships AA-conformant contrast, focus-visible rings,
 skip-link helpers, reduced-motion support and dark mode by default.
 
 **What's the gzipped size?**
-42.3&nbsp;KB minified, **7.9&nbsp;KB gzip**, **6.8&nbsp;KB brotli** for
+38.8&nbsp;KB minified, **7.7&nbsp;KB gzip**, **6.7&nbsp;KB brotli** for
 the full RTL-ready core stylesheet. Compressed budgets (10&nbsp;KB gzip,
 8&nbsp;KB brotli) are enforced in CI on every commit. See
 [the framework benchmark](/benchmarks/) for side-by-side numbers
@@ -263,7 +283,7 @@ needs. Free for commercial and personal use.
       "name": "What's the gzipped size of Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "42.3 KB minified, 7.9 KB gzip, 6.8 KB brotli for the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip, 8 KB brotli) are enforced in CI on every commit."
+        "text": "38.8 KB minified, 7.7 KB gzip, 6.7 KB brotli for the full RTL-ready core stylesheet. Compressed budgets (10 KB gzip, 8 KB brotli) are enforced in CI on every commit."
       }
     },
     {

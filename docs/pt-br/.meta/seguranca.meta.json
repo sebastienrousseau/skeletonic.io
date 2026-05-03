@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "description": "Como o Skeletonic Stylus v2.0.0 protege seu pipeline de build, assina releases e inclui um SBOM.",
-  "author": "Sebastien Rousseau",
-  "keywords": "seguranca css, sbom, cyclonedx, procedencia npm, openssf scorecard, cadeia de suprimentos",
-  "title": "Seguranca &amp; cadeia de suprimentos",
-  "language": "pt-br",
-  "layout": "page",
-  "permalink": "https://skeletonic.io/pt-br/seguranca/",
   "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08"
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "title": "Seguranca &amp; cadeia de suprimentos",
+  "date": "2026-04-08",
+  "keywords": "seguranca css, sbom, cyclonedx, procedencia npm, openssf scorecard, cadeia de suprimentos",
+  "permalink": "https://skeletonic.io/pt-br/seguranca/",
+  "description": "Como o Skeletonic Stylus v2.0.0 protege seu pipeline de build, assina releases e inclui um SBOM.",
+  "language": "pt-br",
+  "author": "Sebastien Rousseau"
 }

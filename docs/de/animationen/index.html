@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="https://schema.org/WebSite">
+<html lang="de" itemscope itemtype="https://schema.org/WebSite">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Skeletonic Stylus</title>
+    <title>Animationen</title>
 
     
     
@@ -31,10 +31,10 @@
          v0.0.34 and don't change between builds — if the SSG ever
          changes them we'll see the CSP error in the browser console
          and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self' https://cdn.jsdelivr.net; form-action 'self' https://formspree.io https://codepen.io; base-uri 'self'">
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
 
-    <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
+    <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;de&#x2F;">
     <link rel="preload" href="/css/skeletonic.min.css" as="style">
     <link rel="preload" href="/css/chrome.css" as="style"><link rel="icon" type="image/svg+xml" href="/images/logo.svg">
     <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
@@ -71,19 +71,18 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Skeletonic Stylus">
-    <meta property="og:title" content="Skeletonic Stylus">
+    <meta property="og:title" content="Animationen">
     
-    <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
+    <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;de&#x2F;">
     <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
     <meta property="og:image:type" content="image/svg+xml">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Skeletonic Stylus — accessible, modular CSS library">
-    <meta property="og:locale" content="en">
+    <meta property="og:locale" content="de">
     <meta property="og:locale:alternate" content="ar">
     <meta property="og:locale:alternate" content="bn">
     <meta property="og:locale:alternate" content="cs">
-    <meta property="og:locale:alternate" content="de">
     <meta property="og:locale:alternate" content="es">
     <meta property="og:locale:alternate" content="fil">
     <meta property="og:locale:alternate" content="fr">
@@ -107,12 +106,13 @@
     <meta property="og:locale:alternate" content="yo">
     <meta property="og:locale:alternate" content="zh_hans">
     <meta property="og:locale:alternate" content="zh_hant">
+    <meta property="og:locale:alternate" content="en">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@wwdseb">
     <meta name="twitter:creator" content="@wwdseb">
-    <meta name="twitter:title" content="Skeletonic Stylus">
+    <meta name="twitter:title" content="Animationen">
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
@@ -121,7 +121,7 @@
          of static/css/critical.css so above-the-fold paints in the
          same frame as the HTML, without waiting for the full
          chrome + skeletonic bundles. -->
-    <!-- @@CRITICAL_CSS@@ -->
+    <style>:root{color-scheme:light dark;--c-bg:#fff;--c-text:#1d1d1f;--c-heading:#000;--c-secondary:#6e6e73;--c-accent:#0066cc;--c-border:#d2d2d7;--c-nav-bg:rgba(255, 255, 255, 0.8);--c-nav-text:#1d1d1f;--c-nav-muted:#57575b;--c-hero-grad-1:#f5f5f7;--c-hero-grad-2:#fff;--c-hero-grad-3:#fafafa;--fs-base:clamp(1rem, 0.95rem + 0.25vw, 1.125rem);--fs-h1:clamp(2.5rem, 1.5rem + 5vw, 4.5rem);--fs-h2:clamp(2rem, 1.25rem + 3.75vw, 3.5rem);--fs-h3:clamp(1.5rem, 1.125rem + 1.875vw, 2.25rem)}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--c-bg:#000;--c-text:#f5f5f7;--c-heading:#fff;--c-secondary:#a1a1aa;--c-accent:#2997ff;--c-border:#424245;--c-nav-bg:rgba(0, 0, 0, 0.8);--c-nav-text:#f5f5f7;--c-nav-muted:#a1a1aa;--c-hero-grad-1:#1d1d1f;--c-hero-grad-2:#000;--c-hero-grad-3:#0a0a0a}}*{box-sizing:border-box;margin:0}html{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}body{background:var(--c-bg);color:var(--c-text);font-size:var(--fs-base);line-height:1.47;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.skip-link{position:absolute;inset-inline-start:.5rem;top:-3rem;padding:.6rem 1rem;background:var(--c-accent);color:#fff;text-decoration:none;border-radius:0 0 .25rem .25rem;z-index:1100}.skip-link:focus{top:0}.site-nav{background:var(--c-nav-bg);border-bottom:1px solid var(--c-border);position:sticky;top:0;z-index:1000;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:4rem;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-weight:600;font-size:1.25rem;color:var(--c-heading);letter-spacing:-.02em;text-decoration:none}.nav-center{display:flex;gap:1.5rem;list-style:none;padding:0;margin:0}.nav-center a{color:var(--c-nav-muted);font-size:.875rem;font-weight:500;text-decoration:none}.nav-right{display:flex;align-items:center;gap:1rem}.site-hero{text-align:center;padding:5rem 1.5rem 3rem;background:linear-gradient(180deg,var(--c-hero-grad-1),var(--c-hero-grad-2) 50%,var(--c-hero-grad-3))}.site-hero h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em;color:var(--c-heading);line-height:1.1}.site-hero .hero-title{margin:0 auto .75rem;display:block;width:clamp(120px,20vw,208px);aspect-ratio:1/1;background:url(https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg)center/contain no-repeat;text-indent:-9999px;white-space:nowrap;overflow:hidden;font-size:0;color:transparent}.site-hero p{margin-top:.75rem;max-width:40rem;margin-inline:auto}.hero-logo{width:4.5rem;height:auto;margin:0 auto 1rem}.hero-cta{display:inline-block;padding:.75rem 1.5rem;margin-top:1.5rem;background:var(--c-accent);color:#fff;font-weight:600;border-radius:9999px;text-decoration:none}.site-main{max-width:70rem;margin:0 auto;padding:3rem 1.5rem 5rem}.site-main h1,.site-main h2,.site-main h3,.site-main h4{font-family:inherit;line-height:1.1;color:var(--c-heading);margin:0}.site-main h4{letter-spacing:-.022em}.site-main h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em}.site-main h2,.site-main h3{font-size:var(--fs-h2);font-weight:600;letter-spacing:-.03em}.site-main h3{font-size:var(--fs-h3);letter-spacing:-.02em}.site-hero p,.site-main p{font-size:var(--fs-base);line-height:1.5;color:var(--c-secondary)}.site-main a:not([class*=button]):not([class*=btn]):not(.badge):not([class*=link-]){color:var(--c-accent);text-decoration:underline;text-underline-offset:.15em}</style>
 
     <!-- Skeletonic Stylus v2.1.0 + chrome — render-blocking, but
          the inline critical CSS above already painted above-the-fold,
@@ -132,6 +132,7 @@
          the layout shifts. Keep it render-blocking and rely on the
          critical-CSS head budget for sub-1s FCP. -->
     <link rel="stylesheet" href="/css/skeletonic.min.css">
+    <link rel="stylesheet" href="/css/skeletonic-animations.min.css">
     
     
     <link rel="stylesheet" href="/css/chrome.css">
@@ -150,8 +151,8 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Home",
-          "item": "https://skeletonic.io/"
+          "name": "Startseite",
+          "item": "https://skeletonic.io/de/"
         }
       ]
     }
@@ -163,7 +164,7 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Skeletonic Stylus",
+      "name": "Animationen",
       "url": "https://skeletonic.io"
     }
     </script>
@@ -187,61 +188,87 @@
     </script>
 
     
-  <link rel="stylesheet" href="/highlight.87708af9.css" integrity="sha256-87708af92ac873a887708af92ac875bd" crossorigin="anonymous">
+  <link rel="stylesheet" href="/highlight.87708af9.css">
 <meta name="description" content="Das Animationsmodul wird als separate, optionale Datei ausgeliefert, damit das Kern-Stylesheet unter 8 KB gzipped bleibt. &amp;lt; link rel =&amp;quot; stylesheet">
 <meta property="og:description" content="Das Animationsmodul wird als separate, optionale Datei ausgeliefert, damit das Kern-Stylesheet unter 8 KB gzipped bleibt. &amp;lt; link rel =&amp;quot; stylesheet">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
+<style id="synt-palette">.synt-c0c5ce{color:#c0c5ce;background-color:#0d1117}
+.synt-bf616a{color:#bf616a;background-color:#0d1117}
+.synt-d08770{color:#d08770;background-color:#0d1117}
+.synt-a3be8c{color:#a3be8c;background-color:#0d1117}</style><link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
-    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#main" class="skip-link">Zum Inhalt springen</a>
 
-    <nav aria-label="Skeletonic Stylus home" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <nav aria-label="Skeletonic Stylus Startseite" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
       <div class="nav-inner">
-        <a class="nav-brand" href="/" itemprop="url" aria-label="Skeletonic Stylus home">
+        <a class="nav-brand" href="&#x2F;de/" itemprop="url" aria-label="Skeletonic Stylus Startseite">
           <span itemprop="name">Skeletonic Stylus</span>
         </a>
         <ul class="nav-center">
-          <li><a href="/" class="active" aria-current="page">Home</a></li>
-          <li><a href="/getting-started/">Docs</a></li>
-          <li><a href="/components/">Components</a></li>
+          <li><a href="&#x2F;de/" class="active" aria-current="page">Startseite</a></li>
+          <li><a href="&#x2F;de/erste-schritte/">Dokumentation</a></li>
+          <li><a href="&#x2F;de/komponenten/">Komponenten</a></li>
           <li class="dropdown" data-dropdown>
-            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">Resources</button>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">Ressourcen</button>
             <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-              <li><a class="dropdown-item" href="/palettes/">Palettes</a></li>
-              <li><a class="dropdown-item" href="/animations/">Animations</a></li>
-              <li><a class="dropdown-item" href="/accessibility/">Accessibility</a></li>
+              <li><a class="dropdown-item" href="&#x2F;de/paletten/">Paletten</a></li>
+              <li><a class="dropdown-item" href="&#x2F;de/animationen/">Animationen</a></li>
+              <li><a class="dropdown-item" href="&#x2F;de/barrierefreiheit/">Barrierefreiheit</a></li>
             </ul>
           </li>
         </ul>
         <div class="nav-right">
-          <button aria-label="Search" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
+          <button aria-label="Suchen" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
             <svg viewBox="0 0 24 24" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="16" aria-hidden="true">
               <circle cx="11" cy="11" r="8"></circle>
               <path d="m21 21-4.35-4.35"></path>
             </svg>
             <span class="search-shortcut" aria-hidden="true"></span>
           </button>
-          <button aria-label="Switch to dark mode" class="theme-toggle" id="themeToggle" type="button" data-label-dark="Dark" data-label-light="Light" data-aria-dark="Switch to dark mode" data-aria-light="Switch to light mode">
+          <div class="palette-switcher" id="paletteSwitcher">
+            <button type="button" class="theme-toggle" id="paletteToggle" aria-label="Choose colour palette" aria-expanded="false" aria-haspopup="true" aria-controls="paletteMenu">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 2 2 0 0 0 2-2 2 2 0 0 1 2-2h2a4 4 0 0 0 4-4A10 10 0 0 0 12 2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+            </button>
+            <div class="palette-menu" id="paletteMenu" role="menu" hidden>
+              <button type="button" class="palette-swatch is-active" role="menuitemradio" aria-checked="true" data-palette="default" style="--swatch:#0066cc">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Default</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="ember" style="--swatch:#ed6300">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Ember</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="iris" style="--swatch:#8668ff">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Iris</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="lagoon" style="--swatch:#00a1b3">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Lagoon</span>
+              </button>
+            </div>
+          </div>
+          <button aria-label="Zum dunklen Modus wechseln" class="theme-toggle" id="themeToggle" type="button" data-label-dark="Dunkel" data-label-light="Hell" data-aria-dark="Zum dunklen Modus wechseln" data-aria-light="Zum hellen Modus wechseln">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
               <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
             </svg>
             <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light">
               <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
             </svg>
-            <span class="theme-label">Dark</span>
+            <span class="theme-label">Dunkel</span>
           </button>
           <div class="lang-switcher">
-            <button type="button" aria-label="EN, Change language" aria-expanded="false">
-              <span>🌐</span> EN
+            <button type="button" aria-label="DE, Sprache wechseln" aria-expanded="false">
+              <span>🌐</span> DE
             </button>
             <div class="lang-menu">
               <div class="lang-menu-grid">
-              <a class="active" href="&#x2F;">🇬🇧 English</a>
+              <a href="&#x2F;">🇬🇧 English</a>
               <a href="/fr&#x2F;">🇫🇷 Français</a>
               <a href="/ar&#x2F;">🇸🇦 العربية</a>
               <a href="/bn&#x2F;">🇧🇩 বাংলা</a>
               <a href="/cs&#x2F;">🇨🇿 Čeština</a>
-              <a href="/de&#x2F;">🇩🇪 Deutsch</a>
+              <a class="active" href="/de&#x2F;">🇩🇪 Deutsch</a>
               <a href="/es&#x2F;">🇪🇸 Español</a>
               <a href="/fil&#x2F;">🇵🇭 Filipino</a>
               <a href="/ha&#x2F;">🇳🇬 Hausa</a>
@@ -267,9 +294,9 @@
               </div>
             </div>
           </div>
-          <a class="nav-cta" href="/contact/">Contact</a>
+          <a class="nav-cta" href="&#x2F;de/kontakt/">Kontakt</a>
         </div>
-        <button aria-label="Toggle menu" class="nav-hamburger" id="navToggle" type="button">
+        <button aria-label="Menü ein-&#x2F;ausblenden" class="nav-hamburger" id="navToggle" type="button">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
           </svg>
@@ -289,10 +316,10 @@
         
 <p>Das <strong>Animationsmodul</strong> wird als separate, optionale Datei ausgeliefert,
 damit das Kern-Stylesheet unter 8 KB gzipped bleibt.</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">link
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">rel</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">stylesheet</span><span style="color:#c0c5ce;">&quot;
-</span><span style="color:#c0c5ce;">  </span><span style="color:#d08770;">href</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">/css/skeletonic-animations.min.css</span><span style="color:#c0c5ce;">&quot;&gt;
+<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
+<span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">link
+</span><span class="synt-c0c5ce">  </span><span class="synt-d08770">rel</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">stylesheet</span><span class="synt-c0c5ce">&quot;
+</span><span class="synt-c0c5ce">  </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">/css/skeletonic-animations.min.css</span><span class="synt-c0c5ce">&quot;&gt;
 </span></pre>
 </code></pre>
 <p>Jede Animationsklasse ist in v2.0.0 in einen
@@ -300,294 +327,286 @@ damit das Kern-Stylesheet unter 8 KB gzipped bleibt.</p>
 Das bedeutet: Hat ein Nutzer auf Betriebssystemebene „Bewegung
 reduzieren&quot; aktiviert, wird keine Animation abgespielt — das Layout
 funktioniert weiterhin, nur die Bewegung wird unterdrückt.</p>
-<style>
-  /*
-   * Page-local demo styles. The animation classes shipped in
-   * skeletonic-animations.min.css set animation-name only, so the demo
-   * provides the missing duration / iteration-count / fill-mode here so
-   * the keyframes are visible. Each demo target is a solid colour disc
-   * so the motion is obvious against the page background.
-   */
-  .anim-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
-    gap:1.25rem;
-    margin:1.5rem 0;
-  }
-  .anim-card{
-    text-align:center;
-  }
-  .anim-card h3{
-    margin:0 0 .75rem;
-    font-size:1rem;
-    font-weight:600;
-    letter-spacing:.01em;
-    color:var(--c-heading,#0a0a0a);
-  }
-  .anim-stage{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:96px;
-    margin-bottom:.75rem;
-  }
-  .anim-target{
-    display:inline-block;
-    width:64px;
-    height:64px;
-    border-radius:50%;
-    background:hsl(210,100%,42%);
-    /* the missing properties live here so v2.0.0's animation classes
-       actually run when added to the target */
-    animation-duration:1.2s;
-    animation-iteration-count:1;
-    animation-fill-mode:both;
-    animation-timing-function:ease-in-out;
-  }
-  .anim-card button{
-    margin-top:.25rem;
-  }
-  @media (prefers-reduced-motion:reduce){
-    .anim-target{animation:none !important}
-    .anim-note-rm{display:block;color:var(--c-secondary,#52525b);font-style:italic;margin-top:1rem}
-  }
-  .anim-note-rm{display:none}
-</style>
-<hr class="hr-text" data-content="Demos">
-<h2>Demos</h2>
-<p>Klicken Sie auf <strong>Abspielen</strong> bei einer beliebigen Karte, um die Animation
-auf dem Kreis erneut abzuspielen. Die Animationsklassen selbst entsprechen
-exakt dem, was in <code>skeletonic-animations.min.css</code> ausgeliefert wird — nur
-<code>animation-name</code> wird von der Bibliothek gesetzt, sodass der obige
-<code>&lt;style&gt;</code>-Block die fehlenden Eigenschaften <code>animation-duration</code> /
-<code>animation-iteration-count</code> / <code>animation-fill-mode</code> ergänzt, damit die
-Keyframes sichtbar werden.</p>
-<p class="anim-note-rm">
-  „Bewegung reduzieren" ist in Ihrem Betriebssystem aktiviert — die
-  Elemente unten bleiben daher still. Das ist das korrekte
-  Barrierefreiheitsverhalten von v2.0.0.
+<noscript>
+<p class="anim-banner anim-banner--warn">
+  <strong>JavaScript is disabled.</strong> The animation gallery needs JS
+  for the hover-replay and copy-class interactions, but every animation
+  itself is pure CSS — pulling
+  <code>skeletonic-animations.min.css</code> into your page and applying
+  any class on this page works without any script.
 </p>
-<div class="anim-grid">
-  <div class="anim-card">
-    <h3>bounce</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="bounce"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'bounce')">Abspielen</button>
+</noscript>
+<aside id="anim-rm-banner" class="anim-banner anim-banner--info" hidden>
+  <strong>Your OS has Reduce Motion enabled.</strong>
+  Skeletonic correctly honours that — every keyframe is gated behind
+  <code>prefers-reduced-motion: no-preference</code>, so the targets below
+  will stay still. To preview the demos:
+  <span class="anim-banner-actions">
+    <button type="button" class="button primary" data-anim-toolbar="force">
+      Show animations anyway
+    </button>
+    or open DevTools → <em>Rendering</em> → <em>Emulate CSS media feature
+    prefers-reduced-motion</em> → <em>no-preference</em>.
+  </span>
+</aside>
+<section class="anim-toolbar" aria-label="Animation gallery filters">
+  <label class="anim-search-wrap">
+    <span class="visually-hidden">Search animations</span>
+    <input
+      type="search"
+      id="anim-search"
+      placeholder="Search 45 animations…"
+      autocomplete="off"
+      spellcheck="false"
+      aria-label="Filter animations by name">
+  </label>
+  <div class="anim-chips" role="tablist" aria-label="Filter by family">
+    <button type="button" class="anim-chip is-active" data-anim-filter="all" role="tab" aria-selected="true">All <span class="anim-chip-count">45</span></button>
+    <button type="button" class="anim-chip" data-anim-filter="distracting" role="tab" aria-selected="false">Distracting <span class="anim-chip-count">12</span></button>
+    <button type="button" class="anim-chip" data-anim-filter="fading" role="tab" aria-selected="false">Fading <span class="anim-chip-count">10</span></button>
+    <button type="button" class="anim-chip" data-anim-filter="flipping" role="tab" aria-selected="false">Flipping <span class="anim-chip-count">5</span></button>
+    <button type="button" class="anim-chip" data-anim-filter="sliding" role="tab" aria-selected="false">Sliding <span class="anim-chip-count">8</span></button>
+    <button type="button" class="anim-chip" data-anim-filter="rotating" role="tab" aria-selected="false">Rotating <span class="anim-chip-count">2</span></button>
+    <button type="button" class="anim-chip" data-anim-filter="zooming" role="tab" aria-selected="false">Zooming <span class="anim-chip-count">2</span></button>
+    <button type="button" class="anim-chip" data-anim-filter="rolling" role="tab" aria-selected="false">Rolling <span class="anim-chip-count">2</span></button>
+    <button type="button" class="anim-chip" data-anim-filter="pop" role="tab" aria-selected="false">Pop <span class="anim-chip-count">2</span></button>
+    <button type="button" class="anim-chip" data-anim-filter="vanishing" role="tab" aria-selected="false">Vanishing <span class="anim-chip-count">2</span></button>
   </div>
-  <div class="anim-card">
-    <h3>pulse</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="pulse"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'pulse')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>shake</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="shake"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'shake')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>wobble</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="wobble"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'wobble')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>flash</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="flash"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'flash')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>heartbeat</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="heartbeat"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'heartbeat')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>jelly</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="jelly"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'jelly')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>rubberBand</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="rubberBand"></span>
-    </div>
-    <button type="button" class="button primary" onclick="replayAnim(this,'rubberBand')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>fadeIn</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="fadeIn"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'fadeIn')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>fadeInDown</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="fadeInDown"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'fadeInDown')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>fadeInUp</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="fadeInUp"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'fadeInUp')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>popIn</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="popIn"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'popIn')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>rollIn</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="rollIn"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'rollIn')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>flipInHorizontal</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="flipInHorizontal"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'flipInHorizontal')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>zoomIn</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="zoomIn"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'zoomIn')">Abspielen</button>
-  </div>
-  <div class="anim-card">
-    <h3>vanishIn</h3>
-    <div class="anim-stage">
-      <span class="anim-target" data-anim="vanishIn"></span>
-    </div>
-    <button type="button" class="button secondary" onclick="replayAnim(this,'vanishIn')">Abspielen</button>
-  </div>
+  <p class="anim-empty" id="anim-empty" hidden>
+    No animations match that search.
+  </p>
+</section>
+<section class="anim-grid" id="anim-grid" aria-label="Animation gallery">
+  <article class="anim-card" data-family="distracting" data-name="bounce" tabindex="0" aria-label="Copy class .bounce">
+    <span class="anim-stage"><span class="anim-target" data-anim="bounce"></span></span>
+    <span class="anim-name">bounce</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="pulse" tabindex="0" aria-label="Copy class .pulse">
+    <span class="anim-stage"><span class="anim-target" data-anim="pulse"></span></span>
+    <span class="anim-name">pulse</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="shake" tabindex="0" aria-label="Copy class .shake">
+    <span class="anim-stage"><span class="anim-target" data-anim="shake"></span></span>
+    <span class="anim-name">shake</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="wobble" tabindex="0" aria-label="Copy class .wobble">
+    <span class="anim-stage"><span class="anim-target" data-anim="wobble"></span></span>
+    <span class="anim-name">wobble</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="flash" tabindex="0" aria-label="Copy class .flash">
+    <span class="anim-stage"><span class="anim-target" data-anim="flash"></span></span>
+    <span class="anim-name">flash</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="heartbeat" tabindex="0" aria-label="Copy class .heartbeat">
+    <span class="anim-stage"><span class="anim-target" data-anim="heartbeat"></span></span>
+    <span class="anim-name">heartbeat</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="jelly" tabindex="0" aria-label="Copy class .jelly">
+    <span class="anim-stage"><span class="anim-target" data-anim="jelly"></span></span>
+    <span class="anim-name">jelly</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="rubber" tabindex="0" aria-label="Copy class .rubber">
+    <span class="anim-stage"><span class="anim-target" data-anim="rubber"></span></span>
+    <span class="anim-name">rubber</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="swing" tabindex="0" aria-label="Copy class .swing">
+    <span class="anim-stage"><span class="anim-target" data-anim="swing"></span></span>
+    <span class="anim-name">swing</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="tada" tabindex="0" aria-label="Copy class .tada">
+    <span class="anim-stage"><span class="anim-target" data-anim="tada"></span></span>
+    <span class="anim-name">tada</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="chameleonbackground" tabindex="0" aria-label="Copy class .chameleonbackground">
+    <span class="anim-stage"><span class="anim-target" data-anim="chameleonbackground"></span></span>
+    <span class="anim-name">chameleonbackground</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="distracting" data-name="chameleontext" tabindex="0" aria-label="Copy class .chameleontext">
+    <span class="anim-stage"><span class="anim-target anim-target--text" data-anim="chameleontext">Aa</span></span>
+    <span class="anim-name">chameleontext</span>
+    <span class="anim-fam">Distracting</span>
+  </article>
+  <article class="anim-card" data-family="fading" data-name="fadeIn" tabindex="0" aria-label="Copy class .fadeIn">
+    <span class="anim-stage"><span class="anim-target" data-anim="fadeIn"></span></span>
+    <span class="anim-name">fadeIn</span>
+    <span class="anim-fam">Fading</span>
+  </article>
+  <article class="anim-card" data-family="fading" data-name="fadeInDown" tabindex="0" aria-label="Copy class .fadeInDown">
+    <span class="anim-stage"><span class="anim-target" data-anim="fadeInDown"></span></span>
+    <span class="anim-name">fadeInDown</span>
+    <span class="anim-fam">Fading</span>
+  </article>
+  <article class="anim-card" data-family="fading" data-name="fadeInUp" tabindex="0" aria-label="Copy class .fadeInUp">
+    <span class="anim-stage"><span class="anim-target" data-anim="fadeInUp"></span></span>
+    <span class="anim-name">fadeInUp</span>
+    <span class="anim-fam">Fading</span>
+  </article>
+  <article class="anim-card" data-family="fading" data-name="fadeInLeft" tabindex="0" aria-label="Copy class .fadeInLeft">
+    <span class="anim-stage"><span class="anim-target" data-anim="fadeInLeft"></span></span>
+    <span class="anim-name">fadeInLeft</span>
+    <span class="anim-fam">Fading</span>
+  </article>
+  <article class="anim-card" data-family="fading" data-name="fadeInRight" tabindex="0" aria-label="Copy class .fadeInRight">
+    <span class="anim-stage"><span class="anim-target" data-anim="fadeInRight"></span></span>
+    <span class="anim-name">fadeInRight</span>
+    <span class="anim-fam">Fading</span>
+  </article>
+  <article class="anim-card" data-family="fading" data-name="fadeOut" tabindex="0" aria-label="Copy class .fadeOut">
+    <span class="anim-stage"><span class="anim-target" data-anim="fadeOut"></span></span>
+    <span class="anim-name">fadeOut</span>
+    <span class="anim-fam">Fading</span>
+  </article>
+  <article class="anim-card" data-family="fading" data-name="fadeOutDown" tabindex="0" aria-label="Copy class .fadeOutDown">
+    <span class="anim-stage"><span class="anim-target" data-anim="fadeOutDown"></span></span>
+    <span class="anim-name">fadeOutDown</span>
+    <span class="anim-fam">Fading</span>
+  </article>
+  <article class="anim-card" data-family="fading" data-name="fadeOutUp" tabindex="0" aria-label="Copy class .fadeOutUp">
+    <span class="anim-stage"><span class="anim-target" data-anim="fadeOutUp"></span></span>
+    <span class="anim-name">fadeOutUp</span>
+    <span class="anim-fam">Fading</span>
+  </article>
+  <article class="anim-card" data-family="fading" data-name="fadeOutLeft" tabindex="0" aria-label="Copy class .fadeOutLeft">
+    <span class="anim-stage"><span class="anim-target" data-anim="fadeOutLeft"></span></span>
+    <span class="anim-name">fadeOutLeft</span>
+    <span class="anim-fam">Fading</span>
+  </article>
+  <article class="anim-card" data-family="fading" data-name="fadeOutRight" tabindex="0" aria-label="Copy class .fadeOutRight">
+    <span class="anim-stage"><span class="anim-target" data-anim="fadeOutRight"></span></span>
+    <span class="anim-name">fadeOutRight</span>
+    <span class="anim-fam">Fading</span>
+  </article>
+  <article class="anim-card" data-family="flipping" data-name="flip" tabindex="0" aria-label="Copy class .flip">
+    <span class="anim-stage"><span class="anim-target" data-anim="flip"></span></span>
+    <span class="anim-name">flip</span>
+    <span class="anim-fam">Flipping</span>
+  </article>
+  <article class="anim-card" data-family="flipping" data-name="flipInHorizontal" tabindex="0" aria-label="Copy class .flipInHorizontal">
+    <span class="anim-stage"><span class="anim-target" data-anim="flipInHorizontal"></span></span>
+    <span class="anim-name">flipInHorizontal</span>
+    <span class="anim-fam">Flipping</span>
+  </article>
+  <article class="anim-card" data-family="flipping" data-name="flipInVertical" tabindex="0" aria-label="Copy class .flipInVertical">
+    <span class="anim-stage"><span class="anim-target" data-anim="flipInVertical"></span></span>
+    <span class="anim-name">flipInVertical</span>
+    <span class="anim-fam">Flipping</span>
+  </article>
+  <article class="anim-card" data-family="flipping" data-name="flipOutHorizontal" tabindex="0" aria-label="Copy class .flipOutHorizontal">
+    <span class="anim-stage"><span class="anim-target" data-anim="flipOutHorizontal"></span></span>
+    <span class="anim-name">flipOutHorizontal</span>
+    <span class="anim-fam">Flipping</span>
+  </article>
+  <article class="anim-card" data-family="flipping" data-name="flipOutVertical" tabindex="0" aria-label="Copy class .flipOutVertical">
+    <span class="anim-stage"><span class="anim-target" data-anim="flipOutVertical"></span></span>
+    <span class="anim-name">flipOutVertical</span>
+    <span class="anim-fam">Flipping</span>
+  </article>
+  <article class="anim-card" data-family="sliding" data-name="slideInDown" tabindex="0" aria-label="Copy class .slideInDown">
+    <span class="anim-stage"><span class="anim-target" data-anim="slideInDown"></span></span>
+    <span class="anim-name">slideInDown</span>
+    <span class="anim-fam">Sliding</span>
+  </article>
+  <article class="anim-card" data-family="sliding" data-name="slideInUp" tabindex="0" aria-label="Copy class .slideInUp">
+    <span class="anim-stage"><span class="anim-target" data-anim="slideInUp"></span></span>
+    <span class="anim-name">slideInUp</span>
+    <span class="anim-fam">Sliding</span>
+  </article>
+  <article class="anim-card" data-family="sliding" data-name="slideInLeft" tabindex="0" aria-label="Copy class .slideInLeft">
+    <span class="anim-stage"><span class="anim-target" data-anim="slideInLeft"></span></span>
+    <span class="anim-name">slideInLeft</span>
+    <span class="anim-fam">Sliding</span>
+  </article>
+  <article class="anim-card" data-family="sliding" data-name="slideInRight" tabindex="0" aria-label="Copy class .slideInRight">
+    <span class="anim-stage"><span class="anim-target" data-anim="slideInRight"></span></span>
+    <span class="anim-name">slideInRight</span>
+    <span class="anim-fam">Sliding</span>
+  </article>
+  <article class="anim-card" data-family="sliding" data-name="slideOutDown" tabindex="0" aria-label="Copy class .slideOutDown">
+    <span class="anim-stage"><span class="anim-target" data-anim="slideOutDown"></span></span>
+    <span class="anim-name">slideOutDown</span>
+    <span class="anim-fam">Sliding</span>
+  </article>
+  <article class="anim-card" data-family="sliding" data-name="slideOutUp" tabindex="0" aria-label="Copy class .slideOutUp">
+    <span class="anim-stage"><span class="anim-target" data-anim="slideOutUp"></span></span>
+    <span class="anim-name">slideOutUp</span>
+    <span class="anim-fam">Sliding</span>
+  </article>
+  <article class="anim-card" data-family="sliding" data-name="slideOutLeft" tabindex="0" aria-label="Copy class .slideOutLeft">
+    <span class="anim-stage"><span class="anim-target" data-anim="slideOutLeft"></span></span>
+    <span class="anim-name">slideOutLeft</span>
+    <span class="anim-fam">Sliding</span>
+  </article>
+  <article class="anim-card" data-family="sliding" data-name="slideOutRight" tabindex="0" aria-label="Copy class .slideOutRight">
+    <span class="anim-stage"><span class="anim-target" data-anim="slideOutRight"></span></span>
+    <span class="anim-name">slideOutRight</span>
+    <span class="anim-fam">Sliding</span>
+  </article>
+  <article class="anim-card" data-family="rotating" data-name="spinLeft" tabindex="0" aria-label="Copy class .spinLeft">
+    <span class="anim-stage"><span class="anim-target" data-anim="spinLeft"></span></span>
+    <span class="anim-name">spinLeft</span>
+    <span class="anim-fam">Rotating</span>
+  </article>
+  <article class="anim-card" data-family="rotating" data-name="spinRight" tabindex="0" aria-label="Copy class .spinRight">
+    <span class="anim-stage"><span class="anim-target" data-anim="spinRight"></span></span>
+    <span class="anim-name">spinRight</span>
+    <span class="anim-fam">Rotating</span>
+  </article>
+  <article class="anim-card" data-family="zooming" data-name="zoomIn" tabindex="0" aria-label="Copy class .zoomIn">
+    <span class="anim-stage"><span class="anim-target" data-anim="zoomIn"></span></span>
+    <span class="anim-name">zoomIn</span>
+    <span class="anim-fam">Zooming</span>
+  </article>
+  <article class="anim-card" data-family="zooming" data-name="zoomOut" tabindex="0" aria-label="Copy class .zoomOut">
+    <span class="anim-stage"><span class="anim-target" data-anim="zoomOut"></span></span>
+    <span class="anim-name">zoomOut</span>
+    <span class="anim-fam">Zooming</span>
+  </article>
+  <article class="anim-card" data-family="rolling" data-name="rollIn" tabindex="0" aria-label="Copy class .rollIn">
+    <span class="anim-stage"><span class="anim-target" data-anim="rollIn"></span></span>
+    <span class="anim-name">rollIn</span>
+    <span class="anim-fam">Rolling</span>
+  </article>
+  <article class="anim-card" data-family="rolling" data-name="rollOut" tabindex="0" aria-label="Copy class .rollOut">
+    <span class="anim-stage"><span class="anim-target" data-anim="rollOut"></span></span>
+    <span class="anim-name">rollOut</span>
+    <span class="anim-fam">Rolling</span>
+  </article>
+  <article class="anim-card" data-family="pop" data-name="popIn" tabindex="0" aria-label="Copy class .popIn">
+    <span class="anim-stage"><span class="anim-target" data-anim="popIn"></span></span>
+    <span class="anim-name">popIn</span>
+    <span class="anim-fam">Pop</span>
+  </article>
+  <article class="anim-card" data-family="pop" data-name="popOut" tabindex="0" aria-label="Copy class .popOut">
+    <span class="anim-stage"><span class="anim-target" data-anim="popOut"></span></span>
+    <span class="anim-name">popOut</span>
+    <span class="anim-fam">Pop</span>
+  </article>
+  <article class="anim-card" data-family="vanishing" data-name="vanishIn" tabindex="0" aria-label="Copy class .vanishIn">
+    <span class="anim-stage"><span class="anim-target" data-anim="vanishIn"></span></span>
+    <span class="anim-name">vanishIn</span>
+    <span class="anim-fam">Vanishing</span>
+  </article>
+  <article class="anim-card" data-family="vanishing" data-name="vanishOut" tabindex="0" aria-label="Copy class .vanishOut">
+    <span class="anim-stage"><span class="anim-target" data-anim="vanishOut"></span></span>
+    <span class="anim-name">vanishOut</span>
+    <span class="anim-fam">Vanishing</span>
+  </article>
+</section>
+<div class="anim-toast" id="anim-toast" role="status" aria-live="polite" hidden>
+  Copied <code id="anim-toast-class">.bounce</code>
 </div>
-<script>
-  // The animation classes shipped in v2.0.0 set animation-name in the
-  // selector itself. To replay the keyframe we have to remove the class,
-  // force a layout flush, then add the class back.
-  function replayAnim(btn, name){
-    var target = btn.closest('.anim-card').querySelector('.anim-target');
-    if (!target) return;
-    target.className = 'anim-target';
-    void target.offsetWidth;
-    target.classList.add(name);
-  }
-  // Auto-play once on first paint so the visitor sees something happen
-  // without clicking — but only if motion is allowed.
-  if (window.matchMedia && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-    document.addEventListener('DOMContentLoaded', function(){
-      document.querySelectorAll('.anim-target').forEach(function(t){
-        var n = t.getAttribute('data-anim');
-        if (n) setTimeout(function(){ t.classList.add(n); }, 200);
-      });
-    });
-  }
-</script>
-<hr class="hr-text" data-content="Klassenreferenz">
-<h2>Klassenreferenz</h2>
-<div class="table-responsive"><table class="table">
-<thead>
-<tr>
-<th>Klasse</th>
-<th>Beschreibung</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-left"><code>.bounce</code></td>
-<td class="text-left">Vertikaler Federeffekt</td>
-</tr>
-<tr>
-<td class="text-left"><code>.pulse</code></td>
-<td class="text-left">Sanftes Skalierungspulsieren</td>
-</tr>
-<tr>
-<td class="text-left"><code>.shake</code></td>
-<td class="text-left">Horizontales Schütteln</td>
-</tr>
-<tr>
-<td class="text-left"><code>.wobble</code></td>
-<td class="text-left">Kippen und Zurückkehren</td>
-</tr>
-<tr>
-<td class="text-left"><code>.flash</code></td>
-<td class="text-left">Zweistufiges Blinken der Deckkraft</td>
-</tr>
-<tr>
-<td class="text-left"><code>.heartbeat</code></td>
-<td class="text-left">Doppelter Herzschlag-Skalierungseffekt</td>
-</tr>
-<tr>
-<td class="text-left"><code>.jelly</code></td>
-<td class="text-left">Stauchen und Strecken</td>
-</tr>
-<tr>
-<td class="text-left"><code>.rubberBand</code></td>
-<td class="text-left">Elastisches Dehnen</td>
-</tr>
-<tr>
-<td class="text-left"><code>.fadeIn</code> / <code>.fadeOut</code></td>
-<td class="text-left">Deckkraftübergang</td>
-</tr>
-<tr>
-<td class="text-left"><code>.fadeInDown</code> / <code>.fadeInUp</code> / <code>.fadeInLeft</code> / <code>.fadeInRight</code></td>
-<td class="text-left">Richtungsabhängiges Einblenden</td>
-</tr>
-<tr>
-<td class="text-left"><code>.zoomIn</code> / <code>.zoomOut</code></td>
-<td class="text-left">In die / aus der Ansicht skalieren</td>
-</tr>
-<tr>
-<td class="text-left"><code>.popIn</code> / <code>.popOut</code></td>
-<td class="text-left">Federskalierung mit Einblenden</td>
-</tr>
-<tr>
-<td class="text-left"><code>.rollIn</code> / <code>.rollOut</code></td>
-<td class="text-left">Verschieben und Drehen</td>
-</tr>
-<tr>
-<td class="text-left"><code>.flipInHorizontal</code> / <code>.flipInVertical</code></td>
-<td class="text-left">3-D-Drehung</td>
-</tr>
-<tr>
-<td class="text-left"><code>.vanishIn</code> / <code>.vanishOut</code></td>
-<td class="text-left">Erscheinen im Material-Stil</td>
-</tr>
-<tr>
-<td class="text-left"><code>.chameleonbackground</code> / <code>.chameleontext</code></td>
-<td class="text-left">Farbtonzyklus</td>
-</tr>
-</tbody>
-</table></div>
-<h2>Hinweis — bekannter Vorbehalt in v2.0.0</h2>
-<p>Die Animationsklassen in v2.0.0 setzen ausschließlich <code>animation-name</code>.
-Um sie abzuspielen, müssen Sie derzeit selbst <code>animation-duration</code>,
-<code>animation-iteration-count</code>, <code>animation-fill-mode</code> und
-<code>animation-timing-function</code> angeben — genau wie der <code>&lt;style&gt;</code>-Block am
-Anfang dieser Seite demonstriert. In einem zukünftigen Release wird ein
-sinnvolles Standard-Basis-Setup integriert, sodass
-<code>&lt;div class=&quot;bounce&quot;&gt;</code> direkt einsatzbereit ist.</p>
-<p><a href="/de/barrierefreiheit/">Hinweise zur Barrierefreiheit ansehen →</a></p>
+<script src="/js/animations.js" defer></script>
 
 
 
@@ -597,189 +616,56 @@ sinnvolles Standard-Basis-Setup integriert, sodass
     <footer aria-label="Site footer" class="site-footer">
       <div class="footer-inner">
         <div class="footer-cols">
-          <nav class="footer-col" aria-label="Project">
-            <p class="footer-col-title">Project</p>
+          <nav class="footer-col" aria-label="Projekt">
+            <p class="footer-col-title">Projekt</p>
             <ul>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/changelog/">Changelog</a></li>
-              <li><a href="/security/">Security</a></li>
-              <li><a href="/contribute/">Contribute</a></li>
+              <li><a href="&#x2F;de/ueber-uns/">Über uns</a></li>
+              <li><a href="&#x2F;de/aenderungsprotokoll/">Änderungsprotokoll</a></li>
+              <li><a href="&#x2F;de/sicherheit/">Sicherheit</a></li>
+              <li><a href="&#x2F;de/mitwirken/">Mitwirken</a></li>
               <li><a rel="noopener noreferrer" href="https://github.com/sebastienrousseau/skeletonic-stylus" target="_blank">GitHub ↗</a></li>
               <li><a rel="noopener noreferrer" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus" target="_blank">npm ↗</a></li>
             </ul>
           </nav>
-          <nav class="footer-col" aria-label="Resources">
-            <p class="footer-col-title">Resources</p>
+          <nav class="footer-col" aria-label="Ressourcen">
+            <p class="footer-col-title">Ressourcen</p>
             <ul>
-              <li><a href="/palettes/">Palettes</a></li>
-              <li><a href="/animations/">Animations</a></li>
-              <li><a href="/accessibility/">Accessibility</a></li>
+              <li><a href="&#x2F;de/paletten/">Paletten</a></li>
+              <li><a href="&#x2F;de/animationen/">Animationen</a></li>
+              <li><a href="&#x2F;de/barrierefreiheit/">Barrierefreiheit</a></li>
             </ul>
           </nav>
-          <nav class="footer-col" aria-label="Legal">
-            <p class="footer-col-title">Legal</p>
+          <nav class="footer-col" aria-label="Rechtliches">
+            <p class="footer-col-title">Rechtliches</p>
             <ul>
-              <li><a href="/privacy/">Privacy</a></li>
-              <li><a href="/terms/">Terms</a></li>
-              <li><a href="/contact/">Contact</a></li>
+              <li><a href="&#x2F;de/datenschutz/">Datenschutz</a></li>
+              <li><a href="&#x2F;de/nutzungsbedingungen/">Nutzungsbedingungen</a></li>
+              <li><a href="&#x2F;de/kontakt/">Kontakt</a></li>
             </ul>
           </nav>
         </div>
         <div class="footer-bar">
-          Copyright © 2021 – 2026 Skeletonic CSS. All rights reserved.
+          Copyright © 2021 – 2026 Skeletonic CSS. Alle Rechte vorbehalten.
         </div>
       </div>
     </footer>
 
-    <div aria-label="Search" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
+    <div aria-label="Suchen" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
       <div class="search-box">
-        <input aria-label="Search" placeholder="Search documentation..." autocomplete="off" class="search-input" id="searchInput" type="search">
+        <input aria-label="Suchen" placeholder="Dokumentation durchsuchen..." autocomplete="off" class="search-input" id="searchInput" type="search">
         <div class="search-results" id="searchResults"></div>
         <div class="search-footer">
-          <span><kbd>↑</kbd> <kbd>↓</kbd> Navigate</span>
-          <span><kbd>↵</kbd> Open</span>
-          <span><kbd>Esc</kbd> Close</span>
+          <span><kbd>↑</kbd> <kbd>↓</kbd> Navigieren</span>
+          <span><kbd>↵</kbd> Öffnen</span>
+          <span><kbd>Esc</kbd> Schließen</span>
         </div>
       </div>
     </div>
 
     <script src="/js/main.js" defer></script>
   
-<!-- SSG Search Widget -->
-<div id="ssg-search-widget">
-<style>
-/* ── Trigger button (always visible) ── */
-#ssg-search-btn{position:fixed;top:16px;right:16px;z-index:9998;display:flex;align-items:center;gap:8px;padding:8px 16px;background:#fff;border:1px solid #d1d5db;border-radius:8px;cursor:pointer;font-family:-apple-system,system-ui,sans-serif;font-size:14px;color:#6b7280;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:border-color .15s,box-shadow .15s}
-#ssg-search-btn:hover{border-color:#9ca3af;box-shadow:0 2px 6px rgba(0,0,0,.12)}
-#ssg-search-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-#ssg-search-btn kbd{font-family:inherit;font-size:11px;padding:2px 6px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:4px;color:#9ca3af;margin-left:4px}
-/* ── Modal overlay ── */
-#ssg-search-overlay{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.5);align-items:flex-start;justify-content:center;padding-top:12vh}
-#ssg-search-overlay.active{display:flex}
-#ssg-search-box{background:#fff;border-radius:12px;width:92%;max-width:640px;box-shadow:0 25px 60px rgba(0,0,0,.3);overflow:hidden;font-family:-apple-system,system-ui,sans-serif}
-#ssg-search-header{display:flex;align-items:center;padding:0 16px;border-bottom:1px solid #e5e7eb}
-#ssg-search-header svg{width:20px;height:20px;stroke:#9ca3af;fill:none;stroke-width:2;flex-shrink:0}
-#ssg-search-input{flex:1;padding:16px 12px;font-size:16px;border:none;outline:none;background:transparent}
-#ssg-search-results{max-height:50vh;overflow-y:auto}
-.ssg-result{display:block;padding:12px 20px;text-decoration:none;color:#111;border-bottom:1px solid #f3f4f6;transition:background .1s}
-.ssg-result:hover,.ssg-result.active{background:#eff6ff}
-.ssg-result-title{font-weight:600;font-size:15px;margin-bottom:3px}
-.ssg-result-snippet{font-size:13px;color:#6b7280;line-height:1.5}
-.ssg-result-snippet mark{background:#fef08a;color:inherit;border-radius:2px;padding:0 2px}
-.ssg-no-results{padding:32px 20px;text-align:center;color:#9ca3af;font-size:14px}
-.ssg-search-footer{display:flex;gap:16px;padding:10px 20px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb;justify-content:flex-end}
-.ssg-search-footer kbd{font-family:inherit;font-size:11px;padding:1px 5px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:3px}
-/* ── Dark mode (media query + data-theme attribute) ── */
-@media(prefers-color-scheme:dark){
-:root:not([data-theme="light"]) #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
-:root:not([data-theme="light"]) #ssg-search-btn:hover{border-color:#4b5563}
-:root:not([data-theme="light"]) #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
-:root:not([data-theme="light"]) #ssg-search-box{background:#1f2937;color:#f9fafb}
-:root:not([data-theme="light"]) #ssg-search-header{border-color:#374151}
-:root:not([data-theme="light"]) #ssg-search-input{color:#f9fafb}
-:root:not([data-theme="light"]) .ssg-result{color:#f9fafb;border-color:#374151}
-:root:not([data-theme="light"]) .ssg-result:hover,:root:not([data-theme="light"]) .ssg-result.active{background:#374151}
-:root:not([data-theme="light"]) .ssg-result-snippet{color:#9ca3af}
-:root:not([data-theme="light"]) .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
-:root:not([data-theme="light"]) .ssg-no-results{color:#6b7280}
-:root:not([data-theme="light"]) .ssg-search-footer{border-color:#374151;color:#6b7280}
-:root:not([data-theme="light"]) .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
-}
-[data-theme="dark"] #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
-[data-theme="dark"] #ssg-search-btn:hover{border-color:#4b5563}
-[data-theme="dark"] #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
-[data-theme="dark"] #ssg-search-box{background:#1f2937;color:#f9fafb}
-[data-theme="dark"] #ssg-search-header{border-color:#374151}
-[data-theme="dark"] #ssg-search-input{color:#f9fafb}
-[data-theme="dark"] .ssg-result{color:#f9fafb;border-color:#374151}
-[data-theme="dark"] .ssg-result:hover,[data-theme="dark"] .ssg-result.active{background:#374151}
-[data-theme="dark"] .ssg-result-snippet{color:#9ca3af}
-[data-theme="dark"] .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
-[data-theme="dark"] .ssg-no-results{color:#6b7280}
-[data-theme="dark"] .ssg-search-footer{border-color:#374151;color:#6b7280}
-[data-theme="dark"] .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
-</style>
-<!-- Search trigger button -->
-<button id="ssg-search-btn" type="button" aria-label="Search">
-<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-<span>Search</span>
-<kbd>K</kbd>
-</button>
-<!-- Search modal -->
-<div id="ssg-search-overlay" role="dialog" aria-label="Search">
-<div id="ssg-search-box">
-<div id="ssg-search-header">
-<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search query"/>
-</div>
-<div id="ssg-search-results"></div>
-<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
-</div>
-</div>
-<script>
-(function(){
-var idx=null,overlay=document.getElementById('ssg-search-overlay'),
-input=document.getElementById('ssg-search-input'),
-results=document.getElementById('ssg-search-results'),
-btn=document.getElementById('ssg-search-btn'),active=-1;
-function load(){if(idx)return Promise.resolve();return fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){idx=d.entries||[]}).catch(function(){idx=[]})}
-function open(){load().then(function(){overlay.classList.add('active');input.value='';results.innerHTML='';input.focus();active=-1})}
-function close(){overlay.classList.remove('active');active=-1}
-function highlight(text,q){if(!q)return esc(text);var re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');return esc(text).replace(re,'<mark>$1</mark>')}
-function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
-function snippet(content,q,len){len=len||150;if(!q)return esc(content.substring(0,len));var i=content.toLowerCase().indexOf(q.toLowerCase());if(i<0)return esc(content.substring(0,len));var s=Math.max(0,i-50),e=Math.min(content.length,i+len);var t=(s>0?'...':'')+content.substring(s,e)+(e<content.length?'...':'');return highlight(t,q)}
-function search(q){if(!idx||!q){results.innerHTML='';return}q=q.trim();if(!q){results.innerHTML='';return}var ql=q.toLowerCase(),hits=[];
-for(var i=0;i<idx.length&&hits.length<20;i++){var e=idx[i],s=0;if(e.title.toLowerCase().indexOf(ql)>=0)s+=10;if(e.content.toLowerCase().indexOf(ql)>=0)s+=5;for(var h=0;h<e.headings.length;h++){if(e.headings[h].toLowerCase().indexOf(ql)>=0){s+=3;break}}if(s>0)hits.push({entry:e,score:s})}
-hits.sort(function(a,b){return b.score-a.score});
-if(!hits.length){results.innerHTML='<div class="ssg-no-results">No results for &ldquo;'+esc(q)+'&rdquo;</div>';return}
-var html='';for(var j=0;j<hits.length;j++){var e=hits[j].entry;html+='<a class="ssg-result" href="'+esc(e.url)+'">'+'<div class="ssg-result-title">'+highlight(e.title,q)+'</div>'+'<div class="ssg-result-snippet">'+snippet(e.content,q)+'</div></a>'}
-results.innerHTML=html;active=-1}
-function nav(dir){var items=results.querySelectorAll('.ssg-result');if(!items.length)return;if(active>=0&&items[active])items[active].classList.remove('active');active+=dir;if(active<0)active=items.length-1;if(active>=items.length)active=0;items[active].classList.add('active');items[active].scrollIntoView({block:'nearest'})}
-btn.addEventListener('click',function(){open()});
-input.addEventListener('input',function(){search(this.value)});
-overlay.addEventListener('click',function(e){if(e.target===overlay)close()});
-document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();if(overlay.classList.contains('active'))close();else open()}
-if(!overlay.classList.contains('active'))return;if(e.key==='Escape')close();if(e.key==='ArrowDown'){e.preventDefault();nav(1)}if(e.key==='ArrowUp'){e.preventDefault();nav(-1)}
-if(e.key==='Enter'){e.preventDefault();var items=results.querySelectorAll('.ssg-result');if(active>=0&&items[active])window.location=items[active].href;else if(items[0])window.location=items[0].href}})
-})();
-</script>
-</div>
 
-<!-- SSG Live-Reload -->
-<script data-ssg-livereload>
-(function(){
-  var url='ws://localhost:35729',delay=1000,maxDelay=10000,indicator=null;
-  function showIndicator(){
-    if(indicator)return;
-    indicator=document.createElement('div');
-    indicator.id='ssg-livereload';
-    indicator.textContent='Connecting\u2026';
-    indicator.style.cssText='position:fixed;bottom:8px;right:8px;z-index:99999;'
-      +'background:rgba(0,0,0,0.75);color:#fff;padding:6px 12px;border-radius:6px;'
-      +'font:13px/1 -apple-system,system-ui,sans-serif;pointer-events:none';
-    document.body.appendChild(indicator);
-  }
-  function hideIndicator(){
-    if(indicator){indicator.remove();indicator=null;}
-  }
-  function connect(){
-    var ws=new WebSocket(url);
-    ws.onopen=function(){delay=1000;hideIndicator();};
-    ws.onmessage=function(e){if(e.data==='reload')location.reload();};
-    ws.onclose=function(){
-      showIndicator();
-      var d=delay;
-      delay=Math.min(delay*2,maxDelay);
-      setTimeout(connect,d);
-    };
-    ws.onerror=function(){ws.close();};
-  }
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',connect);
-  }else{
-    connect();
-  }
-})();
-</script>
+
+
 </body>
 </html>

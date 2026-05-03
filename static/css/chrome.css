@@ -196,11 +196,11 @@
         line-height:1.1;
         margin:0;
       }
-      .site-main h1, .site-hero h1 { font-size: var(--fs-h1); font-weight: 700; letter-spacing: -0.04em; }
-      .site-main h2 { font-size: var(--fs-h2); font-weight: 600; letter-spacing: -0.03em; }
+      .site-main h1, .site-hero h1 { font-size: var(--fs-h1); font-weight: 700; letter-spacing: -0.04em; line-height: 1.05; }
+      .site-main h2 { font-size: var(--fs-h2); font-weight: 600; letter-spacing: -0.03em; line-height: 1.1; }
       .site-main h3 { font-size: var(--fs-h3); font-weight: 600; letter-spacing: -0.02em; }
       .site-main h4 { font-size: var(--fs-h4); font-weight: 600; }
-      .site-main p, .site-hero p { font-size: var(--fs-base); line-height: 1.5; color: var(--c-secondary); }
+      .site-main p, .site-hero p { font-size: var(--fs-base); line-height: 1.5; color: var(--c-secondary); font-weight: 450; }
       :where(.site-main table){
         font-family:inherit;
         font-size:inherit;
@@ -218,8 +218,8 @@
        * UI Components (Nav, Switchers, Dropdowns)
        * ============================================================ */
       .site-nav {
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(40px) saturate(180%);
+        -webkit-backdrop-filter: blur(40px) saturate(180%);
         background: var(--c-nav-bg);
         border-bottom: 1px solid var(--c-border);
         position: sticky;
@@ -407,23 +407,20 @@
 
       /* Hero Section Refinement */
       .site-hero {
-        padding: clamp(4rem, 10vh, 8rem) 1.5rem;
+        padding: clamp(5rem, 15vh, 10rem) 1.5rem;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
-        background: radial-gradient(circle at center, var(--c-hero-grad-1) 0%, var(--c-hero-grad-2) 50%, var(--c-hero-grad-3) 100%);
+        gap: 2.5rem;
+        background: var(--c-bg);
         border-bottom: 1px solid var(--c-border);
       }
-      /* Hero title — replaces the inline-text <h1> with the CDN-served
-         SVG brand logo when CSS is loaded. Without CSS, the h1 text
-         shows verbatim. Sized to feel airy on desktop, never larger
-         than 60vw on mobile. */
+      /* Hero title — larger, more impactful brand mark */
       .site-hero .hero-title{
-        margin: 0 auto 0.75rem;
+        margin: 0 auto 1rem;
         display: block;
-        width: clamp(120px, 20vw, 208px);
+        width: clamp(140px, 25vw, 240px);
         aspect-ratio: 1 / 1;
         background: url("https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg") center / contain no-repeat;
         text-indent: -9999px;
@@ -431,10 +428,6 @@
         overflow: hidden;
         font-size: 0;
         color: transparent;
-        animation: hero-float 6s ease-in-out infinite;
-      }
-      @media (prefers-reduced-motion: reduce){
-        .site-hero .hero-title{ animation: none; }
       }
       /* Forced-colors / Windows High Contrast Mode strips background
          images. Restore the h1 text so the brand still reads. */
@@ -652,6 +645,11 @@
       #ssg-search-widget,#ssg-search-btn,#ssg-search-overlay{display:none!important;}
 
       html{font-size:100%;-webkit-text-size-adjust:100%;}
+      /* `.site-main` carries an explicit background so pa11y / WAVE
+         can resolve the contrast computation against it without
+         tracing through transparent ancestors (which falls back to
+         a #999 default and produces false 2.98:1 reports). */
+      .site-main{ background-color:var(--c-bg); }
       body{
         color:var(--c-text);
         background:var(--c-bg);
@@ -693,7 +691,7 @@
          coloured-stripe variants (`code.primary`, `code.success`, etc.)
          render with their own background / inline-start accent. */
       code:not(.primary):not(.secondary):not(.tertiary):not(.success):not(.info):not(.warning):not(.error){
-        background:var(--c-surface);
+        background:transparent;
         color:var(--c-code);
         border:0;
         border-radius:.25rem;
@@ -991,11 +989,21 @@
         }
       }
 
-      /* Hero */
+      /* Hero — apple.com/ipad-air-style vertical sky wash. Top-heavy
+         single-hue linear gradient that dissolves into `--c-bg` at
+         the bottom, exactly the treatment on apple.com/ipad-air.
+         Each palette overrides `--grad-1..4` so the whole hero
+         reskins in one frame. */
       .site-hero{
+        position:relative;
         text-align:center;
-        background:linear-gradient(180deg,var(--c-hero-grad-1) 0%,var(--c-hero-grad-2) 30%,var(--c-hero-grad-3) 60%,var(--c-bg) 100%);
         padding:5rem 1.5rem 3rem;
+        background:linear-gradient(180deg,
+          var(--grad-1) 0%,
+          var(--grad-2) 35%,
+          var(--grad-3) 70%,
+          var(--grad-4) 100%);
+        isolation:isolate;
       }
       .site-hero h1{
         color:#1a1a1a;
@@ -1106,6 +1114,341 @@
         margin:0;
         color:var(--c-heading);
         font-weight:600;
+      }
+
+      /* ── /tokens/ interactive grid ────────────────────────────── */
+      .token-grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+        gap:.75rem;
+        list-style:none;
+        margin:1rem 0 1.5rem;
+        padding:0;
+      }
+      .token-card{
+        display:grid;
+        grid-template-rows:auto auto auto;
+        gap:.375rem;
+        padding:.875rem;
+        background:var(--c-bg);
+        border:1px solid var(--c-border);
+        border-radius:.625rem;
+        cursor:pointer;
+        text-align:start;
+        font-family:inherit;
+        color:var(--c-text);
+        transition:border-color .15s, box-shadow .15s, transform .15s;
+      }
+      .token-card:hover,
+      .token-card:focus-visible{
+        border-color:color-mix(in oklch, var(--swatch) 65%, var(--c-border));
+        box-shadow:0 6px 18px -8px color-mix(in oklch, var(--swatch) 50%, transparent);
+        transform:translateY(-1px);
+      }
+      .token-card:focus-visible{
+        outline:2px solid var(--c-accent);
+        outline-offset:2px;
+      }
+      .token-swatch{
+        height:48px;
+        border-radius:.375rem;
+        background:var(--swatch);
+        border:1px solid color-mix(in oklch, var(--swatch) 40%, transparent);
+      }
+      .token-name{
+        font-family:"SF Mono",SFMono-Regular,Consolas,monospace;
+        font-size:.8125rem;
+        font-weight:600;
+        color:var(--c-heading);
+        word-break:break-word;
+      }
+      .token-use{
+        font-size:.75rem;
+        color:var(--c-secondary);
+        line-height:1.4;
+      }
+      .token-card.is-copied .token-name::after{
+        content:" ✓ copied";
+        color:var(--c-accent);
+        font-weight:500;
+      }
+
+      /* ── /animations/ gallery ─────────────────────────────────── */
+      .anim-lede{
+        font-size:1.0625rem;
+        line-height:1.55;
+        color:var(--c-secondary);
+        margin:.5rem 0 1.5rem;
+        max-width:48rem;
+      }
+      .anim-banner{
+        display:block;
+        padding:1.125rem 1.25rem;
+        margin:0 0 1.5rem;
+        border-radius:.75rem;
+        line-height:1.55;
+        font-size:.9375rem;
+      }
+      .anim-banner code{
+        background:rgba(0,0,0,.06);
+        padding:.0625rem .375rem;
+        border-radius:.25rem;
+        font-size:.875em;
+      }
+      [data-theme="dark"] .anim-banner code,
+      .anim-banner code{
+        background:rgba(127,127,127,.18);
+      }
+      .anim-banner--info{
+        background:color-mix(in oklch, var(--c-accent) 10%, var(--c-bg));
+        border:1px solid color-mix(in oklch, var(--c-accent) 35%, transparent);
+        color:var(--c-text);
+      }
+      .anim-banner--warn{
+        background:color-mix(in oklch, oklch(0.78 0.16 80) 15%, var(--c-bg));
+        border:1px solid color-mix(in oklch, oklch(0.78 0.16 80) 45%, transparent);
+        color:var(--c-text);
+      }
+      .anim-banner-actions{
+        display:inline-flex;
+        align-items:center;
+        gap:.625rem;
+        flex-wrap:wrap;
+        margin-top:.75rem;
+      }
+      .anim-banner-actions .button{
+        margin:0;
+      }
+      .anim-toolbar{
+        position:sticky;
+        top:4.25rem;
+        z-index:50;
+        display:grid;
+        grid-template-columns:1fr;
+        gap:.75rem;
+        padding:.875rem;
+        margin:0 0 1.5rem;
+        background:color-mix(in oklch, var(--c-bg) 88%, transparent);
+        -webkit-backdrop-filter:saturate(180%) blur(14px);
+        backdrop-filter:saturate(180%) blur(14px);
+        border:1px solid var(--c-border);
+        border-radius:.875rem;
+      }
+      @media (min-width: 720px){
+        .anim-toolbar{
+          grid-template-columns:18rem 1fr;
+          align-items:center;
+        }
+      }
+      .anim-search-wrap{
+        display:block;
+      }
+      .anim-search-wrap input[type="search"]{
+        width:100%;
+        padding:.625rem .875rem;
+        border:1px solid var(--c-border);
+        border-radius:.625rem;
+        background:var(--c-bg);
+        color:var(--c-text);
+        font-size:.9375rem;
+        line-height:1.4;
+        transition:border-color .15s, box-shadow .15s;
+      }
+      .anim-search-wrap input[type="search"]:focus{
+        outline:none;
+        border-color:var(--c-accent);
+        box-shadow:0 0 0 3px color-mix(in oklch, var(--c-accent) 25%, transparent);
+      }
+      .anim-chips{
+        display:flex;
+        flex-wrap:wrap;
+        gap:.375rem;
+        list-style:none;
+        margin:0;
+        padding:0;
+      }
+      .anim-chip{
+        display:inline-flex;
+        align-items:center;
+        gap:.375rem;
+        padding:.375rem .75rem;
+        border:1px solid var(--c-border);
+        border-radius:9999px;
+        background:transparent;
+        color:var(--c-secondary);
+        font-size:.8125rem;
+        font-weight:500;
+        line-height:1.3;
+        cursor:pointer;
+        transition:background .15s, border-color .15s, color .15s;
+        font-family:inherit;
+      }
+      .anim-chip:hover{
+        background:var(--c-surface);
+        color:var(--c-heading);
+      }
+      .anim-chip:focus-visible{
+        outline:2px solid var(--c-accent);
+        outline-offset:2px;
+      }
+      .anim-chip.is-active{
+        background:var(--c-heading);
+        color:var(--c-bg);
+        border-color:var(--c-heading);
+      }
+      .anim-chip-count{
+        font-variant-numeric:tabular-nums;
+        font-size:.6875rem;
+        opacity:.7;
+      }
+      .anim-empty{
+        grid-column:1/-1;
+        margin:0;
+        padding:.5rem .25rem 0;
+        font-size:.875rem;
+        color:var(--c-secondary);
+      }
+      .anim-grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+        gap:.75rem;
+        margin:0 0 2rem;
+        list-style:none;
+        padding:0;
+      }
+      .anim-card{
+        position:relative;
+        display:grid;
+        grid-template-rows:1fr auto auto;
+        gap:.5rem;
+        padding:1rem;
+        border:1px solid var(--c-border);
+        border-radius:.75rem;
+        background:var(--c-bg);
+        cursor:pointer;
+        transition:border-color .15s, box-shadow .15s, transform .15s;
+        overflow:hidden;
+      }
+      .anim-card:hover,
+      .anim-card:focus-visible{
+        border-color:color-mix(in oklch, var(--c-accent) 60%, var(--c-border));
+        box-shadow:0 6px 20px -8px color-mix(in oklch, var(--c-accent) 40%, transparent);
+        transform:translateY(-1px);
+      }
+      .anim-card:focus-visible{
+        outline:2px solid var(--c-accent);
+        outline-offset:2px;
+      }
+      .anim-card[hidden]{ display:none; }
+      .anim-card .anim-stage{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:96px;
+        margin:0;
+        background:linear-gradient(135deg,
+                    color-mix(in oklch, var(--c-accent) 8%, var(--c-surface)),
+                    var(--c-surface));
+        border-radius:.5rem;
+      }
+      .anim-card .anim-target{
+        display:inline-block;
+        width:48px;
+        height:48px;
+        border-radius:50%;
+        background:var(--c-accent);
+        /* duration / iteration-count / fill-mode / timing-function
+           are now provided by the library's animation classes
+           themselves (v2.0.0+) — no per-target setup required. */
+      }
+      .anim-card .anim-target--text{
+        width:auto;
+        height:auto;
+        padding:.25rem .625rem;
+        border-radius:.375rem;
+        background:transparent;
+        color:var(--c-heading);
+        font-weight:700;
+        font-size:1.5rem;
+      }
+      .anim-card .anim-name{
+        font-family:"SF Mono",SFMono-Regular,Consolas,monospace;
+        font-size:.8125rem;
+        font-weight:600;
+        color:var(--c-heading);
+        word-break:break-word;
+      }
+      .anim-card .anim-fam{
+        font-size:.6875rem;
+        font-weight:500;
+        color:var(--c-secondary);
+        text-transform:uppercase;
+        letter-spacing:.05em;
+      }
+      /* Subtle "click to copy" hint shown on hover/focus. */
+      .anim-card::after{
+        content:"Click to copy";
+        position:absolute;
+        inset-inline-end:.5rem;
+        bottom:.5rem;
+        font-size:.6875rem;
+        color:var(--c-secondary);
+        opacity:0;
+        transition:opacity .15s;
+        pointer-events:none;
+      }
+      .anim-card:hover::after,
+      .anim-card:focus-visible::after{ opacity:.75; }
+      /* Reduce-motion respects the OS — when honoured, the target
+         shows no animation but stays visible. The replay logic still
+         adds/removes classes; the browser just doesn't paint motion. */
+      @media (prefers-reduced-motion: reduce){
+        .anim-card{ transition:none; }
+        .anim-card:hover,
+        .anim-card:focus-visible{ transform:none; }
+      }
+      /* Force-play opt-in. The library's reset uses
+         `* { animation-duration: .01ms !important }` under
+         prefers-reduced-motion: reduce — when the user clicks "Show
+         animations anyway", animations.js sets `.anim-force-on` on
+         <html> and these rules take precedence (specificity beats `*`,
+         !important matches !important, source order wins). */
+      .anim-force-on .anim-card .anim-target{
+        animation-duration:1.2s !important;
+        animation-iteration-count:1 !important;
+        animation-fill-mode:both !important;
+        animation-timing-function:ease-in-out !important;
+      }
+      .anim-force-on .anim-card{
+        transition:border-color .15s, box-shadow .15s, transform .15s !important;
+      }
+      /* Toast — bottom-right floating chip when a class is copied. */
+      .anim-toast{
+        position:fixed;
+        inset-block-end:1.25rem;
+        inset-inline-end:1.25rem;
+        z-index:1100;
+        padding:.625rem .875rem;
+        background:var(--c-heading);
+        color:var(--c-bg);
+        border-radius:.625rem;
+        font-size:.875rem;
+        line-height:1.3;
+        opacity:0;
+        transform:translateY(8px);
+        transition:opacity .2s, transform .2s;
+        box-shadow:0 8px 24px rgba(0,0,0,.18);
+      }
+      .anim-toast code{
+        background:transparent;
+        padding:0;
+        color:inherit;
+        font-family:"SF Mono",SFMono-Regular,Consolas,monospace;
+        font-size:.875em;
+      }
+      .anim-toast.is-visible{
+        opacity:1;
+        transform:translateY(0);
       }
 
       /* Footer */
@@ -1240,6 +1583,176 @@
         font-size:.6875rem;
       }
 
+      /* ── Palette switcher (3 + default themes) ────────────────────
+         Each preset overrides exactly the brand-accent variables so
+         the entire site reskins in one frame. The defaults sit on
+         :root unconditionally; preset overrides come from selectors
+         on <html data-palette="X"> set by main.js. */
+      /* iPad-Air-inspired vertical sky-blue wash. Single hue, four
+         stops top → bottom: saturated pale sky → soft sky → barely
+         tinted → page surface. Each palette overrides the token
+         family `--grad-1..4`; .site-hero composes them as a
+         `linear-gradient(180deg, …)`. */
+
+      /* Default — apple.com/ipad-air sky-blue wash. */
+      :root{
+        --grad-1:#c5e3ee;   /* top: pale sky blue */
+        --grad-2:#d8eaf2;   /* upper-mid */
+        --grad-3:#e8eff2;   /* lower-mid */
+        --grad-4:#f4f7f8;   /* bottom: near white */
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]){
+          --grad-1:#0e2638;
+          --grad-2:#0a1c2c;
+          --grad-3:#06121e;
+          --grad-4:#020610;
+        }
+      }
+      [data-theme="dark"]{
+        --grad-1:#0e2638;
+        --grad-2:#0a1c2c;
+        --grad-3:#06121e;
+        --grad-4:#020610;
+      }
+
+      /* Ember — #ed6300 — warm orange single-hue vertical wash. */
+      :root[data-palette="ember"]{
+        --c-accent:#ed6300;
+        --c-accent-hover:#b94d00;
+        --link-color:#ed6300;
+        --link-color-hover:#b94d00;
+        --grad-1:#ffd2a6;
+        --grad-2:#ffe1c2;
+        --grad-3:#ffeed9;
+        --grad-4:#fff5e8;
+      }
+      [data-theme="dark"][data-palette="ember"],
+      :root[data-palette="ember"][data-theme="dark"]{
+        --c-accent:#ff8a3d;
+        --c-accent-hover:#ffaa70;
+        --link-color:#ff8a3d;
+        --link-color-hover:#ffaa70;
+        --grad-1:#3a1f08;
+        --grad-2:#291404;
+        --grad-3:#1a0c02;
+        --grad-4:#0c0500;
+      }
+
+      /* Iris — #8668ff — violet single-hue vertical wash. */
+      :root[data-palette="iris"]{
+        --c-accent:#6645e0;
+        --c-accent-hover:#4d2fbb;
+        --link-color:#6645e0;
+        --link-color-hover:#4d2fbb;
+        --grad-1:#dcd4f9;
+        --grad-2:#e8e1fb;
+        --grad-3:#f0ecfc;
+        --grad-4:#f8f5fe;
+      }
+      [data-theme="dark"][data-palette="iris"],
+      :root[data-palette="iris"][data-theme="dark"]{
+        --c-accent:#a99cff;
+        --c-accent-hover:#c4baff;
+        --link-color:#a99cff;
+        --link-color-hover:#c4baff;
+        --grad-1:#1d1741;
+        --grad-2:#140f30;
+        --grad-3:#0c0820;
+        --grad-4:#040210;
+      }
+
+      /* Lagoon — #00a1b3 — teal single-hue vertical wash. */
+      :root[data-palette="lagoon"]{
+        --c-accent:#00808f;
+        --c-accent-hover:#00606b;
+        --link-color:#00808f;
+        --link-color-hover:#00606b;
+        --grad-1:#bfecf2;
+        --grad-2:#d6f2f5;
+        --grad-3:#e6f6f8;
+        --grad-4:#f3fafb;
+      }
+      [data-theme="dark"][data-palette="lagoon"],
+      :root[data-palette="lagoon"][data-theme="dark"]{
+        --c-accent:#5fdce8;
+        --c-accent-hover:#92e9f1;
+        --link-color:#5fdce8;
+        --link-color-hover:#92e9f1;
+        --grad-1:#0a3540;
+        --grad-2:#072530;
+        --grad-3:#04161e;
+        --grad-4:#020a10;
+      }
+
+      .palette-switcher{position:relative;display:inline-block;}
+      .palette-menu{
+        position:absolute;
+        top:calc(100% + .375rem);
+        inset-inline-end:0;
+        z-index:1100;
+        min-width:11rem;
+        padding:.375rem;
+        background:var(--c-bg);
+        border:1px solid var(--c-border);
+        border-radius:.625rem;
+        box-shadow:0 8px 24px rgba(0,0,0,.10);
+        display:flex;
+        flex-direction:column;
+        gap:.125rem;
+      }
+      .palette-menu[hidden]{display:none;}
+      .palette-swatch{
+        display:flex;
+        align-items:center;
+        gap:.625rem;
+        padding:.5rem .625rem;
+        border:none;
+        background:transparent;
+        border-radius:.375rem;
+        cursor:pointer;
+        text-align:start;
+        font-family:inherit;
+        font-size:.875rem;
+        color:var(--c-text);
+        transition:background .12s;
+      }
+      .palette-swatch:hover{background:var(--c-surface);}
+      .palette-swatch:focus-visible{
+        outline:2px solid var(--c-accent);
+        outline-offset:2px;
+      }
+      .palette-swatch.is-active{background:color-mix(in oklch, var(--c-accent) 12%, var(--c-bg));}
+      .palette-swatch.is-active::after{
+        content:"✓";
+        margin-inline-start:auto;
+        color:var(--c-accent);
+        font-weight:600;
+      }
+      .palette-dot{
+        width:1rem;
+        height:1rem;
+        border-radius:50%;
+        background:var(--swatch);
+        border:1px solid color-mix(in oklch, var(--swatch) 40%, transparent);
+        flex:none;
+      }
+      .palette-name{font-weight:500;line-height:1.2;}
+
+      /* Screen-reader-only utility — used for `<caption>` injected by
+         the build script and other off-screen labels. */
+      .visually-hidden{
+        position:absolute !important;
+        width:1px !important;
+        height:1px !important;
+        padding:0 !important;
+        margin:-1px !important;
+        overflow:hidden !important;
+        clip:rect(0,0,0,0) !important;
+        white-space:nowrap !important;
+        border:0 !important;
+      }
+
       /* Copy button */
       .copy-btn{
         background:var(--c-surface);
@@ -1263,6 +1776,46 @@
       }
       pre:hover .copy-btn,pre:focus-within .copy-btn{opacity:1;}
       .copy-btn:hover{background:var(--c-accent);color:#fff;border-color:var(--c-accent);}
+
+      /* "Open in CodePen" button — same shape as copy-btn but lives
+         on the bottom-right and only appears on HTML/CSS code blocks. */
+      .pen-btn{
+        background:var(--c-surface);
+        color:var(--c-secondary);
+        border:1px solid var(--c-border);
+        cursor:pointer;
+        opacity:0;
+        border-radius:.25rem;
+        align-items:center;
+        gap:.25rem;
+        min-height:2.25rem;
+        padding:.25rem .625rem;
+        font-family:inherit;
+        font-size:.75rem;
+        font-weight:500;
+        transition:opacity .2s, background .15s, color .15s, border-color .15s;
+        display:inline-flex;
+        position:absolute;
+        bottom:.5rem;
+        right:.5rem;
+      }
+      pre:hover .pen-btn,pre:focus-within .pen-btn{opacity:1;}
+      .pen-btn::before{
+        content:"";
+        display:inline-block;
+        width:.875rem;
+        height:.875rem;
+        background:currentColor;
+        -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M2 8.5L12 2l10 6.5v7L12 22 2 15.5v-7z'/><path d='M12 9v6'/><path d='M2 8.5l10 6 10-6.5'/><path d='M12 22V15'/><path d='M22 15.5L12 9 2 15.5'/></svg>") center/contain no-repeat;
+                mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M2 8.5L12 2l10 6.5v7L12 22 2 15.5v-7z'/><path d='M12 9v6'/><path d='M2 8.5l10 6 10-6.5'/><path d='M12 22V15'/><path d='M22 15.5L12 9 2 15.5'/></svg>") center/contain no-repeat;
+        flex:none;
+      }
+      .pen-btn:hover{background:#000;color:#fff;border-color:#000;}
+      .pen-btn:focus-visible{
+        outline:2px solid var(--c-accent);
+        outline-offset:2px;
+        opacity:1;
+      }
 
       @media (prefers-reduced-motion:reduce){
         *,*::before,*::after{transition:none!important;animation:none!important;}

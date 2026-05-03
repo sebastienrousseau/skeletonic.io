@@ -319,7 +319,7 @@ Plain `<table>` elements get bordered cells and a contrast-flipped
     <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
   </thead>
   <tbody>
-    <tr><td>Skeletonic</td><td>6.8 KB</td><td>Yes</td></tr>
+    <tr><td>Skeletonic</td><td>6.7 KB</td><td>Yes</td></tr>
     <tr><td>Pico CSS</td><td>10.1 KB</td><td>Yes</td></tr>
     <tr><td>Bootstrap</td><td>23.0 KB</td><td>No (Popper)</td></tr>
   </tbody>
@@ -332,7 +332,7 @@ Plain `<table>` elements get bordered cells and a contrast-flipped
     <tr><th>Framework</th><th>Brotli</th><th>JS-free</th></tr>
   </thead>
   <tbody>
-    <tr><td>Skeletonic</td><td>6.8 KB</td><td>Yes</td></tr>
+    <tr><td>Skeletonic</td><td>6.7 KB</td><td>Yes</td></tr>
     <tr><td>Pico CSS</td><td>10.1 KB</td><td>Yes</td></tr>
     <tr><td>Bootstrap</td><td>23.0 KB</td><td>No (Popper)</td></tr>
   </tbody>
@@ -618,21 +618,21 @@ gap; `.grid-cols-N` (1–12) generates the column tracks; `.col-span-N`
 
 <section aria-labelledby="grid">
 <div class="grid grid-cols-2" style="margin-bottom:.5rem;">
-  <div style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Half</div>
-  <div style="padding:.75rem;background:var(--cl-grey-200);color:#1a1a1a;border-radius:.25rem;text-align:center;">Half</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);color:var(--foreground-color);border-radius:.25rem;text-align:center;">Half</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);color:var(--foreground-color);border-radius:.25rem;text-align:center;">Half</div>
 </div>
 
 <div class="grid grid-cols-3" style="margin-bottom:.5rem;">
-  <div style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
-  <div style="padding:.75rem;background:var(--cl-grey-200);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
-  <div style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);color:var(--foreground-color);border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);color:var(--foreground-color);border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-100);color:var(--foreground-color);border-radius:.25rem;text-align:center;">Third</div>
 </div>
 
 <div class="grid grid-cols-3">
-  <div class="col-span-2" style="padding:.75rem;background:var(--cl-grey-100);color:#1a1a1a;border-radius:.25rem;text-align:center;">
+  <div class="col-span-2" style="padding:.75rem;background:var(--cl-grey-100);color:var(--foreground-color);border-radius:.25rem;text-align:center;">
   Two thirds (col-span-2)
   </div>
-  <div style="padding:.75rem;background:var(--cl-grey-200);color:#1a1a1a;border-radius:.25rem;text-align:center;">Third</div>
+  <div style="padding:.75rem;background:var(--cl-grey-200);color:var(--foreground-color);border-radius:.25rem;text-align:center;">Third</div>
 </div>
 </section>
 
@@ -655,18 +655,19 @@ and traps focus correctly on its own.
 
 ```html
 <style>
-  .sk-header{position:relative;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem;border:1px solid #e4e4e7;border-radius:.5rem;background:#fff;}
-  .sk-header .sk-brand{font-weight:600;color:#0a0a0a !important;text-decoration:none;}
+  /* Demo uses light-dark() so it adapts to colour-scheme. */
+  .sk-header{position:relative;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem;border:1px solid var(--c-border);border-radius:.5rem;background:light-dark(#fff,#1a1a1a);color:light-dark(#1a1a1a,#f5f5f5);}
+  .sk-header .sk-brand{font-weight:600;color:light-dark(#0a0a0a,#f5f5f5) !important;text-decoration:none;}
   .sk-header .sk-toggle{position:absolute;left:-9999px;}
-  .sk-header .sk-burger{display:none;margin-left:auto;cursor:pointer;padding:.625rem .75rem;border:1px solid #e4e4e7;border-radius:.375rem;font-size:1.125rem;line-height:1;min-width:2.75rem;min-height:2.75rem;}
+  .sk-header .sk-burger{display:none;margin-left:auto;cursor:pointer;padding:.625rem .75rem;border:1px solid var(--c-border);border-radius:.375rem;font-size:1.125rem;line-height:1;min-width:2.75rem;min-height:2.75rem;color:inherit;background:transparent;}
   .sk-header .sk-burger:focus-within,.sk-header .sk-toggle:focus-visible+.sk-burger{outline:2px solid hsl(210,100%,42%);outline-offset:2px;}
   .sk-header .sk-menu{list-style:none;display:flex;gap:.25rem;margin:0 0 0 auto;padding:0;}
-  .sk-header .sk-menu a{display:inline-flex;align-items:center;min-height:2.75rem;padding:.5rem .875rem;border-radius:.375rem;color:#1a1a1a;text-decoration:none;}
-  .sk-header .sk-menu a:hover{background:#f4f4f5;}
+  .sk-header .sk-menu a{display:inline-flex;align-items:center;min-height:2.75rem;padding:.5rem .875rem;border-radius:.375rem;color:light-dark(#1a1a1a,#f5f5f5) !important;text-decoration:none;}
+  .sk-header .sk-menu a:hover{background:light-dark(#f4f4f5,#262629);}
   @media (max-width:640px){
     .sk-header .sk-burger{display:inline-flex;align-items:center;justify-content:center;}
-    .sk-header .sk-menu{display:none;flex-direction:column;gap:0;position:absolute;top:calc(100% + .25rem);left:0;right:0;background:#fff;border:1px solid #e4e4e7;border-radius:.5rem;padding:.375rem;box-shadow:0 4px 24px rgba(0,0,0,.08);z-index:10;}
-    .sk-header .sk-menu a{padding:.75rem 1rem;border-bottom:1px solid #f4f4f5;}
+    .sk-header .sk-menu{display:none;flex-direction:column;gap:0;position:absolute;top:calc(100% + .25rem);left:0;right:0;background:light-dark(#fff,#1a1a1a);border:1px solid var(--c-border);border-radius:.5rem;padding:.375rem;box-shadow:0 4px 24px rgba(0,0,0,.18);z-index:10;}
+    .sk-header .sk-menu a{padding:.75rem 1rem;border-bottom:1px solid var(--c-border);}
     .sk-header .sk-menu li:last-child a{border-bottom:0;}
     .sk-header .sk-toggle:checked ~ .sk-menu{display:flex;}
   }
@@ -686,18 +687,19 @@ and traps focus correctly on its own.
 
 <section aria-labelledby="header">
 <style>
-  .sk-header{position:relative;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem;border:1px solid #e4e4e7;border-radius:.5rem;background:#fff;}
-  .sk-header .sk-brand{font-weight:600;color:#0a0a0a !important;text-decoration:none;}
+  /* Demo uses light-dark() so it adapts to colour-scheme. */
+  .sk-header{position:relative;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem;border:1px solid var(--c-border);border-radius:.5rem;background:light-dark(#fff,#1a1a1a);color:light-dark(#1a1a1a,#f5f5f5);}
+  .sk-header .sk-brand{font-weight:600;color:light-dark(#0a0a0a,#f5f5f5) !important;text-decoration:none;}
   .sk-header .sk-toggle{position:absolute;left:-9999px;}
-  .sk-header .sk-burger{display:none;margin-left:auto;cursor:pointer;padding:.625rem .75rem;border:1px solid #e4e4e7;border-radius:.375rem;font-size:1.125rem;line-height:1;min-width:2.75rem;min-height:2.75rem;}
+  .sk-header .sk-burger{display:none;margin-left:auto;cursor:pointer;padding:.625rem .75rem;border:1px solid var(--c-border);border-radius:.375rem;font-size:1.125rem;line-height:1;min-width:2.75rem;min-height:2.75rem;color:inherit;background:transparent;}
   .sk-header .sk-burger:focus-within,.sk-header .sk-toggle:focus-visible+.sk-burger{outline:2px solid hsl(210,100%,42%);outline-offset:2px;}
   .sk-header .sk-menu{list-style:none;display:flex;gap:.25rem;margin:0 0 0 auto;padding:0;}
-  .sk-header .sk-menu a{display:inline-flex;align-items:center;min-height:2.75rem;padding:.5rem .875rem;border-radius:.375rem;color:#1a1a1a;text-decoration:none;}
-  .sk-header .sk-menu a:hover{background:#f4f4f5;}
+  .sk-header .sk-menu a{display:inline-flex;align-items:center;min-height:2.75rem;padding:.5rem .875rem;border-radius:.375rem;color:light-dark(#1a1a1a,#f5f5f5) !important;text-decoration:none;}
+  .sk-header .sk-menu a:hover{background:light-dark(#f4f4f5,#262629);}
   @media (max-width:640px){
     .sk-header .sk-burger{display:inline-flex;align-items:center;justify-content:center;}
-    .sk-header .sk-menu{display:none;flex-direction:column;gap:0;position:absolute;top:calc(100% + .25rem);left:0;right:0;background:#fff;border:1px solid #e4e4e7;border-radius:.5rem;padding:.375rem;box-shadow:0 4px 24px rgba(0,0,0,.08);z-index:10;}
-    .sk-header .sk-menu a{padding:.75rem 1rem;border-bottom:1px solid #f4f4f5;}
+    .sk-header .sk-menu{display:none;flex-direction:column;gap:0;position:absolute;top:calc(100% + .25rem);left:0;right:0;background:light-dark(#fff,#1a1a1a);border:1px solid var(--c-border);border-radius:.5rem;padding:.375rem;box-shadow:0 4px 24px rgba(0,0,0,.18);z-index:10;}
+    .sk-header .sk-menu a{padding:.75rem 1rem;border-bottom:1px solid var(--c-border);}
     .sk-header .sk-menu li:last-child a{border-bottom:0;}
     .sk-header .sk-toggle:checked ~ .sk-menu{display:flex;}
   }

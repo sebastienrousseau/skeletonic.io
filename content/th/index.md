@@ -1,7 +1,7 @@
 ---
-title: "Skeletonic Stylus — CSS ที่เข้าถึงได้ ขนาด 7.9 KB gzipped"
+title: "Skeletonic Stylus — CSS ที่เข้าถึงได้ ขนาด 7.7 KB gzipped"
 name: "Skeletonic Stylus"
-description: "Skeletonic Stylus เป็นไลบรารี Stylus CSS ที่เบาและเป็นโมดูล — รองรับ WCAG 2.2, ใช้ Cascade Layers, ขนาด 7.9 KB gzipped — ออกแบบมาเพื่อการพัฒนา UI เว็บสมัยใหม่"
+description: "Skeletonic Stylus เป็นไลบรารี Stylus CSS ที่เบาและเป็นโมดูล — รองรับ WCAG 2.2, ใช้ Cascade Layers, ขนาด 7.7 KB gzipped — ออกแบบมาเพื่อการพัฒนา UI เว็บสมัยใหม่"
 layout: index
 permalink: https://skeletonic.io/th/
 date: 2026-04-08

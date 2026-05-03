@@ -20,7 +20,7 @@ keywords: "fi skeletonic sori ẹrọ, iṣeto stylus, css cdn, bẹrẹ nibi"
 
 Ṣe o tuntun si Skeletonic Stylus? Ninu **v2.0.0** o rọrun ju ti tẹlẹ
 lọ lati yan awọn ẹya ti o nilo nikan. O ṣeun si iwọn kekere rẹ
-(7.9&nbsp;KB gzipped fun iwe-aṣa akọkọ), o darapọ mọ ohun elo wẹẹbu
+(7.7&nbsp;KB gzipped fun iwe-aṣa akọkọ), o darapọ mọ ohun elo wẹẹbu
 eyikeyi ni kiakia — ko si ilana JavaScript ti a beere, ko si igbesẹ ikọ
 ti a nilo ti o ba lo CDN.
 
@@ -101,8 +101,8 @@ Ile-ikawe naa fi ọpọlọpọ awọn akopọ ti a ti kọ tẹlẹ ranṣẹ 
 
 | Faili | Idi | Iwọn (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Atunṣeto + awọn ami + eto + awọn ẹya + awọn paati + awọn iwulo | 42.3 KB / 7.9 KB |
-| `animations/skeletonic-animations.min.css` | Modulu ere idasọnu yan | ≈213 KB / ≈6.8 KB |
+| `core/skeletonic.min.css` | Atunṣeto + awọn ami + eto + awọn ẹya + awọn paati + awọn iwulo | 38.8 KB / 7.7 KB |
+| `animations/skeletonic-animations.min.css` | Modulu ere idasọnu yan | ≈213 KB / ≈6.7 KB |
 | `palettes/material/skeletonic-material.min.css` | Palẹti awọ Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Palẹti iwulo Tachyons | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Palẹti aabo wẹẹbu | ≈3.5 KB |
@@ -224,7 +224,7 @@ awọn oluranlọwọ skip-link, atilẹyin idinku-iṣipopada ati ipo dudu
 nipasẹ aiyipada ranṣẹ.
 
 **Kini iwọn gzipped?**
-42.3&nbsp;KB minified, **7.9&nbsp;KB gzipped**, 6.8&nbsp;KB brotli fun
+38.8&nbsp;KB minified, **7.7&nbsp;KB gzipped**, 6.7&nbsp;KB brotli fun
 iwe-aṣa akọkọ ni kikun. Opin 8&nbsp;KB ni a fi ipa mu ninu CI.
 
 **Kini iwe-aṣẹ ti o lo?**
@@ -265,7 +265,7 @@ iṣẹ-akanṣe rẹ nilo. Ọfẹ fun lilo iṣowo ati ti ara ẹni.
       "name": "Kini iwọn gzipped ti Skeletonic Stylus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "42.3 KB minified, 7.9 KB gzipped, 6.8 KB brotli fun iwe-aṣa akọkọ ni kikun. Opin 8 KB ni a fi ipa mu ninu CI lori gbogbo adehun."
+        "text": "38.8 KB minified, 7.7 KB gzipped, 6.7 KB brotli fun iwe-aṣa akọkọ ni kikun. Opin 8 KB ni a fi ipa mu ninu CI lori gbogbo adehun."
       }
     },
     {

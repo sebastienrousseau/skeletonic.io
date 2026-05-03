@@ -18,8 +18,8 @@ keywords: "skeletonic, 概要, stylus, css フレームワーク, 理念"
 
 <dl class="stat-strip" aria-label="Project facts">
   <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
   <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
   <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
 </dl>
@@ -42,7 +42,7 @@ keywords: "skeletonic, 概要, stylus, css フレームワーク, 理念"
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="羽" width="64" height="64" loading="lazy" decoding="async">
     <h3>軽量</h3>
-    <p>gzip圧縮で約7.9&nbsp;KB。ページの読み込みが速くなります。必要なビルディングブロックはすべて含まれています。</p>
+    <p>gzip圧縮で約7.7&nbsp;KB。ページの読み込みが速くなります。必要なビルディングブロックはすべて含まれています。</p>
   </article>
 
   <article class="feature-card">
@@ -76,7 +76,7 @@ keywords: "skeletonic, 概要, stylus, css フレームワーク, 理念"
 
 | 機能 | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| gzip圧縮サイズ | **約7.9&nbsp;KB** | 約30&nbsp;KB | 約10&nbsp;KB (varies) | 約30&nbsp;KB |
+| gzip圧縮サイズ | **約7.7&nbsp;KB** | 約30&nbsp;KB | 約10&nbsp;KB (varies) | 約30&nbsp;KB |
 | WCAG 2.2 準拠 | **組み込み済み** | 部分的 | 手動 | 部分的 |
 | カスケードレイヤー | **対応 (`@layer`)** | 非対応 | 非対応 | 非対応 |
 | ダークモード | **`prefers-color-scheme`** | オプトイン | クラスベース | オプトイン |

@@ -151,7 +151,7 @@ keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Lightweight</h3>
-      <p>42.3 KB minified, 7.9 KB gzipped.</p>
+      <p>38.8 KB minified, 7.7 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -173,7 +173,7 @@ keywords: "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首,
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">輕量級</h3>
-      <p>壓縮後 42.3&nbsp;KB，gzip 後 7.9&nbsp;KB。</p>
+      <p>壓縮後 38.8&nbsp;KB，gzip 後 7.7&nbsp;KB。</p>
     </div>
   </article>
   <article class="card flex-1">

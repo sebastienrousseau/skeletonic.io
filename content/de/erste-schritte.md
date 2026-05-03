@@ -104,7 +104,7 @@ Bundles unter `dist/css/`:
 | Datei | Zweck | Größe (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + Tokens + Layout + Elemente + Komponenten + Hilfsmittel | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Optionales Animationsmodul | ≈213 KB / ≈6.8 KB |
+| `animations/skeletonic-animations.min.css` | Optionales Animationsmodul | ≈213 KB / ≈6.7 KB |
 | `palettes/material/skeletonic-material.min.css` | Material-Farbpalette | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons-Hilfspalette | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Websichere Palette | ≈3.5 KB |

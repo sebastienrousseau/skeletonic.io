@@ -1,12 +1,12 @@
 {
-  "keywords": "css, stylus, css ramverk, tillganglig css, wcag 2.2, lattiktat css, cascade layers, designsystem",
-  "author": "Sebastien Rousseau",
-  "language": "sv",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "description": "Skeletonic Stylus ar ett lattiktat, modulart Stylus CSS-bibliotek — WCAG 2.2-klart, med cascade layers, 8,3 KB gzippat — utformat for att effektivisera modern webbgranssnittsutveckling.",
-  "date": "2026-04-08",
   "title": "Skeletonic Stylus — Tillganglig CSS, 8,3 KB gzippad",
+  "permalink": "https://skeletonic.io/sv/",
+  "name": "Skeletonic Stylus",
+  "keywords": "css, stylus, css ramverk, tillganglig css, wcag 2.2, lattiktat css, cascade layers, designsystem",
   "layout": "index",
-  "permalink": "https://skeletonic.io/sv/"
+  "language": "sv",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Skeletonic Stylus ar ett lattiktat, modulart Stylus CSS-bibliotek — WCAG 2.2-klart, med cascade layers, 8,3 KB gzippat — utformat for att effektivisera modern webbgranssnittsutveckling."
 }

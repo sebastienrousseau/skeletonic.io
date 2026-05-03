@@ -18,8 +18,8 @@ keywords: "skeletonic, אודות, stylus, css framework, פילוסופיה"
 
 <dl class="stat-strip" aria-label="Project facts">
   <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
   <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
   <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
 </dl>
@@ -46,7 +46,7 @@ keywords: "skeletonic, אודות, stylus, css framework, פילוסופיה"
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="נוצה" width="64" height="64" loading="lazy" decoding="async">
     <h3>קלת משקל</h3>
-    <p>כ-7.9&nbsp;KB בדחיסת gzip. הדפים נטענים מהר יותר. כל אבן בניין חיונית נשארת.</p>
+    <p>כ-7.7&nbsp;KB בדחיסת gzip. הדפים נטענים מהר יותר. כל אבן בניין חיונית נשארת.</p>
   </article>
 
   <article class="feature-card">
@@ -82,7 +82,7 @@ keywords: "skeletonic, אודות, stylus, css framework, פילוסופיה"
 
 | תכונה | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| גודל gzip | **כ-7.9&nbsp;KB** | כ-30&nbsp;KB | כ-10&nbsp;KB (varies) | כ-30&nbsp;KB |
+| גודל gzip | **כ-7.7&nbsp;KB** | כ-30&nbsp;KB | כ-10&nbsp;KB (varies) | כ-30&nbsp;KB |
 | תאימות WCAG 2.2 | **מובנית** | חלקית | ידנית | חלקית |
 | שכבות קסקייד | **כן (`@layer`)** | לא | לא | לא |
 | מצב כהה | **`prefers-color-scheme`** | הצטרפות | מבוסס מחלקה | הצטרפות |

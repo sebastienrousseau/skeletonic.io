@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/nl/paletten/",
-  "keywords": "css palet, material, tachyons, websafe, ontwerptokens",
-  "language": "nl",
-  "layout": "page",
+  "author": "Sebastien Rousseau",
   "description": "Material-, Tachyons- en webveilige kleurenpaletten geleverd in Skeletonic Stylus v2.0.0.",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
+  "keywords": "css palet, material, tachyons, websafe, ontwerptokens",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/nl/paletten/",
   "title": "Paletten",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "language": "nl",
+  "layout": "page",
+  "name": "Skeletonic Stylus"
 }

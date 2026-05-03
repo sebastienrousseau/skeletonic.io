@@ -164,7 +164,7 @@ Isang bordered, padded na container para sa isang koherenteng yunit. Ipares sa
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Magaan</h3>
-      <p>42.3 KB minified, 7.9 KB gzipped.</p>
+      <p>38.8 KB minified, 7.7 KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -186,7 +186,7 @@ Isang bordered, padded na container para sa isang koherenteng yunit. Ipares sa
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">Magaan</h3>
-      <p>42.3&nbsp;KB minified, 7.9&nbsp;KB gzipped.</p>
+      <p>38.8&nbsp;KB minified, 7.7&nbsp;KB gzipped.</p>
     </div>
   </article>
   <article class="card flex-1">

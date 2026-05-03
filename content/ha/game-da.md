@@ -18,8 +18,8 @@ keywords: "skeletonic, game da, stylus, css framework, falsafa"
 
 <dl class="stat-strip" aria-label="Project facts">
   <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
   <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
   <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
 </dl>
@@ -42,7 +42,7 @@ An haife shi a shekarar 2018 a matsayin gwaji na sirri kan **aika ƙaramin CSS**
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Gashin tsuntsu" width="64" height="64" loading="lazy" decoding="async">
     <h3>Mai saukin nauyi</h3>
-    <p>7.9&nbsp;KB gzipped. Shafukan suna lodi da sauri. Kowane ginshiƙi mai mahimmanci yana nan.</p>
+    <p>7.7&nbsp;KB gzipped. Shafukan suna lodi da sauri. Kowane ginshiƙi mai mahimmanci yana nan.</p>
   </article>
 
   <article class="feature-card">
@@ -76,7 +76,7 @@ Takarda ɗaya ta stylesheet da aka saukar ta rufe typography, maballin, sifofi, 
 
 | Fasali | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Girman gzipped | **7.9&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| Girman gzipped | **7.7&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | Daidaiton WCAG 2.2 | **An gina shi a ciki** | Wani ɓangare | Da hannu | Wani ɓangare |
 | Cascade layers | **Eh (`@layer`)** | A'a | A'a | A'a |
 | Yanayin dare | **`prefers-color-scheme`** | Zaɓi | Na aji | Zaɓi |

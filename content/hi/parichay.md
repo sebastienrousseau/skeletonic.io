@@ -18,8 +18,8 @@ keywords: "skeletonic, परिचय, stylus, css framework, दर्शन"
 
 <dl class="stat-strip" aria-label="Project facts">
   <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
   <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
   <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
 </dl>
@@ -45,7 +45,7 @@ CSS लाइब्रेरी है — सुलभ, तेज़ और म
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="हल्का" width="64" height="64" loading="lazy" decoding="async">
     <h3>हल्की</h3>
-    <p>7.9&nbsp;KB gzipped। पेज तेज़ी से लोड होते हैं। हर ज़रूरी बिल्डिंग ब्लॉक शामिल है।</p>
+    <p>7.7&nbsp;KB gzipped। पेज तेज़ी से लोड होते हैं। हर ज़रूरी बिल्डिंग ब्लॉक शामिल है।</p>
   </article>
 
   <article class="feature-card">
@@ -82,7 +82,7 @@ Bulma पर कोई निर्भरता नहीं।
 
 | सुविधा | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Gzipped आकार | **7.9&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| Gzipped आकार | **7.7&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | WCAG 2.2 अनुरूपता | **अंतर्निहित** | आंशिक | मैनुअल | आंशिक |
 | Cascade layers | **हाँ (`@layer`)** | नहीं | नहीं | नहीं |
 | डार्क मोड | **`prefers-color-scheme`** | ऑप्ट-इन | Class-based | ऑप्ट-इन |

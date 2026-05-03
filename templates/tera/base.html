@@ -15,7 +15,8 @@
   Adding a new locale = adding one `{% elif lang == "xx" %}` branch
   with the full set of strings.
 -#}
-{%- set lang = page.language | default(value="en") -%}
+{%- set lang = page.language | default(value=site.language) | default(value="en") -%}
+{%- if lang == "en-GB" or lang == "en-US" -%}{%- set lang = "en" -%}{%- endif -%}
 {%- if lang == "ar" or lang == "he" -%}
   {%- set is_rtl = true -%}
 {%- else -%}
@@ -2412,7 +2413,7 @@
          v0.0.34 and don't change between builds — if the SSG ever
          changes them we'll see the CSP error in the browser console
          and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self' https://cdn.jsdelivr.net; form-action 'self' https://formspree.io https://codepen.io; base-uri 'self'">
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
 
     <link rel="canonical" href="{{ site.base_url }}{{ lang_prefix }}{{ page_path }}">
@@ -2607,6 +2608,29 @@
             </svg>
             <span class="search-shortcut" aria-hidden="true"></span>
           </button>
+          <div class="palette-switcher" id="paletteSwitcher">
+            <button type="button" class="theme-toggle" id="paletteToggle" aria-label="Choose colour palette" aria-expanded="false" aria-haspopup="true" aria-controls="paletteMenu">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 2 2 0 0 0 2-2 2 2 0 0 1 2-2h2a4 4 0 0 0 4-4A10 10 0 0 0 12 2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+            </button>
+            <div class="palette-menu" id="paletteMenu" role="menu" hidden>
+              <button type="button" class="palette-swatch is-active" role="menuitemradio" aria-checked="true" data-palette="default" style="--swatch:#0066cc">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Default</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="ember" style="--swatch:#ed6300">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Ember</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="iris" style="--swatch:#8668ff">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Iris</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="lagoon" style="--swatch:#00a1b3">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Lagoon</span>
+              </button>
+            </div>
+          </div>
           <button aria-label="{{ t_nav_theme_dark_aria }}" class="theme-toggle" id="themeToggle" type="button" data-label-dark="{{ t_nav_theme_dark }}" data-label-light="{{ t_nav_theme_light }}" data-aria-dark="{{ t_nav_theme_dark_aria }}" data-aria-light="{{ t_nav_theme_light_aria }}">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
               <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>

@@ -18,8 +18,8 @@ keywords: "skeletonic, 關於, stylus, css 框架, 設計理念"
 
 <dl class="stat-strip" aria-label="Project facts">
   <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
   <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
   <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
 </dl>
@@ -42,7 +42,7 @@ keywords: "skeletonic, 關於, stylus, css 框架, 設計理念"
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="羽毛" width="64" height="64" loading="lazy" decoding="async">
     <h3>輕量級</h3>
-    <p>gzip 後約 7.9&nbsp;KB。頁面載入更快。每個必要的建構模組一應俱全。</p>
+    <p>gzip 後約 7.7&nbsp;KB。頁面載入更快。每個必要的建構模組一應俱全。</p>
   </article>
 
   <article class="feature-card">
@@ -76,7 +76,7 @@ keywords: "skeletonic, 關於, stylus, css 框架, 設計理念"
 
 | 功能 | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| gzip 大小 | **約 7.9&nbsp;KB** | 約 30&nbsp;KB | 約 10&nbsp;KB (varies) | 約 30&nbsp;KB |
+| gzip 大小 | **約 7.7&nbsp;KB** | 約 30&nbsp;KB | 約 10&nbsp;KB (varies) | 約 30&nbsp;KB |
 | WCAG 2.2 合規 | **內建** | 部分 | 手動 | 部分 |
 | 級聯層 | **支援（`@layer`）** | 不支援 | 不支援 | 不支援 |
 | 深色模式 | **`prefers-color-scheme`** | 選擇性啟用 | 基於類別 | 選擇性啟用 |

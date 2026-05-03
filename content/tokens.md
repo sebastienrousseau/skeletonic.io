@@ -34,18 +34,19 @@ up the override automatically.
 
 ## Brand and status colours
 
-| Token | Light default (OKLCH) | Where it's used |
-|---|---|---|
-| `--cl-primary` | `oklch(0.55 0.20 250)` | Primary buttons, badges, links |
-| `--cl-secondary` | `oklch(0.45 0.15 200)` | Secondary buttons, secondary code accent |
-| `--cl-tertiary` | `oklch(0.60 0.02 250)` | Tertiary surfaces |
-| `--cl-disable` | `oklch(0.80 0.01 250)` | Disabled states |
-| `--cl-info` | `oklch(0.85 0.15 100)` | Info alert, `.alert-info`, `code.info` |
-| `--cl-success` | `oklch(0.70 0.20 140)` | Success alert, `code.success` |
-| `--cl-warning` | `oklch(0.80 0.15 80)` | Warning alert, `code.warning` |
-| `--cl-danger` | `oklch(0.60 0.25 20)` | Error alert, `code.error`, `.input-error` |
-| `--cl-link` | `oklch(0.60 0.25 250)` | Inline `<a>` colour |
-| `--cl-inverse` | `oklch(1 0 0)` | Foreground on dark surfaces |
+Click any swatch to copy the token name. Hover to preview the live
+value resolved against the current palette + colour-scheme.
+
+<ul class="token-grid" data-token-grid>
+  <li><button type="button" class="token-card" data-token="--cl-primary"  style="--swatch:var(--cl-primary)"  aria-label="Copy --cl-primary"><span class="token-swatch" aria-hidden="true"></span><span class="token-name">--cl-primary</span><span class="token-use">Primary buttons, badges, links</span></button></li>
+  <li><button type="button" class="token-card" data-token="--cl-secondary" style="--swatch:var(--cl-secondary)" aria-label="Copy --cl-secondary"><span class="token-swatch" aria-hidden="true"></span><span class="token-name">--cl-secondary</span><span class="token-use">Secondary buttons, code accent</span></button></li>
+  <li><button type="button" class="token-card" data-token="--cl-success"   style="--swatch:var(--cl-success)"   aria-label="Copy --cl-success"><span class="token-swatch" aria-hidden="true"></span><span class="token-name">--cl-success</span><span class="token-use">Success alert, <code>code.success</code></span></button></li>
+  <li><button type="button" class="token-card" data-token="--cl-info"      style="--swatch:var(--cl-info)"      aria-label="Copy --cl-info"><span class="token-swatch" aria-hidden="true"></span><span class="token-name">--cl-info</span><span class="token-use">Info alert, <code>.alert-info</code></span></button></li>
+  <li><button type="button" class="token-card" data-token="--cl-warning"   style="--swatch:var(--cl-warning)"   aria-label="Copy --cl-warning"><span class="token-swatch" aria-hidden="true"></span><span class="token-name">--cl-warning</span><span class="token-use">Warning alert, <code>code.warning</code></span></button></li>
+  <li><button type="button" class="token-card" data-token="--cl-danger"    style="--swatch:var(--cl-danger)"    aria-label="Copy --cl-danger"><span class="token-swatch" aria-hidden="true"></span><span class="token-name">--cl-danger</span><span class="token-use">Error alert, <code>.input-error</code></span></button></li>
+  <li><button type="button" class="token-card" data-token="--cl-grey-300"  style="--swatch:var(--cl-grey-300)"  aria-label="Copy --cl-grey-300"><span class="token-swatch" aria-hidden="true"></span><span class="token-name">--cl-grey-300</span><span class="token-use">Borders, dividers</span></button></li>
+  <li><button type="button" class="token-card" data-token="--cl-grey-700"  style="--swatch:var(--cl-grey-700)"  aria-label="Copy --cl-grey-700"><span class="token-swatch" aria-hidden="true"></span><span class="token-name">--cl-grey-700</span><span class="token-use">Body text on light surface</span></button></li>
+</ul>
 
 Each colour has a paired background token (`--bg-primary`,
 `--bg-secondary`, …) for tinted surfaces.

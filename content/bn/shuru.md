@@ -101,8 +101,8 @@ pnpm run build
 
 | ফাইল | উদ্দেশ্য | আকার (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 42.3 KB / 7.9 KB |
-| `animations/skeletonic-animations.min.css` | ঐচ্ছিক অ্যানিমেশন মডিউল | ≈213 KB / ≈6.8 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 38.8 KB / 7.7 KB |
+| `animations/skeletonic-animations.min.css` | ঐচ্ছিক অ্যানিমেশন মডিউল | ≈213 KB / ≈6.7 KB |
 | `palettes/material/skeletonic-material.min.css` | Material রঙ প্যালেট | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons ইউটিলিটি প্যালেট | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Web-safe প্যালেট | ≈3.5 KB |
@@ -224,7 +224,7 @@ Stylus ট্রি পাবেন:
 skip-link সহায়ক, reduced-motion সমর্থন এবং ডিফল্টরূপে ডার্ক মোড শিপ করে।
 
 **gzipped আকার কত?**
-42.3&nbsp;KB মিনিফাইড, **~৭.৫&nbsp;KB gzipped**, ~৬.৩&nbsp;KB brotli
+38.8&nbsp;KB মিনিফাইড, **~৭.৫&nbsp;KB gzipped**, ~৬.৩&nbsp;KB brotli
 সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮&nbsp;KB সীমা CI-তে বাধ্যতামূলক।
 
 **কোন লাইসেন্স ব্যবহার করা হয়?**
@@ -266,7 +266,7 @@ MIT এবং Apache 2.0 দ্বৈত লাইসেন্সপ্রাপ
       "name": "Skeletonic Stylus-এর gzipped আকার কত?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "42.3 KB মিনিফাইড, ~৭.৫ KB gzipped, ~৬.৩ KB brotli সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮ KB সীমা প্রতিটি কমিটে CI-তে বাধ্যতামূলক।"
+        "text": "38.8 KB মিনিফাইড, ~৭.৫ KB gzipped, ~৬.৩ KB brotli সম্পূর্ণ মূল স্টাইলশিটের জন্য। ৮ KB সীমা প্রতিটি কমিটে CI-তে বাধ্যতামূলক।"
       }
     },
     {

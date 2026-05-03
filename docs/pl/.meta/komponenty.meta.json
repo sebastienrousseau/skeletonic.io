@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
   "keywords": "komponenty skeletonic, przyciski, karty, formularze, alerty, odznaki, naglowek, nawigacja, hamburger css",
-  "title": "Komponenty",
-  "permalink": "https://skeletonic.io/pl/komponenty/",
   "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "description": "Przyklady HTML na zywo kazdego komponentu Skeletonic Stylus, pogrupowane, zakotwiczone i renderowane z tym samym arkuszem stylow.",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "title": "Komponenty",
   "language": "pl",
-  "name": "Skeletonic Stylus"
+  "description": "Przyklady HTML na zywo kazdego komponentu Skeletonic Stylus, pogrupowane, zakotwiczone i renderowane z tym samym arkuszem stylow.",
+  "permalink": "https://skeletonic.io/pl/komponenty/"
 }

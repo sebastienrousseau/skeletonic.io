@@ -1,11 +1,11 @@
 {
-  "permalink": "https://skeletonic.io/de/aenderungsprotokoll/",
-  "title": "Änderungsprotokoll",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
-  "language": "de",
-  "description": "Release-Hinweise fuer Skeletonic Stylus, mit v2.0.0 im Detail.",
-  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "skeletonic aenderungsprotokoll, release notes, v2.0.0, semver"
+  "title": "Änderungsprotokoll",
+  "permalink": "https://skeletonic.io/de/aenderungsprotokoll/",
+  "keywords": "skeletonic aenderungsprotokoll, release notes, v2.0.0, semver",
+  "description": "Release-Hinweise fuer Skeletonic Stylus, mit v2.0.0 im Detail.",
+  "language": "de",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "layout": "page"
 }

@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/nl/contact/",
-  "title": "Contact",
-  "description": "Neem contact op over Skeletonic Stylus — bugrapporten, functie-ideeën, samenwerkingen of algemene feedback.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "language": "nl",
-  "name": "Skeletonic Stylus",
-  "keywords": "contact, ondersteuning, feedback, skeletonic",
   "author": "Sebastien Rousseau",
-  "layout": "contact"
+  "date": "2026-04-08",
+  "layout": "contact",
+  "title": "Contact",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "language": "nl",
+  "permalink": "https://skeletonic.io/nl/contact/",
+  "keywords": "contact, ondersteuning, feedback, skeletonic",
+  "description": "Neem contact op over Skeletonic Stylus — bugrapporten, functie-ideeën, samenwerkingen of algemene feedback."
 }

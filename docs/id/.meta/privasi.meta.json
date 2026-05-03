@@ -1,12 +1,12 @@
 {
-  "language": "id",
-  "title": "Privasi",
-  "keywords": "privasi, gdpr, cookie, tanpa pelacakan",
   "description": "Data apa yang dikumpulkan skeletonic.io, mengapa, dan cara memilih keluar.",
-  "permalink": "https://skeletonic.io/id/privasi/",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
+  "layout": "page",
   "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page"
+  "title": "Privasi",
+  "permalink": "https://skeletonic.io/id/privasi/",
+  "language": "id",
+  "name": "Skeletonic Stylus",
+  "keywords": "privasi, gdpr, cookie, tanpa pelacakan",
+  "author": "Sebastien Rousseau"
 }

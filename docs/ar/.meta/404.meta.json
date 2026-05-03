@@ -1,11 +1,11 @@
 {
-  "keywords": "404, غير موجود",
+  "description": "الصفحة التي طلبتها غير موجودة على skeletonic.io.",
   "title": "الصفحة غير موجودة",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/ar/404/",
+  "keywords": "404, غير موجود",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
   "author": "Sebastien Rousseau",
   "language": "ar",
-  "description": "الصفحة التي طلبتها غير موجودة على skeletonic.io.",
-  "layout": "page"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

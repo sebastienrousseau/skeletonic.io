@@ -19,7 +19,7 @@ keywords: "ติดตั้ง skeletonic, ตั้งค่า stylus, css c
 ## บทนำ
 
 ใหม่กับ Skeletonic Stylus? ใน **v2.0.0** การเลือกเฉพาะฟีเจอร์ที่ต้องการนั้น
-ง่ายกว่าที่เคย ด้วยขนาดที่เล็กมาก (7.9&nbsp;KB gzipped สำหรับ
+ง่ายกว่าที่เคย ด้วยขนาดที่เล็กมาก (7.7&nbsp;KB gzipped สำหรับ
 สไตล์ชีตหลัก) จึงรวมเข้ากับเว็บแอปใดก็ได้อย่างรวดเร็ว — ไม่ต้องใช้
 JavaScript framework ไม่ต้อง build step หากใช้ CDN
 
@@ -101,8 +101,8 @@ pnpm run build
 
 | ไฟล์ | วัตถุประสงค์ | ขนาด (min/gz) |
 |---|---|---|
-| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 42.3 KB / 7.9 KB |
-| `animations/skeletonic-animations.min.css` | โมดูลแอนิเมชันเสริม | ≈213 KB / ≈6.8 KB |
+| `core/skeletonic.min.css` | Reset + tokens + layout + elements + components + utilities | 38.8 KB / 7.7 KB |
+| `animations/skeletonic-animations.min.css` | โมดูลแอนิเมชันเสริม | ≈213 KB / ≈6.7 KB |
 | `palettes/material/skeletonic-material.min.css` | ชุดสี Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | ชุดสีอรรถประโยชน์ Tachyons | 7.3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | ชุดสี Web-safe | ≈3.5 KB |
@@ -221,7 +221,7 @@ CSS ที่คอมไพล์แล้วจาก CDN ได้เลย �
 ลิงก์ข้าม รองรับการลดการเคลื่อนไหว และโหมดมืดเป็นค่าเริ่มต้น
 
 **ขนาด gzipped เท่าไร?**
-42.3&nbsp;KB minified, **7.9&nbsp;KB gzipped**, 6.8&nbsp;KB brotli สำหรับ
+38.8&nbsp;KB minified, **7.7&nbsp;KB gzipped**, 6.7&nbsp;KB brotli สำหรับ
 สไตล์ชีตหลักทั้งหมด เพดาน 8&nbsp;KB ถูกบังคับใน CI ทุกคอมมิต
 
 **ใช้สัญญาอนุญาตอะไร?**
@@ -262,7 +262,7 @@ CSS ที่คอมไพล์แล้วจาก CDN ได้เลย �
       "name": "ขนาด gzipped ของ Skeletonic Stylus เท่าไร?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "42.3 KB minified, 7.9 KB gzipped, 6.8 KB brotli สำหรับสไตล์ชีตหลักทั้งหมด เพดาน 8 KB ถูกบังคับใน CI ทุกคอมมิต"
+        "text": "38.8 KB minified, 7.7 KB gzipped, 6.7 KB brotli สำหรับสไตล์ชีตหลักทั้งหมด เพดาน 8 KB ถูกบังคับใน CI ทุกคอมมิต"
       }
     },
     {

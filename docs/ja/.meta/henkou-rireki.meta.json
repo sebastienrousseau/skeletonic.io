@@ -1,11 +1,11 @@
 {
-  "layout": "page",
-  "permalink": "https://skeletonic.io/ja/henkou-rireki/",
-  "description": "Skeletonic Stylus のリリースノート。v2.0.0 の詳細を掲載しています。",
-  "language": "ja",
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "skeletonic 変更履歴, リリースノート, v2.0.0, semver",
   "title": "変更履歴",
-  "author": "Sebastien Rousseau"
+  "permalink": "https://skeletonic.io/ja/henkou-rireki/",
+  "language": "ja",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Skeletonic Stylus のリリースノート。v2.0.0 の詳細を掲載しています。"
 }

@@ -1,11 +1,11 @@
 {
-  "layout": "page",
-  "author": "Sebastien Rousseau",
-  "title": "Talaan ng Pagbabago",
-  "language": "fil",
-  "description": "Mga release note para sa Skeletonic Stylus, kasama ang buong v2.0.0.",
   "permalink": "https://skeletonic.io/fil/talaan-ng-pagbabago/",
   "theme_color": "hsl(210, 100%, 42%)",
+  "language": "fil",
   "name": "Skeletonic Stylus",
-  "keywords": "skeletonic changelog, release note, v2.0.0, semver"
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "keywords": "skeletonic changelog, release note, v2.0.0, semver",
+  "title": "Talaan ng Pagbabago",
+  "description": "Mga release note para sa Skeletonic Stylus, kasama ang buong v2.0.0."
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Skeletonic Stylus</title>
+    <title>Palettes</title>
 
     
     
@@ -31,7 +31,7 @@
          v0.0.34 and don't change between builds — if the SSG ever
          changes them we'll see the CSP error in the browser console
          and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self'; form-action 'self' https://formspree.io; base-uri 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self' https://cdn.jsdelivr.net; form-action 'self' https://formspree.io https://codepen.io; base-uri 'self'">
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
 
     <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
@@ -71,7 +71,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Skeletonic Stylus">
-    <meta property="og:title" content="Skeletonic Stylus">
+    <meta property="og:title" content="Palettes">
     
     <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
     <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
@@ -112,7 +112,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@wwdseb">
     <meta name="twitter:creator" content="@wwdseb">
-    <meta name="twitter:title" content="Skeletonic Stylus">
+    <meta name="twitter:title" content="Palettes">
     
     <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
 
@@ -163,7 +163,7 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Skeletonic Stylus",
+      "name": "Palettes",
       "url": "https://skeletonic.io"
     }
     </script>
@@ -191,7 +191,10 @@
 <meta name="description" content="Skeletonic Stylus v2.0.0 ships three optional colour palettes , each distributed as its own minified stylesheet so you only pay for what you use. Palette File">
 <meta property="og:description" content="Skeletonic Stylus v2.0.0 ships three optional colour palettes , each distributed as its own minified stylesheet so you only pay for what you use. Palette File">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
+<style id="synt-palette">.synt-c0c5ce{color:#c0c5ce;background-color:#0d1117}
+.synt-bf616a{color:#bf616a;background-color:#0d1117}
+.synt-d08770{color:#d08770;background-color:#0d1117}
+.synt-a3be8c{color:#a3be8c;background-color:#0d1117}</style><link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
   <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
     <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -221,6 +224,29 @@
             </svg>
             <span class="search-shortcut" aria-hidden="true"></span>
           </button>
+          <div class="palette-switcher" id="paletteSwitcher">
+            <button type="button" class="theme-toggle" id="paletteToggle" aria-label="Choose colour palette" aria-expanded="false" aria-haspopup="true" aria-controls="paletteMenu">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 2 2 0 0 0 2-2 2 2 0 0 1 2-2h2a4 4 0 0 0 4-4A10 10 0 0 0 12 2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+            </button>
+            <div class="palette-menu" id="paletteMenu" role="menu" hidden>
+              <button type="button" class="palette-swatch is-active" role="menuitemradio" aria-checked="true" data-palette="default" style="--swatch:#0066cc">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Default</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="ember" style="--swatch:#ed6300">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Ember</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="iris" style="--swatch:#8668ff">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Iris</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="lagoon" style="--swatch:#00a1b3">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Lagoon</span>
+              </button>
+            </div>
+          </div>
           <button aria-label="Switch to dark mode" class="theme-toggle" id="themeToggle" type="button" data-label-dark="Dark" data-label-light="Light" data-aria-dark="Switch to dark mode" data-aria-light="Switch to light mode">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
               <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
@@ -290,7 +316,7 @@
 <p>Skeletonic Stylus v2.0.0 ships <strong>three optional colour palettes</strong>, each
 distributed as its own minified stylesheet so you only pay for what you
 use.</p>
-<div class="table-responsive"><table class="table">
+<div class="table-responsive"><table class="table"><caption class="visually-hidden">Data table table</caption>
 <thead>
 <tr>
 <th>Palette</th>
@@ -376,9 +402,9 @@ backgrounds or use it only for non-essential decorative elements.</p>
 <p>When you load <code>skeletonic-tachyons.min.css</code> you get a full set of
 single-purpose colour classes — same shipped artefact, opt-in module.</p>
 <pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">bg-blue white pa2</span><span style="color:#c0c5ce;">&quot;&gt;.bg-blue .white&lt;/</span><span style="color:#bf616a;">span</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">bg-light-green dark-green pa2</span><span style="color:#c0c5ce;">&quot;&gt;.bg-light-green .dark-green&lt;/</span><span style="color:#bf616a;">span</span><span style="color:#c0c5ce;">&gt;
-</span><span style="color:#c0c5ce;">&lt;</span><span style="color:#bf616a;">span </span><span style="color:#d08770;">class</span><span style="color:#c0c5ce;">=&quot;</span><span style="color:#a3be8c;">bg-washed-yellow dark-gray pa2</span><span style="color:#c0c5ce;">&quot;&gt;.bg-washed-yellow .dark-gray&lt;/</span><span style="color:#bf616a;">span</span><span style="color:#c0c5ce;">&gt;
+<span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">span </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">bg-blue white pa2</span><span class="synt-c0c5ce">&quot;&gt;.bg-blue .white&lt;/</span><span class="synt-bf616a">span</span><span class="synt-c0c5ce">&gt;
+</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">span </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">bg-light-green dark-green pa2</span><span class="synt-c0c5ce">&quot;&gt;.bg-light-green .dark-green&lt;/</span><span class="synt-bf616a">span</span><span class="synt-c0c5ce">&gt;
+</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">span </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">bg-washed-yellow dark-gray pa2</span><span class="synt-c0c5ce">&quot;&gt;.bg-washed-yellow .dark-gray&lt;/</span><span class="synt-bf616a">span</span><span class="synt-c0c5ce">&gt;
 </span></pre>
 </code></pre>
 <p>The full Tachyons palette spec is documented at
@@ -442,105 +468,7 @@ the version shipped here is the one Skeletonic compiles.</p>
 
     <script src="/js/main.js" defer></script>
   
-<!-- SSG Search Widget -->
-<div id="ssg-search-widget">
-<style>
-/* ── Trigger button (always visible) ── */
-#ssg-search-btn{position:fixed;top:16px;right:16px;z-index:9998;display:flex;align-items:center;gap:8px;padding:8px 16px;background:#fff;border:1px solid #d1d5db;border-radius:8px;cursor:pointer;font-family:-apple-system,system-ui,sans-serif;font-size:14px;color:#6b7280;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:border-color .15s,box-shadow .15s}
-#ssg-search-btn:hover{border-color:#9ca3af;box-shadow:0 2px 6px rgba(0,0,0,.12)}
-#ssg-search-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-#ssg-search-btn kbd{font-family:inherit;font-size:11px;padding:2px 6px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:4px;color:#9ca3af;margin-left:4px}
-/* ── Modal overlay ── */
-#ssg-search-overlay{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.5);align-items:flex-start;justify-content:center;padding-top:12vh}
-#ssg-search-overlay.active{display:flex}
-#ssg-search-box{background:#fff;border-radius:12px;width:92%;max-width:640px;box-shadow:0 25px 60px rgba(0,0,0,.3);overflow:hidden;font-family:-apple-system,system-ui,sans-serif}
-#ssg-search-header{display:flex;align-items:center;padding:0 16px;border-bottom:1px solid #e5e7eb}
-#ssg-search-header svg{width:20px;height:20px;stroke:#9ca3af;fill:none;stroke-width:2;flex-shrink:0}
-#ssg-search-input{flex:1;padding:16px 12px;font-size:16px;border:none;outline:none;background:transparent}
-#ssg-search-results{max-height:50vh;overflow-y:auto}
-.ssg-result{display:block;padding:12px 20px;text-decoration:none;color:#111;border-bottom:1px solid #f3f4f6;transition:background .1s}
-.ssg-result:hover,.ssg-result.active{background:#eff6ff}
-.ssg-result-title{font-weight:600;font-size:15px;margin-bottom:3px}
-.ssg-result-snippet{font-size:13px;color:#6b7280;line-height:1.5}
-.ssg-result-snippet mark{background:#fef08a;color:inherit;border-radius:2px;padding:0 2px}
-.ssg-no-results{padding:32px 20px;text-align:center;color:#9ca3af;font-size:14px}
-.ssg-search-footer{display:flex;gap:16px;padding:10px 20px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb;justify-content:flex-end}
-.ssg-search-footer kbd{font-family:inherit;font-size:11px;padding:1px 5px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:3px}
-/* ── Dark mode (media query + data-theme attribute) ── */
-@media(prefers-color-scheme:dark){
-:root:not([data-theme="light"]) #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
-:root:not([data-theme="light"]) #ssg-search-btn:hover{border-color:#4b5563}
-:root:not([data-theme="light"]) #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
-:root:not([data-theme="light"]) #ssg-search-box{background:#1f2937;color:#f9fafb}
-:root:not([data-theme="light"]) #ssg-search-header{border-color:#374151}
-:root:not([data-theme="light"]) #ssg-search-input{color:#f9fafb}
-:root:not([data-theme="light"]) .ssg-result{color:#f9fafb;border-color:#374151}
-:root:not([data-theme="light"]) .ssg-result:hover,:root:not([data-theme="light"]) .ssg-result.active{background:#374151}
-:root:not([data-theme="light"]) .ssg-result-snippet{color:#9ca3af}
-:root:not([data-theme="light"]) .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
-:root:not([data-theme="light"]) .ssg-no-results{color:#6b7280}
-:root:not([data-theme="light"]) .ssg-search-footer{border-color:#374151;color:#6b7280}
-:root:not([data-theme="light"]) .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
-}
-[data-theme="dark"] #ssg-search-btn{background:#1f2937;border-color:#374151;color:#9ca3af}
-[data-theme="dark"] #ssg-search-btn:hover{border-color:#4b5563}
-[data-theme="dark"] #ssg-search-btn kbd{background:#374151;border-color:#4b5563;color:#6b7280}
-[data-theme="dark"] #ssg-search-box{background:#1f2937;color:#f9fafb}
-[data-theme="dark"] #ssg-search-header{border-color:#374151}
-[data-theme="dark"] #ssg-search-input{color:#f9fafb}
-[data-theme="dark"] .ssg-result{color:#f9fafb;border-color:#374151}
-[data-theme="dark"] .ssg-result:hover,[data-theme="dark"] .ssg-result.active{background:#374151}
-[data-theme="dark"] .ssg-result-snippet{color:#9ca3af}
-[data-theme="dark"] .ssg-result-snippet mark{background:#854d0e;color:#fef08a}
-[data-theme="dark"] .ssg-no-results{color:#6b7280}
-[data-theme="dark"] .ssg-search-footer{border-color:#374151;color:#6b7280}
-[data-theme="dark"] .ssg-search-footer kbd{background:#374151;border-color:#4b5563}
-</style>
-<!-- Search trigger button -->
-<button id="ssg-search-btn" type="button" aria-label="Search">
-<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-<span>Search</span>
-<kbd>K</kbd>
-</button>
-<!-- Search modal -->
-<div id="ssg-search-overlay" role="dialog" aria-label="Search">
-<div id="ssg-search-box">
-<div id="ssg-search-header">
-<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search query"/>
-</div>
-<div id="ssg-search-results"></div>
-<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
-</div>
-</div>
-<script>
-(function(){
-var idx=null,overlay=document.getElementById('ssg-search-overlay'),
-input=document.getElementById('ssg-search-input'),
-results=document.getElementById('ssg-search-results'),
-btn=document.getElementById('ssg-search-btn'),active=-1;
-function load(){if(idx)return Promise.resolve();return fetch('/search-index.json').then(function(r){return r.json()}).then(function(d){idx=d.entries||[]}).catch(function(){idx=[]})}
-function open(){load().then(function(){overlay.classList.add('active');input.value='';results.innerHTML='';input.focus();active=-1})}
-function close(){overlay.classList.remove('active');active=-1}
-function highlight(text,q){if(!q)return esc(text);var re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');return esc(text).replace(re,'<mark>$1</mark>')}
-function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
-function snippet(content,q,len){len=len||150;if(!q)return esc(content.substring(0,len));var i=content.toLowerCase().indexOf(q.toLowerCase());if(i<0)return esc(content.substring(0,len));var s=Math.max(0,i-50),e=Math.min(content.length,i+len);var t=(s>0?'...':'')+content.substring(s,e)+(e<content.length?'...':'');return highlight(t,q)}
-function search(q){if(!idx||!q){results.innerHTML='';return}q=q.trim();if(!q){results.innerHTML='';return}var ql=q.toLowerCase(),hits=[];
-for(var i=0;i<idx.length&&hits.length<20;i++){var e=idx[i],s=0;if(e.title.toLowerCase().indexOf(ql)>=0)s+=10;if(e.content.toLowerCase().indexOf(ql)>=0)s+=5;for(var h=0;h<e.headings.length;h++){if(e.headings[h].toLowerCase().indexOf(ql)>=0){s+=3;break}}if(s>0)hits.push({entry:e,score:s})}
-hits.sort(function(a,b){return b.score-a.score});
-if(!hits.length){results.innerHTML='<div class="ssg-no-results">No results for &ldquo;'+esc(q)+'&rdquo;</div>';return}
-var html='';for(var j=0;j<hits.length;j++){var e=hits[j].entry;html+='<a class="ssg-result" href="'+esc(e.url)+'">'+'<div class="ssg-result-title">'+highlight(e.title,q)+'</div>'+'<div class="ssg-result-snippet">'+snippet(e.content,q)+'</div></a>'}
-results.innerHTML=html;active=-1}
-function nav(dir){var items=results.querySelectorAll('.ssg-result');if(!items.length)return;if(active>=0&&items[active])items[active].classList.remove('active');active+=dir;if(active<0)active=items.length-1;if(active>=items.length)active=0;items[active].classList.add('active');items[active].scrollIntoView({block:'nearest'})}
-btn.addEventListener('click',function(){open()});
-input.addEventListener('input',function(){search(this.value)});
-overlay.addEventListener('click',function(e){if(e.target===overlay)close()});
-document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();if(overlay.classList.contains('active'))close();else open()}
-if(!overlay.classList.contains('active'))return;if(e.key==='Escape')close();if(e.key==='ArrowDown'){e.preventDefault();nav(1)}if(e.key==='ArrowUp'){e.preventDefault();nav(-1)}
-if(e.key==='Enter'){e.preventDefault();var items=results.querySelectorAll('.ssg-result');if(active>=0&&items[active])window.location=items[active].href;else if(items[0])window.location=items[0].href}})
-})();
-</script>
-</div>
+
 
 
 </body>

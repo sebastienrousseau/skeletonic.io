@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ko",
-  "author": "Sebastien Rousseau",
-  "keywords": "skeletonic, 태그, 인덱스, 분류",
-  "permalink": "https://skeletonic.io/ko/tags/",
   "description": "태그별로 Skeletonic Stylus 문서를 탐색하십시오.",
-  "title": "태그"
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "title": "태그",
+  "keywords": "skeletonic, 태그, 인덱스, 분류",
+  "language": "ko",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/ko/tags/",
+  "layout": "page"
 }

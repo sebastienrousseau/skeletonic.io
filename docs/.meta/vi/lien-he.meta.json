@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
   "keywords": "lien he, ho tro, phan hoi, skeletonic",
   "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/vi/lien-he/",
-  "description": "Lien he ve Skeletonic Stylus — bao cao loi, y tuong tinh nang, hop tac, hoac phan hoi chung.",
   "title": "Lien he",
-  "layout": "contact",
   "author": "Sebastien Rousseau",
-  "language": "vi"
+  "language": "vi",
+  "name": "Skeletonic Stylus",
+  "layout": "contact",
+  "description": "Lien he ve Skeletonic Stylus — bao cao loi, y tuong tinh nang, hop tac, hoac phan hoi chung.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/vi/lien-he/"
 }

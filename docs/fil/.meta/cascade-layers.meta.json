@@ -1,0 +1,12 @@
+{
+  "permalink": "https://skeletonic.io/fil/cascade-layers/",
+  "name": "Skeletonic Stylus",
+  "description": "Skeletonic ships inside @layer skeletonic so any CSS you write outside that layer wins, regardless of selector specificity. No more !important, no more order tricks.",
+  "layout": "page",
+  "date": "2026-04-30",
+  "title": "Cascade-layers — Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "css cascade layers, @layer, css specificity, !important, override css, framework override",
+  "language": "fil"
+}

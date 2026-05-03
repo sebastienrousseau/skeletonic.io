@@ -93,7 +93,7 @@ Pustaka ini menyediakan beberapa bundle yang sudah dibuat sebelumnya di bawah `d
 | File | Tujuan | Ukuran (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token + layout + elemen + komponen + utilitas | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Modul animasi opsional | ≈213 KB / ≈6.8 KB |
+| `animations/skeletonic-animations.min.css` | Modul animasi opsional | ≈213 KB / ≈6.7 KB |
 | `palettes/material/skeletonic-material.min.css` | Palet warna Material | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Palet utilitas Tachyons | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Palet web-safe | ≈3.5 KB |

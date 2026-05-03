@@ -104,7 +104,7 @@ derlenmis paket sunar:
 | Dosya | Amac | Boyut (min/gz) |
 |---|---|---|
 | `core/skeletonic.min.css` | Reset + token'lar + duzen + ogeler + bilesenler + yardimcilar | 45,7 KB / 8,3 KB |
-| `animations/skeletonic-animations.min.css` | Istege bagli animasyonlar modulu | ≈213 KB / ≈6.8 KB |
+| `animations/skeletonic-animations.min.css` | Istege bagli animasyonlar modulu | ≈213 KB / ≈6.7 KB |
 | `palettes/material/skeletonic-material.min.css` | Material renk paleti | ≈17.4 KB |
 | `palettes/tachyons/skeletonic-tachyons.min.css` | Tachyons yardimci paleti | 7,3 KB |
 | `palettes/websafe/skeletonic-websafe.min.css` | Web-safe paleti | ≈3.5 KB |

@@ -18,8 +18,8 @@ keywords: "skeletonic, เกี่ยวกับ, stylus, css framework, ป�
 
 <dl class="stat-strip" aria-label="Project facts">
   <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
   <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
   <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
 </dl>
@@ -45,7 +45,7 @@ keywords: "skeletonic, เกี่ยวกับ, stylus, css framework, ป�
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="ขนนก" width="64" height="64" loading="lazy" decoding="async">
     <h3>เบา</h3>
-    <p>ขนาด 7.9&nbsp;KB gzipped หน้าเว็บโหลดเร็วขึ้น ทุกส่วนประกอบสำคัญยังคงอยู่</p>
+    <p>ขนาด 7.7&nbsp;KB gzipped หน้าเว็บโหลดเร็วขึ้น ทุกส่วนประกอบสำคัญยังคงอยู่</p>
   </article>
 
   <article class="feature-card">
@@ -81,7 +81,7 @@ build step ไม่มี peer dependencies กับ Bootstrap, Tailwind ห�
 
 | ฟีเจอร์ | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| ขนาด gzipped | **7.9&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| ขนาด gzipped | **7.7&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | รองรับ WCAG 2.2 | **มีในตัว** | บางส่วน | ต้องทำเอง | บางส่วน |
 | Cascade layers | **ใช่ (`@layer`)** | ไม่ | ไม่ | ไม่ |
 | โหมดมืด | **`prefers-color-scheme`** | เลือกเปิด | ใช้คลาส | เลือกเปิด |

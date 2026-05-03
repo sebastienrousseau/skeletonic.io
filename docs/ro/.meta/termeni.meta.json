@@ -1,12 +1,12 @@
 {
-  "keywords": "termeni de utilizare, licență, mit, apache 2",
-  "date": "2026-04-08",
-  "title": "Termeni de utilizare",
-  "permalink": "https://skeletonic.io/ro/termeni/",
-  "language": "ro",
-  "description": "Termenii care guvernează utilizarea skeletonic.io și a bibliotecii Skeletonic Stylus.",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page"
+  "language": "ro",
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "title": "Termeni de utilizare",
+  "keywords": "termeni de utilizare, licență, mit, apache 2",
+  "permalink": "https://skeletonic.io/ro/termeni/",
+  "name": "Skeletonic Stylus",
+  "description": "Termenii care guvernează utilizarea skeletonic.io și a bibliotecii Skeletonic Stylus.",
+  "date": "2026-04-08"
 }

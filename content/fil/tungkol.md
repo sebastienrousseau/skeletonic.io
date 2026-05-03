@@ -18,8 +18,8 @@ keywords: "skeletonic, tungkol, stylus, css framework, pilosopiya"
 
 <dl class="stat-strip" aria-label="Project facts">
   <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.9 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.8 KB</dd></div>
+  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
   <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
   <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
 </dl>
@@ -43,7 +43,7 @@ Isinilang noong 2018 bilang isang personal na eksperimento sa **pagpapadala ng m
   <article class="feature-card">
     <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Balahibo" width="64" height="64" loading="lazy" decoding="async">
     <h3>Magaan</h3>
-    <p>7.9&nbsp;KB gzipped. Mas mabilis mag-load ang mga pahina. Bawat pangunahing building block ay nandoon pa rin.</p>
+    <p>7.7&nbsp;KB gzipped. Mas mabilis mag-load ang mga pahina. Bawat pangunahing building block ay nandoon pa rin.</p>
   </article>
 
   <article class="feature-card">
@@ -77,7 +77,7 @@ Isang self-hosted na stylesheet ang sumasaklaw sa typography, button, form, card
 
 | Tampok | Skeletonic Stylus | Bootstrap 5 | Tailwind CSS | Bulma |
 |---|---|---|---|---|
-| Laki (gzipped) | **7.9&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
+| Laki (gzipped) | **7.7&nbsp;KB** | ~30&nbsp;KB | ~10&nbsp;KB (varies) | ~30&nbsp;KB |
 | WCAG 2.2 conformance | **Kasama na** | Bahagya | Manual | Bahagya |
 | Cascade layer | **Oo (`@layer`)** | Hindi | Hindi | Hindi |
 | Dark mode | **`prefers-color-scheme`** | Opt-in | Class-based | Opt-in |

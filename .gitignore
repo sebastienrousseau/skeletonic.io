@@ -11,6 +11,10 @@
 build/
 public/
 
+# Lighthouse / verifier artefacts (transient — never commit)
+lighthouse*.json
+lh-*.json
+
 # Logs
 logs
 *.log

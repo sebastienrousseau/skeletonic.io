@@ -170,7 +170,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">হালকা</h3>
-      <p>42.3 KB মিনিফাইড, 7.9 KB gzipped।</p>
+      <p>38.8 KB মিনিফাইড, 7.7 KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">
@@ -192,7 +192,7 @@ keywords: "skeletonic উপাদান, বাটন, কার্ড, ফর�
   <article class="card flex-1">
     <div class="card-content">
       <h3 class="card-title">হালকা</h3>
-      <p>42.3&nbsp;KB মিনিফাইড, 7.9&nbsp;KB gzipped।</p>
+      <p>38.8&nbsp;KB মিনিফাইড, 7.7&nbsp;KB gzipped।</p>
     </div>
   </article>
   <article class="card flex-1">

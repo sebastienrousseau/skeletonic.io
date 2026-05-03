@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
   "title": "פרטיות",
-  "keywords": "פרטיות, gdpr, עוגיות, ללא מעקב",
-  "layout": "page",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/he/pratiyut/",
   "description": "אילו נתונים skeletonic.io אוספת, מדוע, וכיצד לבטל הסכמה.",
-  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "he"
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "language": "he",
+  "permalink": "https://skeletonic.io/he/pratiyut/",
+  "layout": "page",
+  "keywords": "פרטיות, gdpr, עוגיות, ללא מעקב"
 }
