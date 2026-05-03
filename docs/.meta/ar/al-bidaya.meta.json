@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/ar/al-bidaya/",
-  "layout": "page",
   "description": "ثبّت Skeletonic Stylus من npm أو CDN، واستوردها في خط أنابيب Stylus الخاص بك، وعدّل المتغيرات في ثوانٍ.",
   "title": "البدء مع Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
-  "keywords": "تثبيت skeletonic, إعداد stylus, css cdn, البدء",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ar",
-  "name": "Skeletonic Stylus"
+  "keywords": "تثبيت skeletonic, إعداد stylus, css cdn, البدء",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/ar/al-bidaya/",
+  "date": "2026-04-08",
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "language": "ar"
 }

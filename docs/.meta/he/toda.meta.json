@@ -1,12 +1,12 @@
 {
+  "description": "ההודעה שלכם נשלחה בהצלחה.",
   "permalink": "https://skeletonic.io/he/toda/",
   "title": "תודה!",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "ההודעה שלכם נשלחה בהצלחה.",
-  "keywords": "תודה",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "layout": "thanks",
+  "author": "Sebastien Rousseau",
   "language": "he",
-  "author": "Sebastien Rousseau"
+  "keywords": "תודה",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "layout": "thanks"
 }

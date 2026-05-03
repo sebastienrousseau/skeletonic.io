@@ -1,12 +1,12 @@
 {
+  "description": "Every CSS custom property exposed by Skeletonic Stylus v2.0.0 — colours, headings, line heights, golden-ratio constants, focus ring, link colours.",
+  "name": "Skeletonic Stylus",
+  "keywords": "css custom properties, design tokens, theme, dark mode, css variables, retheme",
+  "layout": "page",
+  "date": "2026-04-30",
+  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/ru/tokens/",
-  "description": "Every CSS custom property exposed by Skeletonic Stylus v2.0.0 — colours, headings, line heights, golden-ratio constants, focus ring, link colours.",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
-  "language": "ru",
   "title": "Tokens — Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "keywords": "css custom properties, design tokens, theme, dark mode, css variables, retheme",
-  "date": "2026-04-30"
+  "language": "ru"
 }

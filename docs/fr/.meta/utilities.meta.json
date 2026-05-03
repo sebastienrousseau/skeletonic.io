@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/fr/utilities/",
-  "date": "2026-04-30",
-  "title": "Classes utilitaires — aides ciblées de bas niveau",
   "name": "Skeletonic Stylus",
+  "date": "2026-04-30",
   "description": "Every utility class in Skeletonic Stylus, with the equivalent HTML attribute form. Layout, flex, text, sizing, visibility, spacing — class or attribute, your choice.",
+  "permalink": "https://skeletonic.io/fr/utilities/",
   "keywords": "css utilities, attribute selector, html data attributes, flex utilities, text utilities, css classes vs attributes",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "fr",
   "layout": "page",
-  "author": "Sebastien Rousseau"
+  "title": "Classes utilitaires — aides ciblées de bas niveau",
+  "language": "fr",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

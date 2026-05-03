@@ -1,12 +1,12 @@
 {
-  "description": "skeletonic.io নেটওয়ার্কে পৌঁছাতে পারেনি। আপনি যে পেজটি অনুরোধ করেছেন সেটি এখনও ক্যাশ হয়নি।",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "অফলাইন, service worker, pwa",
   "language": "bn",
-  "name": "Skeletonic Stylus",
+  "description": "skeletonic.io নেটওয়ার্কে পৌঁছাতে পারেনি। আপনি যে পেজটি অনুরোধ করেছেন সেটি এখনও ক্যাশ হয়নি।",
   "permalink": "https://skeletonic.io/bn/offline/",
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "keywords": "অফলাইন, service worker, pwa",
   "title": "আপনি অফলাইনে আছেন",
+  "author": "Sebastien Rousseau",
   "date": "2026-04-08"
 }

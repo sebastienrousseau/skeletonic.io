@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "permalink": "https://skeletonic.io/nl/componenten/",
-  "description": "Live HTML-voorbeelden van elke Skeletonic Stylus-component, gegroepeerd, verankerd en weergegeven met hetzelfde stylesheet dat wordt gedemonstreerd.",
-  "name": "Skeletonic Stylus",
   "keywords": "skeletonic componenten, knoppen, kaarten, formulieren, meldingen, badges, header, navbar, css only hamburger",
-  "date": "2026-04-08",
   "title": "Componenten",
-  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "language": "nl",
+  "permalink": "https://skeletonic.io/nl/componenten/",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "nl"
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "description": "Live HTML-voorbeelden van elke Skeletonic Stylus-component, gegroepeerd, verankerd en weergegeven met hetzelfde stylesheet dat wordt gedemonstreerd."
 }

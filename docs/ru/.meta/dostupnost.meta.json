@@ -1,12 +1,12 @@
 {
   "date": "2026-04-08",
-  "language": "ru",
-  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "keywords": "wcag 2.2, доступность, focus visible, skip link, prefers reduced motion, контраст",
   "permalink": "https://skeletonic.io/ru/dostupnost/",
+  "description": "Что v2.0.0 предоставляет из коробки для соответствия WCAG 2.2 — кольца фокуса, контраст, skip-ссылки, уменьшенное движение и тёмная тема.",
+  "keywords": "wcag 2.2, доступность, focus visible, skip link, prefers reduced motion, контраст",
+  "language": "ru",
   "author": "Sebastien Rousseau",
-  "title": "Доступность — WCAG 2.2 в v2.0.0",
-  "description": "Что v2.0.0 предоставляет из коробки для соответствия WCAG 2.2 — кольца фокуса, контраст, skip-ссылки, уменьшенное движение и тёмная тема."
+  "name": "Skeletonic Stylus",
+  "title": "Доступность — WCAG 2.2 в v2.0.0"
 }

@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "date": "2026-04-08",
   "name": "Skeletonic Stylus",
-  "keywords": "skeletonic kurulum, stylus ayarlama, css cdn, baslarken",
   "permalink": "https://skeletonic.io/tr/baslarken/",
-  "language": "tr",
+  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
+  "language": "tr",
   "description": "Skeletonic Stylus'u npm veya CDN'den kurun, Stylus derlemenize aktarin ve saniyeler icinde degiskenleri gecersiz kilin.",
+  "keywords": "skeletonic kurulum, stylus ayarlama, css cdn, baslarken",
   "title": "Skeletonic Stylus ile Baslarken",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page"
 }

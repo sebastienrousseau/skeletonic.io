@@ -1,12 +1,12 @@
 {
   "language": "ja",
   "keywords": "skeletonic, 概要, stylus, css フレームワーク, 理念",
-  "layout": "page",
-  "description": "Skeletonic Stylus は、アクセシブルで高速、モジュール式の UI スタイリングのためのオープンソース Stylus CSS ライブラリです。",
-  "permalink": "https://skeletonic.io/ja/gaiyo/",
   "title": "Skeletonic Stylus について",
+  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Skeletonic Stylus は、アクセシブルで高速、モジュール式の UI スタイリングのためのオープンソース Stylus CSS ライブラリです。",
   "date": "2026-04-08",
   "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau"
+  "layout": "page",
+  "permalink": "https://skeletonic.io/ja/gaiyo/"
 }

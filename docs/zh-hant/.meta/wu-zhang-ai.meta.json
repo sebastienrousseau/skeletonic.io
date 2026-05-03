@@ -1,12 +1,12 @@
 {
-  "name": "Skeletonic Stylus",
-  "title": "無障礙——v2.0.0 中的 WCAG 2.2",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
   "keywords": "wcag 2.2, 無障礙, focus visible, 跳轉連結, prefers reduced motion, 對比度",
   "permalink": "https://skeletonic.io/zh-hant/wu-zhang-ai/",
+  "language": "zh-hant",
+  "author": "Sebastien Rousseau",
   "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "zh-hant",
-  "description": "v2.0.0 為 WCAG 2.2 合規性開箱即用的功能——焦點環、對比度、跳轉連結、動效與深色模式。"
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "description": "v2.0.0 為 WCAG 2.2 合規性開箱即用的功能——焦點環、對比度、跳轉連結、動效與深色模式。",
+  "title": "無障礙——v2.0.0 中的 WCAG 2.2"
 }

@@ -1,12 +1,12 @@
 {
-  "permalink": "https://skeletonic.io/ha/tsaro/",
   "date": "2026-04-08",
-  "language": "ha",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "tsaron css, sbom, cyclonedx, tabbacin npm, openssf scorecard, sarkar samarwa",
-  "name": "Skeletonic Stylus",
-  "description": "Yadda Skeletonic Stylus v2.0.0 ke tabbatar da bututun ginin sa, sanya hannu a kan sakinsa, kuma aika SBOM.",
   "layout": "page",
+  "description": "Yadda Skeletonic Stylus v2.0.0 ke tabbatar da bututun ginin sa, sanya hannu a kan sakinsa, kuma aika SBOM.",
+  "permalink": "https://skeletonic.io/ha/tsaro/",
+  "keywords": "tsaron css, sbom, cyclonedx, tabbacin npm, openssf scorecard, sarkar samarwa",
+  "language": "ha",
   "title": "Tsaro &amp; sarkar samarwa",
-  "author": "Sebastien Rousseau"
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus"
 }

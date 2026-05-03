@@ -188,8 +188,8 @@
 
     
   <link rel="stylesheet" href="/highlight.87708af9.css">
-<meta name="description" content="v2.0.0 — 2026-05 (current) The &amp;quot;2026 baseline&amp;quot; major release. Every modern CSS feature that shipped in the 2024–2026 Baseline window is now part">
-<meta property="og:description" content="v2.0.0 — 2026-05 (current) The &amp;quot;2026 baseline&amp;quot; major release. Every modern CSS feature that shipped in the 2024–2026 Baseline window is now part">
+<meta name="description" content="skeletonic.io — 2026-05 site refresh Documentation site updates that ship alongside library v2.0.0. These are not part of the library bundle — they">
+<meta property="og:description" content="skeletonic.io — 2026-05 site refresh Documentation site updates that ship alongside library v2.0.0. These are not part of the library bundle — they">
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <style id="synt-palette">.synt-c0c5ce{color:#c0c5ce;background-color:#0d1117}
 .synt-b48ead{color:#b48ead;background-color:#0d1117}
@@ -315,6 +315,36 @@
     <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
       <div class="text-start">
         
+<h2>skeletonic.io — 2026-05 site refresh</h2>
+<p>Documentation site updates that ship alongside library v2.0.0. These
+are not part of the library bundle — they describe what changed on
+this site itself.</p>
+<ul>
+<li><strong>28 locales.</strong> English plus 27 translations (ar, bn, cs, de, es,
+fil, fr, ha, he, hi, id, it, ja, ko, nl, pl, pt-br, ro, ru, sv, th,
+tr, uk, vi, yo, zh-hans, zh-hant). Locale switcher in the footer;
+every page resolves the user's preferred language from
+<code>Accept-Language</code> if no choice has been saved.</li>
+<li><strong>Service worker.</strong> Cache-first for static assets, network-first
+with a 3 s timeout for HTML, falling back to the localised
+<code>/&lt;locale&gt;/offline/</code> page when the network is unreachable.</li>
+<li><strong>Hero logo.</strong> Progressive-enhanced brand mark. The <code>&lt;h1&gt;</code> text
+stays in the DOM (text-indent: -9999px) so screen readers, search
+engines, reader-mode clients, and CSS-disabled visitors still get
+the page title; CSS swaps the visual to a CDN-served SVG.</li>
+<li><strong>Lazy search.</strong> <code>/js/search-data.json</code> (~51 kB raw / ~10 kB gzip)
+is fetched only on first ⌘K open. Module-level promise caches the
+response so subsequent opens are zero-network.</li>
+<li><strong>CI gates.</strong> <code>node scripts/verify-site.mjs</code> runs the same checks
+CI does, locally: docs build presence, asset 200s, axe-core in
+light + dark, <code>&lt;html lang&gt;</code> per locale, service-worker
+registration, console-error free, mobile Lighthouse 100×4 across
+every key page.</li>
+<li><strong>Dark-mode contrast pass.</strong> Every component swept under
+<code>light-dark()</code> and validated against axe-core in both schemes —
+zero WCAG 2.2 violations across 10 pages × 2 schemes.</li>
+</ul>
+<hr />
 <h2>v2.0.0 — 2026-05 (current)</h2>
 <p>The &quot;2026 baseline&quot; major release. Every modern CSS feature that
 shipped in the 2024–2026 Baseline window is now part of the library's

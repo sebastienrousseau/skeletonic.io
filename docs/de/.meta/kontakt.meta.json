@@ -1,12 +1,12 @@
 {
-  "layout": "contact",
+  "title": "Kontakt",
+  "author": "Sebastien Rousseau",
+  "keywords": "kontakt, support, feedback, skeletonic",
   "theme_color": "hsl(210, 100%, 42%)",
   "description": "Kontaktaufnahme zu Skeletonic Stylus — Fehlerberichte, Feature-Ideen, Partnerschaften oder allgemeines Feedback.",
   "date": "2026-04-08",
   "language": "de",
-  "author": "Sebastien Rousseau",
-  "title": "Kontakt",
+  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/de/kontakt/",
-  "keywords": "kontakt, support, feedback, skeletonic",
-  "name": "Skeletonic Stylus"
+  "layout": "contact"
 }

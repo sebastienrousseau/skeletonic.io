@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "language": "cs",
-  "title": "Komponenty — Skeletonic Stylus",
   "description": "Zive HTML priklady vsech komponent Skeletonic Stylus — seskupene, ukotvene a vykreslovane presne tim stylesheetem, ktery je zde prezentovan.",
+  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/cs/komponenty/",
+  "title": "Komponenty — Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
   "keywords": "skeletonic komponenty, tlacitka, karty, formulare, upozorneni, stitky, zahlavi, navigace, css hamburger menu",
-  "name": "Skeletonic Stylus"
+  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "language": "cs"
 }

@@ -1,12 +1,12 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "layout": "page",
   "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
   "keywords": "offline, service worker, pwa",
-  "language": "ha",
+  "date": "2026-04-08",
+  "layout": "page",
   "title": "Ba ku da haɗin yanar gizo",
   "permalink": "https://skeletonic.io/ha/offline/",
+  "name": "Skeletonic Stylus",
+  "language": "ha",
+  "theme_color": "hsl(210, 100%, 42%)",
   "description": "skeletonic.io ba ta iya isa ga cibiyar sadarwa ba. Ba a adana shafin da kuka nema ba tukuna."
 }

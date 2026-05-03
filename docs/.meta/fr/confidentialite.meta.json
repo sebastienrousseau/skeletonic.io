@@ -1,12 +1,12 @@
 {
-  "language": "fr",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "title": "Confidentialité",
-  "permalink": "https://skeletonic.io/fr/confidentialite/",
-  "keywords": "confidentialité, rgpd, cookies, pas de suivi",
-  "layout": "page",
   "description": "Quelles données skeletonic.io collecte, pourquoi et comment les refuser.",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "keywords": "confidentialité, rgpd, cookies, pas de suivi",
+  "author": "Sebastien Rousseau",
+  "title": "Confidentialité",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/fr/confidentialite/",
+  "language": "fr",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus"
 }

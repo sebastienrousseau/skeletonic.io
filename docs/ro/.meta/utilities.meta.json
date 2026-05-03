@@ -1,12 +1,12 @@
 {
-  "language": "ro",
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
   "description": "Every utility class in Skeletonic Stylus, with the equivalent HTML attribute form. Layout, flex, text, sizing, visibility, spacing — class or attribute, your choice.",
+  "layout": "page",
   "date": "2026-04-30",
-  "keywords": "css utilities, attribute selector, html data attributes, flex utilities, text utilities, css classes vs attributes",
   "title": "Utilities — Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ro/utilities/",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus"
+  "language": "ro",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/ro/utilities/",
+  "keywords": "css utilities, attribute selector, html data attributes, flex utilities, text utilities, css classes vs attributes"
 }

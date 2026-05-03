@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "description": "skeletonic.io non riesce a raggiungere la rete. La pagina richiesta non e ancora stata memorizzata nella cache.",
   "permalink": "https://skeletonic.io/it/offline/",
+  "description": "skeletonic.io non riesce a raggiungere la rete. La pagina richiesta non e ancora stata memorizzata nella cache.",
   "layout": "page",
   "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "offline, service worker, pwa",
   "title": "Sei offline",
+  "language": "it",
+  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
-  "language": "it"
+  "keywords": "offline, service worker, pwa"
 }

@@ -1,12 +1,12 @@
 {
-  "layout": "page",
-  "language": "id",
-  "author": "Sebastien Rousseau",
-  "keywords": "offline, service worker, pwa",
-  "permalink": "https://skeletonic.io/id/offline/",
+  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
   "title": "Anda sedang offline",
-  "date": "2026-04-08",
+  "language": "id",
+  "permalink": "https://skeletonic.io/id/offline/",
+  "author": "Sebastien Rousseau",
   "description": "skeletonic.io tidak dapat terhubung ke jaringan. Halaman yang Anda minta belum di-cache.",
-  "name": "Skeletonic Stylus"
+  "date": "2026-04-08",
+  "keywords": "offline, service worker, pwa"
 }

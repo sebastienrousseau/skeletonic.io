@@ -1,12 +1,12 @@
 {
-  "author": "Sebastien Rousseau",
+  "description": "Termos que regem o uso do skeletonic.io e da biblioteca Skeletonic Stylus.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "title": "Termos de uso",
+  "keywords": "termos de uso, licenca, mit, apache 2",
   "language": "pt-br",
   "permalink": "https://skeletonic.io/pt-br/termos/",
-  "layout": "page",
-  "description": "Termos que regem o uso do skeletonic.io e da biblioteca Skeletonic Stylus.",
-  "keywords": "termos de uso, licenca, mit, apache 2",
-  "title": "Termos de uso",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08"
+  "layout": "page",
+  "author": "Sebastien Rousseau"
 }

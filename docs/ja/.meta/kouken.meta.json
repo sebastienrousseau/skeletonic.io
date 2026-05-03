@@ -1,12 +1,12 @@
 {
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
+  "language": "ja",
   "keywords": "コントリビューション, オープンソース, プルリクエスト, issue, 規約",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ja",
   "description": "Skeletonic Stylus への Issue の報告、変更の提案、プルリクエストの提出方法。",
   "title": "コントリビューション",
+  "layout": "page",
+  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/ja/kouken/",
+  "date": "2026-04-08",
   "name": "Skeletonic Stylus"
 }

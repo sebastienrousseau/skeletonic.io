@@ -1,11 +1,11 @@
 {
-  "layout": "page",
-  "keywords": "404, 找不到",
   "description": "您請求的頁面不存在於 skeletonic.io 上。",
-  "author": "Sebastien Rousseau",
+  "keywords": "404, 找不到",
   "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/zh-hant/404/",
+  "author": "Sebastien Rousseau",
   "language": "zh-hant",
+  "permalink": "https://skeletonic.io/zh-hant/404/",
+  "layout": "page",
   "title": "找不到頁面",
   "name": "Skeletonic Stylus"
 }
