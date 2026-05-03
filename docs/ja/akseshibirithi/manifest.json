@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "v2.0.0 が WCAG 2.2 準拠のために標準で提供するもの — フォーカスリング、コントラスト、スキップリンク、モーション、ダークモード。",
+  "display": "standalone",
+  "icons": [],
+  "name": "Skeletonic Stylus",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

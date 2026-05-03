@@ -1,0 +1,13 @@
+---
+# This is a static-site repo: all code is either SSG-generated HTML,
+# Tera templates, client-side glue JS, or documentation markdown.
+# None of it benefits from Codacy's default rulesets, so we exclude
+# everything and rely on Lighthouse CI + lychee in the build workflow.
+exclude_paths:
+  - "docs/**"
+  - "content/**"
+  - "templates/**"
+  - "static/**"
+  - "scripts/**"
+  - "*.md"
+  - "config.toml"

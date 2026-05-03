@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "npm বা CDN থেকে Skeletonic Stylus ইনস্টল করুন, আপনার Stylus বিল্ডে আমদানি করুন এবং সেকেন্ডে ভেরিয়েবল ওভাররাইড করুন।",
+  "display": "standalone",
+  "icons": [],
+  "name": "Skeletonic Stylus",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

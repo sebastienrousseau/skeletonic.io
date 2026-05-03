@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "透過 npm 或 CDN 安裝 Skeletonic Stylus，將其匯入 Stylus 建置管線，並在數秒內覆寫變數。",
+  "display": "standalone",
+  "icons": [],
+  "name": "Skeletonic Stylus",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": null,
+  "start_url": ".",
+  "theme_color": null
+}

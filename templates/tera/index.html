@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block body_class %}page-home{% endblock %}
+
+{% block extra_head_preload %}
+<link rel="preconnect" href="https://cloudcdn.pro" crossorigin>
+<link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml" crossorigin>
+{% endblock %}
+
+{% block extra_head %}
+<!-- SoftwareApplication JSON-LD — canonical product entity for SGE/Gemini indexing. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Skeletonic Stylus",
+  "alternateName": "skeletonic-stylus",
+  "description": "A class-based, JS-free, RTL-ready Stylus CSS library — OKLCH colours, native @layer, CSS Grid, container queries, WCAG 2.2 AA, 7.9 KB gzip / 6.8 KB brotli.",
+  "url": "https://skeletonic.io/",
+  "downloadUrl": "https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus",
+  "applicationCategory": "WebApplication",
+  "applicationSubCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "softwareVersion": "2.0.0",
+  "fileSize": "7.9KB",
+  "license": "https://opensource.org/licenses/MIT",
+  "author": {
+    "@type": "Person",
+    "name": "Sebastien Rousseau",
+    "url": "https://sebastienrousseau.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "1",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+{% endblock %}
+
+{% block hero %}
+<header class="site-hero">
+  {#
+    Progressive-enhanced hero title. The <h1> carries the brand text
+    so non-CSS readers (and search engines, RSS readers, reader-mode
+    clients) get the title verbatim. With chrome.css applied, the
+    .hero-title rule swaps the text for a CDN-served SVG logo via
+    background-image; the visible-but-off-screen text stays in the
+    DOM for screen readers via the Phark image-replacement pattern.
+  #}
+  <h1 class="hero-title">{{ page.name | default(value="Skeletonic Stylus") }}</h1>
+  <p>{{ page.description | default(value="A class-based, JS-free, RTL-ready Stylus CSS library — WCAG 2.2 AA, cascade-layered, 7.9 KB gzip / 6.8 KB brotli.") }}</p>
+  <a class="hero-cta" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus">pnpm add @sebastienrousseau/skeletonic-stylus</a>
+</header>
+{% endblock %}
+
+{% block content %}
+{{ page.content | safe }}
+{% endblock %}

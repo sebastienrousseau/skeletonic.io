@@ -1,0 +1,17 @@
+# Shokunin SSG configuration for skeletonic.io
+#
+# Built with Shokunin (`ssg`) v0.0.34 — see
+# https://github.com/sebastienrousseau/shokunin
+#
+# All paths are relative to the directory containing this file.
+
+site_name        = "skeletonic-stylus"
+site_title       = "Skeletonic Stylus"
+site_description = "An accessible, modular Stylus CSS library — WCAG 2.2 ready, cascade-layered, ~7.5 KB gzipped."
+
+content_dir      = "content"
+template_dir     = "templates"
+output_dir       = "docs"
+
+base_url         = "https://skeletonic.io"
+language         = "en-GB"

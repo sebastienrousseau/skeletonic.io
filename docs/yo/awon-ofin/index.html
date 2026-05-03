@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="yo" itemscope itemtype="https://schema.org/WebSite">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Awọn ofin lilo</title>
+
+    
+    
+    
+    <meta name="generator" content="Shokunin (ssg) v0.0.34">
+    <meta name="theme-color" content="hsl(210, 100%, 42%)" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- View Transitions API opt-in: same-origin navigations get a
+         native cross-document transition. The matching CSS rule
+         (@view-transition { navigation: auto }) lives in chrome.css
+         and is automatically gated by prefers-reduced-motion. -->
+    <meta name="view-transition" content="same-origin">
+    <!-- frame-ancestors is intentionally absent: it's ignored when
+         delivered via <meta>, must come from a real HTTP header. The
+         GitHub Pages deployment can't set custom headers, so we lean
+         on the X-Frame-Options equivalent that the platform ships
+         and on the meta-supported directives below.
+
+         The two `'sha256-…'` entries pin the SSG-injected inline
+         scripts that bootstrap the search widget and the on-page
+         live-reload watchdog. They're emitted verbatim by shokunin
+         v0.0.34 and don't change between builds — if the SSG ever
+         changes them we'll see the CSP error in the browser console
+         and update the hashes. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self' https://cdn.jsdelivr.net; form-action 'self' https://formspree.io https://codepen.io; base-uri 'self'">
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
+
+    <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;yo&#x2F;">
+    <link rel="preload" href="/css/skeletonic.min.css" as="style">
+    <link rel="preload" href="/css/chrome.css" as="style"><link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
+    <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
+    <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
+    <link rel="alternate" hreflang="fr" href="https:&#x2F;&#x2F;skeletonic.io/fr&#x2F;">
+    <link rel="alternate" hreflang="de" href="https:&#x2F;&#x2F;skeletonic.io/de&#x2F;">
+    <link rel="alternate" hreflang="ar" href="https:&#x2F;&#x2F;skeletonic.io/ar&#x2F;">
+    <link rel="alternate" hreflang="bn" href="https:&#x2F;&#x2F;skeletonic.io/bn&#x2F;">
+    <link rel="alternate" hreflang="cs" href="https:&#x2F;&#x2F;skeletonic.io/cs&#x2F;">
+    <link rel="alternate" hreflang="es" href="https:&#x2F;&#x2F;skeletonic.io/es&#x2F;">
+    <link rel="alternate" hreflang="fil" href="https:&#x2F;&#x2F;skeletonic.io/fil&#x2F;">
+    <link rel="alternate" hreflang="ha" href="https:&#x2F;&#x2F;skeletonic.io/ha&#x2F;">
+    <link rel="alternate" hreflang="he" href="https:&#x2F;&#x2F;skeletonic.io/he&#x2F;">
+    <link rel="alternate" hreflang="hi" href="https:&#x2F;&#x2F;skeletonic.io/hi&#x2F;">
+    <link rel="alternate" hreflang="id" href="https:&#x2F;&#x2F;skeletonic.io/id&#x2F;">
+    <link rel="alternate" hreflang="it" href="https:&#x2F;&#x2F;skeletonic.io/it&#x2F;">
+    <link rel="alternate" hreflang="ja" href="https:&#x2F;&#x2F;skeletonic.io/ja&#x2F;">
+    <link rel="alternate" hreflang="ko" href="https:&#x2F;&#x2F;skeletonic.io/ko&#x2F;">
+    <link rel="alternate" hreflang="nl" href="https:&#x2F;&#x2F;skeletonic.io/nl&#x2F;">
+    <link rel="alternate" hreflang="pl" href="https:&#x2F;&#x2F;skeletonic.io/pl&#x2F;">
+    <link rel="alternate" hreflang="pt-BR" href="https:&#x2F;&#x2F;skeletonic.io/pt-br&#x2F;">
+    <link rel="alternate" hreflang="ro" href="https:&#x2F;&#x2F;skeletonic.io/ro&#x2F;">
+    <link rel="alternate" hreflang="ru" href="https:&#x2F;&#x2F;skeletonic.io/ru&#x2F;">
+    <link rel="alternate" hreflang="sv" href="https:&#x2F;&#x2F;skeletonic.io/sv&#x2F;">
+    <link rel="alternate" hreflang="th" href="https:&#x2F;&#x2F;skeletonic.io/th&#x2F;">
+    <link rel="alternate" hreflang="tr" href="https:&#x2F;&#x2F;skeletonic.io/tr&#x2F;">
+    <link rel="alternate" hreflang="uk" href="https:&#x2F;&#x2F;skeletonic.io/uk&#x2F;">
+    <link rel="alternate" hreflang="vi" href="https:&#x2F;&#x2F;skeletonic.io/vi&#x2F;">
+    <link rel="alternate" hreflang="yo" href="https:&#x2F;&#x2F;skeletonic.io/yo&#x2F;">
+    <link rel="alternate" hreflang="zh-Hans" href="https:&#x2F;&#x2F;skeletonic.io/zh-hans&#x2F;">
+    <link rel="alternate" hreflang="zh-Hant" href="https:&#x2F;&#x2F;skeletonic.io/zh-hant&#x2F;">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Skeletonic Stylus">
+    <meta property="og:title" content="Awọn ofin lilo">
+    
+    <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;yo&#x2F;">
+    <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Skeletonic Stylus — accessible, modular CSS library">
+    <meta property="og:locale" content="yo">
+    <meta property="og:locale:alternate" content="ar">
+    <meta property="og:locale:alternate" content="bn">
+    <meta property="og:locale:alternate" content="cs">
+    <meta property="og:locale:alternate" content="de">
+    <meta property="og:locale:alternate" content="es">
+    <meta property="og:locale:alternate" content="fil">
+    <meta property="og:locale:alternate" content="fr">
+    <meta property="og:locale:alternate" content="ha">
+    <meta property="og:locale:alternate" content="he">
+    <meta property="og:locale:alternate" content="hi">
+    <meta property="og:locale:alternate" content="id">
+    <meta property="og:locale:alternate" content="it">
+    <meta property="og:locale:alternate" content="ja">
+    <meta property="og:locale:alternate" content="ko">
+    <meta property="og:locale:alternate" content="nl">
+    <meta property="og:locale:alternate" content="pl">
+    <meta property="og:locale:alternate" content="pt_br">
+    <meta property="og:locale:alternate" content="ro">
+    <meta property="og:locale:alternate" content="ru">
+    <meta property="og:locale:alternate" content="sv">
+    <meta property="og:locale:alternate" content="th">
+    <meta property="og:locale:alternate" content="tr">
+    <meta property="og:locale:alternate" content="uk">
+    <meta property="og:locale:alternate" content="vi">
+    <meta property="og:locale:alternate" content="zh_hans">
+    <meta property="og:locale:alternate" content="zh_hant">
+    <meta property="og:locale:alternate" content="en">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wwdseb">
+    <meta name="twitter:creator" content="@wwdseb">
+    <meta name="twitter:title" content="Awọn ofin lilo">
+    
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
+
+    <!-- Critical CSS — inlined by scripts/build-i18n.sh post-build.
+         The build script swaps the placeholder below for the contents
+         of static/css/critical.css so above-the-fold paints in the
+         same frame as the HTML, without waiting for the full
+         chrome + skeletonic bundles. -->
+    <style>:root{color-scheme:light dark;--c-bg:#fff;--c-text:#1d1d1f;--c-heading:#000;--c-secondary:#6e6e73;--c-accent:#0066cc;--c-border:#d2d2d7;--c-nav-bg:rgba(255, 255, 255, 0.8);--c-nav-text:#1d1d1f;--c-nav-muted:#57575b;--c-hero-grad-1:#f5f5f7;--c-hero-grad-2:#fff;--c-hero-grad-3:#fafafa;--fs-base:clamp(1rem, 0.95rem + 0.25vw, 1.125rem);--fs-h1:clamp(2.5rem, 1.5rem + 5vw, 4.5rem);--fs-h2:clamp(2rem, 1.25rem + 3.75vw, 3.5rem);--fs-h3:clamp(1.5rem, 1.125rem + 1.875vw, 2.25rem)}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--c-bg:#000;--c-text:#f5f5f7;--c-heading:#fff;--c-secondary:#a1a1aa;--c-accent:#2997ff;--c-border:#424245;--c-nav-bg:rgba(0, 0, 0, 0.8);--c-nav-text:#f5f5f7;--c-nav-muted:#a1a1aa;--c-hero-grad-1:#1d1d1f;--c-hero-grad-2:#000;--c-hero-grad-3:#0a0a0a}}*{box-sizing:border-box;margin:0}html{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}body{background:var(--c-bg);color:var(--c-text);font-size:var(--fs-base);line-height:1.47;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.skip-link{position:absolute;inset-inline-start:.5rem;top:-3rem;padding:.6rem 1rem;background:var(--c-accent);color:#fff;text-decoration:none;border-radius:0 0 .25rem .25rem;z-index:1100}.skip-link:focus{top:0}.site-nav{background:var(--c-nav-bg);border-bottom:1px solid var(--c-border);position:sticky;top:0;z-index:1000;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:4rem;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-weight:600;font-size:1.25rem;color:var(--c-heading);letter-spacing:-.02em;text-decoration:none}.nav-center{display:flex;gap:1.5rem;list-style:none;padding:0;margin:0}.nav-center a{color:var(--c-nav-muted);font-size:.875rem;font-weight:500;text-decoration:none}.nav-right{display:flex;align-items:center;gap:1rem}.site-hero{text-align:center;padding:5rem 1.5rem 3rem;background:linear-gradient(180deg,var(--c-hero-grad-1),var(--c-hero-grad-2) 50%,var(--c-hero-grad-3))}.site-hero h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em;color:var(--c-heading);line-height:1.1}.site-hero .hero-title{margin:0 auto .75rem;display:block;width:clamp(120px,20vw,208px);aspect-ratio:1/1;background:url(https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg)center/contain no-repeat;text-indent:-9999px;white-space:nowrap;overflow:hidden;font-size:0;color:transparent}.site-hero p{margin-top:.75rem;max-width:40rem;margin-inline:auto}.hero-logo{width:4.5rem;height:auto;margin:0 auto 1rem}.hero-cta{display:inline-block;padding:.75rem 1.5rem;margin-top:1.5rem;background:var(--c-accent);color:#fff;font-weight:600;border-radius:9999px;text-decoration:none}.site-main{max-width:70rem;margin:0 auto;padding:3rem 1.5rem 5rem}.site-main h1,.site-main h2,.site-main h3,.site-main h4{font-family:inherit;line-height:1.1;color:var(--c-heading);margin:0}.site-main h4{letter-spacing:-.022em}.site-main h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em}.site-main h2,.site-main h3{font-size:var(--fs-h2);font-weight:600;letter-spacing:-.03em}.site-main h3{font-size:var(--fs-h3);letter-spacing:-.02em}.site-hero p,.site-main p{font-size:var(--fs-base);line-height:1.5;color:var(--c-secondary)}.site-main a:not([class*=button]):not([class*=btn]):not(.badge):not([class*=link-]){color:var(--c-accent);text-decoration:underline;text-underline-offset:.15em}</style>
+
+    <!-- Skeletonic Stylus v2.1.0 + chrome — render-blocking, but
+         the inline critical CSS above already painted above-the-fold,
+         so first paint isn't waiting on these. Async loading via
+         media="print"+onload regressed mobile perf because the
+         critical CSS doesn't cover every above-the-fold element on
+         every page (cards, code blocks); when the full sheet arrives
+         the layout shifts. Keep it render-blocking and rely on the
+         critical-CSS head budget for sub-1s FCP. -->
+    <link rel="stylesheet" href="/css/skeletonic.min.css">
+    
+    
+    <link rel="stylesheet" href="/css/chrome.css">
+
+    <!-- REMOVED: inline <style> moved to static/css/chrome.css -->
+    <!-- Original :root block preserved for reference:
+         --c-accent uses the project's primary palette hsl(210, 100%, 42%).
+    -->
+
+    <!-- BreadcrumbList JSON-LD — emitted on every page for AEO/SGE indexing. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ilé",
+          "item": "https://skeletonic.io/yo/"
+        }
+      ]
+    }
+    </script>
+
+    
+    <!-- WebSite JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Awọn ofin lilo",
+      "url": "https://skeletonic.io"
+    }
+    </script>
+    
+
+    
+
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Skeletonic CSS",
+      "url": "https://skeletonic.io",
+      "logo": "https://skeletonic.io/images/logo.svg",
+      "sameAs": [
+        "https://github.com/sebastienrousseau/skeletonic-stylus",
+        "https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus"
+      ]
+    }
+    </script>
+
+    
+  <meta name="description" content="1. Ile-ikawe naa Skeletonic Stylus ni a fun ni iwe-aṣẹ meji labẹ Iwe-aṣẹ MIT ati Iwe-aṣẹ Apache 2.0 . O le lo, daakọ, ṣe atunṣe, dapọ,">
+<meta property="og:description" content="1. Ile-ikawe naa Skeletonic Stylus ni a fun ni iwe-aṣẹ meji labẹ Iwe-aṣẹ MIT ati Iwe-aṣẹ Apache 2.0 . O le lo, daakọ, ṣe atunṣe, dapọ,">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
+  <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
+    <a href="#main" class="skip-link">Fò lọ sí àkóónú àkọ́kọ́</a>
+
+    <nav aria-label="Ilé Skeletonic Stylus" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <div class="nav-inner">
+        <a class="nav-brand" href="&#x2F;yo/" itemprop="url" aria-label="Ilé Skeletonic Stylus">
+          <span itemprop="name">Skeletonic Stylus</span>
+        </a>
+        <ul class="nav-center">
+          <li><a href="&#x2F;yo/" class="active" aria-current="page">Ilé</a></li>
+          <li><a href="&#x2F;yo/bere-nibi/">Àkọsílẹ̀</a></li>
+          <li><a href="&#x2F;yo/awon-paati/">Àwọn Pààtì</a></li>
+          <li class="dropdown" data-dropdown>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">Àwọn Ohun Èlò</button>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="&#x2F;yo/awon-paleti/">Àwọn Palẹ́tì</a></li>
+              <li><a class="dropdown-item" href="&#x2F;yo/ere-idasonu/">Ère Ìdàsọnù</a></li>
+              <li><a class="dropdown-item" href="&#x2F;yo/iraye-si/">Ìráyè Sí</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <button aria-label="Ṣàwárí" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
+            <svg viewBox="0 0 24 24" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="16" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <span class="search-shortcut" aria-hidden="true"></span>
+          </button>
+          <div class="palette-switcher" id="paletteSwitcher">
+            <button type="button" class="theme-toggle" id="paletteToggle" aria-label="Choose colour palette" aria-expanded="false" aria-haspopup="true" aria-controls="paletteMenu">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 2 2 0 0 0 2-2 2 2 0 0 1 2-2h2a4 4 0 0 0 4-4A10 10 0 0 0 12 2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+            </button>
+            <div class="palette-menu" id="paletteMenu" role="menu" hidden>
+              <button type="button" class="palette-swatch is-active" role="menuitemradio" aria-checked="true" data-palette="default" style="--swatch:#0066cc">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Default</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="ember" style="--swatch:#ed6300">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Ember</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="iris" style="--swatch:#8668ff">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Iris</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="lagoon" style="--swatch:#00a1b3">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Lagoon</span>
+              </button>
+            </div>
+          </div>
+          <button aria-label="Yí padà sí ọ̀nà dúdú" class="theme-toggle" id="themeToggle" type="button" data-label-dark="Dúdú" data-label-light="Ìmọ́lẹ̀" data-aria-dark="Yí padà sí ọ̀nà dúdú" data-aria-light="Yí padà sí ọ̀nà ìmọ́lẹ̀">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
+              <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light">
+              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
+            </svg>
+            <span class="theme-label">Dúdú</span>
+          </button>
+          <div class="lang-switcher">
+            <button type="button" aria-label="YO, Yí èdè padà" aria-expanded="false">
+              <span>🌐</span> YO
+            </button>
+            <div class="lang-menu">
+              <div class="lang-menu-grid">
+              <a href="&#x2F;">🇬🇧 English</a>
+              <a href="/fr&#x2F;">🇫🇷 Français</a>
+              <a href="/ar&#x2F;">🇸🇦 العربية</a>
+              <a href="/bn&#x2F;">🇧🇩 বাংলা</a>
+              <a href="/cs&#x2F;">🇨🇿 Čeština</a>
+              <a href="/de&#x2F;">🇩🇪 Deutsch</a>
+              <a href="/es&#x2F;">🇪🇸 Español</a>
+              <a href="/fil&#x2F;">🇵🇭 Filipino</a>
+              <a href="/ha&#x2F;">🇳🇬 Hausa</a>
+              <a href="/he&#x2F;">🇮🇱 עברית</a>
+              <a href="/hi&#x2F;">🇮🇳 हिन्दी</a>
+              <a href="/id&#x2F;">🇮🇩 Indonesia</a>
+              <a href="/it&#x2F;">🇮🇹 Italiano</a>
+              <a href="/ja&#x2F;">🇯🇵 日本語</a>
+              <a href="/ko&#x2F;">🇰🇷 한국어</a>
+              <a href="/nl&#x2F;">🇳🇱 Nederlands</a>
+              <a href="/pl&#x2F;">🇵🇱 Polski</a>
+              <a href="/pt-br&#x2F;">🇧🇷 Português</a>
+              <a href="/ro&#x2F;">🇷🇴 Română</a>
+              <a href="/ru&#x2F;">🇷🇺 Русский</a>
+              <a href="/sv&#x2F;">🇸🇪 Svenska</a>
+              <a href="/th&#x2F;">🇹🇭 ไทย</a>
+              <a href="/tr&#x2F;">🇹🇷 Türkçe</a>
+              <a href="/uk&#x2F;">🇺🇦 Українська</a>
+              <a href="/vi&#x2F;">🇻🇳 Tiếng Việt</a>
+              <a class="active" href="/yo&#x2F;">🇳🇬 Yorùbá</a>
+              <a href="/zh-hans&#x2F;">🇨🇳 简体中文</a>
+              <a href="/zh-hant&#x2F;">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="nav-cta" href="&#x2F;yo/kan-si-wa/">Kàn Sí Wa</a>
+        </div>
+        <button aria-label="Fi àtòjọ hàn tàbí pa á mọ́" class="nav-hamburger" id="navToggle" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    
+<header class="site-hero">
+  <h1 class="hero-title">Skeletonic Stylus</h1>
+  
+</header>
+
+
+    <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
+      <div class="text-start">
+        
+<h2>1. Ile-ikawe naa</h2>
+<p><strong>Skeletonic Stylus</strong> ni a fun ni iwe-aṣẹ meji labẹ
+<a href="https://opensource.org/licenses/MIT">Iwe-aṣẹ MIT</a> ati
+<a href="https://opensource.org/licenses/Apache-2.0">Iwe-aṣẹ Apache 2.0</a>. O
+le lo, daakọ, ṣe atunṣe, dapọ, tẹ jade, pin, fun ni iwe-aṣẹ abẹlẹ,
+ati/tabi ta awọn ẹda ti software naa, ti o ba tẹle awọn ofin iwe-aṣẹ
+eyikeyi.</p>
+<p>A pese ile-ikawe naa <strong>&quot;BI O TI RI&quot;, laisi oniduro iru eyikeyi</strong>,
+ti a ṣafihan tabi ti a tumọ si, pẹlu ṣugbọn kii ṣe opin si awọn
+oniduro ti ọja, ibamu fun idi kan pato, ati aisi irufin.</p>
+<h2>2. Aaye ayelujara yii</h2>
+<p>Akoonu <code>skeletonic.io</code> (ọrọ, awọn apẹẹrẹ, awọn aworan iboju, awọn eto)
+jẹ Ẹtọ Ẹda © 2021 - 2026 Skeletonic CSS, gbogbo ẹtọ ni a pamọ, ti a
+si fun ni iwe-aṣẹ labẹ
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — o le ṣe
+asọye, tumọ, tabi tun ṣe niwọn igba ti o ba ṣe itọkasi orisun.</p>
+<h2>3. Awọn ami iṣowo</h2>
+<p>&quot;Skeletonic&quot; ati aami Skeletonic jẹ awọn ami iṣowo ti a ko forukọsilẹ
+ti Sebastien Rousseau. O le lo wọn lati tọka si iṣẹ-akanṣe naa, ṣugbọn
+jọwọ maṣe lo wọn ni ọna ti o dabi pe o n ṣe atilẹyin ọja ti ko ni
+ibatan.</p>
+<h2>4. Awọn iyipada si awọn ofin wọnyi</h2>
+<p>A le ṣe imudojuiwọn awọn ofin wọnyi lati igba de igba. Ọjọ &quot;imudojuiwọn
+ti o kẹhin&quot; ninu ẹsẹ-iwe ṣe afihan iyipada tuntun julọ.</p>
+<p><a href="/yo/asiri/">Ka akiyesi asiri →</a> · <a href="/yo/kan-si-wa/">Kan si wa →</a></p>
+
+
+
+      </div>
+    </main>
+
+    <footer aria-label="Site footer" class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-cols">
+          <nav class="footer-col" aria-label="Iṣẹ́ Àkànṣe">
+            <p class="footer-col-title">Iṣẹ́ Àkànṣe</p>
+            <ul>
+              <li><a href="&#x2F;yo/nipa/">Nípa</a></li>
+              <li><a href="&#x2F;yo/iwe-iyipada/">Ìwé Ìyípadà</a></li>
+              <li><a href="&#x2F;yo/aabo/">Aabo</a></li>
+              <li><a href="&#x2F;yo/se-alabapin/">Ṣe Alábàáṣiṣẹ́pọ̀</a></li>
+              <li><a rel="noopener noreferrer" href="https://github.com/sebastienrousseau/skeletonic-stylus" target="_blank">GitHub ↗</a></li>
+              <li><a rel="noopener noreferrer" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus" target="_blank">npm ↗</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="Àwọn Ohun Èlò">
+            <p class="footer-col-title">Àwọn Ohun Èlò</p>
+            <ul>
+              <li><a href="&#x2F;yo/awon-paleti/">Àwọn Palẹ́tì</a></li>
+              <li><a href="&#x2F;yo/ere-idasonu/">Ère Ìdàsọnù</a></li>
+              <li><a href="&#x2F;yo/iraye-si/">Ìráyè Sí</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="Òfin">
+            <p class="footer-col-title">Òfin</p>
+            <ul>
+              <li><a href="&#x2F;yo/asiri/">Àṣírí</a></li>
+              <li><a href="&#x2F;yo/awon-ofin/">Àwọn Òfin</a></li>
+              <li><a href="&#x2F;yo/kan-si-wa/">Kàn Sí Wa</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bar">
+          Ẹ̀tọ́ Àwòkọ́wé © 2021 – 2026 Skeletonic CSS. Gbogbo ẹ̀tọ́ ni a pamọ́.
+        </div>
+      </div>
+    </footer>
+
+    <div aria-label="Ṣàwárí" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
+      <div class="search-box">
+        <input aria-label="Ṣàwárí" placeholder="Ṣàwárí nínú àkọsílẹ̀..." autocomplete="off" class="search-input" id="searchInput" type="search">
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-footer">
+          <span><kbd>↑</kbd> <kbd>↓</kbd> Lilọ</span>
+          <span><kbd>↵</kbd> Ṣí</span>
+          <span><kbd>Esc</kbd> Pa</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/main.js" defer></script>
+  
+
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+---
+title: "Palet"
+name: "Skeletonic Stylus"
+description: "Palet warna Material, Tachyons, dan web-safe yang disertakan dalam Skeletonic Stylus v2.0.0."
+layout: page
+permalink: https://skeletonic.io/id/palet/
+date: 2026-04-08
+author: Sebastien Rousseau
+language: id
+theme_color: "hsl(210, 100%, 42%)"
+keywords: "palet css, material, tachyons, websafe, token desain"
+---
+
+Skeletonic Stylus v2.0.0 menyertakan **tiga palet warna opsional**, masing-masing didistribusikan sebagai stylesheet diminifikasi tersendiri sehingga Anda hanya membayar untuk yang digunakan.
+
+| Palet | File | Ukuran (min) |
+|---|---|---|
+| Material | `dist/css/palettes/material/skeletonic-material.min.css` | ≈17.4 KB |
+| Tachyons | `dist/css/palettes/tachyons/skeletonic-tachyons.min.css` | 7,3 KB |
+| Web-safe | `dist/css/palettes/websafe/skeletonic-websafe.min.css` | ≈3.5 KB |
+
+Halaman ini memuat palet **Tachyons** sehingga kelas utilitas warna di bawah dirender dengan benar.
+
+<hr class="hr-text" data-content="Abu-abu">
+
+## Abu-abu inti Skeletonic
+
+Stylesheet inti menyertakan skala abu-abu aksesibel 11 langkah yang diekspos sebagai `--cl-grey-100` ... `--cl-grey-1000`.
+
+<div class="row">
+  <div class="flex-3 padding-3 text-center" style="background-color: var(--cl-grey-100);">
+    100
+  </div>
+  <div class="flex-3 padding-3 text-center" style="background-color: var(--cl-grey-300);">
+    300
+  </div>
+  <div class="flex-3 padding-3 text-center" style="background-color: var(--cl-grey-500); color: #fff;">
+    500
+  </div>
+  <div class="flex-3 padding-3 text-center" style="background-color: var(--cl-grey-700); color: #fff;">
+    700
+  </div>
+</div>
+
+<div class="row">
+  <div class="flex-3 padding-3 text-center" style="background-color: var(--cl-grey-200);">
+    200
+  </div>
+  <div class="flex-3 padding-3 text-center" style="background-color: var(--cl-grey-400);">
+    400
+  </div>
+  <div class="flex-3 padding-3 text-center" style="background-color: var(--cl-grey-600); color: #fff;">
+    600
+  </div>
+  <div class="flex-3 padding-3 text-center" style="background-color: var(--cl-grey-900); color: #fff;">
+    900
+  </div>
+</div>
+
+<hr class="hr-text" data-content="Merek">
+
+## Warna merek (v2.0.0 — kontras AA)
+
+Di v2.0.0, token primary dan secondary digelapkan untuk memenuhi **kontras WCAG 4,5:1** terhadap teks putih secara langsung.
+
+<div class="row margin-top-3">
+  <div class="flex-4 padding-3 text-center" style="background-color: hsl(210, 100%, 42%); color: #fff;">
+    <strong>--cl-primary</strong><br>hsl(210 100% 42%)
+  </div>
+  <div class="flex-4 padding-3 text-center" style="background-color: hsl(195, 100%, 33%); color: #fff;">
+    <strong>--cl-secondary</strong><br>hsl(195 100% 33%)
+  </div>
+  <div class="flex-4 padding-3 text-center" style="background-color: #757c8a; color: #fff;">
+    <strong>--cl-tertiary</strong><br>#757c8a
+  </div>
+</div>
+
+> **Catatan.** `--cl-tertiary` (#757c8a) mencapai rasio kontras 4.71:1
+> terhadap putih — sesuai AA untuk **teks besar** (≥ 18 px tebal /
+> ≥ 24 px reguler) tetapi tidak untuk teks isi. Padukan dengan latar
+> belakang yang lebih gelap atau gunakan hanya untuk elemen dekoratif
+> non-esensial.
+
+<hr class="hr-text" data-content="Tachyons">
+
+## Kelas utilitas palet Tachyons
+
+Saat Anda memuat `skeletonic-tachyons.min.css`, Anda mendapatkan seperangkat lengkap kelas warna satu tujuan — artefak yang sama dikirimkan, modul opsional.
+
+```html
+<span class="bg-blue white pa2">.bg-blue .white</span>
+<span class="bg-light-green dark-green pa2">.bg-light-green .dark-green</span>
+<span class="bg-washed-yellow dark-gray pa2">.bg-washed-yellow .dark-gray</span>
+```
+
+Spesifikasi palet Tachyons lengkap didokumentasikan di
+[tachyons.io/docs/themes/skins](https://tachyons.io/docs/themes/skins/);
+versi yang disertakan di sini adalah yang dikompilasi oleh Skeletonic.
+
+[Kembali ke komponen →](/id/komponen/)

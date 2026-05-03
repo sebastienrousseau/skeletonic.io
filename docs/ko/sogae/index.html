@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko" itemscope itemtype="https://schema.org/WebSite">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Skeletonic Stylus 소개</title>
+
+    
+    
+    
+    <meta name="generator" content="Shokunin (ssg) v0.0.34">
+    <meta name="theme-color" content="hsl(210, 100%, 42%)" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- View Transitions API opt-in: same-origin navigations get a
+         native cross-document transition. The matching CSS rule
+         (@view-transition { navigation: auto }) lives in chrome.css
+         and is automatically gated by prefers-reduced-motion. -->
+    <meta name="view-transition" content="same-origin">
+    <!-- frame-ancestors is intentionally absent: it's ignored when
+         delivered via <meta>, must come from a real HTTP header. The
+         GitHub Pages deployment can't set custom headers, so we lean
+         on the X-Frame-Options equivalent that the platform ships
+         and on the meta-supported directives below.
+
+         The two `'sha256-…'` entries pin the SSG-injected inline
+         scripts that bootstrap the search widget and the on-page
+         live-reload watchdog. They're emitted verbatim by shokunin
+         v0.0.34 and don't change between builds — if the SSG ever
+         changes them we'll see the CSP error in the browser console
+         and update the hashes. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self' https://cdn.jsdelivr.net; form-action 'self' https://formspree.io https://codepen.io; base-uri 'self'">
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
+
+    <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;ko&#x2F;">
+    <link rel="preload" href="/css/skeletonic.min.css" as="style">
+    <link rel="preload" href="/css/chrome.css" as="style"><link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
+    <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
+    <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
+    <link rel="alternate" hreflang="fr" href="https:&#x2F;&#x2F;skeletonic.io/fr&#x2F;">
+    <link rel="alternate" hreflang="de" href="https:&#x2F;&#x2F;skeletonic.io/de&#x2F;">
+    <link rel="alternate" hreflang="ar" href="https:&#x2F;&#x2F;skeletonic.io/ar&#x2F;">
+    <link rel="alternate" hreflang="bn" href="https:&#x2F;&#x2F;skeletonic.io/bn&#x2F;">
+    <link rel="alternate" hreflang="cs" href="https:&#x2F;&#x2F;skeletonic.io/cs&#x2F;">
+    <link rel="alternate" hreflang="es" href="https:&#x2F;&#x2F;skeletonic.io/es&#x2F;">
+    <link rel="alternate" hreflang="fil" href="https:&#x2F;&#x2F;skeletonic.io/fil&#x2F;">
+    <link rel="alternate" hreflang="ha" href="https:&#x2F;&#x2F;skeletonic.io/ha&#x2F;">
+    <link rel="alternate" hreflang="he" href="https:&#x2F;&#x2F;skeletonic.io/he&#x2F;">
+    <link rel="alternate" hreflang="hi" href="https:&#x2F;&#x2F;skeletonic.io/hi&#x2F;">
+    <link rel="alternate" hreflang="id" href="https:&#x2F;&#x2F;skeletonic.io/id&#x2F;">
+    <link rel="alternate" hreflang="it" href="https:&#x2F;&#x2F;skeletonic.io/it&#x2F;">
+    <link rel="alternate" hreflang="ja" href="https:&#x2F;&#x2F;skeletonic.io/ja&#x2F;">
+    <link rel="alternate" hreflang="ko" href="https:&#x2F;&#x2F;skeletonic.io/ko&#x2F;">
+    <link rel="alternate" hreflang="nl" href="https:&#x2F;&#x2F;skeletonic.io/nl&#x2F;">
+    <link rel="alternate" hreflang="pl" href="https:&#x2F;&#x2F;skeletonic.io/pl&#x2F;">
+    <link rel="alternate" hreflang="pt-BR" href="https:&#x2F;&#x2F;skeletonic.io/pt-br&#x2F;">
+    <link rel="alternate" hreflang="ro" href="https:&#x2F;&#x2F;skeletonic.io/ro&#x2F;">
+    <link rel="alternate" hreflang="ru" href="https:&#x2F;&#x2F;skeletonic.io/ru&#x2F;">
+    <link rel="alternate" hreflang="sv" href="https:&#x2F;&#x2F;skeletonic.io/sv&#x2F;">
+    <link rel="alternate" hreflang="th" href="https:&#x2F;&#x2F;skeletonic.io/th&#x2F;">
+    <link rel="alternate" hreflang="tr" href="https:&#x2F;&#x2F;skeletonic.io/tr&#x2F;">
+    <link rel="alternate" hreflang="uk" href="https:&#x2F;&#x2F;skeletonic.io/uk&#x2F;">
+    <link rel="alternate" hreflang="vi" href="https:&#x2F;&#x2F;skeletonic.io/vi&#x2F;">
+    <link rel="alternate" hreflang="yo" href="https:&#x2F;&#x2F;skeletonic.io/yo&#x2F;">
+    <link rel="alternate" hreflang="zh-Hans" href="https:&#x2F;&#x2F;skeletonic.io/zh-hans&#x2F;">
+    <link rel="alternate" hreflang="zh-Hant" href="https:&#x2F;&#x2F;skeletonic.io/zh-hant&#x2F;">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Skeletonic Stylus">
+    <meta property="og:title" content="Skeletonic Stylus 소개">
+    
+    <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;ko&#x2F;">
+    <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Skeletonic Stylus — accessible, modular CSS library">
+    <meta property="og:locale" content="ko">
+    <meta property="og:locale:alternate" content="ar">
+    <meta property="og:locale:alternate" content="bn">
+    <meta property="og:locale:alternate" content="cs">
+    <meta property="og:locale:alternate" content="de">
+    <meta property="og:locale:alternate" content="es">
+    <meta property="og:locale:alternate" content="fil">
+    <meta property="og:locale:alternate" content="fr">
+    <meta property="og:locale:alternate" content="ha">
+    <meta property="og:locale:alternate" content="he">
+    <meta property="og:locale:alternate" content="hi">
+    <meta property="og:locale:alternate" content="id">
+    <meta property="og:locale:alternate" content="it">
+    <meta property="og:locale:alternate" content="ja">
+    <meta property="og:locale:alternate" content="nl">
+    <meta property="og:locale:alternate" content="pl">
+    <meta property="og:locale:alternate" content="pt_br">
+    <meta property="og:locale:alternate" content="ro">
+    <meta property="og:locale:alternate" content="ru">
+    <meta property="og:locale:alternate" content="sv">
+    <meta property="og:locale:alternate" content="th">
+    <meta property="og:locale:alternate" content="tr">
+    <meta property="og:locale:alternate" content="uk">
+    <meta property="og:locale:alternate" content="vi">
+    <meta property="og:locale:alternate" content="yo">
+    <meta property="og:locale:alternate" content="zh_hans">
+    <meta property="og:locale:alternate" content="zh_hant">
+    <meta property="og:locale:alternate" content="en">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wwdseb">
+    <meta name="twitter:creator" content="@wwdseb">
+    <meta name="twitter:title" content="Skeletonic Stylus 소개">
+    
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
+
+    <!-- Critical CSS — inlined by scripts/build-i18n.sh post-build.
+         The build script swaps the placeholder below for the contents
+         of static/css/critical.css so above-the-fold paints in the
+         same frame as the HTML, without waiting for the full
+         chrome + skeletonic bundles. -->
+    <style>:root{color-scheme:light dark;--c-bg:#fff;--c-text:#1d1d1f;--c-heading:#000;--c-secondary:#6e6e73;--c-accent:#0066cc;--c-border:#d2d2d7;--c-nav-bg:rgba(255, 255, 255, 0.8);--c-nav-text:#1d1d1f;--c-nav-muted:#57575b;--c-hero-grad-1:#f5f5f7;--c-hero-grad-2:#fff;--c-hero-grad-3:#fafafa;--fs-base:clamp(1rem, 0.95rem + 0.25vw, 1.125rem);--fs-h1:clamp(2.5rem, 1.5rem + 5vw, 4.5rem);--fs-h2:clamp(2rem, 1.25rem + 3.75vw, 3.5rem);--fs-h3:clamp(1.5rem, 1.125rem + 1.875vw, 2.25rem)}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--c-bg:#000;--c-text:#f5f5f7;--c-heading:#fff;--c-secondary:#a1a1aa;--c-accent:#2997ff;--c-border:#424245;--c-nav-bg:rgba(0, 0, 0, 0.8);--c-nav-text:#f5f5f7;--c-nav-muted:#a1a1aa;--c-hero-grad-1:#1d1d1f;--c-hero-grad-2:#000;--c-hero-grad-3:#0a0a0a}}*{box-sizing:border-box;margin:0}html{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}body{background:var(--c-bg);color:var(--c-text);font-size:var(--fs-base);line-height:1.47;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.skip-link{position:absolute;inset-inline-start:.5rem;top:-3rem;padding:.6rem 1rem;background:var(--c-accent);color:#fff;text-decoration:none;border-radius:0 0 .25rem .25rem;z-index:1100}.skip-link:focus{top:0}.site-nav{background:var(--c-nav-bg);border-bottom:1px solid var(--c-border);position:sticky;top:0;z-index:1000;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:4rem;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-weight:600;font-size:1.25rem;color:var(--c-heading);letter-spacing:-.02em;text-decoration:none}.nav-center{display:flex;gap:1.5rem;list-style:none;padding:0;margin:0}.nav-center a{color:var(--c-nav-muted);font-size:.875rem;font-weight:500;text-decoration:none}.nav-right{display:flex;align-items:center;gap:1rem}.site-hero{text-align:center;padding:5rem 1.5rem 3rem;background:linear-gradient(180deg,var(--c-hero-grad-1),var(--c-hero-grad-2) 50%,var(--c-hero-grad-3))}.site-hero h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em;color:var(--c-heading);line-height:1.1}.site-hero .hero-title{margin:0 auto .75rem;display:block;width:clamp(120px,20vw,208px);aspect-ratio:1/1;background:url(https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg)center/contain no-repeat;text-indent:-9999px;white-space:nowrap;overflow:hidden;font-size:0;color:transparent}.site-hero p{margin-top:.75rem;max-width:40rem;margin-inline:auto}.hero-logo{width:4.5rem;height:auto;margin:0 auto 1rem}.hero-cta{display:inline-block;padding:.75rem 1.5rem;margin-top:1.5rem;background:var(--c-accent);color:#fff;font-weight:600;border-radius:9999px;text-decoration:none}.site-main{max-width:70rem;margin:0 auto;padding:3rem 1.5rem 5rem}.site-main h1,.site-main h2,.site-main h3,.site-main h4{font-family:inherit;line-height:1.1;color:var(--c-heading);margin:0}.site-main h4{letter-spacing:-.022em}.site-main h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em}.site-main h2,.site-main h3{font-size:var(--fs-h2);font-weight:600;letter-spacing:-.03em}.site-main h3{font-size:var(--fs-h3);letter-spacing:-.02em}.site-hero p,.site-main p{font-size:var(--fs-base);line-height:1.5;color:var(--c-secondary)}.site-main a:not([class*=button]):not([class*=btn]):not(.badge):not([class*=link-]){color:var(--c-accent);text-decoration:underline;text-underline-offset:.15em}</style>
+
+    <!-- Skeletonic Stylus v2.1.0 + chrome — render-blocking, but
+         the inline critical CSS above already painted above-the-fold,
+         so first paint isn't waiting on these. Async loading via
+         media="print"+onload regressed mobile perf because the
+         critical CSS doesn't cover every above-the-fold element on
+         every page (cards, code blocks); when the full sheet arrives
+         the layout shifts. Keep it render-blocking and rely on the
+         critical-CSS head budget for sub-1s FCP. -->
+    <link rel="stylesheet" href="/css/skeletonic.min.css">
+    
+    
+    <link rel="stylesheet" href="/css/chrome.css">
+
+    <!-- REMOVED: inline <style> moved to static/css/chrome.css -->
+    <!-- Original :root block preserved for reference:
+         --c-accent uses the project's primary palette hsl(210, 100%, 42%).
+    -->
+
+    <!-- BreadcrumbList JSON-LD — emitted on every page for AEO/SGE indexing. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://skeletonic.io/ko/"
+        }
+      ]
+    }
+    </script>
+
+    
+    <!-- WebSite JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Skeletonic Stylus 소개",
+      "url": "https://skeletonic.io"
+    }
+    </script>
+    
+
+    
+
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Skeletonic CSS",
+      "url": "https://skeletonic.io",
+      "logo": "https://skeletonic.io/images/logo.svg",
+      "sameAs": [
+        "https://github.com/sebastienrousseau/skeletonic-stylus",
+        "https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus"
+      ]
+    }
+    </script>
+
+    
+  <meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
+  <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
+    <a href="#main" class="skip-link">본문으로 건너뛰기</a>
+
+    <nav aria-label="Skeletonic Stylus 홈" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <div class="nav-inner">
+        <a class="nav-brand" href="&#x2F;ko/" itemprop="url" aria-label="Skeletonic Stylus 홈">
+          <span itemprop="name">Skeletonic Stylus</span>
+        </a>
+        <ul class="nav-center">
+          <li><a href="&#x2F;ko/" class="active" aria-current="page">홈</a></li>
+          <li><a href="&#x2F;ko/sijak/">문서</a></li>
+          <li><a href="&#x2F;ko/kuseong-yoso/">컴포넌트</a></li>
+          <li class="dropdown" data-dropdown>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">리소스</button>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="&#x2F;ko/palleteu/">팔레트</a></li>
+              <li><a class="dropdown-item" href="&#x2F;ko/aenimeisyeon/">애니메이션</a></li>
+              <li><a class="dropdown-item" href="&#x2F;ko/jeobgeun-seong/">접근성</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <button aria-label="검색" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
+            <svg viewBox="0 0 24 24" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="16" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <span class="search-shortcut" aria-hidden="true"></span>
+          </button>
+          <div class="palette-switcher" id="paletteSwitcher">
+            <button type="button" class="theme-toggle" id="paletteToggle" aria-label="Choose colour palette" aria-expanded="false" aria-haspopup="true" aria-controls="paletteMenu">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 2 2 0 0 0 2-2 2 2 0 0 1 2-2h2a4 4 0 0 0 4-4A10 10 0 0 0 12 2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+            </button>
+            <div class="palette-menu" id="paletteMenu" role="menu" hidden>
+              <button type="button" class="palette-swatch is-active" role="menuitemradio" aria-checked="true" data-palette="default" style="--swatch:#0066cc">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Default</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="ember" style="--swatch:#ed6300">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Ember</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="iris" style="--swatch:#8668ff">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Iris</span>
+              </button>
+              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="lagoon" style="--swatch:#00a1b3">
+                <span class="palette-dot" aria-hidden="true"></span>
+                <span class="palette-name">Lagoon</span>
+              </button>
+            </div>
+          </div>
+          <button aria-label="다크 모드로 전환" class="theme-toggle" id="themeToggle" type="button" data-label-dark="다크" data-label-light="라이트" data-aria-dark="다크 모드로 전환" data-aria-light="라이트 모드로 전환">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
+              <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light">
+              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
+            </svg>
+            <span class="theme-label">다크</span>
+          </button>
+          <div class="lang-switcher">
+            <button type="button" aria-label="KO, 언어 변경" aria-expanded="false">
+              <span>🌐</span> KO
+            </button>
+            <div class="lang-menu">
+              <div class="lang-menu-grid">
+              <a href="&#x2F;">🇬🇧 English</a>
+              <a href="/fr&#x2F;">🇫🇷 Français</a>
+              <a href="/ar&#x2F;">🇸🇦 العربية</a>
+              <a href="/bn&#x2F;">🇧🇩 বাংলা</a>
+              <a href="/cs&#x2F;">🇨🇿 Čeština</a>
+              <a href="/de&#x2F;">🇩🇪 Deutsch</a>
+              <a href="/es&#x2F;">🇪🇸 Español</a>
+              <a href="/fil&#x2F;">🇵🇭 Filipino</a>
+              <a href="/ha&#x2F;">🇳🇬 Hausa</a>
+              <a href="/he&#x2F;">🇮🇱 עברית</a>
+              <a href="/hi&#x2F;">🇮🇳 हिन्दी</a>
+              <a href="/id&#x2F;">🇮🇩 Indonesia</a>
+              <a href="/it&#x2F;">🇮🇹 Italiano</a>
+              <a href="/ja&#x2F;">🇯🇵 日本語</a>
+              <a class="active" href="/ko&#x2F;">🇰🇷 한국어</a>
+              <a href="/nl&#x2F;">🇳🇱 Nederlands</a>
+              <a href="/pl&#x2F;">🇵🇱 Polski</a>
+              <a href="/pt-br&#x2F;">🇧🇷 Português</a>
+              <a href="/ro&#x2F;">🇷🇴 Română</a>
+              <a href="/ru&#x2F;">🇷🇺 Русский</a>
+              <a href="/sv&#x2F;">🇸🇪 Svenska</a>
+              <a href="/th&#x2F;">🇹🇭 ไทย</a>
+              <a href="/tr&#x2F;">🇹🇷 Türkçe</a>
+              <a href="/uk&#x2F;">🇺🇦 Українська</a>
+              <a href="/vi&#x2F;">🇻🇳 Tiếng Việt</a>
+              <a href="/yo&#x2F;">🇳🇬 Yorùbá</a>
+              <a href="/zh-hans&#x2F;">🇨🇳 简体中文</a>
+              <a href="/zh-hant&#x2F;">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="nav-cta" href="&#x2F;ko/munui/">문의</a>
+        </div>
+        <button aria-label="메뉴 열기&#x2F;닫기" class="nav-hamburger" id="navToggle" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    
+<header class="site-hero">
+  <h1 class="hero-title">Skeletonic Stylus</h1>
+  
+</header>
+
+
+    <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
+      <div class="text-start">
+        
+<blockquote>
+<p><strong>Translation note (2026-04-30).</strong> v2.0.0 adds RTL support and a refreshed
+2026 framework comparison. The English source is the canonical reference
+while these translations catch up. See <a href="https://skeletonic.io/about/">https://skeletonic.io/about/</a> ·
+<a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
+</blockquote>
+<dl class="stat-strip" aria-label="Project facts">
+  <div><dt>Version</dt><dd>2.0.0</dd></div>
+  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
+  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
+  <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
+  <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
+</dl>
+<h2>요약</h2>
+<p><strong>Skeletonic Stylus</strong>는 접근성 높고 빠르며 모듈화된 UI 스타일링을 위한 오픈소스 <a href="https://stylus-lang.com">Stylus</a> CSS 라이브러리입니다.</p>
+<p>2018년에 실제 컴포넌트 라이브러리의 편의성을 유지하면서 <strong>더 적은 CSS를 전달하기</strong> 위한 개인 실험으로 시작되었습니다. 8년이 지난 지금도 그 목표는 변하지 않았습니다.</p>
+<h2>Skeletonic이 제공하는 기능</h2>
+<div class="feature-grid">
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/thunder.min.svg" alt="번개" width="64" height="64" loading="lazy" decoding="async">
+    <h3>매우 빠른 속도</h3>
+    <p>반응형 인터페이스를 몇 분 만에 설계하고 커스터마이징할 수 있습니다. 네이티브 CSS 변수, 사전 정의된 클래스, 모든 시맨틱 HTML 요소를 지원하는 12열 그리드를 제공합니다.</p>
+  </article>
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="깃털" width="64" height="64" loading="lazy" decoding="async">
+    <h3>경량</h3>
+    <p>약 7.7&nbsp;KB gzipped. 페이지가 더 빠르게 로드됩니다. 모든 필수 구성 요소가 포함되어 있습니다.</p>
+  </article>
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/responsive.min.svg" alt="반응형 기기" width="64" height="64" loading="lazy" decoding="async">
+    <h3>반응형 디자인</h3>
+    <p>데스크톱과 모바일 모두를 위해 제작되었습니다. 레이아웃이 모든 기기에 맞게 적응합니다. 터치 최적화, 시맨틱 HTML 전반 적용.</p>
+  </article>
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/accessibility.min.svg" alt="접근성" width="64" height="64" loading="lazy" decoding="async">
+    <h3>접근성</h3>
+    <p>WCAG&nbsp;2.2 기본 내장: focus-visible 링, AA 대비, 스킵 링크 도우미, 키보드 친화적 구성 요소, 모션 감소 지원 — 추가 스타일시트 불필요, <code>aria-*</code> 보일러플레이트 불필요.</p>
+  </article>
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/components.min.svg" alt="구성 요소 블록" width="64" height="64" loading="lazy" decoding="async">
+    <h3>구성 요소 라이브러리</h3>
+    <p>모듈화된 CSS 구성 요소와 Stylus 믹스인. 버튼, 폼, 카드, 알림, 뱃지, 팔레트 및 애니메이션 — 깔끔하고 모듈화되어 바로 사용할 수 있습니다.</p>
+  </article>
+  <article class="feature-card">
+    <img class="feature-icon" src="/images/icons/github.min.svg" alt="GitHub 로고" width="64" height="64" loading="lazy" decoding="async">
+    <h3>무료 &amp; 오픈소스</h3>
+    <p>Sebastien Rousseau가 설계, 개발 및 유지관리합니다. <strong>MIT</strong> 또는 <strong>Apache&nbsp;2.0</strong> 이중 라이선스. 상업적 사용을 포함하여 수수료나 라이선스 비용이 없습니다.</p>
+  </article>
+</div>
+<h2>다른 프레임워크와의 비교</h2>
+<p>하나의 자체 호스팅 스타일시트로 타이포그래피, 버튼, 폼, 카드, 테이블, 팔레트, 애니메이션 및 유틸리티 클래스를 모두 지원합니다. JavaScript 없음. 빌드 단계 불필요. Bootstrap, Tailwind, Bulma에 대한 피어 종속성 없음.</p>
+<div class="table-responsive"><table class="table"><caption class="visually-hidden">Data table table</caption>
+<thead>
+<tr>
+<th>기능</th>
+<th>Skeletonic Stylus</th>
+<th>Bootstrap 5</th>
+<th>Tailwind CSS</th>
+<th>Bulma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">Gzipped 크기</td>
+<td class="text-left"><strong>약 7.7 KB</strong></td>
+<td class="text-left">약 30 KB</td>
+<td class="text-left">약 10 KB (varies)</td>
+<td class="text-left">약 30 KB</td>
+</tr>
+<tr>
+<td class="text-left">WCAG 2.2 준수</td>
+<td class="text-left"><strong>기본 내장</strong></td>
+<td class="text-left">부분적</td>
+<td class="text-left">수동</td>
+<td class="text-left">부분적</td>
+</tr>
+<tr>
+<td class="text-left">캐스케이드 레이어</td>
+<td class="text-left"><strong>지원 (<code>@layer</code>)</strong></td>
+<td class="text-left">미지원</td>
+<td class="text-left">미지원</td>
+<td class="text-left">미지원</td>
+</tr>
+<tr>
+<td class="text-left">다크 모드</td>
+<td class="text-left"><strong><code>prefers-color-scheme</code></strong></td>
+<td class="text-left">선택적</td>
+<td class="text-left">클래스 기반</td>
+<td class="text-left">선택적</td>
+</tr>
+<tr>
+<td class="text-left">JavaScript 필요</td>
+<td class="text-left"><strong>불필요</strong></td>
+<td class="text-left">필요 (Popper)</td>
+<td class="text-left">불필요</td>
+<td class="text-left">불필요</td>
+</tr>
+<tr>
+<td class="text-left">CycloneDX SBOM</td>
+<td class="text-left"><strong>지원</strong></td>
+<td class="text-left">미지원</td>
+<td class="text-left">미지원</td>
+<td class="text-left">미지원</td>
+</tr>
+<tr>
+<td class="text-left">모션 감소</td>
+<td class="text-left"><strong>존중</strong></td>
+<td class="text-left">부분적</td>
+<td class="text-left">수동</td>
+<td class="text-left">부분적</td>
+</tr>
+<tr>
+<td class="text-left">라이선스</td>
+<td class="text-left">MIT 또는 Apache 2.0</td>
+<td class="text-left">MIT</td>
+<td class="text-left">MIT</td>
+<td class="text-left">MIT</td>
+</tr>
+</tbody>
+</table></div>
+<h2>원칙</h2>
+<ol>
+<li><strong>접근성은 기본이지 옵션이 아닙니다.</strong> WCAG 2.2 준수가 모든 구성 요소에 내장되어 있으며, &quot;테마&quot;로 추가되는 것이 아닙니다.</li>
+<li><strong>바이트가 중요합니다.</strong> 단일 스타일시트가 페이지 용량 예산을 초과해서는 안 됩니다. 8 KB gzipped 상한선이 CI에서 강제됩니다.</li>
+<li><strong>캐스케이드 레이어가 명시도 전쟁을 이깁니다.</strong> <code>!important</code> 없이, DOM 순서 트릭 없이 자신 있게 오버라이드할 수 있습니다.</li>
+<li><strong>Stylus는 여전히 훌륭합니다.</strong> 간결하고 표현력이 풍부하며, 라이브러리를 약 3,000줄의 읽기 쉬운 코드로 유지할 수 있습니다.</li>
+<li><strong>단조로움은 기능입니다.</strong> JS 종속성 없음. 빌드 시 마법 없음. 호환성 깨는 이름 변경 없음. CSS 클래스는 이름 그대로 동작합니다.</li>
+<li><strong>몇 초 만에 테마 적용 가능.</strong> 색상, 간격, 타이포그래피, 둥글기를 위한 네이티브 CSS 커스텀 속성을 지원합니다.</li>
+<li><strong>공급망이 강화되었습니다.</strong> 서명된 npm 출처 증명. 고정된 Dependabot 업데이트. CVE-2023-44270이 overrides를 통해 패치되었습니다.</li>
+</ol>
+<h2>버전 관리 &amp; 시맨틱 버전</h2>
+<p>Skeletonic Stylus는 <a href="https://semver.org">Semantic Versioning 2.0</a>을 따릅니다.</p>
+<table><caption class="visually-hidden">Data table table</caption>
+<thead>
+<tr>
+<th>범위</th>
+<th>시기</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left"><strong>Major</strong></td>
+<td class="text-left">공개 클래스, 믹스인 또는 토큰의 제거 또는 이름 변경</td>
+<td class="text-left">1.x → 2.0</td>
+</tr>
+<tr>
+<td class="text-left"><strong>Minor</strong></td>
+<td class="text-left">새로운 구성 요소, 믹스인 또는 토큰 추가</td>
+<td class="text-left">1.1 → 1.2</td>
+</tr>
+<tr>
+<td class="text-left"><strong>Patch</strong></td>
+<td class="text-left">버그 수정, 접근성 개선, 성능, 보안</td>
+<td class="text-left">1.1.6 → 2.0.0</td>
+</tr>
+</tbody>
+</table>
+<p>모든 공개 클래스 이름, 모든 CSS 커스텀 속성 및 모든 내보내진 Stylus 믹스인은 공개 API의 일부입니다. 호환성을 깨는 변경 사항은 메이저 버전 업데이트와 마이그레이션 가이드를 동반합니다.</p>
+<h2>관리</h2>
+<p>Skeletonic Stylus는 <a href="https://sebastienrousseau.com">Sebastien Rousseau</a>가 설계, 개발 및 유지관리합니다. <a href="https://opensource.org/licenses/MIT">MIT</a> 및 <a href="https://opensource.org/licenses/Apache-2.0">Apache 2.0</a> 이중 라이선스입니다.</p>
+<p>이슈, 아이디어 및 기여를 환영합니다 —
+<a href="/ko/giyeo/">기여 가이드를 확인하십시오</a>.</p>
+
+
+
+      </div>
+    </main>
+
+    <footer aria-label="Site footer" class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-cols">
+          <nav class="footer-col" aria-label="프로젝트">
+            <p class="footer-col-title">프로젝트</p>
+            <ul>
+              <li><a href="&#x2F;ko/sogae/">소개</a></li>
+              <li><a href="&#x2F;ko/byeongyeong-ilji/">변경 일지</a></li>
+              <li><a href="&#x2F;ko/boaan/">보안</a></li>
+              <li><a href="&#x2F;ko/giyeo/">기여</a></li>
+              <li><a rel="noopener noreferrer" href="https://github.com/sebastienrousseau/skeletonic-stylus" target="_blank">GitHub ↗</a></li>
+              <li><a rel="noopener noreferrer" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus" target="_blank">npm ↗</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="리소스">
+            <p class="footer-col-title">리소스</p>
+            <ul>
+              <li><a href="&#x2F;ko/palleteu/">팔레트</a></li>
+              <li><a href="&#x2F;ko/aenimeisyeon/">애니메이션</a></li>
+              <li><a href="&#x2F;ko/jeobgeun-seong/">접근성</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col" aria-label="법적 고지">
+            <p class="footer-col-title">법적 고지</p>
+            <ul>
+              <li><a href="&#x2F;ko/gaeinjeongbo/">개인정보</a></li>
+              <li><a href="&#x2F;ko/iyong-yakgwan/">이용약관</a></li>
+              <li><a href="&#x2F;ko/munui/">문의</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bar">
+          Copyright © 2021 – 2026 Skeletonic CSS. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <div aria-label="검색" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
+      <div class="search-box">
+        <input aria-label="검색" placeholder="문서 검색..." autocomplete="off" class="search-input" id="searchInput" type="search">
+        <div class="search-results" id="searchResults"></div>
+        <div class="search-footer">
+          <span><kbd>↑</kbd> <kbd>↓</kbd> 탐색</span>
+          <span><kbd>↵</kbd> 열기</span>
+          <span><kbd>Esc</kbd> 닫기</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/main.js" defer></script>
+  
+
+
+
+</body>
+</html>

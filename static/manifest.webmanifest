@@ -1,0 +1,23 @@
+{
+  "name": "Skeletonic Stylus",
+  "short_name": "Skeletonic",
+  "description": "An accessible, modular Stylus CSS library — WCAG 2.2 ready, cascade-layered, ~7.5 KB gzipped.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#006bd6",
+  "icons": [
+    {
+      "src": "/images/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}

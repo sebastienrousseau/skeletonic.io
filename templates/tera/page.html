@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body_class %}page-doc{% endblock %}
+
+{% block hero %}
+<header class="site-hero">
+  <h1>{{ page.title | default(value=site.title) }}</h1>
+  {% if page.description %}
+    <p>{{ page.description }}</p>
+  {% endif %}
+</header>
+{% endblock %}
+
+{% block content %}
+{{ page.content | safe }}
+{% endblock %}
