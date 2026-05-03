@@ -19,16 +19,6 @@
   const STORAGE_KEY = "theme";
   const root = document.documentElement;
 
-  const setIconVisibility = (theme) => {
-    const isDark = theme === "dark";
-    document.querySelectorAll(".theme-icon-dark").forEach((el) => {
-      el.style.display = isDark ? "none" : "";
-    });
-    document.querySelectorAll(".theme-icon-light").forEach((el) => {
-      el.style.display = isDark ? "" : "none";
-    });
-  };
-
   const updateToggleButtons = (theme) => {
     const isDark = theme === "dark";
     document.querySelectorAll("#themeToggle").forEach((btn) => {

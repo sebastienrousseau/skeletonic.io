@@ -37,7 +37,8 @@
   // reset's universal `* { animation-duration:.01ms !important }`
   // rule under prefers-reduced-motion: reduce trumps the class rules.
   function replay(target, name) {
-    if (!target || !name) return;
+    // Caller (replayCard) has already null-checked `target` and gated
+    // on `name` being non-empty, so no defensive guard here.
     target.classList.remove(name);
     /* eslint-disable-next-line no-unused-expressions */
     target.offsetWidth;  // force reflow so the keyframe restarts

@@ -42,7 +42,36 @@ jobs:
           # This will handover control about PR rejection to the GitHub side
           max-allowed-issues: 2147483647
 
-      # Upload the SARIF file generated in the previous step
+      # Codacy CLI emits a single SARIF file containing one run per
+      # underlying analyser (rubocop, eslint, markdownlint, …).
+      # Since 2025-07-21 GitHub Code Scanning rejects multi-run SARIF
+      # files when the runs share a category, so we tag each run with
+      # a unique `automationDetails.id` derived from the analyser's
+      # name. The result is a single valid upload that GitHub treats
+      # as N independent categories — one per analyser — so future
+      # uploads can replace the matching category cleanly.
+      # Ref: https://github.blog/changelog/2025-07-21-code-scanning-will-stop-combining-multiple-sarif-runs-uploaded-in-the-same-sarif-file/
+      - name: Tag SARIF runs with per-analyser categories
+        run: |
+          set -euo pipefail
+          if [ ! -s results.sarif ]; then
+            echo "no results.sarif — nothing to tag"
+            exit 0
+          fi
+          jq '.runs |= [
+                range(0; length) as $i
+                | .[$i]
+                | . + {
+                    automationDetails: {
+                      id: ("codacy/" + ((.tool.driver.name // ("run-" + ($i|tostring))) | ascii_downcase | gsub("[^a-z0-9_-]"; "-")) + "/")
+                    }
+                  }
+              ]' results.sarif > results.tagged.sarif
+          mv results.tagged.sarif results.sarif
+          echo "tagged $(jq '.runs | length' results.sarif) run(s):"
+          jq -r '.runs[].automationDetails.id' results.sarif | sed 's/^/  /'
+
+      # Upload the (now-categorised) SARIF file to Code Scanning
       - name: Upload SARIF results file
         uses: github/codeql-action/upload-sarif@e46ed2cbd01164d986452f91f178727624ae40d7  # v4
         with:

@@ -29,15 +29,33 @@
  */
 
 import { existsSync, readFileSync } from "node:fs";
-import { execSync } from "node:child_process";
+import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(here, "..");
 
-const BASE = process.env.VERIFY_BASE_URL || "http://127.0.0.1:8080";
-const GZIP_BASE = process.env.VERIFY_GZIP_URL || "http://127.0.0.1:8081";
+// Validate the BASE URLs once at startup so the values flowing
+// into child-process invocations downstream are typed URL objects,
+// not arbitrary strings. CodeQL's `js/indirect-command-line-injection`
+// rule treats env-sourced strings as untrusted; this gate keeps the
+// rule satisfied AND fails fast on a malformed env value.
+const assertHttpUrl = (raw, name) => {
+  let u;
+  try { u = new URL(raw); } catch {
+    console.error(`verify-site: ${name} is not a valid URL: ${raw}`);
+    process.exit(2);
+  }
+  if (u.protocol !== "http:" && u.protocol !== "https:") {
+    console.error(`verify-site: ${name} must be http(s), got ${u.protocol}`);
+    process.exit(2);
+  }
+  // Strip any trailing slash so `${BASE}/path` yields a single slash.
+  return u.origin;
+};
+const BASE = assertHttpUrl(process.env.VERIFY_BASE_URL || "http://127.0.0.1:8080", "VERIFY_BASE_URL");
+const GZIP_BASE = assertHttpUrl(process.env.VERIFY_GZIP_URL || "http://127.0.0.1:8081", "VERIFY_GZIP_URL");
 const QUICK = process.argv.includes("--quick");
 
 const PAGES = ["/", "/about/", "/components/", "/changelog/", "/tokens/", "/spacing/", "/security/", "/contribute/", "/getting-started/", "/animations/"];
@@ -74,7 +92,11 @@ console.log(`\n${bold}verify-site${reset} — ${BASE}\n`);
   const assets = ["/css/skeletonic.min.css", "/css/chrome.css", "/js/main.js", "/js/animations.js", "/js/search-data.json", "/manifest.webmanifest", "/sw.js", "/llms.txt", "/sitemap.xml", "/robots.txt"];
   const fails = [];
   for (const a of assets) {
-    const code = execSync(`curl -s -o /dev/null -w "%{http_code}" "${BASE}${a}"`, { stdio: ["ignore", "pipe", "ignore"] }).toString().trim();
+    const code = execFileSync(
+      "curl",
+      ["-s", "-o", "/dev/null", "-w", "%{http_code}", `${BASE}${a}`],
+      { stdio: ["ignore", "pipe", "ignore"] },
+    ).toString().trim();
     if (code !== "200") fails.push(`${a} → ${code}`);
   }
   if (fails.length) fail("core assets reachable", fails.join("; "));
@@ -109,7 +131,11 @@ console.log(`\n${bold}verify-site${reset} — ${BASE}\n`);
 {
   const fails = [];
   for (const loc of LOCALES) {
-    const html = execSync(`curl -s "${BASE}/${loc}/"`, { stdio: ["ignore", "pipe", "ignore"] }).toString();
+    const html = execFileSync(
+      "curl",
+      ["-s", `${BASE}/${loc}/`],
+      { stdio: ["ignore", "pipe", "ignore"] },
+    ).toString();
     const m = html.match(/<html\s+lang="([^"]+)"/);
     if (!m || m[1] !== loc) fails.push(`/${loc}/ → lang="${m ? m[1] : "missing"}"`);
   }
@@ -151,8 +177,17 @@ if (!QUICK) {
     const url = `${lhBase}${path}`;
     const out = `/tmp/lh-verify${path.replace(/\//g, "_") || "_root"}.json`;
     try {
-      execSync(
-        `npx -y --silent lighthouse "${url}" --form-factor=mobile --output=json --output-path="${out}" --only-categories=performance,accessibility,best-practices,seo --quiet --chrome-flags="--headless=new --no-sandbox" 2>/dev/null`,
+      execFileSync(
+        "npx",
+        [
+          "-y", "--silent", "lighthouse", url,
+          "--form-factor=mobile",
+          "--output=json",
+          `--output-path=${out}`,
+          "--only-categories=performance,accessibility,best-practices,seo",
+          "--quiet",
+          "--chrome-flags=--headless=new --no-sandbox",
+        ],
         { stdio: ["ignore", "pipe", "ignore"] },
       );
       const r = JSON.parse(readFileSync(out, "utf8"));
