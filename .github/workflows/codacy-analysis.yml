@@ -43,13 +43,16 @@ jobs:
           max-allowed-issues: 2147483647
 
       # Codacy CLI emits a single SARIF file containing one run per
-      # underlying analyser (rubocop, eslint, markdownlint, …).
-      # Since 2025-07-21 GitHub Code Scanning rejects multi-run SARIF
-      # files when the runs share a category, so we tag each run with
-      # a unique `automationDetails.id` derived from the analyser's
-      # name. The result is a single valid upload that GitHub treats
-      # as N independent categories — one per analyser — so future
-      # uploads can replace the matching category cleanly.
+      # underlying analyser (rubocop, eslint, markdownlint, …) and
+      # sometimes multiple runs from the same analyser (e.g. one per
+      # file set). Since 2025-07-21 GitHub Code Scanning rejects any
+      # multi-run SARIF where two runs share a category, so we tag
+      # each run with a unique `automationDetails.id` of the form
+      # `codacy/<analyser>/<index>/`. The index keeps duplicate
+      # analyser names disambiguated; the position is stable across
+      # pushes because the Codacy CLI emits runs in deterministic
+      # order, which lets GitHub replace each category cleanly on
+      # subsequent uploads.
       # Ref: https://github.blog/changelog/2025-07-21-code-scanning-will-stop-combining-multiple-sarif-runs-uploaded-in-the-same-sarif-file/
       - name: Tag SARIF runs with per-analyser categories
         run: |
@@ -63,13 +66,22 @@ jobs:
                 | .[$i]
                 | . + {
                     automationDetails: {
-                      id: ("codacy/" + ((.tool.driver.name // ("run-" + ($i|tostring))) | ascii_downcase | gsub("[^a-z0-9_-]"; "-")) + "/")
+                      id: ("codacy/" + ((.tool.driver.name // "run") | ascii_downcase | gsub("[^a-z0-9_-]"; "-")) + "/" + ($i | tostring) + "/")
                     }
                   }
               ]' results.sarif > results.tagged.sarif
           mv results.tagged.sarif results.sarif
           echo "tagged $(jq '.runs | length' results.sarif) run(s):"
           jq -r '.runs[].automationDetails.id' results.sarif | sed 's/^/  /'
+          # Sanity check: fail fast if any two runs ended up with the
+          # same category — that would reproduce the upload error and
+          # is much cheaper to diagnose here than in the upload step.
+          dup=$(jq -r '.runs[].automationDetails.id' results.sarif | sort | uniq -d)
+          if [ -n "$dup" ]; then
+            echo "::error::duplicate SARIF categories after tagging:"
+            printf '%s\n' "$dup"
+            exit 1
+          fi
 
       # Upload the (now-categorised) SARIF file to Code Scanning
       - name: Upload SARIF results file
