@@ -34,6 +34,32 @@ const PRECACHE = [
   "/images/favicon.ico",
 ];
 
+// Locale → offline page slug. fr uses `hors-ligne`; every other
+// translated locale stays on the English `offline` slug. When a
+// locale page can't be served fresh and isn't in the cache, the
+// worker falls back to the matching localised offline page so a
+// French user offline doesn't get an English error message.
+const OFFLINE_BY_LOCALE = {
+  ar: "/ar/offline/", bn: "/bn/offline/", cs: "/cs/offline/",
+  de: "/de/offline/", es: "/es/offline/", fil: "/fil/offline/",
+  fr: "/fr/hors-ligne/", ha: "/ha/offline/", he: "/he/offline/",
+  hi: "/hi/offline/", id: "/id/offline/", it: "/it/offline/",
+  ja: "/ja/offline/", ko: "/ko/offline/", nl: "/nl/offline/",
+  pl: "/pl/offline/", "pt-br": "/pt-br/offline/", ro: "/ro/offline/",
+  ru: "/ru/offline/", sv: "/sv/offline/", th: "/th/offline/",
+  tr: "/tr/offline/", uk: "/uk/offline/", vi: "/vi/offline/",
+  yo: "/yo/offline/", "zh-hans": "/zh-hans/offline/",
+  "zh-hant": "/zh-hant/offline/",
+};
+
+// Pick the offline URL that best matches the requested page's
+// locale. The locale is the first path segment when it's a known
+// translation root.
+const offlineFallbackFor = (pathname) => {
+  const seg = pathname.split("/")[1] || "";
+  return OFFLINE_BY_LOCALE[seg] || "/offline/";
+};
+
 // Asset extensions that get the cache-first treatment.
 const STATIC_RE = /\.(?:css|js|json|svg|png|jpg|jpeg|gif|webp|avif|ico|woff2?|ttf)$/;
 const HTML_TIMEOUT_MS = 3000;
@@ -86,9 +112,17 @@ const networkFirst = (req) =>
     new Promise((_resolve, reject) =>
       setTimeout(() => reject(new Error("timeout")), HTML_TIMEOUT_MS),
     ),
-  ]).catch(() =>
-    caches.match(req).then((hit) => hit || caches.match("/offline/")),
-  );
+  ]).catch(() => {
+    const fallback = offlineFallbackFor(new URL(req.url).pathname);
+    return caches
+      .match(req)
+      .then(
+        (hit) =>
+          hit ||
+          caches.match(fallback) ||
+          caches.match("/offline/"),
+      );
+  });
 
 const cacheFirst = (req) =>
   caches.match(req).then(

@@ -9,6 +9,38 @@ theme_color: "hsl(210, 100%, 42%)"
 keywords: "skeletonic changelog, release notes, v2.0.0, oklch, css grid, container queries, view transitions, semver"
 ---
 
+## skeletonic.io — 2026-05 site refresh
+
+Documentation site updates that ship alongside library v2.0.0. These
+are not part of the library bundle — they describe what changed on
+this site itself.
+
+- **28 locales.** English plus 27 translations (ar, bn, cs, de, es,
+  fil, fr, ha, he, hi, id, it, ja, ko, nl, pl, pt-br, ro, ru, sv, th,
+  tr, uk, vi, yo, zh-hans, zh-hant). Locale switcher in the footer;
+  every page resolves the user's preferred language from
+  `Accept-Language` if no choice has been saved.
+- **Service worker.** Cache-first for static assets, network-first
+  with a 3 s timeout for HTML, falling back to the localised
+  `/<locale>/offline/` page when the network is unreachable.
+- **Hero logo.** Progressive-enhanced brand mark. The `<h1>` text
+  stays in the DOM (text-indent: -9999px) so screen readers, search
+  engines, reader-mode clients, and CSS-disabled visitors still get
+  the page title; CSS swaps the visual to a CDN-served SVG.
+- **Lazy search.** `/js/search-data.json` (~51 kB raw / ~10 kB gzip)
+  is fetched only on first ⌘K open. Module-level promise caches the
+  response so subsequent opens are zero-network.
+- **CI gates.** `node scripts/verify-site.mjs` runs the same checks
+  CI does, locally: docs build presence, asset 200s, axe-core in
+  light + dark, `<html lang>` per locale, service-worker
+  registration, console-error free, mobile Lighthouse 100×4 across
+  every key page.
+- **Dark-mode contrast pass.** Every component swept under
+  `light-dark()` and validated against axe-core in both schemes —
+  zero WCAG 2.2 violations across 10 pages × 2 schemes.
+
+---
+
 ## v2.0.0 — 2026-05 (current)
 
 The "2026 baseline" major release. Every modern CSS feature that
