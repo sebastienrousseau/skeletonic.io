@@ -1,14 +1,14 @@
 {
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/zh-hant/yin-si/",
-  "keywords": "隱私, gdpr, cookies, 無追蹤",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "隱私",
-  "word_count": 79,
-  "reading_time": 1,
   "language": "zh-hant",
-  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "skeletonic.io 收集哪些資料、為何收集以及如何退出。",
+  "title": "隱私",
   "name": "Skeletonic Stylus",
+  "reading_time": 1,
+  "permalink": "https://skeletonic.io/zh-hant/yin-si/",
+  "date": "2026-04-08",
+  "keywords": "隱私, gdpr, cookies, 無追蹤",
   "layout": "page",
-  "description": "skeletonic.io 收集哪些資料、為何收集以及如何退出。"
+  "author": "Sebastien Rousseau",
+  "word_count": 79
 }

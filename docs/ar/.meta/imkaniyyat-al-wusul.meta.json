@@ -1,14 +1,14 @@
 {
-  "layout": "page",
-  "word_count": 498,
-  "title": "إمكانية الوصول — WCAG 2.2 في الإصدار 2.0.0",
-  "reading_time": 2,
-  "permalink": "https://skeletonic.io/ar/imkaniyyat-al-wusul/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
   "keywords": "wcag 2.2, إمكانية الوصول, focus visible, رابط التخطي, prefers reduced motion, تباين",
+  "title": "إمكانية الوصول — WCAG 2.2 في الإصدار 2.0.0",
   "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
   "language": "ar",
-  "description": "ما يشحنه الإصدار 2.0.0 مباشرة للتوافق مع WCAG 2.2 — حلقات التركيز، التباين، روابط التخطي، الحركة، والوضع الداكن."
+  "permalink": "https://skeletonic.io/ar/imkaniyyat-al-wusul/",
+  "author": "Sebastien Rousseau",
+  "description": "ما يشحنه الإصدار 2.0.0 مباشرة للتوافق مع WCAG 2.2 — حلقات التركيز، التباين، روابط التخطي، الحركة، والوضع الداكن.",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "word_count": 498,
+  "reading_time": 2
 }

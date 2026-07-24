@@ -1,14 +1,14 @@
 {
   "reading_time": 1,
-  "title": "Sakerhet &amp; leveranskedja",
-  "description": "Hur Skeletonic Stylus v2.0.0 sakrar sin byggpipeline, signerar releaser och levererar en SBOM.",
-  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
   "language": "sv",
-  "layout": "page",
-  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
   "keywords": "css sakerhet, sbom, cyclonedx, npm proveniens, openssf scorecard, leveranskedja",
+  "author": "Sebastien Rousseau",
+  "layout": "page",
+  "title": "Sakerhet &amp; leveranskedja",
+  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/sv/sakerhet/",
+  "description": "Hur Skeletonic Stylus v2.0.0 sakrar sin byggpipeline, signerar releaser och levererar en SBOM.",
   "word_count": 332
 }

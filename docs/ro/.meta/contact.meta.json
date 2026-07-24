@@ -1,14 +1,14 @@
 {
-  "language": "ro",
-  "name": "Skeletonic Stylus",
-  "title": "Contact",
-  "layout": "contact",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "word_count": 57,
-  "description": "Ia legătura cu noi despre Skeletonic Stylus — rapoarte de erori, idei de funcționalități, parteneriate sau feedback general.",
-  "date": "2026-04-08",
   "reading_time": 1,
   "keywords": "contact, suport, feedback, skeletonic",
-  "permalink": "https://skeletonic.io/ro/contact/"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "word_count": 57,
+  "author": "Sebastien Rousseau",
+  "title": "Contact",
+  "permalink": "https://skeletonic.io/ro/contact/",
+  "language": "ro",
+  "layout": "contact",
+  "description": "Ia legătura cu noi despre Skeletonic Stylus — rapoarte de erori, idei de funcționalități, parteneriate sau feedback general.",
+  "date": "2026-04-08",
+  "name": "Skeletonic Stylus"
 }

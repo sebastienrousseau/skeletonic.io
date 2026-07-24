@@ -1,15 +1,15 @@
 {
-  "permalink": "https://skeletonic.io/bn/animations/",
   "language": "bn",
-  "keywords": "css animations, keyframes, prefers-reduced-motion, bounce, pulse, fade",
+  "name": "Skeletonic Stylus",
+  "word_count": 1067,
+  "reading_time": 5,
   "load_animations": true,
   "description": "Skeletonic Stylus v2.0.0-এর সাথে শিপ করা ঐচ্ছিক অ্যানিমেশন মডিউল — bounce, pulse, fade, zoom, shake এবং আরও অনেক, সবই prefers-reduced-motion দ্বারা নিয়ন্ত্রিত।",
-  "date": "2026-04-08",
-  "layout": "page",
-  "name": "Skeletonic Stylus",
+  "keywords": "css animations, keyframes, prefers-reduced-motion, bounce, pulse, fade",
   "theme_color": "hsl(210, 100%, 42%)",
-  "title": "অ্যানিমেশন — v2.0.0-এ prefers-reduced-motion",
   "author": "Sebastien Rousseau",
-  "word_count": 1067,
-  "reading_time": 5
+  "layout": "page",
+  "title": "অ্যানিমেশন — v2.0.0-এ prefers-reduced-motion",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/bn/animations/"
 }

@@ -1,14 +1,14 @@
 {
-  "name": "Skeletonic Stylus",
-  "description": "WCAG 2.2 সামঞ্জস্যের জন্য v2.0.0 বাক্সের বাইরে কী শিপ করে — ফোকাস রিং, কনট্রাস্ট, স্কিপ লিংক, মোশন এবং ডার্ক মোড।",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/bn/probeshadhikar/",
-  "word_count": 487,
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "wcag 2.2, প্রবেশাধিকার, focus visible, skip link, prefers reduced motion, কনট্রাস্ট",
   "title": "প্রবেশাধিকার — v2.0.0-এ WCAG 2.2",
   "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "keywords": "wcag 2.2, প্রবেশাধিকার, focus visible, skip link, prefers reduced motion, কনট্রাস্ট",
+  "description": "WCAG 2.2 সামঞ্জস্যের জন্য v2.0.0 বাক্সের বাইরে কী শিপ করে — ফোকাস রিং, কনট্রাস্ট, স্কিপ লিংক, মোশন এবং ডার্ক মোড।",
   "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "word_count": 487,
   "reading_time": 2,
+  "permalink": "https://skeletonic.io/bn/probeshadhikar/",
   "language": "bn"
 }

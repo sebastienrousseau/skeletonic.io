@@ -1,14 +1,14 @@
 {
-  "word_count": 160,
-  "name": "Skeletonic Stylus",
-  "language": "he",
-  "author": "Sebastien Rousseau",
-  "description": "תנאים המסדירים את השימוש שלכם ב-skeletonic.io ובספריית Skeletonic Stylus.",
-  "permalink": "https://skeletonic.io/he/tnaim/",
-  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "תנאי שימוש, רישיון, mit, apache 2",
-  "date": "2026-04-08",
+  "word_count": 160,
+  "layout": "page",
+  "description": "תנאים המסדירים את השימוש שלכם ב-skeletonic.io ובספריית Skeletonic Stylus.",
   "reading_time": 1,
-  "title": "תנאי שימוש",
-  "layout": "page"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/he/tnaim/",
+  "language": "he",
+  "date": "2026-04-08",
+  "title": "תנאי שימוש"
 }

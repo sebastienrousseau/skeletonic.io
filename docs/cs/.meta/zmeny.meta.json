@@ -1,13 +1,13 @@
 {
-  "keywords": "skeletonic seznam zmen, poznamky k vydani, v2.0.0, semver",
-  "permalink": "https://skeletonic.io/cs/zmeny/",
+  "language": "cs",
+  "layout": "page",
   "name": "Skeletonic Stylus",
+  "keywords": "skeletonic seznam zmen, poznamky k vydani, v2.0.0, semver",
   "description": "Poznamky k vydanim Skeletonic Stylus, s kompletnim popisem v2.0.0.",
+  "reading_time": 1,
+  "permalink": "https://skeletonic.io/cs/zmeny/",
   "title": "Seznam zmen — Skeletonic Stylus",
   "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "cs",
-  "layout": "page",
-  "word_count": 329,
-  "reading_time": 1
+  "word_count": 329
 }

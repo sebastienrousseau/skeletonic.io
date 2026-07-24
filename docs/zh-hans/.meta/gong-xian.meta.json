@@ -1,14 +1,14 @@
 {
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "description": "如何提交问题、提出变更建议以及向 Skeletonic Stylus 提交拉取请求。",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "zh-hans",
-  "author": "Sebastien Rousseau",
-  "word_count": 128,
-  "permalink": "https://skeletonic.io/zh-hans/gong-xian/",
-  "keywords": "贡献, 开源, 拉取请求, issue, 规范",
   "layout": "page",
+  "language": "zh-hans",
+  "description": "如何提交问题、提出变更建议以及向 Skeletonic Stylus 提交拉取请求。",
+  "word_count": 128,
+  "keywords": "贡献, 开源, 拉取请求, issue, 规范",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/zh-hans/gong-xian/",
+  "reading_time": 1,
+  "date": "2026-04-08",
   "title": "贡献",
-  "reading_time": 1
+  "name": "Skeletonic Stylus"
 }

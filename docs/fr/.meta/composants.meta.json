@@ -1,14 +1,14 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
   "language": "fr",
-  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "title": "Composants",
-  "date": "2026-04-08",
-  "permalink": "https://skeletonic.io/fr/composants/",
-  "layout": "page",
-  "keywords": "composants skeletonic, boutons, cartes, formulaires, alertes, badges, en-tête, navbar, hamburger css",
   "reading_time": 6,
+  "word_count": 1372,
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "composants skeletonic, boutons, cartes, formulaires, alertes, badges, en-tête, navbar, hamburger css",
+  "name": "Skeletonic Stylus",
   "description": "Exemples HTML interactifs de chaque composant Skeletonic Stylus, regroupés, ancrés et rendus avec la feuille de style elle-même.",
-  "word_count": 1372
+  "date": "2026-04-08",
+  "title": "Composants",
+  "permalink": "https://skeletonic.io/fr/composants/"
 }

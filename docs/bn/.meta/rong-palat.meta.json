@@ -1,14 +1,14 @@
 {
-  "author": "Sebastien Rousseau",
-  "word_count": 312,
-  "reading_time": 1,
-  "language": "bn",
   "keywords": "css palette, material, tachyons, websafe, design tokens",
-  "description": "Skeletonic Stylus v2.0.0-এর সাথে শিপ করা Material, Tachyons এবং web-safe রঙ প্যালেট।",
+  "permalink": "https://skeletonic.io/bn/rong-palat/",
   "date": "2026-04-08",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/bn/rong-palat/",
-  "title": "রঙ প্যালেট",
+  "word_count": 312,
+  "reading_time": 1,
+  "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page"
+  "title": "রঙ প্যালেট",
+  "layout": "page",
+  "description": "Skeletonic Stylus v2.0.0-এর সাথে শিপ করা Material, Tachyons এবং web-safe রঙ প্যালেট।",
+  "language": "bn"
 }

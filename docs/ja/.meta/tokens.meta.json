@@ -1,14 +1,14 @@
 {
-  "title": "Tokens — Skeletonic Stylus",
-  "name": "Skeletonic Stylus",
-  "language": "ja",
-  "word_count": 620,
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "css custom properties, design tokens, theme, dark mode, css variables, retheme",
   "description": "Every CSS custom property exposed by Skeletonic Stylus v2.0.0 — colours, headings, line heights, golden-ratio constants, focus ring, link colours.",
   "reading_time": 3,
-  "keywords": "css custom properties, design tokens, theme, dark mode, css variables, retheme",
   "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/ja/tokens/",
+  "title": "Tokens — Skeletonic Stylus",
+  "word_count": 620,
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "language": "ja",
   "date": "2026-04-30",
-  "permalink": "https://skeletonic.io/ja/tokens/"
+  "name": "Skeletonic Stylus"
 }

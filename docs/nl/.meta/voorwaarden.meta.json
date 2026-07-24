@@ -1,14 +1,14 @@
 {
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Voorwaarden voor het gebruik van skeletonic.io en de Skeletonic Stylus-bibliotheek.",
-  "name": "Skeletonic Stylus",
-  "language": "nl",
-  "word_count": 181,
-  "title": "Gebruiksvoorwaarden",
-  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/nl/voorwaarden/",
   "reading_time": 1,
-  "author": "Sebastien Rousseau",
+  "word_count": 181,
+  "description": "Voorwaarden voor het gebruik van skeletonic.io en de Skeletonic Stylus-bibliotheek.",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
   "keywords": "gebruiksvoorwaarden, licentie, mit, apache 2",
-  "permalink": "https://skeletonic.io/nl/voorwaarden/"
+  "title": "Gebruiksvoorwaarden",
+  "language": "nl",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

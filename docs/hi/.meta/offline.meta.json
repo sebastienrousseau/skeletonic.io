@@ -1,14 +1,14 @@
 {
-  "date": "2026-04-08",
-  "language": "hi",
-  "keywords": "ऑफ़लाइन, service worker, pwa",
-  "name": "Skeletonic Stylus",
   "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/hi/offline/",
-  "description": "skeletonic.io नेटवर्क तक नहीं पहुँच सका। आपने जो पेज अनुरोध किया वह अभी कैश नहीं हुआ है।",
+  "title": "आप ऑफ़लाइन हैं",
+  "reading_time": 1,
+  "language": "hi",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "keywords": "ऑफ़लाइन, service worker, pwa",
   "layout": "page",
   "word_count": 65,
-  "title": "आप ऑफ़लाइन हैं",
-  "reading_time": 1
+  "description": "skeletonic.io नेटवर्क तक नहीं पहुँच सका। आपने जो पेज अनुरोध किया वह अभी कैश नहीं हुआ है।",
+  "name": "Skeletonic Stylus"
 }

@@ -1,14 +1,14 @@
 {
-  "layout": "page",
-  "permalink": "https://skeletonic.io/fr/accessibilite/",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "name": "Skeletonic Stylus",
-  "language": "fr",
   "keywords": "wcag 2.2, accessibilité, focus visible, lien d'évitement, prefers reduced motion, contraste",
-  "title": "Accessibilité — WCAG 2.2 dans la v2.0.0",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/fr/accessibilite/",
   "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
   "word_count": 579,
+  "theme_color": "hsl(210, 100%, 42%)",
   "reading_time": 2,
-  "description": "Ce que la v2.0.0 propose nativement pour la conformité WCAG 2.2 — anneaux de focus, contraste, liens d'évitement, mouvement et mode sombre."
+  "language": "fr",
+  "title": "Accessibilité — WCAG 2.2 dans la v2.0.0",
+  "description": "Ce que la v2.0.0 propose nativement pour la conformité WCAG 2.2 — anneaux de focus, contraste, liens d'évitement, mouvement et mode sombre.",
+  "layout": "page"
 }

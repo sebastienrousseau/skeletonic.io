@@ -1,14 +1,14 @@
 {
+  "title": "보안 &amp; 공급망",
   "name": "Skeletonic Stylus",
   "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/ko/boaan/",
   "keywords": "css 보안, sbom, cyclonedx, npm 출처 증명, openssf scorecard, 공급망",
-  "language": "ko",
-  "word_count": 329,
-  "reading_time": 1,
   "author": "Sebastien Rousseau",
   "theme_color": "hsl(210, 100%, 42%)",
-  "title": "보안 &amp; 공급망",
+  "description": "Skeletonic Stylus v2.0.0이 빌드 파이프라인을 보호하고, 릴리스에 서명하며, SBOM을 제공하는 방법입니다.",
+  "reading_time": 1,
+  "language": "ko",
   "layout": "page",
-  "permalink": "https://skeletonic.io/ko/boaan/",
-  "description": "Skeletonic Stylus v2.0.0이 빌드 파이프라인을 보호하고, 릴리스에 서명하며, SBOM을 제공하는 방법입니다."
+  "word_count": 329
 }

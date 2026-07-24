@@ -1,14 +1,14 @@
 {
+  "date": "2026-04-08",
   "keywords": "wcag 2.2, dostepnosc, focus visible, skip link, prefers reduced motion, kontrast",
-  "description": "Co v2.0.0 dostarcza od razu dla zgodnosci z WCAG 2.2 — pierscienie fokusu, kontrast, skip links, ruch i tryb ciemny.",
-  "reading_time": 2,
+  "name": "Skeletonic Stylus",
   "title": "Dostepnosc — WCAG 2.2 w v2.0.0",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "pl",
   "author": "Sebastien Rousseau",
+  "language": "pl",
+  "description": "Co v2.0.0 dostarcza od razu dla zgodnosci z WCAG 2.2 — pierscienie fokusu, kontrast, skip links, ruch i tryb ciemny.",
   "layout": "page",
   "permalink": "https://skeletonic.io/pl/dostepnosc/",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "word_count": 507
+  "word_count": 507,
+  "reading_time": 2,
+  "theme_color": "hsl(210, 100%, 42%)"
 }

@@ -1,14 +1,14 @@
 {
-  "permalink": "https://skeletonic.io/zh-hant/zu-jian/",
-  "keywords": "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首, 導覽列, 純 css 漢堡選單",
-  "word_count": 835,
-  "title": "組件",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "Skeletonic Stylus 每個組件的即時 HTML 範例，分組、錨定，並使用展示中的樣式表進行渲染。",
-  "reading_time": 4,
-  "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
   "language": "zh-hant",
   "layout": "page",
-  "author": "Sebastien Rousseau"
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/zh-hant/zu-jian/",
+  "author": "Sebastien Rousseau",
+  "title": "組件",
+  "word_count": 835,
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "description": "Skeletonic Stylus 每個組件的即時 HTML 範例，分組、錨定，並使用展示中的樣式表進行渲染。",
+  "keywords": "skeletonic 組件, 按鈕, 卡片, 表單, 提示框, 徽章, 頁首, 導覽列, 純 css 漢堡選單",
+  "reading_time": 4
 }

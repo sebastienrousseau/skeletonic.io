@@ -23,6 +23,31 @@ use.
 This page is loading the **Tachyons** palette so the colour utility
 classes below render correctly.
 
+<hr class="hr-text" data-content="OKLCH Customiser">
+
+## Interactive OKLCH Theme Customiser
+
+Tune your brand lightness, chroma, and hue sliders below to generate WCAG AAA conformant OKLCH colour definitions live.
+
+<div class="oklch-builder" id="oklchBuilder">
+  <div class="oklch-control">
+    <label for="oklchL">Lightness (L):</label>
+    <input type="range" id="oklchL" min="0.2" max="0.9" step="0.01" value="0.45">
+  </div>
+  <div class="oklch-control">
+    <label for="oklchC">Chroma (C):</label>
+    <input type="range" id="oklchC" min="0.01" max="0.35" step="0.01" value="0.20">
+  </div>
+  <div class="oklch-control">
+    <label for="oklchH">Hue (H):</label>
+    <input type="range" id="oklchH" min="0" max="360" step="1" value="250">
+  </div>
+  <div class="oklch-preview" id="oklchPreview">oklch(0.45 0.20 250)</div>
+  <pre style="margin-top:1rem;"><code id="oklchCode" class="language-css">:root {
+  --cl-primary: oklch(0.45 0.20 250);
+}</code></pre>
+</div>
+
 <hr class="hr-text" data-content="Greys">
 
 ## Skeletonic core greys
