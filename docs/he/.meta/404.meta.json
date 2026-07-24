@@ -1,11 +1,13 @@
 {
-  "language": "he",
-  "keywords": "404, לא נמצא",
-  "name": "Skeletonic Stylus",
-  "title": "הדף לא נמצא",
-  "permalink": "https://skeletonic.io/he/404/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "description": "הדף שביקשתם אינו קיים ב-skeletonic.io.",
   "author": "Sebastien Rousseau",
-  "layout": "page"
+  "layout": "page",
+  "word_count": 62,
+  "description": "הדף שביקשתם אינו קיים ב-skeletonic.io.",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "404, לא נמצא",
+  "permalink": "https://skeletonic.io/he/404/",
+  "reading_time": 1,
+  "name": "Skeletonic Stylus",
+  "language": "he",
+  "title": "הדף לא נמצא"
 }

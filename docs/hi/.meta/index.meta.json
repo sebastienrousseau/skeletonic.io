@@ -1,12 +1,14 @@
 {
   "keywords": "css, stylus, css framework, सुलभ css, wcag 2.2, हल्की css, cascade layers, design system",
+  "title": "Skeletonic Stylus — सुलभ CSS, 7.7 KB gzipped",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/hi/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "reading_time": 1,
   "description": "Skeletonic Stylus एक हल्की, मॉड्यूलर Stylus CSS लाइब्रेरी है — WCAG 2.2 तैयार, cascade-layered, 7.7 KB gzipped — जो आधुनिक वेब UI विकास को सरल बनाती है।",
   "date": "2026-04-08",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "index",
+  "word_count": 206,
   "author": "Sebastien Rousseau",
-  "title": "Skeletonic Stylus — सुलभ CSS, 7.7 KB gzipped",
   "language": "hi",
-  "layout": "index"
+  "permalink": "https://skeletonic.io/hi/"
 }

@@ -1,12 +1,14 @@
 {
-  "name": "Skeletonic Stylus",
-  "layout": "page",
-  "keywords": "securitate css, sbom, cyclonedx, proveniență npm, openssf scorecard, lanț de aprovizionare",
   "language": "ro",
+  "permalink": "https://skeletonic.io/ro/securitate/",
   "theme_color": "hsl(210, 100%, 42%)",
   "description": "Cum Skeletonic Stylus v2.0.0 securizează pipeline-ul de build, semnează lansările și livrează un SBOM.",
-  "permalink": "https://skeletonic.io/ro/securitate/",
   "author": "Sebastien Rousseau",
+  "word_count": 374,
+  "keywords": "securitate css, sbom, cyclonedx, proveniență npm, openssf scorecard, lanț de aprovizionare",
+  "date": "2026-04-08",
+  "layout": "page",
+  "name": "Skeletonic Stylus",
   "title": "Securitate &amp; lanț de aprovizionare",
-  "date": "2026-04-08"
+  "reading_time": 1
 }

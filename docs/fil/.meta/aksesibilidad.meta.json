@@ -1,12 +1,14 @@
 {
-  "author": "Sebastien Rousseau",
-  "description": "Ano ang ipinapadala ng v2.0.0 agad mula sa kahon para sa WCAG 2.2 conformance — focus ring, contrast, skip link, motion, at dark mode.",
-  "layout": "page",
   "name": "Skeletonic Stylus",
-  "language": "fil",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/fil/aksesibilidad/",
+  "word_count": 589,
   "keywords": "wcag 2.2, aksesibilidad, focus visible, skip link, prefers reduced motion, contrast",
-  "title": "Aksesibilidad — WCAG 2.2 sa v2.0.0",
-  "date": "2026-04-08"
+  "reading_time": 2,
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/fil/aksesibilidad/",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "language": "fil",
+  "description": "Ano ang ipinapadala ng v2.0.0 agad mula sa kahon para sa WCAG 2.2 conformance — focus ring, contrast, skip link, motion, at dark mode.",
+  "title": "Aksesibilidad — WCAG 2.2 sa v2.0.0"
 }

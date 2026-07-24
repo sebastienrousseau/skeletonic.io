@@ -1,0 +1,71 @@
+# Skeletonic Stylus 2.0 — Complete Technical & API Reference
+
+> Skeletonic Stylus is an accessible, modular, cascade-layered CSS library engineered for the post-bundler web. It delivers WCAG AAA compliance, OKLCH colours, and 100% native browser baselines in under 7.7 KB gzip.
+
+## Quick Installation
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css">
+```
+
+Or via npx CLI:
+```bash
+npx @sebastienrousseau/skeletonic-stylus init
+```
+
+## Cascade Layer Architecture (@layer)
+
+Skeletonic Stylus structures its rules inside explicit native `@layer` blocks:
+- `@layer skeletonic.base`: Resets, HTML normalize, root custom properties, system font stacks.
+- `@layer skeletonic.layout`: Grid container, flexbox layout system, media query breakpoints.
+- `@layer skeletonic.elements`: Core HTML element primitives (buttons, inputs, tables, lists, code blocks).
+- `@layer skeletonic.components`: Higher-level UI components (cards, accordions, modals, popovers, tooltips, loaders, switches, badges, alerts, navbars).
+- `@layer skeletonic.utilities`: Utility classes and custom HTML attribute selectors (`[center]`, `[flex]`, `[radius]`).
+
+Unlayered custom CSS overrides automatically win over `@layer` definitions without needing `!important`.
+
+## Component Class Reference
+
+### Buttons & Input Shapes
+- Solid Buttons: `.button`, `.button.primary`, `.button.secondary`, `.button.tertiary`, `.button.success`, `.button.warning`, `.button.danger`.
+- Outline Buttons: `.button.primary-outline`, `.button.secondary-outline`.
+- Button Shapes: `.btn`, `.btn-round`, `.btn-oval`, `.btn-outline`.
+- Button Groups: `.button-group`, `.button.block` (full-width).
+
+### Feedback & Status
+- Alerts: `.alert`, `.alert-primary`, `.alert-secondary`, `.alert-success`, `.alert-info`, `.alert-warning`, `.alert-danger`.
+- Badges: `.badge`, `.badge.primary`, `.badge.success`, `.badge.warning`, `.badge.danger`, `.badge-pill`, `.badge-soft`.
+- Loaders: `.loader`, `.loader-sm`, `.loader-lg`.
+- Switches & Toggles: `input[type="checkbox"][role="switch"]`, `.toggle`.
+
+### Surface & Containers
+- Cards: `.card`, `.card-header`, `.card-body`, `.card-footer`, `.card-image`.
+- Accordions: `details.accordion`, `summary`, `.content`.
+- Modals & Dialogs: `dialog.modal`, `.modal-header`, `.modal-footer`.
+- Dropdown Menus: `[popover].dropdown`, `.dropdown-item`.
+- Tooltips: `[popover].tooltip`.
+- Tables: `.table`, `.table-striped`, `.table-bordered`, `.table-hover`, `.table-responsive`.
+
+### Form Controls & Inputs
+- Fields: `.form-group`, `.form-control`, `.form-label`, `.form-select`, `.form-checkbox`, `.form-radio`.
+- Fieldsets: `fieldset`, `legend`.
+- Validation States: `.is-valid`, `.is-invalid`.
+
+### Typography & Media
+- Lists: `.list-unstyled`, `.list-inline`, `.list-group`, `.list-group-item`.
+- Dividers: `.divider`, `.divider-text`, `.hr-text`.
+- Link Effects: `.link-underline`, `.link-hover`, `.link-subtle`, `.link-arrow`.
+- Avatars: `.avatar`, `.img-fluid`, `.img-rounded`, `.img-thumbnail`.
+
+## Spacing & Grid Utilities
+- Grid System: `.grid`, `.grid-cols-1` to `.grid-cols-12`, `.col-span-1` to `.col-span-12`, `.gap-1` to `.gap-8`.
+- Flexbox Utilities: `.flex`, `.justify-start`, `.justify-center`, `.justify-end`, `.align-start`, `.align-center`, `.align-end`, `.direction-vertical`, `.direction-horizontal`.
+- Spacing Scale: `.margin-{size}`, `.padding-{size}` where `{size}` is `xs` (0.38rem), `sm` (0.62rem), `md` (1.00rem), `lg` (1.62rem), `xl` (2.62rem).
+- Logical Spacing: `.margin-start-{size}`, `.margin-end-{size}`, `.padding-start-{size}`, `.padding-end-{size}` (auto-flips in `<html dir="rtl">`).
+
+## Accessibility Specifications (WCAG 2.2 AAA)
+- All text and interactive element colors satisfy a minimum 7.0:1 contrast ratio against light (#ffffff) and dark (#000000) surfaces.
+- Touch target sizes meet or exceed 24x24px (SC 2.5.8).
+- Focus rings feature guaranteed 3:1 contrast against adjacent background colors.
+- Motion animations are automatically disabled when `prefers-reduced-motion: reduce` is active.
+- Built-in support for Right-to-Left writing modes (`dir="rtl"`) using CSS logical properties (`margin-inline`, `padding-inline`, `inset-inline-start`).

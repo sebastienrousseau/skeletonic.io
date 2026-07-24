@@ -1,11 +1,13 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/es/registro-de-cambios/",
-  "keywords": "skeletonic changelog, notas de version, v2.0.0, semver",
-  "language": "es",
-  "description": "Notas de version de Skeletonic Stylus, con v2.0.0 en detalle.",
-  "title": "Registro de cambios",
-  "layout": "page",
+  "word_count": 386,
+  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus"
+  "layout": "page",
+  "reading_time": 1,
+  "permalink": "https://skeletonic.io/es/registro-de-cambios/",
+  "title": "Registro de cambios",
+  "description": "Notas de version de Skeletonic Stylus, con v2.0.0 en detalle.",
+  "language": "es",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "skeletonic changelog, notas de version, v2.0.0, semver"
 }

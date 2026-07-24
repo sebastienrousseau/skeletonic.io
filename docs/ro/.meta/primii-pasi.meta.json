@@ -1,12 +1,14 @@
 {
-  "keywords": "instalare skeletonic, configurare stylus, css cdn, primii pași",
-  "permalink": "https://skeletonic.io/ro/primii-pasi/",
-  "description": "Instalează Skeletonic Stylus din npm sau CDN, importă-l în pipeline-ul tău Stylus și suprascrie variabilele în câteva secunde.",
-  "title": "Primii pași cu Skeletonic Stylus",
-  "layout": "page",
   "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ro",
-  "date": "2026-04-08",
+  "reading_time": 5,
+  "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus"
+  "language": "ro",
+  "layout": "page",
+  "word_count": 1028,
+  "description": "Instalează Skeletonic Stylus din npm sau CDN, importă-l în pipeline-ul tău Stylus și suprascrie variabilele în câteva secunde.",
+  "date": "2026-04-08",
+  "title": "Primii pași cu Skeletonic Stylus",
+  "keywords": "instalare skeletonic, configurare stylus, css cdn, primii pași",
+  "permalink": "https://skeletonic.io/ro/primii-pasi/"
 }

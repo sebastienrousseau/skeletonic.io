@@ -1,12 +1,14 @@
 {
-  "layout": "page",
-  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
+  "date": "2026-04-30",
   "permalink": "https://skeletonic.io/ko/breakpoints/",
+  "word_count": 358,
   "description": "Skeletonic doesn't ship the usual xs/sm/md/lg ladder. The container width adapts continuously through 38 min-width media queries from 220 px to 7680 px.",
-  "keywords": "css breakpoints, responsive design, mobile first, container queries, em breakpoints",
+  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Breakpoints — Skeletonic Stylus",
   "language": "ko",
-  "date": "2026-04-30"
+  "keywords": "css breakpoints, responsive design, mobile first, container queries, em breakpoints",
+  "reading_time": 1,
+  "layout": "page"
 }

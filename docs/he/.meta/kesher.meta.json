@@ -1,12 +1,14 @@
 {
-  "description": "צרו קשר לגבי Skeletonic Stylus — דיווחי באגים, רעיונות לתכונות, שיתופי פעולה או משוב כללי.",
   "name": "Skeletonic Stylus",
+  "word_count": 49,
+  "layout": "contact",
+  "reading_time": 1,
   "language": "he",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/he/kesher/",
+  "description": "צרו קשר לגבי Skeletonic Stylus — דיווחי באגים, רעיונות לתכונות, שיתופי פעולה או משוב כללי.",
+  "keywords": "יצירת קשר, תמיכה, משוב, skeletonic",
   "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
   "title": "יצירת קשר",
   "date": "2026-04-08",
-  "keywords": "יצירת קשר, תמיכה, משוב, skeletonic",
-  "layout": "contact"
+  "permalink": "https://skeletonic.io/he/kesher/"
 }

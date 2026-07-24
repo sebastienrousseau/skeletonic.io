@@ -624,3 +624,71 @@
   if (document.readyState === "complete") register();
   else window.addEventListener("load", register, { once: true });
 })();
+
+// ----- 9. Interactive OKLCH Theme Builder --------------------------------
+(() => {
+  const container = document.getElementById("oklchBuilder");
+  if (!container) return;
+
+  const lInput = document.getElementById("oklchL");
+  const cInput = document.getElementById("oklchC");
+  const hInput = document.getElementById("oklchH");
+  const preview = document.getElementById("oklchPreview");
+  const codeOut = document.getElementById("oklchCode");
+
+  const update = () => {
+    const l = lInput.value;
+    const c = cInput.value;
+    const h = hInput.value;
+    const colorStr = `oklch(${l} ${c} ${h})`;
+    if (preview) {
+      preview.style.backgroundColor = colorStr;
+      preview.textContent = colorStr;
+    }
+    if (codeOut) {
+      codeOut.textContent = `:root {\n  --cl-primary: ${colorStr};\n}`;
+    }
+  };
+
+  [lInput, cInput, hInput].forEach(el => el && el.addEventListener("input", update));
+  update();
+})();
+
+// ----- 10. Live Framework Comparison Calculator ---------------------------
+(() => {
+  const container = document.getElementById("frameworkCalc");
+  if (!container) return;
+
+  const select = document.getElementById("calcFramework");
+  const pagesInput = document.getElementById("calcPages");
+  const savingsBytesEl = document.getElementById("calcSavedBytes");
+  const savingsPercentEl = document.getElementById("calcSavedPercent");
+
+  const SKELETONIC_GZIP = 7.7; // KB
+  const FRAMEWORKS = {
+    pico: 11.6,
+    bootstrap: 30.9,
+    bulma: 64.9,
+    tailwind: 123.1
+  };
+
+  const update = () => {
+    const fwKey = select ? select.value : "bootstrap";
+    const pages = pagesInput ? Math.max(1, parseInt(pagesInput.value, 10) || 1) : 1;
+    const targetGzip = FRAMEWORKS[fwKey] || 30.9;
+    const diffPerLoad = targetGzip - SKELETONIC_GZIP;
+    const totalSavedKB = diffPerLoad * pages * 1000; // assuming 1000 visitors per page
+
+    if (savingsBytesEl) {
+      savingsBytesEl.textContent = `${(totalSavedKB / 1024).toFixed(1)} MB`;
+    }
+    if (savingsPercentEl) {
+      const pct = ((1 - SKELETONIC_GZIP / targetGzip) * 100).toFixed(0);
+      savingsPercentEl.textContent = `${pct}% lighter`;
+    }
+  };
+
+  if (select) select.addEventListener("change", update);
+  if (pagesInput) pagesInput.addEventListener("input", update);
+  update();
+})();

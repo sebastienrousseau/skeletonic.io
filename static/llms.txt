@@ -1,0 +1,21 @@
+# Skeletonic Stylus
+
+> Skeletonic Stylus is an accessible, modular, cascade-layered CSS library engineered for the post-bundler web. It delivers WCAG AAA compliance, OKLCH colours, and 100% native browser baselines in under 7.7 KB gzip.
+
+## Core Documentation
+
+- [Getting Started](https://skeletonic.io/getting-started/): Installation, CDN usage, Stylus integration, and setup instructions.
+- [Components](https://skeletonic.io/components/): Complete 21-category interactive showcase covering buttons, cards, forms, alerts, badges, accordions, modals, popovers, tooltips, loaders, and switches.
+- [Palettes](https://skeletonic.io/palettes/): OKLCH colour systems, Material Design, Tachyons, and web-safe palette tokens.
+- [Animations](https://skeletonic.io/animations/): 48 keyframe motion utilities gated behind prefers-reduced-motion.
+- [Accessibility](https://skeletonic.io/accessibility/): WCAG 2.2 AAA standards, focus rings, skip links, and native RTL support.
+- [Tokens](https://skeletonic.io/tokens/): Design tokens, custom CSS properties, and golden-ratio fluid typography scales.
+- [Spacing Ladder](https://skeletonic.io/spacing/): Golden-ratio physical and logical spacing ladder.
+- [Breakpoints](https://skeletonic.io/breakpoints/): Responsive viewport and container query grid breakpoints.
+- [Cascade Layers](https://skeletonic.io/cascade-layers/): Native @layer architecture specification.
+- [Benchmarks](https://skeletonic.io/benchmarks/): Framework performance, bandwidth, and carbon footprint comparisons.
+- [Utilities](https://skeletonic.io/utilities/): Class and custom HTML attribute utility selector matrix.
+
+## Full Content Map
+
+For complete API documentation, code examples, and technical specifications, see [llms-full.txt](https://skeletonic.io/llms-full.txt).

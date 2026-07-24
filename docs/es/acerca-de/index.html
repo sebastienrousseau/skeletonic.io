@@ -1,556 +1,186 @@
-<!DOCTYPE html>
-<html lang="es" itemscope itemtype="https://schema.org/WebSite">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Acerca de Skeletonic Stylus</title>
-
-    
-    
-    
-    <meta name="generator" content="Shokunin (ssg) v0.0.34">
-    <meta name="theme-color" content="hsl(210, 100%, 42%)" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-    <meta name="color-scheme" content="light dark">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <!-- View Transitions API opt-in: same-origin navigations get a
-         native cross-document transition. The matching CSS rule
-         (@view-transition { navigation: auto }) lives in chrome.css
-         and is automatically gated by prefers-reduced-motion. -->
-    <meta name="view-transition" content="same-origin">
-    <!-- frame-ancestors is intentionally absent: it's ignored when
-         delivered via <meta>, must come from a real HTTP header. The
-         GitHub Pages deployment can't set custom headers, so we lean
-         on the X-Frame-Options equivalent that the platform ships
-         and on the meta-supported directives below.
-
-         The two `'sha256-…'` entries pin the SSG-injected inline
-         scripts that bootstrap the search widget and the on-page
-         live-reload watchdog. They're emitted verbatim by shokunin
-         v0.0.34 and don't change between builds — if the SSG ever
-         changes them we'll see the CSP error in the browser console
-         and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self' https://cdn.jsdelivr.net; form-action 'self' https://formspree.io https://codepen.io; base-uri 'self'">
-    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
-
-    <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;es&#x2F;">
-    <link rel="preload" href="/css/skeletonic.min.css" as="style">
-    <link rel="preload" href="/css/chrome.css" as="style"><link rel="icon" type="image/svg+xml" href="/images/logo.svg">
-    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
-    <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
-    <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
-    <link rel="alternate" hreflang="fr" href="https:&#x2F;&#x2F;skeletonic.io/fr&#x2F;">
-    <link rel="alternate" hreflang="de" href="https:&#x2F;&#x2F;skeletonic.io/de&#x2F;">
-    <link rel="alternate" hreflang="ar" href="https:&#x2F;&#x2F;skeletonic.io/ar&#x2F;">
-    <link rel="alternate" hreflang="bn" href="https:&#x2F;&#x2F;skeletonic.io/bn&#x2F;">
-    <link rel="alternate" hreflang="cs" href="https:&#x2F;&#x2F;skeletonic.io/cs&#x2F;">
-    <link rel="alternate" hreflang="es" href="https:&#x2F;&#x2F;skeletonic.io/es&#x2F;">
-    <link rel="alternate" hreflang="fil" href="https:&#x2F;&#x2F;skeletonic.io/fil&#x2F;">
-    <link rel="alternate" hreflang="ha" href="https:&#x2F;&#x2F;skeletonic.io/ha&#x2F;">
-    <link rel="alternate" hreflang="he" href="https:&#x2F;&#x2F;skeletonic.io/he&#x2F;">
-    <link rel="alternate" hreflang="hi" href="https:&#x2F;&#x2F;skeletonic.io/hi&#x2F;">
-    <link rel="alternate" hreflang="id" href="https:&#x2F;&#x2F;skeletonic.io/id&#x2F;">
-    <link rel="alternate" hreflang="it" href="https:&#x2F;&#x2F;skeletonic.io/it&#x2F;">
-    <link rel="alternate" hreflang="ja" href="https:&#x2F;&#x2F;skeletonic.io/ja&#x2F;">
-    <link rel="alternate" hreflang="ko" href="https:&#x2F;&#x2F;skeletonic.io/ko&#x2F;">
-    <link rel="alternate" hreflang="nl" href="https:&#x2F;&#x2F;skeletonic.io/nl&#x2F;">
-    <link rel="alternate" hreflang="pl" href="https:&#x2F;&#x2F;skeletonic.io/pl&#x2F;">
-    <link rel="alternate" hreflang="pt-BR" href="https:&#x2F;&#x2F;skeletonic.io/pt-br&#x2F;">
-    <link rel="alternate" hreflang="ro" href="https:&#x2F;&#x2F;skeletonic.io/ro&#x2F;">
-    <link rel="alternate" hreflang="ru" href="https:&#x2F;&#x2F;skeletonic.io/ru&#x2F;">
-    <link rel="alternate" hreflang="sv" href="https:&#x2F;&#x2F;skeletonic.io/sv&#x2F;">
-    <link rel="alternate" hreflang="th" href="https:&#x2F;&#x2F;skeletonic.io/th&#x2F;">
-    <link rel="alternate" hreflang="tr" href="https:&#x2F;&#x2F;skeletonic.io/tr&#x2F;">
-    <link rel="alternate" hreflang="uk" href="https:&#x2F;&#x2F;skeletonic.io/uk&#x2F;">
-    <link rel="alternate" hreflang="vi" href="https:&#x2F;&#x2F;skeletonic.io/vi&#x2F;">
-    <link rel="alternate" hreflang="yo" href="https:&#x2F;&#x2F;skeletonic.io/yo&#x2F;">
-    <link rel="alternate" hreflang="zh-Hans" href="https:&#x2F;&#x2F;skeletonic.io/zh-hans&#x2F;">
-    <link rel="alternate" hreflang="zh-Hant" href="https:&#x2F;&#x2F;skeletonic.io/zh-hant&#x2F;">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Skeletonic Stylus">
-    <meta property="og:title" content="Acerca de Skeletonic Stylus">
-    
-    <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;es&#x2F;">
-    <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
-    <meta property="og:image:type" content="image/svg+xml">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Skeletonic Stylus — accessible, modular CSS library">
-    <meta property="og:locale" content="es">
-    <meta property="og:locale:alternate" content="ar">
-    <meta property="og:locale:alternate" content="bn">
-    <meta property="og:locale:alternate" content="cs">
-    <meta property="og:locale:alternate" content="de">
-    <meta property="og:locale:alternate" content="fil">
-    <meta property="og:locale:alternate" content="fr">
-    <meta property="og:locale:alternate" content="ha">
-    <meta property="og:locale:alternate" content="he">
-    <meta property="og:locale:alternate" content="hi">
-    <meta property="og:locale:alternate" content="id">
-    <meta property="og:locale:alternate" content="it">
-    <meta property="og:locale:alternate" content="ja">
-    <meta property="og:locale:alternate" content="ko">
-    <meta property="og:locale:alternate" content="nl">
-    <meta property="og:locale:alternate" content="pl">
-    <meta property="og:locale:alternate" content="pt_br">
-    <meta property="og:locale:alternate" content="ro">
-    <meta property="og:locale:alternate" content="ru">
-    <meta property="og:locale:alternate" content="sv">
-    <meta property="og:locale:alternate" content="th">
-    <meta property="og:locale:alternate" content="tr">
-    <meta property="og:locale:alternate" content="uk">
-    <meta property="og:locale:alternate" content="vi">
-    <meta property="og:locale:alternate" content="yo">
-    <meta property="og:locale:alternate" content="zh_hans">
-    <meta property="og:locale:alternate" content="zh_hant">
-    <meta property="og:locale:alternate" content="en">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@wwdseb">
-    <meta name="twitter:creator" content="@wwdseb">
-    <meta name="twitter:title" content="Acerca de Skeletonic Stylus">
-    
-    <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
-
-    <!-- Critical CSS — inlined by scripts/build-i18n.sh post-build.
-         The build script swaps the placeholder below for the contents
-         of static/css/critical.css so above-the-fold paints in the
-         same frame as the HTML, without waiting for the full
-         chrome + skeletonic bundles. -->
-    <style>:root{color-scheme:light dark;--c-bg:#fff;--c-text:#1d1d1f;--c-heading:#000;--c-secondary:#6e6e73;--c-accent:#0066cc;--c-border:#d2d2d7;--c-nav-bg:rgba(255, 255, 255, 0.8);--c-nav-text:#1d1d1f;--c-nav-muted:#57575b;--c-hero-grad-1:#f5f5f7;--c-hero-grad-2:#fff;--c-hero-grad-3:#fafafa;--fs-base:clamp(1rem, 0.95rem + 0.25vw, 1.125rem);--fs-h1:clamp(2.5rem, 1.5rem + 5vw, 4.5rem);--fs-h2:clamp(2rem, 1.25rem + 3.75vw, 3.5rem);--fs-h3:clamp(1.5rem, 1.125rem + 1.875vw, 2.25rem)}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--c-bg:#000;--c-text:#f5f5f7;--c-heading:#fff;--c-secondary:#a1a1aa;--c-accent:#2997ff;--c-border:#424245;--c-nav-bg:rgba(0, 0, 0, 0.8);--c-nav-text:#f5f5f7;--c-nav-muted:#a1a1aa;--c-hero-grad-1:#1d1d1f;--c-hero-grad-2:#000;--c-hero-grad-3:#0a0a0a}}*{box-sizing:border-box;margin:0}html{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}body{background:var(--c-bg);color:var(--c-text);font-size:var(--fs-base);line-height:1.47;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.skip-link{position:absolute;inset-inline-start:.5rem;top:-3rem;padding:.6rem 1rem;background:var(--c-accent);color:#fff;text-decoration:none;border-radius:0 0 .25rem .25rem;z-index:1100}.skip-link:focus{top:0}.site-nav{background:var(--c-nav-bg);border-bottom:1px solid var(--c-border);position:sticky;top:0;z-index:1000;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:4rem;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-weight:600;font-size:1.25rem;color:var(--c-heading);letter-spacing:-.02em;text-decoration:none}.nav-center{display:flex;gap:1.5rem;list-style:none;padding:0;margin:0}.nav-center a{color:var(--c-nav-muted);font-size:.875rem;font-weight:500;text-decoration:none}.nav-right{display:flex;align-items:center;gap:1rem}.site-hero{text-align:center;padding:5rem 1.5rem 3rem;background:linear-gradient(180deg,var(--c-hero-grad-1),var(--c-hero-grad-2) 50%,var(--c-hero-grad-3))}.site-hero h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em;color:var(--c-heading);line-height:1.1}.site-hero .hero-title{margin:0 auto .75rem;display:block;width:clamp(120px,20vw,208px);aspect-ratio:1/1;background:url(https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg)center/contain no-repeat;text-indent:-9999px;white-space:nowrap;overflow:hidden;font-size:0;color:transparent}.site-hero p{margin-top:.75rem;max-width:40rem;margin-inline:auto}.hero-logo{width:4.5rem;height:auto;margin:0 auto 1rem}.hero-cta{display:inline-block;padding:.75rem 1.5rem;margin-top:1.5rem;background:var(--c-accent);color:#fff;font-weight:600;border-radius:9999px;text-decoration:none}.site-main{max-width:70rem;margin:0 auto;padding:3rem 1.5rem 5rem}.site-main h1,.site-main h2,.site-main h3,.site-main h4{font-family:inherit;line-height:1.1;color:var(--c-heading);margin:0}.site-main h4{letter-spacing:-.022em}.site-main h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em}.site-main h2,.site-main h3{font-size:var(--fs-h2);font-weight:600;letter-spacing:-.03em}.site-main h3{font-size:var(--fs-h3);letter-spacing:-.02em}.site-hero p,.site-main p{font-size:var(--fs-base);line-height:1.5;color:var(--c-secondary)}.site-main a:not([class*=button]):not([class*=btn]):not(.badge):not([class*=link-]){color:var(--c-accent);text-decoration:underline;text-underline-offset:.15em}</style>
-
-    <!-- Skeletonic Stylus v2.1.0 + chrome — render-blocking, but
-         the inline critical CSS above already painted above-the-fold,
-         so first paint isn't waiting on these. Async loading via
-         media="print"+onload regressed mobile perf because the
-         critical CSS doesn't cover every above-the-fold element on
-         every page (cards, code blocks); when the full sheet arrives
-         the layout shifts. Keep it render-blocking and rely on the
-         critical-CSS head budget for sub-1s FCP. -->
-    <link rel="stylesheet" href="/css/skeletonic.min.css">
-    
-    
-    <link rel="stylesheet" href="/css/chrome.css">
-
-    <!-- REMOVED: inline <style> moved to static/css/chrome.css -->
-    <!-- Original :root block preserved for reference:
-         --c-accent uses the project's primary palette hsl(210, 100%, 42%).
-    -->
-
-    <!-- BreadcrumbList JSON-LD — emitted on every page for AEO/SGE indexing. -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://skeletonic.io/es/"
-        }
-      ]
-    }
-    </script>
-
-    
-    <!-- WebSite JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Acerca de Skeletonic Stylus",
-      "url": "https://skeletonic.io"
-    }
-    </script>
-    
-
-    
-
-    <!-- Organization JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Skeletonic CSS",
-      "url": "https://skeletonic.io",
-      "logo": "https://skeletonic.io/images/logo.svg",
-      "sameAs": [
-        "https://github.com/sebastienrousseau/skeletonic-stylus",
-        "https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus"
-      ]
-    }
-    </script>
-
-    
-  <meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
-  <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
-    <a href="#main" class="skip-link">Ir al contenido principal</a>
-
-    <nav aria-label="Inicio de Skeletonic Stylus" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
-      <div class="nav-inner">
-        <a class="nav-brand" href="&#x2F;es/" itemprop="url" aria-label="Inicio de Skeletonic Stylus">
-          <span itemprop="name">Skeletonic Stylus</span>
-        </a>
-        <ul class="nav-center">
-          <li><a href="&#x2F;es/" class="active" aria-current="page">Inicio</a></li>
-          <li><a href="&#x2F;es/primeros-pasos/">Documentación</a></li>
-          <li><a href="&#x2F;es/componentes/">Componentes</a></li>
-          <li class="dropdown" data-dropdown>
-            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">Recursos</button>
-            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-              <li><a class="dropdown-item" href="&#x2F;es/paletas/">Paletas</a></li>
-              <li><a class="dropdown-item" href="&#x2F;es/animaciones/">Animaciones</a></li>
-              <li><a class="dropdown-item" href="&#x2F;es/accesibilidad/">Accesibilidad</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="nav-right">
-          <button aria-label="Buscar" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
-            <svg viewBox="0 0 24 24" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="16" aria-hidden="true">
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="m21 21-4.35-4.35"></path>
-            </svg>
-            <span class="search-shortcut" aria-hidden="true"></span>
-          </button>
-          <div class="palette-switcher" id="paletteSwitcher">
-            <button type="button" class="theme-toggle" id="paletteToggle" aria-label="Choose colour palette" aria-expanded="false" aria-haspopup="true" aria-controls="paletteMenu">
-              <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 2 2 0 0 0 2-2 2 2 0 0 1 2-2h2a4 4 0 0 0 4-4A10 10 0 0 0 12 2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
-            </button>
-            <div class="palette-menu" id="paletteMenu" role="menu" hidden>
-              <button type="button" class="palette-swatch is-active" role="menuitemradio" aria-checked="true" data-palette="default" style="--swatch:#0066cc">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Default</span>
-              </button>
-              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="ember" style="--swatch:#ed6300">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Ember</span>
-              </button>
-              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="iris" style="--swatch:#8668ff">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Iris</span>
-              </button>
-              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="lagoon" style="--swatch:#00a1b3">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Lagoon</span>
-              </button>
-            </div>
-          </div>
-          <button aria-label="Cambiar a modo oscuro" class="theme-toggle" id="themeToggle" type="button" data-label-dark="Oscuro" data-label-light="Claro" data-aria-dark="Cambiar a modo oscuro" data-aria-light="Cambiar a modo claro">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
-              <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
-            </svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light">
-              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
-            </svg>
-            <span class="theme-label">Oscuro</span>
-          </button>
-          <div class="lang-switcher">
-            <button type="button" aria-label="ES, Cambiar idioma" aria-expanded="false">
-              <span>🌐</span> ES
-            </button>
-            <div class="lang-menu">
-              <div class="lang-menu-grid">
-              <a href="&#x2F;">🇬🇧 English</a>
-              <a href="/fr&#x2F;">🇫🇷 Français</a>
-              <a href="/ar&#x2F;">🇸🇦 العربية</a>
-              <a href="/bn&#x2F;">🇧🇩 বাংলা</a>
-              <a href="/cs&#x2F;">🇨🇿 Čeština</a>
-              <a href="/de&#x2F;">🇩🇪 Deutsch</a>
-              <a class="active" href="/es&#x2F;">🇪🇸 Español</a>
-              <a href="/fil&#x2F;">🇵🇭 Filipino</a>
-              <a href="/ha&#x2F;">🇳🇬 Hausa</a>
-              <a href="/he&#x2F;">🇮🇱 עברית</a>
-              <a href="/hi&#x2F;">🇮🇳 हिन्दी</a>
-              <a href="/id&#x2F;">🇮🇩 Indonesia</a>
-              <a href="/it&#x2F;">🇮🇹 Italiano</a>
-              <a href="/ja&#x2F;">🇯🇵 日本語</a>
-              <a href="/ko&#x2F;">🇰🇷 한국어</a>
-              <a href="/nl&#x2F;">🇳🇱 Nederlands</a>
-              <a href="/pl&#x2F;">🇵🇱 Polski</a>
-              <a href="/pt-br&#x2F;">🇧🇷 Português</a>
-              <a href="/ro&#x2F;">🇷🇴 Română</a>
-              <a href="/ru&#x2F;">🇷🇺 Русский</a>
-              <a href="/sv&#x2F;">🇸🇪 Svenska</a>
-              <a href="/th&#x2F;">🇹🇭 ไทย</a>
-              <a href="/tr&#x2F;">🇹🇷 Türkçe</a>
-              <a href="/uk&#x2F;">🇺🇦 Українська</a>
-              <a href="/vi&#x2F;">🇻🇳 Tiếng Việt</a>
-              <a href="/yo&#x2F;">🇳🇬 Yorùbá</a>
-              <a href="/zh-hans&#x2F;">🇨🇳 简体中文</a>
-              <a href="/zh-hant&#x2F;">🇹🇼 繁體中文</a>
-              </div>
-            </div>
-          </div>
-          <a class="nav-cta" href="&#x2F;es/contacto/">Contacto</a>
-        </div>
-        <button aria-label="Mostrar u ocultar menú" class="nav-hamburger" id="navToggle" type="button">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
-
-    
-<header class="site-hero">
-  <h1 class="hero-title">Skeletonic Stylus</h1>
-  
-</header>
-
-
-    <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
-      <div class="text-start">
-        
-<blockquote>
-<p><strong>Translation note (2026-04-30).</strong> v2.0.0 adds RTL support and a refreshed
+&lt;div lang=&quot;en&quot;&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Translation note (2026-04-30).&lt;/strong&gt; v2.0.0 adds RTL support and a refreshed
 2026 framework comparison. The English source is the canonical reference
-while these translations catch up. See <a href="https://skeletonic.io/about/">https://skeletonic.io/about/</a> ·
-<a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
-</blockquote>
-<dl class="stat-strip" aria-label="Project facts">
-  <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
-  <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
-  <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
-</dl>
-<h2>La version corta</h2>
-<p><strong>Skeletonic Stylus</strong> es una biblioteca CSS <a href="https://stylus-lang.com">Stylus</a>
+while these translations catch up. See &lt;a href=&quot;https://skeletonic.io/about/&quot;&gt;https://skeletonic.io/about/&lt;/a&gt; ·
+&lt;a href=&quot;https://skeletonic.io/components/&quot;&gt;https://skeletonic.io/components/&lt;/a&gt; · &lt;a href=&quot;https://skeletonic.io/benchmarks/&quot;&gt;https://skeletonic.io/benchmarks/&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;dl class=&quot;stat-strip&quot; aria-label=&quot;Project facts&quot;&gt;
+  &lt;div&gt;&lt;dt&gt;Version&lt;/dt&gt;&lt;dd&gt;2.0.0&lt;/dd&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;dt&gt;Gzip&lt;/dt&gt;&lt;dd&gt;7.7 KB&lt;/dd&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;dt&gt;Brotli&lt;/dt&gt;&lt;dd&gt;6.7 KB&lt;/dd&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;dt&gt;License&lt;/dt&gt;&lt;dd&gt;MIT or Apache-2.0&lt;/dd&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;dt&gt;Standard&lt;/dt&gt;&lt;dd&gt;WCAG 2.2 AA&lt;/dd&gt;&lt;/div&gt;
+&lt;/dl&gt;
+&lt;h2&gt;La version corta&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Skeletonic Stylus&lt;/strong&gt; es una biblioteca CSS &lt;a href=&quot;https://stylus-lang.com&quot;&gt;Stylus&lt;/a&gt;
 de codigo abierto creada para hacer que el estilizado de interfaces
-accesible, rapido y modular.</p>
-<p>Nacio en 2018 como un experimento personal para <strong>enviar menos CSS</strong> sin
+accesible, rapido y modular.&lt;/p&gt;
+&lt;p&gt;Nacio en 2018 como un experimento personal para &lt;strong&gt;enviar menos CSS&lt;/strong&gt; sin
 renunciar a la ergonomia de una biblioteca de componentes real. Ocho anos
-despues, el objetivo sigue siendo el mismo.</p>
-<h2>Lo que ofrece</h2>
-<div class="feature-grid">
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/thunder.min.svg" alt="Rayo" width="64" height="64" loading="lazy" decoding="async">
-    <h3>Ultrarapido</h3>
-    <p>Disena y personaliza interfaces responsivas en minutos. Variables CSS nativas, clases predefinidas, una cuadricula de 12 columnas que cubre cada elemento HTML semantico.</p>
-  </article>
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="Pluma" width="64" height="64" loading="lazy" decoding="async">
-    <h3>Ligero</h3>
-    <p>8,3&nbsp;KB gzipped. Las paginas cargan mas rapido. Cada bloque esencial se mantiene incluido.</p>
-  </article>
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/responsive.min.svg" alt="Dispositivos responsivos" width="64" height="64" loading="lazy" decoding="async">
-    <h3>Diseno responsivo</h3>
-    <p>Creado para escritorio y movil. Los layouts se adaptan a cualquier dispositivo. Optimizado para tactil, HTML semantico en todo momento.</p>
-  </article>
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/accessibility.min.svg" alt="Persona con accesibilidad" width="64" height="64" loading="lazy" decoding="async">
-    <h3>Accesibilidad</h3>
-    <p>WCAG&nbsp;2.2 integrado: anillos focus-visible, contraste AA, skip-link helpers, componentes accesibles por teclado, soporte de movimiento reducido — sin hoja de estilos adicional, sin boilerplate <code>aria-*</code>.</p>
-  </article>
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/components.min.svg" alt="Bloques de componentes" width="64" height="64" loading="lazy" decoding="async">
-    <h3>Biblioteca de componentes</h3>
-    <p>Componentes CSS modulares y mixins Stylus. Botones, formularios, tarjetas, alertas, insignias, paletas y animaciones — limpios, modulares, listos para integrar.</p>
-  </article>
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/github.min.svg" alt="Logo de GitHub" width="64" height="64" loading="lazy" decoding="async">
-    <h3>Gratuito y de codigo abierto</h3>
-    <p>Disenado, construido y mantenido por Sebastien Rousseau. Con doble licencia <strong>MIT</strong> o <strong>Apache&nbsp;2.0</strong>. Sin tarifas, sin costes de licencia, incluso para uso comercial.</p>
-  </article>
-</div>
-<h2>Como se compara</h2>
-<p>Una sola hoja de estilos autoalojada cubre tipografia, botones, formularios,
+despues, el objetivo sigue siendo el mismo.&lt;/p&gt;
+&lt;h2&gt;Lo que ofrece&lt;/h2&gt;
+&lt;div class=&quot;feature-grid&quot;&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/thunder.min.svg&quot; alt=&quot;Rayo&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;Ultrarapido&lt;/h3&gt;
+    &lt;p&gt;Disena y personaliza interfaces responsivas en minutos. Variables CSS nativas, clases predefinidas, una cuadricula de 12 columnas que cubre cada elemento HTML semantico.&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/lightweight.min.svg&quot; alt=&quot;Pluma&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;Ligero&lt;/h3&gt;
+    &lt;p&gt;8,3&nbsp;KB gzipped. Las paginas cargan mas rapido. Cada bloque esencial se mantiene incluido.&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/responsive.min.svg&quot; alt=&quot;Dispositivos responsivos&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;Diseno responsivo&lt;/h3&gt;
+    &lt;p&gt;Creado para escritorio y movil. Los layouts se adaptan a cualquier dispositivo. Optimizado para tactil, HTML semantico en todo momento.&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/accessibility.min.svg&quot; alt=&quot;Persona con accesibilidad&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;Accesibilidad&lt;/h3&gt;
+    &lt;p&gt;WCAG&nbsp;2.2 integrado: anillos focus-visible, contraste AA, skip-link helpers, componentes accesibles por teclado, soporte de movimiento reducido — sin hoja de estilos adicional, sin boilerplate &lt;code&gt;aria-*&lt;/code&gt;.&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/components.min.svg&quot; alt=&quot;Bloques de componentes&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;Biblioteca de componentes&lt;/h3&gt;
+    &lt;p&gt;Componentes CSS modulares y mixins Stylus. Botones, formularios, tarjetas, alertas, insignias, paletas y animaciones — limpios, modulares, listos para integrar.&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/github.min.svg&quot; alt=&quot;Logo de GitHub&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;Gratuito y de codigo abierto&lt;/h3&gt;
+    &lt;p&gt;Disenado, construido y mantenido por Sebastien Rousseau. Con doble licencia &lt;strong&gt;MIT&lt;/strong&gt; o &lt;strong&gt;Apache&nbsp;2.0&lt;/strong&gt;. Sin tarifas, sin costes de licencia, incluso para uso comercial.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
+&lt;h2&gt;Como se compara&lt;/h2&gt;
+&lt;p&gt;Una sola hoja de estilos autoalojada cubre tipografia, botones, formularios,
 tarjetas, tablas, paletas, animaciones y clases de utilidad. Sin JavaScript.
 Sin paso de compilacion requerido. Sin dependencias de Bootstrap, Tailwind
-o Bulma.</p>
-<div class="table-responsive"><table class="table"><caption class="visually-hidden">Data table table</caption>
-<thead>
-<tr>
-<th>Caracteristica</th>
-<th>Skeletonic Stylus</th>
-<th>Bootstrap 5</th>
-<th>Tailwind CSS</th>
-<th>Bulma</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-left">Tamano gzipped</td>
-<td class="text-left"><strong>8,3 KB</strong></td>
-<td class="text-left">~30 KB</td>
-<td class="text-left">~10 KB (varies)</td>
-<td class="text-left">~30 KB</td>
-</tr>
-<tr>
-<td class="text-left">Conformidad WCAG 2.2</td>
-<td class="text-left"><strong>Integrada</strong></td>
-<td class="text-left">Parcial</td>
-<td class="text-left">Manual</td>
-<td class="text-left">Parcial</td>
-</tr>
-<tr>
-<td class="text-left">Capas de cascada</td>
-<td class="text-left"><strong>Si (<code>@layer</code>)</strong></td>
-<td class="text-left">No</td>
-<td class="text-left">No</td>
-<td class="text-left">No</td>
-</tr>
-<tr>
-<td class="text-left">Modo oscuro</td>
-<td class="text-left"><strong><code>prefers-color-scheme</code></strong></td>
-<td class="text-left">Opcional</td>
-<td class="text-left">Basado en clases</td>
-<td class="text-left">Opcional</td>
-</tr>
-<tr>
-<td class="text-left">JavaScript requerido</td>
-<td class="text-left"><strong>No</strong></td>
-<td class="text-left">Si (Popper)</td>
-<td class="text-left">No</td>
-<td class="text-left">No</td>
-</tr>
-<tr>
-<td class="text-left">SBOM CycloneDX</td>
-<td class="text-left"><strong>Si</strong></td>
-<td class="text-left">No</td>
-<td class="text-left">No</td>
-<td class="text-left">No</td>
-</tr>
-<tr>
-<td class="text-left">Movimiento reducido</td>
-<td class="text-left"><strong>Respetado</strong></td>
-<td class="text-left">Parcial</td>
-<td class="text-left">Manual</td>
-<td class="text-left">Parcial</td>
-</tr>
-<tr>
-<td class="text-left">Licencia</td>
-<td class="text-left">MIT o Apache 2.0</td>
-<td class="text-left">MIT</td>
-<td class="text-left">MIT</td>
-<td class="text-left">MIT</td>
-</tr>
-</tbody>
-</table></div>
-<h2>Principios</h2>
-<ol>
-<li><strong>La accesibilidad es el piso, no el techo.</strong> La conformidad con WCAG 2.2
-esta integrada en cada componente, nunca anadida como un &quot;tema&quot; opcional.</li>
-<li><strong>Cada byte cuenta.</strong> Una sola hoja de estilos no deberia exceder tu
-presupuesto de peso de pagina. El limite de 8 KB gzipped se aplica en CI.</li>
-<li><strong>Las capas de cascada superan las guerras de especificidad.</strong> Sobrescribe
-cualquier cosa con confianza — sin <code>!important</code>, sin trucos de orden DOM.</li>
-<li><strong>Stylus sigue siendo bueno.</strong> Conciso, expresivo, y permite que la
-biblioteca se mantenga en ~3.000 lineas legibles.</li>
-<li><strong>Lo aburrido es una ventaja.</strong> Sin dependencias JS. Sin magia en tiempo
+o Bulma.&lt;/p&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;&lt;table class=&quot;table&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Caracteristica&lt;/th&gt;
+&lt;th&gt;Skeletonic Stylus&lt;/th&gt;
+&lt;th&gt;Bootstrap 5&lt;/th&gt;
+&lt;th&gt;Tailwind CSS&lt;/th&gt;
+&lt;th&gt;Bulma&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;Tamano gzipped&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;8,3 KB&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;~30 KB&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;~10 KB (varies)&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;~30 KB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;Conformidad WCAG 2.2&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;Integrada&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Parcial&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Manual&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Parcial&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;Capas de cascada&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;Si (&lt;code&gt;@layer&lt;/code&gt;)&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;No&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;No&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;Modo oscuro&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;&lt;code&gt;prefers-color-scheme&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Opcional&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Basado en clases&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Opcional&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;JavaScript requerido&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;No&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Si (Popper)&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;No&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;SBOM CycloneDX&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;Si&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;No&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;No&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;Movimiento reducido&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;Respetado&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Parcial&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Manual&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Parcial&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;Licencia&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;MIT o Apache 2.0&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;MIT&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;MIT&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;MIT&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+&lt;h2&gt;Principios&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;La accesibilidad es el piso, no el techo.&lt;/strong&gt; La conformidad con WCAG 2.2
+esta integrada en cada componente, nunca anadida como un &quot;tema&quot; opcional.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cada byte cuenta.&lt;/strong&gt; Una sola hoja de estilos no deberia exceder tu
+presupuesto de peso de pagina. El limite de 8 KB gzipped se aplica en CI.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Las capas de cascada superan las guerras de especificidad.&lt;/strong&gt; Sobrescribe
+cualquier cosa con confianza — sin &lt;code&gt;!important&lt;/code&gt;, sin trucos de orden DOM.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stylus sigue siendo bueno.&lt;/strong&gt; Conciso, expresivo, y permite que la
+biblioteca se mantenga en ~3.000 lineas legibles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lo aburrido es una ventaja.&lt;/strong&gt; Sin dependencias JS. Sin magia en tiempo
 de compilacion. Sin renombramientos disruptivos. Clases CSS que hacen
-exactamente lo que dicen.</li>
-<li><strong>Personalizable en segundos.</strong> Propiedades personalizadas CSS nativas
-para colores, espaciado, tipografia y radios.</li>
-<li><strong>Cadena de suministro reforzada.</strong> Procedencia npm firmada. Actualizaciones
-Dependabot fijadas. CVE-2023-44270 parcheado via overrides.</li>
-</ol>
-<h2>Versionado y semver</h2>
-<p>Skeletonic Stylus sigue <a href="https://semver.org">Semantic Versioning 2.0</a>.</p>
-<table><caption class="visually-hidden">Data table table</caption>
-<thead>
-<tr>
-<th>Incremento</th>
-<th>Cuando</th>
-<th>Ejemplo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-left"><strong>Major</strong></td>
-<td class="text-left">Eliminar o renombrar una clase publica, mixin o token</td>
-<td class="text-left">1.x → 2.0</td>
-</tr>
-<tr>
-<td class="text-left"><strong>Minor</strong></td>
-<td class="text-left">Anadir un nuevo componente, mixin o token</td>
-<td class="text-left">1.1 → 1.2</td>
-</tr>
-<tr>
-<td class="text-left"><strong>Patch</strong></td>
-<td class="text-left">Correcciones de errores, mejoras de a11y, rendimiento, seguridad</td>
-<td class="text-left">1.1.6 → 2.0.0</td>
-</tr>
-</tbody>
-</table>
-<p>Todos los nombres de clases publicas, todas las propiedades personalizadas
+exactamente lo que dicen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Personalizable en segundos.&lt;/strong&gt; Propiedades personalizadas CSS nativas
+para colores, espaciado, tipografia y radios.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cadena de suministro reforzada.&lt;/strong&gt; Procedencia npm firmada. Actualizaciones
+Dependabot fijadas. CVE-2023-44270 parcheado via overrides.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Versionado y semver&lt;/h2&gt;
+&lt;p&gt;Skeletonic Stylus sigue &lt;a href=&quot;https://semver.org&quot;&gt;Semantic Versioning 2.0&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Incremento&lt;/th&gt;
+&lt;th&gt;Cuando&lt;/th&gt;
+&lt;th&gt;Ejemplo&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;Major&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Eliminar o renombrar una clase publica, mixin o token&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;1.x → 2.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;Minor&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Anadir un nuevo componente, mixin o token&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;1.1 → 1.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;Patch&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;Correcciones de errores, mejoras de a11y, rendimiento, seguridad&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;1.1.6 → 2.0.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Todos los nombres de clases publicas, todas las propiedades personalizadas
 CSS y todos los mixins Stylus exportados son parte de la API publica. Un
-cambio disruptivo genera un incremento major y una guia de migracion.</p>
-<h2>Responsabilidad</h2>
-<p>Skeletonic Stylus esta disenado, construido y mantenido por
-<a href="https://sebastienrousseau.com">Sebastien Rousseau</a>. Con doble licencia
-<a href="https://opensource.org/licenses/MIT">MIT</a> y
-<a href="https://opensource.org/licenses/Apache-2.0">Apache 2.0</a>.</p>
-<p>Problemas, ideas y contribuciones son bienvenidos —
-<a href="/es/contribuir/">consulta la guia de contribucion</a>.</p>
+cambio disruptivo genera un incremento major y una guia de migracion.&lt;/p&gt;
+&lt;h2&gt;Responsabilidad&lt;/h2&gt;
+&lt;p&gt;Skeletonic Stylus esta disenado, construido y mantenido por
+&lt;a href=&quot;https://sebastienrousseau.com&quot;&gt;Sebastien Rousseau&lt;/a&gt;. Con doble licencia
+&lt;a href=&quot;https://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; y
+&lt;a href=&quot;https://opensource.org/licenses/Apache-2.0&quot;&gt;Apache 2.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Problemas, ideas y contribuciones son bienvenidos —
+&lt;a href=&quot;/es/contribuir/&quot;&gt;consulta la guia de contribucion&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
 
-
-      </div>
-    </main>
-
-    <footer aria-label="Site footer" class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-cols">
-          <nav class="footer-col" aria-label="Proyecto">
-            <p class="footer-col-title">Proyecto</p>
-            <ul>
-              <li><a href="&#x2F;es/acerca-de/">Acerca de</a></li>
-              <li><a href="&#x2F;es/registro-de-cambios/">Registro de cambios</a></li>
-              <li><a href="&#x2F;es/seguridad/">Seguridad</a></li>
-              <li><a href="&#x2F;es/contribuir/">Contribuir</a></li>
-              <li><a rel="noopener noreferrer" href="https://github.com/sebastienrousseau/skeletonic-stylus" target="_blank">GitHub ↗</a></li>
-              <li><a rel="noopener noreferrer" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus" target="_blank">npm ↗</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-col" aria-label="Recursos">
-            <p class="footer-col-title">Recursos</p>
-            <ul>
-              <li><a href="&#x2F;es/paletas/">Paletas</a></li>
-              <li><a href="&#x2F;es/animaciones/">Animaciones</a></li>
-              <li><a href="&#x2F;es/accesibilidad/">Accesibilidad</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-col" aria-label="Legal">
-            <p class="footer-col-title">Legal</p>
-            <ul>
-              <li><a href="&#x2F;es/privacidad/">Privacidad</a></li>
-              <li><a href="&#x2F;es/terminos/">Términos</a></li>
-              <li><a href="&#x2F;es/contacto/">Contacto</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-bar">
-          Copyright © 2021 – 2026 Skeletonic CSS. Todos los derechos reservados.
-        </div>
-      </div>
-    </footer>
-
-    <div aria-label="Buscar" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
-      <div class="search-box">
-        <input aria-label="Buscar" placeholder="Buscar en la documentación..." autocomplete="off" class="search-input" id="searchInput" type="search">
-        <div class="search-results" id="searchResults"></div>
-        <div class="search-footer">
-          <span><kbd>↑</kbd> <kbd>↓</kbd> Navegar</span>
-          <span><kbd>↵</kbd> Abrir</span>
-          <span><kbd>Esc</kbd> Cerrar</span>
-        </div>
-      </div>
-    </div>
-
-    <script src="/js/main.js" defer></script>
-  
-
-
-
-</body>
-</html>

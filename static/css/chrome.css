@@ -6,18 +6,17 @@
         --c-bg: #ffffff;
         --c-text: #1d1d1f;
         --c-heading: #000000;
-        --c-secondary: #6e6e73;
-        --c-accent: #0066cc;
-        --c-accent-hover: #004499;
+        --c-secondary: #48484a;
+        --c-accent: #004b99;
+        --c-accent-hover: #003673;
         --c-surface: rgba(245, 245, 247, 0.8);
         --c-border: #d2d2d7;
         --c-nav-bg: rgba(255, 255, 255, 0.8);
         --c-nav-text: #1d1d1f;
-        --c-nav-muted: #57575b;
+        --c-nav-muted: #48484a;
         --c-footer-bg: #f5f5f7;
-        /* #86868b on #f5f5f7 was 3.32 : 1 — fail. Darkened to
-           #57575b so the footer body and footer-bar clear AA 4.5 : 1. */
-        --c-footer-text: #57575b;
+        /* Darkened to #48484a for WCAG AAA 7:1 contrast compliance */
+        --c-footer-text: #48484a;
         --c-code: #3a3a4a;
         --c-hero-grad-1: #f5f5f7;
         --c-hero-grad-2: #ffffff;
@@ -1815,6 +1814,96 @@
         outline:2px solid var(--c-accent);
         outline-offset:2px;
         opacity:1;
+      }
+
+      /* ============================================================
+       * 2026 Baseline Extensions: Container Query Ladder,
+       * Anchor Positioning, & Interactive Customiser Utilities
+       * ============================================================ */
+      .cq-wrapper { container-type: inline-size; }
+      .cq-sm { font-size: clamp(0.875rem, 2cqi, 1rem); }
+      .cq-md { font-size: clamp(1rem, 3cqi, 1.25rem); }
+      .cq-lg { font-size: clamp(1.25rem, 5cqi, 2.25rem); }
+      .cq-xl { font-size: clamp(1.5rem, 7cqi, 3.5rem); }
+
+      /* Anchor Positioning Utilities */
+      .anchor-target { anchor-name: --anchor-target; }
+      [popover].anchor-popover {
+        position-anchor: --anchor-target;
+        top: anchor(bottom);
+        left: anchor(center);
+        transform: translateX(-50%) translateY(0.5rem);
+      }
+
+      /* Scoped Component Utilities */
+      @scope (.card) {
+        :scope { overflow: hidden; }
+      }
+
+      /* Interactive OKLCH & Benchmark Calculator Styles */
+      .oklch-builder {
+        background: var(--c-surface);
+        border: 1px solid var(--c-border);
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        margin: 2rem 0;
+      }
+      .oklch-control {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      .oklch-control label {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--c-heading);
+      }
+      .oklch-control input[type="range"] {
+        width: 100%;
+        accent-color: var(--c-accent);
+      }
+      .oklch-preview {
+        height: 4rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        margin: 1rem 0;
+        transition: background 0.2s ease;
+      }
+
+      .calc-card {
+        background: var(--c-surface);
+        border: 1px solid var(--c-border);
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        margin: 2rem 0;
+      }
+      .calc-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+      .calc-stat {
+        text-align: center;
+        padding: 1rem;
+        background: var(--c-bg);
+        border-radius: 0.5rem;
+        border: 1px solid var(--c-border);
+      }
+      .calc-stat-val {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--c-accent);
+      }
+      .calc-stat-lbl {
+        font-size: 0.875rem;
+        color: var(--c-secondary);
       }
 
       @media (prefers-reduced-motion:reduce){

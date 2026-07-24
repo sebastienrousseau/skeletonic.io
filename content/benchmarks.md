@@ -19,6 +19,40 @@ jsDelivr. No purging, no tree-shaking, no per-page optimisation. The
 reproduction commands at the bottom of this page run in about 30
 seconds — please verify them yourself before quoting any number here.
 
+<hr class="hr-text" data-content="Calculator">
+
+## Live Bandwidth &amp; Savings Calculator
+
+Select a competitor framework and estimate the bandwidth savings Skeletonic Stylus delivers to your users across your site.
+
+<div class="calc-card" id="frameworkCalc">
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; align-items:center;">
+    <div style="flex:1; min-width:200px;">
+      <label for="calcFramework" style="font-weight:600; display:block; margin-bottom:.5rem;">Compare Against:</label>
+      <select id="calcFramework" style="width:100%; padding:.5rem; border-radius:.375rem; border:1px solid var(--c-border); background:var(--c-bg); color:var(--c-text);">
+        <option value="bootstrap" selected>Bootstrap 5.3 (30.9 KB gzip)</option>
+        <option value="tailwind">Tailwind Play CDN (123.1 KB gzip)</option>
+        <option value="bulma">Bulma 1.0 (64.9 KB gzip)</option>
+        <option value="pico">Pico CSS 2.1 (11.6 KB gzip)</option>
+      </select>
+    </div>
+    <div style="flex:1; min-width:200px;">
+      <label for="calcPages" style="font-weight:600; display:block; margin-bottom:.5rem;">Monthly Pageviews (Thousands):</label>
+      <input type="number" id="calcPages" value="50" min="1" max="100000" style="width:100%; padding:.5rem; border-radius:.375rem; border:1px solid var(--c-border); background:var(--c-bg); color:var(--c-text);">
+    </div>
+  </div>
+  <div class="calc-grid">
+    <div class="calc-stat">
+      <div class="calc-stat-val" id="calcSavedBytes">1.1 GB</div>
+      <div class="calc-stat-lbl">Monthly Bandwidth Saved</div>
+    </div>
+    <div class="calc-stat">
+      <div class="calc-stat-val" id="calcSavedPercent">75% lighter</div>
+      <div class="calc-stat-lbl">Payload Reduction</div>
+    </div>
+  </div>
+</div>
+
 <hr class="hr-text" data-content="Results">
 
 ## Bundle sizes — bytes returned by `wc -c`

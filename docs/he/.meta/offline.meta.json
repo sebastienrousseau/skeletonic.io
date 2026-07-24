@@ -1,12 +1,14 @@
 {
-  "keywords": "לא מקוון, service worker, pwa",
-  "title": "אתם במצב לא מקוון",
-  "description": "skeletonic.io לא הצליח להגיע לרשת. הדף שביקשתם עדיין לא נשמר במטמון.",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
+  "reading_time": 1,
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/he/offline/",
+  "author": "Sebastien Rousseau",
+  "title": "אתם במצב לא מקוון",
+  "layout": "page",
+  "description": "skeletonic.io לא הצליח להגיע לרשת. הדף שביקשתם עדיין לא נשמר במטמון.",
   "language": "he",
-  "layout": "page"
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "word_count": 47,
+  "permalink": "https://skeletonic.io/he/offline/",
+  "keywords": "לא מקוון, service worker, pwa"
 }

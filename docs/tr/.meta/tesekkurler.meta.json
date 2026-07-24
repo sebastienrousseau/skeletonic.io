@@ -1,12 +1,14 @@
 {
-  "description": "Mesajiniz basariyla gonderildi.",
-  "permalink": "https://skeletonic.io/tr/tesekkurler/",
-  "author": "Sebastien Rousseau",
-  "keywords": "tesekkurler",
-  "theme_color": "hsl(210, 100%, 42%)",
   "language": "tr",
   "title": "Tesekkurler!",
+  "reading_time": 1,
+  "theme_color": "hsl(210, 100%, 42%)",
+  "permalink": "https://skeletonic.io/tr/tesekkurler/",
+  "author": "Sebastien Rousseau",
   "layout": "thanks",
+  "name": "Skeletonic Stylus",
+  "description": "Mesajiniz basariyla gonderildi.",
   "date": "2026-04-08",
-  "name": "Skeletonic Stylus"
+  "word_count": 29,
+  "keywords": "tesekkurler"
 }

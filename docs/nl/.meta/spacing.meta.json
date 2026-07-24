@@ -1,12 +1,14 @@
 {
-  "author": "Sebastien Rousseau",
+  "description": "Skeletonic's spacing scale uses five t-shirt-sized steps (xs / sm / md / lg / xl) derived from the golden ratio. Padding and margin utilities map to one ladder.",
   "keywords": "css spacing scale, golden ratio, padding utility, margin utility, layout system",
   "date": "2026-05-02",
-  "name": "Skeletonic Stylus",
-  "description": "Skeletonic's spacing scale uses five t-shirt-sized steps (xs / sm / md / lg / xl) derived from the golden ratio. Padding and margin utilities map to one ladder.",
-  "layout": "page",
-  "language": "nl",
-  "title": "Spacing — Skeletonic Stylus",
+  "word_count": 375,
+  "reading_time": 1,
+  "theme_color": "oklch(0.55 0.2 250)",
+  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/nl/spacing/",
-  "theme_color": "oklch(0.55 0.2 250)"
+  "layout": "page",
+  "title": "Spacing — Skeletonic Stylus",
+  "language": "nl",
+  "name": "Skeletonic Stylus"
 }

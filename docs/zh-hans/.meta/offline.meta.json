@@ -1,12 +1,14 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "你当前处于离线状态",
   "keywords": "离线, service worker, pwa",
-  "date": "2026-04-08",
+  "word_count": 16,
   "layout": "page",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
+  "language": "zh-hans",
+  "title": "你当前处于离线状态",
   "permalink": "https://skeletonic.io/zh-hans/offline/",
   "description": "skeletonic.io 无法连接到网络。你请求的页面尚未被缓存。",
-  "language": "zh-hans"
+  "reading_time": 1,
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

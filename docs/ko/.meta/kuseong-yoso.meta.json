@@ -1,12 +1,14 @@
 {
+  "name": "Skeletonic Stylus",
   "description": "Skeletonic Stylus의 모든 구성 요소에 대한 라이브 HTML 예제. 그룹화, 앵커 처리되어 있으며 데모 대상 스타일시트로 직접 렌더링됩니다.",
   "permalink": "https://skeletonic.io/ko/kuseong-yoso/",
-  "language": "ko",
-  "title": "구성 요소",
   "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
   "keywords": "skeletonic 구성 요소, 버튼, 카드, 폼, 알림, 뱃지, 헤더, 네비게이션 바, css 전용 햄버거",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page"
+  "language": "ko",
+  "word_count": 1148,
+  "title": "구성 요소",
+  "reading_time": 5,
+  "layout": "page",
+  "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)"
 }
