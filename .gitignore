@@ -8,6 +8,13 @@
 
 # Shokunin SSG / build artefacts (we don't ignore docs/ — it ships)
 .ssg-cache.json
+.ssg-plugin-cache.json
+*.build-tmp/
+docs/*/.ssg-plugin-cache.json
+docs/*/_csp/
+docs/*/wcag-compliance.json
+docs/*/sbom.cdx.json
+docs/*/llms-full.txt
 build/
 public/
 

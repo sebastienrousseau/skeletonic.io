@@ -5,4 +5,141 @@
         xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-    </urlset>
+    <?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//palettes/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//animations/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//tokens/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//404/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//accessibilite/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//merci/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//breakpoints/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//conditions/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//spacing/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//benchmarks/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//premiers-pas/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//cascade-layers/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//a-propos/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//utilities/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//hors-ligne/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//tags/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//composants/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//securite/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//contribuer/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//contact/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//confidentialite/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/merci//journal/index.html</loc>
+</url></urlset>

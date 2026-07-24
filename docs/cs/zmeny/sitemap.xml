@@ -5,4 +5,141 @@
         xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-    </urlset>
+    <?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//offline/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//zacatek/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//tokens/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//404/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//breakpoints/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//spacing/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//animace/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//benchmarks/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//komponenty/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//cascade-layers/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//utilities/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//tags/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//o-projektu/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//prispet/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//zmeny/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//dekujeme/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//kontakt/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//palety/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//podminky/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//soukromi/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//pristupnost/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/cs/zmeny//bezpecnost/index.html</loc>
+</url></urlset>

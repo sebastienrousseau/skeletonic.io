@@ -1,11 +1,13 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "ru",
+  "keywords": "skeletonic журнал изменений, заметки о релизах, v2.0.0, semver",
   "name": "Skeletonic Stylus",
   "description": "Заметки о релизах Skeletonic Stylus с полным описанием v2.0.0.",
-  "author": "Sebastien Rousseau",
-  "language": "ru",
-  "permalink": "https://skeletonic.io/ru/zhurnal-izmeneniy/",
-  "layout": "page",
   "title": "Журнал изменений",
-  "keywords": "skeletonic журнал изменений, заметки о релизах, v2.0.0, semver"
+  "theme_color": "hsl(210, 100%, 42%)",
+  "word_count": 327,
+  "layout": "page",
+  "permalink": "https://skeletonic.io/ru/zhurnal-izmeneniy/",
+  "author": "Sebastien Rousseau",
+  "reading_time": 1
 }

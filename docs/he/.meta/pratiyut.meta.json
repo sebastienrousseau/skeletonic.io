@@ -1,12 +1,14 @@
 {
   "description": "אילו נתונים skeletonic.io אוספת, מדוע, וכיצד לבטל הסכמה.",
   "title": "פרטיות",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "keywords": "פרטיות, gdpr, עוגיות, ללא מעקב",
+  "reading_time": 1,
+  "word_count": 200,
   "permalink": "https://skeletonic.io/he/pratiyut/",
-  "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
   "layout": "page",
+  "author": "Sebastien Rousseau",
   "date": "2026-04-08",
   "language": "he",
-  "keywords": "פרטיות, gdpr, עוגיות, ללא מעקב"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

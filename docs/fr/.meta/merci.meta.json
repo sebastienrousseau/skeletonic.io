@@ -1,12 +1,14 @@
 {
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "fr",
-  "keywords": "merci",
   "description": "Votre message a bien été envoyé.",
-  "title": "Merci !",
-  "permalink": "https://skeletonic.io/fr/merci/",
+  "keywords": "merci",
+  "word_count": 47,
+  "language": "fr",
+  "date": "2026-04-08",
   "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "reading_time": 1,
+  "permalink": "https://skeletonic.io/fr/merci/",
   "layout": "thanks",
-  "date": "2026-04-08"
+  "title": "Merci !"
 }

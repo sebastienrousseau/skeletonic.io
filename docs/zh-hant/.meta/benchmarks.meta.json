@@ -1,12 +1,14 @@
 {
-  "author": "Sebastien Rousseau",
-  "description": "Real CDN sizes for Skeletonic Stylus, Pico, Bulma, Bootstrap, Tailwind, Open Props, Beer CSS and Shoelace — gzip -9 and brotli -q 11, with reproduction commands.",
-  "language": "zh-hant",
-  "name": "Skeletonic Stylus",
-  "title": "Benchmarks — Skeletonic Stylus",
+  "keywords": "css framework size, brotli benchmark, tailwind v4 size, pico css size, bulma size, bootstrap size, skeletonic stylus size",
   "layout": "page",
   "date": "2026-04-30",
-  "keywords": "css framework size, brotli benchmark, tailwind v4 size, pico css size, bulma size, bootstrap size, skeletonic stylus size",
+  "language": "zh-hant",
+  "description": "Real CDN sizes for Skeletonic Stylus, Pico, Bulma, Bootstrap, Tailwind, Open Props, Beer CSS and Shoelace — gzip -9 and brotli -q 11, with reproduction commands.",
+  "reading_time": 3,
   "theme_color": "hsl(210, 100%, 42%)",
-  "permalink": "https://skeletonic.io/zh-hant/benchmarks/"
+  "author": "Sebastien Rousseau",
+  "word_count": 702,
+  "name": "Skeletonic Stylus",
+  "permalink": "https://skeletonic.io/zh-hant/benchmarks/",
+  "title": "Benchmarks — Skeletonic Stylus"
 }

@@ -1,5 +1,237 @@
 {
   "pages_scanned": 23,
-  "total_issues": 0,
-  "pages": []
+  "total_issues": 23,
+  "wcag_version": "2.2",
+  "pages": [
+    {
+      "path": "404/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "animatsii/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "benchmarks/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "bezopasnost/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "breakpoints/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "cascade-layers/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "dostupnost/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "komponenty/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "konfidentsialnost/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "kontakt/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "nachalo/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "o-proekte/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "offline/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "palitry/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "spacing/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "spasibo/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "tags/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "tokens/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "usloviya/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "utilities/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "vklad/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    },
+    {
+      "path": "zhurnal-izmeneniy/index.html",
+      "issues": [
+        {
+          "criterion": "ARIA",
+          "severity": "warning",
+          "message": "Page has no <main> landmark"
+        }
+      ]
+    }
+  ]
 }

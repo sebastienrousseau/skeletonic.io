@@ -5,4 +5,141 @@
         xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-    </urlset>
+    <?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//palettes/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//animations/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//tokens/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//404/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//accessibilite/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//merci/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//breakpoints/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//conditions/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//spacing/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//benchmarks/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//premiers-pas/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//cascade-layers/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//a-propos/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//utilities/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//hors-ligne/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//tags/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//composants/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//securite/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//contribuer/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//contact/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//confidentialite/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod></lastmod>
+  <loc>https://skeletonic.io/fr/contribuer//journal/index.html</loc>
+</url></urlset>

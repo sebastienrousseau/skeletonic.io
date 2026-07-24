@@ -17,11 +17,11 @@ any snippet into a fresh HTML file and it works.
 <nav aria-label="On this page">
 <p><strong>On this page</strong></p>
 <ul>
-<li><strong>Inputs</strong> — <a href="#buttons">Buttons</a> · <a href="#button-shapes">Button shapes</a> · <a href="#button-groups">Button groups</a> · <a href="#badges">Badges</a></li>
-<li><strong>Feedback</strong> — <a href="#alerts">Alerts</a> · <a href="#code-blocks">Code blocks</a></li>
-<li><strong>Surface</strong> — <a href="#cards">Cards</a> · <a href="#tables">Tables</a></li>
+<li><strong>Inputs</strong> — <a href="#buttons">Buttons</a> · <a href="#button-shapes">Button shapes</a> · <a href="#button-groups">Button groups</a> · <a href="#badges">Badges</a> · <a href="#toggles">Switches &amp; Toggles</a></li>
+<li><strong>Feedback</strong> — <a href="#alerts">Alerts</a> · <a href="#loaders">Loaders &amp; Spinners</a> · <a href="#tooltips">Tooltips</a> · <a href="#code-blocks">Code blocks</a></li>
+<li><strong>Surface</strong> — <a href="#cards">Cards</a> · <a href="#accordions">Accordions</a> · <a href="#modals">Modals &amp; Dialogs</a> · <a href="#dropdowns">Dropdowns</a> · <a href="#tables">Tables</a></li>
 <li><strong>Forms</strong> — <a href="#form-fields">Form fields</a> · <a href="#status-inputs">Status inputs</a> · <a href="#fieldsets">Fieldsets</a></li>
-<li><strong>Typography</strong> — <a href="#lists">Lists</a> · <a href="#dividers">Dividers</a> · <a href="#link-effects">Link hover effects</a></li>
+<li><strong>Typography &amp; Media</strong> — <a href="#lists">Lists</a> · <a href="#dividers">Dividers</a> · <a href="#avatars">Avatars &amp; Images</a> · <a href="#link-effects">Link hover effects</a></li>
 <li><strong>Layout</strong> — <a href="#grid">Grid</a> · <a href="#header">Header &amp; hamburger nav</a></li>
 </ul>
 </nav>
@@ -723,6 +723,146 @@ and traps focus correctly on its own.
 > accessible name source. Resize the window below 640&nbsp;px to see
 > the burger toggle take over.
 
+<hr class="hr-text" data-content="2026 Baseline Components">
+
+<h2 id="accordions">Accordions</h2>
+
+Zero-JavaScript collapsible disclosure containers leveraging the HTML5 `<details>` and `<summary>` elements with native `@interpolate-size` smooth height transitions.
+
+```html
+<details class="accordion">
+  <summary>What makes Skeletonic Stylus unique?</summary>
+  <div class="content">
+    <p>Skeletonic Stylus is a zero-dependency, cascade-layered CSS library engineered for the post-bundler web. It delivers WCAG AAA compliance, OKLCH colours, and 100% native browser baselines in under 7.7 KB gzip.</p>
+  </div>
+</details>
+```
+
+<section aria-labelledby="accordions">
+<details class="accordion">
+  <summary>What makes Skeletonic Stylus unique?</summary>
+  <div class="content">
+    <p>Skeletonic Stylus is a zero-dependency, cascade-layered CSS library engineered for the post-bundler web. It delivers WCAG AAA compliance, OKLCH colours, and 100% native browser baselines in under 7.7 KB gzip.</p>
+  </div>
+</details>
+</section>
+
+> **Accessibility note.** Native `<details>` elements inherently communicate state (`aria-expanded`) to screen readers and offer full keyboard control (`Space` / `Enter` toggle) without needing custom JavaScript event handlers.
+
+<h3 id="modals">Modals &amp; Dialogs</h3>
+
+Accessible overlay windows utilizing the native HTML `<dialog>` element, discrete view transitions, and custom backdrop blurs.
+
+```html
+<dialog class="modal" id="demoModal">
+  <div class="modal-header">
+    <h3>System Update</h3>
+  </div>
+  <p>Skeletonic Stylus 2.0 has successfully initialized native cascade layers and OKLCH color spaces.</p>
+  <div class="modal-footer">
+    <button type="button" class="button secondary" onclick="document.getElementById('demoModal').close()">Cancel</button>
+    <button type="button" class="button primary" onclick="document.getElementById('demoModal').close()">Confirm</button>
+  </div>
+</dialog>
+
+<button type="button" class="button primary" onclick="document.getElementById('demoModal').showModal()">Open Dialog</button>
+```
+
+<section aria-labelledby="modals">
+<dialog class="modal" id="demoModal">
+  <div class="modal-header">
+    <h3>System Update</h3>
+  </div>
+  <p>Skeletonic Stylus 2.0 has successfully initialized native cascade layers and OKLCH color spaces.</p>
+  <div class="modal-footer">
+    <button type="button" class="button secondary" onclick="document.getElementById('demoModal').close()">Cancel</button>
+    <button type="button" class="button primary" onclick="document.getElementById('demoModal').close()">Confirm</button>
+  </div>
+</dialog>
+<button type="button" class="button primary" onclick="document.getElementById('demoModal').showModal()">Open Dialog</button>
+</section>
+
+> **Accessibility note.** Using `showModal()` automatically trap-focuses keyboard navigation inside the dialog, manages `aria-modal="true"`, and supports closing via the `Escape` key natively.
+
+<h3 id="dropdowns">Dropdowns</h3>
+
+Pure CSS context menus built on top of the HTML Popover API and CSS Anchor Positioning.
+
+```html
+<button type="button" class="button primary" popovertarget="demoDropdown" style="anchor-name: --dropdown-anchor;">
+  Options Menu
+</button>
+
+<div id="demoDropdown" popover class="dropdown">
+  <ul>
+    <li><a href="#" class="dropdown-item">Account Settings</a></li>
+    <li><a href="#" class="dropdown-item">Preferences</a></li>
+    <li><a href="#" class="dropdown-item">Documentation</a></li>
+  </ul>
+</div>
+```
+
+<h3 id="tooltips">Tooltips</h3>
+
+Zero-JavaScript informational tooltips leveraging the HTML Popover API with automated positioning.
+
+```html
+<button type="button" class="button secondary" popovertarget="demoTooltip" style="anchor-name: --tooltip-anchor;">
+  Hover or Focus Me
+</button>
+
+<div id="demoTooltip" popover class="tooltip">
+  WCAG AAA Compliant Tooltip Content
+</div>
+```
+
+<h3 id="loaders">Loaders &amp; Spinners</h3>
+
+Hardware-accelerated CSS spinners for visual status feedback during async processing.
+
+```html
+<span class="loader loader-sm" aria-label="Loading small"></span>
+<span class="loader" aria-label="Loading default"></span>
+<span class="loader loader-lg" aria-label="Loading large"></span>
+```
+
+<section aria-labelledby="loaders">
+<p style="display:flex; align-items:center; gap:1.5rem;">
+  <span class="loader loader-sm" aria-label="Loading small"></span>
+  <span class="loader" aria-label="Loading default"></span>
+  <span class="loader loader-lg" aria-label="Loading large"></span>
+</p>
+</section>
+
+<h3 id="toggles">Switches &amp; Toggles</h3>
+
+Native, accessible switch toggles using HTML checkboxes with `role="switch"`.
+
+```html
+<label style="display:inline-flex; align-items:center; gap:0.75rem; cursor:pointer;">
+  <input type="checkbox" role="switch" class="toggle" checked>
+  <span>Enable Automatic Updates</span>
+</label>
+```
+
+<section aria-labelledby="toggles">
+<p>
+  <label style="display:inline-flex; align-items:center; gap:0.75rem; cursor:pointer;">
+    <input type="checkbox" role="switch" class="toggle" checked>
+    <span>Enable Automatic Updates</span>
+  </label>
+</p>
+</section>
+
+<h3 id="avatars">Avatars &amp; Media</h3>
+
+Responsive image containers, thumbnails, and circular avatar profiles.
+
+```html
+<img src="/images/logo.svg" alt="User avatar" class="avatar" width="48" height="48">
+<img src="/images/banner.svg" alt="Product banner" class="img-fluid img-rounded">
+```
+
 [See full a11y notes →](/accessibility/) · [Browse palettes →](/palettes/) · [Framework benchmarks →](/benchmarks/)
 
 <script type="application/ld+json">
@@ -732,22 +872,29 @@ and traps focus correctly on its own.
   "name": "Skeletonic Stylus components",
   "description": "Every component, element and effect shipped in Skeletonic Stylus v2.0.0.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
-  "numberOfItems": 14,
+  "numberOfItems": 21,
   "itemListElement": [
     { "@type": "ListItem", "position": 1,  "name": "Buttons",                  "url": "https://skeletonic.io/components/#buttons" },
     { "@type": "ListItem", "position": 2,  "name": "Button shapes",            "url": "https://skeletonic.io/components/#button-shapes" },
     { "@type": "ListItem", "position": 3,  "name": "Button groups",            "url": "https://skeletonic.io/components/#button-groups" },
     { "@type": "ListItem", "position": 4,  "name": "Badges",                   "url": "https://skeletonic.io/components/#badges" },
-    { "@type": "ListItem", "position": 5,  "name": "Alerts",                   "url": "https://skeletonic.io/components/#alerts" },
-    { "@type": "ListItem", "position": 6,  "name": "Code blocks",              "url": "https://skeletonic.io/components/#code-blocks" },
-    { "@type": "ListItem", "position": 7,  "name": "Cards",                    "url": "https://skeletonic.io/components/#cards" },
-    { "@type": "ListItem", "position": 8,  "name": "Tables",                   "url": "https://skeletonic.io/components/#tables" },
-    { "@type": "ListItem", "position": 9,  "name": "Form fields",              "url": "https://skeletonic.io/components/#form-fields" },
-    { "@type": "ListItem", "position": 10, "name": "Status inputs",            "url": "https://skeletonic.io/components/#status-inputs" },
-    { "@type": "ListItem", "position": 11, "name": "Fieldsets",                "url": "https://skeletonic.io/components/#fieldsets" },
-    { "@type": "ListItem", "position": 12, "name": "Lists",                    "url": "https://skeletonic.io/components/#lists" },
-    { "@type": "ListItem", "position": 13, "name": "Dividers",                 "url": "https://skeletonic.io/components/#dividers" },
-    { "@type": "ListItem", "position": 14, "name": "Link hover effects",       "url": "https://skeletonic.io/components/#link-effects" }
+    { "@type": "ListItem", "position": 5,  "name": "Switches & Toggles",       "url": "https://skeletonic.io/components/#toggles" },
+    { "@type": "ListItem", "position": 6,  "name": "Alerts",                   "url": "https://skeletonic.io/components/#alerts" },
+    { "@type": "ListItem", "position": 7,  "name": "Loaders & Spinners",       "url": "https://skeletonic.io/components/#loaders" },
+    { "@type": "ListItem", "position": 8,  "name": "Tooltips",                 "url": "https://skeletonic.io/components/#tooltips" },
+    { "@type": "ListItem", "position": 9,  "name": "Code blocks",              "url": "https://skeletonic.io/components/#code-blocks" },
+    { "@type": "ListItem", "position": 10, "name": "Cards",                    "url": "https://skeletonic.io/components/#cards" },
+    { "@type": "ListItem", "position": 11, "name": "Accordions",               "url": "https://skeletonic.io/components/#accordions" },
+    { "@type": "ListItem", "position": 12, "name": "Modals & Dialogs",         "url": "https://skeletonic.io/components/#modals" },
+    { "@type": "ListItem", "position": 13, "name": "Dropdowns",                "url": "https://skeletonic.io/components/#dropdowns" },
+    { "@type": "ListItem", "position": 14, "name": "Tables",                   "url": "https://skeletonic.io/components/#tables" },
+    { "@type": "ListItem", "position": 15, "name": "Form fields",              "url": "https://skeletonic.io/components/#form-fields" },
+    { "@type": "ListItem", "position": 16, "name": "Status inputs",            "url": "https://skeletonic.io/components/#status-inputs" },
+    { "@type": "ListItem", "position": 17, "name": "Fieldsets",                "url": "https://skeletonic.io/components/#fieldsets" },
+    { "@type": "ListItem", "position": 18, "name": "Lists",                    "url": "https://skeletonic.io/components/#lists" },
+    { "@type": "ListItem", "position": 19, "name": "Dividers",                 "url": "https://skeletonic.io/components/#dividers" },
+    { "@type": "ListItem", "position": 20, "name": "Avatars & Images",         "url": "https://skeletonic.io/components/#avatars" },
+    { "@type": "ListItem", "position": 21, "name": "Link hover effects",       "url": "https://skeletonic.io/components/#link-effects" }
   ]
 }
 </script>

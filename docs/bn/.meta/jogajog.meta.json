@@ -1,12 +1,14 @@
 {
-  "language": "bn",
   "title": "যোগাযোগ",
+  "layout": "contact",
+  "date": "2026-04-08",
+  "reading_time": 1,
   "permalink": "https://skeletonic.io/bn/jogajog/",
   "theme_color": "hsl(210, 100%, 42%)",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "keywords": "যোগাযোগ, সহায়তা, মতামত, skeletonic",
-  "description": "Skeletonic Stylus সম্পর্কে যোগাযোগ করুন — বাগ রিপোর্ট, ফিচার ধারণা, পার্টনারশিপ বা সাধারণ মতামত।",
   "name": "Skeletonic Stylus",
-  "layout": "contact"
+  "description": "Skeletonic Stylus সম্পর্কে যোগাযোগ করুন — বাগ রিপোর্ট, ফিচার ধারণা, পার্টনারশিপ বা সাধারণ মতামত।",
+  "author": "Sebastien Rousseau",
+  "word_count": 46,
+  "language": "bn",
+  "keywords": "যোগাযোগ, সহায়তা, মতামত, skeletonic"
 }

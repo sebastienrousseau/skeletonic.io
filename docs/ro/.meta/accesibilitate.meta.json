@@ -1,12 +1,14 @@
 {
-  "description": "Ce livrează v2.0.0 implicit pentru conformitatea WCAG 2.2 — inele de focus, contrast, skip links, mișcare și mod întunecat.",
   "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "description": "Ce livrează v2.0.0 implicit pentru conformitatea WCAG 2.2 — inele de focus, contrast, skip links, mișcare și mod întunecat.",
+  "title": "Accesibilitate — WCAG 2.2 în v2.0.0",
   "permalink": "https://skeletonic.io/ro/accesibilitate/",
+  "language": "ro",
+  "word_count": 530,
   "layout": "page",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
+  "reading_time": 2,
   "keywords": "wcag 2.2, accesibilitate, focus visible, skip link, prefers reduced motion, contrast",
-  "language": "ro",
-  "title": "Accesibilitate — WCAG 2.2 în v2.0.0"
+  "name": "Skeletonic Stylus"
 }

@@ -1,605 +1,287 @@
-<!DOCTYPE html>
-<html lang="fil" itemscope itemtype="https://schema.org/WebSite">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Mga Bahagi</title>
-
-    
-    
-    
-    <meta name="generator" content="Shokunin (ssg) v0.0.34">
-    <meta name="theme-color" content="hsl(210, 100%, 42%)" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-    <meta name="color-scheme" content="light dark">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <!-- View Transitions API opt-in: same-origin navigations get a
-         native cross-document transition. The matching CSS rule
-         (@view-transition { navigation: auto }) lives in chrome.css
-         and is automatically gated by prefers-reduced-motion. -->
-    <meta name="view-transition" content="same-origin">
-    <!-- frame-ancestors is intentionally absent: it's ignored when
-         delivered via <meta>, must come from a real HTTP header. The
-         GitHub Pages deployment can't set custom headers, so we lean
-         on the X-Frame-Options equivalent that the platform ships
-         and on the meta-supported directives below.
-
-         The two `'sha256-…'` entries pin the SSG-injected inline
-         scripts that bootstrap the search widget and the on-page
-         live-reload watchdog. They're emitted verbatim by shokunin
-         v0.0.34 and don't change between builds — if the SSG ever
-         changes them we'll see the CSP error in the browser console
-         and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self' https://cdn.jsdelivr.net; form-action 'self' https://formspree.io https://codepen.io; base-uri 'self'">
-    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
-
-    <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;fil&#x2F;">
-    <link rel="preload" href="/css/skeletonic.min.css" as="style">
-    <link rel="preload" href="/css/chrome.css" as="style"><link rel="icon" type="image/svg+xml" href="/images/logo.svg">
-    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
-    <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
-    <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
-    <link rel="alternate" hreflang="fr" href="https:&#x2F;&#x2F;skeletonic.io/fr&#x2F;">
-    <link rel="alternate" hreflang="de" href="https:&#x2F;&#x2F;skeletonic.io/de&#x2F;">
-    <link rel="alternate" hreflang="ar" href="https:&#x2F;&#x2F;skeletonic.io/ar&#x2F;">
-    <link rel="alternate" hreflang="bn" href="https:&#x2F;&#x2F;skeletonic.io/bn&#x2F;">
-    <link rel="alternate" hreflang="cs" href="https:&#x2F;&#x2F;skeletonic.io/cs&#x2F;">
-    <link rel="alternate" hreflang="es" href="https:&#x2F;&#x2F;skeletonic.io/es&#x2F;">
-    <link rel="alternate" hreflang="fil" href="https:&#x2F;&#x2F;skeletonic.io/fil&#x2F;">
-    <link rel="alternate" hreflang="ha" href="https:&#x2F;&#x2F;skeletonic.io/ha&#x2F;">
-    <link rel="alternate" hreflang="he" href="https:&#x2F;&#x2F;skeletonic.io/he&#x2F;">
-    <link rel="alternate" hreflang="hi" href="https:&#x2F;&#x2F;skeletonic.io/hi&#x2F;">
-    <link rel="alternate" hreflang="id" href="https:&#x2F;&#x2F;skeletonic.io/id&#x2F;">
-    <link rel="alternate" hreflang="it" href="https:&#x2F;&#x2F;skeletonic.io/it&#x2F;">
-    <link rel="alternate" hreflang="ja" href="https:&#x2F;&#x2F;skeletonic.io/ja&#x2F;">
-    <link rel="alternate" hreflang="ko" href="https:&#x2F;&#x2F;skeletonic.io/ko&#x2F;">
-    <link rel="alternate" hreflang="nl" href="https:&#x2F;&#x2F;skeletonic.io/nl&#x2F;">
-    <link rel="alternate" hreflang="pl" href="https:&#x2F;&#x2F;skeletonic.io/pl&#x2F;">
-    <link rel="alternate" hreflang="pt-BR" href="https:&#x2F;&#x2F;skeletonic.io/pt-br&#x2F;">
-    <link rel="alternate" hreflang="ro" href="https:&#x2F;&#x2F;skeletonic.io/ro&#x2F;">
-    <link rel="alternate" hreflang="ru" href="https:&#x2F;&#x2F;skeletonic.io/ru&#x2F;">
-    <link rel="alternate" hreflang="sv" href="https:&#x2F;&#x2F;skeletonic.io/sv&#x2F;">
-    <link rel="alternate" hreflang="th" href="https:&#x2F;&#x2F;skeletonic.io/th&#x2F;">
-    <link rel="alternate" hreflang="tr" href="https:&#x2F;&#x2F;skeletonic.io/tr&#x2F;">
-    <link rel="alternate" hreflang="uk" href="https:&#x2F;&#x2F;skeletonic.io/uk&#x2F;">
-    <link rel="alternate" hreflang="vi" href="https:&#x2F;&#x2F;skeletonic.io/vi&#x2F;">
-    <link rel="alternate" hreflang="yo" href="https:&#x2F;&#x2F;skeletonic.io/yo&#x2F;">
-    <link rel="alternate" hreflang="zh-Hans" href="https:&#x2F;&#x2F;skeletonic.io/zh-hans&#x2F;">
-    <link rel="alternate" hreflang="zh-Hant" href="https:&#x2F;&#x2F;skeletonic.io/zh-hant&#x2F;">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Skeletonic Stylus">
-    <meta property="og:title" content="Mga Bahagi">
-    
-    <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;fil&#x2F;">
-    <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
-    <meta property="og:image:type" content="image/svg+xml">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Skeletonic Stylus — accessible, modular CSS library">
-    <meta property="og:locale" content="fil">
-    <meta property="og:locale:alternate" content="ar">
-    <meta property="og:locale:alternate" content="bn">
-    <meta property="og:locale:alternate" content="cs">
-    <meta property="og:locale:alternate" content="de">
-    <meta property="og:locale:alternate" content="es">
-    <meta property="og:locale:alternate" content="fr">
-    <meta property="og:locale:alternate" content="ha">
-    <meta property="og:locale:alternate" content="he">
-    <meta property="og:locale:alternate" content="hi">
-    <meta property="og:locale:alternate" content="id">
-    <meta property="og:locale:alternate" content="it">
-    <meta property="og:locale:alternate" content="ja">
-    <meta property="og:locale:alternate" content="ko">
-    <meta property="og:locale:alternate" content="nl">
-    <meta property="og:locale:alternate" content="pl">
-    <meta property="og:locale:alternate" content="pt_br">
-    <meta property="og:locale:alternate" content="ro">
-    <meta property="og:locale:alternate" content="ru">
-    <meta property="og:locale:alternate" content="sv">
-    <meta property="og:locale:alternate" content="th">
-    <meta property="og:locale:alternate" content="tr">
-    <meta property="og:locale:alternate" content="uk">
-    <meta property="og:locale:alternate" content="vi">
-    <meta property="og:locale:alternate" content="yo">
-    <meta property="og:locale:alternate" content="zh_hans">
-    <meta property="og:locale:alternate" content="zh_hant">
-    <meta property="og:locale:alternate" content="en">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@wwdseb">
-    <meta name="twitter:creator" content="@wwdseb">
-    <meta name="twitter:title" content="Mga Bahagi">
-    
-    <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
-
-    <!-- Critical CSS — inlined by scripts/build-i18n.sh post-build.
-         The build script swaps the placeholder below for the contents
-         of static/css/critical.css so above-the-fold paints in the
-         same frame as the HTML, without waiting for the full
-         chrome + skeletonic bundles. -->
-    <style>:root{color-scheme:light dark;--c-bg:#fff;--c-text:#1d1d1f;--c-heading:#000;--c-secondary:#6e6e73;--c-accent:#0066cc;--c-border:#d2d2d7;--c-nav-bg:rgba(255, 255, 255, 0.8);--c-nav-text:#1d1d1f;--c-nav-muted:#57575b;--c-hero-grad-1:#f5f5f7;--c-hero-grad-2:#fff;--c-hero-grad-3:#fafafa;--fs-base:clamp(1rem, 0.95rem + 0.25vw, 1.125rem);--fs-h1:clamp(2.5rem, 1.5rem + 5vw, 4.5rem);--fs-h2:clamp(2rem, 1.25rem + 3.75vw, 3.5rem);--fs-h3:clamp(1.5rem, 1.125rem + 1.875vw, 2.25rem)}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--c-bg:#000;--c-text:#f5f5f7;--c-heading:#fff;--c-secondary:#a1a1aa;--c-accent:#2997ff;--c-border:#424245;--c-nav-bg:rgba(0, 0, 0, 0.8);--c-nav-text:#f5f5f7;--c-nav-muted:#a1a1aa;--c-hero-grad-1:#1d1d1f;--c-hero-grad-2:#000;--c-hero-grad-3:#0a0a0a}}*{box-sizing:border-box;margin:0}html{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}body{background:var(--c-bg);color:var(--c-text);font-size:var(--fs-base);line-height:1.47;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.skip-link{position:absolute;inset-inline-start:.5rem;top:-3rem;padding:.6rem 1rem;background:var(--c-accent);color:#fff;text-decoration:none;border-radius:0 0 .25rem .25rem;z-index:1100}.skip-link:focus{top:0}.site-nav{background:var(--c-nav-bg);border-bottom:1px solid var(--c-border);position:sticky;top:0;z-index:1000;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:4rem;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-weight:600;font-size:1.25rem;color:var(--c-heading);letter-spacing:-.02em;text-decoration:none}.nav-center{display:flex;gap:1.5rem;list-style:none;padding:0;margin:0}.nav-center a{color:var(--c-nav-muted);font-size:.875rem;font-weight:500;text-decoration:none}.nav-right{display:flex;align-items:center;gap:1rem}.site-hero{text-align:center;padding:5rem 1.5rem 3rem;background:linear-gradient(180deg,var(--c-hero-grad-1),var(--c-hero-grad-2) 50%,var(--c-hero-grad-3))}.site-hero h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em;color:var(--c-heading);line-height:1.1}.site-hero .hero-title{margin:0 auto .75rem;display:block;width:clamp(120px,20vw,208px);aspect-ratio:1/1;background:url(https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg)center/contain no-repeat;text-indent:-9999px;white-space:nowrap;overflow:hidden;font-size:0;color:transparent}.site-hero p{margin-top:.75rem;max-width:40rem;margin-inline:auto}.hero-logo{width:4.5rem;height:auto;margin:0 auto 1rem}.hero-cta{display:inline-block;padding:.75rem 1.5rem;margin-top:1.5rem;background:var(--c-accent);color:#fff;font-weight:600;border-radius:9999px;text-decoration:none}.site-main{max-width:70rem;margin:0 auto;padding:3rem 1.5rem 5rem}.site-main h1,.site-main h2,.site-main h3,.site-main h4{font-family:inherit;line-height:1.1;color:var(--c-heading);margin:0}.site-main h4{letter-spacing:-.022em}.site-main h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em}.site-main h2,.site-main h3{font-size:var(--fs-h2);font-weight:600;letter-spacing:-.03em}.site-main h3{font-size:var(--fs-h3);letter-spacing:-.02em}.site-hero p,.site-main p{font-size:var(--fs-base);line-height:1.5;color:var(--c-secondary)}.site-main a:not([class*=button]):not([class*=btn]):not(.badge):not([class*=link-]){color:var(--c-accent);text-decoration:underline;text-underline-offset:.15em}</style>
-
-    <!-- Skeletonic Stylus v2.1.0 + chrome — render-blocking, but
-         the inline critical CSS above already painted above-the-fold,
-         so first paint isn't waiting on these. Async loading via
-         media="print"+onload regressed mobile perf because the
-         critical CSS doesn't cover every above-the-fold element on
-         every page (cards, code blocks); when the full sheet arrives
-         the layout shifts. Keep it render-blocking and rely on the
-         critical-CSS head budget for sub-1s FCP. -->
-    <link rel="stylesheet" href="/css/skeletonic.min.css">
-    
-    
-    <link rel="stylesheet" href="/css/chrome.css">
-
-    <!-- REMOVED: inline <style> moved to static/css/chrome.css -->
-    <!-- Original :root block preserved for reference:
-         --c-accent uses the project's primary palette hsl(210, 100%, 42%).
-    -->
-
-    <!-- BreadcrumbList JSON-LD — emitted on every page for AEO/SGE indexing. -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://skeletonic.io/fil/"
-        }
-      ]
-    }
-    </script>
-
-    
-    <!-- WebSite JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Mga Bahagi",
-      "url": "https://skeletonic.io"
-    }
-    </script>
-    
-
-    
-
-    <!-- Organization JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Skeletonic CSS",
-      "url": "https://skeletonic.io",
-      "logo": "https://skeletonic.io/images/logo.svg",
-      "sameAs": [
-        "https://github.com/sebastienrousseau/skeletonic-stylus",
-        "https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus"
-      ]
-    }
-    </script>
-
-    
-  <link rel="stylesheet" href="/highlight.87708af9.css">
-<meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<style id="synt-palette">.synt-c0c5ce{color:#c0c5ce;background-color:#0d1117}
-.synt-bf616a{color:#bf616a;background-color:#0d1117}
-.synt-d08770{color:#d08770;background-color:#0d1117}
-.synt-a3be8c{color:#a3be8c;background-color:#0d1117}
-.synt-8fa1b3{color:#8fa1b3;background-color:#0d1117}
-.synt-b48ead{color:#b48ead;background-color:#0d1117}
-.synt-96b5b4{color:#96b5b4;background-color:#0d1117}</style><link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
-  <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
-    <a href="#main" class="skip-link">Pumunta sa pangunahing nilalaman</a>
-
-    <nav aria-label="Skeletonic Stylus home" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
-      <div class="nav-inner">
-        <a class="nav-brand" href="&#x2F;fil/" itemprop="url" aria-label="Skeletonic Stylus home">
-          <span itemprop="name">Skeletonic Stylus</span>
-        </a>
-        <ul class="nav-center">
-          <li><a href="&#x2F;fil/" class="active" aria-current="page">Home</a></li>
-          <li><a href="&#x2F;fil/pagsisimula/">Dokumentasyon</a></li>
-          <li><a href="&#x2F;fil/mga-bahagi/">Mga Bahagi</a></li>
-          <li class="dropdown" data-dropdown>
-            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">Mga Mapagkukunan</button>
-            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-              <li><a class="dropdown-item" href="&#x2F;fil/mga-paleta/">Mga Paleta</a></li>
-              <li><a class="dropdown-item" href="&#x2F;fil/mga-animasyon/">Mga Animasyon</a></li>
-              <li><a class="dropdown-item" href="&#x2F;fil/aksesibilidad/">Aksesibilidad</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="nav-right">
-          <button aria-label="Maghanap" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
-            <svg viewBox="0 0 24 24" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="16" aria-hidden="true">
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="m21 21-4.35-4.35"></path>
-            </svg>
-            <span class="search-shortcut" aria-hidden="true"></span>
-          </button>
-          <div class="palette-switcher" id="paletteSwitcher">
-            <button type="button" class="theme-toggle" id="paletteToggle" aria-label="Choose colour palette" aria-expanded="false" aria-haspopup="true" aria-controls="paletteMenu">
-              <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 2 2 0 0 0 2-2 2 2 0 0 1 2-2h2a4 4 0 0 0 4-4A10 10 0 0 0 12 2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
-            </button>
-            <div class="palette-menu" id="paletteMenu" role="menu" hidden>
-              <button type="button" class="palette-swatch is-active" role="menuitemradio" aria-checked="true" data-palette="default" style="--swatch:#0066cc">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Default</span>
-              </button>
-              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="ember" style="--swatch:#ed6300">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Ember</span>
-              </button>
-              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="iris" style="--swatch:#8668ff">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Iris</span>
-              </button>
-              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="lagoon" style="--swatch:#00a1b3">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Lagoon</span>
-              </button>
-            </div>
-          </div>
-          <button aria-label="Lumipat sa madilim na mode" class="theme-toggle" id="themeToggle" type="button" data-label-dark="Madilim" data-label-light="Maliwanag" data-aria-dark="Lumipat sa madilim na mode" data-aria-light="Lumipat sa maliwanag na mode">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
-              <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
-            </svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light">
-              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
-            </svg>
-            <span class="theme-label">Madilim</span>
-          </button>
-          <div class="lang-switcher">
-            <button type="button" aria-label="FIL, Palitan ang wika" aria-expanded="false">
-              <span>🌐</span> FIL
-            </button>
-            <div class="lang-menu">
-              <div class="lang-menu-grid">
-              <a href="&#x2F;">🇬🇧 English</a>
-              <a href="/fr&#x2F;">🇫🇷 Français</a>
-              <a href="/ar&#x2F;">🇸🇦 العربية</a>
-              <a href="/bn&#x2F;">🇧🇩 বাংলা</a>
-              <a href="/cs&#x2F;">🇨🇿 Čeština</a>
-              <a href="/de&#x2F;">🇩🇪 Deutsch</a>
-              <a href="/es&#x2F;">🇪🇸 Español</a>
-              <a class="active" href="/fil&#x2F;">🇵🇭 Filipino</a>
-              <a href="/ha&#x2F;">🇳🇬 Hausa</a>
-              <a href="/he&#x2F;">🇮🇱 עברית</a>
-              <a href="/hi&#x2F;">🇮🇳 हिन्दी</a>
-              <a href="/id&#x2F;">🇮🇩 Indonesia</a>
-              <a href="/it&#x2F;">🇮🇹 Italiano</a>
-              <a href="/ja&#x2F;">🇯🇵 日本語</a>
-              <a href="/ko&#x2F;">🇰🇷 한국어</a>
-              <a href="/nl&#x2F;">🇳🇱 Nederlands</a>
-              <a href="/pl&#x2F;">🇵🇱 Polski</a>
-              <a href="/pt-br&#x2F;">🇧🇷 Português</a>
-              <a href="/ro&#x2F;">🇷🇴 Română</a>
-              <a href="/ru&#x2F;">🇷🇺 Русский</a>
-              <a href="/sv&#x2F;">🇸🇪 Svenska</a>
-              <a href="/th&#x2F;">🇹🇭 ไทย</a>
-              <a href="/tr&#x2F;">🇹🇷 Türkçe</a>
-              <a href="/uk&#x2F;">🇺🇦 Українська</a>
-              <a href="/vi&#x2F;">🇻🇳 Tiếng Việt</a>
-              <a href="/yo&#x2F;">🇳🇬 Yorùbá</a>
-              <a href="/zh-hans&#x2F;">🇨🇳 简体中文</a>
-              <a href="/zh-hant&#x2F;">🇹🇼 繁體中文</a>
-              </div>
-            </div>
-          </div>
-          <a class="nav-cta" href="&#x2F;fil/makipag-ugnayan/">Makipag-ugnayan</a>
-        </div>
-        <button aria-label="Ipakita o itago ang menu" class="nav-hamburger" id="navToggle" type="button">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
-
-    
-<header class="site-hero">
-  <h1 class="hero-title">Skeletonic Stylus</h1>
-  
-</header>
-
-
-    <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
-      <div class="text-start">
-        
-<blockquote>
-<p><strong>Translation note (2026-04-30).</strong> v2.0.0 adds RTL support and a refreshed
+&lt;div lang=&quot;en&quot;&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Translation note (2026-04-30).&lt;/strong&gt; v2.0.0 adds RTL support and a refreshed
 2026 framework comparison. The English source is the canonical reference
-while these translations catch up. See <a href="https://skeletonic.io/about/">https://skeletonic.io/about/</a> ·
-<a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
-</blockquote>
-<p>Bawat halimbawa sa ibaba ay <strong>nire-render gamit ang mismong stylesheet na dine-demo</strong>. Walang preprocessor. Walang JavaScript. Walang dagdag na dependency. Kopyahin ang anumang snippet sa isang bagong HTML file at gagana ito.</p>
-<nav aria-label="Sa pahinang ito">
-<p><strong>Sa pahinang ito</strong></p>
-<ul>
-<li><strong>Mga Input</strong> — <a href="#buttons">Mga Button</a> · <a href="#badges">Mga Badge</a></li>
-<li><strong>Feedback</strong> — <a href="#alerts">Mga Alert</a></li>
-<li><strong>Surface</strong> — <a href="#cards">Mga Card</a></li>
-<li><strong>Mga Form</strong> — <a href="#form-fields">Mga field ng form</a></li>
-<li><strong>Layout</strong> — <a href="#grid">Grid</a> · <a href="#header">Header &amp; hamburger nav</a></li>
-</ul>
-</nav>
-<hr class="hr-text" data-content="Mga Input">
-<h2 id="inputs">Mga Input</h2>
-<p>Mga interactive na element na kini-click, tina-tap, o fini-focus ng bisita upang kontrolin ang pahina.</p>
-<h3 id="buttons">Mga Button</h3>
-<p>Isang semantic, na-the-theme na action trigger. Ang solid at outline na variant ay may anim na brand na kulay bawat isa.</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">button primary</span><span class="synt-c0c5ce">&quot;&gt;Primary&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">button secondary</span><span class="synt-c0c5ce">&quot;&gt;Secondary&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">button tertiary</span><span class="synt-c0c5ce">&quot;&gt;Tertiary&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;
-</span></pre>
-</code></pre>
-<section aria-labelledby="buttons">
-<p>
-  <a href="#" class="button primary">Primary</a>
-  <a href="#" class="button secondary">Secondary</a>
-  <a href="#" class="button tertiary">Tertiary</a>
-</p>
-</section>
-<p>Mga outline variant:</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">button primary-outline</span><span class="synt-c0c5ce">&quot;&gt;Outline&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">button secondary-outline</span><span class="synt-c0c5ce">&quot;&gt;Outline&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;
-</span></pre>
-</code></pre>
-<p>
-  <a href="#" class="button primary-outline">Outline</a>
-  <a href="#" class="button secondary-outline">Outline</a>
-</p>
-<blockquote>
-<p><strong>Tala sa aksesibilidad.</strong> Bawat <code>.button</code> na variant ay may kasamang
-<code>:focus-visible</code> ring at isang <strong>24×24 px na minimum hit area</strong>
-(WCAG 2.2 SC 2.5.8). Gamitin ang <code>&lt;button type=&quot;button&quot;&gt;</code> para sa
-mga aksyon sa pahina at <code>&lt;a href&gt;</code> para lamang sa nabigasyon.</p>
-</blockquote>
-<h3 id="badges">Mga Badge</h3>
-<p>Isang compact na label para sa status, bilang, o kategorya. Nakatakda ang laki ng text kaya ang mga badge ay naka-align sa nakapalibot na text.</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">span </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">badge</span><span class="synt-c0c5ce">&quot;&gt;Default&lt;/</span><span class="synt-bf616a">span</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">span </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">badge primary</span><span class="synt-c0c5ce">&quot;&gt;Primary&lt;/</span><span class="synt-bf616a">span</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">span </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">badge success</span><span class="synt-c0c5ce">&quot;&gt;Success&lt;/</span><span class="synt-bf616a">span</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">span </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">badge warning</span><span class="synt-c0c5ce">&quot;&gt;Warning&lt;/</span><span class="synt-bf616a">span</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">span </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">badge danger</span><span class="synt-c0c5ce">&quot;&gt;Danger&lt;/</span><span class="synt-bf616a">span</span><span class="synt-c0c5ce">&gt;
-</span></pre>
-</code></pre>
-<section aria-labelledby="badges">
-<p>
-  <span class="badge">Default</span>
-  <span class="badge primary">Primary</span>
-  <span class="badge success">Success</span>
-  <span class="badge warning">Warning</span>
-  <span class="badge danger">Danger</span>
-</p>
-</section>
-<blockquote>
-<p><strong>Tala sa aksesibilidad.</strong> Ang mga badge ay dekoratibo bilang default. Kapag ang
+while these translations catch up. See &lt;a href=&quot;https://skeletonic.io/about/&quot;&gt;https://skeletonic.io/about/&lt;/a&gt; ·
+&lt;a href=&quot;https://skeletonic.io/components/&quot;&gt;https://skeletonic.io/components/&lt;/a&gt; · &lt;a href=&quot;https://skeletonic.io/benchmarks/&quot;&gt;https://skeletonic.io/benchmarks/&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Bawat halimbawa sa ibaba ay &lt;strong&gt;nire-render gamit ang mismong stylesheet na dine-demo&lt;/strong&gt;. Walang preprocessor. Walang JavaScript. Walang dagdag na dependency. Kopyahin ang anumang snippet sa isang bagong HTML file at gagana ito.&lt;/p&gt;
+&lt;nav aria-label=&quot;Sa pahinang ito&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Sa pahinang ito&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mga Input&lt;/strong&gt; — &lt;a href=&quot;#buttons&quot;&gt;Mga Button&lt;/a&gt; · &lt;a href=&quot;#badges&quot;&gt;Mga Badge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Feedback&lt;/strong&gt; — &lt;a href=&quot;#alerts&quot;&gt;Mga Alert&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Surface&lt;/strong&gt; — &lt;a href=&quot;#cards&quot;&gt;Mga Card&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mga Form&lt;/strong&gt; — &lt;a href=&quot;#form-fields&quot;&gt;Mga field ng form&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Layout&lt;/strong&gt; — &lt;a href=&quot;#grid&quot;&gt;Grid&lt;/a&gt; · &lt;a href=&quot;#header&quot;&gt;Header &amp; hamburger nav&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;hr class=&quot;hr-text&quot; data-content=&quot;Mga Input&quot;&gt;
+&lt;h2 id=&quot;inputs&quot;&gt;Mga Input&lt;/h2&gt;
+&lt;p&gt;Mga interactive na element na kini-click, tina-tap, o fini-focus ng bisita upang kontrolin ang pahina.&lt;/p&gt;
+&lt;h3 id=&quot;buttons&quot;&gt;Mga Button&lt;/h3&gt;
+&lt;p&gt;Isang semantic, na-the-theme na action trigger. Ang solid at outline na variant ay may anim na brand na kulay bawat isa.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;pre style=&quot;background-color:#0d1117;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;button primary&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Primary&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;button secondary&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Secondary&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;button tertiary&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Tertiary&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;section aria-labelledby=&quot;buttons&quot;&gt;
+&lt;p&gt;
+  &lt;a href=&quot;#&quot; class=&quot;button primary&quot;&gt;Primary&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;button secondary&quot;&gt;Secondary&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;button tertiary&quot;&gt;Tertiary&lt;/a&gt;
+&lt;/p&gt;
+&lt;/section&gt;
+&lt;p&gt;Mga outline variant:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;pre style=&quot;background-color:#0d1117;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;button primary-outline&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Outline&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;button secondary-outline&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Outline&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+  &lt;a href=&quot;#&quot; class=&quot;button primary-outline&quot;&gt;Outline&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;button secondary-outline&quot;&gt;Outline&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tala sa aksesibilidad.&lt;/strong&gt; Bawat &lt;code&gt;.button&lt;/code&gt; na variant ay may kasamang
+&lt;code&gt;:focus-visible&lt;/code&gt; ring at isang &lt;strong&gt;24×24 px na minimum hit area&lt;/strong&gt;
+(WCAG 2.2 SC 2.5.8). Gamitin ang &lt;code&gt;&lt;button type=&quot;button&quot;&gt;&lt;/code&gt; para sa
+mga aksyon sa pahina at &lt;code&gt;&lt;a href&gt;&lt;/code&gt; para lamang sa nabigasyon.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;badges&quot;&gt;Mga Badge&lt;/h3&gt;
+&lt;p&gt;Isang compact na label para sa status, bilang, o kategorya. Nakatakda ang laki ng text kaya ang mga badge ay naka-align sa nakapalibot na text.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;pre style=&quot;background-color:#0d1117;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;span &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;badge&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Default&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;span&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;span &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;badge primary&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Primary&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;span&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;span &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;badge success&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Success&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;span&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;span &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;badge warning&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Warning&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;span&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;span &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;badge danger&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Danger&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;span&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;section aria-labelledby=&quot;badges&quot;&gt;
+&lt;p&gt;
+  &lt;span class=&quot;badge&quot;&gt;Default&lt;/span&gt;
+  &lt;span class=&quot;badge primary&quot;&gt;Primary&lt;/span&gt;
+  &lt;span class=&quot;badge success&quot;&gt;Success&lt;/span&gt;
+  &lt;span class=&quot;badge warning&quot;&gt;Warning&lt;/span&gt;
+  &lt;span class=&quot;badge danger&quot;&gt;Danger&lt;/span&gt;
+&lt;/p&gt;
+&lt;/section&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tala sa aksesibilidad.&lt;/strong&gt; Ang mga badge ay dekoratibo bilang default. Kapag ang
 badge ang tanging nagdadala ng signal (hal. bilang ng hindi pa nabasa), balutin ito sa isang
-visually-hidden na helper: <code>&lt;span class=&quot;visually-hidden&quot;&gt;3 hindi pa nababasang mensahe&lt;/span&gt;</code>.</p>
-</blockquote>
-<hr class="hr-text" data-content="Feedback">
-<h2 id="feedback">Feedback</h2>
-<p>Mga surface na nagsasabi sa bisita na may nangyari — o malapit nang mangyari.</p>
-<h3 id="alerts">Mga Alert</h3>
-<p>Mga mensahe ng status na may semantic na layunin. <strong>Sa v2.0.0 bawat variant ay
-tahasang naka-namespace</strong> sa ilalim ng <code>.alert-{primary,secondary,info,success,warning,error}</code>
+visually-hidden na helper: &lt;code&gt;&lt;span class=&quot;visually-hidden&quot;&gt;3 hindi pa nababasang mensahe&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr class=&quot;hr-text&quot; data-content=&quot;Feedback&quot;&gt;
+&lt;h2 id=&quot;feedback&quot;&gt;Feedback&lt;/h2&gt;
+&lt;p&gt;Mga surface na nagsasabi sa bisita na may nangyari — o malapit nang mangyari.&lt;/p&gt;
+&lt;h3 id=&quot;alerts&quot;&gt;Mga Alert&lt;/h3&gt;
+&lt;p&gt;Mga mensahe ng status na may semantic na layunin. &lt;strong&gt;Sa v2.0.0 bawat variant ay
+tahasang naka-namespace&lt;/strong&gt; sa ilalim ng &lt;code&gt;.alert-{primary,secondary,info,success,warning,error}&lt;/code&gt;
 kaya ang variant na klase ay hindi magko-collide sa mga state class sa ibang bahagi
-ng pahina.</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">alert alert-primary</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">role</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">alert</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">strong</span><span class="synt-c0c5ce">&gt;Pansinin.&lt;/</span><span class="synt-bf616a">strong</span><span class="synt-c0c5ce">&gt; Ito ay isang primary alert.
-</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">alert alert-success</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">role</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">status</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">strong</span><span class="synt-c0c5ce">&gt;Na-save.&lt;/</span><span class="synt-bf616a">strong</span><span class="synt-c0c5ce">&gt; Ang iyong mga pagbabago ay nai-persist.
-</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">alert alert-warning</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">role</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">alert</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">strong</span><span class="synt-c0c5ce">&gt;Mag-ingat.&lt;/</span><span class="synt-bf616a">strong</span><span class="synt-c0c5ce">&gt; Ang aksyon na ito ay nakakaapekto sa shared state.
-</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">alert alert-error</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">role</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">alert</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">strong</span><span class="synt-c0c5ce">&gt;Error.&lt;/</span><span class="synt-bf616a">strong</span><span class="synt-c0c5ce">&gt; Hindi mai-save ang form.
-</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span></pre>
-</code></pre>
-<section aria-labelledby="alerts">
-<div class="alert alert-primary" role="alert">
-<strong>Pansinin.</strong> Ito ay isang primary alert.
-</div>
-<div class="alert alert-success" role="status">
-<strong>Na-save.</strong> Ang iyong mga pagbabago ay nai-persist.
-</div>
-<div class="alert alert-warning" role="alert">
-<strong>Mag-ingat.</strong> Ang aksyon na ito ay nakakaapekto sa shared state.
-</div>
-<div class="alert alert-error" role="alert">
-<strong>Error.</strong> Hindi mai-save ang form.
-</div>
-</section>
-<blockquote>
-<p><strong>Tala sa aksesibilidad.</strong> Gamitin ang <code>role=&quot;alert&quot;</code> para sa mga mensaheng nangangailangan
-ng agarang pansin (mga error, babala) at <code>role=&quot;status&quot;</code> para sa
+ng pahina.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;pre style=&quot;background-color:#0d1117;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;alert alert-primary&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;role&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;alert&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;strong&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;Pansinin.&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;strong&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt; Ito ay isang primary alert.
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;alert alert-success&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;role&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;status&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;strong&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;Na-save.&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;strong&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt; Ang iyong mga pagbabago ay nai-persist.
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;alert alert-warning&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;role&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;alert&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;strong&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;Mag-ingat.&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;strong&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt; Ang aksyon na ito ay nakakaapekto sa shared state.
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;alert alert-error&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;role&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;alert&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;strong&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;Error.&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;strong&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt; Hindi mai-save ang form.
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;section aria-labelledby=&quot;alerts&quot;&gt;
+&lt;div class=&quot;alert alert-primary&quot; role=&quot;alert&quot;&gt;
+&lt;strong&gt;Pansinin.&lt;/strong&gt; Ito ay isang primary alert.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-success&quot; role=&quot;status&quot;&gt;
+&lt;strong&gt;Na-save.&lt;/strong&gt; Ang iyong mga pagbabago ay nai-persist.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
+&lt;strong&gt;Mag-ingat.&lt;/strong&gt; Ang aksyon na ito ay nakakaapekto sa shared state.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-error&quot; role=&quot;alert&quot;&gt;
+&lt;strong&gt;Error.&lt;/strong&gt; Hindi mai-save ang form.
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tala sa aksesibilidad.&lt;/strong&gt; Gamitin ang &lt;code&gt;role=&quot;alert&quot;&lt;/code&gt; para sa mga mensaheng nangangailangan
+ng agarang pansin (mga error, babala) at &lt;code&gt;role=&quot;status&quot;&lt;/code&gt; para sa
 mga hindi urgenteng kumpirmasyon. Parehong inilalantad ang mensahe sa assistive tech
-sa sandaling lumabas ito.</p>
-</blockquote>
-<hr class="hr-text" data-content="Surface">
-<h2 id="surface">Surface</h2>
-<p>Mga container na nagba-frame at naggu-grupo ng magkakaugnay na nilalaman.</p>
-<h3 id="cards">Mga Card</h3>
-<p>Isang bordered, padded na container para sa isang koherenteng yunit. Ipares sa
-<code>flex-N</code> grid para sa responsive na card wall.</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">section </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">row</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">article </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">card flex-1</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">card-content</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">      &lt;</span><span class="synt-bf616a">h3 </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">card-title</span><span class="synt-c0c5ce">&quot;&gt;Magaan&lt;/</span><span class="synt-bf616a">h3</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">      &lt;</span><span class="synt-bf616a">p</span><span class="synt-c0c5ce">&gt;38.8 KB minified, 7.7 KB gzipped.&lt;/</span><span class="synt-bf616a">p</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">    &lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;/</span><span class="synt-bf616a">article</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">article </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">card flex-1</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">card-content</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">      &lt;</span><span class="synt-bf616a">h3 </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">card-title</span><span class="synt-c0c5ce">&quot;&gt;Accessible&lt;/</span><span class="synt-bf616a">h3</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">      &lt;</span><span class="synt-bf616a">p</span><span class="synt-c0c5ce">&gt;WCAG 2.2 conformant agad mula sa kahon.&lt;/</span><span class="synt-bf616a">p</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">    &lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;/</span><span class="synt-bf616a">article</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">article </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">card flex-1</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">card-content</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">      &lt;</span><span class="synt-bf616a">h3 </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">card-title</span><span class="synt-c0c5ce">&quot;&gt;Modular&lt;/</span><span class="synt-bf616a">h3</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">      &lt;</span><span class="synt-bf616a">p</span><span class="synt-c0c5ce">&gt;Cascade-layered para sa madaling override.&lt;/</span><span class="synt-bf616a">p</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">    &lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;/</span><span class="synt-bf616a">article</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">section</span><span class="synt-c0c5ce">&gt;
-</span></pre>
-</code></pre>
-<section class="row" aria-labelledby="cards">
-  <article class="card flex-1">
-    <div class="card-content">
-      <h3 class="card-title">Magaan</h3>
-      <p>38.8&nbsp;KB minified, 7.7&nbsp;KB gzipped.</p>
-    </div>
-  </article>
-  <article class="card flex-1">
-    <div class="card-content">
-      <h3 class="card-title">Accessible</h3>
-      <p>WCAG&nbsp;2.2 conformant agad mula sa kahon.</p>
-    </div>
-  </article>
-  <article class="card flex-1">
-    <div class="card-content">
-      <h3 class="card-title">Modular</h3>
-      <p>Cascade-layered para sa madaling override.</p>
-    </div>
-  </article>
-</section>
-<blockquote>
-<p><strong>Tala sa aksesibilidad.</strong> Balutin ang bawat card sa isang semantic na landmark
-(<code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>) at simulan ang nilalaman nito ng heading
-(<code>&lt;h3&gt;</code>). Ang mga gumagamit ng screen reader ay maaaring mag-traverse sa listahan ng card bilang
-first-class na navigable region.</p>
-</blockquote>
-<hr class="hr-text" data-content="Mga Form">
-<h2 id="forms">Mga Form</h2>
-<p>Mga input, label, at grouping para sa pagkolekta ng data ng gumagamit.</p>
-<h3 id="form-fields">Mga field ng form</h3>
-<p>Mga label, text input, textarea, fieldset at legend — lahat ay naka-size nang
-pare-pareho sa natitirang bahagi ng design system.</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">form</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">label </span><span class="synt-d08770">for</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">name</span><span class="synt-c0c5ce">&quot;&gt;Pangalan&lt;/</span><span class="synt-bf616a">label</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">input </span><span class="synt-8fa1b3">id</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">name</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">type</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">text</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">required</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">label </span><span class="synt-d08770">for</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">email</span><span class="synt-c0c5ce">&quot;&gt;Email&lt;/</span><span class="synt-bf616a">label</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">input </span><span class="synt-8fa1b3">id</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">email</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">type</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">email</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">required class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">input-primary</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">label </span><span class="synt-d08770">for</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">msg</span><span class="synt-c0c5ce">&quot;&gt;Mensahe&lt;/</span><span class="synt-bf616a">label</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">textarea </span><span class="synt-8fa1b3">id</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">msg</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">rows</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">4</span><span class="synt-c0c5ce">&quot;&gt;&lt;/</span><span class="synt-bf616a">textarea</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">button </span><span class="synt-d08770">type</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">submit</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">button primary</span><span class="synt-c0c5ce">&quot;&gt;Ipadala&lt;/</span><span class="synt-bf616a">button</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">form</span><span class="synt-c0c5ce">&gt;
-</span></pre>
-</code></pre>
-<section aria-labelledby="form-fields">
-<div role="group" aria-label="Form fields demo">
-  <label for="demo-name">Pangalan</label>
-  <input id="demo-name" type="text">
-<p><label for="demo-email">Email</label>
-<input id="demo-email" type="email" class="input-primary"></p>
-<p><label for="demo-msg">Mensahe</label></p>
-  <textarea id="demo-msg" rows="4"></textarea>
-  <p><button type="button" class="button primary">Ipadala (demo)</button></p>
-</div>
-</section>
-<blockquote>
-<p><strong>Tala sa aksesibilidad.</strong> Bawat input ay dapat may programmatically
-na naka-associate na <code>&lt;label for=&quot;…&quot;&gt;</code>. I-grupo ang mga magkakaugnay na kontrol sa loob ng isang
-<code>&lt;fieldset&gt;</code> na may <code>&lt;legend&gt;</code>. Markahan ang mga required field ng
-<code>required</code> (at isang nakikitang asterisk sa label text).</p>
-</blockquote>
-<hr class="hr-text" data-content="Layout">
-<h2 id="layout">Layout</h2>
-<p>Mga structural na primitive — grid, container, header — na nagba-frame sa
-buong pahina.</p>
-<h3 id="grid">Grid</h3>
-<p>Isang responsive na <code>flex-N</code> grid (1 → 12 column) na binuo sa flexbox. Ang
-<code>.row</code> na parent ay awtomatikong nagga-gap at nagra-wrap.</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">row</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">flex-6</span><span class="synt-c0c5ce">&quot;&gt;Kalahati&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">flex-6</span><span class="synt-c0c5ce">&quot;&gt;Kalahati&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">row</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">flex-4</span><span class="synt-c0c5ce">&quot;&gt;Katlo&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">flex-4</span><span class="synt-c0c5ce">&quot;&gt;Katlo&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">div </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">flex-4</span><span class="synt-c0c5ce">&quot;&gt;Katlo&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">div</span><span class="synt-c0c5ce">&gt;
-</span></pre>
-</code></pre>
-<section aria-labelledby="grid">
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;">
-  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Kalahati</div>
-  <div style="flex:1 1 0;padding:.75rem;background:#e4e4e7;border-radius:.25rem;text-align:center;">Kalahati</div>
-</div>
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem;">
-  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Katlo</div>
-  <div style="flex:1 1 0;padding:.75rem;background:#e4e4e7;border-radius:.25rem;text-align:center;">Katlo</div>
-  <div style="flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;">Katlo</div>
-</div>
-</section>
-<blockquote>
-<p><strong>Tala sa aksesibilidad.</strong> Ang visual na pagkakasunod-sunod ay dapat tumugma sa DOM order. Iwasan
-ang pag-reorder ng mga row gamit ang <code>flex-direction: row-reverse</code> o <code>order:</code> —
-ang mga screen reader at keyboard user ay sumusunod sa source, hindi sa paint.</p>
-</blockquote>
-<h3 id="header">Header &amp; hamburger nav</h3>
-<p>Isang kumpletong CSS-only na header na may responsive na hamburger toggle. <strong>Walang
-JavaScript.</strong> Kopyahin ang snippet sa ibaba sa isang bagong HTML page na
-naka-load na ng <code>skeletonic.min.css</code> at ang menu ay magco-collapse, mag-e-expand,
-at mag-ta-trap ng focus nang tama nang mag-isa.</p>
-<pre class="highlight language-html"><code class="language-html" data-lang="html"><pre tabindex="0" style="background-color:#0d1117;">
-<span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">style</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-b48ead">  </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header</span><span class="synt-c0c5ce">{position:relative;display:flex;align-items:center;gap:</span><span class="synt-d08770">1rem</span><span class="synt-c0c5ce">;padding:</span><span class="synt-d08770">.75rem 1rem</span><span class="synt-c0c5ce">;border:</span><span class="synt-d08770">1px </span><span class="synt-c0c5ce">solid </span><span class="synt-96b5b4">#e4e4e7</span><span class="synt-c0c5ce">;border-radius:</span><span class="synt-d08770">.5rem</span><span class="synt-c0c5ce">;background:</span><span class="synt-96b5b4">#fff</span><span class="synt-c0c5ce">;}
-</span><span class="synt-b48ead">  </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-brand</span><span class="synt-c0c5ce">{font-weight:</span><span class="synt-d08770">600</span><span class="synt-c0c5ce">;color:</span><span class="synt-96b5b4">#0a0a0a</span><span class="synt-c0c5ce">;text-decoration:none;}
-</span><span class="synt-b48ead">  </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-toggle</span><span class="synt-c0c5ce">{position:absolute;left:</span><span class="synt-d08770">-9999px</span><span class="synt-c0c5ce">;}
-</span><span class="synt-b48ead">  </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-burger</span><span class="synt-c0c5ce">{display:none;margin-left:auto;cursor:pointer;padding:</span><span class="synt-d08770">.625rem .75rem</span><span class="synt-c0c5ce">;border:</span><span class="synt-d08770">1px </span><span class="synt-c0c5ce">solid </span><span class="synt-96b5b4">#e4e4e7</span><span class="synt-c0c5ce">;border-radius:</span><span class="synt-d08770">.375rem</span><span class="synt-c0c5ce">;font-size:</span><span class="synt-d08770">1.125rem</span><span class="synt-c0c5ce">;line-height:</span><span class="synt-d08770">1</span><span class="synt-c0c5ce">;min-width:</span><span class="synt-d08770">2.75rem</span><span class="synt-c0c5ce">;min-height:</span><span class="synt-d08770">2.75rem</span><span class="synt-c0c5ce">;}
-</span><span class="synt-b48ead">  </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-burger</span><span class="synt-8fa1b3">:</span><span class="synt-b48ead">focus-within,</span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-toggle</span><span class="synt-8fa1b3">:</span><span class="synt-b48ead">focus-visible+</span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-burger</span><span class="synt-c0c5ce">{outline:</span><span class="synt-d08770">2px </span><span class="synt-c0c5ce">solid </span><span class="synt-96b5b4">hsl</span><span class="synt-c0c5ce">(</span><span class="synt-d08770">210</span><span class="synt-c0c5ce">,</span><span class="synt-d08770">100%</span><span class="synt-c0c5ce">,</span><span class="synt-d08770">42%</span><span class="synt-c0c5ce">);outline-offset:</span><span class="synt-d08770">2px</span><span class="synt-c0c5ce">;}
-</span><span class="synt-b48ead">  </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-menu</span><span class="synt-c0c5ce">{list-style:none;display:flex;gap:</span><span class="synt-d08770">.25rem</span><span class="synt-c0c5ce">;margin:</span><span class="synt-d08770">0 0 0 </span><span class="synt-c0c5ce">auto;padding:</span><span class="synt-d08770">0</span><span class="synt-c0c5ce">;}
-</span><span class="synt-b48ead">  </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-menu </span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">{display:inline-flex;align-items:center;min-height:</span><span class="synt-d08770">2.75rem</span><span class="synt-c0c5ce">;padding:</span><span class="synt-d08770">.5rem .875rem</span><span class="synt-c0c5ce">;border-radius:</span><span class="synt-d08770">.375rem</span><span class="synt-c0c5ce">;color:</span><span class="synt-96b5b4">#1a1a1a</span><span class="synt-c0c5ce">;text-decoration:none;}
-</span><span class="synt-b48ead">  </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-menu </span><span class="synt-bf616a">a</span><span class="synt-8fa1b3">:</span><span class="synt-b48ead">hover</span><span class="synt-c0c5ce">{background:</span><span class="synt-96b5b4">#f4f4f5</span><span class="synt-c0c5ce">;}
-</span><span class="synt-c0c5ce">  </span><span class="synt-b48ead">@media </span><span class="synt-c0c5ce">(max-width:</span><span class="synt-d08770">640px</span><span class="synt-c0c5ce">){
-</span><span class="synt-b48ead">    </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-burger</span><span class="synt-c0c5ce">{display:inline-flex;align-items:center;justify-content:center;}
-</span><span class="synt-b48ead">    </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-menu</span><span class="synt-c0c5ce">{display:none;flex-direction:column;gap:</span><span class="synt-d08770">0</span><span class="synt-c0c5ce">;position:absolute;top:</span><span class="synt-96b5b4">calc</span><span class="synt-c0c5ce">(</span><span class="synt-d08770">100% </span><span class="synt-c0c5ce">+ </span><span class="synt-d08770">.25rem</span><span class="synt-c0c5ce">);left:</span><span class="synt-d08770">0</span><span class="synt-c0c5ce">;right:</span><span class="synt-d08770">0</span><span class="synt-c0c5ce">;background:</span><span class="synt-96b5b4">#fff</span><span class="synt-c0c5ce">;border:</span><span class="synt-d08770">1px </span><span class="synt-c0c5ce">solid </span><span class="synt-96b5b4">#e4e4e7</span><span class="synt-c0c5ce">;border-radius:</span><span class="synt-d08770">.5rem</span><span class="synt-c0c5ce">;padding:</span><span class="synt-d08770">.375rem</span><span class="synt-c0c5ce">;box-shadow:</span><span class="synt-d08770">0 4px 24px </span><span class="synt-96b5b4">rgba</span><span class="synt-c0c5ce">(</span><span class="synt-d08770">0</span><span class="synt-c0c5ce">,</span><span class="synt-d08770">0</span><span class="synt-c0c5ce">,</span><span class="synt-d08770">0</span><span class="synt-c0c5ce">,</span><span class="synt-d08770">.08</span><span class="synt-c0c5ce">);z-index:</span><span class="synt-d08770">10</span><span class="synt-c0c5ce">;}
-</span><span class="synt-b48ead">    </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-menu </span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">{padding:</span><span class="synt-d08770">.75rem 1rem</span><span class="synt-c0c5ce">;border-bottom:</span><span class="synt-d08770">1px </span><span class="synt-c0c5ce">solid </span><span class="synt-96b5b4">#f4f4f5</span><span class="synt-c0c5ce">;}
-</span><span class="synt-b48ead">    </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-menu </span><span class="synt-bf616a">li</span><span class="synt-8fa1b3">:</span><span class="synt-b48ead">last-child </span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">{border-bottom:</span><span class="synt-d08770">0</span><span class="synt-c0c5ce">;}
-</span><span class="synt-b48ead">    </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-header </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-toggle</span><span class="synt-8fa1b3">:</span><span class="synt-b48ead">checked ~ </span><span class="synt-8fa1b3">.</span><span class="synt-d08770">sk-menu</span><span class="synt-c0c5ce">{display:flex;}
-</span><span class="synt-c0c5ce">  }
-</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">style</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;</span><span class="synt-bf616a">header </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">sk-header</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">sk-brand</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot;&gt;Brand&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">input </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">sk-toggle</span><span class="synt-c0c5ce">&quot; </span><span class="synt-8fa1b3">id</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">sk-nav-toggle</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">type</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">checkbox</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">aria-label</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">I-toggle ang nabigasyon</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">label </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">sk-burger</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">for</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">sk-nav-toggle</span><span class="synt-c0c5ce">&quot; </span><span class="synt-d08770">aria-hidden</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">true</span><span class="synt-c0c5ce">&quot;&gt;☰&lt;/</span><span class="synt-bf616a">label</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;</span><span class="synt-bf616a">ul </span><span class="synt-d08770">class</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">sk-menu</span><span class="synt-c0c5ce">&quot;&gt;
-</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">li</span><span class="synt-c0c5ce">&gt;&lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot;&gt;Home&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;&lt;/</span><span class="synt-bf616a">li</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">li</span><span class="synt-c0c5ce">&gt;&lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot;&gt;Docs&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;&lt;/</span><span class="synt-bf616a">li</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">li</span><span class="synt-c0c5ce">&gt;&lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot;&gt;Mga Bahagi&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;&lt;/</span><span class="synt-bf616a">li</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">    &lt;</span><span class="synt-bf616a">li</span><span class="synt-c0c5ce">&gt;&lt;</span><span class="synt-bf616a">a </span><span class="synt-d08770">href</span><span class="synt-c0c5ce">=&quot;</span><span class="synt-a3be8c">#</span><span class="synt-c0c5ce">&quot;&gt;Tungkol&lt;/</span><span class="synt-bf616a">a</span><span class="synt-c0c5ce">&gt;&lt;/</span><span class="synt-bf616a">li</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">  &lt;/</span><span class="synt-bf616a">ul</span><span class="synt-c0c5ce">&gt;
-</span><span class="synt-c0c5ce">&lt;/</span><span class="synt-bf616a">header</span><span class="synt-c0c5ce">&gt;
-</span></pre>
-</code></pre>
-<section aria-labelledby="header">
-<style>
+sa sandaling lumabas ito.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr class=&quot;hr-text&quot; data-content=&quot;Surface&quot;&gt;
+&lt;h2 id=&quot;surface&quot;&gt;Surface&lt;/h2&gt;
+&lt;p&gt;Mga container na nagba-frame at naggu-grupo ng magkakaugnay na nilalaman.&lt;/p&gt;
+&lt;h3 id=&quot;cards&quot;&gt;Mga Card&lt;/h3&gt;
+&lt;p&gt;Isang bordered, padded na container para sa isang koherenteng yunit. Ipares sa
+&lt;code&gt;flex-N&lt;/code&gt; grid para sa responsive na card wall.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;pre style=&quot;background-color:#0d1117;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;section &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;row&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;article &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;card flex-1&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;card-content&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;      &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h3 &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;card-title&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Magaan&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h3&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;      &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;38.8 KB minified, 7.7 KB gzipped.&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    &lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;article&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;article &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;card flex-1&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;card-content&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;      &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h3 &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;card-title&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Accessible&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h3&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;      &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;WCAG 2.2 conformant agad mula sa kahon.&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    &lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;article&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;article &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;card flex-1&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;card-content&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;      &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h3 &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;card-title&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Modular&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;h3&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;      &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;Cascade-layered para sa madaling override.&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    &lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;article&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;section&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;section class=&quot;row&quot; aria-labelledby=&quot;cards&quot;&gt;
+  &lt;article class=&quot;card flex-1&quot;&gt;
+    &lt;div class=&quot;card-content&quot;&gt;
+      &lt;h3 class=&quot;card-title&quot;&gt;Magaan&lt;/h3&gt;
+      &lt;p&gt;38.8&nbsp;KB minified, 7.7&nbsp;KB gzipped.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;card flex-1&quot;&gt;
+    &lt;div class=&quot;card-content&quot;&gt;
+      &lt;h3 class=&quot;card-title&quot;&gt;Accessible&lt;/h3&gt;
+      &lt;p&gt;WCAG&nbsp;2.2 conformant agad mula sa kahon.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;card flex-1&quot;&gt;
+    &lt;div class=&quot;card-content&quot;&gt;
+      &lt;h3 class=&quot;card-title&quot;&gt;Modular&lt;/h3&gt;
+      &lt;p&gt;Cascade-layered para sa madaling override.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/section&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tala sa aksesibilidad.&lt;/strong&gt; Balutin ang bawat card sa isang semantic na landmark
+(&lt;code&gt;&lt;article&gt;&lt;/code&gt;, &lt;code&gt;&lt;section&gt;&lt;/code&gt;) at simulan ang nilalaman nito ng heading
+(&lt;code&gt;&lt;h3&gt;&lt;/code&gt;). Ang mga gumagamit ng screen reader ay maaaring mag-traverse sa listahan ng card bilang
+first-class na navigable region.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr class=&quot;hr-text&quot; data-content=&quot;Mga Form&quot;&gt;
+&lt;h2 id=&quot;forms&quot;&gt;Mga Form&lt;/h2&gt;
+&lt;p&gt;Mga input, label, at grouping para sa pagkolekta ng data ng gumagamit.&lt;/p&gt;
+&lt;h3 id=&quot;form-fields&quot;&gt;Mga field ng form&lt;/h3&gt;
+&lt;p&gt;Mga label, text input, textarea, fieldset at legend — lahat ay naka-size nang
+pare-pareho sa natitirang bahagi ng design system.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;pre style=&quot;background-color:#0d1117;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;form&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;label &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Pangalan&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;label&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;input &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;type&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;text&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;required&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;label &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;email&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Email&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;label&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;input &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;email&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;type&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;email&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;required class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;input-primary&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;label &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;msg&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Mensahe&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;label&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;textarea &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;msg&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;rows&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;textarea&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;button &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;type&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;submit&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;button primary&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Ipadala&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;button&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;form&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;section aria-labelledby=&quot;form-fields&quot;&gt;
+&lt;div role=&quot;group&quot; aria-label=&quot;Form fields demo&quot;&gt;
+  &lt;label for=&quot;demo-name&quot;&gt;Pangalan&lt;/label&gt;
+  &lt;input id=&quot;demo-name&quot; type=&quot;text&quot;&gt;
+&lt;p&gt;&lt;label for=&quot;demo-email&quot;&gt;Email&lt;/label&gt;
+&lt;input id=&quot;demo-email&quot; type=&quot;email&quot; class=&quot;input-primary&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label for=&quot;demo-msg&quot;&gt;Mensahe&lt;/label&gt;&lt;/p&gt;
+  &lt;textarea id=&quot;demo-msg&quot; rows=&quot;4&quot;&gt;&lt;/textarea&gt;
+  &lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;button primary&quot;&gt;Ipadala (demo)&lt;/button&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tala sa aksesibilidad.&lt;/strong&gt; Bawat input ay dapat may programmatically
+na naka-associate na &lt;code&gt;&lt;label for=&quot;…&quot;&gt;&lt;/code&gt;. I-grupo ang mga magkakaugnay na kontrol sa loob ng isang
+&lt;code&gt;&lt;fieldset&gt;&lt;/code&gt; na may &lt;code&gt;&lt;legend&gt;&lt;/code&gt;. Markahan ang mga required field ng
+&lt;code&gt;required&lt;/code&gt; (at isang nakikitang asterisk sa label text).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr class=&quot;hr-text&quot; data-content=&quot;Layout&quot;&gt;
+&lt;h2 id=&quot;layout&quot;&gt;Layout&lt;/h2&gt;
+&lt;p&gt;Mga structural na primitive — grid, container, header — na nagba-frame sa
+buong pahina.&lt;/p&gt;
+&lt;h3 id=&quot;grid&quot;&gt;Grid&lt;/h3&gt;
+&lt;p&gt;Isang responsive na &lt;code&gt;flex-N&lt;/code&gt; grid (1 → 12 column) na binuo sa flexbox. Ang
+&lt;code&gt;.row&lt;/code&gt; na parent ay awtomatikong nagga-gap at nagra-wrap.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;pre style=&quot;background-color:#0d1117;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;row&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;flex-6&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Kalahati&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;flex-6&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Kalahati&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;row&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;flex-4&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Katlo&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;flex-4&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Katlo&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;flex-4&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Katlo&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;section aria-labelledby=&quot;grid&quot;&gt;
+&lt;div style=&quot;display:flex;flex-wrap:wrap;gap:.5rem;&quot;&gt;
+  &lt;div style=&quot;flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;&quot;&gt;Kalahati&lt;/div&gt;
+  &lt;div style=&quot;flex:1 1 0;padding:.75rem;background:#e4e4e7;border-radius:.25rem;text-align:center;&quot;&gt;Kalahati&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style=&quot;display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem;&quot;&gt;
+  &lt;div style=&quot;flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;&quot;&gt;Katlo&lt;/div&gt;
+  &lt;div style=&quot;flex:1 1 0;padding:.75rem;background:#e4e4e7;border-radius:.25rem;text-align:center;&quot;&gt;Katlo&lt;/div&gt;
+  &lt;div style=&quot;flex:1 1 0;padding:.75rem;background:#f4f4f5;border-radius:.25rem;text-align:center;&quot;&gt;Katlo&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tala sa aksesibilidad.&lt;/strong&gt; Ang visual na pagkakasunod-sunod ay dapat tumugma sa DOM order. Iwasan
+ang pag-reorder ng mga row gamit ang &lt;code&gt;flex-direction: row-reverse&lt;/code&gt; o &lt;code&gt;order:&lt;/code&gt; —
+ang mga screen reader at keyboard user ay sumusunod sa source, hindi sa paint.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;header&quot;&gt;Header &amp; hamburger nav&lt;/h3&gt;
+&lt;p&gt;Isang kumpletong CSS-only na header na may responsive na hamburger toggle. &lt;strong&gt;Walang
+JavaScript.&lt;/strong&gt; Kopyahin ang snippet sa ibaba sa isang bagong HTML page na
+naka-load na ng &lt;code&gt;skeletonic.min.css&lt;/code&gt; at ang menu ay magco-collapse, mag-e-expand,
+at mag-ta-trap ng focus nang tama nang mag-isa.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;pre style=&quot;background-color:#0d1117;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;style&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{position:relative;display:flex;align-items:center;gap:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;padding:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.75rem 1rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;border:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1px &lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;solid &lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;#e4e4e7&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;border-radius:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.5rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;background:&lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;#fff&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-brand&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{font-weight:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;600&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;color:&lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;#0a0a0a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;text-decoration:none;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-toggle&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{position:absolute;left:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;-9999px&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-burger&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{display:none;margin-left:auto;cursor:pointer;padding:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.625rem .75rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;border:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1px &lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;solid &lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;#e4e4e7&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;border-radius:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.375rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;font-size:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.125rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;line-height:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;min-width:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2.75rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;min-height:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2.75rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-burger&lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;focus-within,&lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-toggle&lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;focus-visible+&lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-burger&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{outline:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2px &lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;solid &lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;hsl&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;210&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;100%&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;42%&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;);outline-offset:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2px&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-menu&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{list-style:none;display:flex;gap:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.25rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;margin:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0 0 0 &lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;auto;padding:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-menu &lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{display:inline-flex;align-items:center;min-height:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2.75rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;padding:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.5rem .875rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;border-radius:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.375rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;color:&lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;#1a1a1a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;text-decoration:none;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-menu &lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;hover&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{background:&lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;#f4f4f5&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;}
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@media &lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(max-width:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;640px&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;){
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-burger&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{display:inline-flex;align-items:center;justify-content:center;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-menu&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{display:none;flex-direction:column;gap:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;position:absolute;top:&lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;calc&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;100% &lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;+ &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.25rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;);left:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;right:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;background:&lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;#fff&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;border:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1px &lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;solid &lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;#e4e4e7&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;border-radius:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.5rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;padding:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.375rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;box-shadow:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0 4px 24px &lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;rgba&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.08&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;);z-index:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-menu &lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{padding:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;.75rem 1rem&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;border-bottom:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1px &lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;solid &lt;/span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;#f4f4f5&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-menu &lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;li&lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;last-child &lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{border-bottom:&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;}
+&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-header &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-toggle&lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;checked ~ &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;sk-menu&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{display:flex;}
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  }
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;style&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;header &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sk-header&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sk-brand&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Brand&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;input &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sk-toggle&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sk-nav-toggle&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;type&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;checkbox&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;aria-label&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;I-toggle ang nabigasyon&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;label &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sk-burger&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sk-nav-toggle&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot; &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;aria-hidden&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;true&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;☰&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;label&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ul &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sk-menu&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;li&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Home&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;li&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;li&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Docs&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;li&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;li&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Mga Bahagi&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;li&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    &lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;li&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;&lt;&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&quot;&lt;/span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&quot;&gt;Tungkol&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;li&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;  &lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ul&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&lt;/&lt;/span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;header&lt;/span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&gt;
+&lt;/span&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;section aria-labelledby=&quot;header&quot;&gt;
+&lt;style&gt;
   .sk-header{position:relative;display:flex;align-items:center;gap:1rem;padding:.75rem 1rem;border:1px solid #e4e4e7;border-radius:.5rem;background:#fff;}
   .sk-header .sk-brand{font-weight:600;color:#0a0a0a;text-decoration:none;}
   .sk-header .sk-toggle{position:absolute;left:-9999px;}
@@ -615,140 +297,81 @@ at mag-ta-trap ng focus nang tama nang mag-isa.</p>
     .sk-header .sk-menu li:last-child a{border-bottom:0;}
     .sk-header .sk-toggle:checked ~ .sk-menu{display:flex;}
   }
-</style>
-<header class="sk-header">
-  <a class="sk-brand" href="#">Brand</a>
-  <input class="sk-toggle" id="sk-nav-toggle" type="checkbox" aria-label="I-toggle ang nabigasyon">
-  <label class="sk-burger" for="sk-nav-toggle" aria-hidden="true">☰</label>
-  <ul class="sk-menu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Docs</a></li>
-    <li><a href="#">Mga Bahagi</a></li>
-    <li><a href="#">Tungkol</a></li>
-  </ul>
-</header>
-</section>
-<blockquote>
-<p><strong>Tala sa aksesibilidad.</strong> Ang nakatagong checkbox ay nananatili sa tab order
-kaya ang mga keyboard user ay maaaring buksan ang menu gamit ang <code>Space</code> o <code>Enter</code>. Ang
-<code>&lt;label&gt;</code> ay may <code>aria-hidden</code> dahil ang checkbox mismo ang
+&lt;/style&gt;
+&lt;header class=&quot;sk-header&quot;&gt;
+  &lt;a class=&quot;sk-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+  &lt;input class=&quot;sk-toggle&quot; id=&quot;sk-nav-toggle&quot; type=&quot;checkbox&quot; aria-label=&quot;I-toggle ang nabigasyon&quot;&gt;
+  &lt;label class=&quot;sk-burger&quot; for=&quot;sk-nav-toggle&quot; aria-hidden=&quot;true&quot;&gt;☰&lt;/label&gt;
+  &lt;ul class=&quot;sk-menu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Docs&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mga Bahagi&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tungkol&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/header&gt;
+&lt;/section&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tala sa aksesibilidad.&lt;/strong&gt; Ang nakatagong checkbox ay nananatili sa tab order
+kaya ang mga keyboard user ay maaaring buksan ang menu gamit ang &lt;code&gt;Space&lt;/code&gt; o &lt;code&gt;Enter&lt;/code&gt;. Ang
+&lt;code&gt;&lt;label&gt;&lt;/code&gt; ay may &lt;code&gt;aria-hidden&lt;/code&gt; dahil ang checkbox mismo ang
 accessible name source. I-resize ang window sa ibaba ng 640 px upang makita
-ang burger toggle na pumalit.</p>
-</blockquote>
-<p><a href="/fil/aksesibilidad/">Tingnan ang buong a11y na tala →</a> · <a href="/fil/mga-paleta/">Tingnan ang mga paleta →</a></p>
-<script type="application/ld+json">
+ang burger toggle na pumalit.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;/fil/aksesibilidad/&quot;&gt;Tingnan ang buong a11y na tala →&lt;/a&gt; · &lt;a href=&quot;/fil/mga-paleta/&quot;&gt;Tingnan ang mga paleta →&lt;/a&gt;&lt;/p&gt;
+&lt;script type=&quot;application/ld+json&quot;&gt;
 {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Mga component ng Skeletonic Stylus",
-  "description": "Bawat component na kasama sa Skeletonic Stylus v2.0.0.",
-  "itemListOrder": "https://schema.org/ItemListOrderAscending",
-  "numberOfItems": 7,
-  "itemListElement": [
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;ItemList&quot;,
+  &quot;name&quot;: &quot;Mga component ng Skeletonic Stylus&quot;,
+  &quot;description&quot;: &quot;Bawat component na kasama sa Skeletonic Stylus v2.0.0.&quot;,
+  &quot;itemListOrder&quot;: &quot;https://schema.org/ItemListOrderAscending&quot;,
+  &quot;numberOfItems&quot;: 7,
+  &quot;itemListElement&quot;: [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Mga Button",
-      "url": "https://skeletonic.io/fil/mga-bahagi/#buttons"
+      &quot;@type&quot;: &quot;ListItem&quot;,
+      &quot;position&quot;: 1,
+      &quot;name&quot;: &quot;Mga Button&quot;,
+      &quot;url&quot;: &quot;https://skeletonic.io/fil/mga-bahagi/#buttons&quot;
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Mga Badge",
-      "url": "https://skeletonic.io/fil/mga-bahagi/#badges"
+      &quot;@type&quot;: &quot;ListItem&quot;,
+      &quot;position&quot;: 2,
+      &quot;name&quot;: &quot;Mga Badge&quot;,
+      &quot;url&quot;: &quot;https://skeletonic.io/fil/mga-bahagi/#badges&quot;
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Mga Alert",
-      "url": "https://skeletonic.io/fil/mga-bahagi/#alerts"
+      &quot;@type&quot;: &quot;ListItem&quot;,
+      &quot;position&quot;: 3,
+      &quot;name&quot;: &quot;Mga Alert&quot;,
+      &quot;url&quot;: &quot;https://skeletonic.io/fil/mga-bahagi/#alerts&quot;
     },
     {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "Mga Card",
-      "url": "https://skeletonic.io/fil/mga-bahagi/#cards"
+      &quot;@type&quot;: &quot;ListItem&quot;,
+      &quot;position&quot;: 4,
+      &quot;name&quot;: &quot;Mga Card&quot;,
+      &quot;url&quot;: &quot;https://skeletonic.io/fil/mga-bahagi/#cards&quot;
     },
     {
-      "@type": "ListItem",
-      "position": 5,
-      "name": "Mga field ng form",
-      "url": "https://skeletonic.io/fil/mga-bahagi/#form-fields"
+      &quot;@type&quot;: &quot;ListItem&quot;,
+      &quot;position&quot;: 5,
+      &quot;name&quot;: &quot;Mga field ng form&quot;,
+      &quot;url&quot;: &quot;https://skeletonic.io/fil/mga-bahagi/#form-fields&quot;
     },
     {
-      "@type": "ListItem",
-      "position": 6,
-      "name": "Grid",
-      "url": "https://skeletonic.io/fil/mga-bahagi/#grid"
+      &quot;@type&quot;: &quot;ListItem&quot;,
+      &quot;position&quot;: 6,
+      &quot;name&quot;: &quot;Grid&quot;,
+      &quot;url&quot;: &quot;https://skeletonic.io/fil/mga-bahagi/#grid&quot;
     },
     {
-      "@type": "ListItem",
-      "position": 7,
-      "name": "Header & hamburger nav",
-      "url": "https://skeletonic.io/fil/mga-bahagi/#header"
+      &quot;@type&quot;: &quot;ListItem&quot;,
+      &quot;position&quot;: 7,
+      &quot;name&quot;: &quot;Header &amp; hamburger nav&quot;,
+      &quot;url&quot;: &quot;https://skeletonic.io/fil/mga-bahagi/#header&quot;
     }
   ]
 }
-</script>
+&lt;/script&gt;
+&lt;/div&gt;
 
 
-
-      </div>
-    </main>
-
-    <footer aria-label="Site footer" class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-cols">
-          <nav class="footer-col" aria-label="Proyekto">
-            <p class="footer-col-title">Proyekto</p>
-            <ul>
-              <li><a href="&#x2F;fil/tungkol/">Tungkol</a></li>
-              <li><a href="&#x2F;fil/talaan-ng-pagbabago/">Talaan ng Pagbabago</a></li>
-              <li><a href="&#x2F;fil/seguridad/">Seguridad</a></li>
-              <li><a href="&#x2F;fil/mag-ambag/">Mag-ambag</a></li>
-              <li><a rel="noopener noreferrer" href="https://github.com/sebastienrousseau/skeletonic-stylus" target="_blank">GitHub ↗</a></li>
-              <li><a rel="noopener noreferrer" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus" target="_blank">npm ↗</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-col" aria-label="Mga Mapagkukunan">
-            <p class="footer-col-title">Mga Mapagkukunan</p>
-            <ul>
-              <li><a href="&#x2F;fil/mga-paleta/">Mga Paleta</a></li>
-              <li><a href="&#x2F;fil/mga-animasyon/">Mga Animasyon</a></li>
-              <li><a href="&#x2F;fil/aksesibilidad/">Aksesibilidad</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-col" aria-label="Legal">
-            <p class="footer-col-title">Legal</p>
-            <ul>
-              <li><a href="&#x2F;fil/pagkapribado/">Pagkapribado</a></li>
-              <li><a href="&#x2F;fil/mga-tuntunin/">Mga Tuntunin</a></li>
-              <li><a href="&#x2F;fil/makipag-ugnayan/">Makipag-ugnayan</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-bar">
-          Copyright © 2021 – 2026 Skeletonic CSS. Lahat ng karapatan ay nakalaan.
-        </div>
-      </div>
-    </footer>
-
-    <div aria-label="Maghanap" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
-      <div class="search-box">
-        <input aria-label="Maghanap" placeholder="Maghanap sa dokumentasyon..." autocomplete="off" class="search-input" id="searchInput" type="search">
-        <div class="search-results" id="searchResults"></div>
-        <div class="search-footer">
-          <span><kbd>↑</kbd> <kbd>↓</kbd> Mag-navigate</span>
-          <span><kbd>↵</kbd> Buksan</span>
-          <span><kbd>Esc</kbd> Isara</span>
-        </div>
-      </div>
-    </div>
-
-    <script src="/js/main.js" defer></script>
-  
-
-
-
-</body>
-</html>

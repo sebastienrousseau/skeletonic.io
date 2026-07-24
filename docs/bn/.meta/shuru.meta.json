@@ -1,12 +1,14 @@
 {
-  "description": "npm বা CDN থেকে Skeletonic Stylus ইনস্টল করুন, আপনার Stylus বিল্ডে আমদানি করুন এবং সেকেন্ডে ভেরিয়েবল ওভাররাইড করুন।",
-  "language": "bn",
-  "date": "2026-04-08",
-  "title": "Skeletonic Stylus দিয়ে শুরু করুন",
   "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
   "keywords": "install skeletonic, stylus setup, css cdn, শুরু করুন",
-  "theme_color": "hsl(210, 100%, 42%)",
   "permalink": "https://skeletonic.io/bn/shuru/",
+  "date": "2026-04-08",
+  "description": "npm বা CDN থেকে Skeletonic Stylus ইনস্টল করুন, আপনার Stylus বিল্ডে আমদানি করুন এবং সেকেন্ডে ভেরিয়েবল ওভাররাইড করুন।",
+  "reading_time": 5,
+  "word_count": 1006,
+  "title": "Skeletonic Stylus দিয়ে শুরু করুন",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "bn",
+  "author": "Sebastien Rousseau",
   "layout": "page"
 }

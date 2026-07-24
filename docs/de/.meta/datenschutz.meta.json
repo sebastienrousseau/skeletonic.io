@@ -1,12 +1,14 @@
 {
-  "author": "Sebastien Rousseau",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
   "title": "Datenschutz",
-  "name": "Skeletonic Stylus",
+  "keywords": "datenschutz, dsgvo, cookies, kein tracking",
+  "author": "Sebastien Rousseau",
   "permalink": "https://skeletonic.io/de/datenschutz/",
+  "name": "Skeletonic Stylus",
+  "layout": "page",
   "language": "de",
   "description": "Welche Daten skeletonic.io erhebt, warum, und wie sich die Erhebung deaktivieren laesst.",
-  "keywords": "datenschutz, dsgvo, cookies, kein tracking",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "date": "2026-04-08"
+  "word_count": 192,
+  "reading_time": 1
 }

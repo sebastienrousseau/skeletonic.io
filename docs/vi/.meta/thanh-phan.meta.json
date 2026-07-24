@@ -1,12 +1,14 @@
 {
-  "language": "vi",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
+  "layout": "page",
   "title": "Thanh phan",
   "name": "Skeletonic Stylus",
+  "reading_time": 7,
   "permalink": "https://skeletonic.io/vi/thanh-phan/",
+  "author": "Sebastien Rousseau",
+  "word_count": 1493,
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "thanh phan skeletonic, nut bam, the, bieu mau, canh bao, huy hieu, header, navbar, hamburger css",
   "description": "Vi du HTML truc tiep cua moi thanh phan Skeletonic Stylus, duoc nhom lai, neo va hien thi voi chinh stylesheet dang duoc gioi thieu.",
-  "date": "2026-04-08",
-  "layout": "page"
+  "language": "vi"
 }

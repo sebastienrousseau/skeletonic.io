@@ -1,12 +1,14 @@
 {
-  "description": "skeletonic.io 및 Skeletonic Stylus 라이브러리의 사용을 규율하는 약관입니다.",
-  "permalink": "https://skeletonic.io/ko/iyong-yakgwan/",
-  "title": "이용약관",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "keywords": "이용약관, 라이선스, mit, apache 2",
-  "date": "2026-04-08",
+  "word_count": 138,
+  "language": "ko",
   "layout": "page",
+  "title": "이용약관",
+  "date": "2026-04-08",
+  "keywords": "이용약관, 라이선스, mit, apache 2",
+  "theme_color": "hsl(210, 100%, 42%)",
   "name": "Skeletonic Stylus",
   "author": "Sebastien Rousseau",
-  "language": "ko"
+  "description": "skeletonic.io 및 Skeletonic Stylus 라이브러리의 사용을 규율하는 약관입니다.",
+  "permalink": "https://skeletonic.io/ko/iyong-yakgwan/",
+  "reading_time": 1
 }

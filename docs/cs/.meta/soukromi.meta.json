@@ -1,12 +1,14 @@
 {
+  "reading_time": 1,
+  "layout": "page",
+  "title": "Ochrana soukromi — Skeletonic Stylus",
   "author": "Sebastien Rousseau",
   "date": "2026-04-08",
-  "layout": "page",
   "keywords": "soukromi, gdpr, cookies, bez sledovani",
-  "name": "Skeletonic Stylus",
   "description": "Jake udaje skeletonic.io shromazduje, proc a jak se odhlasit.",
-  "language": "cs",
   "theme_color": "hsl(210, 100%, 42%)",
-  "title": "Ochrana soukromi — Skeletonic Stylus",
+  "name": "Skeletonic Stylus",
+  "language": "cs",
+  "word_count": 195,
   "permalink": "https://skeletonic.io/cs/soukromi/"
 }

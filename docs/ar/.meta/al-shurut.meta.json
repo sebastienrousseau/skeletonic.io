@@ -1,12 +1,14 @@
 {
-  "permalink": "https://skeletonic.io/ar/al-shurut/",
-  "keywords": "شروط الاستخدام, ترخيص, mit, apache 2",
+  "word_count": 160,
   "description": "الشروط التي تحكم استخدامك لـ skeletonic.io ومكتبة Skeletonic Stylus.",
+  "author": "Sebastien Rousseau",
+  "reading_time": 1,
+  "keywords": "شروط الاستخدام, ترخيص, mit, apache 2",
   "language": "ar",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
   "title": "شروط الاستخدام",
   "layout": "page",
-  "name": "Skeletonic Stylus",
-  "date": "2026-04-08",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)"
+  "permalink": "https://skeletonic.io/ar/al-shurut/",
+  "name": "Skeletonic Stylus"
 }

@@ -1,554 +1,184 @@
-<!DOCTYPE html>
-<html lang="bn" itemscope itemtype="https://schema.org/WebSite">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Skeletonic Stylus সম্পর্কে</title>
-
-    
-    
-    
-    <meta name="generator" content="Shokunin (ssg) v0.0.34">
-    <meta name="theme-color" content="hsl(210, 100%, 42%)" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-    <meta name="color-scheme" content="light dark">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <!-- View Transitions API opt-in: same-origin navigations get a
-         native cross-document transition. The matching CSS rule
-         (@view-transition { navigation: auto }) lives in chrome.css
-         and is automatically gated by prefers-reduced-motion. -->
-    <meta name="view-transition" content="same-origin">
-    <!-- frame-ancestors is intentionally absent: it's ignored when
-         delivered via <meta>, must come from a real HTTP header. The
-         GitHub Pages deployment can't set custom headers, so we lean
-         on the X-Frame-Options equivalent that the platform ships
-         and on the meta-supported directives below.
-
-         The two `'sha256-…'` entries pin the SSG-injected inline
-         scripts that bootstrap the search widget and the on-page
-         live-reload watchdog. They're emitted verbatim by shokunin
-         v0.0.34 and don't change between builds — if the SSG ever
-         changes them we'll see the CSP error in the browser console
-         and update the hashes. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-17soeDd5BlxnCjVgXiiVa0qeL9AjbdNoumZFvFYorUY=' 'sha256-wFhC3h5v8HV3XlvWx+CBT3s2K8tk2MMtUFkQYSfLcAk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cloudcdn.pro; font-src 'self'; connect-src 'self' https://cdn.jsdelivr.net; form-action 'self' https://formspree.io https://codepen.io; base-uri 'self'">
-    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard">
-
-    <link rel="canonical" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;bn&#x2F;">
-    <link rel="preload" href="/css/skeletonic.min.css" as="style">
-    <link rel="preload" href="/css/chrome.css" as="style"><link rel="icon" type="image/svg+xml" href="/images/logo.svg">
-    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/images/favicon.ico">
-    <link rel="manifest" href="/manifest.webmanifest"><link rel="alternate" hreflang="x-default" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
-    <link rel="alternate" hreflang="en" href="https:&#x2F;&#x2F;skeletonic.io&#x2F;">
-    <link rel="alternate" hreflang="fr" href="https:&#x2F;&#x2F;skeletonic.io/fr&#x2F;">
-    <link rel="alternate" hreflang="de" href="https:&#x2F;&#x2F;skeletonic.io/de&#x2F;">
-    <link rel="alternate" hreflang="ar" href="https:&#x2F;&#x2F;skeletonic.io/ar&#x2F;">
-    <link rel="alternate" hreflang="bn" href="https:&#x2F;&#x2F;skeletonic.io/bn&#x2F;">
-    <link rel="alternate" hreflang="cs" href="https:&#x2F;&#x2F;skeletonic.io/cs&#x2F;">
-    <link rel="alternate" hreflang="es" href="https:&#x2F;&#x2F;skeletonic.io/es&#x2F;">
-    <link rel="alternate" hreflang="fil" href="https:&#x2F;&#x2F;skeletonic.io/fil&#x2F;">
-    <link rel="alternate" hreflang="ha" href="https:&#x2F;&#x2F;skeletonic.io/ha&#x2F;">
-    <link rel="alternate" hreflang="he" href="https:&#x2F;&#x2F;skeletonic.io/he&#x2F;">
-    <link rel="alternate" hreflang="hi" href="https:&#x2F;&#x2F;skeletonic.io/hi&#x2F;">
-    <link rel="alternate" hreflang="id" href="https:&#x2F;&#x2F;skeletonic.io/id&#x2F;">
-    <link rel="alternate" hreflang="it" href="https:&#x2F;&#x2F;skeletonic.io/it&#x2F;">
-    <link rel="alternate" hreflang="ja" href="https:&#x2F;&#x2F;skeletonic.io/ja&#x2F;">
-    <link rel="alternate" hreflang="ko" href="https:&#x2F;&#x2F;skeletonic.io/ko&#x2F;">
-    <link rel="alternate" hreflang="nl" href="https:&#x2F;&#x2F;skeletonic.io/nl&#x2F;">
-    <link rel="alternate" hreflang="pl" href="https:&#x2F;&#x2F;skeletonic.io/pl&#x2F;">
-    <link rel="alternate" hreflang="pt-BR" href="https:&#x2F;&#x2F;skeletonic.io/pt-br&#x2F;">
-    <link rel="alternate" hreflang="ro" href="https:&#x2F;&#x2F;skeletonic.io/ro&#x2F;">
-    <link rel="alternate" hreflang="ru" href="https:&#x2F;&#x2F;skeletonic.io/ru&#x2F;">
-    <link rel="alternate" hreflang="sv" href="https:&#x2F;&#x2F;skeletonic.io/sv&#x2F;">
-    <link rel="alternate" hreflang="th" href="https:&#x2F;&#x2F;skeletonic.io/th&#x2F;">
-    <link rel="alternate" hreflang="tr" href="https:&#x2F;&#x2F;skeletonic.io/tr&#x2F;">
-    <link rel="alternate" hreflang="uk" href="https:&#x2F;&#x2F;skeletonic.io/uk&#x2F;">
-    <link rel="alternate" hreflang="vi" href="https:&#x2F;&#x2F;skeletonic.io/vi&#x2F;">
-    <link rel="alternate" hreflang="yo" href="https:&#x2F;&#x2F;skeletonic.io/yo&#x2F;">
-    <link rel="alternate" hreflang="zh-Hans" href="https:&#x2F;&#x2F;skeletonic.io/zh-hans&#x2F;">
-    <link rel="alternate" hreflang="zh-Hant" href="https:&#x2F;&#x2F;skeletonic.io/zh-hant&#x2F;">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Skeletonic Stylus">
-    <meta property="og:title" content="Skeletonic Stylus সম্পর্কে">
-    
-    <meta property="og:url" content="https:&#x2F;&#x2F;skeletonic.io&#x2F;bn&#x2F;">
-    <meta property="og:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
-    <meta property="og:image:type" content="image/svg+xml">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Skeletonic Stylus — accessible, modular CSS library">
-    <meta property="og:locale" content="bn">
-    <meta property="og:locale:alternate" content="ar">
-    <meta property="og:locale:alternate" content="cs">
-    <meta property="og:locale:alternate" content="de">
-    <meta property="og:locale:alternate" content="es">
-    <meta property="og:locale:alternate" content="fil">
-    <meta property="og:locale:alternate" content="fr">
-    <meta property="og:locale:alternate" content="ha">
-    <meta property="og:locale:alternate" content="he">
-    <meta property="og:locale:alternate" content="hi">
-    <meta property="og:locale:alternate" content="id">
-    <meta property="og:locale:alternate" content="it">
-    <meta property="og:locale:alternate" content="ja">
-    <meta property="og:locale:alternate" content="ko">
-    <meta property="og:locale:alternate" content="nl">
-    <meta property="og:locale:alternate" content="pl">
-    <meta property="og:locale:alternate" content="pt_br">
-    <meta property="og:locale:alternate" content="ro">
-    <meta property="og:locale:alternate" content="ru">
-    <meta property="og:locale:alternate" content="sv">
-    <meta property="og:locale:alternate" content="th">
-    <meta property="og:locale:alternate" content="tr">
-    <meta property="og:locale:alternate" content="uk">
-    <meta property="og:locale:alternate" content="vi">
-    <meta property="og:locale:alternate" content="yo">
-    <meta property="og:locale:alternate" content="zh_hans">
-    <meta property="og:locale:alternate" content="zh_hant">
-    <meta property="og:locale:alternate" content="en">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@wwdseb">
-    <meta name="twitter:creator" content="@wwdseb">
-    <meta name="twitter:title" content="Skeletonic Stylus সম্পর্কে">
-    
-    <meta name="twitter:image" content="https:&#x2F;&#x2F;skeletonic.io/images/banner.svg">
-
-    <!-- Critical CSS — inlined by scripts/build-i18n.sh post-build.
-         The build script swaps the placeholder below for the contents
-         of static/css/critical.css so above-the-fold paints in the
-         same frame as the HTML, without waiting for the full
-         chrome + skeletonic bundles. -->
-    <style>:root{color-scheme:light dark;--c-bg:#fff;--c-text:#1d1d1f;--c-heading:#000;--c-secondary:#6e6e73;--c-accent:#0066cc;--c-border:#d2d2d7;--c-nav-bg:rgba(255, 255, 255, 0.8);--c-nav-text:#1d1d1f;--c-nav-muted:#57575b;--c-hero-grad-1:#f5f5f7;--c-hero-grad-2:#fff;--c-hero-grad-3:#fafafa;--fs-base:clamp(1rem, 0.95rem + 0.25vw, 1.125rem);--fs-h1:clamp(2.5rem, 1.5rem + 5vw, 4.5rem);--fs-h2:clamp(2rem, 1.25rem + 3.75vw, 3.5rem);--fs-h3:clamp(1.5rem, 1.125rem + 1.875vw, 2.25rem)}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--c-bg:#000;--c-text:#f5f5f7;--c-heading:#fff;--c-secondary:#a1a1aa;--c-accent:#2997ff;--c-border:#424245;--c-nav-bg:rgba(0, 0, 0, 0.8);--c-nav-text:#f5f5f7;--c-nav-muted:#a1a1aa;--c-hero-grad-1:#1d1d1f;--c-hero-grad-2:#000;--c-hero-grad-3:#0a0a0a}}*{box-sizing:border-box;margin:0}html{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}body{background:var(--c-bg);color:var(--c-text);font-size:var(--fs-base);line-height:1.47;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}.skip-link{position:absolute;inset-inline-start:.5rem;top:-3rem;padding:.6rem 1rem;background:var(--c-accent);color:#fff;text-decoration:none;border-radius:0 0 .25rem .25rem;z-index:1100}.skip-link:focus{top:0}.site-nav{background:var(--c-nav-bg);border-bottom:1px solid var(--c-border);position:sticky;top:0;z-index:1000;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:4rem;display:flex;align-items:center;justify-content:space-between}.nav-brand{font-weight:600;font-size:1.25rem;color:var(--c-heading);letter-spacing:-.02em;text-decoration:none}.nav-center{display:flex;gap:1.5rem;list-style:none;padding:0;margin:0}.nav-center a{color:var(--c-nav-muted);font-size:.875rem;font-weight:500;text-decoration:none}.nav-right{display:flex;align-items:center;gap:1rem}.site-hero{text-align:center;padding:5rem 1.5rem 3rem;background:linear-gradient(180deg,var(--c-hero-grad-1),var(--c-hero-grad-2) 50%,var(--c-hero-grad-3))}.site-hero h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em;color:var(--c-heading);line-height:1.1}.site-hero .hero-title{margin:0 auto .75rem;display:block;width:clamp(120px,20vw,208px);aspect-ratio:1/1;background:url(https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg)center/contain no-repeat;text-indent:-9999px;white-space:nowrap;overflow:hidden;font-size:0;color:transparent}.site-hero p{margin-top:.75rem;max-width:40rem;margin-inline:auto}.hero-logo{width:4.5rem;height:auto;margin:0 auto 1rem}.hero-cta{display:inline-block;padding:.75rem 1.5rem;margin-top:1.5rem;background:var(--c-accent);color:#fff;font-weight:600;border-radius:9999px;text-decoration:none}.site-main{max-width:70rem;margin:0 auto;padding:3rem 1.5rem 5rem}.site-main h1,.site-main h2,.site-main h3,.site-main h4{font-family:inherit;line-height:1.1;color:var(--c-heading);margin:0}.site-main h4{letter-spacing:-.022em}.site-main h1{font-size:var(--fs-h1);font-weight:700;letter-spacing:-.04em}.site-main h2,.site-main h3{font-size:var(--fs-h2);font-weight:600;letter-spacing:-.03em}.site-main h3{font-size:var(--fs-h3);letter-spacing:-.02em}.site-hero p,.site-main p{font-size:var(--fs-base);line-height:1.5;color:var(--c-secondary)}.site-main a:not([class*=button]):not([class*=btn]):not(.badge):not([class*=link-]){color:var(--c-accent);text-decoration:underline;text-underline-offset:.15em}</style>
-
-    <!-- Skeletonic Stylus v2.1.0 + chrome — render-blocking, but
-         the inline critical CSS above already painted above-the-fold,
-         so first paint isn't waiting on these. Async loading via
-         media="print"+onload regressed mobile perf because the
-         critical CSS doesn't cover every above-the-fold element on
-         every page (cards, code blocks); when the full sheet arrives
-         the layout shifts. Keep it render-blocking and rely on the
-         critical-CSS head budget for sub-1s FCP. -->
-    <link rel="stylesheet" href="/css/skeletonic.min.css">
-    
-    
-    <link rel="stylesheet" href="/css/chrome.css">
-
-    <!-- REMOVED: inline <style> moved to static/css/chrome.css -->
-    <!-- Original :root block preserved for reference:
-         --c-accent uses the project's primary palette hsl(210, 100%, 42%).
-    -->
-
-    <!-- BreadcrumbList JSON-LD — emitted on every page for AEO/SGE indexing. -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "হোম",
-          "item": "https://skeletonic.io/bn/"
-        }
-      ]
-    }
-    </script>
-
-    
-    <!-- WebSite JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Skeletonic Stylus সম্পর্কে",
-      "url": "https://skeletonic.io"
-    }
-    </script>
-    
-
-    
-
-    <!-- Organization JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Skeletonic CSS",
-      "url": "https://skeletonic.io",
-      "logo": "https://skeletonic.io/images/logo.svg",
-      "sameAs": [
-        "https://github.com/sebastienrousseau/skeletonic-stylus",
-        "https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus"
-      ]
-    }
-    </script>
-
-    
-  <meta name="description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta property="og:description" content="Translation note (2026-04-30). v2.0.0 adds RTL support and a refreshed 2026 framework comparison. The English source is the canonical reference while these">
-<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<link rel="preconnect" href="https://cloudcdn.pro" crossorigin><link rel="preload" href="https://cloudcdn.pro/skeletonic/v1/logos/skeletonic.svg" as="image" type="image/svg+xml"></head>
-  <body class="page-doc" itemscope itemtype="https://schema.org/WebPage">
-    <a href="#main" class="skip-link">মূল বিষয়বস্তুতে যান</a>
-
-    <nav aria-label="Skeletonic Stylus হোম" class="site-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
-      <div class="nav-inner">
-        <a class="nav-brand" href="&#x2F;bn/" itemprop="url" aria-label="Skeletonic Stylus হোম">
-          <span itemprop="name">Skeletonic Stylus</span>
-        </a>
-        <ul class="nav-center">
-          <li><a href="&#x2F;bn/" class="active" aria-current="page">হোম</a></li>
-          <li><a href="&#x2F;bn/shuru/">ডকুমেন্টেশন</a></li>
-          <li><a href="&#x2F;bn/upadan/">উপাদান</a></li>
-          <li class="dropdown" data-dropdown>
-            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" id="resourcesDropdown">রিসোর্স</button>
-            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-              <li><a class="dropdown-item" href="&#x2F;bn/rong-palat/">রং প্যালেট</a></li>
-              <li><a class="dropdown-item" href="&#x2F;bn/animations/">অ্যানিমেশন</a></li>
-              <li><a class="dropdown-item" href="&#x2F;bn/probeshadhikar/">প্রবেশাধিকার</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="nav-right">
-          <button aria-label="অনুসন্ধান" class="theme-toggle" id="searchTrigger" type="button" style="margin-right:.25rem">
-            <svg viewBox="0 0 24 24" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="16" aria-hidden="true">
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="m21 21-4.35-4.35"></path>
-            </svg>
-            <span class="search-shortcut" aria-hidden="true"></span>
-          </button>
-          <div class="palette-switcher" id="paletteSwitcher">
-            <button type="button" class="theme-toggle" id="paletteToggle" aria-label="Choose colour palette" aria-expanded="false" aria-haspopup="true" aria-controls="paletteMenu">
-              <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 2 2 0 0 0 2-2 2 2 0 0 1 2-2h2a4 4 0 0 0 4-4A10 10 0 0 0 12 2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
-            </button>
-            <div class="palette-menu" id="paletteMenu" role="menu" hidden>
-              <button type="button" class="palette-swatch is-active" role="menuitemradio" aria-checked="true" data-palette="default" style="--swatch:#0066cc">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Default</span>
-              </button>
-              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="ember" style="--swatch:#ed6300">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Ember</span>
-              </button>
-              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="iris" style="--swatch:#8668ff">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Iris</span>
-              </button>
-              <button type="button" class="palette-swatch" role="menuitemradio" aria-checked="false" data-palette="lagoon" style="--swatch:#00a1b3">
-                <span class="palette-dot" aria-hidden="true"></span>
-                <span class="palette-name">Lagoon</span>
-              </button>
-            </div>
-          </div>
-          <button aria-label="ডার্ক মোডে পরিবর্তন করুন" class="theme-toggle" id="themeToggle" type="button" data-label-dark="ডার্ক" data-label-light="লাইট" data-aria-dark="ডার্ক মোডে পরিবর্তন করুন" data-aria-light="লাইট মোডে পরিবর্তন করুন">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-dark">
-              <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
-            </svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="theme-icon-light">
-              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm11.394-5.834a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM18 12a.75.75 0 01.75-.75H21a.75.75 0 010 1.5h-2.25A.75.75 0 0118 12zm-.303 5.243a.75.75 0 011.06 1.06l-1.59 1.591a.75.75 0 01-1.061-1.06l1.59-1.591z"></path>
-            </svg>
-            <span class="theme-label">ডার্ক</span>
-          </button>
-          <div class="lang-switcher">
-            <button type="button" aria-label="BN, ভাষা পরিবর্তন করুন" aria-expanded="false">
-              <span>🌐</span> BN
-            </button>
-            <div class="lang-menu">
-              <div class="lang-menu-grid">
-              <a href="&#x2F;">🇬🇧 English</a>
-              <a href="/fr&#x2F;">🇫🇷 Français</a>
-              <a href="/ar&#x2F;">🇸🇦 العربية</a>
-              <a class="active" href="/bn&#x2F;">🇧🇩 বাংলা</a>
-              <a href="/cs&#x2F;">🇨🇿 Čeština</a>
-              <a href="/de&#x2F;">🇩🇪 Deutsch</a>
-              <a href="/es&#x2F;">🇪🇸 Español</a>
-              <a href="/fil&#x2F;">🇵🇭 Filipino</a>
-              <a href="/ha&#x2F;">🇳🇬 Hausa</a>
-              <a href="/he&#x2F;">🇮🇱 עברית</a>
-              <a href="/hi&#x2F;">🇮🇳 हिन्दी</a>
-              <a href="/id&#x2F;">🇮🇩 Indonesia</a>
-              <a href="/it&#x2F;">🇮🇹 Italiano</a>
-              <a href="/ja&#x2F;">🇯🇵 日本語</a>
-              <a href="/ko&#x2F;">🇰🇷 한국어</a>
-              <a href="/nl&#x2F;">🇳🇱 Nederlands</a>
-              <a href="/pl&#x2F;">🇵🇱 Polski</a>
-              <a href="/pt-br&#x2F;">🇧🇷 Português</a>
-              <a href="/ro&#x2F;">🇷🇴 Română</a>
-              <a href="/ru&#x2F;">🇷🇺 Русский</a>
-              <a href="/sv&#x2F;">🇸🇪 Svenska</a>
-              <a href="/th&#x2F;">🇹🇭 ไทย</a>
-              <a href="/tr&#x2F;">🇹🇷 Türkçe</a>
-              <a href="/uk&#x2F;">🇺🇦 Українська</a>
-              <a href="/vi&#x2F;">🇻🇳 Tiếng Việt</a>
-              <a href="/yo&#x2F;">🇳🇬 Yorùbá</a>
-              <a href="/zh-hans&#x2F;">🇨🇳 简体中文</a>
-              <a href="/zh-hant&#x2F;">🇹🇼 繁體中文</a>
-              </div>
-            </div>
-          </div>
-          <a class="nav-cta" href="&#x2F;bn/jogajog/">যোগাযোগ</a>
-        </div>
-        <button aria-label="মেনু টগল করুন" class="nav-hamburger" id="navToggle" type="button">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
-
-    
-<header class="site-hero">
-  <h1 class="hero-title">Skeletonic Stylus</h1>
-  
-</header>
-
-
-    <main aria-label="Page content" class="site-main" id="main" tabindex="-1">
-      <div class="text-start">
-        
-<blockquote>
-<p><strong>Translation note (2026-04-30).</strong> v2.0.0 adds RTL support and a refreshed
+&lt;div lang=&quot;en&quot;&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Translation note (2026-04-30).&lt;/strong&gt; v2.0.0 adds RTL support and a refreshed
 2026 framework comparison. The English source is the canonical reference
-while these translations catch up. See <a href="https://skeletonic.io/about/">https://skeletonic.io/about/</a> ·
-<a href="https://skeletonic.io/components/">https://skeletonic.io/components/</a> · <a href="https://skeletonic.io/benchmarks/">https://skeletonic.io/benchmarks/</a>.</p>
-</blockquote>
-<dl class="stat-strip" aria-label="Project facts">
-  <div><dt>Version</dt><dd>2.0.0</dd></div>
-  <div><dt>Gzip</dt><dd>7.7 KB</dd></div>
-  <div><dt>Brotli</dt><dd>6.7 KB</dd></div>
-  <div><dt>License</dt><dd>MIT or Apache-2.0</dd></div>
-  <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
-</dl>
-<h2>সংক্ষেপে</h2>
-<p><strong>Skeletonic Stylus</strong> একটি ওপেন-সোর্স <a href="https://stylus-lang.com">Stylus</a>
-CSS লাইব্রেরি, অ্যাক্সেসিবল, দ্রুত ও মডুলার UI স্টাইলিংয়ের জন্য।</p>
-<p>২০১৮ সালে <strong>কম CSS শিপ করা</strong>র ব্যক্তিগত পরীক্ষা-নিরীক্ষা হিসেবে
+while these translations catch up. See &lt;a href=&quot;https://skeletonic.io/about/&quot;&gt;https://skeletonic.io/about/&lt;/a&gt; ·
+&lt;a href=&quot;https://skeletonic.io/components/&quot;&gt;https://skeletonic.io/components/&lt;/a&gt; · &lt;a href=&quot;https://skeletonic.io/benchmarks/&quot;&gt;https://skeletonic.io/benchmarks/&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;dl class=&quot;stat-strip&quot; aria-label=&quot;Project facts&quot;&gt;
+  &lt;div&gt;&lt;dt&gt;Version&lt;/dt&gt;&lt;dd&gt;2.0.0&lt;/dd&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;dt&gt;Gzip&lt;/dt&gt;&lt;dd&gt;7.7 KB&lt;/dd&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;dt&gt;Brotli&lt;/dt&gt;&lt;dd&gt;6.7 KB&lt;/dd&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;dt&gt;License&lt;/dt&gt;&lt;dd&gt;MIT or Apache-2.0&lt;/dd&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;dt&gt;Standard&lt;/dt&gt;&lt;dd&gt;WCAG 2.2 AA&lt;/dd&gt;&lt;/div&gt;
+&lt;/dl&gt;
+&lt;h2&gt;সংক্ষেপে&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Skeletonic Stylus&lt;/strong&gt; একটি ওপেন-সোর্স &lt;a href=&quot;https://stylus-lang.com&quot;&gt;Stylus&lt;/a&gt;
+CSS লাইব্রেরি, অ্যাক্সেসিবল, দ্রুত ও মডুলার UI স্টাইলিংয়ের জন্য।&lt;/p&gt;
+&lt;p&gt;২০১৮ সালে &lt;strong&gt;কম CSS শিপ করা&lt;/strong&gt;র ব্যক্তিগত পরীক্ষা-নিরীক্ষা হিসেবে
 জন্ম নেয়া, একটি প্রকৃত কম্পোনেন্ট লাইব্রেরির সুবিধা ছাড়া নয়।
-আট বছর পরও লক্ষ্য অপরিবর্তিত।</p>
-<h2>এটি আপনাকে যা দেয়</h2>
-<div class="feature-grid">
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/thunder.min.svg" alt="বজ্রগতি" width="64" height="64" loading="lazy" decoding="async">
-    <h3>বজ্রগতিতে দ্রুত</h3>
-    <p>মিনিটের মধ্যে রেসপন্সিভ ইন্টারফেস ডিজাইন ও কাস্টমাইজ করুন। নেটিভ CSS ভেরিয়েবল, পূর্বনির্ধারিত ক্লাস, প্রতিটি সেমান্টিক HTML এলিমেন্ট কভার করা ১২-কলাম গ্রিড।</p>
-  </article>
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/lightweight.min.svg" alt="হালকা" width="64" height="64" loading="lazy" decoding="async">
-    <h3>হালকা</h3>
-    <p>~৭.৫&nbsp;KB gzipped। পেজ দ্রুত লোড হয়। প্রতিটি অপরিহার্য বিল্ডিং ব্লক অন্তর্ভুক্ত।</p>
-  </article>
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/responsive.min.svg" alt="রেসপন্সিভ ডিভাইস" width="64" height="64" loading="lazy" decoding="async">
-    <h3>রেসপন্সিভ ডিজাইন</h3>
-    <p>ডেস্কটপ ও মোবাইলের জন্য তৈরি। লেআউট যেকোনো ডিভাইসে মানিয়ে নেয়। টাচ-অপ্টিমাইজড, সর্বত্র সেমান্টিক HTML।</p>
-  </article>
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/accessibility.min.svg" alt="প্রবেশাধিকার" width="64" height="64" loading="lazy" decoding="async">
-    <h3>প্রবেশাধিকার</h3>
-    <p>WCAG&nbsp;2.2 অন্তর্নির্মিত: focus-visible রিং, AA কনট্রাস্ট, skip-link সহায়ক, কীবোর্ড-বান্ধব কম্পোনেন্ট, reduced-motion সমর্থন — কোনো অতিরিক্ত স্টাইলশিট নেই, কোনো <code>aria-*</code> বয়লারপ্লেট নেই।</p>
-  </article>
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/components.min.svg" alt="কম্পোনেন্ট ব্লক" width="64" height="64" loading="lazy" decoding="async">
-    <h3>কম্পোনেন্ট লাইব্রেরি</h3>
-    <p>মডুলার CSS কম্পোনেন্ট ও Stylus মিক্সিন। বাটন, ফর্ম, কার্ড, অ্যালার্ট, ব্যাজ, প্যালেট ও অ্যানিমেশন — পরিচ্ছন্ন, মডুলার, ড্রপ ইন করার জন্য প্রস্তুত।</p>
-  </article>
-  <article class="feature-card">
-    <img class="feature-icon" src="/images/icons/github.min.svg" alt="GitHub মার্ক" width="64" height="64" loading="lazy" decoding="async">
-    <h3>বিনামূল্যে ও ওপেন সোর্স</h3>
-    <p>Sebastien Rousseau দ্বারা ডিজাইনকৃত, নির্মিত ও রক্ষণাবেক্ষিত। <strong>MIT</strong> বা <strong>Apache&nbsp;2.0</strong> দ্বৈত লাইসেন্সপ্রাপ্ত। কোনো ফি নেই, কোনো লাইসেন্সিং খরচ নেই, বাণিজ্যিক ব্যবহারেও।</p>
-  </article>
-</div>
-<h2>তুলনামূলক বিশ্লেষণ</h2>
-<p>একটি সেলফ-হোস্টেড স্টাইলশিট টাইপোগ্রাফি, বাটন, ফর্ম, কার্ড,
+আট বছর পরও লক্ষ্য অপরিবর্তিত।&lt;/p&gt;
+&lt;h2&gt;এটি আপনাকে যা দেয়&lt;/h2&gt;
+&lt;div class=&quot;feature-grid&quot;&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/thunder.min.svg&quot; alt=&quot;বজ্রগতি&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;বজ্রগতিতে দ্রুত&lt;/h3&gt;
+    &lt;p&gt;মিনিটের মধ্যে রেসপন্সিভ ইন্টারফেস ডিজাইন ও কাস্টমাইজ করুন। নেটিভ CSS ভেরিয়েবল, পূর্বনির্ধারিত ক্লাস, প্রতিটি সেমান্টিক HTML এলিমেন্ট কভার করা ১২-কলাম গ্রিড।&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/lightweight.min.svg&quot; alt=&quot;হালকা&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;হালকা&lt;/h3&gt;
+    &lt;p&gt;~৭.৫&nbsp;KB gzipped। পেজ দ্রুত লোড হয়। প্রতিটি অপরিহার্য বিল্ডিং ব্লক অন্তর্ভুক্ত।&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/responsive.min.svg&quot; alt=&quot;রেসপন্সিভ ডিভাইস&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;রেসপন্সিভ ডিজাইন&lt;/h3&gt;
+    &lt;p&gt;ডেস্কটপ ও মোবাইলের জন্য তৈরি। লেআউট যেকোনো ডিভাইসে মানিয়ে নেয়। টাচ-অপ্টিমাইজড, সর্বত্র সেমান্টিক HTML।&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/accessibility.min.svg&quot; alt=&quot;প্রবেশাধিকার&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;প্রবেশাধিকার&lt;/h3&gt;
+    &lt;p&gt;WCAG&nbsp;2.2 অন্তর্নির্মিত: focus-visible রিং, AA কনট্রাস্ট, skip-link সহায়ক, কীবোর্ড-বান্ধব কম্পোনেন্ট, reduced-motion সমর্থন — কোনো অতিরিক্ত স্টাইলশিট নেই, কোনো &lt;code&gt;aria-*&lt;/code&gt; বয়লারপ্লেট নেই।&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/components.min.svg&quot; alt=&quot;কম্পোনেন্ট ব্লক&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;কম্পোনেন্ট লাইব্রেরি&lt;/h3&gt;
+    &lt;p&gt;মডুলার CSS কম্পোনেন্ট ও Stylus মিক্সিন। বাটন, ফর্ম, কার্ড, অ্যালার্ট, ব্যাজ, প্যালেট ও অ্যানিমেশন — পরিচ্ছন্ন, মডুলার, ড্রপ ইন করার জন্য প্রস্তুত।&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;feature-card&quot;&gt;
+    &lt;img class=&quot;feature-icon&quot; src=&quot;/images/icons/github.min.svg&quot; alt=&quot;GitHub মার্ক&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+    &lt;h3&gt;বিনামূল্যে ও ওপেন সোর্স&lt;/h3&gt;
+    &lt;p&gt;Sebastien Rousseau দ্বারা ডিজাইনকৃত, নির্মিত ও রক্ষণাবেক্ষিত। &lt;strong&gt;MIT&lt;/strong&gt; বা &lt;strong&gt;Apache&nbsp;2.0&lt;/strong&gt; দ্বৈত লাইসেন্সপ্রাপ্ত। কোনো ফি নেই, কোনো লাইসেন্সিং খরচ নেই, বাণিজ্যিক ব্যবহারেও।&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
+&lt;h2&gt;তুলনামূলক বিশ্লেষণ&lt;/h2&gt;
+&lt;p&gt;একটি সেলফ-হোস্টেড স্টাইলশিট টাইপোগ্রাফি, বাটন, ফর্ম, কার্ড,
 টেবিল, প্যালেট, অ্যানিমেশন এবং ইউটিলিটি ক্লাস কভার করে। কোনো
 জাভাস্ক্রিপ্ট নেই। কোনো বিল্ড স্টেপ লাগে না। Bootstrap, Tailwind বা
-Bulma-র উপর কোনো নির্ভরতা নেই।</p>
-<div class="table-responsive"><table class="table"><caption class="visually-hidden">Data table table</caption>
-<thead>
-<tr>
-<th>বৈশিষ্ট্য</th>
-<th>Skeletonic Stylus</th>
-<th>Bootstrap 5</th>
-<th>Tailwind CSS</th>
-<th>Bulma</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-left">Gzipped আকার</td>
-<td class="text-left"><strong>~৭.৫ KB</strong></td>
-<td class="text-left">~৩০ KB</td>
-<td class="text-left">~১০ KB (varies)</td>
-<td class="text-left">~৩০ KB</td>
-</tr>
-<tr>
-<td class="text-left">WCAG 2.2 সামঞ্জস্য</td>
-<td class="text-left"><strong>অন্তর্নির্মিত</strong></td>
-<td class="text-left">আংশিক</td>
-<td class="text-left">ম্যানুয়াল</td>
-<td class="text-left">আংশিক</td>
-</tr>
-<tr>
-<td class="text-left">Cascade layers</td>
-<td class="text-left"><strong>হ্যাঁ (<code>@layer</code>)</strong></td>
-<td class="text-left">না</td>
-<td class="text-left">না</td>
-<td class="text-left">না</td>
-</tr>
-<tr>
-<td class="text-left">ডার্ক মোড</td>
-<td class="text-left"><strong><code>prefers-color-scheme</code></strong></td>
-<td class="text-left">অপ্ট-ইন</td>
-<td class="text-left">ক্লাস-ভিত্তিক</td>
-<td class="text-left">অপ্ট-ইন</td>
-</tr>
-<tr>
-<td class="text-left">জাভাস্ক্রিপ্ট প্রয়োজন</td>
-<td class="text-left"><strong>না</strong></td>
-<td class="text-left">হ্যাঁ (Popper)</td>
-<td class="text-left">না</td>
-<td class="text-left">না</td>
-</tr>
-<tr>
-<td class="text-left">CycloneDX SBOM</td>
-<td class="text-left"><strong>হ্যাঁ</strong></td>
-<td class="text-left">না</td>
-<td class="text-left">না</td>
-<td class="text-left">না</td>
-</tr>
-<tr>
-<td class="text-left">Reduced-motion</td>
-<td class="text-left"><strong>সম্মানিত</strong></td>
-<td class="text-left">আংশিক</td>
-<td class="text-left">ম্যানুয়াল</td>
-<td class="text-left">আংশিক</td>
-</tr>
-<tr>
-<td class="text-left">লাইসেন্স</td>
-<td class="text-left">MIT বা Apache 2.0</td>
-<td class="text-left">MIT</td>
-<td class="text-left">MIT</td>
-<td class="text-left">MIT</td>
-</tr>
-</tbody>
-</table></div>
-<h2>নীতিমালা</h2>
-<ol>
-<li><strong>প্রবেশাধিকার মেঝে, সিলিং নয়।</strong> WCAG 2.2 সামঞ্জস্য প্রতিটি
-কম্পোনেন্টে অন্তর্নির্মিত, কখনো &quot;থিম&quot; হিসেবে আলাদা করে যোগ করা নয়।</li>
-<li><strong>বাইট গুরুত্বপূর্ণ।</strong> একটি শিপ করা স্টাইলশিট আপনার
-পেজ-ওয়েট বাজেট নষ্ট করা উচিত নয়। ৮ KB gzipped সীমা CI-তে বাধ্যতামূলক।</li>
-<li><strong>Cascade layers specificity যুদ্ধকে পরাজিত করে।</strong> আত্মবিশ্বাসের
-সাথে যেকোনো কিছু ওভাররাইড করুন — কোনো <code>!important</code> নেই, কোনো DOM-order কৌশল নেই।</li>
-<li><strong>Stylus এখনও চমৎকার।</strong> সংক্ষিপ্ত, অভিব্যক্তিপূর্ণ, এবং
-লাইব্রেরিকে ~৩,০০০ পাঠযোগ্য লাইনে রাখতে সক্ষম।</li>
-<li><strong>বিরক্তিকর হওয়াটাই বৈশিষ্ট্য।</strong> কোনো JS নির্ভরতা নেই। কোনো বিল্ড-টাইম
-জাদু নেই। কোনো ব্রেকিং রিনেম নেই। CSS ক্লাস যা ঠিক তা-ই করে যা বলে।</li>
-<li><strong>সেকেন্ডে থিম পরিবর্তনযোগ্য।</strong> রঙ, স্পেসিং, টাইপ ও রেডিয়ায়ের জন্য
-নেটিভ CSS কাস্টম প্রপার্টি।</li>
-<li><strong>সাপ্লাই-চেইন সুরক্ষিত।</strong> স্বাক্ষরিত npm provenance। পিন করা Dependabot
-আপডেট। CVE-2023-44270 overrides দিয়ে প্যাচড।</li>
-</ol>
-<h2>সংস্করণ ও semver</h2>
-<p>Skeletonic Stylus <a href="https://semver.org">Semantic Versioning 2.0</a> অনুসরণ করে।</p>
-<table><caption class="visually-hidden">Data table table</caption>
-<thead>
-<tr>
-<th>বাম্প</th>
-<th>কখন</th>
-<th>উদাহরণ</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-left"><strong>Major</strong></td>
-<td class="text-left">কোনো পাবলিক ক্লাস, মিক্সিন বা টোকেন অপসারণ বা পুনঃনামকরণ</td>
-<td class="text-left">1.x → 2.0</td>
-</tr>
-<tr>
-<td class="text-left"><strong>Minor</strong></td>
-<td class="text-left">নতুন কম্পোনেন্ট, মিক্সিন বা টোকেন যোগ</td>
-<td class="text-left">1.1 → 1.2</td>
-</tr>
-<tr>
-<td class="text-left"><strong>Patch</strong></td>
-<td class="text-left">বাগ ফিক্স, a11y উন্নতি, পারফরম্যান্স, নিরাপত্তা</td>
-<td class="text-left">1.1.6 → 2.0.0</td>
-</tr>
-</tbody>
-</table>
-<p>সকল পাবলিক ক্লাস নাম, সকল CSS কাস্টম প্রপার্টি এবং সকল এক্সপোর্টেড
+Bulma-র উপর কোনো নির্ভরতা নেই।&lt;/p&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;&lt;table class=&quot;table&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;বৈশিষ্ট্য&lt;/th&gt;
+&lt;th&gt;Skeletonic Stylus&lt;/th&gt;
+&lt;th&gt;Bootstrap 5&lt;/th&gt;
+&lt;th&gt;Tailwind CSS&lt;/th&gt;
+&lt;th&gt;Bulma&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;Gzipped আকার&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;~৭.৫ KB&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;~৩০ KB&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;~১০ KB (varies)&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;~৩০ KB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;WCAG 2.2 সামঞ্জস্য&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;অন্তর্নির্মিত&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;আংশিক&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;ম্যানুয়াল&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;আংশিক&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;Cascade layers&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;হ্যাঁ (&lt;code&gt;@layer&lt;/code&gt;)&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;না&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;না&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;না&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;ডার্ক মোড&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;&lt;code&gt;prefers-color-scheme&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;অপ্ট-ইন&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;ক্লাস-ভিত্তিক&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;অপ্ট-ইন&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;জাভাস্ক্রিপ্ট প্রয়োজন&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;না&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;হ্যাঁ (Popper)&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;না&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;না&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;CycloneDX SBOM&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;হ্যাঁ&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;না&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;না&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;না&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;Reduced-motion&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;সম্মানিত&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;আংশিক&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;ম্যানুয়াল&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;আংশিক&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;লাইসেন্স&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;MIT বা Apache 2.0&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;MIT&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;MIT&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;MIT&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+&lt;h2&gt;নীতিমালা&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;প্রবেশাধিকার মেঝে, সিলিং নয়।&lt;/strong&gt; WCAG 2.2 সামঞ্জস্য প্রতিটি
+কম্পোনেন্টে অন্তর্নির্মিত, কখনো &quot;থিম&quot; হিসেবে আলাদা করে যোগ করা নয়।&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;বাইট গুরুত্বপূর্ণ।&lt;/strong&gt; একটি শিপ করা স্টাইলশিট আপনার
+পেজ-ওয়েট বাজেট নষ্ট করা উচিত নয়। ৮ KB gzipped সীমা CI-তে বাধ্যতামূলক।&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cascade layers specificity যুদ্ধকে পরাজিত করে।&lt;/strong&gt; আত্মবিশ্বাসের
+সাথে যেকোনো কিছু ওভাররাইড করুন — কোনো &lt;code&gt;!important&lt;/code&gt; নেই, কোনো DOM-order কৌশল নেই।&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stylus এখনও চমৎকার।&lt;/strong&gt; সংক্ষিপ্ত, অভিব্যক্তিপূর্ণ, এবং
+লাইব্রেরিকে ~৩,০০০ পাঠযোগ্য লাইনে রাখতে সক্ষম।&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;বিরক্তিকর হওয়াটাই বৈশিষ্ট্য।&lt;/strong&gt; কোনো JS নির্ভরতা নেই। কোনো বিল্ড-টাইম
+জাদু নেই। কোনো ব্রেকিং রিনেম নেই। CSS ক্লাস যা ঠিক তা-ই করে যা বলে।&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;সেকেন্ডে থিম পরিবর্তনযোগ্য।&lt;/strong&gt; রঙ, স্পেসিং, টাইপ ও রেডিয়ায়ের জন্য
+নেটিভ CSS কাস্টম প্রপার্টি।&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;সাপ্লাই-চেইন সুরক্ষিত।&lt;/strong&gt; স্বাক্ষরিত npm provenance। পিন করা Dependabot
+আপডেট। CVE-2023-44270 overrides দিয়ে প্যাচড।&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;সংস্করণ ও semver&lt;/h2&gt;
+&lt;p&gt;Skeletonic Stylus &lt;a href=&quot;https://semver.org&quot;&gt;Semantic Versioning 2.0&lt;/a&gt; অনুসরণ করে।&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;বাম্প&lt;/th&gt;
+&lt;th&gt;কখন&lt;/th&gt;
+&lt;th&gt;উদাহরণ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;Major&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;কোনো পাবলিক ক্লাস, মিক্সিন বা টোকেন অপসারণ বা পুনঃনামকরণ&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;1.x → 2.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;Minor&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;নতুন কম্পোনেন্ট, মিক্সিন বা টোকেন যোগ&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;1.1 → 1.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;text-left&quot;&gt;&lt;strong&gt;Patch&lt;/strong&gt;&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;বাগ ফিক্স, a11y উন্নতি, পারফরম্যান্স, নিরাপত্তা&lt;/td&gt;
+&lt;td class=&quot;text-left&quot;&gt;1.1.6 → 2.0.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;সকল পাবলিক ক্লাস নাম, সকল CSS কাস্টম প্রপার্টি এবং সকল এক্সপোর্টেড
 Stylus মিক্সিন পাবলিক API-র অংশ। একটি ব্রেকিং পরিবর্তন একটি
-major বাম্প এবং একটি মাইগ্রেশন গাইড পায়।</p>
-<h2>তত্ত্বাবধান</h2>
-<p>Skeletonic Stylus ডিজাইন, নির্মাণ ও রক্ষণাবেক্ষণ করেন
-<a href="https://sebastienrousseau.com">Sebastien Rousseau</a>। দ্বৈত লাইসেন্সপ্রাপ্ত
-<a href="https://opensource.org/licenses/MIT">MIT</a> এবং
-<a href="https://opensource.org/licenses/Apache-2.0">Apache 2.0</a>-এর অধীনে।</p>
-<p>সমস্যা, ধারণা এবং অবদান স্বাগত —
-<a href="/bn/yogdan/">অবদান নির্দেশিকা দেখুন</a>।</p>
+major বাম্প এবং একটি মাইগ্রেশন গাইড পায়।&lt;/p&gt;
+&lt;h2&gt;তত্ত্বাবধান&lt;/h2&gt;
+&lt;p&gt;Skeletonic Stylus ডিজাইন, নির্মাণ ও রক্ষণাবেক্ষণ করেন
+&lt;a href=&quot;https://sebastienrousseau.com&quot;&gt;Sebastien Rousseau&lt;/a&gt;। দ্বৈত লাইসেন্সপ্রাপ্ত
+&lt;a href=&quot;https://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; এবং
+&lt;a href=&quot;https://opensource.org/licenses/Apache-2.0&quot;&gt;Apache 2.0&lt;/a&gt;-এর অধীনে।&lt;/p&gt;
+&lt;p&gt;সমস্যা, ধারণা এবং অবদান স্বাগত —
+&lt;a href=&quot;/bn/yogdan/&quot;&gt;অবদান নির্দেশিকা দেখুন&lt;/a&gt;।&lt;/p&gt;
+&lt;/div&gt;
 
 
-
-      </div>
-    </main>
-
-    <footer aria-label="Site footer" class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-cols">
-          <nav class="footer-col" aria-label="প্রকল্প">
-            <p class="footer-col-title">প্রকল্প</p>
-            <ul>
-              <li><a href="&#x2F;bn/somporke/">সম্পর্কে</a></li>
-              <li><a href="&#x2F;bn/poriborton-talika/">পরিবর্তন তালিকা</a></li>
-              <li><a href="&#x2F;bn/nirapotta/">নিরাপত্তা</a></li>
-              <li><a href="&#x2F;bn/yogdan/">অবদান</a></li>
-              <li><a rel="noopener noreferrer" href="https://github.com/sebastienrousseau/skeletonic-stylus" target="_blank">GitHub ↗</a></li>
-              <li><a rel="noopener noreferrer" href="https://www.npmjs.com/package/@sebastienrousseau/skeletonic-stylus" target="_blank">npm ↗</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-col" aria-label="রিসোর্স">
-            <p class="footer-col-title">রিসোর্স</p>
-            <ul>
-              <li><a href="&#x2F;bn/rong-palat/">রং প্যালেট</a></li>
-              <li><a href="&#x2F;bn/animations/">অ্যানিমেশন</a></li>
-              <li><a href="&#x2F;bn/probeshadhikar/">প্রবেশাধিকার</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-col" aria-label="আইনি">
-            <p class="footer-col-title">আইনি</p>
-            <ul>
-              <li><a href="&#x2F;bn/goponioyota/">গোপনীয়তা</a></li>
-              <li><a href="&#x2F;bn/shartaboli/">শর্তাবলী</a></li>
-              <li><a href="&#x2F;bn/jogajog/">যোগাযোগ</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-bar">
-          কপিরাইট © 2021 – 2026 Skeletonic CSS। সমস্ত অধিকার সংরক্ষিত।
-        </div>
-      </div>
-    </footer>
-
-    <div aria-label="অনুসন্ধান" aria-modal="true" class="search-overlay" id="searchOverlay" role="dialog">
-      <div class="search-box">
-        <input aria-label="অনুসন্ধান" placeholder="ডকুমেন্টেশনে অনুসন্ধান করুন..." autocomplete="off" class="search-input" id="searchInput" type="search">
-        <div class="search-results" id="searchResults"></div>
-        <div class="search-footer">
-          <span><kbd>↑</kbd> <kbd>↓</kbd> নেভিগেট</span>
-          <span><kbd>↵</kbd> খুলুন</span>
-          <span><kbd>Esc</kbd> বন্ধ করুন</span>
-        </div>
-      </div>
-    </div>
-
-    <script src="/js/main.js" defer></script>
-  
-
-
-
-</body>
-</html>

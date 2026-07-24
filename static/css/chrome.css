@@ -6,18 +6,17 @@
         --c-bg: #ffffff;
         --c-text: #1d1d1f;
         --c-heading: #000000;
-        --c-secondary: #6e6e73;
-        --c-accent: #0066cc;
-        --c-accent-hover: #004499;
+        --c-secondary: #48484a;
+        --c-accent: #004b99;
+        --c-accent-hover: #003673;
         --c-surface: rgba(245, 245, 247, 0.8);
         --c-border: #d2d2d7;
         --c-nav-bg: rgba(255, 255, 255, 0.8);
         --c-nav-text: #1d1d1f;
-        --c-nav-muted: #57575b;
+        --c-nav-muted: #48484a;
         --c-footer-bg: #f5f5f7;
-        /* #86868b on #f5f5f7 was 3.32 : 1 — fail. Darkened to
-           #57575b so the footer body and footer-bar clear AA 4.5 : 1. */
-        --c-footer-text: #57575b;
+        /* Darkened to #48484a for WCAG AAA 7:1 contrast compliance */
+        --c-footer-text: #48484a;
         --c-code: #3a3a4a;
         --c-hero-grad-1: #f5f5f7;
         --c-hero-grad-2: #ffffff;

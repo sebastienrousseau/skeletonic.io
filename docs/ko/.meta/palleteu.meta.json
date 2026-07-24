@@ -1,12 +1,14 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "ko",
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ko/palleteu/",
-  "title": "팔레트",
-  "keywords": "css 팔레트, material, tachyons, 웹 안전, 디자인 토큰",
-  "author": "Sebastien Rousseau",
-  "layout": "page",
+  "language": "ko",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "word_count": 323,
   "date": "2026-04-08",
-  "description": "Skeletonic Stylus v2.0.0에 포함된 Material, Tachyons 및 웹 안전 색상 팔레트입니다."
+  "permalink": "https://skeletonic.io/ko/palleteu/",
+  "description": "Skeletonic Stylus v2.0.0에 포함된 Material, Tachyons 및 웹 안전 색상 팔레트입니다.",
+  "layout": "page",
+  "keywords": "css 팔레트, material, tachyons, 웹 안전, 디자인 토큰",
+  "reading_time": 1,
+  "title": "팔레트",
+  "author": "Sebastien Rousseau"
 }
