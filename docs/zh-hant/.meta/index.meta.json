@@ -1,14 +1,14 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "reading_time": 1,
-  "name": "Skeletonic Stylus",
-  "language": "zh-hant",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
   "layout": "index",
-  "keywords": "css, stylus, css 框架, 無障礙 css, wcag 2.2, 輕量級 css, 級聯層, 設計系統",
-  "word_count": 127,
   "permalink": "https://skeletonic.io/zh-hant/",
-  "description": "Skeletonic Stylus 是一個輕量級、模組化的 Stylus CSS 函式庫——符合 WCAG 2.2 標準、採用級聯層架構、gzip 後約 7.7 KB——旨在簡化現代 Web UI 開發。",
-  "title": "Skeletonic Stylus — 無障礙 CSS，gzip 後約 7.7 KB"
+  "language": "zh-hant",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "Skeletonic Stylus — 無障礙 CSS，gzip 後約 7.7 KB",
+  "name": "Skeletonic Stylus",
+  "keywords": "css, stylus, css 框架, 無障礙 css, wcag 2.2, 輕量級 css, 級聯層, 設計系統",
+  "author": "Sebastien Rousseau",
+  "word_count": 127,
+  "reading_time": 1,
+  "description": "Skeletonic Stylus 是一個輕量級、模組化的 Stylus CSS 函式庫——符合 WCAG 2.2 標準、採用級聯層架構、gzip 後約 7.7 KB——旨在簡化現代 Web UI 開發。"
 }

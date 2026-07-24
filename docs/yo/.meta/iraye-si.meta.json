@@ -1,14 +1,14 @@
 {
   "name": "Skeletonic Stylus",
   "word_count": 574,
-  "language": "yo",
-  "layout": "page",
   "keywords": "wcag 2.2, irayẹ-si, focus visible, skip link, prefers reduced motion, iyatọ",
-  "author": "Sebastien Rousseau",
-  "date": "2026-04-08",
+  "language": "yo",
   "title": "Irayẹ-si — WCAG 2.2 ninu v2.0.0",
-  "permalink": "https://skeletonic.io/yo/iraye-si/",
   "description": "Ohun ti v2.0.0 fi ranṣẹ lẹsẹkẹsẹ fun ibamu WCAG 2.2 — awọn oruka idojukọ, iyatọ, awọn ọna asọye, iṣipopada, ati ipo dudu.",
+  "layout": "page",
+  "date": "2026-04-08",
+  "reading_time": 2,
   "theme_color": "hsl(210, 100%, 42%)",
-  "reading_time": 2
+  "permalink": "https://skeletonic.io/yo/iraye-si/",
+  "author": "Sebastien Rousseau"
 }

@@ -1,14 +1,14 @@
 {
-  "author": "Sebastien Rousseau",
-  "keywords": "skeletonic, حول, stylus, إطار عمل css, فلسفة",
-  "word_count": 699,
-  "reading_time": 3,
   "description": "Skeletonic Stylus هي مكتبة CSS مفتوحة المصدر مبنية بـ Stylus لتنسيق واجهات مستخدم يسهل الوصول إليها، سريعة ومعيارية.",
-  "title": "حول Skeletonic Stylus",
-  "language": "ar",
-  "date": "2026-04-08",
+  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/ar/hawla/",
-  "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "name": "Skeletonic Stylus"
+  "word_count": 699,
+  "author": "Sebastien Rousseau",
+  "reading_time": 3,
+  "language": "ar",
+  "title": "حول Skeletonic Stylus",
+  "keywords": "skeletonic, حول, stylus, إطار عمل css, فلسفة",
+  "date": "2026-04-08",
+  "theme_color": "hsl(210, 100%, 42%)"
 }

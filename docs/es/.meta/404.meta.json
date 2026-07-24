@@ -1,13 +1,13 @@
 {
-  "language": "es",
-  "word_count": 78,
-  "author": "Sebastien Rousseau",
-  "title": "Pagina no encontrada",
-  "reading_time": 1,
-  "description": "La pagina que solicitaste no existe en skeletonic.io.",
   "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "404, no encontrada",
   "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "title": "Pagina no encontrada",
+  "reading_time": 1,
+  "layout": "page",
+  "word_count": 78,
+  "language": "es",
   "permalink": "https://skeletonic.io/es/404/",
-  "layout": "page"
+  "description": "La pagina que solicitaste no existe en skeletonic.io."
 }

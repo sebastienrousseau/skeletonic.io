@@ -1,14 +1,14 @@
 {
-  "language": "uk",
   "date": "2026-04-08",
-  "keywords": "конфіденційність, gdpr, cookies, без відстеження",
+  "title": "Конфіденційність",
   "theme_color": "hsl(210, 100%, 42%)",
-  "author": "Sebastien Rousseau",
-  "description": "Які дані збирає skeletonic.io, навіщо та як відмовитися.",
   "reading_time": 1,
   "permalink": "https://skeletonic.io/uk/konfidentsiinist/",
-  "title": "Конфіденційність",
-  "name": "Skeletonic Stylus",
+  "layout": "page",
+  "keywords": "конфіденційність, gdpr, cookies, без відстеження",
+  "description": "Які дані збирає skeletonic.io, навіщо та як відмовитися.",
+  "language": "uk",
   "word_count": 194,
-  "layout": "page"
+  "author": "Sebastien Rousseau",
+  "name": "Skeletonic Stylus"
 }

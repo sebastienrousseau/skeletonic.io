@@ -1,14 +1,14 @@
 {
-  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "language": "vi",
+  "layout": "page",
+  "reading_time": 1,
   "description": "Dieu khoan dieu chinh viec su dung skeletonic.io va thu vien Skeletonic Stylus.",
-  "keywords": "dieu khoan su dung, giay phep, mit, apache 2",
   "permalink": "https://skeletonic.io/vi/dieu-khoan/",
+  "name": "Skeletonic Stylus",
+  "word_count": 245,
+  "date": "2026-04-08",
   "title": "Dieu khoan su dung",
   "author": "Sebastien Rousseau",
-  "language": "vi",
-  "word_count": 245,
-  "reading_time": 1,
-  "theme_color": "hsl(210, 100%, 42%)",
-  "layout": "page",
-  "date": "2026-04-08"
+  "keywords": "dieu khoan su dung, giay phep, mit, apache 2"
 }

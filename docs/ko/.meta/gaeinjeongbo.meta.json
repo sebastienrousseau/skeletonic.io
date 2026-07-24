@@ -1,14 +1,14 @@
 {
-  "keywords": "개인정보, gdpr, 쿠키, 추적 없음",
-  "description": "skeletonic.io가 수집하는 데이터, 그 이유, 그리고 거부하는 방법입니다.",
-  "reading_time": 1,
-  "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
-  "word_count": 168,
+  "theme_color": "hsl(210, 100%, 42%)",
   "date": "2026-04-08",
   "language": "ko",
-  "layout": "page",
+  "title": "개인정보 보호",
+  "reading_time": 1,
+  "description": "skeletonic.io가 수집하는 데이터, 그 이유, 그리고 거부하는 방법입니다.",
+  "keywords": "개인정보, gdpr, 쿠키, 추적 없음",
+  "name": "Skeletonic Stylus",
   "permalink": "https://skeletonic.io/ko/gaeinjeongbo/",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "title": "개인정보 보호"
+  "layout": "page",
+  "word_count": 168,
+  "author": "Sebastien Rousseau"
 }

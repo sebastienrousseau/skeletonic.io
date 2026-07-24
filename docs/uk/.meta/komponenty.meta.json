@@ -1,14 +1,14 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "uk",
   "date": "2026-04-08",
-  "description": "Живі HTML-приклади кожного компонента Skeletonic Stylus — згруповані, з якорями та відрендерені тією самою таблицею стилів, що демонструється.",
   "layout": "page",
-  "permalink": "https://skeletonic.io/uk/komponenty/",
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus",
   "keywords": "компоненти skeletonic, кнопки, картки, форми, сповіщення, значки, заголовок, навігація, css-only гамбургер",
+  "title": "Компоненти",
+  "description": "Живі HTML-приклади кожного компонента Skeletonic Stylus — згруповані, з якорями та відрендерені тією самою таблицею стилів, що демонструється.",
+  "language": "uk",
   "word_count": 1260,
-  "reading_time": 6,
-  "title": "Компоненти"
+  "permalink": "https://skeletonic.io/uk/komponenty/",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "name": "Skeletonic Stylus",
+  "reading_time": 6
 }

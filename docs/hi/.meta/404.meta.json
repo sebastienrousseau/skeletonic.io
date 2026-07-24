@@ -1,13 +1,13 @@
 {
-  "language": "hi",
-  "layout": "page",
-  "title": "पेज नहीं मिला",
-  "reading_time": 1,
   "description": "आपने जो पेज अनुरोध किया वह skeletonic.io पर मौजूद नहीं है।",
+  "keywords": "404, नहीं मिला",
   "author": "Sebastien Rousseau",
   "name": "Skeletonic Stylus",
-  "keywords": "404, नहीं मिला",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "title": "पेज नहीं मिला",
   "permalink": "https://skeletonic.io/hi/404/",
-  "word_count": 77
+  "language": "hi",
+  "word_count": 77,
+  "reading_time": 1,
+  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page"
 }

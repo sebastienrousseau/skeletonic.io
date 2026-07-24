@@ -1,14 +1,14 @@
 {
-  "author": "Sebastien Rousseau",
-  "word_count": 678,
-  "date": "2026-04-08",
-  "reading_time": 3,
-  "layout": "page",
   "language": "uk",
   "keywords": "skeletonic, про нас, stylus, css фреймворк, філософія",
-  "description": "Skeletonic Stylus — це відкрита бібліотека CSS на базі Stylus для доступного, швидкого та модульного стилізування інтерфейсів.",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "date": "2026-04-08",
+  "reading_time": 3,
   "name": "Skeletonic Stylus",
+  "word_count": 678,
   "title": "Про Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/uk/pro-nas/"
+  "description": "Skeletonic Stylus — це відкрита бібліотека CSS на базі Stylus для доступного, швидкого та модульного стилізування інтерфейсів.",
+  "permalink": "https://skeletonic.io/uk/pro-nas/",
+  "layout": "page",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau"
 }

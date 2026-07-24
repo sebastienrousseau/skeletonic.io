@@ -1,14 +1,14 @@
 {
-  "title": "सुलभता — v2.0.0 में WCAG 2.2",
-  "word_count": 558,
-  "permalink": "https://skeletonic.io/hi/sulabhata/",
-  "reading_time": 2,
-  "theme_color": "hsl(210, 100%, 42%)",
   "layout": "page",
-  "date": "2026-04-08",
-  "name": "Skeletonic Stylus",
-  "language": "hi",
+  "keywords": "wcag 2.2, सुलभता, focus visible, skip link, prefers reduced motion, कंट्रास्ट",
+  "word_count": 558,
   "author": "Sebastien Rousseau",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "reading_time": 2,
+  "language": "hi",
+  "permalink": "https://skeletonic.io/hi/sulabhata/",
+  "name": "Skeletonic Stylus",
+  "date": "2026-04-08",
   "description": "v2.0.0 WCAG 2.2 अनुरूपता के लिए बॉक्स से क्या शिप करती है — फ़ोकस रिंग, कंट्रास्ट, स्किप लिंक, मोशन और डार्क मोड।",
-  "keywords": "wcag 2.2, सुलभता, focus visible, skip link, prefers reduced motion, कंट्रास्ट"
+  "title": "सुलभता — v2.0.0 में WCAG 2.2"
 }

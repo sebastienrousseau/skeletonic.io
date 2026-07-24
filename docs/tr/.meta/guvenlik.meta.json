@@ -1,14 +1,14 @@
 {
-  "title": "Guvenlik ve tedarik zinciri",
-  "description": "Skeletonic Stylus v2.0.0'nin derleme hattini nasil guvence altina aldigi, surumleri nasil imzaladigi ve SBOM nasil gonderdigi.",
   "reading_time": 1,
-  "keywords": "css guvenlik, sbom, cyclonedx, npm provenance, openssf scorecard, tedarik zinciri",
+  "name": "Skeletonic Stylus",
+  "language": "tr",
   "theme_color": "hsl(210, 100%, 42%)",
+  "description": "Skeletonic Stylus v2.0.0'nin derleme hattini nasil guvence altina aldigi, surumleri nasil imzaladigi ve SBOM nasil gonderdigi.",
   "layout": "page",
-  "word_count": 337,
+  "keywords": "css guvenlik, sbom, cyclonedx, npm provenance, openssf scorecard, tedarik zinciri",
   "date": "2026-04-08",
   "permalink": "https://skeletonic.io/tr/guvenlik/",
-  "language": "tr",
+  "word_count": 337,
   "author": "Sebastien Rousseau",
-  "name": "Skeletonic Stylus"
+  "title": "Guvenlik ve tedarik zinciri"
 }

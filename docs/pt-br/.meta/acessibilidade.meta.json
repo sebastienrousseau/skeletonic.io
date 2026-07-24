@@ -1,14 +1,14 @@
 {
-  "title": "Acessibilidade — WCAG 2.2 na v2.0.0",
-  "author": "Sebastien Rousseau",
-  "permalink": "https://skeletonic.io/pt-br/acessibilidade/",
-  "keywords": "wcag 2.2, acessibilidade, focus visible, skip link, prefers reduced motion, contraste",
-  "layout": "page",
-  "description": "O que a v2.0.0 entrega por padrao para conformidade com WCAG 2.2 — aneis de foco, contraste, skip links, movimento e modo escuro.",
   "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
+  "layout": "page",
+  "permalink": "https://skeletonic.io/pt-br/acessibilidade/",
   "word_count": 562,
   "reading_time": 2,
+  "title": "Acessibilidade — WCAG 2.2 na v2.0.0",
+  "keywords": "wcag 2.2, acessibilidade, focus visible, skip link, prefers reduced motion, contraste",
+  "date": "2026-04-08",
+  "author": "Sebastien Rousseau",
+  "description": "O que a v2.0.0 entrega por padrao para conformidade com WCAG 2.2 — aneis de foco, contraste, skip links, movimento e modo escuro.",
   "language": "pt-br",
-  "date": "2026-04-08"
+  "theme_color": "hsl(210, 100%, 42%)"
 }

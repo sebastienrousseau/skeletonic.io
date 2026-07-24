@@ -1,14 +1,14 @@
 {
-  "author": "Sebastien Rousseau",
-  "reading_time": 1,
-  "name": "Skeletonic Stylus",
-  "title": "নিরাপত্তা ও সাপ্লাই চেইন",
-  "word_count": 353,
-  "layout": "page",
+  "date": "2026-04-08",
   "theme_color": "hsl(210, 100%, 42%)",
   "keywords": "css নিরাপত্তা, sbom, cyclonedx, npm provenance, openssf scorecard, সাপ্লাই চেইন",
-  "language": "bn",
+  "author": "Sebastien Rousseau",
+  "title": "নিরাপত্তা ও সাপ্লাই চেইন",
   "permalink": "https://skeletonic.io/bn/nirapotta/",
-  "date": "2026-04-08",
-  "description": "Skeletonic Stylus v2.0.0 কীভাবে তার বিল্ড পাইপলাইন সুরক্ষিত করে, রিলিজ স্বাক্ষর করে এবং SBOM শিপ করে।"
+  "word_count": 353,
+  "reading_time": 1,
+  "layout": "page",
+  "description": "Skeletonic Stylus v2.0.0 কীভাবে তার বিল্ড পাইপলাইন সুরক্ষিত করে, রিলিজ স্বাক্ষর করে এবং SBOM শিপ করে।",
+  "language": "bn",
+  "name": "Skeletonic Stylus"
 }

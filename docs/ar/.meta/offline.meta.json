@@ -1,14 +1,14 @@
 {
-  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/ar/offline/",
   "keywords": "غير متصل, service worker, pwa",
-  "name": "Skeletonic Stylus",
-  "author": "Sebastien Rousseau",
-  "title": "أنت غير متصل",
-  "word_count": 51,
   "layout": "page",
+  "date": "2026-04-08",
+  "description": "لم يتمكن skeletonic.io من الوصول إلى الشبكة. الصفحة التي طلبتها لم يتم تخزينها مؤقتًا بعد.",
   "reading_time": 1,
+  "word_count": 51,
+  "name": "Skeletonic Stylus",
+  "title": "أنت غير متصل",
   "theme_color": "hsl(210, 100%, 42%)",
   "language": "ar",
-  "description": "لم يتمكن skeletonic.io من الوصول إلى الشبكة. الصفحة التي طلبتها لم يتم تخزينها مؤقتًا بعد.",
-  "permalink": "https://skeletonic.io/ar/offline/"
+  "author": "Sebastien Rousseau"
 }

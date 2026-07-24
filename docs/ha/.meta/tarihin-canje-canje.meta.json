@@ -1,13 +1,13 @@
 {
-  "description": "Bayanan sakin Skeletonic Stylus, tare da cikakken bayani na v2.0.0.",
-  "author": "Sebastien Rousseau",
-  "theme_color": "hsl(210, 100%, 42%)",
   "language": "ha",
   "keywords": "tarihin canje-canje na skeletonic, bayanan sakin, v2.0.0, semver",
-  "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/ha/tarihin-canje-canje/",
-  "word_count": 396,
   "title": "Tarihin canje-canje",
-  "layout": "page",
-  "reading_time": 1
+  "description": "Bayanan sakin Skeletonic Stylus, tare da cikakken bayani na v2.0.0.",
+  "word_count": 396,
+  "reading_time": 1,
+  "name": "Skeletonic Stylus",
+  "theme_color": "hsl(210, 100%, 42%)",
+  "author": "Sebastien Rousseau",
+  "permalink": "https://skeletonic.io/ha/tarihin-canje-canje/",
+  "layout": "page"
 }

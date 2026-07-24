@@ -1,13 +1,13 @@
 {
-  "theme_color": "hsl(210, 100%, 42%)",
-  "reading_time": 2,
-  "title": "Nhat ky thay doi",
-  "language": "vi",
   "author": "Sebastien Rousseau",
   "description": "Ghi chu phat hanh cho Skeletonic Stylus, voi v2.0.0 day du.",
   "keywords": "nhat ky thay doi skeletonic, ghi chu phat hanh, v2.0.0, semver",
+  "reading_time": 2,
   "name": "Skeletonic Stylus",
-  "permalink": "https://skeletonic.io/vi/nhat-ky-thay-doi/",
+  "theme_color": "hsl(210, 100%, 42%)",
   "word_count": 413,
-  "layout": "page"
+  "layout": "page",
+  "language": "vi",
+  "permalink": "https://skeletonic.io/vi/nhat-ky-thay-doi/",
+  "title": "Nhat ky thay doi"
 }

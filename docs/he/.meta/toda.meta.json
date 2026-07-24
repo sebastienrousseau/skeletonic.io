@@ -1,14 +1,14 @@
 {
-  "name": "Skeletonic Stylus",
-  "theme_color": "hsl(210, 100%, 42%)",
-  "language": "he",
-  "description": "ההודעה שלכם נשלחה בהצלחה.",
-  "permalink": "https://skeletonic.io/he/toda/",
-  "date": "2026-04-08",
-  "layout": "thanks",
-  "reading_time": 1,
   "word_count": 36,
-  "title": "תודה!",
   "keywords": "תודה",
-  "author": "Sebastien Rousseau"
+  "language": "he",
+  "reading_time": 1,
+  "theme_color": "hsl(210, 100%, 42%)",
+  "description": "ההודעה שלכם נשלחה בהצלחה.",
+  "name": "Skeletonic Stylus",
+  "author": "Sebastien Rousseau",
+  "title": "תודה!",
+  "date": "2026-04-08",
+  "permalink": "https://skeletonic.io/he/toda/",
+  "layout": "thanks"
 }
