@@ -55,7 +55,13 @@ jobs:
           set -e
           # Only check CSS/JS assets — HTML content legitimately mentions
           # other frameworks in comparison tables.
-          if grep -RIEi 'bootstrap|tailwind|bulma|foundation\.css|tachyons\.css' \
+          #
+          # Match framework *assets*, not bare names: docs/js/main.js
+          # legitimately carries "bootstrap"/"bulma"/"tailwind" as data
+          # keys for the framework-size comparison calculator, and the
+          # bare-name pattern flagged that as a leak.
+          if grep -RIEi \
+               '(bootstrap|tailwind|bulma|foundation|tachyons)(\.min)?\.(css|js)|cdn[^"'"'"' ]*(bootstrap|tailwind|bulma)' \
                --include='*.css' --include='*.js' docs/; then
             echo "::error::Foreign CSS framework detected in build output"
             exit 1
