@@ -3,7 +3,16 @@ Changelog
 
 All notable changes to Skeletonic Stylus are documented in this file.
 
-v1.1.7 — 2026-04 (current)
+v1.1.8 — 2026-08 (current)
+---------------------------
+
+### Build & supply chain
+
+- Bumped all four pinned `github/codeql-action/*` steps
+  (`init`, `analyze`, `autobuild`, `upload-sarif`) from v4.37.3 to
+  v4.37.4.
+
+v1.1.7 — 2026-04
 ---------------------------
 
 The "release-readiness" pass: a11y, supply chain, repo hygiene.
