@@ -53,17 +53,25 @@ jobs:
       - name: Verify no Bootstrap or other CSS framework leaked into the build
         run: |
           set -e
-          # Only check CSS/JS assets — HTML content legitimately mentions
-          # other frameworks in comparison tables.
-          #
-          # Match framework *assets*, not bare names: docs/js/main.js
-          # legitimately carries "bootstrap"/"bulma"/"tailwind" as data
-          # keys for the framework-size comparison calculator, and the
-          # bare-name pattern flagged that as a leak.
+          # HTML content legitimately names other frameworks in comparison
+          # tables, so it is excluded. Stylesheets are matched on the bare
+          # name — a foreign framework's CSS landing in the build is the
+          # thing being guarded against.
+          if grep -RIEi 'bootstrap|tailwind|bulma|foundation\.css|tachyons\.css' \
+               --include='*.css' docs/; then
+            echo "::error::Foreign CSS framework stylesheet detected in build output"
+            exit 1
+          fi
+
+          # JavaScript needs a narrower pattern. docs/js/main.js names
+          # bootstrap, bulma and tailwind as *data* — they are rows in the
+          # framework-weight calculator on the site itself — so a bare name
+          # match flags the site's own feature as a leak. Match only an
+          # actual load: a framework stylesheet reference or a CDN URL.
           if grep -RIEi \
-               '(bootstrap|tailwind|bulma|foundation|tachyons)(\.min)?\.(css|js)|cdn[^"'"'"' ]*(bootstrap|tailwind|bulma)' \
-               --include='*.css' --include='*.js' docs/; then
-            echo "::error::Foreign CSS framework detected in build output"
+               '(bootstrap|tailwind|bulma|foundation|tachyons)[^"'"'"']*\.(css|min\.css)|(cdn\.jsdelivr\.net|unpkg\.com|cdnjs\.cloudflare\.com)/[^"'"'"']*(bootstrap|tailwind|bulma|foundation|tachyons)' \
+               --include='*.js' docs/; then
+            echo "::error::Foreign CSS framework load detected in build output"
             exit 1
           fi
           echo "OK — only skeletonic CSS in build output"
